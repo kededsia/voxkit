@@ -1,0 +1,515 @@
+{
+ "duration": 45.233,
+ "words": [
+  {
+   "word": "Material",
+   "start": 0.427,
+   "end": 0.767
+  },
+  {
+   "word": "letusannya",
+   "start": 0.767,
+   "end": 1.347
+  },
+  {
+   "word": "menyumbat",
+   "start": 1.347,
+   "end": 1.887
+  },
+  {
+   "word": "aliran",
+   "start": 1.887,
+   "end": 2.247
+  },
+  {
+   "word": "ci",
+   "start": 2.247,
+   "end": 2.427
+  },
+  {
+   "word": "tarung",
+   "start": 2.427,
+   "end": 2.747
+  },
+  {
+   "word": "purba",
+   "start": 2.747,
+   "end": 3.147
+  },
+  {
+   "word": "di",
+   "start": 3.147,
+   "end": 3.327
+  },
+  {
+   "word": "utara",
+   "start": 3.327,
+   "end": 3.627
+  },
+  {
+   "word": "pada",
+   "start": 3.627,
+   "end": 3.847
+  },
+  {
+   "word": "larang.",
+   "start": 3.847,
+   "end": 4.347
+  },
+  {
+   "word": "Air",
+   "start": 4.347,
+   "end": 5.247
+  },
+  {
+   "word": "tidak",
+   "start": 5.247,
+   "end": 5.527
+  },
+  {
+   "word": "bisa",
+   "start": 5.527,
+   "end": 5.687
+  },
+  {
+   "word": "keluar.",
+   "start": 5.687,
+   "end": 6.167
+  },
+  {
+   "word": "Cekungan",
+   "start": 6.867,
+   "end": 7.367
+  },
+  {
+   "word": "Bandung",
+   "start": 7.367,
+   "end": 7.787
+  },
+  {
+   "word": "terisi.",
+   "start": 7.787,
+   "end": 8.547
+  },
+  {
+   "word": "Terbentuklah",
+   "start": 9.087,
+   "end": 9.627
+  },
+  {
+   "word": "Danau",
+   "start": 9.627,
+   "end": 9.827
+  },
+  {
+   "word": "Bandung",
+   "start": 9.827,
+   "end": 10.127
+  },
+  {
+   "word": "Purba.",
+   "start": 10.127,
+   "end": 10.487
+  },
+  {
+   "word": "Paras",
+   "start": 11.387,
+   "end": 11.627
+  },
+  {
+   "word": "airnya",
+   "start": 11.627,
+   "end": 12.007
+  },
+  {
+   "word": "mencapai",
+   "start": 12.007,
+   "end": 12.347
+  },
+  {
+   "word": "725",
+   "start": 12.347,
+   "end": 13.487
+  },
+  {
+   "word": "meter",
+   "start": 13.487,
+   "end": 14.007
+  },
+  {
+   "word": "di",
+   "start": 14.007,
+   "end": 14.207
+  },
+  {
+   "word": "atas",
+   "start": 14.207,
+   "end": 14.347
+  },
+  {
+   "word": "permukaan",
+   "start": 14.347,
+   "end": 14.867
+  },
+  {
+   "word": "laut.",
+   "start": 14.867,
+   "end": 15.087
+  },
+  {
+   "word": "Danau",
+   "start": 15.967,
+   "end": 16.227
+  },
+  {
+   "word": "itu",
+   "start": 16.227,
+   "end": 16.367
+  },
+  {
+   "word": "membentang",
+   "start": 16.367,
+   "end": 16.827
+  },
+  {
+   "word": "dari",
+   "start": 16.827,
+   "end": 17.047
+  },
+  {
+   "word": "Cicalenga",
+   "start": 17.047,
+   "end": 17.607
+  },
+  {
+   "word": "di",
+   "start": 17.607,
+   "end": 17.807
+  },
+  {
+   "word": "timur",
+   "start": 17.807,
+   "end": 18.387
+  },
+  {
+   "word": "sampai",
+   "start": 18.387,
+   "end": 18.767
+  },
+  {
+   "word": "Rajah",
+   "start": 18.767,
+   "end": 19.127
+  },
+  {
+   "word": "Mandala",
+   "start": 19.127,
+   "end": 19.507
+  },
+  {
+   "word": "di",
+   "start": 19.507,
+   "end": 19.707
+  },
+  {
+   "word": "barat.",
+   "start": 19.707,
+   "end": 20.527
+  },
+  {
+   "word": "Panjangnya",
+   "start": 20.807,
+   "end": 21.307
+  },
+  {
+   "word": "sekitar",
+   "start": 21.307,
+   "end": 21.647
+  },
+  {
+   "word": "60",
+   "start": 21.647,
+   "end": 22.147
+  },
+  {
+   "word": "kilometer.",
+   "start": 22.147,
+   "end": 22.747
+  },
+  {
+   "word": "Lebarnya",
+   "start": 23.387,
+   "end": 23.767
+  },
+  {
+   "word": "40",
+   "start": 23.767,
+   "end": 24.267
+  },
+  {
+   "word": "kilometer.",
+   "start": 24.267,
+   "end": 24.867
+  },
+  {
+   "word": "Di",
+   "start": 25.767,
+   "end": 25.947
+  },
+  {
+   "word": "tepiannya",
+   "start": 25.947,
+   "end": 26.507
+  },
+  {
+   "word": "ditemukan",
+   "start": 26.507,
+   "end": 26.927
+  },
+  {
+   "word": "fosil",
+   "start": 26.927,
+   "end": 27.327
+  },
+  {
+   "word": "badak",
+   "start": 27.327,
+   "end": 27.707
+  },
+  {
+   "word": "dan",
+   "start": 27.707,
+   "end": 27.867
+  },
+  {
+   "word": "kudanil.",
+   "start": 27.867,
+   "end": 28.487
+  },
+  {
+   "word": "Bukti",
+   "start": 29.047,
+   "end": 29.327
+  },
+  {
+   "word": "bahwa",
+   "start": 29.327,
+   "end": 29.627
+  },
+  {
+   "word": "hewan",
+   "start": 29.627,
+   "end": 29.907
+  },
+  {
+   "word": "-hewan",
+   "start": 29.907,
+   "end": 30.127
+  },
+  {
+   "word": "besar",
+   "start": 30.127,
+   "end": 30.467
+  },
+  {
+   "word": "pernah",
+   "start": 30.467,
+   "end": 30.787
+  },
+  {
+   "word": "hidup",
+   "start": 30.787,
+   "end": 31.207
+  },
+  {
+   "word": "di",
+   "start": 31.207,
+   "end": 31.307
+  },
+  {
+   "word": "dataran",
+   "start": 31.307,
+   "end": 31.747
+  },
+  {
+   "word": "yang",
+   "start": 31.747,
+   "end": 31.887
+  },
+  {
+   "word": "sekarang",
+   "start": 31.887,
+   "end": 32.307
+  },
+  {
+   "word": "dipenuhi",
+   "start": 32.307,
+   "end": 32.807
+  },
+  {
+   "word": "jalan",
+   "start": 32.807,
+   "end": 33.147
+  },
+  {
+   "word": "dan",
+   "start": 33.147,
+   "end": 33.327
+  },
+  {
+   "word": "gedung.",
+   "start": 33.327,
+   "end": 34.287
+  },
+  {
+   "word": "Artinya,",
+   "start": 34.787,
+   "end": 35.427
+  },
+  {
+   "word": "nama",
+   "start": 35.847,
+   "end": 36.007
+  },
+  {
+   "word": "-nama",
+   "start": 36.007,
+   "end": 36.167
+  },
+  {
+   "word": "yang",
+   "start": 36.167,
+   "end": 36.287
+  },
+  {
+   "word": "kita",
+   "start": 36.287,
+   "end": 36.547
+  },
+  {
+   "word": "bahas",
+   "start": 36.547,
+   "end": 36.867
+  },
+  {
+   "word": "hari",
+   "start": 36.867,
+   "end": 37.067
+  },
+  {
+   "word": "ini",
+   "start": 37.067,
+   "end": 37.327
+  },
+  {
+   "word": "bukan",
+   "start": 37.327,
+   "end": 37.607
+  },
+  {
+   "word": "nama",
+   "start": 37.607,
+   "end": 37.967
+  },
+  {
+   "word": "untuk",
+   "start": 37.967,
+   "end": 38.207
+  },
+  {
+   "word": "sungai",
+   "start": 38.207,
+   "end": 38.447
+  },
+  {
+   "word": "kecil",
+   "start": 38.447,
+   "end": 38.807
+  },
+  {
+   "word": "di",
+   "start": 38.807,
+   "end": 38.947
+  },
+  {
+   "word": "pinggir",
+   "start": 38.947,
+   "end": 39.167
+  },
+  {
+   "word": "kota.",
+   "start": 39.167,
+   "end": 40.107
+  },
+  {
+   "word": "Nama",
+   "start": 40.407,
+   "end": 40.627
+  },
+  {
+   "word": "-nama",
+   "start": 40.627,
+   "end": 40.787
+  },
+  {
+   "word": "itu",
+   "start": 40.787,
+   "end": 41.007
+  },
+  {
+   "word": "lahir",
+   "start": 41.007,
+   "end": 41.407
+  },
+  {
+   "word": "di",
+   "start": 41.407,
+   "end": 41.547
+  },
+  {
+   "word": "tepi",
+   "start": 41.547,
+   "end": 41.747
+  },
+  {
+   "word": "sebuah",
+   "start": 41.747,
+   "end": 42.107
+  },
+  {
+   "word": "danau",
+   "start": 42.107,
+   "end": 42.387
+  },
+  {
+   "word": "yang",
+   "start": 42.387,
+   "end": 42.587
+  },
+  {
+   "word": "luasnya",
+   "start": 42.587,
+   "end": 43.007
+  },
+  {
+   "word": "melebihi",
+   "start": 43.007,
+   "end": 43.447
+  },
+  {
+   "word": "kota",
+   "start": 43.447,
+   "end": 43.847
+  },
+  {
+   "word": "Bandung",
+   "start": 43.847,
+   "end": 44.227
+  },
+  {
+   "word": "sekarang.",
+   "start": 44.227,
+   "end": 44.767
+  }
+ ]
+}

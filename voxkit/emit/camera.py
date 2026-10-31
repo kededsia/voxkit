@@ -39,6 +39,13 @@ class CamKey:
     y: float = 0.5
     zoom: float = 1.0
     ease: str = "slow"
+    #: Part of a hit — the four keys of an anticipate/overshoot/settle. A hit is
+    #: dense on purpose (2, 1, 3, 8 frames apart) and the "no two keys closer than
+    #: a jump-cut" rule is about *transitions*, not about a hit. Without this flag
+    #: the rule cannot tell the two apart, and the only way to satisfy it is to
+    #: delete the hit — which is what happened: every shot in the film carried one
+    #: ease, `slow`, and no camera hit at all.
+    hit: bool = False
 
     def as_value(self) -> tuple[float, float, float]:
         return (self.x, self.y, self.zoom)
@@ -117,6 +124,27 @@ def on(rect: Rect, zoom: float = 1.15, dx: float = 0.0, dy: float = 0.0,
     return (tether(rect.cx + dx), tether(rect.cy + dy), zoom)
 
 
+def keep_interval(keep: Sequence[Rect], margin: float = MARGIN):
+    """The frame positions that keep every one of these boxes whole at zoom 1.
+
+    Returns `(lo_x, hi_x, lo_y, hi_y)` or `None` when no single position can hold
+    them all — three pieces spread across the page, or one piece larger than the
+    frame, cannot be framed together no matter where the camera sits. Both the
+    camera and the gate ask this question, and they must get the same answer, so
+    it is asked in one place.
+    """
+    fit = [b for b in keep if b.w / 2 + margin <= 0.5 and b.h / 2 + margin <= 0.5]
+    if not fit:
+        return None
+    lo_x = max(b.cx - (0.5 - (b.w / 2 + margin)) for b in fit)
+    hi_x = min(b.cx + (0.5 - (b.w / 2 + margin)) for b in fit)
+    lo_y = max(b.cy - (0.5 - (b.h / 2 + margin)) for b in fit)
+    hi_y = min(b.cy + (0.5 - (b.h / 2 + margin)) for b in fit)
+    if lo_x > hi_x or lo_y > hi_y:
+        return None
+    return lo_x, hi_x, lo_y, hi_y
+
+
 def plate_cam(keys: Sequence[CamKey], margin: float = MARGIN,
               keep: Sequence[Rect] = ()) -> list[CamKey]:
     """Every key raised to the zoom floor, and every readable figure kept in frame.
@@ -124,22 +152,30 @@ def plate_cam(keys: Sequence[CamKey], margin: float = MARGIN,
     `keep` is the pieces whose ink a viewer reads as a number or a name. A camera
     that pans one of them past the edge leaves a partial figure on screen, and a
     wrong figure is worse than no camera move at all.
+
+    The frame is placed on the *group*, not on the last box in the list. The
+    previous loop adjusted the frame for one box at a time, so each box undid the
+    one before it and only the final box was ever kept: a shot with three pieces
+    carrying figures satisfied none of them. Here the interval that keeps every
+    box whole at zoom 1 is computed once and the frame is clamped into it, which
+    is the most any single camera position can do. A group that cannot be framed
+    together has no interval; the camera then keeps the one it is closest to.
     """
+    span = keep_interval(keep, margin)
+    fit = [b for b in keep if b.w / 2 + margin <= 0.5 and b.h / 2 + margin <= 0.5]
+
     out: list[CamKey] = []
     for k in keys:
         x, y, zoom = k.x, k.y, k.zoom
         zoom = max(zoom, zoom_floor(x, y, margin))
-        for box in keep:
-            hx = box.w / 2 + margin
-            hy = box.h / 2 + margin
-            need = max(abs(box.cx - x) + hx, abs(box.cy - y) + hy)
-            if 0.5 / zoom < need:
-                zoom = max(1.0, 0.5 / need)
-            half = 0.5 / zoom
-            if abs(box.cx - x) + hx > half:
-                x = box.cx + (1 if x >= box.cx else -1) * max(0.0, half - hx)
-            if abs(box.cy - y) + hy > half:
-                y = box.cy + (1 if y >= box.cy else -1) * max(0.0, half - hy)
+        if span is not None:
+            lo_x, hi_x, lo_y, hi_y = span
+            x = min(max(x, lo_x), hi_x)
+            y = min(max(y, lo_y), hi_y)
+            need = max(max(abs(b.cx - x) + b.w / 2 + margin,
+                           abs(b.cy - y) + b.h / 2 + margin) for b in fit)
+            if need > 0.5 / zoom:
+                zoom = max(1.0, min(zoom, 0.5 / need))
         out.append(replace(k, x=x, y=y, zoom=min(zoom, ZOOM_CAP)))
     return out
 
@@ -164,10 +200,10 @@ def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
     tail = [k for k in keys if k.at > at + rise + settle]
     return [
         *head,
-        CamKey(at - antic, *before, "slow"),
-        CamKey(at - 1, *pull, "linear"),
-        CamKey(at + rise, *over, "step"),
-        CamKey(at + rise + settle, *target, "slow"),
+        CamKey(at - antic, *before, "slow", hit=True),
+        CamKey(at - 1, *pull, "linear", hit=True),
+        CamKey(at + rise, *over, "step", hit=True),
+        CamKey(at + rise + settle, *target, "slow", hit=True),
         *tail,
     ]
 

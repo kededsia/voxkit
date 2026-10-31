@@ -46,7 +46,14 @@ def program_of(ctx: Context):
     def plate_for(sid: str) -> str:
         # The camera only ever zooms in (see `camera.zoom_floor`), so the plate is
         # exactly the page and there is no overscanned twin to keep in step.
-        return f"plates/{sid}.jpg"
+        #
+        # The path is module-relative because that is where `sync` puts it and
+        # how the renderer resolves it. Written as `plates/s01.jpg` it resolved to
+        # `/public/plates/s01.jpg`, 404'd, and `PaperStage` silently fell back to
+        # the shared cream sheet — a whole module rendered without its page, with
+        # every gate green, because the gate asked whether the file existed in
+        # `build/` and it did.
+        return f"{ctx.module}/plates/{sid}.jpg"
 
     return build_module(ctx.plan, layouts, narration, plate_for, fps=ctx.fps,
                         audio=f"audio/{ctx.module}.wav", prefix=f"{ctx.module}/")
@@ -110,7 +117,28 @@ def program(ctx: Context) -> list[Finding]:
                             "the shot ends while the frame is still travelling"))
 
         # 4. A figure the viewer reads as a number is never panned out of frame.
+        #
+        # Only when the frame could hold them. Three pieces spread across the
+        # page, or one piece larger than the frame, cannot be framed together at
+        # any zoom the camera is allowed to use — asking anyway produces findings
+        # that describe the picture wrongly ("the camera cuts a figure") and
+        # point the repair at the camera instead of at the composition. That case
+        # is a fact about the shot worth knowing, so it is a note.
+        span = cam.keep_interval(shot.keep, cam.MARGIN) if shot.keep else None
+        oversized = [b for b in shot.keep
+                     if b.w / 2 + cam.MARGIN > 0.5 or b.h / 2 + cam.MARGIN > 0.5]
+        for box in oversized:
+            out.append(note("program", sid,
+                            f"a piece read as a number is {box.w:.2f}×{box.h:.2f} of the stage — "
+                            "larger than the frame, so the edge trims it at every zoom. "
+                            "No camera position can keep it whole."))
+        if shot.keep and span is None and not oversized:
+            out.append(note("program", sid,
+                            f"{len(shot.keep)} piece(s) read as numbers cannot all be framed "
+                            "at zoom ≥ 1 — no camera position holds them together"))
         for box in shot.keep:
+            if span is None or box in oversized:
+                continue
             for k in shot.camera:
                 half = 0.5 / k.zoom
                 if (abs(box.cx - k.x) + box.w / 2 > half + 1e-6

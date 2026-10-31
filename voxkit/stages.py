@@ -334,7 +334,12 @@ def _wire_poses(project: Project, plan: Plan, jobs) -> int:
         _say(f"  {sid}/{name}/{pose}: {aligned.width}x{aligned.height} — {note}")
         by_card.setdefault((sid, name), []).append({
             "atFrame": at,
-            "src": str(out_path.relative_to(project.root)).replace("\\", "/"),
+            # The renderer reads `public/<module>/…`, so the path a pose carries
+            # must be module-relative — the same shape as a card's `src`. A
+            # project-relative `build/…` path resolves to `/public/build/…` in
+            # the browser and 404s mid-render, after the gate said the file was
+            # there.
+            "src": f"{plan.module}/cards/{sid}/{name}_{pose}.png",
         })
 
     for (sid, name), frames in by_card.items():
@@ -479,21 +484,38 @@ def emit(project: Project, module: str) -> int:
 
 
 def _indexes(project: Project) -> int:
+    """Register every module that has a shot file, and name the ones that do not.
+
+    The map is derived, not typed, because a hand-maintained `BUILT` table let a
+    finished module render as a placeholder without a word. But a film is built
+    one module at a time, and an index that imports a file which does not exist
+    yet does not compile — so the list is "plans with an emitted program". The
+    difference is printed, so a module that is simply not finished cannot be
+    mistaken for one that is.
+    """
     from .emit import tsx
-    mods = []
+    remotion = project.p("remotion")
+    mods, unbuilt = [], []
     for mod in project.modules():
         try:
             plan = Plan.load(project.plan(mod), _aspect(project))
         except Exception:
             continue
-        if plan.shots:
+        if not plan.shots:
+            continue
+        if (remotion / "src" / "shots" / f"{mod.upper()}.tsx").is_file():
             mods.append((mod, plan.duration))
+        else:
+            unbuilt.append(mod)
     if not mods:
         return 0
-    files = tsx.write_indexes(mods, project.p("remotion"), fps=project.fps,
+    files = tsx.write_indexes(mods, remotion, fps=project.fps,
                               width=project.width, height=project.height,
                               background=project.style.paper)
     _say(f"indexes: {', '.join(f.name for f in files)} ({len(mods)} module(s))")
+    if unbuilt:
+        _say(f"indexes: {len(unbuilt)} planned module(s) have no program yet and are "
+             f"not in the film: {', '.join(unbuilt)}")
     return 0
 
 

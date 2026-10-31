@@ -1,0 +1,888 @@
+{
+ "plan_version": 2,
+ "module": "m21",
+ "klaim": "Teori cahaya itu muncul justru ketika pohon-pohonnya mulai hilang. Ketika Cikapundung tidak lagi punya kapundung, penjelasan air terasa terlalu biasa untuk nama yang terasa begitu tua. Teori itu salah secara bahasa, tapi ia benar tentang satu hal: orang masih merasa nama itu menyimpan sesuatu, dan perasaan itu tidak salah - yang salah hanya arahnya. Karena yang disimpan nama itu bukan cahaya, melainkan air yang sudah tidak ada. Sungai terpanjang di Jawa Barat bernama Citarum; tarum adalah tanaman pewarna nila yang dulu tumbuh di tepinya.",
+ "payoff": "Yang disimpan nama itu bukan cahaya - air yang sudah tidak ada.",
+ "serah": "Citarum dan tarum, untuk penutup di m22",
+ "terima": "teori cahaya dan tiga sanggahannya, dari m20",
+ "konteks_modul": {
+  "konteks_budaya": "Kenangan jalan dan arsip kota: foto lama tepi sungai, papan nama, kotak simpanan, tanaman nila, koran. Lanskap: kota tanpa pohon, sungai berbeton, pasar, tepi sungai besar. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Teori cahaya lahir ketika pohon-pohon yang memberi nama itu hilang. Ia salah secara bahasa tetapi benar tentang perasaan: nama itu memang menyimpan sesuatu. Yang disimpan bukan cahaya, melainkan air yang sudah tidak ada.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 25 - Mengapa teori itu muncul",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Teori muncul justru ketika pohonnya hilang; penjelasan air terasa terlalu biasa."
+   },
+   {
+    "babak": "Babak 26 - Salah dan benar",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "Salah secara bahasa, benar tentang perasaan; yang disimpan adalah air yang sudah tidak ada."
+   },
+   {
+    "babak": "Babak 27 - Citarum",
+    "shots": [
+     "s06"
+    ],
+    "fokus": "Sungai terpanjang di Jawa Barat dinamai tanaman pewarna nila yang dulu tumbuh di tepinya."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    201
+   ],
+   "babak": "Babak 25 - Mengapa teori itu muncul",
+   "peran_retoris": "Pembalikan - lihat apa yang dilakukan teori ini: ia muncul justru ketika pohonnya hilang",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed timing page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The city high left, the street low left, 'teori ini' high right, the vanished tree low centre, the onlooker low right, 'mulai hilang' across the middle, and 'Serius?' at the bottom.",
+   "kamera": "Hold the street, then let the tree go missing under it; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_kota_sekarang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kota hari ini - tempat pohonnya sudah tidak ada",
+     "semantik": "LIHAT APA YANG DILAKUKAN",
+     "what": "a sepia halftone photograph of a city street of shophouses with almost no trees",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Tapi",
+     "z": 1,
+     "lands": 11
+    },
+    {
+     "name": "foto_jalan_tanpa_pohon",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan tanpa tajuk - kekosongan yang jadi latar teori itu",
+     "semantik": "TEORI INI",
+     "what": "a sepia halftone photograph of a wide asphalt road with bare pavements on both sides",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "yang",
+     "z": 2,
+     "lands": 36
+    },
+    {
+     "name": "kartu_teori_ini",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang sedang dibicarakan bukan pohonnya, tapi teorinya",
+     "semantik": "TEORI INI",
+     "what": "a torn cream slip with big stencilled type reading 'TEORI INI'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "ini.",
+     "z": 5,
+     "lands": 61
+    },
+    {
+     "name": "foto_tunggak",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tunggak - pohon yang hilang, dan hanya sisa itu yang tersisa",
+     "semantik": "POHON ITU MULAI HILANG",
+     "what": "a sepia halftone photograph of a cut tree stump in a bare patch of ground",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "pohon",
+     "z": 3,
+     "lands": 126
+    },
+    {
+     "name": "figur_penonton",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang memperhatikan - yang mulai mencari penjelasan lain",
+     "semantik": "MUNCUL",
+     "what": "a sepia halftone photograph of a man standing on a pavement looking down at a stump, seen from the side",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "ketika",
+     "z": 4,
+     "lands": 116,
+     "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = berdiri, tangan di saku.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "crouch slightly and look at the cut surface"
+      },
+      {
+       "pose": 3,
+       "action": "straighten up and look along the empty pavement"
+      },
+      {
+       "pose": 4,
+       "action": "turn his head back to the stump"
+      }
+     ]
+    },
+    {
+     "name": "kartu_mulai_hilang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Waktu kejadiannya - bersamaan dengan hilangnya pohon",
+     "semantik": "MULAI HILANG",
+     "what": "a torn cream slip with big stencilled type reading 'MULAI HILANG'",
+     "at": "centre of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.80",
+     "cut": true,
+     "word": "hilang.",
+     "z": 6,
+     "lands": 154
+    },
+    {
+     "name": "kartu_serius",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penegasan - hubungan sebab akibat itu bukan kebetulan",
+     "semantik": "SERIUS?",
+     "what": "a torn cream slip with huge stencilled type reading 'SERIUS?'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.94",
+     "cut": true,
+     "word": "Serius?",
+     "z": 7,
+     "lands": 190
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     15,
+     3.0,
+     "kartu_teori_ini",
+     {
+      "at": 61,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     17,
+     -2.4,
+     "figur_penonton",
+     {
+      "at": 116,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'ini.'; box on the figure on 'ketika'.",
+   "emphasis": [
+    {
+     "frame": 81.8,
+     "word": "Ia",
+     "motion": "hold",
+     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 153.8,
+     "word": "hilang.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    201,
+    416
+   ],
+   "babak": "Babak 25 - Mengapa teori itu muncul",
+   "peran_retoris": "Sebabnya - ketika Cikapundung tak lagi punya kapundung, penjelasan air terasa terlalu biasa",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed reason page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Ci kapundung' high left, 'tidak lagi punya kapundung' below it, the concrete channel centre, 'terlalu biasa' high right, the onlooker low right, the nameplate low centre, and 'nama yang terasa begitu tua' along the bottom.",
+   "kamera": "Take the tree out of the name, then watch what the sentence does; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_ci_kapundung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama yang memuat pohonnya - dan pohonnya sudah tidak ada",
+     "semantik": "CI KAPUNDUNG",
+     "what": "a torn cream slip with big stencilled type reading 'CI KAPUNDUNG'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "ci",
+     "z": 4,
+     "lands": 22
+    },
+    {
+     "name": "kartu_tanpa_kapundung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kehilangan yang dilekatkan pada nama, bukan pada lanskap",
+     "semantik": "TIDAK LAGI PUNYA KAPUNDUNG",
+     "what": "a torn cream slip with stencilled type reading 'TIDAK LAGI PUNYA KAPUNDUNG'",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.32 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "kapundung,",
+     "z": 5,
+     "lands": 60
+    },
+    {
+     "name": "foto_sungai_kota",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai berbeton - nama masih menyebut pohon, tempatnya sudah menyebut drainase",
+     "semantik": "PENJELASAN AIR",
+     "what": "a sepia halftone photograph of a river running inside a concrete channel in a town",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "orang",
+     "z": 1,
+     "lands": 90
+    },
+    {
+     "name": "figur_pengamat",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mulai mencari arti lain - karena arti yang ada terasa kurang",
+     "semantik": "MULAI MERASA",
+     "what": "a sepia halftone photograph of a woman standing at a channel railing and looking down, seen from behind",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "merasa",
+     "z": 2,
+     "lands": 102
+    },
+    {
+     "name": "kartu_terlalu_biasa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Alasan teori itu lahir - jawaban yang benar terasa terlalu sederhana",
+     "semantik": "PENJELASAN AIR TERLALU BIASA",
+     "what": "a torn cream slip with stencilled type reading 'PENJELASAN AIR TERLALU BIASA'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.34 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "air",
+     "z": 6,
+     "lands": 137
+    },
+    {
+     "name": "foto_papan_nama",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan nama - nama yang terasa tua justru karena pohonnya sudah tidak ada",
+     "semantik": "NAMA YANG TERASA TUA",
+     "what": "a sepia halftone photograph of an old street nameplate bolted to a wall",
+     "at": "lower centre of the frame, centred at 0.46 across, about 0.26 of the frame wide, down at 0.76",
+     "cut": true,
+     "word": "nama",
+     "z": 3,
+     "lands": 175
+    },
+    {
+     "name": "kartu_nama_tua",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perasaan yang mendorong teori itu - nama yang terasa lebih tua daripada penjelasannya",
+     "semantik": "TERASA BEGITU TUA",
+     "what": "a torn cream slip with big stencilled type reading 'TERASA BEGITU TUA'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "tua.",
+     "z": 7,
+     "lands": 205
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     11,
+     3.6,
+     "kartu_ci_kapundung",
+     {
+      "at": 22,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     16,
+     -2.9,
+     "figur_pengamat",
+     {
+      "at": 113,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'ci'; circle on the figure on 'merasa'.",
+   "emphasis": [
+    {
+     "frame": 406.4,
+     "word": "tua.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    416,
+    563
+   ],
+   "babak": "Babak 26 - Salah dan benar",
+   "peran_retoris": "Putusan - teori cahaya salah secara bahasa, tapi benar tentang satu hal",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed verdict page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Teori cahaya' high left, the manuscript high right, 'salah secara bahasa' low left, the screen low centre, and 'benar tentang satu hal' along the bottom.",
+   "kamera": "Say what is wrong, then leave one thing standing; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_teori_cahaya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama teori yang baru saja dibongkar",
+     "semantik": "TEORI CAHAYA",
+     "what": "a torn cream slip with big stencilled type reading 'TEORI CAHAYA'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Teori",
+     "z": 3,
+     "lands": 25
+    },
+    {
+     "name": "figur_pembaca",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang memeriksa - yang bisa memutuskan salah atau benar",
+     "semantik": "SALAH",
+     "what": "a sepia halftone photograph of a man sitting with a book open and one finger on the page, seen from the side",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.26 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "cahaya",
+     "z": 1,
+     "lands": 31
+    },
+    {
+     "name": "kartu_salah_bahasa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sanggahan yang bertahan - salahnya di bahasa, bukan di perasaan",
+     "semantik": "SALAH SECARA BAHASA",
+     "what": "a torn cream slip with stencilled type reading 'SALAH SECARA BAHASA'",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.30 of the frame wide, down at 0.68",
+     "cut": true,
+     "word": "bahasa.",
+     "z": 4,
+     "lands": 65
+    },
+    {
+     "name": "foto_layar_buku",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman kamus - tempat kata diperiksa, bukan dirasakan",
+     "semantik": "TAPI IYA BENAR",
+     "what": "a sepia halftone photograph of an open dictionary page with a thumb holding it flat",
+     "at": "centre of the frame, centred at 0.48 across, about 0.26 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "Tapi",
+     "z": 2,
+     "lands": 95
+    },
+    {
+     "name": "kartu_benar_satu_hal",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Satu hal yang bertahan dari teori yang salah - dan itu bukan bagian bahasanya",
+     "semantik": "BENAR TENTANG SATU HAL",
+     "what": "a torn cream slip with big stencilled type reading 'BENAR TENTANG SATU HAL'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "hal.",
+     "z": 5,
+     "lands": 131
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     2.4,
+     "kartu_teori_cahaya",
+     {
+      "at": 25,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     13,
+     -1.9,
+     "figur_pembaca",
+     {
+      "at": 41,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'teori'; ellipse on the figure on 'cahaya'.",
+   "emphasis": [
+    {
+     "frame": 441.2,
+     "word": "Teori",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 547.4,
+     "word": "hal.",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    563,
+    771
+   ],
+   "babak": "Babak 26 - Salah dan benar",
+   "peran_retoris": "Perasaan yang tidak salah - orang masih merasa nama itu menyimpan sesuatu",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed feeling page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Nama itu menyimpan sesuatu' high left, the box low left, the keeper centre, the hand low right, 'perasaan itu tidak salah' high right, and 'yang salah hanya arahnya' along the bottom.",
+   "kamera": "Open the box slowly, then correct only the direction; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_menyimpan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perasaan yang dipertahankan modul ini - nama menyimpan sesuatu",
+     "semantik": "NAMA ITU MENYIMPAN SESUATU",
+     "what": "a torn cream slip with stencilled type reading 'NAMA ITU MENYIMPAN SESUATU'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.34 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Orang",
+     "z": 4,
+     "lands": 16
+    },
+    {
+     "name": "foto_kotak_lama",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kotak simpanan - benda yang memang dipakai untuk menyimpan",
+     "semantik": "MENYIMPAN",
+     "what": "a sepia halftone photograph of a small wooden box with a hinged lid, closed",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "nama",
+     "z": 1,
+     "lands": 44
+    },
+    {
+     "name": "figur_penyimpan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang membuka kotak - yang mencari isi nama itu",
+     "semantik": "SESUATU",
+     "what": "a sepia halftone photograph of an old woman lifting the lid of a wooden box, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.26 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "sesuatu.",
+     "z": 2,
+     "lands": 76,
+     "motion_basis": "Kedua tangan dan kepala, selebar 0.26 frame; badan tetap duduk. pose1 = duduk, tangan di tutup kotak.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "lift the lid of the box open"
+      },
+      {
+       "pose": 3,
+       "action": "lean forward and look inside"
+      },
+      {
+       "pose": 4,
+       "action": "let the lid fall back and sit up"
+      }
+     ]
+    },
+    {
+     "name": "foto_tangan_isi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Isi kotak - yang disimpan ternyata benda biasa, bukan cahaya",
+     "semantik": "PERASAAN ITU",
+     "what": "a sepia halftone photograph of two hands lifting a folded cloth out of a box",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "Dan",
+     "z": 3,
+     "lands": 114
+    },
+    {
+     "name": "kartu_perasaan_benar",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang tidak dibantah modul ini - perasaannya benar",
+     "semantik": "PERASAAN ITU TIDAK SALAH",
+     "what": "a torn cream slip with big stencilled type reading 'PERASAAN ITU TIDAK SALAH'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.32 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "tidak",
+     "z": 5,
+     "lands": 134
+    },
+    {
+     "name": "kartu_arahnya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Koreksi yang sebenarnya - bukan perasaannya, hanya arah tafsirnya",
+     "semantik": "YANG SALAH HANYA ARAHNYA",
+     "what": "a torn cream slip with stencilled type reading 'YANG SALAH HANYA ARAHNYA'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "arahnya.",
+     "z": 6,
+     "lands": 184
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_menyimpan",
+     {
+      "at": 16,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "figur_penyimpan",
+     {
+      "at": 76,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'orang'; box on the figure on 'sesuatu.'.",
+   "emphasis": [
+    {
+     "frame": 639.2,
+     "word": "sesuatu.",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 746.6,
+     "word": "arahnya.",
+     "motion": "hold",
+     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    771,
+    976
+   ],
+   "babak": "Babak 26 - Salah dan benar",
+   "peran_retoris": "Isi sebenarnya - yang disimpan bukan cahaya, melainkan air yang sudah tidak ada",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed answer page on aged newsprint: a crimson block across the upper left, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Bukan cahaya' high left, the sunlight low left, the contemplator centre, the water low right, 'air yang sudah tidak ada' high right, and 'Serius?' at the bottom.",
+   "kamera": "Take the light away, then put the water back in its place; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukan_cahaya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sanggahan terakhir - yang disimpan bukan cahaya",
+     "semantik": "YANG DISIMPAN BUKAN CAHAYA",
+     "what": "a torn cream slip with stencilled type reading 'YANG DISIMPAN BUKAN CAHAYA'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.34 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Karena",
+     "z": 4,
+     "lands": 17
+    },
+    {
+     "name": "foto_cahaya",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Cahaya yang dibuang dari jawaban - indah, tapi bukan isinya",
+     "semantik": "CAHAYA",
+     "what": "a sepia halftone photograph of hard light falling through a gap onto a stone floor",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "cahaya.",
+     "z": 1,
+     "lands": 62
+    },
+    {
+     "name": "figur_perenung",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang menimbang - antara jawaban yang indah dan jawaban yang benar",
+     "semantik": "YANG DISIMPAN",
+     "what": "a sepia halftone photograph of a man sitting on a step with his elbows on his knees, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "Yang",
+     "z": 2,
+     "lands": 95,
+     "motion_basis": "Kepala dan kedua tangan, selebar 0.24 frame; duduk tetap. pose1 = duduk, dagu di tangan.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "lift his head and look straight ahead"
+      },
+      {
+       "pose": 3,
+       "action": "drop his hands to his knees"
+      },
+      {
+       "pose": 4,
+       "action": "turn his head slowly to one side"
+      }
+     ]
+    },
+    {
+     "name": "foto_air_hilang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air yang sudah tidak ada - isi sebenarnya dari nama itu",
+     "semantik": "AIR YANG SUDAH TIDAK ADA",
+     "what": "a sepia halftone photograph of a dry river bed of cracked mud and stones",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "air",
+     "z": 3,
+     "lands": 132
+    },
+    {
+     "name": "kartu_air_hilang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jawaban modul - nama itu menyimpan air, dan airnya sudah pergi",
+     "semantik": "AIR YANG SUDAH TIDAK ADA",
+     "what": "a torn cream slip with big stencilled type reading 'AIR YANG SUDAH TIDAK ADA'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.34 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "ada.",
+     "z": 5,
+     "lands": 165
+    },
+    {
+     "name": "kartu_serius_dua",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penegasan penutup bagian - jawaban ini sederhana dan itu yang membuatnya kuat",
+     "semantik": "SERIUS?",
+     "what": "a torn cream slip with huge stencilled type reading 'SERIUS?'",
+     "at": "bottom of the frame, centred at 0.48 across, about 0.26 of the frame wide, down at 0.94",
+     "cut": true,
+     "word": "Serius?",
+     "z": 6,
+     "lands": 192
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_bukan_cahaya",
+     {
+      "at": 17,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "figur_perenung",
+     {
+      "at": 95,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'karena'; circle on the figure on 'yang'.",
+   "emphasis": [
+    {
+     "frame": 833.0,
+     "word": "cahaya.",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 963.2,
+     "word": "Serius?",
+     "motion": "snap"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "range": [
+    976,
+    1179
+   ],
+   "babak": "Babak 27 - Citarum",
+   "peran_retoris": "Bukti terakhir - Citarum, dan tarum tanaman pewarna nila yang dulu tumbuh di tepinya",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed indigo page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The river high left, the nameplate low left, the indigo plant centre, the dyer low centre, 'tarum = pewarna nila' high right, and 'dulu tumbuh di tepinya' along the bottom.",
+   "kamera": "Follow the longest river in the province, then the plant that named it; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "strip_koran_citarum",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama sungai terpanjang - dicetak, bukan diucapkan",
+     "semantik": "CITARUM",
+     "what": "a torn newsprint strip with the name CITARUM set in headline type",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Citarum.",
+     "z": 4,
+     "lands": 62
+    },
+    {
+     "name": "foto_sungai_besar",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai terpanjang di Jawa Barat - benda yang namanya sedang dibongkar",
+     "semantik": "SUNGAI TERPANJANG",
+     "what": "a sepia halftone photograph of a wide slow river seen from a high bank",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "Sungai",
+     "z": 1,
+     "lands": 16
+    },
+    {
+     "name": "foto_tanaman_nila",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tanaman nila - pohon yang memberi nama sungai itu",
+     "semantik": "TARUM",
+     "what": "a sepia halftone photograph of a leafy indigo shrub growing along a river bank",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "Tarum",
+     "z": 2,
+     "lands": 96
+    },
+    {
+     "name": "kartu_tarum_nila",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Artinya - tanaman yang dulu dipakai mewarnai kain",
+     "semantik": "TARUM = PEWARNA NILA",
+     "what": "a torn cream slip with big stencilled type reading 'TARUM = PEWARNA NILA'",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.78",
+     "cut": true,
+     "word": "pewarna",
+     "z": 5,
+     "lands": 131
+    },
+    {
+     "name": "figur_pewarna",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mencelup kain - pekerjaan yang membuat tanaman itu ditanam di tepi sungai",
+     "semantik": "NILA",
+     "what": "a sepia halftone photograph of a man lifting dark blue cloth out of a dye bath, seen from the side",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "nila",
+     "z": 3,
+     "lands": 146
+    },
+    {
+     "name": "kartu_tepi_sungai",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tempat tumbuhnya - tepi sungai, bukan kebun",
+     "semantik": "DULU TUMBUH DI TEPINYA",
+     "what": "a torn cream slip with stencilled type reading 'DULU TUMBUH DI TEPINYA'",
+     "at": "bottom of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "tepinya.",
+     "z": 6,
+     "lands": 182
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     15,
+     2.4,
+     "kartu_tarum_nila",
+     {
+      "at": 125,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     16,
+     -1.9,
+     "figur_pewarna",
+     {
+      "at": 151,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'pewarna'; ellipse on the figure on 'nila'.",
+   "emphasis": [
+    {
+     "frame": 1071.8,
+     "word": "Tarum",
+     "motion": "snap"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

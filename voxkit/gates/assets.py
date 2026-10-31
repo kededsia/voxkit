@@ -154,10 +154,16 @@ def pose(ctx: Context) -> list[Finding]:
                                 f"swaps {b_at - a_at} frames apart (f{a_at} → f{b_at}); "
                                 f"under {MIN_SWAP_GAP} the puppet vibrates"))
         for at, src in frames:
-            path = ctx.project.root / src if not Path(src).is_absolute() else Path(src)
-            if not path.is_file():
-                alt = ctx.project.card_dir(ctx.module, shot.id) / Path(src).name
-                path = alt if alt.is_file() else path
+            # A pose path is module-relative (`m04/cards/s01/x_pose2.png`) because
+            # that is how the renderer reads it. Older layouts wrote it relative
+            # to the project (`build/m04/...`), so both are accepted here and the
+            # file beside the card is the last resort.
+            path = ctx.project.root / src
+            for candidate in (ctx.project.mod_build(ctx.module) / src,
+                              ctx.project.card_dir(ctx.module, shot.id) / Path(src).name):
+                if path.is_file():
+                    break
+                path = candidate if candidate.is_file() else path
             if not path.is_file():
                 out.append(fail("pose", f"{shot.id}/{card.name}",
                                 f"pose at f{at} points at {src}, which does not exist"))

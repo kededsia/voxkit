@@ -154,11 +154,19 @@ def build_card(card: Card, slot, shot: Shot, index: int, shot_index: int,
     settle = card.lands
     accent = narration.score(shot.start + settle, card.word)
     travel = min(travel_for(accent), max(2, settle))
+    enter = max(0, settle - travel)
+    if enter + travel != settle:
+        # A card whose word is the shot's first frame has no room to travel in:
+        # the earliest it can arrive is `travel` frames after the cut. Saying it
+        # lands at f0 would be a claim the renderer cannot perform, and the
+        # program gate is right to refuse that. The program says what will
+        # actually happen — the card arrives on the first frame that has room.
+        settle = enter + travel
     sides = ("left", "top", "right", "bottom")
     return CardMotion(
         name=card.name,
         src=f"{prefix}cards/{shot.id}/{card.name}.png",
-        enter=max(0, settle - travel),
+        enter=enter,
         settle=settle,
         travel=travel,
         from_side=sides[(shot_index + index) % 4],
@@ -183,13 +191,9 @@ def build_camera(shot: Shot, motions: Sequence[CardMotion], narration: Narration
         return [cam.CamKey(0, 0.5, 0.5, 1.04), cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03)]
 
     first = motions[0]
-    keys = cam.punch(
-        [cam.CamKey(0, 0.48, 0.48, 1.04)],
-        max(8, min(shot.span - 30, first.settle)),
-        cam.on(first.rect, 1.16),
-        **cam.EMPHASIS,
-    )
+    at = max(8, min(shot.span - 30, first.settle))
 
+    keys = [cam.CamKey(0, 0.48, 0.48, 1.04)]
     prev_settle, prev_zoom = first.settle, 1.16
     for m in motions[1:]:
         if not (prev_settle + cam.LEAD <= m.settle <= shot.span - 14):
@@ -204,8 +208,17 @@ def build_camera(shot: Shot, motions: Sequence[CardMotion], narration: Narration
         prev_settle, prev_zoom = m.settle, zoom
 
     keys.append(cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03, "slow"))
+
+    # Dedupe the transition keys *before* the punch goes in. A punch is a
+    # deliberately dense group — anticipate two frames back, pull one frame
+    # before, overshoot three after, settle eight after that — and a gap filter
+    # run over the finished list keeps only the last of those four. Every shot
+    # in the film then had exactly one ease, "slow", and the hit that the whole
+    # camera language is built on was silently dropped. The filter exists to
+    # stop two *transitions* from reading as a jump-cut; a hit is not a jump-cut.
     keys = cam.keys_at_least(sorted(keys, key=lambda k: k.at), gap=8)
-    return keys
+    keys = cam.punch(keys, at, cam.on(first.rect, 1.16), **cam.EMPHASIS)
+    return sorted(keys, key=lambda k: k.at)
 
 
 def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,

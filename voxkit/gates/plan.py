@@ -336,19 +336,43 @@ def compose(ctx: Context) -> list[Finding]:
     board that used to answer this omitted the stage ratio, so every card was
     drawn 44 % too short and a pair 63 % buried was reported as 34 % — under its
     own warning threshold.
+
+    A piece sits where it was *measured*, not where the plan's prose asked for
+    it: the still is drawn from that prose and then the piece is cut out of the
+    still, so the model's own placement wins and the prose is only an
+    instruction. Reading the prose here measured a pair as 91 % buried when the
+    measured slots overlapped by 8 % — a finding about the plan's sentence, not
+    about the picture. Where no layout exists yet the prose is all there is, so
+    that is what is used, and it is used knowingly.
     """
     from ..geometry import Placed, buried
+    from ..layout import Layout
 
     out: list[Finding] = []
     for shot in ctx.plan.shots:
+        layout_path = ctx.project.card_dir(ctx.module, shot.id) / "layout.json"
+        layout = Layout.load(layout_path) if layout_path.is_file() else Layout()
+
+        boxes = {}
         for card in shot.cards:
-            off = card.rect.outside()
+            slot = layout.get(card.name)
+            boxes[card.name] = slot.rect if slot else card.rect
+            off = boxes[card.name].outside()
             if off and not (card.cut or card.bahan == "seal"):
                 out.append(fail("compose", f"{shot.id}/{card.name}",
-                                f"runs off the page ({', '.join(off)} edge; {card.rect}) "
+                                f"runs off the page ({', '.join(off)} edge; {boxes[card.name]}) "
                                 "and is not marked `cut`"))
-        placed = [Placed(c.name, c.rect, c.z, {"card": c}) for c in shot.cards]
+        placed = [Placed(c.name, boxes[c.name], c.z, {"card": c}) for c in shot.cards]
         for below, above, frac in buried(placed, floor=0.30):
+            card = below.data.get("card")
+            if card is not None and card.tertutup_boleh:
+                # The plan already answered this one, with a reason the schema
+                # gate refused to accept silence for. Two gates reading one fact
+                # and giving two answers is how a review stops being trusted.
+                out.append(note("compose", f"{shot.id}/{below.name}",
+                                f"'{above.name}' covers {frac:.0%} of it — declared: "
+                                f"{card.tertutup_alasan}"))
+                continue
             level = fail if frac > 0.55 else warn
             out.append(level("compose", f"{shot.id}/{below.name}",
                              f"'{above.name}' (z{above.z}) covers {frac:.0%} of it (z{below.z}) "

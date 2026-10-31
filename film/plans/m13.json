@@ -1,0 +1,851 @@
+{
+ "plan_version": 2,
+ "module": "m13",
+ "klaim": "Naskah Bujangga Manik ditulis sebagai puisi 1.641 baris - bentuk yang paling sulit dilupakan - dan di dalamnya tercatat lebih dari 450 nama tempat, gunung dan sungai, sebagian besar masih bisa dikenali, tanpa satu pun kata serapan Arab. Perjalanannya dimulai di sungai depan istananya sendiri: Cipakan Cilan. Naskahnya sekarang di perpustakaan Bodleian, Oxford, sejak 1627.",
+ "payoff": "Nama-nama itu tidak disimpan di batu: mereka dihitung dalam irama, 1.641 baris, dan naskahnya masih ada di Oxford sampai hari ini.",
+ "serah": "naskah sebagai puisi dan rute perjalanannya, untuk m14 yang menyusuri nama-nama di dalamnya",
+ "terima": "Bujangga Manik dan Prabu Jaya Pakuan dari m12",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip filologi dan perpustakaan: daun nipah bertulisan, halaman puisi bergaris, peta rute, rak buku kulit, foto perpustakaan Bodleian. Lanskap: sungai di depan istana, jalan hutan, gunung, rak perpustakaan. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Naskah itu puisi 1.641 baris, dan irama adalah cara mencatat yang paling sulit dilupakan. Sebelum berangkat, pangeran menyeberangi sungai di depan istana - Cipakan Cilan - dan sungai pertama yang ia sebut adalah sungai di depan rumahnya sendiri. Di dalam perjalanan itu ia mencatat lebih dari 450 nama tempat, gunung dan sungai; sebagian besar masih dikenali, dan tidak ada satu pun kata serapan Arab. Naskahnya tersimpan di Bodleian, Oxford, sejak 1627.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 9 - Naskah",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Puisi, 1.641 baris, dan irama sebagai cara mengingat."
+   },
+   {
+    "babak": "Babak 10 - Perjalanan",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "Cipakan Cilan, sungai depan rumahnya, dan 450 nama di sepanjang jalan."
+   },
+   {
+    "babak": "Babak 10 - Perjalanan",
+    "shots": [
+     "s06",
+     "s07"
+    ],
+    "fokus": "Nama-nama yang masih dikenali, tanpa kata Arab; naskahnya di Bodleian sejak 1627."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    148
+   ],
+   "babak": "Babak 9 - Naskah",
+   "peran_retoris": "Bentuk - naskah itu ditulis sebagai puisi, bukan sebagai catatan",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed verse page on aged newsprint: a mustard block across the upper left, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A page that is a poem: the loose leaves high left, the 'puisi' slip low left, the metrical slip high right, the reader low right, and the counted line along the bottom.",
+   "kamera": "Open on the leaves, follow the reading eye, then settle on the last line; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_daun_lepas",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lembar yang dibuka satu per satu - puisi yang harus dibaca berurutan",
+     "semantik": "NASKAH ITU",
+     "what": "a sepia halftone photograph of loose palm leaves laid out in a row on cloth",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Tenang,",
+     "z": 1,
+     "lands": 12
+    },
+    {
+     "name": "kartu_puisi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bentuknya disebut namanya - puisi, bukan kronik",
+     "semantik": "PUISI",
+     "what": "a torn cream slip with big stencilled type reading 'PUISI'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "puisi.",
+     "z": 3,
+     "lands": 71
+    },
+    {
+     "name": "kartu_suku_kata",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Aturan baitnya - jumlah suku kata per baris yang membuatnya bisa dihafal",
+     "semantik": "SUKU KATA PER BARIS",
+     "what": "a torn cream slip with letterpress type reading 'SUKU KATA PER BARIS'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kata",
+     "z": 4,
+     "lands": 118
+    },
+    {
+     "name": "pembaca_puisi",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca dengan suara - irama hanya hidup kalau diucapkan",
+     "semantik": "PER BARIS",
+     "what": "a sepia halftone photograph of a man sitting and reading aloud from a palm leaf, seen from the side",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "baris,",
+     "z": 2,
+     "lands": 130
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     15,
+     3.0,
+     "kartu_puisi",
+     {
+      "at": 71,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     17,
+     -2.4,
+     "pembaca_puisi",
+     {
+      "at": 130,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'puisi.'; box on the figure on 'baris,'.",
+   "emphasis": [
+    {
+     "frame": 12.2,
+     "word": "Tenang,",
+     "motion": "snap"
+    },
+    {
+     "frame": 129.8,
+     "word": "baris,",
+     "motion": "landing",
+     "why": "skor 0.55 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.5"
+  },
+  {
+   "id": "s02",
+   "range": [
+    148,
+    394
+   ],
+   "babak": "Babak 9 - Naskah",
+   "peran_retoris": "Skala - 1.641 baris, dan irama sebagai bentuk yang paling sulit dilupakan",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed count page on aged newsprint: a crimson block behind the count, a mustard strip across the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Counting the lines: the long page high left, the 1.641 slip low left, the scribe counting low centre, the forgetting photograph high right, and the 'irama' slip low right.",
+   "kamera": "Count along the lines, then pull back to the number; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_halaman_panjang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman yang barisnya rapat - jumlah yang harus dihitung, bukan dikira",
+     "semantik": "1.641 BARIS",
+     "what": "a sepia halftone photograph of a densely written palm-leaf page filling the frame",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "1641",
+     "z": 1,
+     "lands": 49
+    },
+    {
+     "name": "kartu_1641",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Angka barisnya - satu-satunya ukuran panjang naskah ini",
+     "semantik": "1.641 BARIS",
+     "what": "a torn cream slip with big stencilled type reading '1.641' and a small line 'BARIS'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "baris.",
+     "z": 4,
+     "lands": 68
+    },
+    {
+     "name": "pencatat_baris",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang mencatat nama dalam bentuk paling sulit dilupakan - dengan menghitung",
+     "semantik": "ORANG MENCATAT",
+     "what": "a sepia halftone photograph of a man counting on his fingers while reading, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "mencatat",
+     "z": 2,
+     "lands": 99,
+     "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; kaki dan daun tetap. pose1 = duduk, satu tangan mengangkat jari.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "count three fingers down and move his lips"
+      },
+      {
+       "pose": 3,
+       "action": "look up and hold one finger still in the air"
+      },
+      {
+       "pose": 4,
+       "action": "drop the hand back to the leaf and tap it once"
+      }
+     ]
+    },
+    {
+     "name": "foto_sulit_dilupakan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang menghafal di luar kepala - cara menyimpan yang tidak butuh kertas",
+     "semantik": "PALING SULIT DILUPAKAN",
+     "what": "a sepia halftone photograph of a group of men sitting on a mat, eyes closed, reciting",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "dilupakan,",
+     "z": 3,
+     "lands": 182
+    },
+    {
+     "name": "kartu_irama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama bentuk itu: irama - bukan tulisan, bukan gambar",
+     "semantik": "YAITU IRAMA",
+     "what": "a torn cream slip with stencilled type reading 'IRAMA'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Irama.",
+     "z": 5,
+     "lands": 230
+    }
+   ],
+   "marks": [
+    [
+     "arrow-right",
+     14,
+     -2.2,
+     "pencatat_baris",
+     {
+      "at": 130,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A rightward arrow onto the figure writing the line on 'mencatat'.",
+   "emphasis": [
+    {
+     "frame": 197.0,
+     "word": "1641",
+     "motion": "strike"
+    },
+    {
+     "frame": 215.6,
+     "word": "baris.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 36.1"
+  },
+  {
+   "id": "s03",
+   "range": [
+    394,
+    589
+   ],
+   "babak": "Babak 10 - Perjalanan",
+   "peran_retoris": "Titik mulai - sungai di depan istana, namanya Cipakan Cilan",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed departure page on aged newsprint: a charcoal block down the right edge, a mustard block across the upper left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Leaving by water: the 'sebelum berangkat' slip high left, the prince crossing low left, the river high right, the palace low right, and the river's name along the bottom.",
+   "kamera": "Follow the crossing from bank to bank, then settle on the name; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_sebelum_berangkat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penanda waktu - semua yang berikutnya terjadi setelah kata ini",
+     "semantik": "SEBELUM BERANGKAT",
+     "what": "a torn cream slip with stencilled type reading 'SEBELUM BERANGKAT'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "berangkat,",
+     "z": 4,
+     "lands": 29
+    },
+    {
+     "name": "pangeran_menyeberang",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pangeran menyeberang - perjalanan yang dimulai dengan membasahi kaki",
+     "semantik": "MENYEBRANGI",
+     "what": "a sepia halftone photograph of a man wading knee-deep across a shallow river, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "menyebrangi",
+     "z": 1,
+     "lands": 56,
+     "motion_basis": "Dua kaki dan satu lengan, selebar 0.26 frame; air tetap di ketinggian yang sama. pose1 = melangkah, satu kaki diangkat dari air.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "plant the front foot and push the water ahead of him"
+      },
+      {
+       "pose": 3,
+       "action": "stop mid-stream and look down at the current"
+      },
+      {
+       "pose": 4,
+       "action": "take the last two steps up onto the far bank"
+      }
+     ]
+    },
+    {
+     "name": "foto_sungai_depan_istana",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai kecil di depan istana - titik nol seluruh perjalanan",
+     "semantik": "SEBUAH SUNGAI",
+     "what": "a sepia halftone photograph of a shallow river with a stone landing step at its bank",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "sungai",
+     "z": 2,
+     "lands": 83
+    },
+    {
+     "name": "foto_istana_belakang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Istana di belakang punggungnya - yang ditinggalkan, dilihat dari air",
+     "semantik": "DI DEPAN ISTANA",
+     "what": "a sepia halftone photograph of a timber gate and fence seen from across a river",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "istana.",
+     "z": 3,
+     "lands": 104
+    },
+    {
+     "name": "kartu_cipakan_cilan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama sungai pertama yang disebut naskah - nama yang masih bisa dicari",
+     "semantik": "CIPAKAN CILAN",
+     "what": "a torn cream slip with big stencilled type reading 'CIPAKAN CILAN'",
+     "at": "lower right of the frame, centred at 0.67 across, about 0.61 of the frame wide",
+     "cut": true,
+     "word": "Cilan.",
+     "z": 5,
+     "lands": 183
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.0,
+     "foto_sungai_depan_istana",
+     {
+      "at": 130,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'sungai'.",
+   "emphasis": [],
+   "still_gate": "PASS 42.6"
+  },
+  {
+   "id": "s04",
+   "range": [
+    589,
+    737
+   ],
+   "babak": "Babak 10 - Perjalanan",
+   "peran_retoris": "Bukti kecil - sungai pertama yang disebut adalah sungai di depan rumahnya sendiri",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed home river page on aged newsprint: a mustard block behind the house, a crimson strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The first name is home: the 'sungai pertama' slip high left, the stream in front of a house high right, the neighbour standing low left, and the house itself low right.",
+   "kamera": "Hold the stream, then step back to the house and the man in front of it; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_sungai_pertama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Urutan pertama - dan yang paling dekat",
+     "semantik": "SUNGAI PERTAMA",
+     "what": "a torn cream slip with stencilled type reading 'SUNGAI PERTAMA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "pertama",
+     "z": 4,
+     "lands": 26
+    },
+    {
+     "name": "foto_sungai_rumah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai di depan rumah - yang pertama disebut karena yang pertama diingat",
+     "semantik": "DI DEPAN RUMAHNYA",
+     "what": "a sepia halftone photograph of a narrow stream running in front of a bamboo house",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "rumahnya",
+     "z": 1,
+     "lands": 89
+    },
+    {
+     "name": "tetangga_sungai",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang tinggal di tepi sungai itu - nama yang dipakai tiap hari tanpa dicatat",
+     "semantik": "SENDIRI",
+     "what": "a sepia halftone photograph of a man standing at a stream edge with a bucket, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "sendiri.",
+     "z": 2,
+     "lands": 105
+    },
+    {
+     "name": "foto_rumah_panggung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rumahnya sendiri - bangunan biasa yang membuat sebuah nama jadi penting",
+     "semantik": "RUMAHNYA",
+     "what": "a sepia halftone photograph of a small raised timber house with a low veranda",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "adalah",
+     "z": 3,
+     "lands": 57
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_sungai_pertama",
+     {
+      "at": 26,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "tetangga_sungai",
+     {
+      "at": 105,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'pertama'; box on the figure on 'sendiri.'.",
+   "emphasis": [
+    {
+     "frame": 725.6,
+     "word": "Serius,",
+     "motion": "landing"
+    }
+   ],
+   "still_gate": "PASS 37.2"
+  },
+  {
+   "id": "s05",
+   "range": [
+    737,
+    940
+   ],
+   "babak": "Babak 10 - Perjalanan",
+   "peran_retoris": "Skala - lebih dari 450 nama tempat, gunung dan sungai di sepanjang jalan",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed route page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A route with a count on it: the road high left, the writer low left, the 450 slip high right, the route map across the centre, the mountain low centre, and the river at the bottom.",
+   "kamera": "Travel the route west to east, then drop to the river; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_jalan_perjalanan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan yang ditempuh - rute yang jadi daftar nama",
+     "semantik": "DALAM PERJALANAN ITU",
+     "what": "a sepia halftone photograph of a narrow road climbing between wooded hills",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "perjalanan",
+     "z": 1,
+     "tertutup_boleh": "Sengaja diletakkan di bawah peta_perjalanan (z3) agar peta — subjek shot yang harus terbaca (R6) — tidak tertutup foto. Jalannya perjalanan tetap terekam di bawah peta.",
+     "lands": 23,
+     "tertutup_alasan": "terukur: peta_perjalanan menutup 47% kotaknya, 53% terbaca"
+    },
+    {
+     "name": "penulis_jalan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang mencatat sambil berjalan - nama dicatat di tempat, bukan setelah pulang",
+     "semantik": "IA MENCATAT",
+     "what": "a sepia halftone photograph of a man walking with a leaf bundle under one arm, seen from behind",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "mencatat",
+     "z": 5,
+     "lands": 59
+    },
+    {
+     "name": "kartu_450",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jumlah nama - angka yang membuat perjalanan ini jadi data",
+     "semantik": "LEBIH DARI 450 NAMA",
+     "what": "a torn cream slip with big stencilled type reading '450+' and a small line 'NAMA'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "450",
+     "z": 6,
+     "lands": 88
+    },
+    {
+     "name": "peta_perjalanan",
+     "bahan": "peta",
+     "wujud": "sobekan_pita",
+     "semiotik": "Rute digambar di atas peta - 450 titik yang tidak mungkin semuanya masuk layar",
+     "semantik": "NAMA TEMPAT",
+     "what": "a torn map sheet with a long route drawn across it and many small dots along the line",
+     "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "tempat,",
+     "z": 3,
+     "tertutup_boleh": "Dilewati figur penulis_jalan (z dinaikkan ke 7) agar kepala figur tidak tertutup; peta sengaja dibiarkan tertutup sebagian oleh figur.",
+     "lands": 134,
+     "tertutup_alasan": "terukur: foto_gunung menutup 26% kotaknya, 74% terbaca"
+    },
+    {
+     "name": "foto_gunung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Gunung yang disebut namanya - satu dari 450",
+     "semantik": "GUNUNG",
+     "what": "a sepia halftone photograph of a single conical mountain above a plain",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "gunung,",
+     "z": 4,
+     "tertutup_boleh": "Dilewati figur penulis_jalan (z dinaikkan ke 7); foto gunung sengaja dibiarkan tertutup sebagian oleh figur supaya kepala tidak tertutup.",
+     "lands": 158,
+     "tertutup_alasan": "terukur: foto_sungai_disebut menutup 18% kotaknya, 82% terbaca"
+    },
+    {
+     "name": "foto_sungai_disebut",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai yang disebut namanya - jenis nama ketiga di daftar itu",
+     "semantik": "DAN SUNGAI",
+     "what": "a sepia halftone photograph of a river bend with a sandbar on the inside curve",
+     "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "sungai.",
+     "z": 5,
+     "lands": 184
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_450",
+     {
+      "at": 88,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "penulis_jalan",
+     {
+      "at": 59,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on '450'; circle on the figure on 'mencatat'.",
+   "emphasis": [
+    {
+     "frame": 895.4,
+     "word": "gunung,",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 920.6,
+     "word": "sungai.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.1"
+  },
+  {
+   "id": "s06",
+   "range": [
+    940,
+    1111
+   ],
+   "babak": "Babak 10 - Perjalanan",
+   "peran_retoris": "Bukti - sebagian besar masih dikenali, dan tidak ada satu kata serapan Arab",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed recognisable page on aged newsprint: a charcoal block behind the old name, a mustard strip across the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Still on the map: the 'masih dikenali' slip high left, the place today high right, the reader low left, the old word list low centre, and the Arab-loanword strip low right.",
+   "kamera": "Hold the old name, cut to the place today, then settle on the absence; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_masih_dikenali",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Klaim yang bisa diperiksa - nama itu masih ada di peta sekarang",
+     "semantik": "MASIH DIKENALI",
+     "what": "a torn cream slip with stencilled type reading 'MASIH DIKENALI'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "dikenali",
+     "z": 4,
+     "tertutup_boleh": "Dilewati figur pembaca_kini (z dinaikkan ke 6); slip sengaja dibiarkan tertutup sebagian oleh figur.",
+     "lands": 39,
+     "tertutup_alasan": "terukur: pembaca_kini menutup 7% kotaknya, 93% terbaca"
+    },
+    {
+     "name": "foto_tempat_kini",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tempat yang masih memakai nama dari naskah - bukti di lapangan",
+     "semantik": "HARI INI",
+     "what": "a sepia halftone photograph of a village lane with a nameboard on a fence post",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "ini.",
+     "z": 1,
+     "lands": 57
+    },
+    {
+     "name": "pembaca_kini",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca daftar nama hari ini - rantai yang masih tersambung",
+     "semantik": "SEBAGIAN BESAR",
+     "what": "a sepia halftone photograph of a man reading a printed list with a finger on the page, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "satupun",
+     "z": 5,
+     "lands": 104
+    },
+    {
+     "name": "foto_daftar_kata",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Daftar kata lama - yang bisa dibandingkan kata per kata",
+     "semantik": "TIDAK ADA SATUPUN",
+     "what": "a sepia halftone photograph of a page of an old word list, two columns of small type",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "kata",
+     "z": 3,
+     "lands": 119
+    },
+    {
+     "name": "strip_tanpa_arab",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Ketiadaan yang ditulis sebagai judul - tidak ada kata serapan Arab",
+     "semantik": "TANPA KATA SERAPAN ARAB",
+     "what": "a torn newsprint strip with bold type reading 'TANPA KATA ARAB'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.40 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "Arab",
+     "z": 6,
+     "lands": 139
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     15,
+     2.4,
+     "kartu_masih_dikenali",
+     {
+      "at": 39,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     16,
+     -1.9,
+     "pembaca_kini",
+     {
+      "at": 104,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'dikenali'; ellipse on the figure on 'satupun'.",
+   "emphasis": [],
+   "still_gate": "PASS 37.0"
+  },
+  {
+   "id": "s07",
+   "range": [
+    1111,
+    1303
+   ],
+   "babak": "Babak 10 - Perjalanan",
+   "peran_retoris": "Tempat terakhir - naskahnya di perpustakaan Bodleian, Oxford, sejak 1627",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed library page on aged newsprint: a mustard block behind the shelves, a charcoal block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Where the leaves ended up: the librarian high left, the shelves low left, the Bodleian photograph high right, the 'Bodleian, Oxford' slip low right, and the year along the bottom.",
+   "kamera": "Walk the shelves, then hold on the year; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "pustakawan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pustakawan yang menyimpan - orang yang membuat naskah ini masih bisa dibaca",
+     "semantik": "TERSIMPAN",
+     "what": "a sepia halftone photograph of a man in a waistcoat holding a boxed manuscript, seen from the side",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "tersimpan",
+     "z": 5,
+     "lands": 39
+    },
+    {
+     "name": "foto_rak_bodleian",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rak perpustakaan - tempat 1.641 baris itu berakhir",
+     "semantik": "DI PERPUSTAKAAN",
+     "what": "a sepia halftone photograph of tall library shelves packed with leather-spined volumes",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "perpustakaan",
+     "z": 2,
+     "tertutup_boleh": "Sengaja diletakkan di bawah pustakawan (z5) agar kepala pustakawan tidak tertutup foto (aturan kepala-leher). Foto rak perpustakaan tetap terlihat di bawah figur.",
+     "lands": 56,
+     "tertutup_alasan": "terukur: pustakawan menutup 14% kotaknya, 86% terbaca"
+    },
+    {
+     "name": "foto_bodleian",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Bodleian - perpustakaan yang menyimpan naskah ini sejak abad ke-17",
+     "semantik": "BODLEIAN",
+     "what": "a sepia halftone photograph of a round domed reading room with tall windows",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Bodleian,",
+     "z": 3,
+     "lands": 70
+    },
+    {
+     "name": "kartu_bodleian",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kota tempat naskah itu disimpan - alamat yang bisa dikunjungi",
+     "semantik": "BODLEIAN, OXFORD",
+     "what": "a torn cream slip with stencilled type reading 'BODLEIAN, OXFORD'",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Oxford,",
+     "z": 4,
+     "tertutup_boleh": "Dilewati figur pustakawan (z dinaikkan ke 6); slip ini juga di-re-cut ke ukuran 0.30 agar tidak menutupi kepala.",
+     "lands": 98,
+     "tertutup_alasan": "terukur: kartu_1627 menutup 14% kotaknya, 86% terbaca"
+    },
+    {
+     "name": "kartu_1627",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tahun naskah itu masuk katalog - tanggal terakhir di babak ini",
+     "semantik": "SEJAK 1627",
+     "what": "a torn cream slip with big stencilled type reading '1627' and a small line 'SEJAK'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "1627.",
+     "z": 6,
+     "lands": 135
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.2,
+     "kartu_1627",
+     {
+      "at": 155,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the printed slip on '1627.'.",
+   "emphasis": [
+    {
+     "frame": 1246.4,
+     "word": "1627.",
+     "motion": "hold",
+     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 42.6"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

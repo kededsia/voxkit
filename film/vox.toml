@@ -1,0 +1,27 @@
+[project]
+name = "tanah-air"
+fps = 30
+width = 1920
+height = 1080
+language = "id"
+
+[paths]
+plans = "plans"
+audio = "audio"
+assets = "assets"
+build = "build"
+remotion = "remotion"
+
+[style]
+style_key = "assets/style-key.jpg"
+paper = "#EFE7D6"
+ink = "sepia"
+chroma = "#FF00FF"
+
+[generation]
+binary = "gflow"
+profiles = ["videoquincy"]
+batch_size = 6
+model = "nano2"
+aspect = "16:9"
+resume = true

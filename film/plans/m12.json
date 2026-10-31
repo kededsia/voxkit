@@ -1,0 +1,574 @@
+{
+ "plan_version": 2,
+ "module": "m12",
+ "klaim": "Gomati pun nama sungai di India; arkeolog Nini Susanti menduga salurannya sekarang Kalimati di Jakarta Utara. Jadi nama sungai tertulis tertua di tanah ini adalah nama impor, ditulis dalam bahasa yang tidak dipakai orang di tepinya - dan peristiwa tulis kedua, Naskah Bujangga Manik di atas daun nipah akhir abad ke-15, mencatat perjalanan Prabu Jaya Pakuan yang meninggalkan istana dan menjadi resi pengembara.",
+ "payoff": "Nama tertua yang tertulis di tanah ini bukan nama tempat ini - dan naskah kedua justru mencatat orang yang meninggalkan istananya.",
+ "serah": "Bujangga Manik dan Pakuan Pajajaran, untuk m13 yang masuk ke isi naskahnya",
+ "terima": "Candrabaga yang sudah pindah ke Jawa dari m11, dan Gomati sebagai pasangannya",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip filologi dan arkeologi Indonesia: naskah daun nipah, foto arkeolog di lapangan, peta India, koran daerah, kanal kota. Lanskap: sungai di dataran India, kanal beton di Jakarta Utara, halaman istana, jalan hutan. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Gomati juga nama sungai di India. Nini Susanti menduga saluran Gomati sekarang bernama Kalimati di Jakarta Utara. Maka nama sungai tertulis tertua di tanah ini adalah nama impor - dipinjam dari tempat lain dan ditulis dalam bahasa yang tidak dipakai orang di tepinya. Peristiwa tulis kedua berbeda jenisnya: Naskah Bujangga Manik, ditulis di atas daun nipah pada akhir abad ke-15, berisi perjalanan Prabu Jaya Pakuan dari Pakuan Pajajaran yang meninggalkan istana dan memilih menjadi resi pengembara.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 8 - Nama yang pindah",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Gomati = Kalimati, dan kesimpulan: nama tertua itu nama impor."
+   },
+   {
+    "babak": "Babak 9 - Naskah",
+    "shots": [
+     "s03",
+     "s04"
+    ],
+    "fokus": "Bujangga Manik di atas daun nipah, dan isinya: pangeran yang meninggalkan istana."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    218
+   ],
+   "babak": "Babak 8 - Nama yang pindah",
+   "peran_retoris": "Asal kedua - Gomati juga nama sungai di India, dan salurannya diduga jadi Kalimati",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed identification page on aged newsprint: a mustard block across the upper right, a charcoal strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "From one river to one canal: the Indian river high left, the equivalence slip high right, the archaeologist low left, the Kalimati slip low centre, and the Jakarta canal low right.",
+   "kamera": "Hold the river, drop to the archaeologist, then settle on the canal; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_sungai_gomati",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai di India yang bernama Gomati - sumber nama saluran di Jawa",
+     "semantik": "GOMATI = SUNGAI DI INDIA",
+     "what": "a sepia halftone photograph of a wide shallow river with stone steps along its bank",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "sungai",
+     "z": 1,
+     "lands": 32
+    },
+    {
+     "name": "kartu_gomati_india",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kesamaan nama yang kedua - pola yang sama dengan Candrabaga",
+     "semantik": "GOMATI = SUNGAI DI INDIA",
+     "what": "a torn cream slip with stencilled type reading 'GOMATI = SUNGAI INDIA'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "India.",
+     "z": 4,
+     "lands": 43
+    },
+    {
+     "name": "arkeolog_susanti",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Arkeolog yang menduga - nama orang di balik klaim ini",
+     "semantik": "NINI SUSANTI",
+     "what": "a sepia halftone photograph of a woman in a field shirt holding a pottery shard up to the light, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Susanti",
+     "z": 2,
+     "lands": 91,
+     "motion_basis": "Dua tangan dan kepala, selebar 0.24 frame; kaki tetap di tanah. pose1 = berdiri, serpihan dipegang setinggi dada.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "raise the shard to eye level and turn it slowly"
+      },
+      {
+       "pose": 3,
+       "action": "lower it and point at the canal behind her"
+      },
+      {
+       "pose": 4,
+       "action": "write one line in the notebook held under her arm"
+      }
+     ]
+    },
+    {
+     "name": "kartu_kalimati",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama sekarang dari saluran yang sama - rantai yang berakhir di Jakarta",
+     "semantik": "KALIMATI",
+     "what": "a torn cream slip with big stencilled type reading 'KALIMATI'",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "Kalimati",
+     "z": 5,
+     "lands": 158
+    },
+    {
+     "name": "foto_kalimati",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kanal di Jakarta Utara - saluran Gomati yang masih mengalir sekarang",
+     "semantik": "DI JAKARTA UTARA",
+     "what": "a sepia halftone photograph of a straight concrete canal with house walls on both banks",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Utara.",
+     "z": 3,
+     "lands": 200
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.4,
+     "arkeolog_susanti",
+     {
+      "at": 115,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the figure on 'susanti'.",
+   "emphasis": [],
+   "still_gate": "PASS 46.5"
+  },
+  {
+   "id": "s02",
+   "range": [
+    218,
+    512
+   ],
+   "babak": "Babak 8 - Nama yang pindah",
+   "peran_retoris": "Kesimpulan - nama tertua yang tertulis di sini adalah nama impor",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed import page on aged newsprint: a crimson block behind the old name, a charcoal block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The oldest written name, weighed: the 'tertua' slip high left, the 'nama impor' strip low left, the harbour photograph high right, the man at the canal edge low left of centre, and the canal's edge at the bottom.",
+   "kamera": "Hold the two slips, then pull back to the canal and the people at its edge; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_tertua",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Gelar yang diberikan pada nama itu - tertua, dan tertulis",
+     "semantik": "NAMA SUNGAI TERTULIS TERTUA",
+     "what": "a torn cream slip with stencilled type reading 'TERTULIS TERTUA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "tertua",
+     "z": 5,
+     "lands": 73
+    },
+    {
+     "name": "foto_nama_tertulis",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Huruf yang benar-benar tertulis - bukti bahwa nama ini punya tanggal",
+     "semantik": "TERTULIS",
+     "what": "a sepia halftone photograph of incised letters on a stone face, raking light across them",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "tertulis",
+     "z": 4,
+     "lands": 57
+    },
+    {
+     "name": "kartu_impor",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang membalik semuanya - nama tertua itu barang impor",
+     "semantik": "NAMA IMPOR",
+     "what": "a torn newsprint strip with bold type reading 'NAMA IMPOR'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "impor,",
+     "z": 6,
+     "lands": 133
+    },
+    {
+     "name": "foto_pelabuhan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pelabuhan - tempat nama datang bersama barang, bukan bersama air",
+     "semantik": "DIPINJAM DARI TEMPAT LAIN",
+     "what": "a sepia halftone photograph of an old harbour with cargo stacked on a stone quay",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "tempat",
+     "z": 3,
+     "lands": 183
+    },
+    {
+     "name": "orang_di_tepi",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di tepi saluran - yang tidak memakai bahasa nama itu",
+     "semantik": "ORANG DI TEPINYA",
+     "what": "a sepia halftone photograph of a man sitting on a canal wall with his feet hanging, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "orang",
+     "z": 1,
+     "lands": 271
+    },
+    {
+     "name": "foto_tepi_saluran",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tepi saluran hari ini - tempat nama impor itu dipakai tiap hari",
+     "semantik": "DI TEPINYA",
+     "what": "a sepia halftone photograph of a canal edge with steps, laundry lines and weeds",
+     "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "tepinya.",
+     "z": 2,
+     "lands": 284
+    }
+   ],
+   "marks": [
+    [
+     "arrow-down",
+     14,
+     2.0,
+     "foto_pelabuhan",
+     {
+      "at": 210,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Arrow-down on the photograph on 'tempat'.",
+   "emphasis": [
+    {
+     "frame": 234.0,
+     "word": "Jadi,",
+     "motion": "landing"
+    },
+    {
+     "frame": 351.0,
+     "word": "impor,",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 410.4,
+     "word": "lain,",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 39.8"
+  },
+  {
+   "id": "s03",
+   "range": [
+    512,
+    772
+   ],
+   "babak": "Babak 9 - Naskah",
+   "peran_retoris": "Peristiwa tulis kedua - Naskah Bujangga Manik di atas daun nipah",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed manuscript page on aged newsprint: a charcoal block behind the leaves, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A manuscript opened: the old leaves high left, the 'naskah' slip low left, the title slip high right, the hand writing low centre, the palm leaf low right, and the century along the bottom.",
+   "kamera": "Open the leaves, follow the hand, then settle on the date; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_naskah_kuno",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Naskah lama yang harus dibuka - benda yang mengubah babak ini",
+     "semantik": "YANG KEDUA",
+     "what": "a sepia halftone photograph of an old palm-leaf manuscript bundle tied with cord",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Tenang,",
+     "z": 1,
+     "lands": 23
+    },
+    {
+     "name": "kartu_naskah",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jenis bendanya - naskah, bukan prasasti",
+     "semantik": "NASKAH",
+     "what": "a torn cream slip with stencilled type reading 'NASKAH'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Naska.",
+     "z": 5,
+     "lands": 83
+    },
+    {
+     "name": "kartu_bujangga_manik",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Judul naskah - nama yang akan disebut lagi di modul berikutnya",
+     "semantik": "BUJANGGA MANIK",
+     "what": "a torn cream slip with big stencilled type reading 'BUJANGGA MANIK'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Manik,",
+     "z": 2,
+     "lands": 138,
+     "tertutup_boleh": "Sengaja di bawah penulis_nipah. Di still-nya sendiri pria itu tercetak di depan slip ini (NCC 0.97 lawan 0.09 pada daerah tumpangnya), dan aturan kepala-wajah-terlihat mengalahkan R6: kalau slip dinaikkan, 22% kepala dan lehernya tertutup. Yang tertutup cuma 3% huruf, di tepi kiri slip yang memang terpotong bingkai.",
+     "tertutup_alasan": "terukur: penulis_nipah menutup 36% kotaknya, 64% terbaca"
+    },
+    {
+     "name": "penulis_nipah",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangan yang menulis di daun - kerja yang hanya meninggalkan satu salinan",
+     "semantik": "DITULIS",
+     "what": "a sepia halftone photograph of a man scratching letters onto a palm leaf with a stylus, seen from the side",
+     "at": "centre of the frame, centred at 0.46 across, about 0.47 of the frame wide",
+     "cut": true,
+     "word": "ditulis",
+     "z": 3,
+     "lands": 158
+    },
+    {
+     "name": "foto_daun_nipah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Daun nipah bertulisan - alas tulis yang tidak tahan lama",
+     "semantik": "DI ATAS DAUN NIPAH",
+     "what": "a sepia halftone photograph of inscribed palm leaves stacked flat, cord through the holes",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "nipah",
+     "z": 4,
+     "lands": 189
+    },
+    {
+     "name": "kartu_abad_15",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tanggal naskah - hampir seribu tahun setelah prasasti Tugu",
+     "semantik": "AKHIR ABAD KE-15",
+     "what": "a torn cream slip with big stencilled type reading 'AKHIR ABAD 15'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "-15.",
+     "z": 6,
+     "lands": 230
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     1.4,
+     "foto_naskah_kuno",
+     {
+      "at": 40,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the photograph on 'tenang,'.",
+   "emphasis": [
+    {
+     "frame": 535.2,
+     "word": "Tenang,",
+     "motion": "strike"
+    },
+    {
+     "frame": 594.6,
+     "word": "Naska.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 629.4,
+     "word": "Bujangga",
+     "motion": "hold",
+     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 741.6,
+     "word": "-15.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 29.8"
+  },
+  {
+   "id": "s04",
+   "range": [
+    772,
+    1054
+   ],
+   "babak": "Babak 9 - Naskah",
+   "peran_retoris": "Isi - seorang pangeran meninggalkan istana dan memilih menjadi resi pengembara",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed journey page on aged newsprint: a mustard block across the upper right, a crimson strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Leaving the palace: the prince high left, a page of the text low left, the palace high right, the hermit low left of centre, the forest road low right, and his name along the bottom.",
+   "kamera": "Follow the prince away from the palace, then hold on the name; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "pangeran",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pangeran yang berjalan keluar - pilihan yang jadi isi seluruh naskah",
+     "semantik": "SEORANG PANGERAN",
+     "what": "a sepia halftone photograph of a man in a wrapped headcloth walking with a staff, seen from behind",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "pangeran",
+     "z": 2,
+     "lands": 41,
+     "motion_basis": "Kaki dan satu lengan dengan tongkat, selebar 0.24 frame; kepala tetap di dalam tepi. pose1 = melangkah, tongkat di tangan kanan.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "plant the staff and turn his head back toward the palace"
+      },
+      {
+       "pose": 3,
+       "action": "lift the staff and step out of the frame's edge"
+      },
+      {
+       "pose": 4,
+       "action": "stop, lower the staff and stand still facing away"
+      }
+     ]
+    },
+    {
+     "name": "foto_halaman_naskah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman yang mencatat perjalanan itu - satu-satunya saksi",
+     "semantik": "ISINYA PERJALANAN",
+     "what": "a sepia halftone photograph of a palm-leaf page covered in fine incised letters",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "Pajajaran",
+     "z": 4,
+     "lands": 76
+    },
+    {
+     "name": "foto_istana",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Istana yang ditinggalkan - Pakuan Pajajaran",
+     "semantik": "MENINGGALKAN ISTANA",
+     "what": "a sepia halftone photograph of a timber palace hall with a stepped roof, empty courtyard",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "istana",
+     "z": 1,
+     "lands": 127
+    },
+    {
+     "name": "resi_pengembara",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Resi pengembara - pangeran yang sudah tidak punya istana",
+     "semantik": "MENJADI RESI PENGEMBARA",
+     "what": "a sepia halftone photograph of a barefoot man in a plain wrap carrying a shoulder bag, seen from the side",
+     "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "resi",
+     "z": 7,
+     "lands": 173
+    },
+    {
+     "name": "foto_jalan_hutan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan hutan - arah yang dipilih setelah istana",
+     "semantik": "PENGEMBARA",
+     "what": "a sepia halftone photograph of a narrow footpath entering dense forest",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "pengembara.",
+     "z": 5,
+     "lands": 184
+    },
+    {
+     "name": "foto_nama_di_naskah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Nama itu di dalam naskahnya sendiri - bukan di prasasti, di daun",
+     "semantik": "NAMANYA",
+     "what": "a sepia halftone photograph of a short line of incised letters on a palm leaf, close up",
+     "at": "centre of the frame, centred at 0.52 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "Namanya",
+     "z": 6,
+     "lands": 223
+    },
+    {
+     "name": "kartu_prabu_jaya_pakuan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Namanya - pangeran yang jadi penulis perjalanannya sendiri",
+     "semantik": "PRABU JAYA PAKUAN",
+     "what": "a torn cream slip with big stencilled type reading 'PRABU JAYA PAKUAN'",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Pakuan.",
+     "z": 8,
+     "lands": 258
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_prabu_jaya_pakuan",
+     {
+      "at": 258,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "pangeran",
+     {
+      "at": 41,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'pakuan.'; box on the figure on 'pangeran'.",
+   "emphasis": [],
+   "still_gate": "PASS 41.1"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

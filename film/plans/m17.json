@@ -1,0 +1,708 @@
+{
+ "plan_version": 2,
+ "module": "m17",
+ "klaim": "Ada satu hal yang tidak terlihat dari dalam mobil: sebagian besar dari apa yang dinamai di kota ini sudah tidak ada bendanya. Cikapundung dinamai menurut pohon kapundung - buahnya asam, dulu tumbuh di sepanjang tepi sungai, sekarang hampir tidak bisa ditemukan lagi di Bandung. Cibening dinamai menurut pohon bening, kerabat nangka dan murbay, dan pohon itu pun langka di kota yang memakai namanya. Namanya tinggal. Bendanya pergi.",
+ "payoff": "Nama di papan jalan adalah satu-satunya bagian dari pohon itu yang masih berdiri.",
+ "serah": "nama yang tinggal tanpa bendanya - bahan untuk pertanyaan mengapa ejaannya yang bertahan, di m18",
+ "terima": "papan nama desa yang dibaca satu per satu, dari m16",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip kota dan kenangan jalan: foto lama tepi sungai, papan nama jalan, koran daerah, pohon buah di pekarangan. Lanskap: sungai berbeton di tengah kota, trotoar, lubang tanam kosong, pasar, jalan yang dilewati mobil. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Nama tempat di Bandung diambil dari pohon yang kini hampir tidak ada: Cikapundung dari pohon kapundung yang buahnya asam dan dulu tumbuh di tepi sungai, Cibening dari pohon bening yang berkerabat dengan nangka dan murbay. Yang bertahan hanya namanya. Bendanya pergi.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 14 - Yang tinggal",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Sesuatu yang tidak terlihat dari dalam mobil; sebagian besar yang dinamai sudah tidak ada."
+   },
+   {
+    "babak": "Babak 15 - Nama tanpa benda",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "Pohon kapundung dan pohon bening: buahnya, tepi sungai yang dulu, dan kota yang kini memakai namanya saja."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    134
+   ],
+   "babak": "Babak 14 - Yang tinggal",
+   "peran_retoris": "Pintu masuk - ada yang tidak terlihat dari dalam mobil, dan itu bukan pemandangan",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed road page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The view out of the windscreen takes the upper half, the man sits low right inside the car, and the 'tidak terlihat' slip rides high right - the thing itself is never in frame.",
+   "kamera": "Hold the glass, then settle on the man who is not looking at it; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_dari_dalam_mobil",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pemandangan dari dalam mobil - yang terlihat justru bukan yang dimaksud",
+     "semantik": "DARI DALAM MOBIL",
+     "what": "a sepia halftone photograph of a street seen through a car windscreen with a wiper resting along the bottom",
+     "at": "centre of the frame, centred at 0.44 across, about 0.46 of the frame wide, down at 0.38",
+     "cut": true,
+     "word": "Ada",
+     "z": 1,
+     "lands": 16
+    },
+    {
+     "name": "kartu_tidak_terlihat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang dicari tidak muncul di kaca - ia tidak punya bentuk di sini",
+     "semantik": "TIDAK TERLIHAT",
+     "what": "a torn cream slip with stencilled type reading 'TIDAK TERLIHAT'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "terlihat",
+     "z": 3,
+     "lands": 43
+    },
+    {
+     "name": "penumpang",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di dalam mobil - yang menatap keluar dan tetap tidak menemukannya",
+     "semantik": "DARI DALAM",
+     "what": "a sepia halftone photograph of a man sitting by a car window looking out, seen from behind",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide, down at 0.68",
+     "cut": true,
+     "word": "mobil.",
+     "z": 2,
+     "lands": 69
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     0.0,
+     "kartu_tidak_terlihat",
+     {
+      "at": 74,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "script": {
+    "text": "Serius.",
+    "at": 88,
+    "duration": 26,
+    "color": "crimson",
+    "x": 0.2,
+    "y": 0.74,
+    "w": 0.36,
+    "h": 0.2,
+    "sw": 17,
+    "rotate": -4
+   },
+   "mark": "Underline on the printed slip on 'terlihat'.",
+   "emphasis": [
+    {
+     "frame": 114.8,
+     "word": "Serius.",
+     "motion": "strike"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    134,
+    355
+   ],
+   "babak": "Babak 14 - Yang tinggal",
+   "peran_retoris": "Klaim - sebagian besar yang dinamai sudah tidak ada, dan Cikapundung adalah contohnya",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed name page on aged newsprint: a crimson block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The river low left, the 'sebagian besar' slip high right, the man at the bank low right, the 'sudah tidak ada' slip across the middle, the 'dinamai menurut' slip low centre, and the kapundung tree high centre - the name written by hand between them.",
+   "kamera": "Follow the channel, then climb to the tree that is not there; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_sungai_beton",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai yang dinamai pohon - sekarang berbeton dan tanpa tepi",
+     "semantik": "CIKAPUNDUNG",
+     "what": "a sepia halftone photograph of a river running in a concrete channel between low buildings",
+     "at": "left of the frame, centred at 0.22 across, about 0.38 of the frame wide, down at 0.44",
+     "cut": true,
+     "word": "Sebagian",
+     "z": 1,
+     "lands": 11
+    },
+    {
+     "name": "kartu_sebagian_besar",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Ukuran kehilangannya - bukan satu pohon, tapi sebagian besar",
+     "semantik": "SEBAGIAN BESAR",
+     "what": "a torn cream slip with stencilled type reading 'SEBAGIAN BESAR'",
+     "at": "upper right of the frame, centred at 0.74 across, about 0.32 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "besar",
+     "z": 4,
+     "lands": 22
+    },
+    {
+     "name": "orang_tepi_sungai",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di tepi - yang masih bisa berdiri di tempat pohonnya dulu tumbuh",
+     "semantik": "YANG DINAMAI",
+     "what": "a sepia halftone photograph of a man standing at the edge of a concrete channel looking down, seen from the side",
+     "at": "lower right of the frame, centred at 0.82 across, about 0.22 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "dinamai",
+     "z": 2,
+     "lands": 52
+    },
+    {
+     "name": "kartu_sudah_tidak_ada",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bukan berkurang, bukan jarang - sudah tidak ada",
+     "semantik": "SUDAH TIDAK ADA",
+     "what": "a torn cream slip with stencilled type reading 'SUDAH TIDAK ADA'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.62",
+     "cut": true,
+     "word": "ada.",
+     "z": 5,
+     "lands": 94
+    },
+    {
+     "name": "kartu_dinamai",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Arah penamaan - dari pohon ke tempat, bukan sebaliknya",
+     "semantik": "DINAMAI MENURUT",
+     "what": "a torn cream slip with letterpress type reading 'DINAMAI MENURUT'",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.80",
+     "cut": true,
+     "word": "Dinamai",
+     "z": 6,
+     "lands": 166
+    },
+    {
+     "name": "foto_pohon_kapundung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pohon kapundung - benda yang namanya masih dipakai sungai itu",
+     "semantik": "POHON KAPUNDUNG",
+     "what": "a sepia halftone photograph of a tall roadside tree with small dark fruit along its branches",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "pohon",
+     "z": 3,
+     "lands": 185
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.0,
+     "foto_pohon_kapundung",
+     {
+      "at": 190,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "script": {
+    "text": "Cikapundung",
+    "at": 122,
+    "duration": 26,
+    "color": "crimson",
+    "x": 0.58,
+    "y": 0.44,
+    "w": 0.38,
+    "h": 0.14,
+    "sw": 17,
+    "rotate": -3
+   },
+   "mark": "Circle on the photograph on 'pohon'.",
+   "emphasis": [
+    {
+     "frame": 273.8,
+     "word": "Cikapundung.",
+     "motion": "landing"
+    },
+    {
+     "frame": 327.2,
+     "word": "kapundung.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    355,
+    572
+   ],
+   "babak": "Babak 15 - Nama tanpa benda",
+   "peran_retoris": "Bukti - buahnya asam, dulu tumbuh di tepi sungai, sekarang hampir tidak ditemukan",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed sour page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The fruit high left, its one word below it, the old riverbank high right, the 'sepanjang tepi' slip low left, the newspaper strip across the top, the searcher low right, and the two closing slips down the middle.",
+   "kamera": "Open on the fruit, cross to the bank, then let the city answer; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_buah_kapundung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Buahnya - bagian pohon yang dulu dirasakan orang di tepi sungai",
+     "semantik": "BUAHNYA",
+     "what": "a sepia halftone photograph of small dark round fruits hanging on a branch",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "Buahnya",
+     "z": 1,
+     "lands": 9
+    },
+    {
+     "name": "kartu_asam",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Satu kata rasa - yang membuat pohon itu diingat, bukan hanya dilihat",
+     "semantik": "ASAM",
+     "what": "a torn cream slip with big stencilled type reading 'ASAM'",
+     "at": "left of the frame, centred at 0.22 across, about 0.20 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "asam.",
+     "z": 4,
+     "lands": 20
+    },
+    {
+     "name": "foto_tepi_sungai_dulu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tepi sungai yang dulu - pohonnya berbaris, bukan beton",
+     "semantik": "DULU",
+     "what": "a sepia halftone photograph of a riverbank lined with old trees, taken long ago",
+     "at": "right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.34",
+     "cut": true,
+     "word": "Dulu",
+     "z": 2,
+     "lands": 51
+    },
+    {
+     "name": "kartu_sepanjang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sebaran pohon itu - sepanjang tepi, bukan satu titik",
+     "semantik": "SEPANJANG TEPI SUNGAI",
+     "what": "a torn cream slip with letterpress type reading 'SEPANJANG TEPI SUNGAI'",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.66",
+     "cut": true,
+     "word": "sungai.",
+     "z": 5,
+     "lands": 88
+    },
+    {
+     "name": "strip_koran_hilang",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kota yang mencatat kehilangannya sendiri di koran",
+     "semantik": "KOTA BANDUNG",
+     "what": "a torn newsprint strip with a bold headline about the city losing its trees",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "Sekarang",
+     "z": 6,
+     "lands": 120
+    },
+    {
+     "name": "pencari_pohon",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mencari pohonnya di kota - dan hampir tidak menemukannya",
+     "semantik": "HAMPIR TIDAK DITEMUKAN",
+     "what": "a sepia halftone photograph of a man standing on a pavement looking up at a bare branch, seen from behind",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.68",
+     "cut": true,
+     "word": "pohon",
+     "z": 3,
+     "lands": 139,
+     "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = berdiri, tangan di saku.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "raise his head and look up the bare branch"
+      },
+      {
+       "pose": 3,
+       "action": "turn his head slowly to the empty pavement behind him"
+      },
+      {
+       "pose": 4,
+       "action": "lower his head and drop his hand to his side"
+      }
+     ]
+    },
+    {
+     "name": "kartu_tidak_ditemukan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bukan hilang dari catatan - hilang dari kota yang memakainya",
+     "semantik": "HAMPIR TIDAK BISA DITEMUKAN",
+     "what": "a torn cream slip with stencilled type reading 'HAMPIR TIDAK DITEMUKAN'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.60",
+     "cut": true,
+     "word": "ditemukan",
+     "z": 7,
+     "lands": 176
+    },
+    {
+     "name": "kartu_bandung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tempat ujiannya - bukan hutan, tapi kota Bandung",
+     "semantik": "DI KOTA BANDUNG",
+     "what": "a torn cream slip with big stencilled type reading 'KOTA BANDUNG'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.88",
+     "cut": true,
+     "word": "Bandung.",
+     "z": 8,
+     "lands": 206
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     0.0,
+     "kartu_asam",
+     {
+      "at": 34,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'asam.'.",
+   "emphasis": [
+    {
+     "frame": 375.2,
+     "word": "asam.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 474.8,
+     "word": "Sekarang",
+     "motion": "hold",
+     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    572,
+    745
+   ],
+   "babak": "Babak 15 - Nama tanpa benda",
+   "peran_retoris": "Pengulangan - Cibening, pohon bening, kerabat nangka dan murbay",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed second name page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The name big across the upper middle, the leaves high right, 'pohon bening' low left, the man holding a leaf to the light low centre, the jackfruit high centre, and the family slip along the bottom.",
+   "kamera": "Read the name, hold the leaf up, then list the family; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_cibening",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama kedua - pola yang sama, pohon yang lain",
+     "semantik": "CIBENING",
+     "what": "a torn cream slip with big stencilled type reading 'CIBENING'",
+     "at": "centre of the frame, centred at 0.44 across, about 0.34 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "Cibening.",
+     "z": 4,
+     "lands": 37
+    },
+    {
+     "name": "foto_daun_bening",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Daun yang bening - pohon itu dinamai menurut cahaya yang lewat",
+     "semantik": "POHON BENING",
+     "what": "a sepia halftone photograph of broad oval leaves on a branch, backlit so the veins show",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.32",
+     "cut": true,
+     "word": "Dinamai",
+     "z": 1,
+     "lands": 67
+    },
+    {
+     "name": "kartu_pohon_bening",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama pohonnya ditulis, bukan hanya diucapkan",
+     "semantik": "POHON BENING",
+     "what": "a torn cream slip with letterpress type reading 'POHON BENING'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.66",
+     "cut": true,
+     "word": "pohon",
+     "z": 5,
+     "lands": 86
+    },
+    {
+     "name": "orang_memegang_daun",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Daun diangkat ke cahaya - 'bening' jadi bisa dilihat, bukan cuma nama",
+     "semantik": "BENING",
+     "what": "a sepia halftone photograph of a man holding a broad leaf up against the light, seen from the side",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "bening.",
+     "z": 2,
+     "lands": 95
+    },
+    {
+     "name": "foto_buah_nangka",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kerabatnya - nangka dan murbay, buah yang masih dikenal orang",
+     "semantik": "KERABAT NANGKA",
+     "what": "a sepia halftone photograph of a jackfruit hanging from the trunk of a tree",
+     "at": "centre of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.48",
+     "cut": true,
+     "word": "nangka",
+     "z": 3,
+     "lands": 143
+    },
+    {
+     "name": "kartu_kerabat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Keluarga botani - cara mengenali pohon yang namanya tinggal",
+     "semantik": "KERABAT NANGKA DAN MURBAY",
+     "what": "a torn cream slip with letterpress type reading 'KERABAT NANGKA DAN MURBAY'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.90",
+     "cut": true,
+     "word": "murbay.",
+     "z": 6,
+     "lands": 160
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     12,
+     0.0,
+     "kartu_cibening",
+     {
+      "at": 50,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'cibening.'.",
+   "emphasis": [
+    {
+     "frame": 608.6,
+     "word": "Cibening.",
+     "motion": "strike"
+    },
+    {
+     "frame": 666.8,
+     "word": "bening.",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    745,
+    942
+   ],
+   "babak": "Babak 15 - Nama tanpa benda",
+   "peran_retoris": "Pay-off - nama tinggal, bendanya pergi",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed empty page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The street high left, 'langka' low left, the nameplate high right, 'namanya tinggal' across the middle, the empty tree pit low right, the man beside it low centre, and 'bendanya pergi' along the bottom.",
+   "kamera": "Look at the street, read the plate, then drop to the pit that has nothing in it; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_kota_tanpa_pohon",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan kota tanpa pohon - yang tersisa hanya fasad dan kendaraan",
+     "semantik": "SEKARANG",
+     "what": "a sepia halftone photograph of a busy street with shopfronts and parked motorbikes, no trees",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "Sekarang",
+     "z": 1,
+     "lands": 15
+    },
+    {
+     "name": "kartu_langka",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bukan punah, tapi langka - kata yang dipakai naskahnya sendiri",
+     "semantik": "LANGKA",
+     "what": "a torn cream slip with big stencilled type reading 'LANGKA'",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.22 of the frame wide, down at 0.64",
+     "cut": true,
+     "word": "langkah",
+     "z": 5,
+     "lands": 42
+    },
+    {
+     "name": "foto_papan_jalan",
+     "bahan": "foto",
+     "wujud": "plang_fisik",
+     "semiotik": "Papan nama jalan - bagian pohon itu yang masih berdiri",
+     "semantik": "YANG MEMAKAI NAMANYA",
+     "what": "a sepia halftone photograph of a rectangular street nameplate fixed to a wall",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "memakai",
+     "z": 2,
+     "lands": 78
+    },
+    {
+     "name": "kartu_nama_tinggal",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tesis modul dalam empat kata",
+     "semantik": "NAMANYA TINGGAL",
+     "what": "a torn cream slip with big stencilled type reading 'NAMANYA TINGGAL'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "tinggal.",
+     "z": 6,
+     "lands": 129
+    },
+    {
+     "name": "foto_lubang_pohon",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lubang tanam kosong - tempat yang disiapkan untuk pohon yang tidak datang",
+     "semantik": "BENDANYA PERGI",
+     "what": "a sepia halftone photograph of an empty square tree pit in a pavement filled with dry soil",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "Bendanya",
+     "z": 3,
+     "lands": 161
+    },
+    {
+     "name": "orang_di_lubang",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di depan lubang kosong - yang bisa memastikan pohonnya memang tidak ada",
+     "semantik": "DI SITU",
+     "what": "a sepia halftone photograph of a man standing beside an empty tree pit looking down at it, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "itu",
+     "z": 4,
+     "lands": 36,
+     "motion_basis": "Seluruh badan tegak, selebar 0.24 frame; kaki tetap di tempat. pose1 = berdiri, tangan di pinggang.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "crouch down and touch the dry soil in the pit"
+      },
+      {
+       "pose": 3,
+       "action": "stand up again and look along the empty pavement"
+      },
+      {
+       "pose": 4,
+       "action": "turn his head back down to the pit"
+      }
+     ]
+    },
+    {
+     "name": "kartu_benda_pergi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penutup - yang pergi adalah bendanya, bukan namanya",
+     "semantik": "BENDANYA PERGI",
+     "what": "a torn cream slip with big stencilled type reading 'BENDANYA PERGI'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.90",
+     "cut": true,
+     "word": "pergi.",
+     "z": 7,
+     "lands": 173
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_langka",
+     {
+      "at": 42,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "orang_di_lubang",
+     {
+      "at": 161,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'langkah'; circle on the figure on 'itu'.",
+   "emphasis": [
+    {
+     "frame": 874.4,
+     "word": "tinggal.",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

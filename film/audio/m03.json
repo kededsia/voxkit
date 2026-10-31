@@ -1,0 +1,615 @@
+{
+ "duration": 54.533,
+ "words": [
+  {
+   "word": "Di",
+   "start": 0.4,
+   "end": 0.52
+  },
+  {
+   "word": "kecamatan",
+   "start": 0.52,
+   "end": 0.92
+  },
+  {
+   "word": "Cidaun,",
+   "start": 0.92,
+   "end": 1.52
+  },
+  {
+   "word": "di",
+   "start": 1.76,
+   "end": 1.86
+  },
+  {
+   "word": "pesisir",
+   "start": 1.86,
+   "end": 2.22
+  },
+  {
+   "word": "selatan",
+   "start": 2.22,
+   "end": 2.6
+  },
+  {
+   "word": "Cianjur,",
+   "start": 2.6,
+   "end": 3.42
+  },
+  {
+   "word": "Intan",
+   "start": 3.78,
+   "end": 4.0
+  },
+  {
+   "word": "Kusumawulandari",
+   "start": 4.0,
+   "end": 5.02
+  },
+  {
+   "word": "mencatat",
+   "start": 5.02,
+   "end": 5.5
+  },
+  {
+   "word": "107",
+   "start": 5.5,
+   "end": 6.3
+  },
+  {
+   "word": "nama",
+   "start": 6.3,
+   "end": 6.6
+  },
+  {
+   "word": "yang",
+   "start": 6.6,
+   "end": 6.8
+  },
+  {
+   "word": "mengandung",
+   "start": 6.8,
+   "end": 7.16
+  },
+  {
+   "word": "unsur",
+   "start": 7.16,
+   "end": 7.64
+  },
+  {
+   "word": "Chi",
+   "start": 7.64,
+   "end": 7.94
+  },
+  {
+   "word": "di",
+   "start": 7.94,
+   "end": 8.92
+  },
+  {
+   "word": "satu",
+   "start": 8.92,
+   "end": 9.34
+  },
+  {
+   "word": "kecamatan.",
+   "start": 9.34,
+   "end": 10.12
+  },
+  {
+   "word": "Angka",
+   "start": 10.7,
+   "end": 10.96
+  },
+  {
+   "word": "itu",
+   "start": 10.96,
+   "end": 11.12
+  },
+  {
+   "word": "terlalu",
+   "start": 11.12,
+   "end": 11.44
+  },
+  {
+   "word": "besar",
+   "start": 11.44,
+   "end": 11.74
+  },
+  {
+   "word": "untuk",
+   "start": 11.74,
+   "end": 11.96
+  },
+  {
+   "word": "disebut",
+   "start": 11.96,
+   "end": 12.24
+  },
+  {
+   "word": "kebetulan",
+   "start": 12.24,
+   "end": 12.88
+  },
+  {
+   "word": "dan",
+   "start": 12.88,
+   "end": 13.66
+  },
+  {
+   "word": "terlalu",
+   "start": 13.66,
+   "end": 14.08
+  },
+  {
+   "word": "rapi",
+   "start": 14.08,
+   "end": 14.42
+  },
+  {
+   "word": "untuk",
+   "start": 14.42,
+   "end": 14.6
+  },
+  {
+   "word": "disebut",
+   "start": 14.6,
+   "end": 14.9
+  },
+  {
+   "word": "selera.",
+   "start": 14.9,
+   "end": 15.4
+  },
+  {
+   "word": "Yang",
+   "start": 16.18,
+   "end": 16.32
+  },
+  {
+   "word": "kita",
+   "start": 16.32,
+   "end": 16.58
+  },
+  {
+   "word": "bicarakan",
+   "start": 16.58,
+   "end": 16.98
+  },
+  {
+   "word": "ini",
+   "start": 16.98,
+   "end": 17.44
+  },
+  {
+   "word": "satu",
+   "start": 17.44,
+   "end": 17.86
+  },
+  {
+   "word": "suku",
+   "start": 17.86,
+   "end": 18.18
+  },
+  {
+   "word": "kata.",
+   "start": 18.18,
+   "end": 18.64
+  },
+  {
+   "word": "Bukan",
+   "start": 18.64,
+   "end": 19.5
+  },
+  {
+   "word": "asal",
+   "start": 19.5,
+   "end": 19.92
+  },
+  {
+   "word": "usulnya",
+   "start": 19.92,
+   "end": 20.32
+  },
+  {
+   "word": "yang",
+   "start": 20.32,
+   "end": 20.44
+  },
+  {
+   "word": "sudah",
+   "start": 20.44,
+   "end": 20.64
+  },
+  {
+   "word": "sering",
+   "start": 20.64,
+   "end": 20.82
+  },
+  {
+   "word": "diceritakan,",
+   "start": 20.82,
+   "end": 21.5
+  },
+  {
+   "word": "tapi",
+   "start": 22.06,
+   "end": 22.32
+  },
+  {
+   "word": "apa",
+   "start": 22.32,
+   "end": 22.74
+  },
+  {
+   "word": "yang",
+   "start": 22.74,
+   "end": 22.94
+  },
+  {
+   "word": "suku",
+   "start": 22.94,
+   "end": 23.16
+  },
+  {
+   "word": "kata",
+   "start": 23.16,
+   "end": 23.38
+  },
+  {
+   "word": "itu",
+   "start": 23.38,
+   "end": 23.58
+  },
+  {
+   "word": "lakukan",
+   "start": 23.58,
+   "end": 23.92
+  },
+  {
+   "word": "pada",
+   "start": 23.92,
+   "end": 24.2
+  },
+  {
+   "word": "sebuah",
+   "start": 24.2,
+   "end": 24.48
+  },
+  {
+   "word": "wilayah",
+   "start": 24.48,
+   "end": 25.14
+  },
+  {
+   "word": "selama",
+   "start": 25.14,
+   "end": 25.5
+  },
+  {
+   "word": "ribuan",
+   "start": 25.5,
+   "end": 25.9
+  },
+  {
+   "word": "tahun.",
+   "start": 25.9,
+   "end": 26.36
+  },
+  {
+   "word": "Mari",
+   "start": 27.2,
+   "end": 27.3
+  },
+  {
+   "word": "mulai",
+   "start": 27.3,
+   "end": 27.62
+  },
+  {
+   "word": "dari",
+   "start": 27.62,
+   "end": 27.86
+  },
+  {
+   "word": "kamus.",
+   "start": 27.86,
+   "end": 28.52
+  },
+  {
+   "word": "Karena",
+   "start": 28.78,
+   "end": 28.94
+  },
+  {
+   "word": "kamus",
+   "start": 28.94,
+   "end": 29.34
+  },
+  {
+   "word": "adalah",
+   "start": 29.34,
+   "end": 29.62
+  },
+  {
+   "word": "tempat",
+   "start": 29.62,
+   "end": 29.96
+  },
+  {
+   "word": "paling",
+   "start": 29.96,
+   "end": 30.28
+  },
+  {
+   "word": "tidak",
+   "start": 30.28,
+   "end": 30.6
+  },
+  {
+   "word": "dramatis",
+   "start": 30.6,
+   "end": 31.2
+  },
+  {
+   "word": "untuk",
+   "start": 31.2,
+   "end": 31.36
+  },
+  {
+   "word": "memulai.",
+   "start": 31.36,
+   "end": 32.38
+  },
+  {
+   "word": "Dalam",
+   "start": 32.56,
+   "end": 32.82
+  },
+  {
+   "word": "bahasa",
+   "start": 32.82,
+   "end": 33.08
+  },
+  {
+   "word": "Sunda,",
+   "start": 33.08,
+   "end": 33.62
+  },
+  {
+   "word": "air",
+   "start": 33.86,
+   "end": 34.06
+  },
+  {
+   "word": "disebut",
+   "start": 34.06,
+   "end": 34.66
+  },
+  {
+   "word": "chai.",
+   "start": 34.66,
+   "end": 35.1
+  },
+  {
+   "word": "Kalau",
+   "start": 35.78,
+   "end": 35.98
+  },
+  {
+   "word": "dipakai",
+   "start": 35.98,
+   "end": 36.46
+  },
+  {
+   "word": "sebagai",
+   "start": 36.46,
+   "end": 36.78
+  },
+  {
+   "word": "awalan",
+   "start": 36.78,
+   "end": 37.16
+  },
+  {
+   "word": "nama",
+   "start": 37.16,
+   "end": 37.36
+  },
+  {
+   "word": "tempat,",
+   "start": 37.36,
+   "end": 37.98
+  },
+  {
+   "word": "kata",
+   "start": 38.24,
+   "end": 38.32
+  },
+  {
+   "word": "itu",
+   "start": 38.32,
+   "end": 38.5
+  },
+  {
+   "word": "memendek",
+   "start": 38.5,
+   "end": 39.04
+  },
+  {
+   "word": "menjadi",
+   "start": 39.04,
+   "end": 39.56
+  },
+  {
+   "word": "Chi.",
+   "start": 39.56,
+   "end": 39.98
+  },
+  {
+   "word": "Itu",
+   "start": 40.7,
+   "end": 40.86
+  },
+  {
+   "word": "saja.",
+   "start": 40.86,
+   "end": 41.2
+  },
+  {
+   "word": "Tidak",
+   "start": 41.86,
+   "end": 42.06
+  },
+  {
+   "word": "ada",
+   "start": 42.06,
+   "end": 42.26
+  },
+  {
+   "word": "rahasia",
+   "start": 42.26,
+   "end": 42.76
+  },
+  {
+   "word": "di",
+   "start": 42.76,
+   "end": 42.94
+  },
+  {
+   "word": "tingkat",
+   "start": 42.94,
+   "end": 43.14
+  },
+  {
+   "word": "pertama",
+   "start": 43.14,
+   "end": 43.5
+  },
+  {
+   "word": "ini.",
+   "start": 43.5,
+   "end": 43.84
+  },
+  {
+   "word": "Tapi",
+   "start": 44.26,
+   "end": 44.52
+  },
+  {
+   "word": "justru",
+   "start": 44.52,
+   "end": 44.86
+  },
+  {
+   "word": "karena",
+   "start": 44.86,
+   "end": 45.12
+  },
+  {
+   "word": "sederhana,",
+   "start": 45.12,
+   "end": 45.86
+  },
+  {
+   "word": "ia",
+   "start": 46.4,
+   "end": 46.6
+  },
+  {
+   "word": "mudah",
+   "start": 46.6,
+   "end": 46.98
+  },
+  {
+   "word": "dipakai",
+   "start": 46.98,
+   "end": 47.26
+  },
+  {
+   "word": "berulang",
+   "start": 47.26,
+   "end": 47.64
+  },
+  {
+   "word": "-ulang.",
+   "start": 47.64,
+   "end": 48.08
+  },
+  {
+   "word": "Dan",
+   "start": 48.08,
+   "end": 48.8
+  },
+  {
+   "word": "sesuatu",
+   "start": 48.8,
+   "end": 49.2
+  },
+  {
+   "word": "yang",
+   "start": 49.2,
+   "end": 49.34
+  },
+  {
+   "word": "dipakai",
+   "start": 49.34,
+   "end": 49.72
+  },
+  {
+   "word": "berulang",
+   "start": 49.72,
+   "end": 50.12
+  },
+  {
+   "word": "-ulang",
+   "start": 50.12,
+   "end": 50.68
+  },
+  {
+   "word": "akan",
+   "start": 50.68,
+   "end": 51.02
+  },
+  {
+   "word": "bertahan",
+   "start": 51.02,
+   "end": 51.4
+  },
+  {
+   "word": "lebih",
+   "start": 51.4,
+   "end": 51.68
+  },
+  {
+   "word": "lama",
+   "start": 51.68,
+   "end": 52.08
+  },
+  {
+   "word": "daripada",
+   "start": 52.08,
+   "end": 52.72
+  },
+  {
+   "word": "sesuatu",
+   "start": 52.72,
+   "end": 53.18
+  },
+  {
+   "word": "yang",
+   "start": 53.18,
+   "end": 53.26
+  },
+  {
+   "word": "dipakai",
+   "start": 53.26,
+   "end": 53.66
+  },
+  {
+   "word": "sekali.",
+   "start": 53.66,
+   "end": 54.14
+  }
+ ]
+}

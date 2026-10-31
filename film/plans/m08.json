@@ -1,0 +1,878 @@
+{
+ "plan_version": 2,
+ "module": "m08",
+ "klaim": "Letusan Gunung Sunda menyumbat Citarum purba; Cekungan Bandung terisi menjadi Danau Bandung Purba - paras 725 m, 60 x 40 km, dari Cicalengka sampai Rajamandala, dengan fosil badak dan kudanil di tepiannya.",
+ "payoff": "Nama-nama yang kita bahas bukan nama untuk sungai kecil di pinggir kota: nama itu lahir di tepi sebuah danau yang luasnya melebihi kota Bandung sekarang.",
+ "serah": "danau yang luasnya melebihi kota Bandung, untuk m09 yang mengeringkannya menjadi mata air dan rawa",
+ "terima": "kartu letusan dari m07",
+ "konteks_modul": {
+  "konteks_budaya": "Peta geologi dan arsip purbakala Indonesia: lembar peta topografi, garis kontur, foto udara cekungan, fosil yang diawetkan di rak museum, teodolit dan batang ukur. Lanskap: Cekungan Bandung dilihat dari punggungan, tebing bekas garis air, jalan dan gedung kota sekarang. Palet halaman: kertas koran lawas berwarna Vox - blok mustard yellow, coral/crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern. Tanpa figur manusia di plate.",
+  "tesis_modul": "Letusan menyumbat aliran Citarum purba di utara; air tidak bisa keluar; Cekungan Bandung terisi menjadi danau 725 m dpl yang membentang 60 km dari Cicalengka ke Rajamandala dan selebar 40 km, dengan fosil badak dan kudanil di tepiannya - jadi nama-nama ini lahir di tepi danau, bukan di pinggir jalan.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 4 - Waktu geologis",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Sumbatan, air yang tidak bisa keluar, dan cekungan yang terisi."
+   },
+   {
+    "babak": "Babak 4 - Waktu geologis",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "Paras 725 m, bentang 60 x 40 km, dan fosil di tepiannya."
+   },
+   {
+    "babak": "Babak 4 - Waktu geologis",
+    "shots": [
+     "s06",
+     "s07",
+     "s08"
+    ],
+    "fokus": "Bukti hewan besar, dan kesimpulan: nama itu lahir di tepi danau."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    185
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Sebab - letusan menutup satu-satunya jalan keluar air",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed lava page on aged newsprint: a charcoal block bleeding off the top edge, a crimson block across the bottom right, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Blocked river: the eruption card high left, the lava tongue crossing the centre from above, the ancient valley low left, and the trapped-water card low right - the page reads left to right like a dam closing.",
+   "kamera": "Follow the lava down onto the valley, hold on the blockage, then settle on the trapped water; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_letusan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kartu letusan dari m07, dipakai lagi sebagai sebab - benda yang masih di meja",
+     "semantik": "LETUSAN",
+     "what": "a torn cream slip with stencilled black type reading 'LETUSAN', one strip of tape holding its left end, tilted a little",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "letusannya",
+     "z": 3,
+     "lands": 23,
+     "fresh": true
+    },
+    {
+     "name": "foto_sumbatan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lidah lava yang menutup lembah - dinding yang tidak direncanakan siapa pun",
+     "semantik": "MENYUMBAT",
+     "what": "a sepia halftone photograph of a dark lava tongue crossing a valley floor, cracked and bare",
+     "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "menyumbat",
+     "z": 2,
+     "lands": 40
+    },
+    {
+     "name": "foto_citarum_purba",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lembah sungai purba di utara - aliran yang kemudian tidak punya tujuan",
+     "semantik": "CITARUM PURBA",
+     "what": "a sepia halftone photograph of a broad dry river valley running north between ridges",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "tarung",
+     "z": 1,
+     "lands": 73
+    },
+    {
+     "name": "kartu_air_tertahan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Air yang tidak punya jalan keluar - kalimat sebab yang dicetak",
+     "semantik": "AIR TIDAK BISA KELUAR",
+     "what": "a torn cream slip with two stencilled lines reading 'AIR' and 'TIDAK BISA KELUAR'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "keluar.",
+     "z": 4,
+     "lands": 171
+    }
+   ],
+   "marks": [
+    [
+     "arrow-down",
+     14,
+     0.0,
+     "foto_sumbatan",
+     {
+      "at": 100,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Arrow-down on the photograph on 'menyumbat'.",
+   "emphasis": [],
+   "still_gate": "PASS 28.8"
+  },
+  {
+   "id": "s02",
+   "range": [
+    185,
+    315
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Akibat - cekungan terisi, dan danau itu mendapat nama",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed basin page on aged newsprint: a mustard block behind the basin photograph, a charcoal strip along the bottom, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Basin from above: the cekungan photograph filling the centre, water rising into it low left, the map sheet high right, and the name card low right waiting to be written.",
+   "kamera": "Hold high on the basin, then push down toward the water; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_cekungan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Cekungan Bandung dari punggungan - mangkuk raksasa yang menunggu air",
+     "semantik": "CEKUNGAN BANDUNG",
+     "what": "a sepia halftone photograph of a wide basin ringed by ridges, seen from a high ridge",
+     "at": "centre of the frame, centred at 0.48 across, about 0.44 of the frame wide",
+     "cut": true,
+     "word": "Bandung",
+     "z": 1,
+     "lands": 36
+    },
+    {
+     "name": "foto_danau_terisi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air yang naik menutupi dasar cekungan - danau yang terbentuk tanpa saksi",
+     "semantik": "TERISI",
+     "what": "a sepia halftone photograph of still water covering a flat valley floor, low hills at its rim",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "terisi.",
+     "z": 2,
+     "lands": 49
+    },
+    {
+     "name": "peta_danau",
+     "bahan": "peta",
+     "wujud": "sobekan_pita",
+     "semiotik": "Peta yang menggambar danau di atas cekungan - bentuk yang sekarang hanya ada di lembar ini",
+     "semantik": "DANAU BANDUNG PURBA",
+     "what": "a torn map sheet with a large lake shape drawn over a basin outline, hatched shore",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Danau",
+     "z": 4,
+     "lands": 104
+    },
+    {
+     "name": "kartu_nama_danau",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Namanya ditulis setelah danau itu tidak ada lagi",
+     "semantik": "DANAU BANDUNG PURBA",
+     "what": "a torn cream slip with letterpress type reading 'DANAU BANDUNG PURBA'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Purba.",
+     "z": 3,
+     "lands": 119
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.2,
+     "peta_danau",
+     {
+      "at": 110,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the map on 'danau'.",
+   "emphasis": [],
+   "still_gate": "PASS 43.8"
+  },
+  {
+   "id": "s03",
+   "range": [
+    315,
+    453
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Angka - paras air 725 meter di atas laut",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed contour page on aged newsprint: a charcoal block down the right edge, a mustard block across the top left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Level line: the elevation slip high left, a hand-drawn contour line crossing the page at a slight tilt, a man standing on the line low left for scale, and the hillside with its old waterline low right - the eye follows the line from number to ground.",
+   "kamera": "Ride the contour line from left to right, pass the standing figure, settle on the hillside; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_725",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Paras air dalam angka - satu-satunya angka yang mengukur danau itu",
+     "semantik": "725 M DPL",
+     "what": "a torn cream slip with big stencilled type reading '725 M' and a small line 'DI ATAS LAUT'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "725",
+     "z": 4,
+     "lands": 55
+    },
+    {
+     "name": "garis_paras",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Garis kontur yang digambar tangan - paras yang tidak terlihat lagi di lapangan",
+     "semantik": "GARIS PARAS",
+     "what": "a long torn sheet with a single hand-drawn contour line across it, pencil hatching below",
+     "at": "centre of the frame, centred at 0.50 across, about 0.44 of the frame wide",
+     "cut": true,
+     "word": "meter",
+     "z": 1,
+     "lands": 90,
+     "tertutup_boleh": "The man stands in front of this sheet — the still draws his raised arm, shoulder and legs across its lower edge, and his head has to stay clear. Nothing of the contour line is lost where it carries the shot: the drawn ridge runs the width of the sheet above his shoulder.",
+     "tertutup_alasan": "terukur: foto_tebing menutup 30% kotaknya, 70% terbaca"
+    },
+    {
+     "name": "orang_di_paras",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berdiri di garis air lama - tinggi yang diukur dengan tubuh, bukan dengan angka",
+     "semantik": "SETINGGI ORANG",
+     "what": "a sepia halftone cut-out of one lone man standing with a single hand raised above his head, full length from head to feet, the figure alone on plain magenta - not the hillside, not the rock band he stands on, not the slope behind him",
+     "at": "centre left of the frame, centred at 0.20 across, about 0.21 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "permukaan",
+     "z": 2,
+     "lands": 115
+    },
+    {
+     "name": "foto_tebing",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tebing dengan bekas garis air - tempat danau itu pernah berhenti",
+     "semantik": "BEKAS GARIS AIR",
+     "what": "a sepia halftone photograph of a hillside cut with a horizontal band of pale exposed rock",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "laut.",
+     "z": 3,
+     "lands": 131
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     2.6,
+     "kartu_725",
+     {
+      "at": 64,
+      "color": "coral"
+     }
+    ],
+    [
+     "arrow-right",
+     14,
+     -2.0,
+     "garis_paras",
+     {
+      "at": 108,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on '725'; arrow on the printed slip on 'meter'.",
+   "emphasis": [
+    {
+     "frame": 341.6,
+     "word": "Paras",
+     "motion": "hold",
+     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 32.8"
+  },
+  {
+   "id": "s04",
+   "range": [
+    453,
+    682
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Bentang - dari Cicalengka di timur sampai Rajamandala di barat, 60 kilometer",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed map band on aged newsprint: a crimson block behind the eastern end, a charcoal block behind the western end, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Left to right along the lake: the drawn lake high centre, the eastern shore photograph high left, the western shore low right, the surveyor standing between them, and the length card low centre closing the measure.",
+   "kamera": "Travel the length of the lake, east to west, then settle on the number; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "peta_membentang",
+     "bahan": "peta",
+     "wujud": "sobekan_pita",
+     "semiotik": "Danau digambar memanjang - bentuk yang menentukan di mana nama-nama itu jatuh",
+     "semantik": "MEMBENTANG",
+     "what": "a torn map sheet with a long narrow lake drawn across it, two end points marked",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.42 of the frame wide",
+     "cut": true,
+     "word": "Danau",
+     "z": 5,
+     "lands": 26
+    },
+    {
+     "name": "foto_cicalengka",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Ujung timur - Cicalengka, tempat danau itu mulai",
+     "semantik": "CICALENGKA",
+     "what": "a sepia halftone photograph of a flat eastern plain with a railway line and low hills",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Cicalenga",
+     "z": 1,
+     "lands": 58
+    },
+    {
+     "name": "foto_rajamandala",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Ujung barat - Rajamandala, tempat danau itu berhenti",
+     "semantik": "RAJAMANDALA",
+     "what": "a sepia halftone photograph of a river gorge between steep wooded walls",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Mandala",
+     "z": 2,
+     "lands": 121
+    },
+    {
+     "name": "pengukur_peta",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang mengukur di atas peta - panjang dan lebar tidak dikira-kira",
+     "semantik": "MENGUKUR",
+     "what": "a sepia halftone photograph of a man leaning over a map with a divider in his hand, seen from the side",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "sekitar",
+     "z": 3,
+     "lands": 186
+    },
+    {
+     "name": "kartu_60km",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Panjang danau dalam satu sobekan",
+     "semantik": "60 KM",
+     "what": "a torn cream slip with big stencilled type reading '60 KM' and a small line 'PANJANG'",
+     "at": "lower centre of the frame, centred at 0.52 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "kilometer.",
+     "z": 4,
+     "lands": 211
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     4.2,
+     "foto_cicalengka",
+     {
+      "at": 81,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-right",
+     14,
+     -3.4,
+     "foto_rajamandala",
+     {
+      "at": 138,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'cicalenga'; arrow on the photograph on 'mandala'.",
+   "emphasis": [
+    {
+     "frame": 479.0,
+     "word": "Danau",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 591.2,
+     "word": "barat.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 31.7"
+  },
+  {
+   "id": "s05",
+   "range": [
+    682,
+    855
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Lebar dan tepian - 40 kilometer, dan apa yang ditemukan di pinggirnya",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed shore page on aged newsprint: a mustard block down the left edge, a charcoal block across the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Two fossils on the shore: the width card high left, the shore photograph filling the centre, the finder kneeling low left, the rhino fossil low centre and the hippo fossil low right, each on its own torn edge.",
+   "kamera": "Hold the shore, drop to the finder, then step along the two fossils; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_40km",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Lebar danau - angka kedua yang mengukur hal yang sama",
+     "semantik": "40 KM",
+     "what": "a torn cream slip with big stencilled type reading '40 KM' and a small line 'LEBAR'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "40",
+     "z": 5,
+     "lands": 31
+    },
+    {
+     "name": "foto_tepi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tepian danau purba - garis tempat fosil-fosil itu keluar",
+     "semantik": "TEPIANNYA",
+     "what": "a sepia halftone photograph of a low bank of layered sediment at the edge of flat land",
+     "at": "centre of the frame, centred at 0.50 across, about 0.42 of the frame wide",
+     "cut": true,
+     "word": "tepiannya",
+     "z": 1,
+     "lands": 96
+    },
+    {
+     "name": "penemu_fosil",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Yang menemukan - berlutut di tepian, mengangkat sesuatu dari lapisan tanah",
+     "semantik": "DITEMUKAN",
+     "what": "a sepia halftone photograph of a man kneeling on a bank with a small trowel, one arm reaching down",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "ditemukan",
+     "z": 2,
+     "lands": 113,
+     "motion_basis": "Satu lengan yang menjangkau dan trowel di tangan lain, selebar 0.26 frame; lutut tetap di tanah. pose1 = berlutut, kedua tangan di depan lutut.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "reach down with the trowel and scrape once at the bank"
+      },
+      {
+       "pose": 3,
+       "action": "lift a small fragment up to eye level with his free hand"
+      },
+      {
+       "pose": 4,
+       "action": "lower the fragment into a cloth bag and sit back on his heel"
+      }
+     ]
+    },
+    {
+     "name": "fosil_badak",
+     "bahan": "benda",
+     "wujud": "siluet_organik",
+     "semiotik": "Fosil badak - hewan yang tidak mungkin hidup di jalan kota",
+     "semantik": "FOSIL BADAK",
+     "what": "a fossil rhino jaw with two worn teeth, photographed on plain paper, museum label clipped away",
+     "at": "lower centre of the frame, centred at 0.52 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "badak",
+     "z": 3,
+     "lands": 138,
+     "erase": [
+      [
+       0.73,
+       0.86,
+       1.0,
+       1.0
+      ]
+     ],
+     "piece_catatan": "The reply carried a torn strip of page running off to the right of the fossil at y 0.89-0.97. Erased; the fossil and its paper stay."
+    },
+    {
+     "name": "fosil_kudanil",
+     "bahan": "benda",
+     "wujud": "siluet_organik",
+     "semiotik": "Fosil kudanil - hewan air tawar besar, di tempat yang sekarang kering",
+     "semantik": "FOSIL KUDANIL",
+     "what": "a fossil hippo molar in a small tray, photographed from above, plain paper around it",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.22 of the frame wide",
+     "cut": true,
+     "word": "kudanil.",
+     "z": 4,
+     "lands": 154
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     -3.0,
+     "kartu_40km",
+     {
+      "at": 46,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on '40'.",
+   "emphasis": [
+    {
+     "frame": 773.0,
+     "word": "Di",
+     "motion": "landing",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 35.3"
+  },
+  {
+   "id": "s06",
+   "range": [
+    855,
+    1029
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Bukti - hewan besar di dataran yang sekarang penuh jalan dan gedung",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed street page on aged newsprint: a charcoal block across the upper right, a mustard block along the bottom, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Then and now in one page: the proof slip high left, the fossil still in its ground at the centre, the walker low left, and the street of today low right - the same ground, two times.",
+   "kamera": "Hold on the fossil in the ground, then cut to the street and follow the walker; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukti",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang mengubah temuan jadi bukti",
+     "semantik": "BUKTI",
+     "what": "a small torn slip with letterpress type reading 'BUKTI' and a strip of masking tape",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Bukti",
+     "z": 4,
+     "lands": 16
+    },
+    {
+     "name": "foto_fosil_lapangan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Fosil yang masih di dalam tanahnya - bukti yang belum dipindahkan",
+     "semantik": "PERNAH HIDUP DI SINI",
+     "what": "a sepia halftone photograph of bone fragments embedded in a cut earth bank, still in place",
+     "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "hewan",
+     "z": 2,
+     "lands": 34
+    },
+    {
+     "name": "foto_jalan_gedung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Dataran yang sama hari ini: aspal, pertokoan, gedung bertingkat",
+     "semantik": "JALAN DAN GEDUNG",
+     "what": "a sepia halftone photograph of a busy Indonesian street with shopfronts and a tall building behind",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "jalan",
+     "z": 1,
+     "lands": 129
+    },
+    {
+     "name": "pejalan_kota",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang berjalan di atas dasar danau tanpa tahu",
+     "semantik": "SEKARANG",
+     "what": "a sepia halftone photograph of a young man walking along a pavement in a city shirt, seen from the side",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "gedung.",
+     "z": 3,
+     "lands": 145,
+     "motion_basis": "Kaki dan satu lengan yang mengayun, selebar 0.24 frame; kepala tetap di dalam tepi. pose1 = melangkah, satu kaki di depan.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "mid-stride with the back foot lifting off the pavement"
+      },
+      {
+       "pose": 3,
+       "action": "turn his head toward the shopfronts as he walks"
+      },
+      {
+       "pose": 4,
+       "action": "stop with both feet together, hands going into his pockets"
+      }
+     ]
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.8,
+     "foto_fosil_lapangan",
+     {
+      "at": 69,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'hewan'.",
+   "emphasis": [
+    {
+     "frame": 999.8,
+     "word": "gedung.",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 34.9"
+  },
+  {
+   "id": "s07",
+   "range": [
+    1029,
+    1203
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Koreksi - nama ini bukan nama sungai kecil di pinggir kota",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed comparison page on aged newsprint: a crimson block behind the city plate, a charcoal block behind the stream, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Two scales side by side: the name slip high left, the negation strip high right, the city nameplate at the centre, and the small stream low right - the page makes the reader look down at the puddle.",
+   "kamera": "Hold the slip, pull back to the city plate, then drop to the stream; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "slip_nama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata 'nama' berdiri sendiri - yang dibicarakan adalah penamaan, bukan airnya",
+     "semantik": "NAMA",
+     "what": "a small torn cream slip with stencilled black type reading 'NAMA', a strip of tape across its top - that slip only, nothing else on the page",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "nama",
+     "z": 4,
+     "lands": 46
+    },
+    {
+     "name": "strip_bukan_kecil",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pita koran yang menolak tafsir kecil: 'bukan sungai kecil'",
+     "semantik": "BUKAN SUNGAI KECIL",
+     "what": "a torn newsprint strip with bold type reading 'BUKAN SUNGAI KECIL' crossed out in red",
+     "at": "upper right of the frame, centred at 0.66 across, about 0.56 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "bukan",
+     "z": 3,
+     "lands": 91
+    },
+    {
+     "name": "papan_nama_kota",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Papan nama kota - penanda yang dipakai orang setiap hari tanpa dibaca",
+     "semantik": "KOTA BANDUNG",
+     "what": "a weathered blue-and-white city limit signboard reading 'KOTA BANDUNG'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "nama",
+     "z": 2,
+     "lands": 99
+    },
+    {
+     "name": "foto_sungai_kecil",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai kecil di pinggir kota - yang dikira orang jadi asal nama itu",
+     "semantik": "SUNGAI KECIL",
+     "what": "a sepia halftone photograph of a narrow concrete-lined stream behind houses",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "sungai",
+     "z": 1,
+     "lands": 117
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     0.0,
+     "foto_sungai_kecil",
+     {
+      "at": 146,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "A box around the small river photograph on 'sungai', drawn in one pass.",
+   "emphasis": [
+    {
+     "frame": 1043.6,
+     "word": "Artinya,",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1175.0,
+     "word": "kota.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.2"
+  },
+  {
+   "id": "s08",
+   "range": [
+    1203,
+    1357
+   ],
+   "babak": "Babak 4 - Waktu geologis",
+   "peran_retoris": "Penutup babak - nama itu lahir di tepi danau yang lebih luas daripada kota hari ini",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed lake page on aged newsprint: a mustard block bleeding off the left edge, a crimson block across the bottom right, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Wide water under a wide sky: the birth slip high left, the lake photograph filling the middle, the watcher standing at the shoreline low left, and the city photograph low right for scale.",
+   "kamera": "Pull back from the shoreline to the whole lake, then hold; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_lahir",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kalimat yang menutup babak: lahir di tepi danau",
+     "semantik": "LAHIR DI TEPI DANAU",
+     "what": "a torn cream slip with stencilled type reading 'LAHIR DI TEPI DANAU'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "lahir",
+     "z": 4,
+     "lands": 27
+    },
+    {
+     "name": "foto_danau_luas",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Danau seluas kota - air yang tidak lagi ada, tapi masih dipakai menamai",
+     "semantik": "LUASNYA",
+     "what": "a sepia halftone photograph of a vast flat lake reaching a low horizon, no far shore visible",
+     "at": "centre of the frame, centred at 0.50 across, about 0.46 of the frame wide",
+     "cut": true,
+     "word": "danau",
+     "z": 1,
+     "lands": 60
+    },
+    {
+     "name": "penonton_danau",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berdiri di garis air - skala manusia di depan danau yang sudah pergi",
+     "semantik": "DI TEPI",
+     "what": "a sepia halftone cut-out of one person standing at the waterline seen from behind, the figure alone on plain magenta - not the dark shore, not the water, not the photograph around them",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "luasnya",
+     "z": 2,
+     "lands": 75
+    },
+    {
+     "name": "foto_bandung_kini",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kota Bandung sekarang - pembanding luas yang membuat danau itu terasa besar",
+     "semantik": "KOTA BANDUNG SEKARANG",
+     "what": "a sepia halftone photograph of dense city rooftops seen from a hill, hazy distance",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Bandung",
+     "z": 3,
+     "lands": 112,
+     "erase": [
+      [
+       0.0,
+       0.845,
+       0.595,
+       0.925
+      ]
+     ],
+     "piece_catatan": "A long torn line trails off the photograph's left at y 0.86-0.91, all the way to the frame edge. The photograph's own body starts at x 0.601 in that band, so the erase stops at 0.595."
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     16,
+     -1.8,
+     "kartu_lahir",
+     {
+      "at": 34,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     3.6,
+     "foto_danau_luas",
+     {
+      "at": 88,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'lahir'; circle on the photograph on 'danau'.",
+   "emphasis": [],
+   "still_gate": "PASS 43.0"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

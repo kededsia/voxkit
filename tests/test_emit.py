@@ -101,9 +101,18 @@ def test_the_frame_arrives_with_the_word_not_after_it():
 
 
 def test_no_two_camera_keys_are_closer_than_a_jump_cut():
+    """Two *transitions* closer than eight frames read as one jump-cut.
+
+    A camera hit is exempt, and has to be: `punch` is anticipate two frames back,
+    pull one frame before, overshoot three after, settle eight after that — by
+    design denser than the rule. Applied to the whole list, the rule could only
+    be satisfied by deleting the hit, and that is exactly what happened: every
+    shot in the film ended up with one ease, `slow`, and no hit at all.
+    """
     for shot in _program().shots:
-        gaps = [b.at - a.at for a, b in zip(shot.camera, shot.camera[1:])]
-        assert all(g >= 8 for g in gaps), gaps
+        gaps = [(a, b) for a, b in zip(shot.camera, shot.camera[1:])]
+        bad = [(a.at, b.at) for a, b in gaps if b.at - a.at < 8 and not (a.hit and b.hit)]
+        assert not bad, bad
 
 
 def test_every_camera_key_belongs_to_its_own_shot():

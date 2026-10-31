@@ -1,0 +1,32 @@
+{
+ "_comment": "The film's factual and lexical ground truth. tools/review_plan.py checks every plan against this file BEFORE an executor is allowed to run. `terms` fixes the one correct spelling of every non-Indonesian word the film prints; `claims` are the statements the film makes, each with the words that must never appear on screen. Add a term or a claim the first time the film needs it — a plan may not invent a spelling or assert an undeclared fact.",
+ "terms": [
+  {"correct": "cai", "lang": "Sunda", "meaning": "air (water)", "never": ["cahi", "chai", "cayi"],
+   "note": "m20 printed CAHI in two cards and two shot briefs, and m04/m16 printed CHAI. The 'h' came from the ASR transcript and was copied into on-screen text."},
+  {"correct": "banyu", "lang": "Jawa", "meaning": "air (water)", "never": ["banyhu", "banju"]},
+  {"correct": "tirta", "lang": "Sanskerta/Jawa", "meaning": "air (water, formal)", "never": ["tirtha"]},
+  {"correct": "ci", "lang": "Sunda", "meaning": "bukan 'cahaya' — film ini membantah pembacaan itu", "never": []},
+  {"correct": "bodas", "lang": "Sunda", "meaning": "putih (white)", "never": ["boddas"]},
+  {"correct": "berem", "lang": "Sunda", "meaning": "merah (red)", "never": ["beureum", "beram"]},
+  {"correct": "hideng", "lang": "Sunda", "meaning": "hitam (black)", "never": ["hideung", "hidang"]},
+  {"correct": "purwa", "lang": "Sanskerta/Jawa", "meaning": "purba, yang pertama", "never": []},
+  {"correct": "sanskerta", "lang": "Sanskerta", "meaning": "Sanskrit", "never": ["sansekerta", "sangsekerta"]},
+  {"correct": "sunda", "lang": "Sunda", "meaning": "Sunda", "never": []},
+  {"correct": "jawa", "lang": "Jawa", "meaning": "Jawa", "never": []},
+  {"correct": "everest", "lang": "Inggris", "meaning": "Gunung Everest", "never": ["everst", "everes"]}
+ ],
+ "claims": [
+  {"id": "kata-cai",
+   "claim": "Kata Sunda untuk air adalah 'cai', bukan 'cahi'; 'banyu' adalah kata Jawa dan 'tirta' kata Sanskerta/Jawa.",
+   "never_print": ["cahi", "chai"],
+   "source": "klaim film, m20 s04-s05"},
+  {"id": "ci-bukan-cahaya",
+   "claim": "Dalam Sanskerta, kata untuk cahaya bukan 'ci'.",
+   "never_print": ["ci = cahaya", "ci berarti cahaya"],
+   "source": "klaim film, m20 s07"},
+  {"id": "tinggi-gunung",
+   "claim": "Gunung Sunda Purwa disebut lebih dari 17.000 meter; Everest 8.848 m; Gunung Sunda yang asli sekitar 4.000 m.",
+   "never_print": [],
+   "source": "angka yang diucapkan narasi m20 s06-s07"}
+ ]
+}

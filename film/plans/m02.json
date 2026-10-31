@@ -1,0 +1,879 @@
+{
+ "plan_version": 2,
+ "module": "m02",
+ "klaim": "294 dari 1.000 nama tempat yang diambil acak di Purwakarta berawalan suku kata Ci - 29,4%, 3 dari 10, dan sebarannya di seluruh kabupaten, di semua jenis tempat.",
+ "payoff": "Dan itu baru satu kabupaten - angka ini bukan keanehan satu lembah, dan Purwakarta bukan kasus tunggal.",
+ "serah": "angka 294 dan tally 3 dari 10, untuk m03 yang memeriksa satu kecamatan",
+ "terima": "papan nama desa dan pertanyaan KENAPA CI- dari m01",
+ "konteks_modul": {
+  "konteks_budaya": "Dokumen arsip resmi Indonesia: box arsip kardus berlabel stensil, lembar ketikan mesin ketik, plang instansi dinas kabupaten, kartu indeks gazetteer, kertas turus (garis hitung lima-lima khas pencatatan Indonesia), pensil kayu, peta kabupaten Purwakarta dan Jawa Barat. Palet halaman: kertas koran lawas berwarna Vox - blok mustard yellow, coral/crimson red, charcoal black, cream, deep navy tua; dilarang abu-abu monokrom merata dan dilarang warna digital modern. Tanpa figur manusia di plate - figur apa pun yang muncul wajib kartu (D1-motion r7).",
+  "tesis_modul": "Survei resmi Dinas Arsip Purwakarta membuktikan pola Ci- bukan keanehan satu lembah: dari 1.000 nama tempat yang diambil acak (17 kecamatan, 183 desa, 9 kelurahan), 294 berawalan CI - 29,4%, 3 dari 10 - di semua jenis tempat; dan itu baru satu kabupaten.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 1 - Survei Arsip & Cakupannya",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Instansi pengambil survei dan luas cakupan administratifnya."
+   },
+   {
+    "babak": "Babak 2 - Angka Inti & Skala",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "294 dari seribu berawalan CI; 29,4% = 3 dari 10; seluruh kabupaten."
+   },
+   {
+    "babak": "Babak 3 - Enam Jenis Tempat & Konsekuensinya",
+    "shots": [
+     "s06"
+    ],
+    "fokus": "Kampung, gunung, bukit, lembah, tegalan, sungai - dan itu baru satu kabupaten."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    232
+   ],
+   "babak": "Babak 1 - Survei Arsip & Cakupannya",
+   "peran_retoris": "Pembuka sumber - siapa yang mengukur, dan berapa banyak yang diukur",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed archive-office collage on aged newsprint: a mustard block off the left edge, a charcoal block off the bottom right, printed columns showing through, crooked masking tape.",
+   "tata_letak_kolase": "Asymmetric stack tilted 4-8 degrees: the nameplate upper left, the archive room at the centre, the box low left, the clerk low right, the thousand-name slip between them, the fanning hand high right.",
+   "kamera": "Hold on the nameplate, drift right onto the room, then settle low on the slip as the hand fans it; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_ruang_arsip",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Ruang arsip: rak logam penuh boks berlabel, satu jalur cahaya jendela - tempat seribu nama itu disimpan",
+     "semantik": "SERIBU NAMA DI RAK",
+     "what": "a sepia halftone photograph of an archive room, steel shelves packed with labelled boxes",
+     "at": "centre of the frame, centred at 0.50 across, about 0.42 of the frame wide",
+     "cut": true,
+     "word": "Arsip",
+     "z": 1,
+     "lands": 17
+    },
+    {
+     "name": "foto_purwakarta",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kabupaten yang diukur: jalan masuk kota kecil dengan bukit di belakang",
+     "semantik": "PURWAKARTA",
+     "what": "a sepia halftone photograph of a small town street with a hill behind the rooftops",
+     "at": "centre of the frame, centred at 0.82 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "kabupaten.",
+     "z": 4,
+     "lands": 197
+    },
+    {
+     "name": "plang_dinas",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Plang nama dinas kabupaten tempat survei itu dikerjakan",
+     "semantik": "DINAS ARSIP DAN PERPUSTAKAAN",
+     "what": "a weathered government office nameplate reading 'DINAS ARSIP DAN PERPUSTAKAAN'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Dinas",
+     "z": 6,
+     "lands": 12
+    },
+    {
+     "name": "box_arsip",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Boks arsip kardus berlabel stensil dengan kartu indeks tumpah - bahan mentah survei",
+     "semantik": "BOX ARSIP",
+     "what": "a sepia halftone photograph of a cardboard archive box, typed index cards spilling out",
+     "at": "lower left of the frame, centred at 0.18 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "mengambil",
+     "z": 2,
+     "lands": 106
+    },
+    {
+     "name": "petugas_arsip",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Petugas arsip perempuan mengangkat tumpukan boks - yang benar-benar menghitung nama",
+     "semantik": "PETUGAS ARSIP",
+     "what": "a sepia halftone photograph of a woman in a civil-service blouse carrying a stack of archive boxes, seen from the side",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Purwakarta",
+     "z": 5,
+     "lands": 71,
+     "motion_basis": "Kedua lengan dan tumpukan boks selebar 0.30 frame; boks selalu di depan torso sehingga siluet tidak pernah pecah. pose1 = berdiri netral, tumpukan di depan perut.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "shift the stack of boxes onto her hip and take one step toward the shelf"
+      },
+      {
+       "pose": 3,
+       "action": "set the top box down on the shelf and straighten up, chin lifting"
+      },
+      {
+       "pose": 4,
+       "action": "turn back toward the room with one box still in her arms, shoulders settling"
+      }
+     ]
+    },
+    {
+     "name": "kartu_seribu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan kertas stensil angka pokok survei",
+     "semantik": "1.000 NAMA TEMPAT",
+     "what": "an irregular torn cream slip with big stencilled type reading '1.000 NAMA TEMPAT'",
+     "at": "lower centre of the frame, centred at 0.46 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "seribu",
+     "z": 7,
+     "lands": 120
+    },
+    {
+     "name": "tangan_mengacak",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangan perempuan mengembangkan sobekan nama - kata 'acak' jadi perbuatan, bukan sifat",
+     "semantik": "SECARA ACAK",
+     "what": "a sepia halftone photograph of a woman's hand fanning typed slips across a table",
+     "at": "upper centre of the frame, centred at 0.67 across, about 0.46 of the frame wide, down at 0.20",
+     "cut": true,
+     "word": "acak",
+     "z": 3,
+     "lands": 166
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     2.6,
+     "kartu_seribu",
+     {
+      "at": 124,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     -4.4,
+     "tangan_mengacak",
+     {
+      "at": 172,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'seribu'; circle on the figure on 'acak'.",
+   "emphasis": [],
+   "still_gate": "PASS 30.1"
+  },
+  {
+   "id": "s02",
+   "range": [
+    232,
+    378
+   ],
+   "babak": "Babak 1 - Survei Arsip & Cakupannya",
+   "peran_retoris": "Cakupan administratif - tiga angka yang membuat survei ini tidak bisa dituduh sempit",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed gazetteer ledger collage on aged newsprint: a bold coral block bleeding off the top, a mustard block off the bottom, columns of small typed print showing through, crooked masking tape.",
+   "tata_letak_kolase": "Three number plates stepped down a diagonal from upper left to lower right, each tilted 4-7 degrees in voice order, the village photograph low left and the village official low right closing the band.",
+   "kamera": "Step down the diagonal, one plate at a time, and land on the official; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_desa",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Desa dari jalannya: atap genting, kubah masjid kecil, sawah di belakang - satu dari 183",
+     "semantik": "DESA",
+     "what": "a sepia halftone photograph of a West Javanese village seen from its lane, tiled roofs, a small mosque dome and rice fields behind",
+     "at": "lower left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "desa,",
+     "z": 1,
+     "lands": 73
+    },
+    {
+     "name": "plang_17",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Plat enamel jumlah kecamatan - angka pertama, yang paling kecil",
+     "semantik": "17 KECAMATAN",
+     "what": "a weathered enamel number plate reading '17 KECAMATAN', the only red plate on the page",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "17",
+     "z": 3,
+     "lands": 0
+    },
+    {
+     "name": "plang_183",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Plat enamel jumlah desa - angka terbesar dalam kalimat ini",
+     "semantik": "183 DESA",
+     "what": "a weathered enamel number plate reading '183 DESA', the only blue plate on the page",
+     "at": "centre of the frame, centred at 0.50 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "183",
+     "z": 5,
+     "lands": 46
+    },
+    {
+     "name": "plang_9",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Plat enamel jumlah kelurahan - angka ketiga, yang paling sedikit",
+     "semantik": "9 KELURAHAN",
+     "what": "a small weathered enamel number plate reading '9 KELURAHAN'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "9",
+     "z": 4,
+     "lands": 98
+    },
+    {
+     "name": "petugas_desa",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Perangkat desa berbaju batik memegang buku register - yang mencatat 183 desa itu",
+     "semantik": "PERANGKAT DESA",
+     "what": "a sepia halftone photograph of a village official in a batik shirt holding a ledger open in both hands, chest-up, facing left",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kelurahan.",
+     "z": 2,
+     "lands": 108
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     -3.8,
+     "plang_183",
+     {
+      "at": 60,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     4.9,
+     "petugas_desa",
+     {
+      "at": 120,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on '183'; circle on the figure on 'kelurahan.'.",
+   "emphasis": [
+    {
+     "frame": 232.2,
+     "word": "17",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 278.4,
+     "word": "183",
+     "motion": "landing"
+    },
+    {
+     "frame": 330.0,
+     "word": "9",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 46.4"
+  },
+  {
+   "id": "s03",
+   "range": [
+    378,
+    552
+   ],
+   "babak": "Babak 2 - Angka Inti & Skala",
+   "peran_retoris": "Angka inti - dari seribu nama, 294 dimulai dengan suku kata yang sama",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed index-card collage on aged newsprint: a bold mustard block on the right, crimson misregistration slashes across the centre, columns of typed entries showing through, crooked masking tape.",
+   "tata_letak_kolase": "Converging cluster: the office building high left, the ledger low left, the 294 slip low centre under the reader's hands, the prefix slip high right - the page tilts 4 degrees toward the slip.",
+   "kamera": "Push from the building down to the slip, hold while the reader's hands arrive; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "gedung_dinas",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kantor dinas kabupaten - tempat survei itu disimpan dan dibaca ulang",
+     "semantik": "KANTOR DINAS",
+     "what": "a sepia halftone photograph of a low Indonesian government office building with a flagpole and a paved yard",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Dari",
+     "z": 1,
+     "lands": 0
+    },
+    {
+     "name": "kartu_indeks",
+     "bahan": "foto",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tumpukan kartu indeks ketikan berisi nama-nama tempat - seribu lembar yang harus dibaca satu-satu",
+     "semantik": "KARTU INDEKS",
+     "what": "a sepia halftone photograph of stacked typewritten index cards, rows of small blurred typing, no legible words",
+     "at": "lower left of the frame, centred at 0.30 across, about 0.30 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "seribu",
+     "z": 2,
+     "lands": 7
+    },
+    {
+     "name": "pembaca_daftar",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Lelaki membaca daftar panjang di kedua tangannya - momen pola itu terlihat",
+     "semantik": "PEMBACA DAFTAR",
+     "what": "a sepia halftone photograph of a man in a short-sleeved shirt holding a long printed list open in both hands and reading down it, three-quarter body",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "dimulai",
+     "z": 3,
+     "lands": 89
+    },
+    {
+     "name": "kartu_294",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan angka inti: 294 dari seribu",
+     "semantik": "294 - BERAWALAN CI",
+     "what": "an irregular torn cream slip with big stencilled '294' and beneath it a smaller stencil line 'BERAWALAN CI'",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "294",
+     "z": 4,
+     "lands": 53
+    },
+    {
+     "name": "slip_chi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Awalan itu dipisahkan dari katanya - dua huruf yang berdiri sendiri",
+     "semantik": "CHI - SATU SUKU KATA",
+     "what": "a small torn slip with letterpress type reading 'CHI' and under it 'SATU SUKU KATA'",
+     "at": "upper right of the frame, centred at 0.72 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "suku",
+     "z": 5,
+     "lands": 113
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     5.2,
+     "kartu_294",
+     {
+      "at": 60,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -3.6,
+     "slip_chi",
+     {
+      "at": 138,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the printed slip on '294'; underline on the printed slip on 'suku'.",
+   "emphasis": [
+    {
+     "frame": 431.4,
+     "word": "294",
+     "motion": "landing",
+     "why": "skor 0.54 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 516.0,
+     "word": "Chi.",
+     "motion": "hold",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 48.2"
+  },
+  {
+   "id": "s04",
+   "range": [
+    552,
+    760
+   ],
+   "babak": "Babak 2 - Angka Inti & Skala",
+   "peran_retoris": "Skala - 29,4% sama dengan 3 dari 10, dan itu bukan satu lembah, bukan satu kecamatan",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed counting-sheet collage on aged newsprint: a coral block off the right edge, a mustard block off the bottom left, ruled columns and typed figures showing through, crooked masking tape.",
+   "tata_letak_kolase": "Off-balance pair with a landscape floor: the percentage slip high left, the negation strip high right, the counting sheet at the centre, and the valley, the tally and the farmer standing along the bottom in that order.",
+   "kamera": "Hold the percentage, cut right to the strip, then sink to the valley floor; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "kertas_hitung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kertas turus kosong - kertas hitung yang dipakai menghitung 1.000 nama lima-lima",
+     "semantik": "KERTAS TURUS",
+     "what": "an irregular torn cream sheet ruled in columns with five-bar counting gates, pencil smudges",
+     "at": "centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "10.",
+     "z": 4,
+     "lands": 88
+    },
+    {
+     "name": "foto_lembah_luas",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lembah sawah bertingkat dengan sungai di dasarnya - yang dituduh 'satu lembah saja'",
+     "semantik": "LEMBAH",
+     "what": "a sepia halftone photograph of a wide rice-terrace valley with a river at its floor, seen from a ridge",
+     "at": "lower left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "lembah,",
+     "z": 1,
+     "lands": 139
+    },
+    {
+     "name": "kartu_294persen",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan angka persentase - cara lain mengatakan 3 dari 10",
+     "semantik": "29,4%",
+     "what": "an irregular torn cream slip with huge stencilled type reading '29,4%' and a small line 'DARI 1.000 NAMA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "29",
+     "z": 3,
+     "lands": 0
+    },
+    {
+     "name": "tally_tiga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sepuluh garis turus, tiga dilingkari - 3 dari 10, tanpa satu kata pun",
+     "semantik": "3 DARI 10",
+     "what": "a torn cream card with ten hand-drawn counting gates, three of them circled in red pencil",
+     "at": "lower centre of the frame, centred at 0.60 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "3",
+     "z": 5,
+     "lands": 68
+    },
+    {
+     "name": "strip_bukan",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pita koran yang dicoret: dua tuduhan yang ditolak sebelum sempat diucapkan",
+     "semantik": "BUKAN 1 LEMBAH - BUKAN 1 KEC.",
+     "what": "an irregular torn newsprint strip with bold type reading 'BUKAN 1 LEMBAH - BUKAN 1 KEC.' crossed out in red",
+     "at": "upper right of the frame, centred at 0.74 across, about 0.53 of the frame wide, down at 0.11",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "Bukan",
+     "z": 6,
+     "lands": 122
+    },
+    {
+     "name": "petani",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Petani berdiri di pematang, tangan terlipat - tempat yang dihitung itu berpenghuni",
+     "semantik": "PETANI",
+     "what": "a sepia halftone photograph of an Indonesian farmer standing on a paddy bund with his arms folded, a conical hat on his head, three-quarter body",
+     "at": "lower right of the frame, centred at 0.84 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "kecamatan,",
+     "z": 2,
+     "lands": 181,
+     "motion_basis": "Lengan dan kepala di atas pematang, selebar 0.28 frame; topi dan tangan terlipat tetap di dalam tepi. pose1 = tangan terlipat, menghadap penonton.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "uncross his arms and rest both hands on his hips"
+      },
+      {
+       "pose": 3,
+       "action": "turn his head toward the valley and raise one hand to shade his eyes"
+      },
+      {
+       "pose": 4,
+       "action": "fold his arms again and settle, weight shifting to the other leg"
+      }
+     ]
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     -4.2,
+     "kartu_294persen",
+     {
+      "at": 12,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     5.4,
+     "tally_tiga",
+     {
+      "at": 76,
+      "color": "crimson"
+     }
+    ],
+    [
+     "strike",
+     12,
+     -2.2,
+     "strip_bukan",
+     {
+      "at": 190,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on '29'; circle on the printed slip on '3'; strike on the clipping on 'bukan'.",
+   "emphasis": [
+    {
+     "frame": 552.0,
+     "word": "29",
+     "motion": "snap"
+    },
+    {
+     "frame": 640.2,
+     "word": "10.",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 38.2"
+  },
+  {
+   "id": "s05",
+   "range": [
+    760,
+    870
+   ],
+   "babak": "Babak 2 - Angka Inti & Skala",
+   "peran_retoris": "Pemetaan - cakupannya seluruh kabupaten, dan sebarannya di semua jenis tempat",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed district map collage on aged newsprint with a charcoal block bleeding off the top, a mustard block off the left, printed columns showing through, crooked masking tape.",
+   "tata_letak_kolase": "Map-centred asymmetry: the district map filling the centre with red pins already scattered on it, the boundary photograph low right, the coverage slip low left, and one more pin still to be planted high right.",
+   "kamera": "Slow drift up the map toward the pins, then settle on the boundary sign; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "peta_purwakarta",
+     "bahan": "peta",
+     "wujud": "siluet_organik",
+     "semiotik": "Peta kabupaten Purwakarta bertanda pin merah - sebaran, bukan satu titik",
+     "semantik": "KAB. PURWAKARTA",
+     "what": "a vintage district map sheet of Purwakarta with red pin marks scattered across it, torn edges",
+     "at": "centre of the frame, centred at 0.48 across, about 0.42 of the frame wide",
+     "cut": true,
+     "word": "seluruh",
+     "z": 4,
+     "lands": 16
+    },
+    {
+     "name": "foto_kabupaten",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan batas kabupaten - tanda bahwa cakupan ini satu wilayah utuh",
+     "semantik": "BATAS KABUPATEN",
+     "what": "a sepia halftone photograph of a two-lane road at a district boundary with a white-and-black KABUPATEN sign on its post",
+     "at": "lower right of the frame, centred at 0.74 across, about 0.32 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "semua",
+     "z": 2,
+     "lands": 74
+    },
+    {
+     "name": "kartu_seluruh",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan penegas cakupan",
+     "semantik": "SELURUH KABUPATEN",
+     "what": "an irregular torn cream slip with bold stencilled type reading 'SELURUH KABUPATEN'",
+     "at": "lower left of the frame, centred at 0.26 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kabupaten,",
+     "z": 3,
+     "lands": 29
+    },
+    {
+     "name": "pin_merah",
+     "bahan": "benda",
+     "wujud": "siluet_organik",
+     "semiotik": "Satu pin lagi yang belum ditancapkan - jenis tempat yang belum dihitung",
+     "semantik": "JENIS TEMPAT",
+     "what": "a single red map pin photographed from the side, sharp shadow, no map under it",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "tempat.",
+     "z": 1,
+     "lands": 91
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     4.6,
+     "peta_purwakarta",
+     {
+      "at": 20,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-right",
+     12,
+     -3.4,
+     "pin_merah",
+     {
+      "at": 98,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the map on 'seluruh'; arrow on the object on 'tempat.'.",
+   "emphasis": [],
+   "still_gate": "PASS 40.7"
+  },
+  {
+   "id": "s06",
+   "range": [
+    870,
+    1119
+   ],
+   "babak": "Babak 3 - Enam Jenis Tempat & Konsekuensinya",
+   "peran_retoris": "Katalog jenis - enam kata benda, lalu satu kalimat yang menutup modul",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed gazetteer collage on aged newsprint: a mustard block off the top left, a coral block off the bottom, torn index columns at the edges showing through, crooked masking tape.",
+   "tata_letak_kolase": "Two bands: the six place-types as two torn strips high left and high right with the closing slip between them, three photographs along the floor in voice order, and the walker crossing the middle band.",
+   "kamera": "Track right along the floor photographs, then rise to the closing slip; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_kampung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Gang kampung: rumah rendah, warung, pagar bilah bambu - jenis tempat pertama",
+     "semantik": "KAMPUNG",
+     "what": "a sepia halftone photograph of a kampung lane, low houses, a shop counter and a bamboo fence",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Kampung,",
+     "z": 2,
+     "lands": 4
+    },
+    {
+     "name": "foto_lembah_hulu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Lembah sempit berhutan di hulu - lembah yang lain dari yang di s04",
+     "semantik": "LEMBAH",
+     "what": "a sepia halftone photograph of a narrow forested valley with a stream cutting through it",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "lembah,",
+     "z": 3,
+     "lands": 91
+    },
+    {
+     "name": "label_kampung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Label jenis tempat pertama, ditempel seperti judul kolom",
+     "semantik": "KAMPUNG",
+     "what": "a small torn label reading 'KAMPUNG'",
+     "at": "upper left of the frame, centred at 0.20 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Kampung,",
+     "z": 6,
+     "lands": 7
+    },
+    {
+     "name": "strip_jenis",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tiga jenis tempat dalam satu sobekan - gunung, bukit, tegalan",
+     "semantik": "GUNUNG - BUKIT - TEGALAN",
+     "what": "a torn cream slip with three stencilled lines reading 'GUNUNG', 'BUKIT', 'TEGALAN'",
+     "at": "upper right of the frame, centred at 0.72 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "gunung,",
+     "z": 7,
+     "lands": 38
+    },
+    {
+     "name": "foto_sungai",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai dangkal di atas batu dengan bambu di tepinya - jenis tempat yang paling sering jadi awalan Ci",
+     "semantik": "SUNGAI",
+     "what": "a sepia halftone photograph of a shallow river over stones with bamboo on the bank",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "sungai.",
+     "z": 4,
+     "lands": 154
+    },
+    {
+     "name": "pejalan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Perempuan berjalan di jalan tegalan dengan bakul di punggung - tegalan itu dilalui orang",
+     "semantik": "TEGALAN",
+     "what": "a sepia halftone photograph of a woman walking a dry field path carrying a woven basket on her back, seen from behind and to the side",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Dan",
+     "z": 5,
+     "lands": 190
+    },
+    {
+     "name": "kartu_kabupaten",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan penutup: baru satu kabupaten - janji yang dibayar m03",
+     "semantik": "BARU SATU KABUPATEN",
+     "what": "a torn cream slip with a small printed map of West Java reading 'BARU SATU KABUPATEN'",
+     "at": "upper centre of the frame, centred at 0.47 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "kabupaten.",
+     "z": 1,
+     "lands": 221,
+     "tertutup_boleh": "the woman walking the field carries the shot and her head must stay clear: she crosses this slip's lower margin in the picture, so she is drawn above it. The slip's own words sit above her basket and are never touched.",
+     "tertutup_alasan": "terukur: pejalan menutup 21% kotaknya, 79% terbaca"
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     1.6,
+     "strip_jenis",
+     {
+      "at": 46,
+      "color": "mustard"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -3.9,
+     "kartu_kabupaten",
+     {
+      "at": 230,
+      "color": "coral"
+     }
+    ],
+    [
+     "underline",
+     14,
+     2.4,
+     "strip_jenis",
+     {
+      "at": 120,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'gunung,'; underline on the printed slip on 'kabupaten.'; underline on the printed slip on 'gunung,'.",
+   "emphasis": [
+    {
+     "frame": 873.6,
+     "word": "Kampung,",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 907.8,
+     "word": "gunung,",
+     "motion": "landing",
+     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 960.6,
+     "word": "lembah,",
+     "motion": "landing"
+    },
+    {
+     "frame": 988.2,
+     "word": "tegalan,",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1024.2,
+     "word": "sungai.",
+     "motion": "landing"
+    },
+    {
+     "frame": 1059.6,
+     "word": "Dan",
+     "motion": "hold",
+     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 39.4"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)",
+   "Hukum kolase, yang kedua kalinya (D0b3)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

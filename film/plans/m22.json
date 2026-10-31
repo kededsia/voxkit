@@ -1,0 +1,1040 @@
+{
+ "plan_version": 2,
+ "module": "m22",
+ "klaim": "Pada 2007 Citarum masuk daftar sungai paling tercemar di dunia, padahal namanya berarti air. Nama-nama ci bukan monumen - monumen dibangun untuk mengingat sesuatu yang sudah selesai. Nama-nama ini lebih seperti janji yang dibuat air kepada tanah, dicatat oleh orang yang tidak punya kertas. Tiga dari sepuluh nama tempat di satu kabupaten di Jawa Barat adalah nama air. Itu bukan kebetulan dan bukan puisi - itu catatan, dan catatannya masih terbuka.",
+ "payoff": "Catatan itu masih terbuka.",
+ "serah": "tidak ada - film selesai di sini",
+ "terima": "Citarum dan tarum dari m21; slip CI m03, tally 3 dari 10 dan peta kabupaten m02",
+ "konteks_modul": {
+  "konteks_budaya": "Penutup: sungai besar yang tercemar, monumen batu, tanah kering, meja yang ditinggalkan, buku catatan. Lanskap: tepi Citarum, taman monumen, sawah kabupaten, jendela. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Nama-nama ini bukan monumen yang memperingati sesuatu yang selesai, melainkan catatan yang masih terbuka. Tiga dari sepuluh nama tempat adalah nama air - bukan kebetulan, bukan puisi.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 28 - Daftar",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "2007 Citarum masuk daftar sungai paling tercemar, padahal namanya berarti air."
+   },
+   {
+    "babak": "Babak 29 - Bukan monumen",
+    "shots": [
+     "s03",
+     "s04"
+    ],
+    "fokus": "Monumen memperingati yang sudah selesai; nama-nama ini janji air kepada tanah."
+   },
+   {
+    "babak": "Babak 30 - Catatan",
+    "shots": [
+     "s05",
+     "s06",
+     "s07"
+    ],
+    "fokus": "Dicatat tanpa kertas, diwariskan, tiga dari sepuluh - dan catatannya masih terbuka."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    199
+   ],
+   "babak": "Babak 28 - Daftar",
+   "peran_retoris": "Pembuka penutup - angka yang memalukan dipasang berdampingan dengan arti namanya",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed opening page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The 2007 headline high left, the polluted river centre, the waste bank low left, 'paling tercemar' high right, the watcher low right, and the CI slip at the bottom.",
+   "kamera": "Start on the list, then let the water sit under it; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "strip_koran_2007",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Daftar itu tercetak - tahun dan nama sungainya, bukan keluhan",
+     "semantik": "2007",
+     "what": "a torn newsprint strip with a headline reading '2007: SUNGAI PALING TERCEMAR'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.34 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "2007,",
+     "z": 4,
+     "lands": 23
+    },
+    {
+     "name": "foto_sungai_tercemar",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Citarum hari ini - air yang namanya berarti air",
+     "semantik": "SUNGAI ITU",
+     "what": "a sepia halftone photograph of a wide river carrying grey waste past a bridge",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "sungai",
+     "z": 1,
+     "lands": 48
+    },
+    {
+     "name": "foto_sampah_tepi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sampah di tepi - daftar itu punya isi",
+     "semantik": "PALING TERCEMAR",
+     "what": "a sepia halftone photograph of plastic waste piled on a muddy river bank",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "sungai",
+     "z": 2,
+     "lands": 88
+    },
+    {
+     "name": "kartu_paling_tercemar",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Peringkat - bukan kemarahan, tapi daftar",
+     "semantik": "PALING TERCEMAR DI DUNIA",
+     "what": "a torn cream slip with stencilled type reading 'PALING TERCEMAR DI DUNIA'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "tercemar",
+     "z": 5,
+     "lands": 111
+    },
+    {
+     "name": "figur_penyusur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di tepi - yang melihat air itu tiap hari",
+     "semantik": "DI DUNIA",
+     "what": "a sepia halftone photograph of a man standing on a river bank looking at the water, seen from the side",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "dunia.",
+     "z": 3,
+     "lands": 132
+    },
+    {
+     "name": "kata_ci",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip yang sama dari m03 - kata yang memendek jadi awalan, dan artinya tetap air",
+     "semantik": "NAMANYA BERARTI AIR",
+     "what": "a torn cream slip with heavier stencilled type reading 'CI'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.22 of the frame wide, down at 0.93",
+     "cut": true,
+     "word": "air.",
+     "z": 6,
+     "lands": 189
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     15,
+     3.0,
+     "kartu_paling_tercemar",
+     {
+      "at": 111,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     17,
+     -2.4,
+     "figur_penyusur",
+     {
+      "at": 132,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'tercemar'; box on the figure on 'dunia.'.",
+   "emphasis": [
+    {
+     "frame": 132.2,
+     "word": "dunia.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 189.2,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    199,
+    364
+   ],
+   "babak": "Babak 28 - Daftar",
+   "peran_retoris": "Pelajarannya - airnya sudah lama bukan air, dan itu bagian yang jujur",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed lesson page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The murky water high left, the outlet pipe low left, 'bukan air' high right, the witness centre right, 'pelajaran paling jujur' across the middle, and the foam at the bottom.",
+   "kamera": "Hold the water still, let it stay ugly; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_air_keruh",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air yang tidak lagi seperti air - bagian yang harus dikatakan",
+     "semantik": "SUDAH LAMA BUKAN AIR",
+     "what": "a sepia halftone photograph of murky brown water filling the frame edge to edge",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "Airnya",
+     "z": 1,
+     "lands": 21
+    },
+    {
+     "name": "kartu_bukan_air",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kalimat yang dipegang shot ini - bukan air lagi",
+     "semantik": "BUKAN AIR",
+     "what": "a torn cream slip with big stencilled type reading 'BUKAN AIR'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "air.",
+     "z": 5,
+     "lands": 54
+    },
+    {
+     "name": "kartu_pelajaran_jujur",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang tersisa setelah semua teori - bukan penjelasan, hanya pengakuan",
+     "semantik": "PELAJARAN PALING JUJUR",
+     "what": "a torn cream slip with stencilled type reading 'PELAJARAN PALING JUJUR'",
+     "at": "centre of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.44",
+     "cut": true,
+     "word": "jujur",
+     "z": 6,
+     "lands": 130
+    },
+    {
+     "name": "foto_pipa_buang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pipa pembuangan - sebab yang tidak perlu teori",
+     "semantik": "BUKAN AIR",
+     "what": "a sepia halftone photograph of a concrete pipe discharging into a shallow stream",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "lama",
+     "z": 2,
+     "lands": 38
+    },
+    {
+     "name": "figur_penyaksi",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang melihat tiap hari - yang tidak butuh penjelasan cahaya",
+     "semantik": "MUNGKIN ITU",
+     "what": "a sepia halftone photograph of an old woman standing at a rail watching the water, seen from behind",
+     "at": "centre right of the frame, centred at 0.76 across, about 0.24 of the frame wide, down at 0.56",
+     "cut": true,
+     "word": "mungkin",
+     "z": 3,
+     "lands": 92,
+     "motion_basis": "Kepala dan satu tangan di pagar, selebar 0.24 frame; kaki tetap. pose1 = berdiri, kedua tangan di pagar.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "lean forward over the rail to look down"
+      },
+      {
+       "pose": 3,
+       "action": "straighten up and turn her head away"
+      },
+      {
+       "pose": 4,
+       "action": "lift one hand and point at the water"
+      }
+     ]
+    },
+    {
+     "name": "foto_limbah_busa",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Busa di permukaan - bukti yang mengapung",
+     "semantik": "PELAJARAN",
+     "what": "a sepia halftone photograph of white foam drifting on a slow brown river",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide, down at 0.86",
+     "cut": true,
+     "word": "ini.",
+     "z": 4,
+     "lands": 155
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     11,
+     3.6,
+     "kartu_bukan_air",
+     {
+      "at": 54,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     16,
+     -2.9,
+     "figur_penyaksi",
+     {
+      "at": 92,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'air.'; circle on the figure on 'mungkin'.",
+   "emphasis": [
+    {
+     "frame": 219.8,
+     "word": "Airnya",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 252.8,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.54 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    364,
+    545
+   ],
+   "babak": "Babak 29 - Bukan monumen",
+   "peran_retoris": "Pembanding - monumen memperingati yang selesai, nama-nama ini tidak",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed comparison page on aged newsprint: a mustard block across the upper left, a crimson strip down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Nama-nama ci' high left, 'bukan monumen' high right, the plaque high centre, the obelisk at the centre, the empty garden low right, the visitor low left, and 'sesuatu yang sudah selesai' along the bottom.",
+   "kamera": "Put the stone up against the names, then leave the garden empty; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_nama_ci",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang dibandingkan - nama-nama itu sendiri",
+     "semantik": "NAMA-NAMA CI",
+     "what": "a torn cream slip with big stencilled type reading 'NAMA-NAMA CI'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.32 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "-nama",
+     "z": 5,
+     "lands": 30
+    },
+    {
+     "name": "kartu_bukan_monumen",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sanggahan - nama tempat bukan benda peringatan",
+     "semantik": "BUKAN MONUMEN",
+     "what": "a torn cream slip with big stencilled type reading 'BUKAN MONUMEN'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "monument.",
+     "z": 6,
+     "lands": 55
+    },
+    {
+     "name": "foto_prasasti",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Prasasti - nama yang dipahat supaya berhenti berubah",
+     "semantik": "SESUATU",
+     "what": "a sepia halftone photograph of a carved stone plaque of names",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.12",
+     "cut": true,
+     "word": "sesuatu",
+     "z": 1,
+     "lands": 128
+    },
+    {
+     "name": "foto_monumen",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Monumen - dibangun untuk menutup perkara",
+     "semantik": "DIBANGUN",
+     "what": "a sepia halftone photograph of a tall stone obelisk seen from below",
+     "at": "centre of the frame, centred at 0.46 across, about 0.26 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "dibangun",
+     "z": 2,
+     "lands": 99
+    },
+    {
+     "name": "foto_taman_kosong",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Taman monumen yang sepi - yang diingat sudah tidak ada urusannya",
+     "semantik": "MONUMEN",
+     "what": "a sepia halftone photograph of an empty stone monument garden with clipped hedges",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "Monument",
+     "z": 3,
+     "lands": 89
+    },
+    {
+     "name": "figur_pengunjung",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pengunjung - orang yang datang untuk mengingat",
+     "semantik": "MENGINGAT",
+     "what": "a sepia halftone photograph of a man in a jacket standing before a monument, seen from the side",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "mengingat",
+     "z": 4,
+     "lands": 116
+    },
+    {
+     "name": "kartu_sudah_selesai",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bedanya - monumen menandai yang sudah selesai, nama ini tidak",
+     "semantik": "SESUATU YANG SUDAH SELESAI",
+     "what": "a torn cream slip with stencilled type reading 'SESUATU YANG SUDAH SELESAI'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "selesai.",
+     "z": 7,
+     "lands": 152
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     2.4,
+     "kartu_nama_ci",
+     {
+      "at": 38,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     13,
+     -1.9,
+     "figur_pengunjung",
+     {
+      "at": 116,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'nama'; ellipse on the figure on 'mengingat'.",
+   "emphasis": [
+    {
+     "frame": 389.0,
+     "word": "Nama",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 516.2,
+     "word": "selesai.",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    545,
+    766
+   ],
+   "babak": "Babak 29 - Bukan monumen",
+   "peran_retoris": "Definisi - bukan monumen, lebih seperti janji yang dibuat air kepada tanah",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed definition page on aged newsprint: a charcoal block across the upper right, a mustard strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Bukan begitu' high left, 'Serius?' high right, the speaker at the centre, 'janji air kepada tanah' low left, the seeping water low right, and the cracked soil at the bottom.",
+   "kamera": "Ask the question, then answer it with soil; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukan_begitu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penolakan halus - bukan seperti monumen itu",
+     "semantik": "BUKAN BEGITU",
+     "what": "a torn cream slip with stencilled type reading 'BUKAN BEGITU'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "ini",
+     "z": 4,
+     "lands": 23
+    },
+    {
+     "name": "kartu_serius_tiga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penegasan khas film ini - diulang ketiga kali, dan tetap dijawab",
+     "semantik": "SERIUS?",
+     "what": "a torn cream slip with huge stencilled type reading 'SERIUS?'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Serius?",
+     "z": 5,
+     "lands": 73
+    },
+    {
+     "name": "figur_penutur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang menjawab - bukan dengan pahat, dengan tangan terbuka",
+     "semantik": "IYA",
+     "what": "a sepia halftone photograph of a standing man talking with one open hand raised at chest height, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "Iya,",
+     "z": 1,
+     "lands": 109,
+     "motion_basis": "Satu lengan dan kepala, selebar 0.24 frame; badan tetap. pose1 = tangan terbuka di depan dada.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "raise his open hand higher and lean in"
+      },
+      {
+       "pose": 3,
+       "action": "lower the hand and point at the ground"
+      },
+      {
+       "pose": 4,
+       "action": "open both hands and shrug"
+      }
+     ]
+    },
+    {
+     "name": "kartu_janji",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Definisi yang dipakai film - janji, bukan peringatan",
+     "semantik": "JANJI AIR KEPADA TANAH",
+     "what": "a torn cream slip with big stencilled type reading 'JANJI AIR KEPADA TANAH'",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.34 of the frame wide, down at 0.66",
+     "cut": true,
+     "word": "janji",
+     "z": 6,
+     "lands": 142
+    },
+    {
+     "name": "foto_air_tanah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air masuk ke tanah - isi janji itu, harfiah",
+     "semantik": "AIR",
+     "what": "a sepia halftone photograph of water seeping into dark soil between plants",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "air",
+     "z": 2,
+     "lands": 175
+    },
+    {
+     "name": "foto_tanah_retak",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tanah yang tidak menerima air - janji yang tidak ditepati",
+     "semantik": "TANAH",
+     "what": "a sepia halftone photograph of cracked dry paddy soil",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.84",
+     "cut": true,
+     "word": "tanah.",
+     "z": 3,
+     "lands": 192
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_bukan_begitu",
+     {
+      "at": 23,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "figur_penutur",
+     {
+      "at": 121,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'ini'; box on the figure on 'iya,'.",
+   "emphasis": [
+    {
+     "frame": 618.2,
+     "word": "Serius?",
+     "motion": "landing",
+     "why": "skor 0.54 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 653.6,
+     "word": "Iya,",
+     "motion": "strike"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    766,
+    958
+   ],
+   "babak": "Babak 30 - Catatan",
+   "peran_retoris": "Asal-usul - dicatat oleh orang yang tidak punya kertas, lalu diwariskan",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed record page on aged newsprint: a crimson block across the upper left, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Dicatat' high left, the recorder at the centre, 'tanpa kertas' high right, the abandoned desk low right, 'diwariskan' low left, and the child at the bottom.",
+   "kamera": "Follow the hand down to the ground, then leave the desk; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_dicatat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tindakan intinya - ini pencatatan, bukan cerita",
+     "semantik": "DICATAT",
+     "what": "a torn cream slip with big stencilled type reading 'DICATAT'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "dicatat",
+     "z": 4,
+     "lands": 10
+    },
+    {
+     "name": "figur_pencatat",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mencatat tanpa kertas - menulis di tanah",
+     "semantik": "ORANG",
+     "what": "a sepia halftone photograph of a man crouching to scratch marks into the ground with a stick, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "orang",
+     "z": 1,
+     "lands": 32,
+     "motion_basis": "Satu lengan dan kepala, selebar 0.24 frame; lutut tetap di tanah. pose1 = jongkok, tongkat di tanah.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "drag the stick through the dust in a line"
+      },
+      {
+       "pose": 3,
+       "action": "lean back and look at what he has drawn"
+      },
+      {
+       "pose": 4,
+       "action": "brush the marks away with his palm"
+      }
+     ]
+    },
+    {
+     "name": "kartu_tanpa_kertas",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Syaratnya - catatan yang tidak butuh arsip",
+     "semantik": "TANPA KERTAS",
+     "what": "a torn cream slip with stencilled type reading 'TANPA KERTAS'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "kertas.",
+     "z": 5,
+     "lands": 54
+    },
+    {
+     "name": "foto_meja_ditinggalkan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Meja yang ditinggalkan - pekerjaannya belum selesai",
+     "semantik": "AKHIRNYA",
+     "what": "a sepia halftone photograph of a bare desk with an empty chair pulled away",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "akhirnya,",
+     "z": 2,
+     "lands": 97
+    },
+    {
+     "name": "kartu_diwariskan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perpindahan tangan - dari pencatat ke yang tinggal di atasnya",
+     "semantik": "DIWARISKAN",
+     "what": "a torn cream slip with big stencilled type reading 'DIWARISKAN'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "diwariskan",
+     "z": 6,
+     "lands": 123
+    },
+    {
+     "name": "figur_anak_tanah",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Yang menerima warisan - dan tinggal di atasnya",
+     "semantik": "KITA YANG TINGGAL",
+     "what": "a sepia halftone photograph of a boy standing barefoot on packed earth looking up, seen from the side",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.86",
+     "cut": true,
+     "word": "tinggal",
+     "z": 3,
+     "lands": 161
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_dicatat",
+     {
+      "at": 10,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "figur_pencatat",
+     {
+      "at": 32,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'dicatat'; circle on the figure on 'orang'.",
+   "emphasis": [
+    {
+     "frame": 857.6,
+     "word": "Dan",
+     "motion": "hold",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "range": [
+    958,
+    1155
+   ],
+   "babak": "Babak 30 - Catatan",
+   "peran_retoris": "Angka - tiga dari sepuluh nama tempat di satu kabupaten adalah nama air",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed count page on aged newsprint: a mustard block across the upper right, a crimson strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Tenang' high left, the tally high right, the paddy low left, the regency map at the centre, 'Jawa Barat' low right, and 'nama air' at the bottom.",
+   "kamera": "Let the map arrive under the tally, then hold on the number; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_tenang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Permintaan untuk tidak terburu-buru - angkanya akan datang",
+     "semantik": "TENANG.",
+     "what": "a torn cream slip with stencilled type reading 'TENANG.'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "Tenang.",
+     "z": 3,
+     "lands": 21
+    },
+    {
+     "name": "tally_tiga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Turus yang sama dari m02 - sepuluh garis, tiga dilingkari",
+     "semantik": "3 DARI 10",
+     "what": "a torn cream card with ten hand-drawn counting gates, three of them circled in red pencil",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "sepuluh",
+     "z": 4,
+     "lands": 77
+    },
+    {
+     "name": "foto_sawah_kabupaten",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Satu kabupaten - wilayah yang dihitung, dan yang berpenghuni",
+     "semantik": "SATU KABUPATEN",
+     "what": "a sepia halftone photograph of terraced paddy fields with a village behind them",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "tempat",
+     "z": 1,
+     "lands": 99
+    },
+    {
+     "name": "peta_purwakarta",
+     "bahan": "peta",
+     "wujud": "siluet_organik",
+     "semiotik": "Peta kabupaten yang sama dari m02 - di sinilah sepuluh nama itu dihitung",
+     "semantik": "KABUPATEN",
+     "what": "a vintage district map sheet of Purwakarta with red pin marks scattered across it, torn edges",
+     "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "kabupaten",
+     "z": 2,
+     "lands": 125
+    },
+    {
+     "name": "kartu_jawa_barat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tempatnya - satu provinsi, bukan seluruh dunia",
+     "semantik": "JAWA BARAT",
+     "what": "a torn cream slip with stencilled type reading 'JAWA BARAT'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "Barat",
+     "z": 5,
+     "lands": 152
+    },
+    {
+     "name": "kartu_nama_air",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Janji pertama film, ditepati sebagai angka",
+     "semantik": "NAMA AIR",
+     "what": "a torn cream slip with big stencilled type reading 'NAMA AIR'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "air.",
+     "z": 6,
+     "lands": 188
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     15,
+     2.4,
+     "kartu_tenang",
+     {
+      "at": 21,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'tenang.'.",
+   "emphasis": [
+    {
+     "frame": 978.8,
+     "word": "Tenang.",
+     "motion": "strike"
+    },
+    {
+     "frame": 1014.2,
+     "word": "Tiga",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1145.6,
+     "word": "air.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "range": [
+    1155,
+    1388
+   ],
+   "babak": "Babak 30 - Catatan",
+   "peran_retoris": "Penutup film - bukan kebetulan, bukan puisi, catatan, dan masih terbuka",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed closing page on aged newsprint: a charcoal block across the top, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Bukan kebetulan' high left, the river low left, 'bukan puisi' high right, 'catatan' at the centre, the open notebook low right, the reader low centre, and 'masih terbuka' along the bottom.",
+   "kamera": "Refuse twice, name it once, then let the page stay open; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukan_kebetulan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penolakan pertama - pola ini bukan hasil acak",
+     "semantik": "BUKAN KEBETULAN",
+     "what": "a torn cream slip with big stencilled type reading 'BUKAN KEBETULAN'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "bukan",
+     "z": 4,
+     "lands": 30
+    },
+    {
+     "name": "foto_sungai_biasa",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai apa adanya - bukan bahan puisi",
+     "semantik": "BUKAN PUISI",
+     "what": "a sepia halftone photograph of a slow river carrying plastic waste past a low bridge",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "juga",
+     "z": 1,
+     "lands": 78
+    },
+    {
+     "name": "kartu_bukan_puisi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penolakan kedua - bukan kiasan, bukan keindahan",
+     "semantik": "BUKAN PUISI",
+     "what": "a torn cream slip with big stencilled type reading 'BUKAN PUISI'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "puisi.",
+     "z": 5,
+     "lands": 91
+    },
+    {
+     "name": "kartu_catatan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jawabannya - benda yang memang dibuat untuk diingat",
+     "semantik": "CATATAN",
+     "what": "a torn cream slip with huge stencilled type reading 'CATATAN'",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "catatan.",
+     "z": 6,
+     "lands": 137
+    },
+    {
+     "name": "foto_buku_terbuka",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Catatan yang benar-benar ada di atas kertas - dan tidak ditutup",
+     "semantik": "CATATAN",
+     "what": "a sepia halftone photograph of an open notebook with handwritten columns, a pencil laid across it",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "catatan",
+     "z": 2,
+     "lands": 180
+    },
+    {
+     "name": "figur_pembaca_akhir",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang terakhir yang membaca - yang menerima catatan itu",
+     "semantik": "MASIH",
+     "what": "a sepia halftone photograph of a young woman reading an open notebook by a window, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "masih",
+     "z": 3,
+     "lands": 204
+    },
+    {
+     "name": "kartu_masih_terbuka",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Janji ketiga film, dibayar di kata terakhir - pekerjaannya belum selesai",
+     "semantik": "MASIH TERBUKA",
+     "what": "a torn cream slip with huge stencilled type reading 'MASIH TERBUKA'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "terbuka.",
+     "z": 7,
+     "lands": 220
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     11,
+     3.0,
+     "kartu_bukan_kebetulan",
+     {
+      "at": 36,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     13,
+     -2.4,
+     "figur_pembaca_akhir",
+     {
+      "at": 204,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'bukan'; box on the figure on 'masih'.",
+   "emphasis": [
+    {
+     "frame": 1180.4,
+     "word": "Itu",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1246.4,
+     "word": "puisi.",
+     "motion": "hold",
+     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1281.8,
+     "word": "Itu",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

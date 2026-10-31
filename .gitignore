@@ -5,3 +5,14 @@ __pycache__/
 .vox-cache/
 build/
 dist/
+
+# The film is a project, not part of the package. Its plans and its code belong
+# in git; its generated megabytes do not.
+film/build/
+film/remotion/node_modules/
+film/remotion/public/
+film/remotion/out/
+film/audio/*.wav
+
+# Workspace memory, not part of the package.
+.workbuddy-ai/

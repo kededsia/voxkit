@@ -1,0 +1,672 @@
+{
+ "plan_version": 2,
+ "module": "m04",
+ "klaim": "Bahasa Sunda tidak menyebut air dengan satu kata: ia menyebut air menurut keadaannya, dan nama-nama tempat itu memakai keadaan-keadaan itu.",
+ "payoff": "Bahasa yang punya begitu banyak kata untuk air adalah bahasa yang dibentuk oleh air - dan itu yang membuat penamaan dengan Ci mungkin.",
+ "serah": "pita_keadaan - daftar keadaan air, yang akan dijelaskan rumusnya di m05",
+ "terima": "kata_cai - slip CAI dari m03 s06",
+ "konteks_modul": {
+  "konteks_budaya": "Masyarakat tani Sunda hidup dari air: sawah, mata air, sungai, danau vulkanik. Kosakata air bukan hiasan bahasa, ia alat kerja - setiap keadaan air menuntut tindakan yang berbeda.",
+  "tesis_modul": "Kekayaan kata untuk air adalah bukti bahwa penamaan tempat di sini dimulai dari air, bukan dari bangunan atau penguasa.",
+  "babak_narasi": "Babak 3 membuka kamus: setelah angka di m01-m03, film masuk ke tata bahasa air sebelum masuk ke waktu geologis di m07."
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    177
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Tesis modul - bukan satu kata, tapi satu kata untuk tiap keadaan",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Aged newsprint page: two columns of printed text down the left third, a mustard block taped over the upper right, a charcoal strip along the bottom edge, masking tape at the corners and one torn corner showing the page behind.",
+   "tata_letak_kolase": "The open dictionary lies across the middle, the CAI slip taped over its lower edge, the pointing hand at the right margin, the word strip running along the bottom over the charcoal strip.",
+   "kamera": "Hold on the entry while the word is spoken, a short push that lands on the CAI slip, then a drift down to the strip; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kata_cai",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip CAI dari m03 - kata yang dibicarakan",
+     "semantik": "CAI · AIR",
+     "what": "a cream slip with huge stencilled letters 'CAI' and a small line 'AIR'",
+     "at": "centre, centred at 0.47 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "air",
+     "z": 3,
+     "lands": 49
+    },
+    {
+     "name": "kamus_cai",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman kamus terbuka - entri CAI sebagai satu kata",
+     "semantik": "SATU KATA",
+     "what": "a sepia halftone photograph of an open worn dictionary, one entry circled in pencil",
+     "at": "upper left, centred at 0.30 across, about 0.46 of the frame wide",
+     "cut": true,
+     "word": "menyebut",
+     "z": 1,
+     "lands": 121
+    },
+    {
+     "name": "penunjuk_kamus",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangan menunjuk entri - yang menyebut, bukan yang membaca",
+     "semantik": "MENYEBUT",
+     "what": "a sepia halftone cutout of a hand with the index finger pressing down on a column of print",
+     "at": "right margin, centred at 0.82 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "saja.",
+     "z": 2,
+     "lands": 82,
+     "poses_planned": [
+      {
+       "action": "lifts the finger and taps the page again"
+      },
+      {
+       "action": "turns the page with the same hand"
+      },
+      {
+       "action": "rests the hand flat beside the entry"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "The hand is the whole piece: one finger pressed on a column of print, wrist entering at the lower edge. The swap lives in the fingers and the wrist — the finger lifts and comes back down a few pixels, the wrist rolls. Nothing else moves, so it reads as a hand and not as a sheet changing shape."
+    },
+    {
+     "name": "pita_keadaan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pita daftar keadaan air - semua nama yang akan datang",
+     "semantik": "KEADAANNYA",
+     "what": "a long torn strip printed with a column of short Latin-script words in a plain letterpress face - 'water words', 'water bind', 'water nyusu', 'water mili' - slightly skewed, no other script",
+     "at": "bottom, centred at 0.50 across, about 0.62 of the frame wide",
+     "cut": true,
+     "word": "keadaannya.",
+     "z": 4,
+     "lands": 156
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.6,
+     "kamus_cai",
+     {
+      "at": 125,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'menyebut'.",
+   "emphasis": [],
+   "still_gate": "PASS 35.0"
+  },
+  {
+   "id": "s02",
+   "range": [
+    177,
+    386
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Spesimen 1 - air bening, mata air, air menetes",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page with a crimson block taped down the right edge, printed columns visible at the left, a charcoal band under the lower third, masking tape at two corners.",
+   "tata_letak_kolase": "Three photographs in a row along the middle: the clear-water photograph, the spring photograph with the woman crouching beside it, the drip photograph at the right. Exactly two word slips sit on the charcoal band, under the first two photographs.",
+   "kamera": "Hold wide, then step right along the row as each specimen is named; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_bening",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air bening di atas batu - cai herang",
+     "semantik": "CAI HERANG",
+     "what": "a sepia halftone photograph of shallow clear water running over pale stones",
+     "at": "upper left, centred at 0.24 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "herang.",
+     "z": 1,
+     "lands": 34
+    },
+    {
+     "name": "slip_herang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - cai herang, air bening",
+     "semantik": "CAI HERANG · AIR BENING",
+     "what": "a torn cream slip letterpress-printed 'CAI HERANG' over a smaller 'AIR BENING'",
+     "at": "left, centred at 0.26 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "bening.",
+     "z": 5,
+     "lands": 72,
+     "erase": [
+      [
+       0,
+       0,
+       1,
+       0.723
+      ]
+     ]
+    },
+    {
+     "name": "foto_mataair",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone mata air di celah batu - cai nyusu",
+     "semantik": "CAI NYUSU",
+     "what": "a sepia halftone photograph of a spring welling out of a mossy rock face",
+     "at": "lower centre, centred at 0.52 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "nyusu.",
+     "z": 2,
+     "lands": 117
+    },
+    {
+     "name": "orang_mataair",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang menciduk air di mata air - yang memakai airnya",
+     "semantik": "MATA AIR",
+     "what": "a sepia halftone cutout of a woman crouching to fill a jar at a spring",
+     "at": "centre right, centred at 0.66 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "Mata",
+     "z": 4,
+     "lands": 149,
+     "poses_planned": [
+      {
+       "action": "lifts the full jar and sets it on the rock"
+      },
+      {
+       "action": "wipes the rim with the back of her hand"
+      },
+      {
+       "action": "stands and looks downstream"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "A crouching woman seen from the side, so the swap reads in the arm that holds the jar and in the shoulder line; the feet stay planted. She stands alone at the right of the row with no card overlapping her, so a jar that moves cannot tear a neighbour's edge."
+    },
+    {
+     "name": "slip_nyusu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - cai nyusu, mata air",
+     "semantik": "CAI NYUSU · MATA AIR",
+     "what": "a torn cream slip letterpress-printed 'CAI NYUSU' over 'MATA AIR'",
+     "at": "centre right, centred at 0.63 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "air.",
+     "z": 6,
+     "lands": 156
+    },
+    {
+     "name": "foto_tetes",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air menetes - cikaracak",
+     "semantik": "CIKARACAK",
+     "what": "a sepia halftone photograph of a thin trickle of water falling between two rocks",
+     "at": "right, centred at 0.84 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Cikaracak.",
+     "z": 3,
+     "lands": 187
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     -2.4,
+     "slip_herang",
+     {
+      "at": 112,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'bening.'.",
+   "emphasis": [
+    {
+     "frame": 201.8,
+     "word": "Chai",
+     "motion": "landing"
+    },
+    {
+     "frame": 210.8,
+     "word": "herang.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 249.2,
+     "word": "bening.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 333.2,
+     "word": "air.",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 33.6"
+  },
+  {
+   "id": "s03",
+   "range": [
+    386,
+    606
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Spesimen 2 - air yang menetes, hujan yang tertahan, air yang datang terlalu banyak",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page: a printed column running behind the left half, a mustard block taped at the upper right, a black strip along the bottom, masking tape at three corners.",
+   "tata_letak_kolase": "The dripping rock at the left, the person in the rain at the centre, the wet ground photograph at the right, the two word slips pinned along the bottom strip.",
+   "kamera": "Slow lateral drift left to right with the two slips, the rain figure running past the camera; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_tetes_batu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air menetes dari celah batu",
+     "semantik": "CELAH BATU",
+     "what": "a sepia halftone photograph of water beading and falling from a crack in dark rock",
+     "at": "upper left, centred at 0.22 across, about 0.38 of the frame wide",
+     "cut": true,
+     "word": "batu.",
+     "z": 1,
+     "lands": 55
+    },
+    {
+     "name": "slip_cilencang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - cilencang, air menetes",
+     "semantik": "CILENCANG · AIR MENETES",
+     "what": "a torn cream slip letterpress-printed 'CILENCANG' over 'AIR MENETES'",
+     "at": "left, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Cilencang.",
+     "z": 4,
+     "lands": 96
+    },
+    {
+     "name": "orang_hujan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berjalan di bawah hujan - yang menahan air di tanah",
+     "semantik": "HUJAN",
+     "what": "a sepia halftone cutout of a person walking away in heavy rain, shoulders hunched",
+     "at": "centre, centred at 0.54 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "hujan",
+     "z": 3,
+     "lands": 132,
+     "poses_planned": [
+      {
+       "action": "pulls the collar up and keeps walking"
+      },
+      {
+       "action": "stops and looks up at the sky"
+      },
+      {
+       "action": "shakes the water off one sleeve"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "Seen from behind at small scale, so the stride and the hunched shoulders carry the pose and the face does not. The swap lives in the upper half — collar, shoulders, one sleeve. No card overlaps him, so a shoulder change cannot cut into the slip beside him."
+    },
+    {
+     "name": "foto_hujan_tanah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air hujan tertahan di tanah",
+     "semantik": "TERTAHAN DI TANAH",
+     "what": "a sepia halftone photograph of rain standing in shallow puddles on dark soil",
+     "at": "lower right, centred at 0.78 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "tanah.",
+     "z": 2,
+     "lands": 167
+    },
+    {
+     "name": "slip_caah",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - caah, air yang datang terlalu banyak",
+     "semantik": "CAAH · BANJIR",
+     "what": "a torn cream slip letterpress-printed 'CAAH' over 'AIR YANG DATANG TERLALU BANYAK'",
+     "at": "right, centred at 0.74 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Caah.",
+     "z": 5,
+     "lands": 205
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     16,
+     0.0,
+     "slip_caah",
+     {
+      "at": 208,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'caah.'.",
+   "emphasis": [
+    {
+     "frame": 440.6,
+     "word": "batu.",
+     "motion": "hold",
+     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 482.0,
+     "word": "Cilencang.",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 553.4,
+     "word": "tanah.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 591.2,
+     "word": "Caah.",
+     "motion": "strike"
+    }
+   ],
+   "still_gate": "PASS 36.0"
+  },
+  {
+   "id": "s04",
+   "range": [
+    606,
+    816
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Spesimen 3 - terlalu banyak, lalu dalam dan tenang, lalu danau",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page with a crimson block taped at the upper left, a printed column down the right edge, a mustard strip along the bottom, masking tape at the corners.",
+   "tata_letak_kolase": "The flood photograph fills the left, the newsprint clipping overlaps its lower corner, the calm river photograph sits centre right, the danau slip closes the row at the right.",
+   "kamera": "Hold on the flood, then a slow push right onto the calm river, settling on the danau slip; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_banjir",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone banjir menutup jalan - air datang terlalu banyak",
+     "semantik": "TERLALU BANYAK",
+     "what": "a sepia halftone photograph of flood water covering a village road and the steps of a house",
+     "at": "upper left, centred at 0.24 across, about 0.44 of the frame wide",
+     "cut": true,
+     "word": "banyak.",
+     "z": 1,
+     "lands": 45
+    },
+    {
+     "name": "koran_banjir",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sobekan koran tentang banjir - peristiwa yang sama, tercatat di kertas",
+     "semantik": "TERCATAT",
+     "what": "a torn newsprint clipping with a photograph of a flood and a two-column headline, yellowed edges",
+     "at": "left, centred at 0.30 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "datang",
+     "z": 4,
+     "lands": 26
+    },
+    {
+     "name": "slip_lewi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - lewi, bagian sungai yang dalam dan tenang",
+     "semantik": "LEWI · SUNGAI DALAM & TENANG",
+     "what": "a torn cream slip letterpress-printed 'LEWI' over 'BAGIAN SUNGAI YANG DALAM DAN TENANG'",
+     "at": "centre, centred at 0.56 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Lewi.",
+     "z": 6,
+     "lands": 88
+    },
+    {
+     "name": "foto_sungai_dalam",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone sungai dalam yang tenang",
+     "semantik": "SUNGAI TENANG",
+     "what": "a sepia halftone photograph of a wide deep river reach with almost no ripple",
+     "at": "lower centre right, centred at 0.72 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "tenang.",
+     "z": 2,
+     "lands": 153
+    },
+    {
+     "name": "slip_situ",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - situ, danau",
+     "semantik": "SITU · DANAU",
+     "what": "a torn cream slip letterpress-printed 'SITU' over 'DANAU'",
+     "at": "right, centred at 0.86 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Situ.",
+     "z": 5,
+     "lands": 189
+    },
+    {
+     "name": "orang_banjir",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berjalan di air banjir - yang harus menyeberang karena air datang",
+     "semantik": "TERLALU BANYAK",
+     "what": "a sepia halftone cutout of a man wading knee-deep through flood water, trousers rolled up, seen from behind",
+     "at": "left, centred at 0.42 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "terlalu",
+     "z": 3,
+     "lands": 33
+    }
+   ],
+   "marks": [
+    [
+     "arrow-down",
+     14,
+     0.0,
+     "foto_sungai_dalam",
+     {
+      "at": 160,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Arrow-down on the photograph on 'tenang.'.",
+   "emphasis": [
+    {
+     "frame": 694.4,
+     "word": "Lewi.",
+     "motion": "strike"
+    },
+    {
+     "frame": 758.6,
+     "word": "tenang.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 795.2,
+     "word": "Situ.",
+     "motion": "landing",
+     "why": "skor 0.51 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 42.0"
+  },
+  {
+   "id": "s05",
+   "range": [
+    816,
+    984
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Spesimen 4 - danau, rawa, air terjun; litani ditutup",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page: printed columns behind the whole upper half, a charcoal block taped along the left edge, a mustard strip at the bottom right, masking tape at the corners.",
+   "tata_letak_kolase": "Four specimens stepping down to the right - lake, marsh, waterfall, and the person at its foot - each with its word slip; the strip from s01 returns at the lower left; no English anywhere on the page",
+   "kamera": "Step down the row, then pull back to hold all four at the last word; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_danau",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone danau - situ",
+     "semantik": "SITU",
+     "what": "a sepia halftone photograph of a still lake with a low far shore, no lettering or caption on the photograph",
+     "at": "upper left, centred at 0.26 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Danau.",
+     "z": 1,
+     "lands": 14
+    },
+    {
+     "name": "slip_rancang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata - rancang, rawa",
+     "semantik": "RANCANG · RAWA",
+     "what": "a torn cream slip letterpress-printed 'RANCANG' over 'RAWA'",
+     "at": "upper centre, centred at 0.50 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "Rancang.",
+     "z": 5,
+     "lands": 43
+    },
+    {
+     "name": "foto_rawah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone rawa - tanah yang tinggal setelah air pergi",
+     "semantik": "RAWA",
+     "what": "a sepia halftone photograph of marsh grass standing in dark still water, no lettering or caption on the photograph",
+     "at": "centre, centred at 0.56 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Rawah.",
+     "z": 2,
+     "lands": 79
+    },
+    {
+     "name": "foto_curug",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air terjun - curug",
+     "semantik": "CURUG",
+     "what": "a sepia halftone photograph of a tall waterfall dropping into a pool, no lettering or caption on the photograph",
+     "at": "right, centred at 0.80 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "terjun.",
+     "z": 3,
+     "lands": 142
+    },
+    {
+     "name": "orang_curug",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang di kaki air terjun - yang menamainya",
+     "semantik": "AIR TERJUN",
+     "what": "a sepia halftone cutout of a person standing small at the foot of a waterfall, seen from behind",
+     "at": "lower right, centred at 0.86 across, about 0.18 of the frame wide",
+     "cut": true,
+     "word": "Curug.",
+     "z": 4,
+     "lands": 111,
+     "poses_planned": [
+      {
+       "action": "raises one hand to the side of his head against the spray, still seen from behind"
+      },
+      {
+       "action": "steps back from the pool edge"
+      },
+      {
+       "action": "turns and walks along the bank"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "Standing small at the foot of the falls, seen from behind: the pose lives in one raised arm and the tilt of the head. At 0.18 of the frame wide only a large gesture reads, so keep every change to the arm and the step."
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     -3.0,
+     "foto_curug",
+     {
+      "at": 148,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'curug.'.",
+   "emphasis": [
+    {
+     "frame": 830.0,
+     "word": "Danau.",
+     "motion": "landing"
+    },
+    {
+     "frame": 859.4,
+     "word": "Rancang.",
+     "motion": "landing",
+     "why": "skor 0.53 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 895.4,
+     "word": "Rawah.",
+     "motion": "snap"
+    }
+   ],
+   "still_gate": "PASS 31.7"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

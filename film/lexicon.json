@@ -1,0 +1,80 @@
+{
+ "_comment": "Every non-Indonesian word this film prints on screen, with its ONE correct spelling and the variants that must never appear. tools/spellcheck_plan.py reads this before any generation is spent. Add a word here the first time it is used; the planner is not allowed to invent a spelling and let the model draw it.",
+ "words": [
+  {
+   "correct": "cai",
+   "lang": "Sunda",
+   "meaning": "air (water)",
+   "never": [
+    "cahi",
+    "chai",
+    "cayi"
+   ],
+   "note": "m20 printed CAHI in two cards and two shot briefs. 'cai' is the Sundanese word for water; the 'h' came from the ASR transcript and was copied into the on-screen text."
+  },
+  {
+   "correct": "banyu",
+   "lang": "Jawa",
+   "meaning": "air (water)",
+   "never": [
+    "banyhu",
+    "banju"
+   ]
+  },
+  {
+   "correct": "tirta",
+   "lang": "Sanskerta/Jawa",
+   "meaning": "air (water, formal)",
+   "never": [
+    "tirtha"
+   ]
+  },
+  {
+   "correct": "ci",
+   "lang": "Sunda",
+   "meaning": "cahaya? — the film argues this reading is wrong",
+   "never": []
+  },
+  {
+   "correct": "bodas",
+   "lang": "Sunda",
+   "meaning": "putih (white)",
+   "never": [
+    "boddas"
+   ]
+  },
+  {
+   "correct": "berem",
+   "lang": "Sunda",
+   "meaning": "merah (red)",
+   "never": [
+    "beureum",
+    "beram"
+   ]
+  },
+  {
+   "correct": "hideng",
+   "lang": "Sunda",
+   "meaning": "hitam (black)",
+   "never": [
+    "hideung",
+    "hidang"
+   ]
+  },
+  {
+   "correct": "purwa",
+   "lang": "Sanskerta/Jawa",
+   "meaning": "purba, yang pertama (ancient)",
+   "never": []
+  },
+  {
+   "correct": "sanskerta",
+   "lang": "Sanskerta",
+   "meaning": "Sanskrit",
+   "never": [
+    "sansekerta",
+    "sangsekerta"
+   ]
+  }
+ ]
+}

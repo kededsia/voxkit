@@ -1,0 +1,335 @@
+{
+ "duration": 31.4,
+ "words": [
+  {
+   "word": "Ada",
+   "start": 0.547,
+   "end": 0.627
+  },
+  {
+   "word": "satu",
+   "start": 0.627,
+   "end": 0.907
+  },
+  {
+   "word": "hal",
+   "start": 0.907,
+   "end": 1.087
+  },
+  {
+   "word": "yang",
+   "start": 1.087,
+   "end": 1.247
+  },
+  {
+   "word": "tidak",
+   "start": 1.247,
+   "end": 1.427
+  },
+  {
+   "word": "terlihat",
+   "start": 1.427,
+   "end": 1.887
+  },
+  {
+   "word": "dari",
+   "start": 1.887,
+   "end": 2.107
+  },
+  {
+   "word": "dalam",
+   "start": 2.107,
+   "end": 2.287
+  },
+  {
+   "word": "mobil.",
+   "start": 2.287,
+   "end": 2.667
+  },
+  {
+   "word": "Serius.",
+   "start": 3.827,
+   "end": 4.467
+  },
+  {
+   "word": "Sebagian",
+   "start": 4.847,
+   "end": 5.207
+  },
+  {
+   "word": "besar",
+   "start": 5.207,
+   "end": 5.507
+  },
+  {
+   "word": "dari",
+   "start": 5.507,
+   "end": 5.767
+  },
+  {
+   "word": "apa",
+   "start": 5.767,
+   "end": 6.007
+  },
+  {
+   "word": "yang",
+   "start": 6.007,
+   "end": 6.207
+  },
+  {
+   "word": "dinamai",
+   "start": 6.207,
+   "end": 6.627
+  },
+  {
+   "word": "itu",
+   "start": 6.627,
+   "end": 7.107
+  },
+  {
+   "word": "sudah",
+   "start": 7.107,
+   "end": 7.287
+  },
+  {
+   "word": "tidak",
+   "start": 7.287,
+   "end": 7.607
+  },
+  {
+   "word": "ada.",
+   "start": 7.607,
+   "end": 7.947
+  },
+  {
+   "word": "Cikapundung.",
+   "start": 9.127,
+   "end": 9.767
+  },
+  {
+   "word": "Dinamai",
+   "start": 10.007,
+   "end": 10.367
+  },
+  {
+   "word": "menurut",
+   "start": 10.367,
+   "end": 10.647
+  },
+  {
+   "word": "pohon",
+   "start": 10.647,
+   "end": 10.907
+  },
+  {
+   "word": "kapundung.",
+   "start": 10.907,
+   "end": 11.847
+  },
+  {
+   "word": "Buahnya",
+   "start": 12.147,
+   "end": 12.507
+  },
+  {
+   "word": "asam.",
+   "start": 12.507,
+   "end": 13.267
+  },
+  {
+   "word": "Dulu",
+   "start": 13.547,
+   "end": 13.767
+  },
+  {
+   "word": "tumbuh",
+   "start": 13.767,
+   "end": 14.127
+  },
+  {
+   "word": "di",
+   "start": 14.127,
+   "end": 14.267
+  },
+  {
+   "word": "sepanjang",
+   "start": 14.267,
+   "end": 14.547
+  },
+  {
+   "word": "tepi",
+   "start": 14.547,
+   "end": 14.767
+  },
+  {
+   "word": "sungai.",
+   "start": 14.767,
+   "end": 15.207
+  },
+  {
+   "word": "Sekarang",
+   "start": 15.827,
+   "end": 16.467
+  },
+  {
+   "word": "pohon",
+   "start": 16.467,
+   "end": 16.747
+  },
+  {
+   "word": "itu",
+   "start": 16.747,
+   "end": 16.947
+  },
+  {
+   "word": "hampir",
+   "start": 16.947,
+   "end": 17.267
+  },
+  {
+   "word": "tidak",
+   "start": 17.267,
+   "end": 17.487
+  },
+  {
+   "word": "bisa",
+   "start": 17.487,
+   "end": 17.687
+  },
+  {
+   "word": "ditemukan",
+   "start": 17.687,
+   "end": 18.127
+  },
+  {
+   "word": "lagi",
+   "start": 18.127,
+   "end": 18.407
+  },
+  {
+   "word": "di",
+   "start": 18.407,
+   "end": 18.567
+  },
+  {
+   "word": "kota",
+   "start": 18.567,
+   "end": 18.707
+  },
+  {
+   "word": "Bandung.",
+   "start": 18.707,
+   "end": 19.067
+  },
+  {
+   "word": "Cibening.",
+   "start": 20.287,
+   "end": 21.007
+  },
+  {
+   "word": "Dinamai",
+   "start": 21.307,
+   "end": 21.627
+  },
+  {
+   "word": "menurut",
+   "start": 21.627,
+   "end": 21.927
+  },
+  {
+   "word": "pohon",
+   "start": 21.927,
+   "end": 22.227
+  },
+  {
+   "word": "bening.",
+   "start": 22.227,
+   "end": 23.087
+  },
+  {
+   "word": "Kerabat",
+   "start": 23.447,
+   "end": 23.827
+  },
+  {
+   "word": "nangka",
+   "start": 23.827,
+   "end": 24.207
+  },
+  {
+   "word": "dan",
+   "start": 24.207,
+   "end": 24.407
+  },
+  {
+   "word": "murbay.",
+   "start": 24.407,
+   "end": 24.847
+  },
+  {
+   "word": "Sekarang",
+   "start": 25.347,
+   "end": 25.767
+  },
+  {
+   "word": "pohon",
+   "start": 25.767,
+   "end": 26.047
+  },
+  {
+   "word": "itu",
+   "start": 26.047,
+   "end": 26.247
+  },
+  {
+   "word": "langkah",
+   "start": 26.247,
+   "end": 26.767
+  },
+  {
+   "word": "di",
+   "start": 26.767,
+   "end": 26.987
+  },
+  {
+   "word": "kota",
+   "start": 26.987,
+   "end": 27.227
+  },
+  {
+   "word": "yang",
+   "start": 27.227,
+   "end": 27.427
+  },
+  {
+   "word": "memakai",
+   "start": 27.427,
+   "end": 27.787
+  },
+  {
+   "word": "namanya.",
+   "start": 27.787,
+   "end": 28.527
+  },
+  {
+   "word": "Namanya",
+   "start": 28.907,
+   "end": 29.147
+  },
+  {
+   "word": "tinggal.",
+   "start": 29.147,
+   "end": 29.827
+  },
+  {
+   "word": "Bendanya",
+   "start": 30.207,
+   "end": 30.587
+  },
+  {
+   "word": "pergi.",
+   "start": 30.587,
+   "end": 31.027
+  }
+ ]
+}
