@@ -157,8 +157,8 @@
      3.0,
      "kartu_abad_15",
      {
-      "at": 63,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -167,8 +167,8 @@
      -2.4,
      "figur_pembaca_kuno",
      {
-      "at": 42,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -279,8 +279,8 @@
      0.0,
      "kartu_supaya",
      {
-      "at": 70,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -419,8 +419,8 @@
      2.4,
      "kartu_banyu",
      {
-      "at": 59,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -429,8 +429,8 @@
      -1.9,
      "nelayan",
      {
-      "at": 153,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -556,8 +556,8 @@
      3.0,
      "kartu_batak_aek",
      {
-      "at": 9,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -566,8 +566,8 @@
      -2.4,
      "figur_orang_sunda",
      {
-      "at": 158,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -692,18 +692,18 @@
      3.6,
      "kartu_banyak_bangsa",
      {
-      "at": 34,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
      "circle",
-     15,
+     11,
      -2.9,
      "figur_pengukur",
      {
-      "at": 177,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -837,8 +837,8 @@
      2.4,
      "kartu_kepadatan",
      {
-      "at": 19,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -847,8 +847,8 @@
      -1.9,
      "figur_membaca_wilayah",
      {
-      "at": 87,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -961,8 +961,8 @@
      3.0,
      "kartu_air_wilayah",
      {
-      "at": 26,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -971,8 +971,8 @@
      -2.4,
      "figur_berjalan",
      {
-      "at": 68,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1084,8 +1084,8 @@
      3.6,
      "kartu_jawa_tengah",
      {
-      "at": 16,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -1213,8 +1213,8 @@
      2.4,
      "kartu_serius",
      {
-      "at": 10,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1223,8 +1223,8 @@
      -1.9,
      "figur_peneliti",
      {
-      "at": 136,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1336,8 +1336,8 @@
      3.0,
      "kartu_ci_sunda",
      {
-      "at": 19,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1346,8 +1346,8 @@
      -2.4,
      "figur_etimolog",
      {
-      "at": 115,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],
@@ -1453,8 +1453,8 @@
      3.6,
      "kartu_satu_nama",
      {
-      "at": 22,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1463,8 +1463,8 @@
      -2.9,
      "figur_menunjuk_garis",
      {
-      "at": 91,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1583,8 +1583,8 @@
      2.4,
      "kartu_sebelum_16",
      {
-      "at": 19,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1593,8 +1593,8 @@
      -1.9,
      "figur_peta_kuno",
      {
-      "at": 90,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1707,8 +1707,8 @@
      3.0,
      "kartu_jejak",
      {
-      "at": 21,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -1717,8 +1717,8 @@
      -2.4,
      "figur_penonton",
      {
-      "at": 103,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1818,8 +1818,8 @@
      3.6,
      "kartu_teori_lain",
      {
-      "at": 66,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -1925,8 +1925,8 @@
      2.4,
      "kartu_katanya_2",
      {
-      "at": 16,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1935,8 +1935,8 @@
      -1.9,
      "figur_pembaca_sanskrita",
      {
-      "at": 121,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -2055,8 +2055,8 @@
      3.0,
      "kartu_teori_beredar",
      {
-      "at": 21,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -2065,8 +2065,8 @@
      -2.4,
      "figur_penonton_kedua",
      {
-      "at": 91,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],

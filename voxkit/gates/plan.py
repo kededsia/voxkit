@@ -24,13 +24,23 @@ from __future__ import annotations
 import re
 
 from ..contract import (
-    ARRIVE_EARLY, ARRIVE_LATE, JENIS, MIN_ARRIVAL_GAP, TRAVEL_MAX, WUJUD,
+    ARRIVE_EARLY, ARRIVE_LATE, JENIS, MIN_ARRIVAL_GAP, WUJUD,
     Finding, Plan, fail, is_placeholder, note, tile, warn, words_in,
 )
 from ..language import get as language
 from ..style import COLORS, MIRROR, MOTIONS, PENS, shapes
 from ..words import FLOOR
 from .base import Context, Gate, Skipped
+
+# How late a bound mark may start after the card it points at has landed.
+#
+# The pen is annotating the word the voice just said, so it belongs on the beat,
+# not after it. 8 frames is a quarter of a second — a beat, not a pause. Past
+# that the audience has already been carried to the next thing and the gesture
+# reads as a stray line that happens to be near the card. Measured over the film
+# the authored frames ran up to 240, and every one of the 74 late marks was late
+# because the number had drifted from the card, not because anyone wanted a pause.
+MARK_DELAY_MAX = 8
 
 
 # ------------------------------------------------------------------ helpers
@@ -249,24 +259,60 @@ def marks(ctx: Context) -> list[Finding]:
             if m.color and m.color not in COLORS:
                 out.append(fail("marks", where, f"color '{m.color}' is not one of {sorted(COLORS)}"))
 
-            if m.at is not None:
-                # A gesture is drawn ON a card, so it cannot start before the card
-                # is on the page. The bound is the card's own travel, read from
-                # the choreographer: from `lands - TRAVEL_MAX` it is at least on
-                # its way. Before that the pen traces empty paper.
-                if m.box is None and lands[m.card] - TRAVEL_MAX > m.at:
+            if m.box is None:
+                # A bound mark is timed by the card it points at, and only by it.
+                #
+                # This is the rule that was missing, and it is the whole reason
+                # hand-drawn arrows and strokes in this film landed on the wrong
+                # thing. `at` was an absolute frame typed into the plan, nothing
+                # compared it with the card's own arrival, and it drifted: over
+                # the film 74 % of marks fired while the camera was on a
+                # different card, 36 % fired more than ten frames after their
+                # card had landed, and the worst fired 240 frames — eight
+                # seconds — late. The gesture, the box and the pen were all
+                # correct; only the moment was wrong, and no gate was asking
+                # about the moment.
+                if m.at is not None:
                     out.append(fail("marks", where,
-                                    f"fires at f{m.at} but '{m.card}' does not begin to arrive "
-                                    f"until f{lands[m.card] - TRAVEL_MAX} (lands f{lands[m.card]}) "
-                                    "— a mark drawn on blank paper"))
+                                    f"carries an absolute `at` (f{m.at}) but is bound to "
+                                    f"'{m.card}'. A bound mark is timed by its card: write "
+                                    f"`delay` (frames after the card lands) instead — an "
+                                    "absolute frame drifts away from the card it describes"))
+                d = m.delay if m.delay is not None else 0
+                if not 0 <= d <= MARK_DELAY_MAX:
+                    out.append(fail("marks", where,
+                                    f"delay {d} is outside 0..{MARK_DELAY_MAX} — the pen "
+                                    f"would touch the paper {d} frames after '{m.card}' "
+                                    f"lands, and by then the voice has moved on"))
+                end = lands[m.card] + d + m.duration
+                if end > shot.span:
+                    out.append(fail("marks", where,
+                                    f"starts {d} frames after '{m.card}' lands and runs "
+                                    f"{m.duration} frames, so it ends at f{end} but the shot "
+                                    f"ends at f{shot.span}"))
+                # Two *different* gestures on one card are two jobs — a circle on
+                # the number and an underline under the label is what annotation
+                # looks like. Two of the same shape, at the same moment, on the
+                # same card is one gesture printed twice.
+                key = (m.card, m.shape, d)
+                if key in fired:
+                    out.append(fail("marks", where,
+                                    f"and marks[{fired[key]}] both draw a '{m.shape}' on "
+                                    f"'{m.card}' {d} frames after it lands — one gesture "
+                                    "drawn twice"))
+                else:
+                    fired[key] = str(i)
+            elif m.at is not None:
+                # A page mark is not about one card, so it keeps its own frame —
+                # but it still has to be inside the shot it is drawn in.
                 if m.at > shot.span:
                     out.append(fail("marks", where,
                                     f"fires at f{m.at}, past the end of its own shot (f{shot.span})"))
-                key = (m.card, m.at)
+                key = ("", m.shape, m.at)
                 if key in fired:
                     out.append(fail("marks", where,
-                                    f"and marks[{fired[key]}] both fire on '{m.card}' at f{m.at} "
-                                    "— one gesture drawn twice"))
+                                    f"and marks[{fired[key]}] both fire on the page at "
+                                    f"f{m.at} — one gesture drawn twice"))
                 else:
                     fired[key] = str(i)
             if m.box is not None and not (m.box[0] < m.box[2] and m.box[1] < m.box[3]):
@@ -274,7 +320,12 @@ def marks(ctx: Context) -> list[Finding]:
 
         # Page marks with the same shape and duration are one gesture printed
         # twice; six labels each getting their own underline is six jobs.
-        page = [m for m in shot.marks if m.bound]
+        #
+        # This read `m.bound`, which is the *opposite* set: a mark bound to a card
+        # is one job on one card, and six of them on six cards are six jobs. The
+        # rule only has anything to say about marks drawn on the page itself,
+        # which have no card to be one job on.
+        page = [m for m in shot.marks if not m.bound]
         for i, a in enumerate(page):
             for b in page[i + 1:]:
                 if a.shape == b.shape and a.duration == b.duration:

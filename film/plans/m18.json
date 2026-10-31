@@ -141,8 +141,8 @@
      0.0,
      "kartu_ejaannya",
      {
-      "at": 120,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -253,8 +253,8 @@
      3.6,
      "kartu_tjipanas",
      {
-      "at": 15,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -263,8 +263,8 @@
      -2.9,
      "penunjuk_peta",
      {
-      "at": 66,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -383,8 +383,8 @@
      3.0,
      "foto_papan_tj",
      {
-      "at": 38,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -512,8 +512,8 @@
      3.0,
      "kartu_nama_tetap",
      {
-      "at": 16,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -522,8 +522,8 @@
      -2.4,
      "figur_penulis",
      {
-      "at": 71,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -677,8 +677,8 @@
      3.6,
      "kartu_hari_ini",
      {
-      "at": 22,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -687,8 +687,8 @@
      -2.9,
      "figur_pengirim",
      {
-      "at": 180,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

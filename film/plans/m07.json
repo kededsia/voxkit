@@ -102,18 +102,18 @@
      2.4,
      "slip_ci",
      {
-      "at": 34,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ],
     [
      "strike",
-     14,
+     11,
      -3.6,
      "kamera_kuno",
      {
-      "at": 138,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -263,8 +263,8 @@
      -2.8,
      "foto_dinding",
      {
-      "at": 78,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -273,8 +273,8 @@
      3.4,
      "foto_tumpuk",
      {
-      "at": 195,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 4
      }
     ]
    ],
@@ -375,8 +375,8 @@
      2.2,
      "peta_tua",
      {
-      "at": 76,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -519,8 +519,8 @@
      -3.0,
      "kartu_105_90",
      {
-      "at": 83,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -529,8 +529,8 @@
      0.0,
      "kartu_letusan",
      {
-      "at": 179,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -671,8 +671,8 @@
      1.4,
      "garis_ukur",
      {
-      "at": 96,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -681,8 +681,8 @@
      0.0,
      "profil_gunung",
      {
-      "at": 140,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],

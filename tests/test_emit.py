@@ -96,7 +96,13 @@ def test_the_frame_arrives_with_the_word_not_after_it():
     prog = build_module(plan, {}, make_narration(), _plate, fps=30)
     shot_prog = prog.shots[0]
     for motion in shot_prog.cards[1:]:
-        assert any(abs(k.at - motion.settle) <= 2 for k in shot_prog.camera), \
+        # `settle - 2 .. settle + 8`, not `± 2`: when a hand is drawing on an
+        # earlier card the camera holds for the pen and arrives a few frames
+        # late on purpose. The rule this test defends is "the frame arrives
+        # with the word", not "the frame arrives on the exact frame" — the
+        # fault it was written for was keys thirty frames late.
+        assert any(motion.settle - 2 <= k.at <= motion.settle + 8
+                   for k in shot_prog.camera), \
             f"nothing frames {motion.name} at its arrival f{motion.settle}"
 
 

@@ -125,8 +125,8 @@
      3.0,
      "kartu_bukan_benda",
      {
-      "at": 29,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -135,8 +135,8 @@
      -2.4,
      "penjaga_sungai",
      {
-      "at": 120,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -249,8 +249,8 @@
      3.0,
      "kartu_1518",
      {
-      "at": 100,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -363,8 +363,8 @@
      1.2,
      "kartu_imah",
      {
-      "at": 160,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -470,8 +470,8 @@
      3.0,
      "kartu_buruan",
      {
-      "at": 65,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -480,8 +480,8 @@
      -2.4,
      "orang_di_mata_air",
      {
-      "at": 137,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -627,8 +627,8 @@
      3.6,
      "kartu_setelah_air",
      {
-      "at": 92,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -637,8 +637,8 @@
      -2.9,
      "tukang_rumah",
      {
-      "at": 77,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -779,8 +779,8 @@
      2.4,
      "kartu_dihitung",
      {
-      "at": 62,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -789,8 +789,8 @@
      -1.9,
      "penghitung",
      {
-      "at": 93,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -896,8 +896,8 @@
      3.0,
      "kartu_kembali",
      {
-      "at": 35,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -906,8 +906,8 @@
      -2.4,
      "pejalan_jalan",
      {
-      "at": 63,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],

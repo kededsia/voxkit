@@ -230,6 +230,18 @@ class Mark:
     duration: int
     rotate: float
     card: str
+    #: Frames after the card it points at has landed. This is the ONLY timing a
+    #: bound mark may carry.
+    #:
+    #: It used to be an absolute `at`, and that was the defect: an absolute frame
+    #: is a number that can drift away from the thing it describes, and nothing
+    #: compared the two. Measured across the film, 74 % of marks fired while the
+    #: camera was on a different card and the worst was 240 frames — eight
+    #: seconds — after the card had landed. A relative delay cannot drift: it is
+    #: re-read against the card's real landing every time the plan is emitted.
+    delay: int | None = None
+    #: Absolute frame. Page marks only (`box` given): a gesture that is not about
+    #: one card has nothing to be relative to.
     at: int | None = None
     box: tuple[float, float, float, float] | None = None
     color: str | None = None
@@ -241,6 +253,11 @@ class Mark:
     def bound(self) -> bool:
         """Bound to a card's frame, so the repetition rule does not apply."""
         return self.box is None
+
+    @property
+    def frame(self) -> int | None:
+        """The absolute frame, when the mark carries one itself."""
+        return self.at if self.delay is None else None
 
 
 # -------------------------------------------------------------------- cards
@@ -497,6 +514,7 @@ def _marks(raw: Sequence, sid: str, problems: list[Finding]) -> tuple[Mark, ...]
             duration=int(m[1]) if isinstance(m[1], int) else 0,
             rotate=float(m[2]) if isinstance(m[2], (int, float)) else 0.0,
             card=str(m[3]),
+            delay=int(opt["delay"]) if isinstance(opt.get("delay"), int) else None,
             at=int(opt["at"]) if isinstance(opt.get("at"), int) else None,
             box=box,
             color=opt.get("color"),

@@ -89,8 +89,8 @@
      0.0,
      "kartu_tidak_terlihat",
      {
-      "at": 74,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -214,8 +214,8 @@
      3.0,
      "foto_pohon_kapundung",
      {
-      "at": 190,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 5
      }
     ]
    ],
@@ -386,8 +386,8 @@
      0.0,
      "kartu_asam",
      {
-      "at": 34,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -506,8 +506,8 @@
      0.0,
      "kartu_cibening",
      {
-      "at": 50,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -653,8 +653,8 @@
      3.6,
      "kartu_langka",
      {
-      "at": 42,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -663,8 +663,8 @@
      -2.9,
      "orang_di_lubang",
      {
-      "at": 161,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

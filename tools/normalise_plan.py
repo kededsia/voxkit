@@ -1,6 +1,6 @@
 """Bring a migrated plan up to what the gates actually ask for — idempotently.
 
-Four data fixes, all of them cheap, none of them a regeneration:
+Five data fixes, all of them cheap, none of them a regeneration:
 
 1. `cut: true` on a card whose *measured* slot bleeds off a page edge. The slot
    includes the paper border the isolate stage adds, so a card placed along the
@@ -17,6 +17,11 @@ Four data fixes, all of them cheap, none of them a regeneration:
 4. Every readable card above the pieces that can lie on it (R6), renumbered 1..n,
    written to the plan *and* the layout — `z` is read from both, and two copies of
    one number is how they drift.
+5. A bound mark's absolute `at` becomes a `delay` measured from the card's own
+   landing. This is the correction of the defect the client saw: hand-drawn
+   arrows and strokes arriving on a card the camera had already left. The
+   absolute frame had drifted from the card it described — up to 240 frames —
+   and nothing compared the two.
 
     py tools/normalise_plan.py --dry
     py tools/normalise_plan.py
@@ -32,6 +37,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from voxkit import config  # noqa: E402
 from voxkit.contract import Plan  # noqa: E402
+from voxkit.gates.plan import MARK_DELAY_MAX  # noqa: E402
 from voxkit.geometry import Placed, buried  # noqa: E402
 from voxkit.layout import Layout  # noqa: E402
 
@@ -93,9 +99,16 @@ def normalise(project: config.Project, module: str, dry: bool) -> list[str]:
                 notes.append(f"{shot['id']}/{card['name']}: {card['tertutup_alasan']}")
 
         # 3 — two page marks of one shape and one length are one gesture printed twice
+        #
+        # Page marks only: a mark bound to a card is one job on one card, and six
+        # of them on six cards are six jobs. Testing `m.bound` here collected the
+        # opposite set and would have lengthened a second underline on a second
+        # card for no reason.
         seen: dict[tuple, int] = {}
         for i, m in enumerate(shot.get("marks") or []):
             if not (len(m) > 4 and isinstance(m[4], dict)):
+                continue
+            if "box" not in m[4]:
                 continue
             key = (m[0], m[1])
             if key in seen:
@@ -129,6 +142,45 @@ def normalise(project: config.Project, module: str, dry: bool) -> list[str]:
                 dirty_layout = True
         if dirty_layout and not dry:
             layout.save(project.card_dir(module, shot["id"]) / "layout.json")
+
+        # 5 — a bound mark's timing becomes relative to the card it points at.
+        #
+        # The worst defect in the migrated film. `at` was an absolute frame typed
+        # into the plan; nothing compared it with the card's own arrival, and it
+        # drifted. Measured over 205 marks: 74 % fired while the camera was on a
+        # different card, 36 % fired more than ten frames after their card had
+        # landed, and the worst fired 240 frames late. Nothing needed redrawing —
+        # the gesture, the box and the pen were right, and only the moment was
+        # wrong.
+        #
+        # `lands` is the frame the voice names the card, so `delay` is measured
+        # from the word. A stroke that cannot fit between the landing and the end
+        # of the shot is shortened, not moved: moving it would start the pen
+        # before the card arrives, and the card is the thing it is drawing on.
+        for i, m in enumerate(shot.get("marks") or []):
+            if not (len(m) > 4 and isinstance(m[4], dict)):
+                continue
+            opt = m[4]
+            if "box" in opt or ("at" not in opt and "delay" not in opt):
+                continue
+            card = next((c for c in shot["cards"] if c["name"] == m[3]), None)
+            if card is None:
+                continue
+            lands, dur = int(card.get("lands") or 0), int(m[1])
+            room = shot["range"][1] - shot["range"][0]
+            had = opt.get("delay")
+            was = int(opt.pop("at", lands + int(had or 0)))
+            fits = max(4, room - lands - 1)
+            if dur > fits:
+                notes.append(f"{shot['id']}: marks[{i}] '{m[0]}' {dur} → {fits} frames "
+                             f"(the shot has {fits} frames after f{lands})")
+                m[1] = dur = fits
+            delay = max(0, min(MARK_DELAY_MAX, was - lands))
+            delay = max(0, min(delay, room - dur - 1 - lands))
+            opt["delay"] = delay
+            if delay != had:
+                notes.append(f"{shot['id']}: marks[{i}] '{m[0]}' on '{m[3]}' "
+                             f"f{was} → delay {delay} (lands f{lands})")
 
     if notes and not dry:
         plan_path.write_text(json.dumps(raw, indent=1, ensure_ascii=False) + "\n",

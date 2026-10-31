@@ -85,12 +85,12 @@
    "marks": [
     [
      "box",
-     15,
+     8,
      3.0,
      "kartu_tugas_lain",
      {
-      "at": 90,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -195,8 +195,8 @@
      3.6,
      "kartu_abad_13",
      {
-      "at": 74,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -205,8 +205,8 @@
      -2.9,
      "pembaca_ajaran",
      {
-      "at": 163,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -305,8 +305,8 @@
      2.4,
      "kartu_pata",
      {
-      "at": 44,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -427,8 +427,8 @@
      3.0,
      "kartu_harus_dijaga",
      {
-      "at": 44,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -437,8 +437,8 @@
      -2.4,
      "penjaga_kabuyutan",
      {
-      "at": 122,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -559,8 +559,8 @@
      1.8,
      "kartu_arti_kata",
      {
-      "at": 130,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -569,8 +569,8 @@
      3.0,
      "foto_kampus",
      {
-      "at": 250,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],

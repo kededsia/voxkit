@@ -76,8 +76,8 @@
      3.0,
      "pita_keadaan",
      {
-      "at": 36,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -186,8 +186,8 @@
      -2.0,
      "slip_lemahcai",
      {
-      "at": 180,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -280,8 +280,8 @@
      2.4,
      "foto_sawah",
      {
-      "at": 74,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -290,8 +290,8 @@
      -2.0,
      "orang_menamai",
      {
-      "at": 107,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -392,8 +392,8 @@
      0.0,
      "slip_rumus",
      {
-      "at": 116,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -478,8 +478,8 @@
      2.4,
      "slip_cikapundung",
      {
-      "at": 130,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],
@@ -586,8 +586,8 @@
      2.4,
      "slip_citarum",
      {
-      "at": 141,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -596,8 +596,8 @@
      -1.9,
      "orang_nila",
      {
-      "at": 92,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -698,8 +698,8 @@
      1.6,
      "foto_bambu",
      {
-      "at": 150,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -806,8 +806,8 @@
      3.6,
      "slip_cipanas",
      {
-      "at": 63,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -816,8 +816,8 @@
      -2.9,
      "orang_berendam",
      {
-      "at": 35,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -898,8 +898,8 @@
      2.2,
      "foto_tumbuhan",
      {
-      "at": 40,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -908,8 +908,8 @@
      -3.4,
      "papan_cimaung",
      {
-      "at": 150,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -1037,8 +1037,8 @@
      3.0,
      "slip_cibadak",
      {
-      "at": 51,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1047,8 +1047,8 @@
      -2.4,
      "orang_kuda",
      {
-      "at": 117,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1129,8 +1129,8 @@
      0.0,
      "slip_batu_cadas",
      {
-      "at": 130,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -1256,8 +1256,8 @@
      2.4,
      "slip_cibodas",
      {
-      "at": 53,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -1344,8 +1344,8 @@
      3.0,
      "slip_awalan_lain",
      {
-      "at": 147,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 2
      }
     ],
     [
@@ -1354,8 +1354,8 @@
      -2.4,
      "orang_membuka",
      {
-      "at": 80,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -1462,8 +1462,8 @@
      -1.8,
      "slip_sekke",
      {
-      "at": 40,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -1472,8 +1472,8 @@
      0.0,
      "slip_sekke_loa",
      {
-      "at": 208,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],
@@ -1593,8 +1593,8 @@
      2.4,
      "slip_dua_awalan",
      {
-      "at": 15,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1603,8 +1603,8 @@
      -1.9,
      "orang_penjaga",
      {
-      "at": 105,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],

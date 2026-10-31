@@ -161,8 +161,8 @@
      0.0,
      "kartu_sunda_purwa",
      {
-      "at": 118,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -279,8 +279,8 @@
      3.0,
      "foto_salju",
      {
-      "at": 48,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -289,8 +289,8 @@
      -2.0,
      "kartu_ci_bodas",
      {
-      "at": 145,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ]
    ],
@@ -404,8 +404,8 @@
      0.0,
      "kartu_ci_berem",
      {
-      "at": 12,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -430,8 +430,8 @@
      2.5,
      "kartu_tiga_masalah",
      {
-      "at": 150,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ]
    ],
@@ -558,8 +558,8 @@
      -3.0,
      "kartu_pertama",
      {
-      "at": 24,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -580,12 +580,12 @@
     ],
     [
      "strike",
-     12,
+     8,
      2.8,
      "kartu_cahi",
      {
-      "at": 222,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -710,8 +710,8 @@
      -2.0,
      "kartu_keliru",
      {
-      "at": 22,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -720,8 +720,8 @@
      0.0,
      "kartu_cahi_sunda",
      {
-      "at": 56,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ],
     [
@@ -730,8 +730,8 @@
      1.6,
      "kartu_banyu_jawa",
      {
-      "at": 129,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ]
    ],
@@ -832,8 +832,8 @@
      -3.2,
      "kartu_kedua",
      {
-      "at": 27,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -858,8 +858,8 @@
      3.4,
      "foto_awan",
      {
-      "at": 126,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 3
      }
     ]
    ],
@@ -1047,8 +1047,8 @@
      0.0,
      "kartu_4000",
      {
-      "at": 178,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ],
     [
@@ -1057,8 +1057,8 @@
      2.2,
      "kartu_bukan_ci",
      {
-      "at": 316,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],

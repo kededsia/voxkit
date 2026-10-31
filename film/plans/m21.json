@@ -163,8 +163,8 @@
      3.0,
      "kartu_teori_ini",
      {
-      "at": 61,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -173,8 +173,8 @@
      -2.4,
      "figur_penonton",
      {
-      "at": 116,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -306,8 +306,8 @@
      3.6,
      "kartu_ci_kapundung",
      {
-      "at": 22,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -316,8 +316,8 @@
      -2.9,
      "figur_pengamat",
      {
-      "at": 113,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -416,8 +416,8 @@
      2.4,
      "kartu_teori_cahaya",
      {
-      "at": 25,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -426,8 +426,8 @@
      -1.9,
      "figur_pembaca",
      {
-      "at": 41,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -561,8 +561,8 @@
      3.0,
      "kartu_menyimpan",
      {
-      "at": 16,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -571,8 +571,8 @@
      -2.4,
      "figur_penyimpan",
      {
-      "at": 76,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -706,8 +706,8 @@
      3.6,
      "kartu_bukan_cahaya",
      {
-      "at": 17,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -716,8 +716,8 @@
      -2.9,
      "figur_perenung",
      {
-      "at": 95,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -835,8 +835,8 @@
      2.4,
      "kartu_tarum_nila",
      {
-      "at": 125,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -845,8 +845,8 @@
      -1.9,
      "figur_pewarna",
      {
-      "at": 151,
-      "color": "coral"
+      "color": "coral",
+      "delay": 5
      }
     ]
    ],

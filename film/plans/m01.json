@@ -62,8 +62,8 @@
      -4.2,
      "puncak",
      {
-      "at": 99,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -72,8 +72,8 @@
      2.5,
      "angkot",
      {
-      "at": 71,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -82,8 +82,8 @@
      -3.0,
      "pengemudi",
      {
-      "at": 164,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -203,8 +203,8 @@
      -5.5,
      "tepi_jalan",
      {
-      "at": 23,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -213,8 +213,8 @@
      3.8,
      "plang_cipanas",
      {
-      "at": 72,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],
@@ -304,8 +304,8 @@
      -3.4,
      "arsip_peta",
      {
-      "at": 19,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -314,8 +314,8 @@
      5.1,
      "blok_ci",
      {
-      "at": 82,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],
@@ -413,8 +413,8 @@
      -4.1,
      "cipanas_cibening",
      {
-      "at": 13,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -423,8 +423,8 @@
      5.3,
      "cikapundung_citarum",
      {
-      "at": 86,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -433,8 +433,8 @@
      -3.2,
      "cimahi_cianjur",
      {
-      "at": 160,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -443,8 +443,8 @@
      6.4,
      "ciawi_cibodas",
      {
-      "at": 227,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],
@@ -576,8 +576,8 @@
      -3.5,
      "warga_lokal",
      {
-      "at": 21,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -586,8 +586,8 @@
      4.8,
      "pendatang",
      {
-      "at": 117,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -596,8 +596,8 @@
      2.6,
      "tanda_tanya",
      {
-      "at": 155,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -606,8 +606,8 @@
      -2.2,
      "tanda_tanya",
      {
-      "at": 200,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -736,8 +736,8 @@
      -3.8,
      "plat_alamat",
      {
-      "at": 43,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -746,8 +746,8 @@
      4.6,
      "anak_sekolah",
      {
-      "at": 90,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -756,8 +756,8 @@
      -5.2,
      "papan_angkot",
      {
-      "at": 131,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -766,8 +766,8 @@
      3.1,
      "nomor_harian",
      {
-      "at": 175,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -776,8 +776,8 @@
      -1.6,
      "gerbang_rumah",
      {
-      "at": 193,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -922,8 +922,8 @@
      -3.3,
      "orang_bingung",
      {
-      "at": 11,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -932,8 +932,8 @@
      4.9,
      "plang_kenapa",
      {
-      "at": 73,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ],
     [
@@ -942,8 +942,8 @@
      -2.4,
      "buku_arsip",
      {
-      "at": 160,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -952,8 +952,8 @@
      3.6,
      "koran_kesan",
      {
-      "at": 202,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ],
     [
@@ -962,8 +962,8 @@
      -5.8,
      "stempel_serius",
      {
-      "at": 243,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],

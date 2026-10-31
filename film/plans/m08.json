@@ -112,8 +112,8 @@
      0.0,
      "foto_sumbatan",
      {
-      "at": 100,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -194,8 +194,8 @@
      3.2,
      "peta_danau",
      {
-      "at": 110,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],
@@ -278,8 +278,8 @@
      2.6,
      "kartu_725",
      {
-      "at": 64,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -288,8 +288,8 @@
      -2.0,
      "garis_paras",
      {
-      "at": 108,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -390,8 +390,8 @@
      4.2,
      "foto_cicalengka",
      {
-      "at": 81,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -400,8 +400,8 @@
      -3.4,
      "foto_rajamandala",
      {
-      "at": 138,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -532,8 +532,8 @@
      -3.0,
      "kartu_40km",
      {
-      "at": 46,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -636,8 +636,8 @@
      3.8,
      "foto_fosil_lapangan",
      {
-      "at": 69,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -725,8 +725,8 @@
      0.0,
      "foto_sungai_kecil",
      {
-      "at": 146,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -829,8 +829,8 @@
      -1.8,
      "kartu_lahir",
      {
-      "at": 34,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ],
     [
@@ -839,8 +839,8 @@
      3.6,
      "foto_danau_luas",
      {
-      "at": 88,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],

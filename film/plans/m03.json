@@ -63,8 +63,8 @@
      2.8,
      "kartu_107",
      {
-      "at": 189,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -73,8 +73,8 @@
      -4.2,
      "kartu_107",
      {
-      "at": 229,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -83,8 +83,8 @@
      0.0,
      "peta_cidaun",
      {
-      "at": 268,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -93,8 +93,8 @@
      0.0,
      "kartu_peneliti",
      {
-      "at": 130,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -228,8 +228,8 @@
      0.0,
      "turus_107",
      {
-      "at": 72,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -238,8 +238,8 @@
      -2.6,
      "stempel_selera",
      {
-      "at": 147,
-      "color": "coral"
+      "color": "coral",
+      "delay": 4
      }
     ]
    ],
@@ -350,8 +350,8 @@
      5.2,
      "suku_kata",
      {
-      "at": 78,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 4
      }
     ],
     [
@@ -360,8 +360,8 @@
      -3.0,
      "asal_usul",
      {
-      "at": 127,
-      "color": "coral"
+      "color": "coral",
+      "delay": 4
      }
     ]
    ],
@@ -469,8 +469,8 @@
      4.6,
      "peta_wilayah",
      {
-      "at": 95,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -479,8 +479,8 @@
      -3.2,
      "pita_ribuan",
      {
-      "at": 128,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -630,8 +630,8 @@
      0.0,
      "kamus_terbuka",
      {
-      "at": 33,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -640,18 +640,18 @@
      0.0,
      "kamus_terbuka",
      {
-      "at": 62,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
      "circle",
-     14,
+     12,
      4.0,
      "entri_cai",
      {
-      "at": 190,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -763,8 +763,8 @@
      -3.8,
      "foto_air",
      {
-      "at": 74,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -773,8 +773,8 @@
      3.0,
      "kata_ci",
      {
-      "at": 168,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -891,8 +891,8 @@
      4.4,
      "stempel_berulang",
      {
-      "at": 186,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 4
      }
     ],
     [
@@ -901,8 +901,8 @@
      0.0,
      "foto_tray_stempel",
      {
-      "at": 182,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -1014,8 +1014,8 @@
      3.6,
      "benda_aus",
      {
-      "at": 56,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -1024,8 +1024,8 @@
      -2.8,
      "kartu_bertahan",
      {
-      "at": 140,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

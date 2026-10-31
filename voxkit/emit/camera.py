@@ -46,6 +46,10 @@ class CamKey:
     #: delete the hit — which is what happened: every shot in the film carried one
     #: ease, `slow`, and no camera hit at all.
     hit: bool = False
+    #: Part of a *hold* — a framing the pen needs. The pen is the reason the frame
+    #: is where it is, so a hold key is never moved to make room for a transition;
+    #: the transition is what gives way.
+    hold: bool = False
 
     def as_value(self) -> tuple[float, float, float]:
         return (self.x, self.y, self.zoom)
@@ -180,6 +184,55 @@ def plate_cam(keys: Sequence[CamKey], margin: float = MARGIN,
     return out
 
 
+def frame_card(rect: Rect, zoom: float = 1.0) -> tuple[float, float, float]:
+    """A framing that holds one piece whole, centred as near as the page allows.
+
+    This is the answer to the pen. A mark is drawn on a card, so the card has to
+    be *in* the frame when the pen touches it — not partly, and not at the edge
+    where the stroke runs off the page. Measured over the film, 115 of 205 marks
+    were drawn on a card the camera had left partly outside the frame, which is
+    what "the arrow misses the word" looks like from the seat.
+
+    Three constraints, solved exactly rather than by iterating:
+      * the piece must fit — `zoom <= 0.5 / (w/2)`, and the same for h;
+      * the window must stay on the page — `x in [0.5/zoom, 1 - 0.5/zoom]`;
+      * ...and still contain the piece — `x in [x1 - 0.5/zoom, x0 + 0.5/zoom]`.
+    The centre is used when it satisfies both, otherwise the nearest allowed
+    position. `zoom` is only ever reduced, never raised: this is a correction to a
+    camera, not a second opinion about how tight the shot should be.
+
+    No margin. A piece the size of the page has exactly one legal position, and
+    asking for a margin as well turns a solvable constraint into an impossible
+    one — which is how a full-height card ended up reported as unframeable.
+    """
+    rect = rect.clamped()
+    zoom = max(1.0, min(zoom, ZOOM_CAP))
+    fit = min(0.5 / max(0.001, rect.w / 2), 0.5 / max(0.001, rect.h / 2))
+    zoom = max(1.0, min(zoom, fit))
+    half = 0.5 / zoom
+
+    def place(c0: float, c1: float, c: float) -> float:
+        lo = max(half, c1 - half)
+        hi = min(1.0 - half, c0 + half)
+        return c if lo > hi else min(max(c, lo), hi)
+
+    return (place(rect.x0, rect.x1, rect.cx), place(rect.y0, rect.y1, rect.cy), zoom)
+
+
+def holds(win: tuple[float, float, float], rect: Rect) -> bool:
+    """Does this camera position show the piece whole?
+
+    Measured on the part of the piece that exists. A slot that runs off the page
+    has no ink beyond the edge, so demanding the whole slot be visible would be
+    demanding to see paper that was never printed.
+    """
+    x, y, zoom = win
+    half = 0.5 / zoom
+    r = rect.clamped()
+    return (r.x0 >= x - half - 1e-6 and r.x1 <= x + half + 1e-6
+            and r.y0 >= y - half - 1e-6 and r.y1 <= y + half + 1e-6)
+
+
 def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
           **opts) -> list[CamKey]:
     """A camera hit: anticipate back, overshoot, settle. Four keys, one move.
@@ -192,10 +245,14 @@ def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
     antic, rise, settle = int(o["antic"]), int(o["rise"]), int(o["settle"])
     before = resolve(keys, at - antic - 1)
     away = (before[0] - target[0], before[1] - target[1])
+    # Both ends of a hit stay inside the camera's own limits. A punch pulls 6 %
+    # *out* before it goes, and from a resting zoom of 1.03 that lands at 0.97 —
+    # below 1.0, where the plate has no overscan and the stage shows through the
+    # edge. The cap at the top matters for the same reason in reverse.
     pull = (before[0] + away[0] * 0.06, before[1] + away[1] * 0.06,
-            before[2] * (1 - o["antic_pct"]))
+            max(1.0, min(ZOOM_CAP, before[2] * (1 - o["antic_pct"]))))
     over = (target[0] - away[0] * 0.02, target[1] - away[1] * 0.02,
-            target[2] * (1 + o["over_pct"]))
+            max(1.0, min(ZOOM_CAP, target[2] * (1 + o["over_pct"]))))
     head = [k for k in keys if k.at < at - antic]
     tail = [k for k in keys if k.at > at + rise + settle]
     return [
@@ -206,6 +263,30 @@ def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
         CamKey(at + rise + settle, *target, "slow", hit=True),
         *tail,
     ]
+
+
+def squeeze(keys: Sequence[CamKey], gap: int = 8) -> list[CamKey]:
+    """Drop keys that sit inside a jump-cut of the one before — never move them.
+
+    The last pass, because every earlier pass either adds keys (a hold for the pen,
+    a hit for the voice) or moves them, and each of those can leave a pair two
+    frames apart. Dropping is the only repair that cannot create a new collision:
+    a missing transition key costs a camera move, a moved one costs a jump-cut.
+
+    Holds and hits are the two kinds of key that carry a promise — the frame the
+    pen needs and the four keys that read as one hit — so they are never the ones
+    dropped.
+    """
+    out: list[CamKey] = []
+    for k in sorted(keys, key=lambda k: k.at):
+        if out and k.at - out[-1].at < gap and not (out[-1].hit and k.hit):
+            if out[-1].hold or out[-1].hit:
+                continue
+            out.pop()
+            if out and k.at - out[-1].at < gap:
+                continue
+        out.append(k)
+    return out
 
 
 def keys_at_least(keys: Sequence[CamKey], gap: int = LEAD) -> list[CamKey]:

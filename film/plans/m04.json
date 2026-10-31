@@ -97,8 +97,8 @@
      3.6,
      "kamus_cai",
      {
-      "at": 125,
-      "color": "coral"
+      "color": "coral",
+      "delay": 4
      }
     ]
    ],
@@ -226,8 +226,8 @@
      -2.4,
      "slip_herang",
      {
-      "at": 112,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -354,12 +354,12 @@
    "marks": [
     [
      "brackets",
-     16,
+     14,
      0.0,
      "slip_caah",
      {
-      "at": 208,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -490,8 +490,8 @@
      0.0,
      "foto_sungai_dalam",
      {
-      "at": 160,
-      "color": "coral"
+      "color": "coral",
+      "delay": 7
      }
     ]
    ],
@@ -616,8 +616,8 @@
      -3.0,
      "foto_curug",
      {
-      "at": 148,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],

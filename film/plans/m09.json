@@ -128,8 +128,8 @@
      2.4,
      "foto_dinding_jebol",
      {
-      "at": 167,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 4
      }
     ]
    ],
@@ -226,12 +226,12 @@
    "marks": [
     [
      "arrow-down",
-     14,
+     11,
      -3.0,
      "foto_rembes",
      {
-      "at": 232,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -341,8 +341,8 @@
      2.4,
      "kartu_mata_air",
      {
-      "at": 52,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -351,8 +351,8 @@
      -1.9,
      "pengambil_air",
      {
-      "at": 70,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -452,8 +452,8 @@
      2.0,
      "kartu_tidak_kering",
      {
-      "at": 120,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -575,8 +575,8 @@
      -2.6,
      "foto_hutan_cekungan",
      {
-      "at": 200,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -672,8 +672,8 @@
      2.4,
      "kartu_sebagian",
      {
-      "at": 75,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -682,8 +682,8 @@
      -1.9,
      "penggembala",
      {
-      "at": 92,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -784,8 +784,8 @@
      3.0,
      "kartu_rancar_cili",
      {
-      "at": 88,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -894,8 +894,8 @@
      3.4,
      "foto_permukiman_rawa",
      {
-      "at": 105,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -1015,8 +1015,8 @@
      1.8,
      "foto_gunung_wayang",
      {
-      "at": 58,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -1097,8 +1097,8 @@
      3.0,
      "kartu_citarum",
      {
-      "at": 37,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -1218,8 +1218,8 @@
      -2.2,
      "peta_citarum",
      {
-      "at": 160,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -1307,8 +1307,8 @@
      2.4,
      "kartu_dua_lapisan",
      {
-      "at": 82,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1317,8 +1317,8 @@
      -1.9,
      "pembaca_peta",
      {
-      "at": 115,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1406,8 +1406,8 @@
      3.0,
      "kartu_lapisan_pertama",
      {
-      "at": 26,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1416,8 +1416,8 @@
      -2.4,
      "warga_kampung",
      {
-      "at": 111,
-      "color": "coral"
+      "color": "coral",
+      "delay": 4
      }
     ]
    ],

@@ -163,8 +163,8 @@
      2.6,
      "kartu_seribu",
      {
-      "at": 124,
-      "color": "coral"
+      "color": "coral",
+      "delay": 4
      }
     ],
     [
@@ -173,8 +173,8 @@
      -4.4,
      "tangan_mengacak",
      {
-      "at": 172,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ]
    ],
@@ -268,8 +268,8 @@
      -3.8,
      "plang_183",
      {
-      "at": 60,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -278,8 +278,8 @@
      4.9,
      "petugas_desa",
      {
-      "at": 120,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -391,8 +391,8 @@
      5.2,
      "kartu_294",
      {
-      "at": 60,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 7
      }
     ],
     [
@@ -401,8 +401,8 @@
      -3.6,
      "slip_chi",
      {
-      "at": 138,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -537,8 +537,8 @@
      -4.2,
      "kartu_294persen",
      {
-      "at": 12,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -547,8 +547,8 @@
      5.4,
      "tally_tiga",
      {
-      "at": 76,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -557,8 +557,8 @@
      -2.2,
      "strip_bukan",
      {
-      "at": 190,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -651,8 +651,8 @@
      4.6,
      "peta_purwakarta",
      {
-      "at": 20,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 4
      }
     ],
     [
@@ -661,8 +661,8 @@
      -3.4,
      "pin_merah",
      {
-      "at": 98,
-      "color": "coral"
+      "color": "coral",
+      "delay": 6
      }
     ]
    ],
@@ -784,8 +784,8 @@
      1.6,
      "strip_jenis",
      {
-      "at": 46,
-      "color": "mustard"
+      "color": "mustard",
+      "delay": 8
      }
     ],
     [
@@ -794,8 +794,8 @@
      -3.9,
      "kartu_kabupaten",
      {
-      "at": 230,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -804,8 +804,8 @@
      2.4,
      "strip_jenis",
      {
-      "at": 120,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

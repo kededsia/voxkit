@@ -129,8 +129,8 @@
      3.4,
      "arkeolog_susanti",
      {
-      "at": 115,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -237,8 +237,8 @@
      2.0,
      "foto_pelabuhan",
      {
-      "at": 210,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -365,8 +365,8 @@
      1.4,
      "foto_naskah_kuno",
      {
-      "at": 40,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -525,8 +525,8 @@
      3.0,
      "kartu_prabu_jaya_pakuan",
      {
-      "at": 258,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -535,8 +535,8 @@
      -2.4,
      "pangeran",
      {
-      "at": 41,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],

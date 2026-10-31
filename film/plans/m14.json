@@ -136,8 +136,8 @@
      3.0,
      "kartu_cipakan_tua",
      {
-      "at": 167,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -232,8 +232,8 @@
      3.6,
      "kartu_lebih_dulu",
      {
-      "at": 87,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -242,8 +242,8 @@
      -2.9,
      "juru_tulis_batu",
      {
-      "at": 52,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -346,8 +346,8 @@
      2.4,
      "kartu_1000_tahun",
      {
-      "at": 78,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -356,8 +356,8 @@
      -1.9,
      "penulis_kertas",
      {
-      "at": 50,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -464,8 +464,8 @@
      2.2,
      "foto_sungai_sunyi",
      {
-      "at": 40,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -474,8 +474,8 @@
      3.6,
      "foto_prasasti_kosong",
      {
-      "at": 180,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -581,8 +581,8 @@
      3.6,
      "kartu_istana_hilang",
      {
-      "at": 70,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -591,8 +591,8 @@
      -2.9,
      "orang_di_runtuhan",
      {
-      "at": 103,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -693,18 +693,18 @@
      2.4,
      "kartu_tidak_hilang",
      {
-      "at": 55,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
      "ellipse",
-     16,
+     14,
      -1.9,
      "figur_raja",
      {
-      "at": 157,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -805,8 +805,8 @@
      -1.6,
      "foto_air_mengalir",
      {
-      "at": 70,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],

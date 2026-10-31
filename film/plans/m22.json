@@ -136,8 +136,8 @@
      3.0,
      "kartu_paling_tercemar",
      {
-      "at": 111,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -146,8 +146,8 @@
      -2.4,
      "figur_penyusur",
      {
-      "at": 132,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -281,8 +281,8 @@
      3.6,
      "kartu_bukan_air",
      {
-      "at": 54,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -291,8 +291,8 @@
      -2.9,
      "figur_penyaksi",
      {
-      "at": 92,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -424,8 +424,8 @@
      2.4,
      "kartu_nama_ci",
      {
-      "at": 38,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ],
     [
@@ -434,8 +434,8 @@
      -1.9,
      "figur_pengunjung",
      {
-      "at": 116,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -569,8 +569,8 @@
      3.0,
      "kartu_bukan_begitu",
      {
-      "at": 23,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -579,8 +579,8 @@
      -2.4,
      "figur_penutur",
      {
-      "at": 121,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -713,8 +713,8 @@
      3.6,
      "kartu_dicatat",
      {
-      "at": 10,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -723,8 +723,8 @@
      -2.9,
      "figur_pencatat",
      {
-      "at": 32,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -837,8 +837,8 @@
      2.4,
      "kartu_tenang",
      {
-      "at": 21,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -974,8 +974,8 @@
      3.0,
      "kartu_bukan_kebetulan",
      {
-      "at": 36,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 6
      }
     ],
     [
@@ -984,8 +984,8 @@
      -2.4,
      "figur_pembaca_akhir",
      {
-      "at": 204,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],

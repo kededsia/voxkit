@@ -64,14 +64,15 @@ const Card: React.FC<{
 const S01: React.FC = () => (
   <PaperStage camera={[
           {at: 0, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
-          {at: 45, x: 0.5395, y: 0.4223, zoom: 1.1483, ease: "slow"},
-          {at: 46, x: 0.5469, y: 0.4152, zoom: 1.1623, ease: "linear"},
-          {at: 50, x: 0.4136, y: 0.5431, zoom: 1.2992, ease: "step"},
-          {at: 58, x: 0.416, y: 0.5407, zoom: 1.16, ease: "slow"},
-          {at: 62, x: 0.546, y: 0.416, zoom: 1.16, ease: "slow"},
-          {at: 76, x: 0.546, y: 0.4275, zoom: 1.13, ease: "slow"},
-          {at: 149, x: 0.5124, y: 0.5725, zoom: 1.13, ease: "slow"},
-          {at: 163, x: 0.5124, y: 0.5725, zoom: 1.13, ease: "slow"},
+          {at: 45, x: 0.5395, y: 0.4252, zoom: 1, ease: "slow"},
+          {at: 46, x: 0.5402, y: 0.4252, zoom: 1, ease: "linear"},
+          {at: 50, x: 0.4136, y: 0.5163, zoom: 1, ease: "step"},
+          {at: 65, x: 0.4136, y: 0.5163, zoom: 1, ease: "slow"},
+          {at: 73, x: 0.5402, y: 0.4252, zoom: 1, ease: "slow"},
+          {at: 81, x: 0.5402, y: 0.4275, zoom: 1, ease: "slow"},
+          {at: 101, x: 0.5402, y: 0.4275, zoom: 1, ease: "slow"},
+          {at: 149, x: 0.5124, y: 0.5163, zoom: 1, ease: "slow"},
+          {at: 163, x: 0.5124, y: 0.5163, zoom: 1, ease: "slow"},
           {at: 184, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
         ]}
              plate="m06/plates/s01.jpg" totalFrames={190}
@@ -96,7 +97,7 @@ const S01: React.FC = () => (
       <HandMark
         shape="brackets"
         box={[0.3508, 0.0173, 0.7843, 0.5557]}
-        at={115}
+        at={84}
         duration={14}
         rotate={1.8}
         pen="marker"
@@ -111,13 +112,15 @@ const S01: React.FC = () => (
 const S02: React.FC = () => (
   <PaperStage camera={[
           {at: 0, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
-          {at: 110, x: 0.5716, y: 0.5716, zoom: 1.1457, ease: "slow"},
-          {at: 111, x: 0.5809, y: 0.5708, zoom: 1.1518, ease: "linear"},
-          {at: 115, x: 0.4129, y: 0.5842, zoom: 1.2992, ease: "step"},
-          {at: 123, x: 0.416, y: 0.584, zoom: 1.16, ease: "slow"},
-          {at: 158, x: 0.584, y: 0.584, zoom: 1.16, ease: "slow"},
-          {at: 172, x: 0.5802, y: 0.5802, zoom: 1.15, ease: "slow"},
-          {at: 188, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
+          {at: 43, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
+          {at: 97, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
+          {at: 110, x: 0.5605, y: 0.5007, zoom: 1, ease: "slow"},
+          {at: 111, x: 0.5605, y: 0.5007, zoom: 1, ease: "linear"},
+          {at: 115, x: 0.4129, y: 0.5007, zoom: 1, ease: "step"},
+          {at: 123, x: 0.416, y: 0.5007, zoom: 1, ease: "slow"},
+          {at: 158, x: 0.5605, y: 0.5007, zoom: 1, ease: "slow"},
+          {at: 172, x: 0.5605, y: 0.5007, zoom: 1, ease: "slow"},
+          {at: 188, x: 0.5, y: 0.5, zoom: 1.0013, ease: "slow"},
         ]}
              plate="m06/plates/s02.jpg" totalFrames={194}
              phase={0.9}>
@@ -130,7 +133,7 @@ const S02: React.FC = () => (
       <HandMark
         shape="bracket-right"
         box={[0.0616, 0.0016, 0.5292, 0.4216]}
-        at={37}
+        at={26}
         duration={14}
         rotate={1.4}
         pen="marker"
@@ -141,7 +144,7 @@ const S02: React.FC = () => (
       <HandMark
         shape="underline"
         box={[0.2556, 0.3024, 0.8026, 0.846]}
-        at={119}
+        at={82}
         duration={12}
         rotate={-1.9}
         pen="marker"
@@ -158,10 +161,11 @@ const S03: React.FC = () => (
           {at: 0, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
           {at: 45, x: 0.4723, y: 0.5699, zoom: 1.1438, ease: "slow"},
           {at: 46, x: 0.4656, y: 0.5792, zoom: 1.1473, ease: "linear"},
-          {at: 50, x: 0.5862, y: 0.413, zoom: 1.2992, ease: "step"},
-          {at: 58, x: 0.584, y: 0.416, zoom: 1.16, ease: "slow"},
-          {at: 65, x: 0.4711, y: 0.584, zoom: 1.16, ease: "slow"},
+          {at: 50, x: 0.5862, y: 0.4538, zoom: 1, ease: "step"},
+          {at: 58, x: 0.584, y: 0.4538, zoom: 1, ease: "slow"},
+          {at: 66, x: 0.4711, y: 0.584, zoom: 1.16, ease: "slow"},
           {at: 79, x: 0.4711, y: 0.5725, zoom: 1.13, ease: "slow"},
+          {at: 113, x: 0.4711, y: 0.5725, zoom: 1.13, ease: "slow"},
           {at: 168, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
         ]}
              plate="m06/plates/s03.jpg" totalFrames={174}
@@ -175,7 +179,7 @@ const S03: React.FC = () => (
       <HandMark
         shape="brackets"
         box={[0.5506, 0.262, 0.8911, 0.9528]}
-        at={97}
+        at={96}
         duration={14}
         rotate={-1.7}
         pen="marker"
@@ -189,13 +193,15 @@ const S03: React.FC = () => (
 
 const S04: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
-          {at: 154, x: 0.4203, y: 0.5793, zoom: 1.149, ease: "slow"},
-          {at: 155, x: 0.4152, y: 0.579, zoom: 1.1624, ease: "linear"},
-          {at: 159, x: 0.5081, y: 0.5841, zoom: 1.2992, ease: "step"},
-          {at: 167, x: 0.5064, y: 0.584, zoom: 1.16, ease: "slow"},
-          {at: 176, x: 0.4198, y: 0.5802, zoom: 1.15, ease: "slow"},
-          {at: 215, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
+          {at: 0, x: 0.5005, y: 0.5398, zoom: 1, ease: "slow"},
+          {at: 128, x: 0.5005, y: 0.5398, zoom: 1, ease: "slow"},
+          {at: 154, x: 0.5005, y: 0.5793, zoom: 1, ease: "slow"},
+          {at: 155, x: 0.5005, y: 0.579, zoom: 1, ease: "linear"},
+          {at: 159, x: 0.5075, y: 0.58, zoom: 1, ease: "step"},
+          {at: 167, x: 0.5064, y: 0.58, zoom: 1, ease: "slow"},
+          {at: 176, x: 0.5005, y: 0.58, zoom: 1, ease: "slow"},
+          {at: 199, x: 0.5005, y: 0.58, zoom: 1, ease: "slow"},
+          {at: 215, x: 0.5005, y: 0.5398, zoom: 1, ease: "slow"},
         ]}
              plate="m06/plates/s04.jpg" totalFrames={221}
              phase={1.8}>
@@ -208,7 +214,7 @@ const S04: React.FC = () => (
       <HandMark
         shape="circle"
         box={[0.6692, 0.081, 0.9995, 1.0388]}
-        at={133}
+        at={111}
         duration={14}
         rotate={2.8}
         pen="marker"
@@ -219,7 +225,7 @@ const S04: React.FC = () => (
       <HandMark
         shape="underline"
         box={[0.0085, 0.2958, 0.3723, 1.0113]}
-        at={197}
+        at={184}
         duration={12}
         rotate={-1.5}
         pen="marker"
@@ -236,12 +242,13 @@ const S05: React.FC = () => (
           {at: 0, x: 0.48, y: 0.48, zoom: 1.04, ease: "slow"},
           {at: 26, x: 0.4871, y: 0.4802, zoom: 1.0482, ease: "slow"},
           {at: 27, x: 0.4914, y: 0.4787, zoom: 1.0128, ease: "linear"},
-          {at: 31, x: 0.4146, y: 0.5063, zoom: 1.2992, ease: "step"},
-          {at: 39, x: 0.416, y: 0.5058, zoom: 1.16, ease: "slow"},
-          {at: 97, x: 0.584, y: 0.4832, zoom: 1.16, ease: "slow"},
+          {at: 31, x: 0.4146, y: 0.5063, zoom: 1.093, ease: "step"},
+          {at: 39, x: 0.416, y: 0.5058, zoom: 1.0943, ease: "slow"},
+          {at: 97, x: 0.584, y: 0.4832, zoom: 1.1511, ease: "slow"},
           {at: 111, x: 0.5725, y: 0.4832, zoom: 1.13, ease: "slow"},
-          {at: 150, x: 0.5725, y: 0.508, zoom: 1.13, ease: "slow"},
-          {at: 164, x: 0.5725, y: 0.508, zoom: 1.13, ease: "slow"},
+          {at: 134, x: 0.5725, y: 0.4832, zoom: 1.13, ease: "slow"},
+          {at: 150, x: 0.5725, y: 0.508, zoom: 1.0891, ease: "slow"},
+          {at: 164, x: 0.5725, y: 0.508, zoom: 1.0891, ease: "slow"},
           {at: 190, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
         ]}
              plate="m06/plates/s05.jpg" totalFrames={196}
@@ -254,7 +261,7 @@ const S05: React.FC = () => (
       <HandMark
         shape="strike"
         box={[0.5979, 0.0499, 0.8497, 0.9007]}
-        at={122}
+        at={119}
         duration={12}
         rotate={3.1}
         pen="marker"

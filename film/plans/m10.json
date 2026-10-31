@@ -121,8 +121,8 @@
      2.6,
      "foto_dinding_berair",
      {
-      "at": 100,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -210,8 +210,8 @@
      3.6,
      "kartu_ci",
      {
-      "at": 24,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ]
    ],
@@ -307,8 +307,8 @@
      3.2,
      "peta_lama",
      {
-      "at": 70,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -410,8 +410,8 @@
      -2.4,
      "kartu_bukan_kiasan",
      {
-      "at": 55,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -420,8 +420,8 @@
      1.6,
      "peta_bertahan",
      {
-      "at": 115,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -509,8 +509,8 @@
      3.6,
      "kartu_sampai_sini",
      {
-      "at": 34,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -519,8 +519,8 @@
      -2.9,
      "dua_orang_bicara",
      {
-      "at": 55,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -615,8 +615,8 @@
      2.4,
      "kartu_mulut_ke_mulut",
      {
-      "at": 79,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -625,8 +625,8 @@
      -1.9,
      "figur_penutur",
      {
-      "at": 65,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -729,8 +729,8 @@
      3.0,
      "kartu_dua_peristiwa",
      {
-      "at": 47,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -739,8 +739,8 @@
      -2.4,
      "juru_tulis",
      {
-      "at": 16,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -834,8 +834,8 @@
      3.6,
      "kartu_prasasti_tugu",
      {
-      "at": 81,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -844,8 +844,8 @@
      -2.9,
      "pengunjung_prasasti",
      {
-      "at": 159,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -952,8 +952,8 @@
      -2.0,
      "kartu_sansekerta",
      {
-      "at": 85,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -1056,8 +1056,8 @@
      3.0,
      "kartu_candrabaga",
      {
-      "at": 47,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1066,8 +1066,8 @@
      -2.4,
      "penggali_saluran",
      {
-      "at": 106,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1161,8 +1161,8 @@
      3.6,
      "kartu_gomati",
      {
-      "at": 42,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -1171,8 +1171,8 @@
      -2.9,
      "pekerja_saluran",
      {
-      "at": 103,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -1305,8 +1305,8 @@
      -2.8,
      "kartu_12km",
      {
-      "at": 160,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

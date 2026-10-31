@@ -54,7 +54,7 @@ def shot(sid: str, start: int, end: int, cards: list[dict], **kw) -> dict:
         "tata_letak_kolase": "Asymmetric diagonal: pieces climb from lower right to upper left",
         "jenis": "DIAGRAM",
         "mark": "Red circle around the pass on 'peta'.",
-        "marks": [["circle", 14, -4.2, cards[0]["name"], {"at": 34}]],
+        "marks": [["circle", 14, -4.2, cards[0]["name"], {"delay": 4}]],
         "kamera": "Slow lens pan following the route, locking on the sign at the word.",
         "cards": cards,
         "still_gate": "PASS 40.0",

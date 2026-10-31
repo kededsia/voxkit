@@ -97,8 +97,8 @@
      -2.6,
      "foto_benda",
      {
-      "at": 50,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 3
      }
     ],
     [
@@ -107,8 +107,8 @@
      1.8,
      "foto_perbuatan",
      {
-      "at": 115,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -209,8 +209,8 @@
      1.4,
      "slip_imbuhan",
      {
-      "at": 37,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -219,8 +219,8 @@
      -1.9,
      "slip_pangumbahan",
      {
-      "at": 119,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -327,8 +327,8 @@
      -1.7,
      "orang_mencuci_sungai",
      {
-      "at": 97,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -450,8 +450,8 @@
      2.8,
      "papan_nama_tempat",
      {
-      "at": 133,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ],
     [
@@ -460,8 +460,8 @@
      -1.5,
      "orang_mencuci_lama",
      {
-      "at": 197,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -549,8 +549,8 @@
      3.1,
      "foto_hiasan",
      {
-      "at": 122,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],

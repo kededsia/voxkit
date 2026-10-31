@@ -88,18 +88,34 @@ def test_no_lexicon_is_a_note_not_a_pass(context):
 
 
 # --------------------------------------------------------------------- marks
-def test_a_mark_before_its_card_arrives_is_caught(context):
-    """The pen traces empty paper: the card has not begun to travel yet."""
+def test_a_bound_mark_with_an_absolute_frame_is_caught(context):
+    """The number that drifted: an absolute frame is not tied to the card.
+
+    This is the defect the client saw — arrows and strokes arriving on a card the
+    camera had already left. `at` was a frame typed into the plan and nothing
+    compared it with the card's own landing, so it drifted by up to 240 frames.
+    A bound mark must say `delay`, which is re-read against the landing every
+    time the plan is emitted.
+    """
     shots = base_shots()
-    shots[0]["marks"] = [["circle", 14, -4.2, "orang", {"at": 0}]]   # lands at f45
+    shots[0]["marks"] = [["circle", 14, -4.2, "orang", {"at": 30}]]
     ctx = _ctx(context, make_plan(shots=shots))
     messages = _fails(_run(ctx, ["marks"]), "marks")
-    assert any("blank paper" in m for m in messages)
+    assert any("absolute `at`" in m for m in messages)
+
+
+def test_a_mark_that_starts_long_after_its_card_lands_is_caught(context):
+    """A gesture that answers a word the voice finished with is a stray line."""
+    shots = base_shots()
+    shots[0]["marks"] = [["circle", 14, -4.2, "orang", {"delay": 40}]]
+    ctx = _ctx(context, make_plan(shots=shots))
+    messages = _fails(_run(ctx, ["marks"]), "marks")
+    assert any("delay 40 is outside" in m for m in messages)
 
 
 def test_a_mark_on_a_card_the_shot_does_not_have_is_caught(context):
     shots = base_shots()
-    shots[0]["marks"] = [["circle", 14, -4.2, "hantu", {"at": 34}]]
+    shots[0]["marks"] = [["circle", 14, -4.2, "hantu", {"delay": 2}]]
     ctx = _ctx(context, make_plan(shots=shots))
     assert any("does not have" in m for m in _fails(_run(ctx, ["marks"]), "marks"))
 
@@ -107,15 +123,23 @@ def test_a_mark_on_a_card_the_shot_does_not_have_is_caught(context):
 def test_a_shape_outside_the_renderer_is_caught(context):
     """The executor is faithful: it draws a perfectly rendered *other* gesture."""
     shots = base_shots()
-    shots[0]["marks"] = [["zigzag-double", 14, -4.2, "peta", {"at": 34}]]
+    shots[0]["marks"] = [["zigzag-double", 14, -4.2, "peta", {"delay": 2}]]
     ctx = _ctx(context, make_plan(shots=shots))
     assert any("vocabulary" in m for m in _fails(_run(ctx, ["marks"]), "marks"))
 
 
 def test_one_gesture_printed_twice_is_caught(context):
+    """Two page marks, one shape, one length: one gesture printed twice.
+
+    Page marks only — a mark bound to a card is one job on one card, and six of
+    them on six cards are six jobs. The rule used to test `bound`, which is the
+    opposite set.
+    """
     shots = base_shots()
-    shots[0]["marks"] = [["circle", 14, -4.2, "peta", {"at": 34}],
-                         ["circle", 14, 1.9, "orang", {"at": 50}]]
+    box = [0.1, 0.1, 0.4, 0.3]
+    shots[0]["marks"] = [["circle", 14, -4.2, "peta", {"box": box, "at": 34}],
+                         ["circle", 14, 1.9, "orang", {"box": [0.5, 0.5, 0.9, 0.9],
+                                                       "at": 50}]]
     ctx = _ctx(context, make_plan(shots=shots))
     assert any("printed twice" in m for m in _fails(_run(ctx, ["marks"]), "marks"))
 
@@ -124,9 +148,9 @@ def test_a_lattice_of_equal_angles_is_caught(context):
     """Six underlines at ±0.7 is a pattern even when each is bound to its card."""
     shots = base_shots()
     shots[0]["marks"] = [
-        ["underline", 10, 0.7, "peta", {"at": 34}],
-        ["underline", 12, -0.7, "peta", {"at": 40}],
-        ["underline", 14, 0.72, "orang", {"at": 50}],
+        ["underline", 10, 0.7, "peta", {"delay": 2}],
+        ["underline", 12, -0.7, "peta", {"delay": 6}],
+        ["underline", 14, 0.72, "orang", {"delay": 2}],
     ]
     ctx = _ctx(context, make_plan(shots=shots))
     assert any("lattice" in m for m in _fails(_run(ctx, ["marks"]), "marks"))

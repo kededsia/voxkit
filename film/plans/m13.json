@@ -110,8 +110,8 @@
      3.0,
      "kartu_puisi",
      {
-      "at": 71,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -120,8 +120,8 @@
      -2.4,
      "pembaca_puisi",
      {
-      "at": 130,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -242,8 +242,8 @@
      -2.2,
      "pencatat_baris",
      {
-      "at": 130,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 8
      }
     ]
    ],
@@ -364,8 +364,8 @@
      3.0,
      "foto_sungai_depan_istana",
      {
-      "at": 130,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],
@@ -446,8 +446,8 @@
      3.0,
      "kartu_sungai_pertama",
      {
-      "at": 26,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -456,8 +456,8 @@
      -2.4,
      "tetangga_sungai",
      {
-      "at": 105,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -576,8 +576,8 @@
      3.6,
      "kartu_450",
      {
-      "at": 88,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -586,8 +586,8 @@
      -2.9,
      "penulis_jalan",
      {
-      "at": 59,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -696,8 +696,8 @@
      2.4,
      "kartu_masih_dikenali",
      {
-      "at": 39,
-      "color": "crimson"
+      "color": "crimson",
+      "delay": 0
      }
     ],
     [
@@ -706,8 +706,8 @@
      -1.9,
      "pembaca_kini",
      {
-      "at": 104,
-      "color": "coral"
+      "color": "coral",
+      "delay": 0
      }
     ]
    ],
@@ -805,8 +805,8 @@
      3.2,
      "kartu_1627",
      {
-      "at": 155,
-      "color": "coral"
+      "color": "coral",
+      "delay": 8
      }
     ]
    ],

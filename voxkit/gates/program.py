@@ -25,6 +25,18 @@ from ..layout import Layout
 from ..words import FLOOR
 from .base import Context, Gate, Skipped
 
+# How much of a stroke may land on a piece other than the one it is marking.
+#
+# Measured on the *stroke*, not on the card. How much of a card is hidden is a
+# question about the composition, and `compose` already answers it at 55 %; what
+# makes an arrow "miss the word" is the ink crossing a different piece, so that
+# the gesture points at two things at once.
+#
+# A marker dragged across a collage will catch a torn edge, and that is the
+# material rather than a fault. A third of the box on another piece is worth
+# looking at.
+MARK_STRAY_WARN = 0.34
+
 
 def program_of(ctx: Context):
     """Build the module's program, or explain why it cannot be built yet."""
@@ -149,7 +161,62 @@ def program(ctx: Context) -> list[Finding]:
                                     f"({box}). A partial figure on screen is a wrong figure."))
                     break
 
-    # 5. The module must not move uniformly. This is the check that would have
+    # 5. A hand-drawn mark is drawn ON its card, at the moment the card is the
+    #    subject, and nothing is lying on top of it.
+    #
+    #    This is the rule that was missing, and it is the client's complaint in
+    #    three measurements. An arrow "misses the word" when the card is half out
+    #    of the frame while the pen is down, when the camera has already left for
+    #    the next card, or when another piece has landed on top of the card being
+    #    annotated. All three are invisible in a render and all three are
+    #    arithmetic: the frame is `resolve(camera, frame)`, and a box is inside it
+    #    or it is not.
+    for shot in prog.shots:
+        for i, mk in enumerate(shot.marks):
+            target = shot.card(mk.on)
+            if target is None:
+                continue
+            where = f"{shot.id} mark '{mk.shape}' on '{target.name}'"
+            # Two strokes on two different cards, less than a camera move apart,
+            # cannot both be framed: the frame would have to be in two places. The
+            # earlier one owns the camera and the later one is exempt — the
+            # alternative is a gate that demands the impossible and a plan that
+            # can only satisfy it by deleting a gesture.
+            crowded = any(prev.on != mk.on and mk.at - (prev.at + prev.duration) < 2 * MARK_LEAD
+                          for prev in shot.marks[:i])
+            for f in ((mk.at, mk.at + mk.duration) if not crowded else ()):
+                if not cam.holds(cam.resolve(shot.camera, f), target.rect):
+                    x, y, z = cam.resolve(shot.camera, f)
+                    out.append(fail("program", where,
+                                    f"the pen is down at f{f} but the frame ({x:.2f}, {y:.2f}, "
+                                    f"zoom {z:.2f}) does not hold the card it is drawing on "
+                                    f"({target.rect}). The stroke runs off the page and the eye "
+                                    "reads a mark that missed."))
+                    break
+            # What matters is not how much of the card is hidden but how much of
+            # the *stroke* lands on something else. An underline along the bottom
+            # of a card whose top corner is tucked under a photo is collage; a
+            # stroke that runs across the photo points at two things at once.
+            mid = mk.at + mk.duration // 2
+            above = [c for c in shot.cards
+                     if c.name != target.name and c.z > target.z and c.settle <= mid]
+            on_other = max(((mk.box.intersect(c.rect) / mk.box.area, c) for c in above),
+                           default=(0.0, None), key=lambda t: t[0])
+            # A warning, not a failure, and deliberately so. This is measured on
+            # the mark's *box*, and a box is not a stroke: an underline lives in
+            # the bottom eighth of its box, and an arrow is a thin diagonal
+            # through it. A gate that failed a plan on a number it cannot measure
+            # precisely would be accusing it of something it never checked — the
+            # same fault as the board that drew every card 44 % too short.
+            if on_other[0] > MARK_STRAY_WARN:
+                frac, other = on_other
+                out.append(warn("program", where,
+                                f"{frac:.0%} of the mark's box sits on '{other.name}', which "
+                                f"is lying over the card at f{mid}. The box is not the stroke, "
+                                "so this is a look-at-it rather than a fault — but if the "
+                                "gesture crosses that piece, it points at two things at once."))
+
+    # 6. The module must not move uniformly. This is the check that would have
     #    caught the dead accent branch: every card travelling one value, every
     #    ease one value, in a module whose narration is full of stressed words.
     cards = sum(len(s.cards) for s in prog.shots)
