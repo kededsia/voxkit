@@ -1,0 +1,10 @@
+[project]
+name = "example"
+fps = 30
+
+[paths]
+plans = "plans"
+audio = "audio"
+assets = "assets"
+build = "build"
+remotion = "remotion"

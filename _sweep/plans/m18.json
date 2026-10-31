@@ -1,0 +1,738 @@
+{
+ "plan_version": 2,
+ "module": "m18",
+ "klaim": "Yang bertahan justru ejaannya. Di peta-peta kolonial Belanda nama-nama ini ditulis dengan TJ - Tjipanas, Tjimahi, Tjitarum. Ketika ejaan itu diganti setelah kemerdekaan, hurufnya berubah tapi bunyinya tetap. Orang tidak mengganti nama; orang hanya mengganti cara menulisnya. Hari ini nama-nama itu dipakai untuk alamat paket, pangkalan ojek, dan titik pertemuan.",
+ "payoff": "Nama itu tidak diganti, hanya ejaannya - jadi ia masih bisa dipakai sebagai alamat hari ini.",
+ "serah": "nama yang sudah berganti huruf tapi tidak berganti bunyi, untuk m19",
+ "terima": "nama yang tinggal tanpa bendanya, dari m17",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip peta kolonial dan kehidupan jalan hari ini: lembar peta Belanda, papan nama enamel, koran kemerdekaan, kardus paket, pangkalan ojek, trotoar. Lanskap: meja arsip, peta terhampar, papan nama kota, jalan kampung. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Ejaan kolonial menulis nama tempat dengan TJ. Setelah kemerdekaan hurufnya diganti, bunyinya tidak. Karena itu nama yang sama masih dipakai hari ini untuk alamat paket, pangkalan ojek, dan titik pertemuan - yang berubah hanya cara menulisnya, bukan namanya.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 16 - Ejaan",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Yang bertahan adalah ejaannya; di peta kolonial nama ditulis dengan TJ."
+   },
+   {
+    "babak": "Babak 17 - Huruf diganti",
+    "shots": [
+     "s03",
+     "s04",
+     "s05"
+    ],
+    "fokus": "Hurufnya berubah, bunyinya tetap; nama yang sama dipakai sebagai alamat hari ini."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    252
+   ],
+   "babak": "Babak 16 - Ejaan",
+   "peran_retoris": "Pembalikan - yang bertahan bukan bendanya, melainkan ejaannya",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed archive page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Three paper things along the top - the folded maps, the archive shelves, the 'ejaannya' slip - then the colonial sheet low centre, 'Hindia Belanda' low left, the reader low right, and the digraph alone at the bottom.",
+   "kamera": "Cross the paper, then open the colonial sheet and land on two letters; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_tumpukan_peta",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tumpukan peta - kertas yang menyimpan cara menulis yang sudah tidak dipakai",
+     "semantik": "YANG BERTAHAN",
+     "what": "a sepia halftone photograph of a stack of folded old maps lying on a table",
+     "at": "upper left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Tapi",
+     "z": 1,
+     "lands": 12
+    },
+    {
+     "name": "foto_rak_arsip",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rak arsip - tempat ejaan lama masih bisa diperiksa",
+     "semantik": "BERTAHAN",
+     "what": "a sepia halftone photograph of shelves of tied document boxes in an archive room",
+     "at": "upper centre of the frame, centred at 0.52 across, about 0.26 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "bertahan.",
+     "z": 2,
+     "lands": 55
+    },
+    {
+     "name": "kartu_ejaannya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang bertahan itu satu hal saja - bukan pohon, bukan sungai, tapi ejaan",
+     "semantik": "EJAANNYA",
+     "what": "a torn cream slip with big stencilled type reading 'EJAANNYA'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Ejaannya.",
+     "z": 5,
+     "lands": 93
+    },
+    {
+     "name": "foto_peta_kolonial",
+     "bahan": "peta",
+     "wujud": "siluet_organik",
+     "semiotik": "Lembar peta kolonial - bukti tertulis cara menulis yang lama",
+     "semantik": "PETA KOLONIAL",
+     "what": "a sepia halftone photograph of an old colonial map sheet with dense place names",
+     "at": "centre of the frame, centred at 0.46 across, about 0.36 of the frame wide, down at 0.56",
+     "cut": true,
+     "word": "peta",
+     "z": 3,
+     "lands": 148
+    },
+    {
+     "name": "kartu_belanda",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Siapa yang menulis - ejaan itu milik administrasi kolonial, bukan milik orang sungai",
+     "semantik": "HINDIA BELANDA",
+     "what": "a torn cream slip with letterpress type reading 'HINDIA BELANDA'",
+     "at": "lower left of the frame, centred at 0.18 across, about 0.26 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "Belanda,",
+     "z": 6,
+     "lands": 174
+    },
+    {
+     "name": "figur_pembaca_peta",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca peta - yang menemukan ejaan itu di atas kertas",
+     "semantik": "DITULIS",
+     "what": "a sepia halftone photograph of a man reading a large map sheet spread on a table, seen from above",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "ditulis",
+     "z": 4,
+     "lands": 213
+    },
+    {
+     "name": "kartu_tj",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Dua huruf yang menandai seluruh nama - dan yang nanti diganti",
+     "semantik": "TJ",
+     "what": "a torn cream slip with huge stencilled type reading 'TJ'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.22 of the frame wide, down at 0.90",
+     "cut": true,
+     "word": ".J.",
+     "z": 7,
+     "lands": 243
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     14,
+     0.0,
+     "kartu_ejaannya",
+     {
+      "at": 120,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'ejaannya.'.",
+   "emphasis": [
+    {
+     "frame": 93.2,
+     "word": "Ejaannya.",
+     "motion": "strike"
+    },
+    {
+     "frame": 144.2,
+     "word": "Di",
+     "motion": "hold",
+     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 243.2,
+     "word": ".J.",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    252,
+    373
+   ],
+   "babak": "Babak 16 - Ejaan",
+   "peran_retoris": "Tiga contoh - Tjipanas, Tjimahi, Tjitarum ditulis dengan TJ",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed three-names page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The map crop fills the middle, the first name high left, the second name low left, the pointer high right, and the third name low right - one name per corner of the sheet.",
+   "kamera": "Read the names off the sheet in order, left to right; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_tjipanas",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama pertama - ditulis dengan TJ, bukan C",
+     "semantik": "TJIPANAS",
+     "what": "a torn cream slip with big stencilled type reading 'TJIPANAS'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Tiji",
+     "z": 3,
+     "lands": 15
+    },
+    {
+     "name": "foto_peta_tj",
+     "bahan": "peta",
+     "wujud": "siluet_organik",
+     "semiotik": "Potongan peta - tempat ketiga nama itu benar-benar tercetak",
+     "semantik": "DI PETA",
+     "what": "a sepia halftone photograph of a close crop of an old map showing small printed place names",
+     "at": "centre of the frame, centred at 0.50 across, about 0.42 of the frame wide, down at 0.58",
+     "cut": true,
+     "word": "Panas.",
+     "z": 1,
+     "lands": 24
+    },
+    {
+     "name": "kartu_tjimahi",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Nama kedua - pola yang sama, TJ di depan",
+     "semantik": "TJIMAHI",
+     "what": "a torn cream plate with letterpress type reading 'TJIMAHI'",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.76",
+     "cut": true,
+     "word": "Mahi.",
+     "z": 4,
+     "lands": 66
+    },
+    {
+     "name": "penunjuk_peta",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Jari orang menunjuk satu nama di peta - nama itu dibaca, bukan dikarang",
+     "semantik": "TERTULIS",
+     "what": "a sepia halftone photograph of a man pointing at one name on a map spread on a table, seen from the side",
+     "at": "upper right of the frame, centred at 0.82 across, about 0.24 of the frame wide, down at 0.40",
+     "cut": true,
+     "word": "Tiji",
+     "z": 2,
+     "lands": 55
+    },
+    {
+     "name": "kartu_tjitarum",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama ketiga - sungai yang nanti jadi judul seluruh film",
+     "semantik": "TJITARUM",
+     "what": "a torn cream slip with big stencilled type reading 'TJITARUM'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "Tarum.",
+     "z": 3,
+     "lands": 105
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     11,
+     3.6,
+     "kartu_tjipanas",
+     {
+      "at": 15,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     16,
+     -2.9,
+     "penunjuk_peta",
+     {
+      "at": 66,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'tiji'; circle on the figure on 'tiji'.",
+   "emphasis": [
+    {
+     "frame": 275.6,
+     "word": "Panas.",
+     "motion": "hold",
+     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 357.2,
+     "word": "Tarum.",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    373,
+    556
+   ],
+   "babak": "Babak 17 - Huruf diganti",
+   "peran_retoris": "Perubahan - hurufnya berubah setelah kemerdekaan, bunyinya tetap",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed spelling page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The old sign high left with 'diganti' beneath it, the independence headline high right, the new sign low right, the reader low centre, and 'bunyinya tetap' along the bottom - two signs, two spellings.",
+   "kamera": "Old sign, headline, new sign: hold the pair long enough to see they say the same thing; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_papan_tj",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan lama - huruf TJ masih terbaca, catnya sudah habis",
+     "semantik": "EJAAN LAMA",
+     "what": "a sepia halftone photograph of an old enamel street sign with worn lettering starting with TJ",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "Ketika",
+     "z": 1,
+     "lands": 25
+    },
+    {
+     "name": "kartu_diganti",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata kerjanya - ejaan diganti, bukan dibiarkan",
+     "semantik": "DIGANTI",
+     "what": "a torn cream slip with big stencilled type reading 'DIGANTI'",
+     "at": "lower left of the frame, centred at 0.18 across, about 0.26 of the frame wide, down at 0.66",
+     "cut": true,
+     "word": "diganti",
+     "z": 4,
+     "lands": 50
+    },
+    {
+     "name": "strip_koran_merdeka",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Koran kemerdekaan - momen ketika ejaan resmi berubah",
+     "semantik": "SETELAH KEMERDEKAAN",
+     "what": "a torn newsprint strip with a bold headline about the new official spelling",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.32 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "kemerdekaan,",
+     "z": 5,
+     "lands": 72
+    },
+    {
+     "name": "foto_papan_baru",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan baru - tempat yang sama, huruf yang lain",
+     "semantik": "EJAAN BARU",
+     "what": "a sepia halftone photograph of a newer street sign with clean lettering starting with C",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.60",
+     "cut": true,
+     "word": "hurufnya",
+     "z": 2,
+     "lands": 101
+    },
+    {
+     "name": "figur_baca_papan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca papan yang hurufnya sudah berubah - dan tetap menyebutnya sama",
+     "semantik": "BERUBAH",
+     "what": "a sepia halftone photograph of a woman standing on a pavement reading a street sign, seen from the side",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "berubah.",
+     "z": 3,
+     "lands": 113
+    },
+    {
+     "name": "kartu_bunyi_tetap",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Inti pembalikannya - yang berubah cuma huruf, yang tinggal justru bunyinya",
+     "semantik": "BUNYINYA TETAP",
+     "what": "a torn cream slip with big stencilled type reading 'BUNYINYA TETAP'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "tetap.",
+     "z": 6,
+     "lands": 150
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.0,
+     "foto_papan_tj",
+     {
+      "at": 38,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the photograph on 'ketika'.",
+   "emphasis": [
+    {
+     "frame": 398.0,
+     "word": "Ketika",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    556,
+    676
+   ],
+   "babak": "Babak 17 - Huruf diganti",
+   "peran_retoris": "Tesis - orang tidak mengganti nama, orang mengganti cara menulisnya",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed writing page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The 'nama tidak diganti' slip high left, the old painted sign in the middle, 'cara' high right, the writer low left, the notebook low centre, and 'menulisnya' low right - the name stays, the hand moves.",
+   "kamera": "Hold the old sign, then follow the hand that copies it; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_nama_tetap",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang tidak dilakukan orang - nama tidak pernah diganti",
+     "semantik": "NAMA TIDAK DIGANTI",
+     "what": "a torn cream slip with stencilled type reading 'NAMA TIDAK DIGANTI'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Orang",
+     "z": 4,
+     "lands": 5
+    },
+    {
+     "name": "foto_nama_lama",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Nama yang sama, dicat tangan di papan tua - bentuk hurufnya bisa berubah, namanya tidak",
+     "semantik": "NAMA",
+     "what": "a sepia halftone photograph of an old hand-painted shop sign carrying a place name",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "nama.",
+     "z": 1,
+     "lands": 29
+    },
+    {
+     "name": "kartu_cara",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Objek yang sebenarnya berubah - caranya, bukan namanya",
+     "semantik": "HANYA CARA",
+     "what": "a torn cream slip with big stencilled type reading 'HANYA CARA'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "hanya",
+     "z": 5,
+     "lands": 64
+    },
+    {
+     "name": "figur_penulis",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang menulis - yang mengganti huruf dan tetap mengeja bunyi yang sama",
+     "semantik": "MENULISNYA",
+     "what": "a sepia halftone photograph of a man writing with a pen at a desk, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.76",
+     "cut": true,
+     "word": "mengganti",
+     "z": 2,
+     "lands": 71,
+     "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; badan tetap duduk. pose1 = duduk, pena terangkat.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "lower the pen and write one stroke"
+      },
+      {
+       "pose": 3,
+       "action": "lift the pen and look at the line he has written"
+      },
+      {
+       "pose": 4,
+       "action": "set the pen down and turn his head to the page"
+      }
+     ]
+    },
+    {
+     "name": "foto_buku_tulis",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Buku tulis - tempat cara menulis yang baru dipraktikkan",
+     "semantik": "CARA MENULISNYA",
+     "what": "a sepia halftone photograph of an open exercise book with a place name written by hand",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.88",
+     "cut": true,
+     "word": "cara",
+     "z": 3,
+     "lands": 87
+    },
+    {
+     "name": "kartu_menulisnya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penutup kalimat - yang berganti adalah ejaan, dan itu pekerjaan tangan",
+     "semantik": "CARA MENULISNYA",
+     "what": "a torn cream slip with letterpress type reading 'CARA MENULISNYA'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "menulisnya.",
+     "z": 6,
+     "lands": 96
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_nama_tetap",
+     {
+      "at": 16,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "figur_penulis",
+     {
+      "at": 71,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'orang'; box on the figure on 'mengganti'.",
+   "emphasis": [
+    {
+     "frame": 584.6,
+     "word": "nama.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    676,
+    900
+   ],
+   "babak": "Babak 17 - Huruf diganti",
+   "peran_retoris": "Pay-off - nama yang sama dipakai hari ini untuk alamat paket, pangkalan ojek, titik pertemuan",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed today page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Hari ini' high left, the city nameplate high centre, the package low left, 'pangkalan ojek' high right, the parked motorbikes mid right, the courier low centre, the meeting corner low left, and 'titik pertemuan' along the bottom.",
+   "kamera": "Read the plate, follow the package, then settle on the corner where people meet; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_hari_ini",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Lompatan waktu - dari peta kolonial ke jalan yang dipakai sekarang",
+     "semantik": "HARI INI",
+     "what": "a torn cream slip with big stencilled type reading 'HARI INI'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "Hari",
+     "z": 6,
+     "lands": 22
+    },
+    {
+     "name": "foto_papan_nama_kota",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan nama kota hari ini - ejaan baru, nama yang sama",
+     "semantik": "NAMA ITU",
+     "what": "a sepia halftone photograph of a modern street nameplate on a wall",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.44",
+     "cut": true,
+     "word": "nama",
+     "z": 1,
+     "lands": 45
+    },
+    {
+     "name": "foto_paket",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kardus paket - nama itu masih bekerja sebagai alamat",
+     "semantik": "ALAMAT PAKET",
+     "what": "a sepia halftone photograph of a cardboard parcel with a handwritten address",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.60",
+     "cut": true,
+     "word": "alamat",
+     "z": 2,
+     "lands": 82
+    },
+    {
+     "name": "kartu_pangkalan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pemakaian kedua - pangkalan ojek, tempat nama dipakai sebagai patokan",
+     "semantik": "PANGKALAN OJEK",
+     "what": "a torn cream slip with stencilled type reading 'PANGKALAN OJEK'",
+     "at": "upper right of the frame, centred at 0.80 across, about 0.32 of the frame wide, down at 0.30",
+     "cut": true,
+     "word": "pangkalan",
+     "z": 7,
+     "lands": 126
+    },
+    {
+     "name": "foto_ojek",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Motor yang menunggu - pangkalan itu nyata, bukan kiasan",
+     "semantik": "OJEK",
+     "what": "a sepia halftone photograph of motorbikes parked in a row at a street corner",
+     "at": "right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.56",
+     "cut": true,
+     "word": "ojek.",
+     "z": 3,
+     "lands": 143
+    },
+    {
+     "name": "figur_pengirim",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mengantar paket - pembaca ejaan baru setiap hari",
+     "semantik": "DIPAKAI",
+     "what": "a sepia halftone photograph of a man holding a parcel and reading its address, seen from the side",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "Untuk",
+     "z": 4,
+     "lands": 170,
+     "motion_basis": "Kedua tangan dan kepala, selebar 0.24 frame; kaki tetap. pose1 = berdiri, paket di depan dada.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "turn the parcel over to read the other side"
+      },
+      {
+       "pose": 3,
+       "action": "lift the parcel up and look past it down the street"
+      },
+      {
+       "pose": 4,
+       "action": "lower the parcel and tuck it under one arm"
+      }
+     ]
+    },
+    {
+     "name": "foto_titik_pertemuan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sudut jalan tempat orang menunggu - nama yang sama dipakai sebagai titik temu",
+     "semantik": "TITIK PERTEMUAN",
+     "what": "a sepia halftone photograph of a shaded street corner with a bench",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.84",
+     "cut": true,
+     "word": "Untuk",
+     "z": 5,
+     "lands": 173
+    },
+    {
+     "name": "kartu_titik_pertemuan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pemakaian ketiga - nama sebagai titik pertemuan, fungsi yang paling sehari-hari",
+     "semantik": "TITIK PERTEMUAN",
+     "what": "a torn cream slip with big stencilled type reading 'TITIK PERTEMUAN'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "pertemuan.",
+     "z": 8,
+     "lands": 192
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_hari_ini",
+     {
+      "at": 22,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "figur_pengirim",
+     {
+      "at": 180,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'hari'; circle on the figure on 'untuk'.",
+   "emphasis": [
+    {
+     "frame": 767.0,
+     "word": "paket.",
+     "motion": "hold",
+     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 819.2,
+     "word": "ojek.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

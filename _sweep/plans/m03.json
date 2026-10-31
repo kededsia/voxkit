@@ -1,0 +1,1126 @@
+{
+ "plan_version": 2,
+ "module": "m03",
+ "klaim": "107 nama berunsur Ci di satu kecamatan (Cidaun) bukan kebetulan dan bukan selera: Ci adalah awalan dari kata cai (air), dan ia bertahan karena dipakai berulang-ulang.",
+ "payoff": "Yang sederhana bertahan karena bisa diulang - mekanisme yang sama yang membuat satu suku kata menutupi satu peta.",
+ "serah": "slip CI dan kata cai, untuk m04 yang menunjukkan bahasa Sunda punya kata untuk setiap keadaan air",
+ "terima": "angka 294 dan tally 3 dari 10 dari m02",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip penelitian lapangan di pesisir selatan Jawa Barat: peta kecamatan yang terlipat, buku catatan lapangan bergaris, kartu nama peneliti ketikan mesin, kertas turus, pensil kayu, dan buku kamus Sunda lama bersampul kain aus dengan dua kolom cetakan kecil. Palet halaman: kertas koran sepia dengan blok mustard yellow, crimson/coral red, charcoal black, dan cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern. Tanpa figur manusia di plate - figur apa pun wajib kartu (D1-motion r7).",
+  "tesis_modul": "Suku kata Ci bukan kebetulan dan bukan selera: ia awalan dari kata 'cai' (air) yang dipakai berulang-ulang selama ribuan tahun, dan justru karena sederhana ia bertahan - 107 nama di satu kecamatan (Cidaun) adalah buktinya.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 1 - Data lapangan Cidaun",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "107 nama di satu kecamatan; angka yang terlalu besar untuk kebetulan, terlalu rapi untuk selera."
+   },
+   {
+    "babak": "Babak 2 - Mempersempit ke satu suku kata",
+    "shots": [
+     "s03",
+     "s04"
+    ],
+    "fokus": "Bukan asal-usul yang sudah sering diceritakan, tapi apa yang suku kata lakukan pada wilayah selama ribuan tahun."
+   },
+   {
+    "babak": "Babak 3 - Kamus",
+    "shots": [
+     "s05",
+     "s06"
+    ],
+    "fokus": "Kamus sebagai tempat paling tidak dramatis untuk mulai: cai = air, dan sebagai awalan ia memendek jadi Ci."
+   },
+   {
+    "babak": "Babak 4 - Kenapa bertahan",
+    "shots": [
+     "s07",
+     "s08"
+    ],
+    "fokus": "Sederhana karena itu mudah dipakai berulang; yang dipakai berulang bertahan lebih lama."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    304
+   ],
+   "babak": "Babak 1 - Data lapangan Cidaun",
+   "peran_retoris": "Bukti lapangan - 107 nama di satu kecamatan",
+   "latar_plate": "Full-bleed torn map page printed on aged newsprint: a charcoal block down the left edge, a mustard band across the top, a crimson block behind the field notes, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "The coast photograph fills the left half behind the map sheet tilted -5 degrees; the researcher stands at the right edge in front of it; the 107 slip slammed on the mustard band; the name card clipped at the map's edge.",
+   "jenis": "PLACE",
+   "mark": "a crimson circle closes on the map at Cidaun (14 f, -4.2 deg) and an underline is drawn under the '107' slip (12 f, +2.8 deg) - the place, then the count.",
+   "marks": [
+    [
+     "underline",
+     12,
+     2.8,
+     "kartu_107",
+     {
+      "at": 189,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     -4.2,
+     "kartu_107",
+     {
+      "at": 229,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-down",
+     14,
+     0.0,
+     "peta_cidaun",
+     {
+      "at": 268,
+      "color": "coral"
+     }
+    ],
+    [
+     "brackets",
+     16,
+     0.0,
+     "kartu_peneliti",
+     {
+      "at": 130,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "kamera": "Hold on the coast while the district is named, a slow push that lands on the 107 slip as the number is spoken, then a drift right to the researcher; range 30% of fitZoom.",
+   "still_gate": "PASS 35.4",
+   "cards": [
+    {
+     "name": "peta_cidaun",
+     "wujud": "sobekan_pita",
+     "semiotik": "Peta kecamatan pesisir selatan Cianjur - tempat data diambil",
+     "semantik": "CIDAUN",
+     "what": "a torn printed map sheet of the south Cianjur coast with a red pin at Cidaun",
+     "at": "upper left of the frame, centred at 0.28 across, about 0.44 of the frame wide",
+     "word": "Cidaun,",
+     "z": 1,
+     "lands": 28,
+     "bahan": "peta"
+    },
+    {
+     "name": "foto_pesisir",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone pesisir selatan Cianjur - laut, tebing, pohon kelapa",
+     "semantik": "PESISIR SELATAN",
+     "what": "a sepia halftone photograph of the south Cianjur coast: dark sea cliffs, a narrow beach and coconut palms",
+     "at": "lower left of the frame, centred at 0.36 across, about 0.40 of the frame wide",
+     "word": "pesisir",
+     "z": 2,
+     "lands": 56,
+     "bahan": "foto"
+    },
+    {
+     "name": "peneliti",
+     "wujud": "siluet_organik",
+     "semiotik": "Peneliti perempuan memegang buku catatan dan pensil - orang yang menghitung",
+     "semantik": "PENELITI",
+     "what": "a sepia halftone photograph of a woman in a field shirt holding an open notebook and a pen, standing, three-quarter body, facing left",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide",
+     "word": "mencatat",
+     "z": 3,
+     "lands": 151,
+     "poses_planned": [
+      {
+       "action": "turns the notebook's page with her left hand, the pen staying in her right"
+      },
+      {
+       "action": "lifts her head and looks out toward the coast, the notebook still open"
+      },
+      {
+       "action": "marks a line in the notebook with the pen, head down again"
+      }
+     ],
+     "motion_basis": "Her right hand holds the pen and her left holds the notebook's edge, both clear of the map and the tape, so a page turn and a head lift are independent. The swap lives in the notebook's page block and the head - the upper third of the cut-out - while the shoulders and shirt hold, so the silhouette's outline never changes and the card cannot jump on the swap. Pose1 is a neutral rig: standing, notebook level, pen resting.",
+     "bahan": "figur"
+    },
+    {
+     "name": "kartu_107",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip angka - hasil hitungan di satu kecamatan",
+     "semantik": "107 NAMA",
+     "what": "an irregular torn cream slip with big stencilled '107' and a smaller line 'NAMA DI SATU KECAMATAN', masking tape",
+     "at": "upper centre of the frame, centred at 0.52 across, about 0.30 of the frame wide",
+     "word": "107",
+     "z": 4,
+     "lands": 165,
+     "bahan": "cetak"
+    },
+    {
+     "name": "kartu_peneliti",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kartu nama peneliti - orang yang mencatat",
+     "semantik": "INTAN KUSUMAWULANDARI",
+     "what": "a small typed index card reading 'INTAN KUSUMAWULANDARI' with a punched corner and a paper clip",
+     "at": "upper right of the frame, centred at 0.84 across, about 0.22 of the frame wide",
+     "word": "Intan",
+     "z": 5,
+     "lands": 113,
+     "bahan": "cetak"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 27.6,
+     "word": "Cidaun,",
+     "motion": "landing"
+    },
+    {
+     "frame": 55.8,
+     "word": "pesisir",
+     "motion": "landing"
+    },
+    {
+     "frame": 78.0,
+     "word": "Cianjur,",
+     "motion": "landing"
+    },
+    {
+     "frame": 113.4,
+     "word": "Intan",
+     "motion": "landing"
+    },
+    {
+     "frame": 150.6,
+     "word": "mencatat",
+     "motion": "landing"
+    },
+    {
+     "frame": 165.0,
+     "word": "107",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    304,
+    462
+   ],
+   "babak": "Babak 1 - Data lapangan Cidaun",
+   "peran_retoris": "Angka yang menuntut penjelasan - terlalu besar, terlalu rapi",
+   "latar_plate": "Full-bleed ledger grid on a printed page: a charcoal block down the right edge, a crimson block along the bottom, ruled columns and typed figures showing through, masking tape.",
+   "tata_letak_kolase": "The tally photograph centred on the grid at 2 degrees, the clerk bent over it from the left, the KEBETULAN stamp struck across its upper right corner, the SELERA stamp struck over its lower right.",
+   "jenis": "QUANTITY",
+   "mark": "a crimson bracket pair frames the tally sheet on 'Angka' (18 f) and an underline is drawn under the 'SELERA' stamp on 'selera.' (10 f, -2.6 deg) - the count, then the word for taste.",
+   "marks": [
+    [
+     "brackets",
+     18,
+     0.0,
+     "turus_107",
+     {
+      "at": 72,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     10,
+     -2.6,
+     "stempel_selera",
+     {
+      "at": 147,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Static hold on the tally, then a short push that ends on the two stamps as the two refusals are spoken; range 22% of fitZoom.",
+   "still_gate": "PASS 39.2",
+   "cards": [
+    {
+     "name": "turus_107",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone lembar turus - hitungan tangan atas kertas bergaris",
+     "semantik": "TURUS 107",
+     "what": "a sepia halftone photograph of a ruled sheet covered in pencil tally strokes, row after row of five",
+     "at": "centre of the frame, centred at 0.50 across, about 0.42 of the frame wide",
+     "word": "Angka",
+     "z": 1,
+     "lands": 17,
+     "bahan": "foto"
+    },
+    {
+     "name": "juru_turus",
+     "wujud": "siluet_organik",
+     "semiotik": "Lelaki membungkuk menghitung dengan pensil - tangan yang menulis turus",
+     "semantik": "JURU TURUS",
+     "what": "a sepia halftone photograph of a man in a short-sleeved shirt leaning over a sheet, pencil in his right hand, three-quarter body, facing right",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide",
+     "word": "besar",
+     "z": 2,
+     "lands": 39,
+     "poses_planned": [
+      {
+       "action": "adds one more stroke to the sheet with the pencil"
+      },
+      {
+       "action": "straightens his back and looks at the sheet from further away"
+      },
+      {
+       "action": "turns the sheet a few degrees with his free hand"
+      }
+     ],
+     "motion_basis": "The pencil hand and the sheet under it are the only moving parts; the sheet is a flat ruled patch clear of both stamps, so a stroke can be added without touching an edge. The swap lives in the lower right of the cut-out where the pencil meets the paper, and the back and upper arm hold, so the outline stays put. Pose1 is a neutral rig: bent over the sheet, pencil down, not yet writing.",
+     "bahan": "figur"
+    },
+    {
+     "name": "stempel_kebetulan",
+     "wujud": "plang_fisik",
+     "semiotik": "Stempel karet 'KEBETULAN' - satu penjelasan yang ditolak",
+     "semantik": "KEBETULAN",
+     "what": "a crimson rubber-stamp impression reading 'KEBETULAN' struck on torn paper",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "word": "kebetulan",
+     "z": 3,
+     "lands": 63,
+     "bahan": "cetak"
+    },
+    {
+     "name": "stempel_selera",
+     "wujud": "plang_fisik",
+     "semiotik": "Stempel karet 'SELERA' - penjelasan kedua yang ditolak",
+     "semantik": "SELERA",
+     "what": "a charcoal rubber-stamp impression reading 'SELERA' struck on torn paper",
+     "at": "lower right of the frame, centred at 0.72 across, about 0.26 of the frame wide",
+     "word": "selera.",
+     "z": 4,
+     "lands": 143,
+     "bahan": "cetak"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 321.0,
+     "word": "Angka",
+     "motion": "landing"
+    },
+    {
+     "frame": 343.2,
+     "word": "besar",
+     "motion": "landing"
+    },
+    {
+     "frame": 367.2,
+     "word": "kebetulan",
+     "motion": "landing"
+    },
+    {
+     "frame": 447.0,
+     "word": "selera.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    462,
+    645
+   ],
+   "babak": "Babak 2 - Mempersempit ke satu suku kata",
+   "peran_retoris": "Pembatasan objek - yang dibicarakan satu suku kata, bukan asal-usulnya",
+   "latar_plate": "Aged newsprint page: a crimson block down the left third, a charcoal band across the bottom, a torn page of old print taped at the upper right, masking tape.",
+   "tata_letak_kolase": "The CI slip sits centre-right at 6 degrees, the crossed-out origin page is pushed to the left edge half torn away, the old printed page behind it at the top.",
+   "jenis": "OBJECT",
+   "mark": "a crimson circle closes on the CI slip on 'suku' (14 f, +5.2 deg) and an underline is drawn under the crossed-out origin page on 'asal' (12 f, -3.0 deg).",
+   "marks": [
+    [
+     "circle",
+     14,
+     5.2,
+     "suku_kata",
+     {
+      "at": 78,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -3.0,
+     "asal_usul",
+     {
+      "at": 127,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Hold wide on both pages, then a push that lands on the CI slip on the syllable and holds; range 26% of fitZoom.",
+   "still_gate": "PASS 37.2",
+   "cards": [
+    {
+     "name": "suku_kata",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip suku kata - 'CI' sebagai satuan yang dibicarakan",
+     "semantik": "CI · SATU SUKU KATA",
+     "what": "a large cream slip with huge stencilled letters 'CI' and a smaller line 'SATU SUKU KATA'",
+     "at": "centre-right of the frame, centred at 0.66 across, about 0.60 of the frame wide",
+     "word": "suku",
+     "z": 3,
+     "lands": 74,
+     "bahan": "cetak"
+    },
+    {
+     "name": "foto_notebook",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Buku catatan terbuka dengan kolom nama bergaris pensil - 107 nama itu ditulis tangan",
+     "semantik": "BUKU CATATAN",
+     "what": "a sepia halftone photograph of an open notebook with columns of pencilled names and a pen laid across it",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Yang",
+     "z": 1,
+     "lands": 23
+    },
+    {
+     "name": "asal_usul",
+     "wujud": "sobekan_pita",
+     "semiotik": "Halaman asal-usul yang dicoret - bukan itu yang dibicarakan",
+     "semantik": "ASAL USUL",
+     "what": "a torn page with the words 'ASAL USUL' crossed out in red pencil",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "asal",
+     "z": 4,
+     "lands": 123,
+     "bahan": "cetak"
+    },
+    {
+     "name": "foto_halaman",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone halaman teks lama - cerita asal-usul yang sudah sering dituturkan",
+     "semantik": "HALAMAN LAMA",
+     "what": "a sepia halftone photograph of a yellowed page of old colonial-era printed text, dense small columns",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide",
+     "word": "diceritakan,",
+     "z": 2,
+     "lands": 163,
+     "bahan": "foto",
+     "cut": true
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 535.8,
+     "word": "suku",
+     "motion": "landing"
+    },
+    {
+     "frame": 585.0,
+     "word": "asal",
+     "motion": "landing"
+    },
+    {
+     "frame": 624.6,
+     "word": "diceritakan,",
+     "motion": "landing"
+    }
+   ],
+   "script": {
+    "text": "ci",
+    "at": 8,
+    "duration": 38,
+    "color": "crimson",
+    "x": 0.3,
+    "y": 0.2,
+    "w": 0.34,
+    "h": 0.34,
+    "sw": 17,
+    "rotate": -4
+   }
+  },
+  {
+   "id": "s04",
+   "range": [
+    645,
+    856
+   ],
+   "babak": "Babak 2 - Mempersempit ke satu suku kata",
+   "peran_retoris": "Skala - satu suku kata pada satu wilayah selama ribuan tahun",
+   "latar_plate": "Wide regional map on a printed page: a mustard block down the right edge, a charcoal strip along the top, coarse printed grain showing through, masking tape.",
+   "tata_letak_kolase": "The regional map lies across the left two thirds, the hill photograph behind its lower edge, the walker standing on the long RIBUAN TAHUN band that runs to the right edge, the thick dictionary at the far right.",
+   "jenis": "DIAGRAM",
+   "mark": "a crimson circle closes on the regional map on 'wilayah' (14 f, +4.6 deg) and an underline is drawn along the RIBUAN TAHUN band on 'lakukan' (12 f, -3.2 deg).",
+   "marks": [
+    [
+     "circle",
+     14,
+     4.6,
+     "peta_wilayah",
+     {
+      "at": 95,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -3.2,
+     "pita_ribuan",
+     {
+      "at": 128,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Slow lateral drift from the map to the dictionary, the band running under the camera; range 34% of fitZoom.",
+   "still_gate": "PASS 35.2",
+   "cards": [
+    {
+     "name": "peta_wilayah",
+     "wujud": "sobekan_pita",
+     "semiotik": "Peta wilayah Jawa Barat - wilayah yang dikenai suku kata",
+     "semantik": "WILAYAH",
+     "what": "a torn printed map of West Java with scattered red pin marks",
+     "at": "upper left of the frame, centred at 0.30 across, about 0.46 of the frame wide",
+     "cut": true,
+     "word": "wilayah",
+     "z": 6,
+     "lands": 89,
+     "bahan": "peta"
+    },
+    {
+     "name": "foto_wilayah",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone sawah bertingkat turun ke pesisir - rupa wilayah itu",
+     "semantik": "WILAYAH ITU",
+     "what": "a sepia halftone photograph of terraced hills running down to a coastal plain",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.40 of the frame wide",
+     "word": "tahun.",
+     "z": 1,
+     "lands": 132,
+     "bahan": "foto"
+    },
+    {
+     "name": "orang_berjalan",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berjalan menjauh di pematang - waktu yang panjang, dilihat dari belakang",
+     "semantik": "ORANG BERJALAN",
+     "what": "a sepia halftone photograph of a man walking away along a dirt ridge, seen from behind, small in frame",
+     "at": "centre of the frame, centred at 0.62 across, about 0.35 of the frame wide, down at 0.55",
+     "word": "ribuan",
+     "z": 3,
+     "lands": 120,
+     "poses_planned": [
+      {
+       "action": "takes another stride along the ridge, arms swinging"
+      },
+      {
+       "action": "turns his head to the right without breaking stride"
+      },
+      {
+       "action": "stops walking and stands with his weight on one leg"
+      }
+     ],
+     "motion_basis": "Seen from behind at small scale, so a stride reads in the legs and the arm swing and nowhere else; the swap lives in the bottom half of the cut-out. He stands alone on the band with no card overlapping him, so a leg change cannot tear a neighbour's edge. Pose1 is a neutral rig: mid-stride, arms low, head level.",
+     "bahan": "figur"
+    },
+    {
+     "name": "pita_ribuan",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pita koran 'RIBUAN TAHUN' - rentang waktunya",
+     "semantik": "RIBUAN TAHUN",
+     "what": "a long torn newsprint band printed with 'RIBUAN TAHUN'",
+     "at": "lower centre of the frame, centred at 0.55 across, about 0.42 of the frame wide",
+     "word": "lakukan",
+     "z": 4,
+     "lands": 62,
+     "bahan": "koran"
+    },
+    {
+     "name": "kamus_tebal",
+     "wujud": "siluet_organik",
+     "semiotik": "Kamus tebal tertutup - tempat yang akan dibuka",
+     "semantik": "KAMUS",
+     "what": "a thick closed Sundanese dictionary with a worn cloth spine and a loose bookmark",
+     "at": "upper right of the frame, centred at 0.84 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "kamus.",
+     "z": 2,
+     "lands": 191,
+     "bahan": "foto",
+     "tertutup_boleh": "the walker's head must stay clear: the book lies across it in the picture, so the sheet puts the man above the book. His face and neck are the subject; the book still reads as a closed volume at his back."
+    },
+    {
+     "name": "suku_kata",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip suku kata yang sama dari s03 - 'suku kata itu', pelaku kalimat",
+     "semantik": "CI · SATU SUKU KATA",
+     "what": "the same cream slip with huge stencilled 'CI' and the smaller line 'SATU SUKU KATA'",
+     "at": "upper left of the frame, centred at 0.21 across, about 0.19 of the frame wide",
+     "cut": true,
+     "word": "suku",
+     "z": 5,
+     "lands": 43,
+     "bahan": "cetak"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 707.4,
+     "word": "lakukan",
+     "motion": "landing"
+    },
+    {
+     "frame": 734.4,
+     "word": "wilayah",
+     "motion": "landing"
+    },
+    {
+     "frame": 765.0,
+     "word": "ribuan",
+     "motion": "landing"
+    },
+    {
+     "frame": 777.0,
+     "word": "tahun.",
+     "motion": "landing"
+    },
+    {
+     "frame": 816.0,
+     "word": "Mari",
+     "motion": "landing"
+    },
+    {
+     "frame": 835.8,
+     "word": "kamus.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    856,
+    1053
+   ],
+   "babak": "Babak 3 - Kamus",
+   "peran_retoris": "Titik mulai yang tidak dramatis - kamus, lalu kata untuk air",
+   "latar_plate": "Open dictionary page as coarse sepia halftone on aged newsprint: a mustard block on the left, a charcoal block at the upper right, a column of entries running off the bottom edge, masking tape.",
+   "tata_letak_kolase": "The open dictionary fills the lower two thirds, its entry column running under the slip; the reader leans over it from the right; the entry slip pasted across the column, the BASA SUNDA label above it.",
+   "jenis": "OBJECT",
+   "mark": "an arrow-down drops onto the open dictionary on 'kamus' (16 f), an underline is drawn under the same spread on 'Sunda,' (14 f), and a crimson circle closes on the CAI entry on 'chai.' (14 f, +4.0 deg).",
+   "marks": [
+    [
+     "arrow-down",
+     16,
+     0.0,
+     "kamus_terbuka",
+     {
+      "at": 33,
+      "color": "coral"
+     }
+    ],
+    [
+     "underline",
+     14,
+     0.0,
+     "kamus_terbuka",
+     {
+      "at": 62,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     14,
+     4.0,
+     "entri_cai",
+     {
+      "at": 190,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "kamera": "Hold on the open page, a slow push that lands on the entry as the word is spoken; range 24% of fitZoom.",
+   "still_gate": "PASS 37.2",
+   "cards": [
+    {
+     "name": "kamus_terbuka",
+     "wujud": "siluet_organik",
+     "semiotik": "Kamus terbuka foto halftone - tempat paling tidak dramatis untuk memulai",
+     "semantik": "KAMUS TERBUKA",
+     "what": "an open old dictionary photographed in coarse sepia halftone, two columns of entries, thumb-worn page edges",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.56 of the frame wide",
+     "word": "kamus",
+     "z": 1,
+     "lands": 12,
+     "bahan": "foto"
+    },
+    {
+     "name": "pembaca_kamus",
+     "wujud": "siluet_organik",
+     "semiotik": "Lelaki membaca kamus - tangan menahan halaman",
+     "semantik": "PEMBACA KAMUS",
+     "what": "a sepia halftone photograph of an older man in a batik shirt leaning over an open book, one hand flat on the page",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.36 of the frame wide",
+     "word": "Sunda,",
+     "z": 2,
+     "lands": 136,
+     "poses_planned": [
+      {
+       "action": "runs a finger down the column of entries"
+      },
+      {
+       "action": "lifts his head from the page and looks up"
+      },
+      {
+       "action": "turns the page with his free hand"
+      }
+     ],
+     "motion_basis": "One hand is flat on the page and the other is free, and the head is the only other moving mass. The swap lives in the free hand and the head - the top two thirds of the cut-out - while the shirt and the shoulder line hold, so the silhouette is stable and the page under him never has to be repaired. Pose1 is a neutral rig: leaning over the book, hand flat, head down.",
+     "bahan": "figur"
+    },
+    {
+     "name": "label_sunda",
+     "wujud": "sobekan_pita",
+     "semiotik": "Label 'BASA SUNDA' - bahasa yang dibicarakan",
+     "semantik": "BASA SUNDA",
+     "what": "a small torn label reading 'BASA SUNDA' with a strip of masking tape",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.22 of the frame wide",
+     "word": "bahasa",
+     "z": 3,
+     "lands": 129,
+     "bahan": "cetak"
+    },
+    {
+     "name": "entri_cai",
+     "wujud": "sobekan_pita",
+     "semiotik": "Entri kamus: cai = air",
+     "semantik": "CAI · AIR",
+     "what": "a torn cream slip printed as a dictionary entry: the headword 'CAI' and beside it 'air'",
+     "at": "centre of the frame, centred at 0.46 across, about 0.34 of the frame wide",
+     "word": "chai.",
+     "z": 4,
+     "lands": 184,
+     "bahan": "cetak"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 868.2,
+     "word": "kamus",
+     "motion": "landing"
+    },
+    {
+     "frame": 984.6,
+     "word": "bahasa",
+     "motion": "landing"
+    },
+    {
+     "frame": 992.4,
+     "word": "Sunda,",
+     "motion": "landing"
+    },
+    {
+     "frame": 1039.8,
+     "word": "chai.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "range": [
+    1053,
+    1236
+   ],
+   "babak": "Babak 3 - Kamus",
+   "peran_retoris": "Transformasi - kata penuh memendek jadi awalan",
+   "latar_plate": "Aged newsprint page: a crimson block over the right half, a charcoal block at the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The CAI slip sits left of centre, the CI slip sits right of it on the crimson block and lower, the AWALAN strip lies between them, the water photograph running behind the top edge. One torn halftone figure of a man seen from behind rises from the bottom edge, overlapping the AWALAN strip's lower corner.",
+   "jenis": "OBJECT",
+   "mark": "a crimson circle closes on the water photograph on 'tempat,' (14 f, -3.8 deg) and an underline is drawn under the shortened CI slip on 'Chi.' (12 f, +3.0 deg) - the water, then the word cut short.",
+   "marks": [
+    [
+     "circle",
+     14,
+     -3.8,
+     "foto_air",
+     {
+      "at": 74,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     12,
+     3.0,
+     "kata_ci",
+     {
+      "at": 168,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Static hold on the pair, then a push that lands on CI as the word shortens; range 20% of fitZoom.",
+   "still_gate": "PASS 41.5",
+   "cards": [
+    {
+     "name": "kata_cai",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip kata penuh 'CAI' - kata untuk air",
+     "semantik": "CAI",
+     "what": "a torn cream slip with stencilled type reading 'CAI'",
+     "at": "lower left of the frame, centred at 0.28 across, about 0.24 of the frame wide",
+     "word": "dipakai",
+     "z": 3,
+     "lands": 26,
+     "bahan": "cetak"
+    },
+    {
+     "name": "foto_air",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone air dangkal di atas batu - yang dinamai kata itu",
+     "semantik": "AIR",
+     "what": "a sepia halftone photograph of shallow river water running over stones",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.46 of the frame wide",
+     "word": "tempat,",
+     "z": 1,
+     "lands": 68,
+     "bahan": "foto"
+    },
+    {
+     "name": "pita_awalan",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pita 'AWALAN' - jabatan baru kata itu",
+     "semantik": "AWALAN",
+     "what": "a narrow torn newsprint strip printed with the word 'AWALAN'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "word": "awalan",
+     "z": 4,
+     "lands": 50,
+     "bahan": "koran"
+    },
+    {
+     "name": "kata_ci",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip 'CI' - kata yang memendek jadi awalan",
+     "semantik": "CI",
+     "what": "a torn cream slip with heavier stencilled type reading 'CI'",
+     "at": "lower right of the frame, centred at 0.74 across, about 0.22 of the frame wide",
+     "word": "Chi.",
+     "z": 5,
+     "lands": 134,
+     "bahan": "cetak"
+    },
+    {
+     "name": "orang_pemakai",
+     "wujud": "siluet_organik",
+     "semiotik": "Guntingan halftone orang dari belakang - yang memakai kata itu terus-menerus",
+     "semantik": "ORANG",
+     "what": "a torn halftone cut-out of a man seen from behind in a dark jacket, white torn edge",
+     "at": "lower centre of the frame, centred at 0.46 across, about 0.16 of the frame wide",
+     "word": "kata",
+     "z": 2,
+     "lands": 94,
+     "bahan": "figur"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 1079.4,
+     "word": "dipakai",
+     "motion": "landing"
+    },
+    {
+     "frame": 1103.4,
+     "word": "awalan",
+     "motion": "landing"
+    },
+    {
+     "frame": 1120.8,
+     "word": "tempat,",
+     "motion": "landing"
+    },
+    {
+     "frame": 1147.2,
+     "word": "kata",
+     "motion": "landing"
+    },
+    {
+     "frame": 1186.8,
+     "word": "Chi.",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "range": [
+    1236,
+    1442
+   ],
+   "babak": "Babak 4 - Kenapa bertahan",
+   "peran_retoris": "Mekanisme - sederhana karena itu bisa dipakai berulang",
+   "latar_plate": "Grid of repeated stamp impressions on a newsprint page: mustard yellow block down the left edge, charcoal black block at the bottom, a second sheet of impressions showing through, masking tape.",
+   "tata_letak_kolase": "The stamp photograph sits centre at -6 degrees, the clerk's hands working it at the left, the SEDERHANA slip taped across its lower right corner.",
+   "jenis": "ACTION",
+   "mark": "a bracket pair frames the tray of stamps on 'Tapi' (18 f) and a crimson circle closes on the worn stamp on 'berulang' (14 f, +4.4 deg).",
+   "marks": [
+    [
+     "circle",
+     14,
+     4.4,
+     "stempel_berulang",
+     {
+      "at": 186,
+      "color": "crimson"
+     }
+    ],
+    [
+     "brackets",
+     18,
+     0.0,
+     "foto_tray_stempel",
+     {
+      "at": 182,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Hold on the stamp, a slow push that lands on the SEDERHANA slip on the word; range 22% of fitZoom.",
+   "still_gate": "PASS 32.2",
+   "cards": [
+    {
+     "name": "stempel_berulang",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone stempel karet di atas halaman penuh jejakan - alat yang dipakai berulang",
+     "semantik": "STEMPEL",
+     "what": "a sepia halftone photograph of a wooden rubber stamp lying on a page of repeated impressions, handle worn smooth",
+     "at": "upper centre of the frame, centred at 0.52 across, about 0.36 of the frame wide",
+     "word": "berulang",
+     "z": 2,
+     "lands": 182,
+     "bahan": "foto"
+    },
+    {
+     "name": "foto_tray_stempel",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Baki berisi stempel kembar berbaris - bukan satu alat, tapi alat yang diulang",
+     "semantik": "STEMPEL KEMBAR",
+     "what": "a sepia halftone photograph of a wooden tray of identical rubber stamps, handles up in rows",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Tapi",
+     "z": 3,
+     "lands": 92
+    },
+    {
+     "name": "petugas_stempel",
+     "wujud": "siluet_organik",
+     "semiotik": "Petugas menurunkan stempel ke kertas - gerak yang diulang",
+     "semantik": "PETUGAS STEMPEL",
+     "what": "a sepia halftone photograph of a clerk in a batik shirt bringing a rubber stamp down onto a sheet, one hand flat on the paper",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide",
+     "word": "mudah",
+     "z": 1,
+     "lands": 162,
+     "poses_planned": [
+      {
+       "action": "lifts the stamp off the paper, arm raised"
+      },
+      {
+       "action": "brings the stamp down onto a fresh spot on the sheet"
+      },
+      {
+       "action": "turns the sheet with his free hand, the stamp held ready"
+      }
+     ],
+     "motion_basis": "The stamping arm is raised clear of his body and the sheet lies under it, so the up-and-down is one arm rotating with the torso fixed. The swap lives in that arm and the stamp at the upper right of the cut-out; the batik torso holds the outline. Pose1 is a neutral rig: arm half raised, stamp level, not yet down.",
+     "bahan": "figur",
+     "head": false
+    },
+    {
+     "name": "kartu_sederhana",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip 'SEDERHANA' - sifat yang membuatnya mudah diulang",
+     "semantik": "SEDERHANA",
+     "what": "a small torn slip reading 'SEDERHANA' with a corner of masking tape",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "word": "sederhana,",
+     "z": 4,
+     "lands": 118,
+     "bahan": "cetak"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 1353.6,
+     "word": "sederhana,",
+     "motion": "landing"
+    },
+    {
+     "frame": 1392.0,
+     "word": "ia",
+     "motion": "landing"
+    },
+    {
+     "frame": 1398.0,
+     "word": "mudah",
+     "motion": "landing"
+    },
+    {
+     "frame": 1417.8,
+     "word": "berulang",
+     "motion": "landing"
+    }
+   ]
+  },
+  {
+   "id": "s08",
+   "range": [
+    1442,
+    1636
+   ],
+   "babak": "Babak 4 - Kenapa bertahan",
+   "peran_retoris": "Perbandingan penutup - yang dipakai berulang bertahan lebih lama",
+   "latar_plate": "Two-object comparison on a newsprint page: charcoal black block on the left under the worn tool, mustard yellow block on the right under the clean one, a halftone photograph of a worn bench taped across the bottom.",
+   "tata_letak_kolase": "The worn stamp sits on the charcoal block at -4 degrees, the clean one on the mustard block at 3 degrees, the BERTAHAN slip between them, the bench photograph running under both.",
+   "jenis": "ACTION",
+   "mark": "a crimson circle closes on the worn stamp on 'berulang' (12 f, +3.6 deg) and an underline is drawn under the BERTAHAN slip on 'bertahan' (12 f, -2.8 deg).",
+   "marks": [
+    [
+     "circle",
+     12,
+     3.6,
+     "benda_aus",
+     {
+      "at": 56,
+      "color": "crimson"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -2.8,
+     "kartu_bertahan",
+     {
+      "at": 140,
+      "color": "coral"
+     }
+    ]
+   ],
+   "kamera": "Hold the pair level, a slow push between them that lands on the BERTAHAN slip; range 24% of fitZoom.",
+   "still_gate": "PASS 41.0",
+   "cards": [
+    {
+     "name": "benda_aus",
+     "wujud": "siluet_organik",
+     "semiotik": "Stempel karet aus, gagang halus - alat yang dipakai berulang-ulang",
+     "semantik": "YANG DIPAKAI BERULANG",
+     "what": "a wooden rubber stamp worn smooth at the handle with rounded edges, its rubber dark with use",
+     "at": "upper left of the frame, centred at 0.26 across, about 0.26 of the frame wide",
+     "word": "berulang",
+     "z": 1,
+     "lands": 50,
+     "bahan": "benda"
+    },
+    {
+     "name": "foto_meja",
+     "wujud": "siluet_organik",
+     "semiotik": "Foto halftone meja kerja kayu yang tergosok - bukti pemakaian bertahun-tahun",
+     "semantik": "MEJA KERJA",
+     "what": "a sepia halftone photograph of a worn wooden workbench top, its grain polished by use",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.54 of the frame wide",
+     "word": "lama",
+     "z": 2,
+     "lands": 108,
+     "bahan": "foto"
+    },
+    {
+     "name": "kartu_bertahan",
+     "wujud": "sobekan_pita",
+     "semiotik": "Slip 'BERTAHAN' - kesimpulan modul",
+     "semantik": "BERTAHAN",
+     "what": "a torn cream slip with bold stencilled type reading 'BERTAHAN'",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "word": "bertahan",
+     "z": 4,
+     "lands": 89,
+     "bahan": "cetak"
+    },
+    {
+     "name": "benda_baru",
+     "wujud": "siluet_organik",
+     "semiotik": "Stempel karet baru, belum dipakai - yang dipakai sekali",
+     "semantik": "YANG DIPAKAI SEKALI",
+     "what": "an identical wooden rubber stamp still crisp and unused, its rubber clean",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "word": "sekali.",
+     "z": 3,
+     "lands": 168,
+     "bahan": "benda"
+    }
+   ],
+   "emphasis": [
+    {
+     "frame": 1491.6,
+     "word": "berulang",
+     "motion": "landing"
+    },
+    {
+     "frame": 1530.6,
+     "word": "bertahan",
+     "motion": "landing"
+    },
+    {
+     "frame": 1550.4,
+     "word": "lama",
+     "motion": "landing"
+    },
+    {
+     "frame": 1609.8,
+     "word": "sekali.",
+     "motion": "landing"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum kata penegasan (R2b1)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

@@ -1,0 +1,655 @@
+{
+ "duration": 57.0,
+ "words": [
+  {
+   "word": "Yang",
+   "start": 0.3,
+   "end": 0.4
+  },
+  {
+   "word": "disimpan",
+   "start": 0.4,
+   "end": 1.12
+  },
+  {
+   "word": "adalah",
+   "start": 1.12,
+   "end": 1.52
+  },
+  {
+   "word": "air",
+   "start": 1.52,
+   "end": 1.86
+  },
+  {
+   "word": "yang",
+   "start": 1.86,
+   "end": 2.06
+  },
+  {
+   "word": "sudah",
+   "start": 2.06,
+   "end": 2.3
+  },
+  {
+   "word": "tidak",
+   "start": 2.3,
+   "end": 2.62
+  },
+  {
+   "word": "ada.",
+   "start": 2.62,
+   "end": 2.86
+  },
+  {
+   "word": "Serius?",
+   "start": 3.54,
+   "end": 3.96
+  },
+  {
+   "word": "Sungai",
+   "start": 4.5,
+   "end": 4.68
+  },
+  {
+   "word": "terpanjang",
+   "start": 4.68,
+   "end": 5.18
+  },
+  {
+   "word": "di",
+   "start": 5.18,
+   "end": 5.34
+  },
+  {
+   "word": "Jawa",
+   "start": 5.34,
+   "end": 5.54
+  },
+  {
+   "word": "Barat",
+   "start": 5.54,
+   "end": 5.7
+  },
+  {
+   "word": "bernama",
+   "start": 5.7,
+   "end": 6.02
+  },
+  {
+   "word": "Citarum.",
+   "start": 6.02,
+   "end": 6.54
+  },
+  {
+   "word": "Tarum",
+   "start": 7.16,
+   "end": 7.66
+  },
+  {
+   "word": "adalah",
+   "start": 7.66,
+   "end": 7.96
+  },
+  {
+   "word": "tanaman",
+   "start": 7.96,
+   "end": 8.34
+  },
+  {
+   "word": "pewarna",
+   "start": 8.34,
+   "end": 8.84
+  },
+  {
+   "word": "nila",
+   "start": 8.84,
+   "end": 9.14
+  },
+  {
+   "word": "yang",
+   "start": 9.14,
+   "end": 9.36
+  },
+  {
+   "word": "dulu",
+   "start": 9.36,
+   "end": 9.54
+  },
+  {
+   "word": "tumbuh",
+   "start": 9.54,
+   "end": 9.88
+  },
+  {
+   "word": "di",
+   "start": 9.88,
+   "end": 10.02
+  },
+  {
+   "word": "tepinya.",
+   "start": 10.02,
+   "end": 10.34
+  },
+  {
+   "word": "Pada",
+   "start": 11.14,
+   "end": 11.3
+  },
+  {
+   "word": "tahun",
+   "start": 11.3,
+   "end": 11.5
+  },
+  {
+   "word": "2007,",
+   "start": 11.5,
+   "end": 12.32
+  },
+  {
+   "word": "sungai",
+   "start": 12.32,
+   "end": 12.86
+  },
+  {
+   "word": "itu",
+   "start": 12.86,
+   "end": 12.96
+  },
+  {
+   "word": "masuk",
+   "start": 12.96,
+   "end": 13.22
+  },
+  {
+   "word": "daftar",
+   "start": 13.22,
+   "end": 13.66
+  },
+  {
+   "word": "sungai",
+   "start": 13.66,
+   "end": 14.06
+  },
+  {
+   "word": "paling",
+   "start": 14.06,
+   "end": 14.44
+  },
+  {
+   "word": "tercemar",
+   "start": 14.44,
+   "end": 14.94
+  },
+  {
+   "word": "di",
+   "start": 14.94,
+   "end": 15.14
+  },
+  {
+   "word": "dunia.",
+   "start": 15.14,
+   "end": 16.2
+  },
+  {
+   "word": "Namanya",
+   "start": 16.52,
+   "end": 16.7
+  },
+  {
+   "word": "berarti",
+   "start": 16.7,
+   "end": 17.04
+  },
+  {
+   "word": "air.",
+   "start": 17.04,
+   "end": 17.38
+  },
+  {
+   "word": "Airnya",
+   "start": 18.06,
+   "end": 18.4
+  },
+  {
+   "word": "sudah",
+   "start": 18.4,
+   "end": 18.64
+  },
+  {
+   "word": "lama",
+   "start": 18.64,
+   "end": 18.9
+  },
+  {
+   "word": "bukan",
+   "start": 18.9,
+   "end": 19.16
+  },
+  {
+   "word": "air.",
+   "start": 19.16,
+   "end": 19.52
+  },
+  {
+   "word": "Dan",
+   "start": 20.3,
+   "end": 20.44
+  },
+  {
+   "word": "mungkin",
+   "start": 20.44,
+   "end": 20.68
+  },
+  {
+   "word": "itu",
+   "start": 20.68,
+   "end": 20.86
+  },
+  {
+   "word": "pelajaran",
+   "start": 20.86,
+   "end": 21.24
+  },
+  {
+   "word": "yang",
+   "start": 21.24,
+   "end": 21.46
+  },
+  {
+   "word": "paling",
+   "start": 21.46,
+   "end": 21.7
+  },
+  {
+   "word": "jujur",
+   "start": 21.7,
+   "end": 22.06
+  },
+  {
+   "word": "dari",
+   "start": 22.06,
+   "end": 22.32
+  },
+  {
+   "word": "semua",
+   "start": 22.32,
+   "end": 22.52
+  },
+  {
+   "word": "ini.",
+   "start": 22.52,
+   "end": 22.88
+  },
+  {
+   "word": "Nama",
+   "start": 23.7,
+   "end": 23.88
+  },
+  {
+   "word": "-nama",
+   "start": 23.88,
+   "end": 24.12
+  },
+  {
+   "word": "ci",
+   "start": 24.12,
+   "end": 24.34
+  },
+  {
+   "word": "bukan",
+   "start": 24.34,
+   "end": 24.7
+  },
+  {
+   "word": "monument.",
+   "start": 24.7,
+   "end": 25.1
+  },
+  {
+   "word": "Monument",
+   "start": 25.82,
+   "end": 26.18
+  },
+  {
+   "word": "dibangun",
+   "start": 26.18,
+   "end": 26.58
+  },
+  {
+   "word": "untuk",
+   "start": 26.58,
+   "end": 26.72
+  },
+  {
+   "word": "mengingat",
+   "start": 26.72,
+   "end": 27.14
+  },
+  {
+   "word": "sesuatu",
+   "start": 27.14,
+   "end": 27.58
+  },
+  {
+   "word": "yang",
+   "start": 27.58,
+   "end": 27.7
+  },
+  {
+   "word": "sudah",
+   "start": 27.7,
+   "end": 27.94
+  },
+  {
+   "word": "selesai.",
+   "start": 27.94,
+   "end": 28.9
+  },
+  {
+   "word": "Nama",
+   "start": 29.28,
+   "end": 29.46
+  },
+  {
+   "word": "-nama",
+   "start": 29.46,
+   "end": 29.68
+  },
+  {
+   "word": "ini",
+   "start": 29.68,
+   "end": 30.08
+  },
+  {
+   "word": "bukan",
+   "start": 30.08,
+   "end": 30.56
+  },
+  {
+   "word": "begitu.",
+   "start": 30.56,
+   "end": 30.98
+  },
+  {
+   "word": "Serius?",
+   "start": 31.34,
+   "end": 31.76
+  },
+  {
+   "word": "Iya,",
+   "start": 32.52,
+   "end": 32.88
+  },
+  {
+   "word": "lebih",
+   "start": 32.94,
+   "end": 33.16
+  },
+  {
+   "word": "seperti",
+   "start": 33.16,
+   "end": 33.64
+  },
+  {
+   "word": "janji",
+   "start": 33.64,
+   "end": 34.2
+  },
+  {
+   "word": "yang",
+   "start": 34.2,
+   "end": 34.38
+  },
+  {
+   "word": "dibuat",
+   "start": 34.38,
+   "end": 34.72
+  },
+  {
+   "word": "air",
+   "start": 34.72,
+   "end": 35.04
+  },
+  {
+   "word": "kepada",
+   "start": 35.04,
+   "end": 35.3
+  },
+  {
+   "word": "tanah.",
+   "start": 35.3,
+   "end": 36.26
+  },
+  {
+   "word": "Lalu",
+   "start": 36.42,
+   "end": 36.6
+  },
+  {
+   "word": "dicatat",
+   "start": 36.6,
+   "end": 37.1
+  },
+  {
+   "word": "oleh",
+   "start": 37.1,
+   "end": 37.32
+  },
+  {
+   "word": "orang",
+   "start": 37.32,
+   "end": 37.6
+  },
+  {
+   "word": "yang",
+   "start": 37.6,
+   "end": 37.74
+  },
+  {
+   "word": "tidak",
+   "start": 37.74,
+   "end": 37.92
+  },
+  {
+   "word": "punya",
+   "start": 37.92,
+   "end": 38.08
+  },
+  {
+   "word": "kertas.",
+   "start": 38.08,
+   "end": 38.52
+  },
+  {
+   "word": "Dan",
+   "start": 39.32,
+   "end": 39.5
+  },
+  {
+   "word": "akhirnya,",
+   "start": 39.5,
+   "end": 40.16
+  },
+  {
+   "word": "diwariskan",
+   "start": 40.36,
+   "end": 40.94
+  },
+  {
+   "word": "kepada",
+   "start": 40.94,
+   "end": 41.18
+  },
+  {
+   "word": "kita",
+   "start": 41.18,
+   "end": 41.52
+  },
+  {
+   "word": "yang",
+   "start": 41.52,
+   "end": 41.64
+  },
+  {
+   "word": "tinggal",
+   "start": 41.64,
+   "end": 41.96
+  },
+  {
+   "word": "di",
+   "start": 41.96,
+   "end": 42.1
+  },
+  {
+   "word": "atasnya.",
+   "start": 42.1,
+   "end": 42.68
+  },
+  {
+   "word": "Tenang.",
+   "start": 43.36,
+   "end": 44.06
+  },
+  {
+   "word": "Tiga",
+   "start": 44.54,
+   "end": 44.96
+  },
+  {
+   "word": "dari",
+   "start": 44.96,
+   "end": 45.24
+  },
+  {
+   "word": "sepuluh",
+   "start": 45.24,
+   "end": 45.76
+  },
+  {
+   "word": "nama",
+   "start": 45.76,
+   "end": 45.98
+  },
+  {
+   "word": "tempat",
+   "start": 45.98,
+   "end": 46.38
+  },
+  {
+   "word": "di",
+   "start": 46.38,
+   "end": 46.64
+  },
+  {
+   "word": "satu",
+   "start": 46.64,
+   "end": 46.84
+  },
+  {
+   "word": "kabupaten",
+   "start": 46.84,
+   "end": 47.32
+  },
+  {
+   "word": "di",
+   "start": 47.32,
+   "end": 47.52
+  },
+  {
+   "word": "Jawa",
+   "start": 47.52,
+   "end": 47.72
+  },
+  {
+   "word": "Barat",
+   "start": 47.72,
+   "end": 48.28
+  },
+  {
+   "word": "adalah",
+   "start": 48.28,
+   "end": 48.64
+  },
+  {
+   "word": "nama",
+   "start": 48.64,
+   "end": 48.92
+  },
+  {
+   "word": "air.",
+   "start": 48.92,
+   "end": 49.24
+  },
+  {
+   "word": "Itu",
+   "start": 50.08,
+   "end": 50.24
+  },
+  {
+   "word": "bukan",
+   "start": 50.24,
+   "end": 50.44
+  },
+  {
+   "word": "kebetulan.",
+   "start": 50.44,
+   "end": 51.16
+  },
+  {
+   "word": "Itu",
+   "start": 51.7,
+   "end": 51.84
+  },
+  {
+   "word": "juga",
+   "start": 51.84,
+   "end": 52.04
+  },
+  {
+   "word": "bukan",
+   "start": 52.04,
+   "end": 52.28
+  },
+  {
+   "word": "puisi.",
+   "start": 52.28,
+   "end": 52.74
+  },
+  {
+   "word": "Itu",
+   "start": 53.46,
+   "end": 53.8
+  },
+  {
+   "word": "catatan.",
+   "start": 53.8,
+   "end": 54.32
+  },
+  {
+   "word": "Dan",
+   "start": 55.08,
+   "end": 55.22
+  },
+  {
+   "word": "catatan",
+   "start": 55.22,
+   "end": 55.62
+  },
+  {
+   "word": "itu",
+   "start": 55.62,
+   "end": 56.04
+  },
+  {
+   "word": "masih",
+   "start": 56.04,
+   "end": 56.56
+  },
+  {
+   "word": "terbuka.",
+   "start": 56.56,
+   "end": 57.0
+  }
+ ]
+}

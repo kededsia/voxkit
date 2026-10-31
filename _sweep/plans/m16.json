@@ -1,0 +1,944 @@
+{
+ "plan_version": 2,
+ "module": "m16",
+ "klaim": "Sungai bukan benda, melainkan warisan yang tidak boleh dijual. Dalam naskah lain dari tahun 1518, Tata Ruang Sunda dijelaskan dengan urutan yang dimulai dari air: Cai Nyusu (mata air), lalu imah (rumah), lalu pipir (sisi rumah), lalu buruan (halaman) - mata air adalah titik nol. Rumah tidak dibangun di tengah; rumah dibangun setelah air. Jadi nama Chi adalah alamat: yang pertama dihitung di sebuah tempat bukan rumah, bukan pasar, bukan istana, tapi airnya.",
+ "payoff": "Papan nama desa yang lewat di jalan bukan hiasan: setiap nama adalah alamat yang urutannya dimulai dari air.",
+ "serah": "papan-papan nama desa yang akan dibaca satu per satu, untuk m17",
+ "terima": "Patanjala sebagai perintah menjaga air, dari m15",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip filologi dan tata ruang: naskah lontar, papan nama desa, foto udara kampung, koran daerah. Lanskap: mata air, rumah panggung, halaman, jalan desa, pasar, istana. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Tata Ruang Sunda (1518) menyusun tempat dengan urutan yang dimulai dari air: Cai Nyusu, imah, pipir, buruan. Mata air adalah titik nol; rumah dibangun setelah air, bukan di tengah. Karena itu nama Chi berfungsi sebagai alamat - yang pertama dihitung bukan rumah, pasar atau istana, melainkan airnya.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 12 - Patanjala",
+    "shots": [
+     "s01",
+     "s02"
+    ],
+    "fokus": "Sungai sebagai warisan, dan naskah 1518 yang memulai urutan dari air."
+   },
+   {
+    "babak": "Babak 13 - Urutan",
+    "shots": [
+     "s03",
+     "s04"
+    ],
+    "fokus": "Cai Nyusu, imah, pipir, buruan; mata air sebagai titik nol."
+   },
+   {
+    "babak": "Babak 13 - Urutan",
+    "shots": [
+     "s05",
+     "s06",
+     "s07"
+    ],
+    "fokus": "Rumah dibangun setelah air; nama Chi adalah alamat; kembali ke jalan."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    141
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Definisi - sungai bukan benda, tapi warisan yang tidak boleh dijual",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed inheritance page on aged newsprint: a mustard block across the upper right, a charcoal strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Not a thing, an inheritance: the 'bukan benda' slip high left, the river high right, the keeper low left, and the 'tidak boleh dijual' slip low right.",
+   "kamera": "Hold the river, then settle on the keeper and the slip; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukan_benda",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penolakan definisi benda - sungai bukan objek yang bisa dipindahkan",
+     "semantik": "SUNGAI BUKAN BENDA",
+     "what": "a torn cream slip with stencilled type reading 'SUNGAI BUKAN BENDA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "benda.",
+     "z": 3,
+     "lands": 29
+    },
+    {
+     "name": "foto_sungai_warisan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai yang diwariskan - mengalir melewati batas tanah milik siapa pun",
+     "semantik": "WARISAN",
+     "what": "a sepia halftone photograph of a river running wide across open country",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "warisan",
+     "z": 1,
+     "lands": 82
+    },
+    {
+     "name": "penjaga_sungai",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang menjaga airnya - warisan itu punya penjaga, bukan pemilik",
+     "semantik": "TIDAK BOLEH DIJUAL",
+     "what": "a sepia halftone photograph of an old man standing at a river bank with a hoe over his shoulder, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "boleh",
+     "z": 2,
+     "lands": 120,
+     "motion_basis": "Dua lengan dan kepala, selebar 0.24 frame; kaki tetap di tepi. pose1 = berdiri, pacul di bahu kanan.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "lift the hoe down and plant it in the mud"
+      },
+      {
+       "pose": 3,
+       "action": "lean on the handle and look downstream"
+      },
+      {
+       "pose": 4,
+       "action": "straighten up and cross his arms"
+      }
+     ]
+    },
+    {
+     "name": "kartu_warisan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Larangan yang menempel pada kata warisan",
+     "semantik": "TIDAK BOLEH DIJUAL",
+     "what": "a torn cream slip with letterpress type reading 'TIDAK BOLEH DIJUAL'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "dijual.",
+     "z": 4,
+     "lands": 127
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     15,
+     3.0,
+     "kartu_bukan_benda",
+     {
+      "at": 29,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     15,
+     -2.4,
+     "penjaga_sungai",
+     {
+      "at": 120,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'benda.'; box on the figure on 'boleh'.",
+   "emphasis": [
+    {
+     "frame": 29.0,
+     "word": "benda.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    141,
+    375
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Sumber kedua - naskah 1518 menjelaskan tata ruang mulai dari air",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed layout page on aged newsprint: a crimson block behind the leaves, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Another manuscript, another date: the leaves high left, the 1518 slip low left, the 'tata ruang Sunda' slip high right, the reader low centre, the row of stakes low right, and the water that starts the order at the bottom.",
+   "kamera": "Open the leaves, read the date, let the stakes carry the order, then drop to the water; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_naskah_lain",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Naskah lain - bukti bahwa ini bukan satu kebetulan",
+     "semantik": "DALAM NASKAH LAIN",
+     "what": "a sepia halftone photograph of a palm-leaf manuscript opened to a middle page",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "naskah",
+     "z": 1,
+     "lands": 31
+    },
+    {
+     "name": "kartu_1518",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tahun naskah - angka yang membuat urutan ini bisa diperiksa",
+     "semantik": "1518",
+     "what": "a torn cream slip with big stencilled type reading '1518'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "1518,",
+     "z": 5,
+     "lands": 73
+    },
+    {
+     "name": "kartu_tata_ruang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Judul naskahnya - dan yang dibicarakannya: susunan tempat",
+     "semantik": "TATA RUANG SUNDA",
+     "what": "a torn cream slip with letterpress type reading 'TATA RUANG SUNDA'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Sunda",
+     "z": 6,
+     "lands": 145
+    },
+    {
+     "name": "pembaca_urutan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca urutannya - daftar yang dimulai bukan dari rumah",
+     "semantik": "DIJELASKAN",
+     "what": "a sepia halftone photograph of a man reading a leaf and pointing at a line with his finger, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.43",
+     "cut": true,
+     "word": "dijelaskan",
+     "z": 2,
+     "lands": 157
+    },
+    {
+     "name": "foto_baris_pancang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Baris pancang - susunan yang diukur satu per satu, bukan dipandang sekilas",
+     "semantik": "URUTAN",
+     "what": "a sepia halftone photograph of four short wooden stakes driven in a straight row with a taut cord running between them",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.56",
+     "cut": true,
+     "word": "urutan",
+     "z": 3,
+     "lands": 180
+    },
+    {
+     "name": "foto_air_pertama",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air di urutan pertama - titik mulai seluruh susunan itu",
+     "semantik": "DIMULAI DARI AIR",
+     "what": "a sepia halftone photograph of a spring feeding a small channel at the edge of a yard",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "air.",
+     "z": 4,
+     "lands": 218
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.0,
+     "kartu_1518",
+     {
+      "at": 100,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the printed slip on '1518,'.",
+   "emphasis": [
+    {
+     "frame": 359.0,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    375,
+    589
+   ],
+   "babak": "Babak 13 - Urutan",
+   "peran_retoris": "Urutan pertama sampai ketiga - Cai Nyusu, imah, pipir",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed order page on aged newsprint: a charcoal block down the left edge, a mustard block across the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A list that steps down the page: the spring high left, its name low left, the house high right, the 'imah' slip low centre, and the 'pipir' slip at the bottom - three steps, one order.",
+   "kamera": "Step down the list, one word at a time; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_mata_air",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Mata air - benda pertama dalam urutan itu",
+     "semantik": "CAI NYUSU",
+     "what": "a sepia halftone photograph of a spring enclosed in a low stone wall beside a path",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Nyusu,",
+     "z": 1,
+     "lands": 25
+    },
+    {
+     "name": "kartu_chai_nyusu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama pertama dan artinya - urutan dimulai di sini",
+     "semantik": "CAI NYUSU = MATA AIR",
+     "what": "a torn cream slip with big stencilled type reading 'CAI NYUSU' and a small line 'MATA AIR'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "air.",
+     "z": 3,
+     "lands": 57
+    },
+    {
+     "name": "foto_rumah_kampung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rumah - benda kedua, sesudah air",
+     "semantik": "LALU IMAH",
+     "what": "a sepia halftone photograph of a raised timber house with a bamboo ladder",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "imah,",
+     "z": 2,
+     "lands": 101
+    },
+    {
+     "name": "kartu_imah",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata kedua - rumah, yang datang setelah air",
+     "semantik": "IMAH = RUMAH",
+     "what": "a torn cream slip with big stencilled type reading 'IMAH' and a small line 'RUMAH'",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.60",
+     "cut": true,
+     "word": "rumah.",
+     "z": 4,
+     "lands": 128
+    },
+    {
+     "name": "foto_sisi_rumah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sisi rumah - bagian yang menghadap air, bukan yang menghadap jalan",
+     "semantik": "PIPIR",
+     "what": "a sepia halftone photograph of the side wall of a timber house with a bench against it",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "sisi",
+     "z": 2,
+     "lands": 197
+    },
+    {
+     "name": "kartu_pipir",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata ketiga - sisi rumah, ruang yang paling dekat dengan air",
+     "semantik": "PIPIR = SISI RUMAH",
+     "what": "a torn cream slip with stencilled type reading 'PIPIR' and a small line 'SISI RUMAH'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.84",
+     "cut": true,
+     "word": "rumah.",
+     "z": 5,
+     "lands": 202
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     1.2,
+     "kartu_imah",
+     {
+      "at": 160,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'rumah.'.",
+   "emphasis": [
+    {
+     "frame": 432.2,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 539.6,
+     "word": "pipir,",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    589,
+    760
+   ],
+   "babak": "Babak 13 - Urutan",
+   "peran_retoris": "Urutan keempat dan kesimpulannya - buruan, lalu mata air sebagai titik nol",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed zero page on aged newsprint: a mustard block behind the yard, a crimson strip along the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The last item and the point it measures from: the yard high left, the 'buruan' slip low left, the spring high right, the man at the spring low centre, and 'titik nol' at the bottom.",
+   "kamera": "Close the list, then drop to the zero; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_halaman",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman - benda keempat, ruang terbuka di depan rumah",
+     "semantik": "BURUAN",
+     "what": "a sepia halftone photograph of a swept earth yard in front of a timber house",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "buruan,",
+     "z": 1,
+     "lands": 29
+    },
+    {
+     "name": "kartu_buruan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata keempat - halaman, ruang yang tidak dipagari",
+     "semantik": "BURUAN = HALAMAN",
+     "what": "a torn cream slip with stencilled type reading 'BURUAN' and a small line 'HALAMAN'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "halaman.",
+     "z": 4,
+     "lands": 65
+    },
+    {
+     "name": "foto_mata_air_nol",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Mata air yang jadi patokan - semua ukuran diambil dari sini",
+     "semantik": "MATA AIR",
+     "what": "a sepia halftone photograph of a small spring pool with a stone kerb around it",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "air",
+     "z": 2,
+     "lands": 108
+    },
+    {
+     "name": "orang_di_mata_air",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berdiri di titik nol - tempat semua jarak dihitung",
+     "semantik": "TITIK NOL",
+     "what": "a sepia halftone photograph of a woman standing at a spring pool with a bucket, seen from behind",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.58",
+     "cut": true,
+     "word": "titik",
+     "z": 3,
+     "lands": 137
+    },
+    {
+     "name": "kartu_titik_nol",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kesimpulan urutan - air adalah angka nol, bukan angka satu",
+     "semantik": "MATA AIR ADALAH TITIK NOL",
+     "what": "a torn cream slip with big stencilled type reading 'TITIK NOL'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.88",
+     "cut": true,
+     "word": "nol.",
+     "z": 5,
+     "lands": 151
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_buruan",
+     {
+      "at": 65,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "orang_di_mata_air",
+     {
+      "at": 137,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'halaman.'; box on the figure on 'titik'.",
+   "emphasis": [
+    {
+     "frame": 617.6,
+     "word": "buruan,",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 653.6,
+     "word": "halaman.",
+     "motion": "hold",
+     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 690.2,
+     "word": "Mata",
+     "motion": "hold",
+     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 740.0,
+     "word": "nol.",
+     "motion": "hold",
+     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s05",
+   "range": [
+    760,
+    973
+   ],
+   "babak": "Babak 13 - Urutan",
+   "peran_retoris": "Akibat - rumah dibangun setelah air, jadi nama Chi adalah alamat",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed address page on aged newsprint: a charcoal block behind the house, a mustard strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Built after the water, not in the middle: the 'tidak di tengah' strip high left, the builder low left, the 'setelah air' slip high right, the house by the stream low centre, and the address slip along the bottom.",
+   "kamera": "Hold the empty middle, then follow the builder to the stream; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "strip_tidak_di_tengah",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Koreksi atas dugaan kita - rumah tidak ditaruh di pusat",
+     "semantik": "TIDAK DIBANGUN DI TENGAH",
+     "what": "a torn newsprint strip with bold type reading 'TIDAK DI TENGAH'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "tengah.",
+     "z": 4,
+     "lands": 40
+    },
+    {
+     "name": "tukang_rumah",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membangun - yang memilih mendirikan rumah di dekat air",
+     "semantik": "DIBANGUN",
+     "what": "a sepia halftone photograph of a man carrying a bundle of bamboo poles on his shoulder, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "dibangun",
+     "z": 1,
+     "lands": 77,
+     "motion_basis": "Dua kaki dan satu lengan penahan, selebar 0.24 frame; bambu tetap sejajar bahu. pose1 = melangkah, bambu di bahu kanan.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "shift the bundle to the other shoulder without stopping"
+      },
+      {
+       "pose": 3,
+       "action": "stop and look toward the stream"
+      },
+      {
+       "pose": 4,
+       "action": "lower the bundle end to the ground and stand upright"
+      }
+     ]
+    },
+    {
+     "name": "kartu_setelah_air",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Urutan yang menentukan segalanya - air dulu, rumah kemudian",
+     "semantik": "DIBANGUN SETELAH AIR",
+     "what": "a torn cream slip with stencilled type reading 'SETELAH AIR'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "setelah",
+     "z": 5,
+     "lands": 92
+    },
+    {
+     "name": "foto_rumah_tepi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rumah yang berdiri di tepi air - bukan di tengah tanahnya",
+     "semantik": "RUMAH DIBANGUN",
+     "what": "a sepia halftone photograph of a house built right at the bank of a stream",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "air.",
+     "z": 2,
+     "lands": 104
+    },
+    {
+     "name": "foto_jalan_kampung",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan kampung yang berbelok mengikuti air, bukan mengikuti kavling",
+     "semantik": "KALAU BEGITU",
+     "what": "a sepia halftone photograph of a lane bending around a stream in a village",
+     "at": "centre of the frame, centred at 0.30 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "begitu,",
+     "z": 3,
+     "lands": 142
+    },
+    {
+     "name": "kartu_alamat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kesimpulan modul - nama Chi bukan hiasan, ia alamat",
+     "semantik": "NAMA CHI ADALAH ALAMAT",
+     "what": "a torn cream slip with big stencilled type reading 'CHI ADALAH ALAMAT'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.88",
+     "cut": true,
+     "word": "alamat.",
+     "z": 6,
+     "lands": 199
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_setelah_air",
+     {
+      "at": 92,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "tukang_rumah",
+     {
+      "at": 77,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'setelah'; circle on the figure on 'dibangun'.",
+   "emphasis": [
+    {
+     "frame": 863.6,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.53 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s06",
+   "range": [
+    973,
+    1240
+   ],
+   "babak": "Babak 13 - Urutan",
+   "peran_retoris": "Bukti - yang pertama dihitung bukan rumah, bukan pasar, bukan istana, tapi airnya",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed count order page on aged newsprint: a crimson block across the upper left, a charcoal block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A finger on the line, then three that do not come first, then the one that does: the finger high centre, the 'pertama dihitung' slip high left, the counter low left, the house high right, the market low centre, the palace low right, and the water at the bottom.",
+   "kamera": "Open on the finger, pass the three, then land on the water; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_jari_peta",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jari menunjuk satu baris di peta - klaim yang bisa diperiksa",
+     "semantik": "IA MENUNJUKKAN",
+     "what": "a sepia halftone photograph of a forefinger resting on a printed line of a map, seen from above",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "menunjukkan",
+     "z": 1,
+     "lands": 25
+    },
+    {
+     "name": "kartu_dihitung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata kerja yang menjelaskan tata ruang sebagai hitungan, bukan gambar",
+     "semantik": "YANG PERTAMA DIHITUNG",
+     "what": "a torn cream slip with stencilled type reading 'PERTAMA DIHITUNG'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "dihitung",
+     "z": 7,
+     "lands": 62
+    },
+    {
+     "name": "penghitung",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang menghitung urutan - yang menguji klaim ini di lapangan",
+     "semantik": "DI SEBUAH TEMPAT",
+     "what": "a sepia halftone photograph of a man standing at a village edge looking from the spring to the houses, seen from behind",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.62",
+     "cut": true,
+     "word": "tempat",
+     "z": 2,
+     "lands": 93,
+     "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = berdiri, tangan kanan di pinggang.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "raise his arm and point at the spring"
+      },
+      {
+       "pose": 3,
+       "action": "swing the arm across to the houses"
+      },
+      {
+       "pose": 4,
+       "action": "drop the arm and turn his head back to the spring"
+      }
+     ]
+    },
+    {
+     "name": "foto_rumah_bukan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Rumah - yang kita kira dihitung pertama",
+     "semantik": "BUKAN RUMAH",
+     "what": "a sepia halftone photograph of a single house standing alone at a field edge",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "rumah,",
+     "z": 3,
+     "lands": 116
+    },
+    {
+     "name": "foto_pasar_bukan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pasar - tempat orang berkumpul, tetap bukan yang pertama",
+     "semantik": "BUKAN PASAR",
+     "what": "a sepia halftone photograph of an empty market shed with wooden stalls",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.62",
+     "cut": true,
+     "word": "pasar,",
+     "z": 4,
+     "lands": 153
+    },
+    {
+     "name": "foto_istana_bukan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Istana - kekuasaan pun tidak dihitung pertama",
+     "semantik": "BUKAN ISTANA",
+     "what": "a sepia halftone photograph of a gatehouse with a tiled roof and stone steps",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide, down at 0.62",
+     "cut": true,
+     "word": "istana,",
+     "z": 5,
+     "lands": 189
+    },
+    {
+     "name": "foto_airnya",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Airnya - satu-satunya yang dihitung pertama",
+     "semantik": "TAPI AIRNYA",
+     "what": "a sepia halftone photograph of water running through a village channel past steps",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.87",
+     "cut": true,
+     "word": "airnya.",
+     "z": 6,
+     "lands": 236
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     15,
+     2.4,
+     "kartu_dihitung",
+     {
+      "at": 62,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     16,
+     -1.9,
+     "penghitung",
+     {
+      "at": 93,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'dihitung'; ellipse on the figure on 'tempat'.",
+   "emphasis": [
+    {
+     "frame": 1162.4,
+     "word": "istana,",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 1209.2,
+     "word": "airnya.",
+     "motion": "hold",
+     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s07",
+   "range": [
+    1240,
+    1440
+   ],
+   "babak": "Babak 13 - Urutan",
+   "peran_retoris": "Kembali - ke jalan tadi, ke papan nama desa yang lewat tiap beberapa kilometer",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed road page on aged newsprint: a mustard block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Back on the road: the 'kembali ke jalan' slip high left, the village road high right, the walker low left, the first nameboard low centre, and the kilometre slip low right.",
+   "kamera": "Follow the road and let the signs pass; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_kembali",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penanda balik ke jalan - babak berikutnya terjadi di pinggir jalan",
+     "semantik": "KEMBALI KE JALAN",
+     "what": "a torn cream slip with stencilled type reading 'KEMBALI KE JALAN'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kembali",
+     "z": 4,
+     "lands": 35
+    },
+    {
+     "name": "foto_jalan_desa",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Jalan desa - jalur tempat papan nama lewat satu per satu",
+     "semantik": "JALAN TADI",
+     "what": "a sepia halftone photograph of a two-lane road running between paddy fields",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "jalan",
+     "z": 1,
+     "lands": 51
+    },
+    {
+     "name": "pejalan_jalan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berjalan di pinggir jalan - pembaca papan nama yang sebenarnya",
+     "semantik": "KITA",
+     "what": "a sepia halftone photograph of a man walking along a road shoulder, seen from behind",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.22 of the frame wide",
+     "cut": true,
+     "word": "tadi.",
+     "z": 2,
+     "lands": 57
+    },
+    {
+     "name": "foto_papan_nama",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan nama desa - benda yang akan dibaca satu per satu sesudah ini",
+     "semantik": "PAPAN NAMA DESA",
+     "what": "a sepia halftone photograph of a village nameboard on a post beside a road",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "desa",
+     "z": 3,
+     "lands": 117
+    },
+    {
+     "name": "kartu_km",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jarak antar papan - yang membuat deretan nama itu bisa dibaca sebagai urutan",
+     "semantik": "SETIAP BEBERAPA KILOMETER",
+     "what": "a torn cream slip with letterpress type reading 'SETIAP BEBERAPA KILOMETER'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kilometer.",
+     "z": 5,
+     "lands": 171
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     11,
+     3.0,
+     "kartu_kembali",
+     {
+      "at": 35,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     13,
+     -2.4,
+     "pejalan_jalan",
+     {
+      "at": 63,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'kembali'; box on the figure on 'tadi.'.",
+   "emphasis": []
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

@@ -1,0 +1,515 @@
+{
+ "duration": 50.6,
+ "words": [
+  {
+   "word": "Kalau",
+   "start": 0.0,
+   "end": 0.42
+  },
+  {
+   "word": "anda",
+   "start": 0.42,
+   "end": 0.7
+  },
+  {
+   "word": "berkendara",
+   "start": 0.7,
+   "end": 1.24
+  },
+  {
+   "word": "dari",
+   "start": 1.24,
+   "end": 1.56
+  },
+  {
+   "word": "Bandung",
+   "start": 1.56,
+   "end": 2.02
+  },
+  {
+   "word": "ke",
+   "start": 2.02,
+   "end": 2.16
+  },
+  {
+   "word": "Cianjur",
+   "start": 2.16,
+   "end": 2.78
+  },
+  {
+   "word": "lewat",
+   "start": 2.78,
+   "end": 3.1
+  },
+  {
+   "word": "puncak,",
+   "start": 3.1,
+   "end": 3.88
+  },
+  {
+   "word": "ada",
+   "start": 4.2,
+   "end": 4.3
+  },
+  {
+   "word": "satu",
+   "start": 4.3,
+   "end": 4.64
+  },
+  {
+   "word": "hal",
+   "start": 4.64,
+   "end": 4.84
+  },
+  {
+   "word": "yang",
+   "start": 4.84,
+   "end": 5.04
+  },
+  {
+   "word": "akan",
+   "start": 5.04,
+   "end": 5.22
+  },
+  {
+   "word": "anda",
+   "start": 5.22,
+   "end": 5.48
+  },
+  {
+   "word": "lewati",
+   "start": 5.48,
+   "end": 5.82
+  },
+  {
+   "word": "tanpa",
+   "start": 5.82,
+   "end": 6.16
+  },
+  {
+   "word": "sadar.",
+   "start": 6.16,
+   "end": 7.22
+  },
+  {
+   "word": "Di",
+   "start": 7.4,
+   "end": 7.66
+  },
+  {
+   "word": "kiri",
+   "start": 7.66,
+   "end": 7.9
+  },
+  {
+   "word": "jalan,",
+   "start": 7.9,
+   "end": 8.48
+  },
+  {
+   "word": "papanama",
+   "start": 8.72,
+   "end": 9.14
+  },
+  {
+   "word": "desa",
+   "start": 9.14,
+   "end": 9.54
+  },
+  {
+   "word": "berganti",
+   "start": 9.54,
+   "end": 10.06
+  },
+  {
+   "word": "setiap",
+   "start": 10.06,
+   "end": 10.46
+  },
+  {
+   "word": "beberapa",
+   "start": 10.46,
+   "end": 10.82
+  },
+  {
+   "word": "kilometer.",
+   "start": 10.82,
+   "end": 11.26
+  },
+  {
+   "word": "Hampir",
+   "start": 11.92,
+   "end": 12.38
+  },
+  {
+   "word": "semuanya",
+   "start": 12.38,
+   "end": 12.86
+  },
+  {
+   "word": "dimulai",
+   "start": 12.86,
+   "end": 13.36
+  },
+  {
+   "word": "dengan",
+   "start": 13.36,
+   "end": 13.68
+  },
+  {
+   "word": "dua",
+   "start": 13.68,
+   "end": 14.02
+  },
+  {
+   "word": "huruf",
+   "start": 14.02,
+   "end": 14.34
+  },
+  {
+   "word": "yang",
+   "start": 14.34,
+   "end": 14.64
+  },
+  {
+   "word": "sama.",
+   "start": 14.64,
+   "end": 15.02
+  },
+  {
+   "word": "Cipanas,",
+   "start": 15.72,
+   "end": 16.44
+  },
+  {
+   "word": "Cibening,",
+   "start": 16.96,
+   "end": 17.68
+  },
+  {
+   "word": "Cikapundung,",
+   "start": 18.18,
+   "end": 19.06
+  },
+  {
+   "word": "Citarum,",
+   "start": 19.4,
+   "end": 20.32
+  },
+  {
+   "word": "Cimahi,",
+   "start": 20.62,
+   "end": 21.32
+  },
+  {
+   "word": "Cianjur,",
+   "start": 21.68,
+   "end": 22.44
+  },
+  {
+   "word": "Ciawi,",
+   "start": 22.88,
+   "end": 23.48
+  },
+  {
+   "word": "Cibodas.",
+   "start": 23.92,
+   "end": 24.96
+  },
+  {
+   "word": "Orang",
+   "start": 25.34,
+   "end": 25.54
+  },
+  {
+   "word": "yang",
+   "start": 25.54,
+   "end": 25.68
+  },
+  {
+   "word": "tumbuh",
+   "start": 25.68,
+   "end": 25.94
+  },
+  {
+   "word": "di",
+   "start": 25.94,
+   "end": 26.14
+  },
+  {
+   "word": "sini",
+   "start": 26.14,
+   "end": 26.38
+  },
+  {
+   "word": "tidak",
+   "start": 26.38,
+   "end": 26.68
+  },
+  {
+   "word": "pernah",
+   "start": 26.68,
+   "end": 26.88
+  },
+  {
+   "word": "merasa",
+   "start": 26.88,
+   "end": 27.22
+  },
+  {
+   "word": "aneh.",
+   "start": 27.22,
+   "end": 27.82
+  },
+  {
+   "word": "Orang",
+   "start": 27.82,
+   "end": 28.44
+  },
+  {
+   "word": "yang",
+   "start": 28.44,
+   "end": 28.6
+  },
+  {
+   "word": "datang",
+   "start": 28.6,
+   "end": 28.82
+  },
+  {
+   "word": "dari",
+   "start": 28.82,
+   "end": 29.06
+  },
+  {
+   "word": "luar",
+   "start": 29.06,
+   "end": 29.48
+  },
+  {
+   "word": "biasanya",
+   "start": 29.48,
+   "end": 29.94
+  },
+  {
+   "word": "bertanya",
+   "start": 29.94,
+   "end": 30.32
+  },
+  {
+   "word": "sekali,",
+   "start": 30.32,
+   "end": 30.9
+  },
+  {
+   "word": "lalu",
+   "start": 31.24,
+   "end": 31.46
+  },
+  {
+   "word": "berhenti",
+   "start": 31.46,
+   "end": 31.84
+  },
+  {
+   "word": "bertanya.",
+   "start": 31.84,
+   "end": 32.9
+  },
+  {
+   "word": "Kata",
+   "start": 33.14,
+   "end": 33.3
+  },
+  {
+   "word": "itu",
+   "start": 33.3,
+   "end": 33.62
+  },
+  {
+   "word": "ada",
+   "start": 33.62,
+   "end": 33.96
+  },
+  {
+   "word": "di",
+   "start": 33.96,
+   "end": 34.24
+  },
+  {
+   "word": "alamat",
+   "start": 34.24,
+   "end": 34.52
+  },
+  {
+   "word": "rumah,",
+   "start": 34.52,
+   "end": 35.04
+  },
+  {
+   "word": "di",
+   "start": 35.54,
+   "end": 35.64
+  },
+  {
+   "word": "nama",
+   "start": 35.64,
+   "end": 35.8
+  },
+  {
+   "word": "sekolah,",
+   "start": 35.8,
+   "end": 36.56
+  },
+  {
+   "word": "di",
+   "start": 36.78,
+   "end": 36.92
+  },
+  {
+   "word": "papan",
+   "start": 36.92,
+   "end": 37.16
+  },
+  {
+   "word": "angkutan",
+   "start": 37.16,
+   "end": 37.5
+  },
+  {
+   "word": "kota,",
+   "start": 37.5,
+   "end": 38.06
+  },
+  {
+   "word": "di",
+   "start": 38.52,
+   "end": 38.64
+  },
+  {
+   "word": "nomor",
+   "start": 38.64,
+   "end": 38.96
+  },
+  {
+   "word": "yang",
+   "start": 38.96,
+   "end": 39.08
+  },
+  {
+   "word": "dipakai",
+   "start": 39.08,
+   "end": 39.42
+  },
+  {
+   "word": "orang",
+   "start": 39.42,
+   "end": 39.66
+  },
+  {
+   "word": "setiap",
+   "start": 39.66,
+   "end": 40.06
+  },
+  {
+   "word": "hari,",
+   "start": 40.06,
+   "end": 40.5
+  },
+  {
+   "word": "tanpa",
+   "start": 40.66,
+   "end": 41.0
+  },
+  {
+   "word": "sadar.",
+   "start": 41.0,
+   "end": 41.78
+  },
+  {
+   "word": "Pertanyaan",
+   "start": 42.1,
+   "end": 42.64
+  },
+  {
+   "word": "itu",
+   "start": 42.64,
+   "end": 43.02
+  },
+  {
+   "word": "sederhana.",
+   "start": 43.02,
+   "end": 43.58
+  },
+  {
+   "word": "Kenapa?",
+   "start": 44.18,
+   "end": 44.68
+  },
+  {
+   "word": "Ada",
+   "start": 45.38,
+   "end": 45.6
+  },
+  {
+   "word": "cara",
+   "start": 45.6,
+   "end": 45.86
+  },
+  {
+   "word": "yang",
+   "start": 45.86,
+   "end": 46.04
+  },
+  {
+   "word": "lebih",
+   "start": 46.04,
+   "end": 46.26
+  },
+  {
+   "word": "jujur",
+   "start": 46.26,
+   "end": 46.66
+  },
+  {
+   "word": "untuk",
+   "start": 46.66,
+   "end": 46.88
+  },
+  {
+   "word": "mengukur",
+   "start": 46.88,
+   "end": 47.28
+  },
+  {
+   "word": "hal",
+   "start": 47.28,
+   "end": 47.44
+  },
+  {
+   "word": "ini",
+   "start": 47.44,
+   "end": 47.74
+  },
+  {
+   "word": "daripada",
+   "start": 47.74,
+   "end": 48.1
+  },
+  {
+   "word": "mengandalkan",
+   "start": 48.1,
+   "end": 48.66
+  },
+  {
+   "word": "kesan.",
+   "start": 48.66,
+   "end": 49.4
+  },
+  {
+   "word": "Serius.",
+   "start": 49.82,
+   "end": 50.2
+  }
+ ]
+}

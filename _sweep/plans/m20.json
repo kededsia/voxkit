@@ -1,0 +1,1113 @@
+{
+ "plan_version": 2,
+ "module": "m20",
+ "klaim": "Teori cahaya punya tiga masalah. Pertama, teorinya bertumpu pada anggapan bahwa orang Sunda dulu menyebut air dengan kata banyu atau tirta, bukan cai - padahal cai adalah kata Sunda sehari-hari dan banyu adalah kata Jawa. Kedua, gunung itu disebut tingginya lebih dari 17.000 meter, sementara Everest 8.848 meter dan Gunung Sunda yang asli sekitar 4.000 meter. Ketiga, dalam sanskerta kata untuk cahaya bukan ci.",
+ "payoff": "Tiga angka dan satu kata cukup untuk meruntuhkan teori itu - 17.000 meter tidak muat di pulau ini.",
+ "serah": "teori yang salah secara bahasa tapi benar tentang satu hal, untuk m21",
+ "terima": "teori cahaya yang beredar lewat video dan forum, dari m19",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip peta, koran, buku pelajaran, foto gunung. Lanskap: puncak bersalju, langit senja, malam, gunung dari jauh, awan, pendaki. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Teori bahwa ci berarti cahaya runtuh oleh tiga hal: kata air Sunda adalah cai bukan banyu atau tirta; gunung setinggi 17.000 meter tidak mungkin ada karena Everest 8.848 dan Gunung Sunda asli sekitar 4.000 meter; dan dalam sanskerta kata untuk cahaya bukan ci.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 23 - Teori",
+    "shots": [
+     "s01",
+     "s02",
+     "s03"
+    ],
+    "fokus": "Gunung Sunda Purwa yang bersalju dan memancarkan cahaya; ci bodas, ci berem, ci hideng."
+   },
+   {
+    "babak": "Babak 24 - Tiga masalah",
+    "shots": [
+     "s04",
+     "s05",
+     "s06",
+     "s07"
+    ],
+    "fokus": "Anggapan banyu/tirta yang keliru, tinggi 17.000 meter yang mustahil, dan kata sanskerta yang bukan ci."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    167
+   ],
+   "babak": "Babak 23 - Teori",
+   "peran_retoris": "Pembukaan teori - ada gunung bernama Gunung Sunda Purwa yang sangat tinggi",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed mountain page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Isinya begini' high left, the listener low left, the mountain high right, the summit centre, 'Gunung Sunda Purwa' low right, and 'sangat tinggi' along the bottom.",
+   "kamera": "Open on the claim, then climb the mountain; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_isinya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pembuka teori - isinya akan diceritakan, bukan disimpulkan",
+     "semantik": "ISINYA BEGINI",
+     "what": "a torn cream slip with stencilled type reading 'ISINYA BEGINI'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Isinya",
+     "z": 4,
+     "lands": 13
+    },
+    {
+     "name": "figur_pendengar",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang mendengar teori itu - dan belum membantahnya",
+     "semantik": "BEGINI",
+     "what": "a sepia halftone photograph of a man sitting and listening with his hands on his knees, seen from the side",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "begini.",
+     "z": 3,
+     "lands": 20,
+     "motion_basis": "Kepala dan satu tangan, selebar 0.24 frame; duduk tetap. pose1 = duduk, tangan di lutut.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "raise his head and look up at the mountain"
+      },
+      {
+       "pose": 3,
+       "action": "turn his head slowly to one side"
+      },
+      {
+       "pose": 4,
+       "action": "drop his head and look at the ground"
+      }
+     ]
+    },
+    {
+     "name": "foto_gunung_tinggi",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Gunung yang sangat tinggi - klaim pertama teori ini",
+     "semantik": "ADA GUNUNG",
+     "what": "a sepia halftone photograph of a tall mountain rising above a plain of cloud",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "gunung",
+     "z": 2,
+     "lands": 56
+    },
+    {
+     "name": "foto_puncak",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Puncaknya - bagian yang nanti disebut bersalju",
+     "semantik": "PUNCAKNYA",
+     "what": "a sepia halftone photograph of a bare rocky summit against a pale sky",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "Gunung",
+     "z": 1,
+     "lands": 84
+    },
+    {
+     "name": "kartu_sunda_purwa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama gunungnya - dan nama itu yang membuat teori ini terasa masuk akal",
+     "semantik": "GUNUNG SUNDA PURWA",
+     "what": "a torn cream slip with big stencilled type reading 'GUNUNG SUNDA PURWA'",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.76",
+     "cut": true,
+     "word": "Purwa",
+     "z": 5,
+     "lands": 111
+    },
+    {
+     "name": "kartu_sangat_tinggi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Ukuran yang nanti jadi masalah kedua",
+     "semantik": "SANGAT TINGGI",
+     "what": "a torn cream slip with big stencilled type reading 'SANGAT TINGGI'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.62 of the frame wide, down at 0.93",
+     "cut": true,
+     "word": "tinggi.",
+     "z": 6,
+     "lands": 145
+    }
+   ],
+   "marks": [
+    [
+     "arrow-curve",
+     16,
+     -1.2,
+     "figur_pendengar",
+     {
+      "at": 62,
+      "color": "crimson",
+      "box": [
+       0.3,
+       0.15,
+       0.66,
+       0.7
+      ]
+     }
+    ],
+    [
+     "underline",
+     14,
+     0.0,
+     "kartu_sunda_purwa",
+     {
+      "at": 118,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-down",
+     12,
+     2.0,
+     "kartu_sangat_tinggi",
+     {
+      "at": 152,
+      "color": "coral",
+      "box": [
+       0.6,
+       0.6,
+       0.7,
+       0.75
+      ]
+     }
+    ]
+   ],
+   "mark": "A curved arrow from the listener up to the mountain on 'gunung', a crimson underline under 'GUNUNG SUNDA PURWA' on 'Purwa', then a short downward arrow onto the 'SANGAT TINGGI' strip on 'tinggi'.",
+   "emphasis": [
+    {
+     "word": "tinggi.",
+     "frame": 145,
+     "motion": "landing",
+     "why": "Klaim shot ini tingginya; slip terakhir mendarat di kata itu dan kamera berhenti."
+    }
+   ],
+   "still_gate": "PASS 30.9"
+  },
+  {
+   "id": "s02",
+   "range": [
+    167,
+    328
+   ],
+   "babak": "Babak 23 - Teori",
+   "peran_retoris": "Isi teori - puncaknya bersalju dan memancarkan cahaya; ci bodas berarti cahaya putih",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed snow page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The snowy summit high left, the snow below it, the 'bersalju' slip high right, the onlooker low right, and 'ci bodas' across the middle.",
+   "kamera": "Snow, then light, then the name that is supposed to mean white light; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_puncak_salju",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Puncak bersalju - di pulau yang hari ini tidak punya salju",
+     "semantik": "PUNCAKNYA BERSALJU",
+     "what": "a sepia halftone photograph of a snow covered mountain summit in low sun",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Puncaknya",
+     "z": 2,
+     "lands": 3
+    },
+    {
+     "name": "foto_salju",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Salju di dekat puncak - benda yang tidak ada di garis khatulistiwa ini",
+     "semantik": "BERSALJU",
+     "what": "the lower of the two photographs: snow lying in deep drifts on a mountain slope, below the summit",
+     "at": "lower left of the frame, centred at 0.32 across, about 0.42 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "memancarkan",
+     "z": 1,
+     "lands": 42
+    },
+    {
+     "name": "kartu_bersalju",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Dua sifat yang diklaim sekaligus - bersalju dan memancarkan cahaya",
+     "semantik": "BERSALJU DAN MEMANCARKAN CAHAYA",
+     "what": "a torn cream slip with stencilled type reading 'BERSALJU, MEMANCARKAN CAHAYA'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "bersalju",
+     "z": 4,
+     "lands": 16
+    },
+    {
+     "name": "figur_pengamat",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang melihat puncak itu - saksi yang tidak pernah ada",
+     "semantik": "CAHAYA",
+     "what": "a man standing with his hands behind his back, seen from behind, head to boots - only the man: the ground and the ridge beneath his feet are not part of him",
+     "at": "lower right of the frame, centred at 0.85 across, about 0.31 of the frame wide, down at 0.86",
+     "cut": true,
+     "word": "cahaya.",
+     "z": 3,
+     "lands": 58
+    },
+    {
+     "name": "kartu_ci_bodas",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bukti utama teori - nama yang diklaim berarti cahaya putih",
+     "semantik": "CI BODAS = CAHAYA PUTIH",
+     "what": "a torn cream slip with big stencilled type reading 'CI BODAS = CAHAYA PUTIH'",
+     "at": "centre of the frame, centred at 0.48 across, about 0.32 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "putih.",
+     "z": 5,
+     "lands": 138
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.0,
+     "foto_salju",
+     {
+      "at": 48,
+      "color": "crimson"
+     }
+    ],
+    [
+     "brackets",
+     14,
+     -2.0,
+     "kartu_ci_bodas",
+     {
+      "at": 145,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "A circle on the snow photograph on 'bersalju', then brackets around 'CI BODAS = CAHAYA PUTIH' on 'putih' — the equation held like a quoted line.",
+   "emphasis": [
+    {
+     "word": "cahaya.",
+     "frame": 225,
+     "motion": "strike",
+     "why": "Cahaya yang memancar dari salju — gerak keras di satu-satunya kata berskor 0.43."
+    }
+   ],
+   "still_gate": "PASS 34.6"
+  },
+  {
+   "id": "s03",
+   "range": [
+    328,
+    510
+   ],
+   "babak": "Babak 23 - Teori",
+   "peran_retoris": "Teori diperluas - ci berem cahaya merah, ci hideng cahaya hitam, lalu tiga masalah",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed colour page on aged newsprint: a mustard block across the upper left, a charcoal strip down the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Ci berem' high left, the red dusk high right, 'ci hideng' low left, the night sky low right, the onlooker centre, and 'tiga masalah' along the bottom.",
+   "kamera": "Red, then black, then the turn; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_ci_berem",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama kedua - cahaya merah, pola yang sama dengan yang putih",
+     "semantik": "CI BEREM = CAHAYA MERAH",
+     "what": "a torn cream slip with stencilled type reading 'CI BEREM = CAHAYA MERAH'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Ci",
+     "z": 4,
+     "lands": 5
+    },
+    {
+     "name": "foto_senja_merah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Langit merah - warna yang dipakai teori itu sebagai bukti",
+     "semantik": "MERAH",
+     "what": "a sepia halftone photograph of a deep red dusk sky above a dark ridge",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "merah.",
+     "z": 2,
+     "lands": 36
+    },
+    {
+     "name": "kartu_ci_hideng",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama ketiga - cahaya hitam, dan di sini teorinya mulai dipaksakan",
+     "semantik": "CI HIDENG = CAHAYA HITAM",
+     "what": "a torn cream plate with letterpress type reading 'CI HIDENG = CAHAYA HITAM'",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.30 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "hideng",
+     "z": 6,
+     "lands": 65
+    },
+    {
+     "name": "foto_malam",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Langit hitam - cahaya yang tidak memancarkan apa pun",
+     "semantik": "HITAM",
+     "what": "a sepia halftone photograph of a night sky over a black treeline",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "hitam.",
+     "z": 1,
+     "lands": 91
+    },
+    {
+     "name": "figur_pengamat_dua",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang menonton ketiga nama itu - dan mulai menghitung masalahnya",
+     "semantik": "TIGA MASALAH",
+     "what": "a sepia halftone photograph of a man standing with his arms folded looking up, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "Ada",
+     "z": 3,
+     "lands": 127
+    },
+    {
+     "name": "kartu_tiga_masalah",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pembalikan - teori yang baru saja dijelaskan akan dibongkar",
+     "semantik": "TIGA MASALAH",
+     "what": "a torn cream slip with huge stencilled type reading 'TIGA MASALAH'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.62 of the frame wide, down at 0.92",
+     "cut": true,
+     "word": "masalah",
+     "z": 5,
+     "lands": 143
+    }
+   ],
+   "marks": [
+    [
+     "underline-double",
+     13,
+     0.0,
+     "kartu_ci_berem",
+     {
+      "at": 12,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-right",
+     13,
+     -0.6,
+     "foto_malam",
+     {
+      "at": 96,
+      "color": "coral",
+      "box": [
+       0.49,
+       0.64,
+       0.66,
+       0.78
+      ]
+     }
+    ],
+    [
+     "circle",
+     14,
+     2.5,
+     "kartu_tiga_masalah",
+     {
+      "at": 150,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A double underline under 'CI BEREM = CAHAYA MERAH' on 'Ci', an arrow from 'CI HIDENG' to the night sky on 'hitam', then a circle on 'TIGA MASALAH' on 'masalah'.",
+   "emphasis": [
+    {
+     "word": "hitam.",
+     "frame": 419,
+     "motion": "snap",
+     "why": "Pasangan kedua (hitam) harus terasa setara dengan merah; snap menutup pasangannya."
+    }
+   ],
+   "still_gate": "PASS 38.2"
+  },
+  {
+   "id": "s04",
+   "range": [
+    510,
+    734
+   ],
+   "babak": "Babak 24 - Tiga masalah",
+   "peran_retoris": "Masalah pertama - teorinya bertumpu pada anggapan kata airnya banyu atau tirta",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed first objection on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Pertama' high left, the old photograph high right, 'teorinya bertumpu' across the middle, the river low left, 'banyu atau tirta' low right, the listener at the bottom, and 'bukan cai' low right.",
+   "kamera": "Name the assumption, then put the two words beside it; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_pertama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penomoran - tiga masalah, dihitung satu per satu",
+     "semantik": "PERTAMA",
+     "what": "a torn cream slip with huge stencilled type reading 'PERTAMA'",
+     "at": "upper left of the frame, centred at 0.20 across, about 0.50 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "Pertama,",
+     "z": 6,
+     "lands": 17
+    },
+    {
+     "name": "foto_orang_dulu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang dulu - yang oleh teori itu dianggap menyebut air dengan kata lain",
+     "semantik": "ORANG SUNDA DULU",
+     "what": "a sepia halftone photograph of a group of people standing in front of a bamboo house long ago",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "orang",
+     "z": 1,
+     "lands": 97
+    },
+    {
+     "name": "kartu_bertumpu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Letak kesalahannya - seluruh teori berdiri di atas satu anggapan",
+     "semantik": "TEORINYA BERTUMPU PADA ANGGAPAN",
+     "what": "a torn cream slip with stencilled type reading 'BERTUMPU PADA ANGGAPAN'",
+     "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.50",
+     "cut": true,
+     "word": "bertumpu",
+     "z": 4,
+     "lands": 53
+    },
+    {
+     "name": "foto_air_sungai",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air yang dibicarakan - benda yang sama, kata yang diperdebatkan",
+     "semantik": "MENYEBUT AIR",
+     "what": "a sepia halftone photograph of a shallow river running over smooth stones",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "air",
+     "z": 2,
+     "lands": 132
+    },
+    {
+     "name": "kartu_banyu_tirta",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Dua kata yang diklaim dipakai - dan keduanya bukan kata Sunda",
+     "semantik": "BANYU ATAU TIRTA",
+     "what": "a torn cream slip with big stencilled type reading 'BANYU ATAU TIRTA'",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.72",
+     "cut": true,
+     "word": "banyu",
+     "z": 5,
+     "lands": 160
+    },
+    {
+     "name": "figur_pendengar_kedua",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pendengar - yang menunggu kata berikutnya, karena kata berikutnya membantah",
+     "semantik": "BUKAN CAI",
+     "what": "a sepia halftone photograph of a woman standing with one hand raised as if to interrupt, seen from the side",
+     "at": "bottom of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.90",
+     "cut": true,
+     "word": "tirta,",
+     "z": 3,
+     "lands": 187
+    },
+    {
+     "name": "kartu_cahi",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang sebenarnya dipakai - dan ia satu kata saja",
+     "semantik": "BUKAN CAI",
+     "what": "a torn cream slip with huge stencilled type reading 'BUKAN CAI'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.90",
+     "cut": true,
+     "word": "cahi.",
+     "z": 7,
+     "lands": 215
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     12,
+     -3.0,
+     "kartu_pertama",
+     {
+      "at": 24,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-right",
+     13,
+     1.4,
+     "kartu_banyu_tirta",
+     {
+      "at": 168,
+      "color": "coral",
+      "box": [
+       0.393,
+       0.6415,
+       0.598,
+       0.7815
+      ]
+     }
+    ],
+    [
+     "strike",
+     12,
+     2.8,
+     "kartu_cahi",
+     {
+      "at": 222,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A box around 'PERTAMA' on 'Pertama', an arrow from the river to 'BANYU ATAU TIRTA' on 'air', then a strike through 'BUKAN CAI' on 'cahi'.",
+   "emphasis": [
+    {
+     "word": "Pertama,",
+     "frame": 527,
+     "motion": "snap",
+     "why": "Kartu pertama dari tiga masalah — snap adalah bunyi urutan, bukan hiasan."
+    }
+   ],
+   "still_gate": "PASS 34.6"
+  },
+  {
+   "id": "s05",
+   "range": [
+    734,
+    896
+   ],
+   "babak": "Babak 24 - Tiga masalah",
+   "peran_retoris": "Bantahan - itu keliru; cai kata Sunda sehari-hari, banyu kata Jawa",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed correction page on aged newsprint: a crimson block across the upper left, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Itu keliru' high left, 'cai = kata Sunda' high right, the speaker low left, the Sundanese market centre, 'banyu = kata Jawa' low right, and the Javanese fields at the bottom.",
+   "kamera": "Correct it in two words, one for each language; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_keliru",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bantahan langsung - bukan disimpulkan, dikatakan",
+     "semantik": "ITU KELIRU",
+     "what": "a torn cream slip with huge stencilled type reading 'ITU KELIRU'",
+     "at": "upper left of the frame, centred at 0.20 across, about 0.50 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Itu",
+     "z": 3,
+     "lands": 15,
+     "tertutup_boleh": "the speaker's head must stay clear and he stands in front of this slip in the picture: its lower margin is blank paper, and the only words it hides are the bottom of the torn edge. Raised above it, the slip still reads ITU KELIRU in full."
+    },
+    {
+     "name": "kartu_cahi_sunda",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang benar - dan ia kata sehari-hari, bukan kata kuno",
+     "semantik": "CAI = KATA SUNDA SEHARI-HARI",
+     "what": "a torn cream slip with stencilled type reading 'CAI = KATA SUNDA SEHARI-HARI'",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "Cahi",
+     "z": 5,
+     "lands": 49
+    },
+    {
+     "name": "figur_penutur_sunda",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang berbicara - dan memakai kata itu setiap hari tanpa memikirkannya",
+     "semantik": "KATA SUNDA",
+     "what": "a sepia halftone photograph of a standing old man talking with one open hand raised to chest height, seen from the side",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.36 of the frame wide, down at 0.70",
+     "erase": [
+      [
+       0,
+       0.8,
+       1,
+       1
+      ]
+     ],
+     "cut": true,
+     "word": "Sunda",
+     "z": 4,
+     "lands": 75,
+     "piece_catatan": "cut at the chest by the torn page edge he stands behind: his lowest rows are his torso and his raised hand, not ground. Nothing is attached — the alpha ends on a straight edge where the page crosses him."
+    },
+    {
+     "name": "foto_pasar_sunda",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Pasar - tempat kata sehari-hari itu terdengar, bukan di prasasti",
+     "semantik": "SEHARI-HARI",
+     "what": "a sepia halftone photograph of a village market with baskets of produce and talking vendors",
+     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+     "cut": true,
+     "word": "sehari",
+     "z": 2,
+     "lands": 86
+    },
+    {
+     "name": "kartu_banyu_jawa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang dipakai teori itu ternyata milik bahasa sebelah",
+     "semantik": "BANYU = KATA JAWA",
+     "what": "a torn cream plate with letterpress type reading 'BANYU = KATA JAWA'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.32 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "Banyu",
+     "z": 6,
+     "lands": 122
+    },
+    {
+     "name": "foto_sawah_jawa",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sawah Jawa - wilayah bahasa yang dipinjam teori itu tanpa disebut",
+     "semantik": "KATA JAWA",
+     "what": "a sepia halftone photograph of flat wet rice fields with a low earthen bund",
+     "at": "bottom of the frame, centred at 0.48 across, about 0.94 of the frame wide, down at 0.86",
+     "cut": true,
+     "word": "Jawa.",
+     "z": 1,
+     "lands": 150
+    }
+   ],
+   "marks": [
+    [
+     "cross",
+     13,
+     -2.0,
+     "kartu_keliru",
+     {
+      "at": 22,
+      "color": "crimson"
+     }
+    ],
+    [
+     "brackets",
+     14,
+     0.0,
+     "kartu_cahi_sunda",
+     {
+      "at": 56,
+      "color": "coral"
+     }
+    ],
+    [
+     "squiggle",
+     13,
+     1.6,
+     "kartu_banyu_jawa",
+     {
+      "at": 129,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A cross over 'ITU KELIRU' on 'Itu', brackets around 'CAI = KATA SUNDA SEHARI-HARI' on 'Cahi', then a squiggle under 'BANYU = KATA JAWA' on 'Banyu'.",
+   "emphasis": [
+    {
+     "word": "keliru.",
+     "frame": 754,
+     "motion": "strike",
+     "why": "Detektor hanya membaca 0.19 di sini, tapi seluruh shot ini adalah koreksinya: kata itulah yang memutar klaim, jadi kamera memukul di situ."
+    }
+   ],
+   "still_gate": "PASS 36.6"
+  },
+  {
+   "id": "s06",
+   "range": [
+    896,
+    1033
+   ],
+   "babak": "Babak 24 - Tiga masalah",
+   "peran_retoris": "Masalah kedua - gunung itu disebut tingginya lebih dari 17.000 meter",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed second objection on aged newsprint: a mustard block across the upper left, a charcoal strip along the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "'Kedua' high left, the far mountain high right, 'tingginya' across the middle, '17.000 meter' low left, and the cloud bank low right.",
+   "kamera": "Set the number alone, then let it stand there; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_kedua",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penomoran - masalah kedua dari tiga",
+     "semantik": "KEDUA",
+     "what": "a torn cream slip with huge stencilled type reading 'KEDUA'",
+     "at": "upper left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Kedua,",
+     "z": 4,
+     "lands": 20
+    },
+    {
+     "name": "foto_gunung_jauh",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Gunung dari jauh - benda yang tingginya sedang diperdebatkan",
+     "semantik": "GUNUNG ITU",
+     "what": "a sepia halftone photograph of a mountain seen far off across a wide valley",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+     "cut": true,
+     "word": "gunung",
+     "z": 1,
+     "lands": 47
+    },
+    {
+     "name": "kartu_tingginya",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang diukur - tinggi, bukan usia dan bukan nama",
+     "semantik": "TINGGINYA",
+     "what": "a torn cream slip with big stencilled type reading 'TINGGINYA'",
+     "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "tingginya",
+     "z": 5,
+     "lands": 67
+    },
+    {
+     "name": "kartu_17000",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Angka yang mustahil - dua kali tinggi Everest",
+     "semantik": "17.000 METER",
+     "what": "a torn cream slip with huge stencilled type reading '17.000 METER'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.74",
+     "cut": true,
+     "word": "17",
+     "z": 3,
+     "lands": 95
+    },
+    {
+     "name": "foto_awan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Awan - lapisan yang dilewati angka setinggi itu",
+     "semantik": "LEBIH DARI",
+     "what": "a sepia halftone photograph of a thick cloud bank lying below a mountain shoulder",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.48 of the frame wide, down at 0.76",
+     "cut": true,
+     "word": "meter.",
+     "z": 2,
+     "lands": 119
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     12,
+     -3.2,
+     "kartu_kedua",
+     {
+      "at": 27,
+      "color": "crimson"
+     }
+    ],
+    [
+     "arrow-down",
+     16,
+     0.6,
+     "kartu_17000",
+     {
+      "at": 100,
+      "color": "coral",
+      "box": [
+       0.028,
+       0.378,
+       0.697,
+       0.996
+      ]
+     }
+    ],
+    [
+     "circle",
+     14,
+     3.4,
+     "foto_awan",
+     {
+      "at": 126,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A box around 'KEDUA' on 'Kedua', a long downward arrow from 'TINGGINYA' onto the 17.000 slip on '17', then a circle on the cloud bank on 'meter'.",
+   "emphasis": [
+    {
+     "word": "Kedua,",
+     "frame": 916,
+     "motion": "snap",
+     "why": "Skor 0.66 — kata terkuat di modul; urutan kedua harus terlihat di badan."
+    },
+    {
+     "word": "meter.",
+     "frame": 1015,
+     "motion": "landing",
+     "why": "Angka 17.000 baru selesai di 'meter.'; kartu angka sudah mendarat lebih dulu, kamera yang menutup."
+    }
+   ],
+   "still_gate": "PASS 36.6"
+  },
+  {
+   "id": "s07",
+   "range": [
+    1033,
+    1366
+   ],
+   "babak": "Babak 24 - Tiga masalah",
+   "peran_retoris": "Pembanding dan masalah ketiga - Everest 8.848, Sunda asli 4.000, dan kata cahaya bukan ci",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed comparison page on aged newsprint: a charcoal block across the upper left, a crimson strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The Everest photograph high left, '8.848 m' high right, the climber low left, the Sundanese peak centre, the measurer low right, '4.000 m' across the middle, 'ketiga' upper centre, and the closing slip along the bottom.",
+   "kamera": "Two numbers, then the third objection; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_everest",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Everest - pembanding yang tingginya diukur, bukan dikarang",
+     "semantik": "GUNUNG EVEREST",
+     "what": "a sepia halftone photograph of a high snow ridge",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": "Everest",
+     "z": 1,
+     "lands": 21
+    },
+    {
+     "name": "strip_koran_8848",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Angka pembanding - dicetak, bukan dikutip dari ingatan",
+     "semantik": "EVEREST 8.848 M",
+     "what": "a torn newsprint strip with 8.848 set very large",
+     "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.26",
+     "cut": true,
+     "word": ".848",
+     "z": 5,
+     "lands": 49
+    },
+    {
+     "name": "figur_pendaki",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Pendaki - skala manusia di gunung setinggi itu",
+     "semantik": "METER",
+     "what": "a sepia halftone photograph of a climber standing on a snow slope with an ice axe",
+     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "meter.",
+     "z": 4,
+     "lands": 84,
+     "motion_basis": "Kaki dan satu lengan, selebar 0.24 frame; badan tetap tegak. pose1 = berdiri, kapak di tanah.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "plant the ice axe and take one step up the slope"
+      },
+      {
+       "pose": 3,
+       "action": "stop and look up at the ridge"
+      },
+      {
+       "pose": 4,
+       "action": "pull the axe free and lean on it"
+      }
+     ]
+    },
+    {
+     "name": "foto_sunda",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Gunung Sunda yang asli - tingginya seperempat pembanding tadi",
+     "semantik": "GUNUNG SUNDA ASLI",
+     "what": "a sepia halftone photograph of a broad forested volcanic slope",
+     "at": "centre right of the frame, centred at 0.69 across, about 0.65 of the frame wide, down at 0.52",
+     "cut": true,
+     "word": "Sunda",
+     "z": 2,
+     "lands": 127
+    },
+    {
+     "name": "figur_pengukur_gunung",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang mengukur lereng - tinggi yang asli diukur, bukan dikarang",
+     "semantik": "YANG ASLI",
+     "what": "a sepia halftone photograph of a man reading a clinometer on a slope",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.70",
+     "cut": true,
+     "word": "asli",
+     "z": 3,
+     "lands": 143,
+     "head": [
+      0.56,
+      0.17,
+      0.82,
+      0.4
+     ]
+    },
+    {
+     "name": "kartu_4000",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Angka kedua - seperempat dari angka teori, dan itu yang terukur",
+     "semantik": "SEKITAR 4.000 METER",
+     "what": "a torn cream slip with huge stencilled type reading 'SEKITAR 4.000 M'",
+     "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.77",
+     "cut": true,
+     "word": "4",
+     "z": 7,
+     "lands": 171
+    },
+    {
+     "name": "kartu_ketiga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penomoran terakhir - dan yang paling sederhana",
+     "semantik": "KETIGA",
+     "what": "a torn cream slip with huge stencilled type reading 'KETIGA'",
+     "at": "upper centre of the frame, centred at 0.50 across, about 0.64 of the frame wide, down at 0.24",
+     "cut": true,
+     "word": "Ketiga,",
+     "z": 6,
+     "lands": 220
+    },
+    {
+     "name": "kartu_bukan_ci",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Sanggahan terakhir - satu kata yang tidak ada dalam bahasa yang diklaim",
+     "semantik": "KATA CAHAYA BUKAN CI",
+     "what": "a torn cream slip with big stencilled type reading 'KATA CAHAYA BUKAN CI'",
+     "at": "bottom of the frame, centred at 0.62 across, about 0.75 of the frame wide, down at 1.02",
+     "hint": [
+      0.625,
+      1.019
+     ],
+     "slot_catatan": "cut by the frame: only its top edge is in the picture, so the ink test has no print to find. The slot comes from the still's measured corner (left 0.25, top 0.855) and the slip runs off the bottom edge.",
+     "cut": true,
+     "word": "ci.",
+     "z": 8,
+     "lands": 310
+    }
+   ],
+   "marks": [
+    [
+     "arrow-right",
+     15,
+     -1.0,
+     "strip_koran_8848",
+     {
+      "at": 56,
+      "color": "crimson",
+      "box": [
+       0.363,
+       0.1535,
+       0.754,
+       0.2935
+      ]
+     }
+    ],
+    [
+     "bracket-left",
+     13,
+     0.0,
+     "kartu_4000",
+     {
+      "at": 178,
+      "color": "coral"
+     }
+    ],
+    [
+     "strike",
+     13,
+     2.2,
+     "kartu_bukan_ci",
+     {
+      "at": 316,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "An arrow from the Everest photograph to the 8.848 strip on '.848', a left bracket beside 'SEKITAR 4.000 M' on '4', then a strike through 'KATA CAHAYA BUKAN CI' on 'ci'.",
+   "emphasis": [
+    {
+     "word": "meter.",
+     "frame": 1117,
+     "motion": "landing",
+     "why": "Tinggi Everest selesai di sini — pendaki mendarat bersama kata itu."
+    },
+    {
+     "word": "Ketiga,",
+     "frame": 1253,
+     "motion": "snap",
+     "why": "Masalah ketiga dibuka; snap memberi bunyi urutan yang sama dengan 'Pertama'."
+    },
+    {
+     "word": "ci.",
+     "frame": 1343,
+     "motion": "strike",
+     "why": "Kata yang dibantah seluruh modul. Kartu terakhir memukul tepat di situ."
+    }
+   ],
+   "still_gate": "PASS 33.2"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Putaran 7 — kata penegasan harus terasa di badan, bukan cuma terdengar",
+   "Hukum kata penegasan (R2b1)",
+   "Hukum kedatangan kartu (R2e)",
+   "Kartu yang terpotong tepi frame"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage"
+  ],
+  "catatan": "Rencana m20 ditulis sebelum konteks diwajibkan; blok ini diisi saat tinjauan 30-10 supaya jejaknya terbaca."
+ }
+}

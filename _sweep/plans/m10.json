@@ -1,0 +1,1343 @@
+{
+ "plan_version": 2,
+ "module": "m10",
+ "klaim": "Lapisan kedua - mata air di dinding Cekungan - juga sudah tidak terlihat: sebagian masih mengalir, sebagian tertimbun. Nama-nama 'ci' adalah peta dari keduanya, dan peta itu bertahan lebih lama daripada bentang alam yang dipetakannya. Semuanya masih lisan sampai dua prasasti muncul: prasasti Tugu dari abad kelima mencatat dua saluran air, Candrabaga dan Gomati, sepanjang 6.122 tumbak, selesai dalam 21 hari.",
+ "payoff": "Nama-nama ini bukan cerita rakyat: ada batu dari abad kelima yang menuliskan saluran airnya, lengkap dengan angka panjang dan jumlah hari kerjanya.",
+ "serah": "prasasti Tugu sebagai bukti tertulis pertama, untuk m11 yang membaca isi dan angka-angkanya lebih jauh",
+ "terima": "dua lapisan nama dari m09, dengan lapisan pertama (rawa) sudah dijelaskan",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip epigrafi dan peta Indonesia: lembar peta kolonial, prasasti batu beraksara Palawa, foto hitam-putih batu bertulis, buku tulis lapangan, koran daerah. Lanskap: dinding cekungan yang berair, saluran irigasi di sawah, jalan kampung, batu prasasti di dalam cungkup. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Peta nama di Jawa Barat punya dua lapisan yang keduanya tidak terlihat: rawa sisa danau yang sudah jadi permukiman, dan mata air di dinding Cekungan yang sebagian masih mengalir dan sebagian tertimbun. Nama-nama berawalan 'ci' memetakan keduanya. Peta bertahan lebih lama daripada wilayahnya - itu cara peta bekerja, bukan kiasan. Semua ini lisan sampai abad kelima, ketika prasasti Tugu mencatat penggalian Candrabaga oleh Dirajaguru dan Gomati atas perintah Purnawarman pada tahun ke-22, sepanjang 6.122 tumbak, selesai dalam 21 hari.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 6 - Dua lapisan nama",
+    "shots": [
+     "s01",
+     "s02",
+     "s03",
+     "s04"
+    ],
+    "fokus": "Lapisan kedua (mata air) dan peta yang bertahan lebih lama daripada wilayahnya."
+   },
+   {
+    "babak": "Babak 7 - Yang lisan dan yang tertulis",
+    "shots": [
+     "s05",
+     "s06",
+     "s07"
+    ],
+    "fokus": "Sampai di sini semuanya lisan; lalu datang dua peristiwa tulis."
+   },
+   {
+    "babak": "Babak 7 - Yang lisan dan yang tertulis",
+    "shots": [
+     "s08",
+     "s09"
+    ],
+    "fokus": "Prasasti Tugu: abad kelima, aksara Palawa, bahasa Sanskerta."
+   },
+   {
+    "babak": "Babak 7 - Yang lisan dan yang tertulis",
+    "shots": [
+     "s10",
+     "s11",
+     "s12"
+    ],
+    "fokus": "Dua saluran yang dicatat prasasti: Candrabaga, Gomati, dan angka-angkanya."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    226
+   ],
+   "babak": "Babak 6 - Dua lapisan nama",
+   "peran_retoris": "Lapisan kedua - mata air yang sebagian masih mengalir, sebagian sudah tertimbun",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed spring page on aged newsprint: a mustard block across the upper right, a charcoal strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The second layer, half alive: the label high left, the basin wall high right, the running spring low left, and the man standing on paving where a spring is buried low right.",
+   "kamera": "Hold the wall, drop to the running spring, then settle on the paving; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_lapisan_kedua",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penomoran lapisan - yang kedua, yang tidak kelihatan di peta mana pun",
+     "semantik": "LAPISAN KEDUA",
+     "what": "a torn cream slip with stencilled type reading 'LAPISAN KEDUA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "kedua",
+     "z": 4,
+     "lands": 23
+    },
+    {
+     "name": "foto_dinding_berair",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Dinding cekungan yang berair - tempat lapisan kedua itu keluar",
+     "semantik": "DI DINDING CEKUNGAN",
+     "what": "a sepia halftone photograph of a steep basin wall with water running down its face",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Cekungan,",
+     "z": 1,
+     "lands": 80
+    },
+    {
+     "name": "foto_mata_air_mengalir",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Yang masih mengalir - lapisan yang masih bisa ditemukan hari ini",
+     "semantik": "MASIH MENGALIR",
+     "what": "a sepia halftone photograph of a spring running out of rock into a stone basin",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "mengalir",
+     "z": 2,
+     "lands": 136
+    },
+    {
+     "name": "orang_di_atas_mata_air",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berdiri di atas mata air yang tertimbun - tidak ada yang tahu ia memijak apa",
+     "semantik": "SUDAH TERTIMBUN",
+     "what": "a sepia halftone photograph of a man standing on a paved yard, hands at his sides, seen from the side",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "tertimbun.",
+     "z": 3,
+     "lands": 192
+    }
+   ],
+   "marks": [
+    [
+     "arrow-down",
+     14,
+     2.6,
+     "foto_dinding_berair",
+     {
+      "at": 100,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Arrow-down on the photograph on 'cekungan,'.",
+   "emphasis": [
+    {
+     "frame": 192.0,
+     "word": "tertimbun.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 40.4"
+  },
+  {
+   "id": "s02",
+   "range": [
+    226,
+    326
+   ],
+   "babak": "Babak 6 - Dua lapisan nama",
+   "peran_retoris": "Kunci - nama-nama berawalan 'ci' memetakan kedua lapisan itu",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed prefix page on aged newsprint: a crimson block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Water, word, map: the river water high left, the prefix slip low left, the wall map high right, and the layered map photograph low right - the page reads as a key.",
+   "kamera": "Hold the water, then rise to the wall map; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_air_ci",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air sungai dari dekat - arti harfiah awalan 'ci'",
+     "semantik": "CI",
+     "what": "a sepia halftone photograph of fast brown river water close up, surface broken by stones",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Nama",
+     "z": 1,
+     "lands": 6
+    },
+    {
+     "name": "kartu_ci",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Awalan sebagai kunci - 'ci' berarti air, dan itu yang dipakai menamai",
+     "semantik": "CI = AIR",
+     "what": "a torn cream slip with big stencilled type reading 'CI' and a small line 'AIR'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "ci",
+     "z": 4,
+     "lands": 24
+    },
+    {
+     "name": "foto_peta_di_dinding",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Peta tergantung di dinding - gambar yang dipakai orang tiap hari",
+     "semantik": "PETA DARI KEDUANYA",
+     "what": "a sepia halftone photograph of an old wall map pinned open, its edges curling",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "peta",
+     "z": 2,
+     "lands": 63
+    },
+    {
+     "name": "foto_peta_lapisan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Peta yang sama, dilihat dekat: dua lapisan yang tidak bisa dibaca sekaligus",
+     "semantik": "KEDUANYA",
+     "what": "a sepia halftone photograph of a map surface close up, two line systems crossing",
+     "at": "lower right of the frame, centred at 0.74 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "keduanya.",
+     "z": 3,
+     "lands": 84
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     11,
+     3.6,
+     "kartu_ci",
+     {
+      "at": 24,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'ci'.",
+   "emphasis": [],
+   "still_gate": "PASS 41.3"
+  },
+  {
+   "id": "s03",
+   "range": [
+    326,
+    534
+   ],
+   "babak": "Babak 6 - Dua lapisan nama",
+   "peran_retoris": "Peta - digambar untuk bentang alam yang sudah tidak ada, masih dipakai untuk yang ada",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed map page on aged newsprint: a charcoal block behind the old sheet, a coral strip along the bottom, printed columns showing through, masking tape at the corners.",
+   "tata_letak_kolase": "Old sheet, new ground: the map high left, the 'bentang yang sudah tidak ada' slip high right, the reader holding it low right, the 'masih dipakai' slip low left, and the city photograph low centre.",
+   "kamera": "Open on the sheet, then pull back to the reader and the city behind him; range 29% of fitZoom.",
+   "cards": [
+    {
+     "name": "peta_lama",
+     "bahan": "peta",
+     "wujud": "sobekan_pita",
+     "semiotik": "Peta yang digambar untuk bentang alam yang sudah tidak ada",
+     "semantik": "PETA LAMA",
+     "what": "a torn map sheet with a river drawn on it, no towns marked, edges browned",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "digambar",
+     "z": 1,
+     "lands": 44
+    },
+    {
+     "name": "kartu_bentang_hilang",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang dipetakan sudah tidak ada - kalimat yang menjelaskan seluruh babak",
+     "semantik": "BENTANG YANG SUDAH TIDAK ADA",
+     "what": "a torn cream slip with stencilled type reading 'BENTANG YANG SUDAH TIDAK ADA'",
+     "at": "upper right of the frame, centred at 0.75 across, about 0.47 of the frame wide",
+     "cut": true,
+     "word": "ada,",
+     "z": 3,
+     "lands": 109,
+     "tertutup_boleh": "the man holding the map stands in front of this slip's lower right corner; the still draws him over it too. His head and neck must stay clear, so he stays on top and the slip's last letters sit behind his shoulder — the words are still fully readable across the top of the page."
+    },
+    {
+     "name": "pemakai_peta",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang memakai peta lama di kota sekarang - dua waktu dalam satu tangan",
+     "semantik": "MASIH DIPAKAI",
+     "what": "a sepia halftone photograph of a man standing on a street holding an old map open, seen from the side",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "dipakai",
+     "z": 5,
+     "lands": 141
+    },
+    {
+     "name": "kartu_masih_dipakai",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kalimat yang membalik arah: peta tidak salah, peta hanya lebih tua",
+     "semantik": "MASIH DIPAKAI",
+     "what": "a torn cream slip with letterpress type reading 'MASIH DIPAKAI'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "untuk",
+     "z": 4,
+     "lands": 155,
+     "tertutup_boleh": "same figure, same reason: the man overlaps the slip's right edge in the still as well. The slip reads whole at the left of the page and his face is clear."
+    },
+    {
+     "name": "foto_kota_sekarang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Bentang alam yang ada sekarang - yang tidak dikenal peta itu",
+     "semantik": "YANG ADA SEKARANG",
+     "what": "a sepia halftone photograph of a wide street junction with shops on both sides",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "sekarang.",
+     "z": 2,
+     "lands": 192
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     3.2,
+     "peta_lama",
+     {
+      "at": 70,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the map on 'digambar'.",
+   "emphasis": [
+    {
+     "frame": 342.6,
+     "word": "Sebuah",
+     "motion": "landing",
+     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.4"
+  },
+  {
+   "id": "s04",
+   "range": [
+    534,
+    754
+   ],
+   "babak": "Babak 6 - Dua lapisan nama",
+   "peran_retoris": "Tesis - ini bukan kiasan: peta bertahan lebih lama daripada wilayahnya",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed endurance page on aged newsprint: a mustard block across the upper left, a charcoal block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Not a metaphor, an instrument: the 'bukan kiasan' slip high left, the surviving sheet across the centre, the walker on the old road low left, the long-lived slip low centre, and the changed ground low right.",
+   "kamera": "Hold the slip, open to the sheet, then follow the walker out of frame; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_bukan_kiasan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penolakan tafsir - ini alat, bukan perumpamaan",
+     "semantik": "BUKAN KIASAN",
+     "what": "a torn cream slip with stencilled type reading 'BUKAN KIASAN'",
+     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "kiasan.",
+     "z": 4,
+     "lands": 31
+    },
+    {
+     "name": "peta_bertahan",
+     "bahan": "peta",
+     "wujud": "sobekan_pita",
+     "semiotik": "Lembar yang bertahan - benda yang umurnya melewati wilayahnya",
+     "semantik": "CARA PETA BEKERJA",
+     "what": "a torn map sheet with a faint river line and a hand-ruled grid across it",
+     "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
+     "cut": true,
+     "word": "bekerja,",
+     "z": 1,
+     "lands": 93,
+     "slot_catatan": "the map is drawn in pale ink on cream: 3 % of the piece is dark enough to count as ink, so the correlation has two thin wavy lines and a grid to lock onto and settles on whichever pale patch is nearest. Cropping the still at this slot and putting it beside the card shows the same sheet, the same fold, the same torn corner — the slot is right and the measure cannot see it."
+    },
+    {
+     "name": "pejalan_di_jalan_lama",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang berjalan di jalan yang mengikuti garis peta lama - wilayah yang berubah",
+     "semantik": "WILAYAH YANG DIPETAKAN",
+     "what": "a sepia halftone photograph of a man walking along a narrow road between fields, seen from behind",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.43 of the frame wide",
+     "cut": true,
+     "word": "lama",
+     "z": 2,
+     "lands": 155
+    },
+    {
+     "name": "kartu_lebih_lama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perbandingan umur sebagai kalimat - inti tesis modul",
+     "semantik": "PETA LEBIH LAMA DARIPADA WILAYAHNYA",
+     "what": "a torn cream slip with letterpress type reading 'LEBIH LAMA DARIPADA WILAYAHNYA'",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "daripada",
+     "z": 5,
+     "lands": 165
+    },
+    {
+     "name": "foto_wilayah_berubah",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Wilayah yang dipetakan, sudah berubah - yang tidak ikut menua bersama petanya",
+     "semantik": "DIPETAKANNYA",
+     "what": "a sepia halftone photograph of a river straightened into a concrete channel between houses",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "dipetakannya.",
+     "z": 3,
+     "lands": 201
+    }
+   ],
+   "marks": [
+    [
+     "arrow-down",
+     14,
+     -2.4,
+     "kartu_bukan_kiasan",
+     {
+      "at": 55,
+      "color": "coral"
+     }
+    ],
+    [
+     "underline",
+     12,
+     1.6,
+     "peta_bertahan",
+     {
+      "at": 115,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Arrow-down on the printed slip on 'kiasan.'; underline on the map on 'bekerja,'.",
+   "emphasis": [
+    {
+     "frame": 565.2,
+     "word": "kiasan.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 38.4"
+  },
+  {
+   "id": "s05",
+   "range": [
+    754,
+    836
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Batas - sampai di sini semuanya masih lisan",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed oral page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A night with nothing written in it: the dark kampung high left, the 'sampai di sini' slip low left, two men talking low centre, and the 'masih lisan' slip high right.",
+   "kamera": "Hold the dark street, settle on the two men; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_kampung_malam",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kampung malam tanpa satu tulisan pun - dunia yang hanya punya mulut",
+     "semantik": "SAMPAI DI SINI",
+     "what": "a sepia halftone photograph of a village lane at night with lamps in the windows",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Sampai",
+     "z": 1,
+     "lands": 20
+    },
+    {
+     "name": "kartu_sampai_sini",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Garis batas narasi - sebelum dan sesudah tulisan",
+     "semantik": "SAMPAI DI SINI",
+     "what": "a torn cream slip with stencilled type reading 'SAMPAI DI SINI'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "sini,",
+     "z": 3,
+     "lands": 34
+    },
+    {
+     "name": "dua_orang_bicara",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Dua orang berbicara - satu-satunya alat warisan yang dipunyai nama-nama ini",
+     "semantik": "SEMUANYA",
+     "what": "a sepia halftone photograph of two men talking close together on a village road, seen from the side",
+     "at": "lower centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "semuanya",
+     "z": 2,
+     "lands": 55
+    },
+    {
+     "name": "kartu_lisan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata yang menamai seluruh masa sebelum batu: lisan",
+     "semantik": "MASIH LISAN",
+     "what": "a torn cream slip with letterpress type reading 'MASIH LISAN'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "lisan.",
+     "z": 4,
+     "lands": 69
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     3.6,
+     "kartu_sampai_sini",
+     {
+      "at": 34,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     15,
+     -2.9,
+     "dua_orang_bicara",
+     {
+      "at": 55,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'sini,'; circle on the figure on 'semuanya'.",
+   "emphasis": [],
+   "still_gate": "PASS 32.6"
+  },
+  {
+   "id": "s06",
+   "range": [
+    836,
+    1038
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Masalah - diwariskan dari mulut ke mulut, tidak ada yang bisa membuktikan kapan lahirnya",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed inheritance page on aged newsprint: a mustard block behind the old kampung, a crimson strip across the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The cain of mouths: the old kampung high left, the speaker low left, the 'mulut ke mulut' slip high right, the empty page low right, and the 'kapan lahir' slip along the bottom.",
+   "kamera": "Hold the speaker's face, drop to the empty page, then settle on the question; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_kampung_tua",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kampung tua tanpa arsip - tempat nama diwariskan tanpa catatan",
+     "semantik": "DIWARISKAN",
+     "what": "a sepia halftone photograph of old houses with bamboo walls along a dirt lane",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "itu",
+     "z": 2,
+     "lands": 33
+    },
+    {
+     "name": "figur_penutur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang tua yang berbicara - mata rantai yang tidak meninggalkan jejak",
+     "semantik": "DARI MULUT KE MULUT",
+     "what": "a sepia halftone photograph of an old man sitting and speaking with one hand raised, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "mulut",
+     "z": 3,
+     "lands": 65
+    },
+    {
+     "name": "kartu_mulut_ke_mulut",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Mekanisme warisan yang tidak punya tanggal",
+     "semantik": "MULUT KE MULUT",
+     "what": "a torn cream slip with stencilled type reading 'MULUT KE MULUT'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "mulut,",
+     "z": 4,
+     "lands": 79
+    },
+    {
+     "name": "foto_tanpa_bukti",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Halaman kosong - tidak ada yang bisa membuktikan kapan nama itu lahir",
+     "semantik": "TIDAK ADA YANG BISA MEMBUKTIKAN",
+     "what": "a sepia halftone photograph of a blank page in an old ledger, ruled lines empty",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "membuktikan",
+     "z": 1,
+     "lands": 128,
+     "slot_catatan": "the card is a photograph of an open blank notebook — almost no printed ink, and what there is sits in one ruled corner. The ink test has no print to find here; the slot puts the notebook's spine and its ruled page exactly where the still draws them, checked by cropping the still at the slot."
+    },
+    {
+     "name": "kartu_kapan_lahir",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pertanyaan yang tidak bisa dijawab mulut - dan itu yang membuat batu dibutuhkan",
+     "semantik": "KAPAN LAHIR?",
+     "what": "a torn cream slip with letterpress type reading 'KAPAN LAHIR?'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "lahir.",
+     "z": 5,
+     "lands": 181
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     15,
+     2.4,
+     "kartu_mulut_ke_mulut",
+     {
+      "at": 79,
+      "color": "crimson"
+     }
+    ],
+    [
+     "ellipse",
+     16,
+     -1.9,
+     "figur_penutur",
+     {
+      "at": 65,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'mulut,'; ellipse on the figure on 'mulut'.",
+   "emphasis": [
+    {
+     "frame": 1017.0,
+     "word": "lahir.",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 39.2"
+  },
+  {
+   "id": "s07",
+   "range": [
+    1038,
+    1196
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Perubahan - dua peristiwa tulis, masing-masing mengejutkan dengan caranya",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed writing page on aged newsprint: a crimson block down the right edge, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The moment writing arrives: the scribe high left, the 'dua peristiwa tulis' slip low left, the carved stone high right, and the 'berbeda' slip low right - two surprises, two corners.",
+   "kamera": "Hold the stylus, then cut to the carved stone; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "juru_tulis",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangan yang menulis - peristiwa pertama: kata keluar dari mulut dan masuk ke benda",
+     "semantik": "PERISTIWA TULIS",
+     "what": "a sepia halftone photograph of a man holding a stylus over a palm leaf, seen from the side",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.48 of the frame wide",
+     "cut": true,
+     "word": "datang",
+     "z": 1,
+     "lands": 16,
+     "motion_basis": "Tangan kanan dan kepala, selebar 0.26 frame; lontar dan lutut tetap. pose1 = duduk membungkuk, stylus menempel di daun.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "draw one short stroke and stop, wrist lifted"
+      },
+      {
+       "pose": 3,
+       "action": "look up from the leaf toward the camera"
+      },
+      {
+       "pose": 4,
+       "action": "set the stylus down and turn the leaf over"
+      }
+     ]
+    },
+    {
+     "name": "kartu_dua_peristiwa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Jumlah peristiwa sebagai kerangka sisa babak",
+     "semantik": "DUA PERISTIWA TULIS",
+     "what": "a torn cream slip with stencilled type reading 'DUA PERISTIWA TULIS'",
+     "at": "lower left of the frame, centred at 0.33 across, about 0.53 of the frame wide",
+     "cut": true,
+     "word": "tulis,",
+     "z": 3,
+     "lands": 47
+    },
+    {
+     "name": "foto_tulisan_batu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tulisan di batu - peristiwa kedua, yang bisa bertahan ratusan tahun",
+     "semantik": "PERISTIWA KEDUA",
+     "what": "a sepia halftone photograph of carved letters on a weathered stone surface",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "mengejutkan",
+     "z": 2,
+     "lands": 91
+    },
+    {
+     "name": "kartu_berbeda",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Dua cara yang tidak bisa dibandingkan - daun dan batu",
+     "semantik": "BERBEDA",
+     "what": "a torn cream slip with letterpress type reading 'BERBEDA'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "berbeda.",
+     "z": 4,
+     "lands": 133
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     11,
+     3.0,
+     "kartu_dua_peristiwa",
+     {
+      "at": 47,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     13,
+     -2.4,
+     "juru_tulis",
+     {
+      "at": 16,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'tulis,'; box on the figure on 'datang'.",
+   "emphasis": [],
+   "still_gate": "PASS 30.5"
+  },
+  {
+   "id": "s08",
+   "range": [
+    1196,
+    1405
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Benda - prasasti Tugu dari abad kelima, peninggalan Tarumanegara",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed inscription page on aged newsprint: a charcoal block behind the stone, a mustard strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The stone and its papers: the stone photograph high left, the 'prasasti Tugu' slip high right, the century slip low right, the visitor low left, and the kingdom slip along the bottom.",
+   "kamera": "Circle the stone, then settle on the century; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_batu_tugu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Batu bertulis itu sendiri - benda yang menjawab pertanyaan 'kapan'",
+     "semantik": "BATU",
+     "what": "a sepia halftone photograph of a rounded inscribed stone standing under a small shelter",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Batu,",
+     "z": 1,
+     "lands": 34
+    },
+    {
+     "name": "kartu_prasasti_tugu",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Namanya - prasasti Tugu, batu yang jadi dokumen pertama",
+     "semantik": "PRASASTI TUGU",
+     "what": "a torn cream slip with stencilled type reading 'PRASASTI TUGU'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Tugu",
+     "z": 3,
+     "lands": 81
+    },
+    {
+     "name": "kartu_abad_5",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tanggal pertama yang bisa diperiksa - abad kelima Masehi",
+     "semantik": "ABAD KE-5 MASEHI",
+     "what": "a torn cream slip with big stencilled type reading 'ABAD 5 MASEHI'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Masehi,",
+     "z": 4,
+     "lands": 129
+    },
+    {
+     "name": "pengunjung_prasasti",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca batu - pembaca yang berdiri di ujung rantai lisan",
+     "semantik": "PENINGGALAN",
+     "what": "a sepia halftone photograph of a man leaning to read an inscribed stone, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "peninggalan",
+     "z": 2,
+     "lands": 159
+    },
+    {
+     "name": "kartu_tarumanegara",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kerajaan yang meninggalkan batu itu - nama yang harus terbaca, di pita koran",
+     "semantik": "TARUMANEGARA",
+     "what": "a torn newsprint strip with bold type reading 'TARUMANEGARA'",
+     "at": "bottom of the frame, centred at 0.48 across, about 0.52 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "Tarumanegara.",
+     "z": 5,
+     "lands": 172
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     12,
+     3.6,
+     "kartu_prasasti_tugu",
+     {
+      "at": 81,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     14,
+     -2.9,
+     "pengunjung_prasasti",
+     {
+      "at": 159,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'tugu'; circle on the figure on 'peninggalan'.",
+   "emphasis": [],
+   "still_gate": "PASS 35.8"
+  },
+  {
+   "id": "s09",
+   "range": [
+    1405,
+    1591
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Isi - aksara Palawa, bahasa Sanskerta, mencatat penggalian dua saluran air",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed script page on aged newsprint: a mustard block across the upper right, a crimson strip along the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Reading the stone: the carved letters high left, the Palawa slip low left, the Sanskerta slip high right, the man tracing a letter low left of centre, the two-channels slip low right, and the channel photograph at the bottom.",
+   "kamera": "Follow the finger across the letters, then drop to the channel; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_aksara_terukir",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Aksara Palawa terukir - bentuk huruf yang bukan huruf kita",
+     "semantik": "AKSARANYA PALAWA",
+     "what": "a sepia halftone photograph of Palawa letters carved in a stone surface, raking light",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Aksaranya",
+     "z": 2,
+     "lands": 8
+    },
+    {
+     "name": "kartu_palawa",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama aksaranya - satu dari dua hal yang membuat batu ini bisa dibaca",
+     "semantik": "PALAWA",
+     "what": "a torn cream slip with stencilled type reading 'PALAWA'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Palawa,",
+     "z": 4,
+     "lands": 21
+    },
+    {
+     "name": "kartu_sansekerta",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Bahasa yang dipakai - yang kedua",
+     "semantik": "SANSKERTA",
+     "what": "a torn cream slip with letterpress type reading 'SANSKERTA'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Sansekerta.",
+     "z": 5,
+     "lands": 65
+    },
+    {
+     "name": "tangan_menelusur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Jari menelusuri huruf - cara satu-satunya membaca batu yang aus",
+     "semantik": "DICATAT",
+     "what": "a sepia halftone photograph of a man tracing a carved letter with his finger, seen from the side",
+     "at": "centre of the frame, centred at 0.40 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "mencatat",
+     "z": 3,
+     "lands": 123
+    },
+    {
+     "name": "kartu_dua_saluran",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Isi prasasti dalam dua kata - bukan raja, bukan perang: saluran air",
+     "semantik": "DUA SALURAN AIR",
+     "what": "a torn cream slip with stencilled type reading 'DUA SALURAN AIR'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "dua",
+     "z": 6,
+     "lands": 153
+    },
+    {
+     "name": "foto_saluran_air",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Saluran air di sawah - benda yang dicatat prasasti, masih berbentuk sama",
+     "semantik": "SALURAN AIR",
+     "what": "a sepia halftone photograph of a narrow earth channel running with water between fields",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "air.",
+     "z": 1,
+     "lands": 174
+    }
+   ],
+   "marks": [
+    [
+     "arrow-right",
+     14,
+     -2.0,
+     "kartu_sansekerta",
+     {
+      "at": 85,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "A rightward arrow onto the Sanskrit slip on 'sansekerta'.",
+   "emphasis": [
+    {
+     "frame": 1578.6,
+     "word": "air.",
+     "motion": "landing",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 39.6"
+  },
+  {
+   "id": "s10",
+   "range": [
+    1591,
+    1733
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Saluran pertama - Candrabaga, digali oleh Raja Dirajaguru",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed digging page on aged newsprint: a charcoal block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "One channel named: the Candrabaga slip high left, the channel photograph high right, the digger low left, and the king slip low right.",
+   "kamera": "Hold the name, drop to the digger, then rise to the king's name; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_candrabaga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama saluran pertama - kata yang masih dipakai sebagai nama sungai",
+     "semantik": "CANDRABAGA",
+     "what": "a torn cream slip with big stencilled type reading 'CANDRABAGA'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Candrabaga,",
+     "z": 3,
+     "lands": 47
+    },
+    {
+     "name": "foto_saluran_candrabaga",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Saluran yang digali - bentuk pekerjaan abad kelima di tanah sekarang",
+     "semantik": "DIGALI",
+     "what": "a sepia halftone photograph of a freshly cut earth channel with water at its bottom",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "digali",
+     "z": 1,
+     "lands": 90
+    },
+    {
+     "name": "penggali_saluran",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang menggali dengan pacul - tenaga kerja yang tidak dicatat namanya",
+     "semantik": "YANG MENGGALI",
+     "what": "a sepia halftone photograph of a man digging a channel with a hoe, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "Raja",
+     "z": 2,
+     "lands": 106,
+     "motion_basis": "Dua lengan dan punggung, selebar 0.26 frame; kaki tetap di tanah galian. pose1 = pacul terangkat di atas bahu.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "swing the hoe down into the channel floor"
+      },
+      {
+       "pose": 3,
+       "action": "pull the loosened soil back with the hoe blade"
+      },
+      {
+       "pose": 4,
+       "action": "stand upright and wipe his forehead with his forearm"
+      }
+     ]
+    },
+    {
+     "name": "kartu_dirajaguru",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama raja yang memerintahkan - satu-satunya orang yang disebut prasasti",
+     "semantik": "RAJA DIRAJAGURU",
+     "what": "a torn cream slip with letterpress type reading 'RAJA DIRAJAGURU'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Dirajaguru.",
+     "z": 4,
+     "lands": 119
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     14,
+     3.0,
+     "kartu_candrabaga",
+     {
+      "at": 47,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     16,
+     -2.4,
+     "penggali_saluran",
+     {
+      "at": 106,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'candrabaga,'; box on the figure on 'raja'.",
+   "emphasis": [],
+   "still_gate": "PASS 36.4"
+  },
+  {
+   "id": "s11",
+   "range": [
+    1733,
+    1929
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Saluran kedua - Gomati, atas perintah Purnawarman pada tahun ke-22",
+   "jenis": "ACTION",
+   "latar_plate": "Full-bleed second channel page on aged newsprint: a mustard block across the upper left, a crimson block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "One channel and one year: the Gomati slip high left, the channel photograph low left, the worker low centre, the king slip high right, and the year slip low right.",
+   "kamera": "Hold the name, follow the water, then settle on the year; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_gomati",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama saluran kedua - pasangan yang membuat keduanya bisa dibandingkan",
+     "semantik": "GOMATI",
+     "what": "a torn cream slip with big stencilled type reading 'GOMATI'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Gomati,",
+     "z": 3,
+     "lands": 42
+    },
+    {
+     "name": "foto_saluran_gomati",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Saluran kedua di tanah yang sama - pekerjaan kedua, raja yang sama",
+     "semantik": "SALURAN KEDUA",
+     "what": "a sepia halftone photograph of a stone-lined channel with water running through grass",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "digali",
+     "z": 1,
+     "lands": 81
+    },
+    {
+     "name": "pekerja_saluran",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membersihkan saluran - saluran yang masih dipakai berarti masih dirawat",
+     "semantik": "ATAS PERINTAH",
+     "what": "a sepia halftone photograph of a man standing in a channel clearing weeds with a sickle, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "perintah",
+     "z": 2,
+     "lands": 103
+    },
+    {
+     "name": "kartu_purnawarman",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Raja yang memerintahkan saluran kedua - nama terpenting di prasasti ini",
+     "semantik": "RAJA PURNAWARMAN",
+     "what": "a torn cream slip with letterpress type reading 'RAJA PURNAWARMAN'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Purnawarman",
+     "z": 4,
+     "lands": 123
+    },
+    {
+     "name": "kartu_tahun_22",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Tahun ke-22 pemerintahannya - tanggal yang bisa dihitung, bukan dikira",
+     "semantik": "TAHUN KE-22",
+     "what": "a torn cream slip with big stencilled type reading 'TAHUN KE-22'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "-22.",
+     "z": 5,
+     "lands": 167
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     15,
+     3.6,
+     "kartu_gomati",
+     {
+      "at": 42,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     13,
+     -2.9,
+     "pekerja_saluran",
+     {
+      "at": 103,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on 'gomati,'; circle on the figure on 'perintah'.",
+   "emphasis": [
+    {
+     "frame": 1900.2,
+     "word": "-22.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 47.2"
+  },
+  {
+   "id": "s12",
+   "range": [
+    1929,
+    2154
+   ],
+   "babak": "Babak 7 - Yang lisan dan yang tertulis",
+   "peran_retoris": "Angka - 6.122 tumbak, sekitar 12 kilometer, selesai dalam 21 hari",
+   "jenis": "QUANTITY",
+   "latar_plate": "Full-bleed measure page on aged newsprint: a crimson strip across the top, a charcoal block along the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Three numbers and one rope: the 6.122 slip high left, the rope on the ground high right, the measurer low left, the 12 kilometre slip low centre, the stone marker low right, and the 21 days slip along the bottom.",
+   "kamera": "Measure along the rope from left to right, then settle on the last number; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "kartu_6122",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Panjang dalam satuan yang dipakai prasasti - tumbak, bukan meter",
+     "semantik": "6.122 TUMBAK",
+     "what": "a torn cream slip with big stencilled type reading '6.122 TUMBAK'",
+     "at": "upper left of the frame, centred at 0.27 across, about 0.55 of the frame wide",
+     "cut": true,
+     "word": ".122",
+     "z": 3,
+     "lands": 47,
+     "tertutup_boleh": "the man with the measuring rope stands in front of the slip's lower edge; the still draws him over it. His head and neck stay clear only if he is on top — the number still reads whole across the top."
+    },
+    {
+     "name": "foto_ukur_lapangan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tali ukur di tanah - cara mengukur 6.122 tumbak tanpa meteran",
+     "semantik": "PANJANGNYA",
+     "what": "a sepia halftone photograph of a rope laid straight on bare ground, pegs at both ends",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "tumbak,",
+     "z": 1,
+     "lands": 84
+    },
+    {
+     "name": "figur_pengukur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang merentang tali ukur - angka panjang butuh dua tangan",
+     "semantik": "SEKITAR",
+     "what": "a sepia halftone photograph of a man holding a measuring rope taut across the ground, seen from the side",
+     "at": "lower left of the frame, centred at 0.27 across, about 0.48 of the frame wide",
+     "cut": true,
+     "word": "sekitar",
+     "z": 6,
+     "lands": 110,
+     "motion_basis": "Dua tangan dan satu langkah kaki, selebar 0.24 frame; tali tetap lurus di tanah. pose1 = berdiri, tali dipegang setinggi pinggang.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "pull the rope tight and lean back against it"
+      },
+      {
+       "pose": 3,
+       "action": "step forward and pin the rope end under his foot"
+      },
+      {
+       "pose": 4,
+       "action": "straighten up and look back along the measured line"
+      }
+     ]
+    },
+    {
+     "name": "kartu_12km",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Terjemahan modern dari angka prasasti - supaya panjangnya bisa dibayangkan",
+     "semantik": "SEKITAR 12 KILOMETER",
+     "what": "a torn cream slip with stencilled type reading 'SEKITAR 12 KILOMETER'",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "kilometer,",
+     "z": 4,
+     "lands": 135,
+     "tertutup_boleh": "the same figure crosses its left edge in the still. Nothing of the words is lost and his face is clear."
+    },
+    {
+     "name": "foto_batu_patok",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Patok batu di ujung saluran - titik yang membuat panjang itu berhenti",
+     "semantik": "SELESAI",
+     "what": "a sepia halftone photograph of a small stone marker set in the ground at the end of a channel",
+     "at": "centre of the frame, centred at 0.50 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "selesai",
+     "z": 2,
+     "lands": 149
+    },
+    {
+     "name": "kartu_21hari",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Waktu kerja - angka terakhir, dan yang paling mengejutkan",
+     "semantik": "21 HARI",
+     "what": "a torn cream slip with big stencilled type reading '21 HARI'",
+     "at": "lower right of the frame, centred at 0.80 across, about 0.45 of the frame wide",
+     "cut": true,
+     "word": "hari.",
+     "z": 5,
+     "lands": 200,
+     "tertutup_boleh": "the same figure crosses its left edge in the still. Nothing of the words is lost and his face is clear."
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     -2.8,
+     "kartu_12km",
+     {
+      "at": 160,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'kilometer,'.",
+   "emphasis": [],
+   "still_gate": "PASS 33.8"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

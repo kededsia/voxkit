@@ -1,0 +1,606 @@
+{
+ "plan_version": 2,
+ "module": "m06",
+ "klaim": "Kadang yang dicatat bukan benda tapi perbuatan: kumbah menjadi pangumbahan, lalu Ci pangumbahan. Nama tempat adalah satu kalimat lengkap yang sudah mengeras, dan ia bertahan lebih lama daripada orang-orang yang mencuci di sana.",
+ "payoff": "Ci bukan hiasan, ia keterangan - dan keterangan bertahan karena ia menerangkan sesuatu yang tetap terjadi.",
+ "serah": "foto_tempat_sekarang + gagasan 'nama mengeras jadi batu' - tempat yang sama, waktu yang jauh lebih panjang, untuk m07",
+ "terima": "slip_dua_awalan (CI · SEKKE) dari m05 - di sini awalan itu ditempelkan pada kata kerja, bukan pada benda",
+ "konteks_modul": {
+  "konteks_budaya": "Bahasa Sunda membentuk nama tempat dari kata kerja dengan awalan pa- dan akhiran -an: kumbah (mencuci) menjadi pangumbahan (tempat mencuci). Nama tempat karena itu adalah kalimat yang sudah mengeras, bukan hiasan.",
+  "tesis_modul": "Nama yang lahir dari perbuatan bertahan selama perbuatannya masih terjadi; itu sebabnya ia lebih lama daripada orangnya.",
+  "babak_narasi": "Babak 3 menutup kamus: setelah benda, hewan dan warna, yang dicatat adalah perbuatan - dan dari situ film berpindah ke waktu."
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    190
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Belokan - yang dicatat kadang bukan benda, tapi perbuatan",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page: a printed column down the left third and a mustard block taped over the lower right, printed columns visible, masking tape at the corners.",
+   "tata_letak_kolase": "The two prefixes from m05 taped at the upper left, a clay jar at the left with a strike drawn over it, the wringing hands at the centre, the word slip at the right, the woman kneeling in front of them all.",
+   "kamera": "Hold on the prefixes, step right as the jar is struck, settle on the woman; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "slip_dua_awalan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Dua awalan dari m05 - di sini dipakai untuk kata kerja, bukan benda",
+     "semantik": "CI · SEKKE",
+     "what": "a cream slip letterpress-printed 'CI' and 'SEKKE' side by side with a rule between",
+     "at": "upper left, centred at 0.22 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Dan",
+     "z": 4,
+     "lands": 13
+    },
+    {
+     "name": "foto_benda",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Benda yang berdiri sendiri - yang justru tidak dicatat di sini",
+     "semantik": "BENDA",
+     "what": "a sepia halftone photograph of a clay water jar standing alone on packed earth",
+     "at": "left, centred at 0.28 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "benda,",
+     "z": 1,
+     "lands": 47
+    },
+    {
+     "name": "foto_perbuatan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangan memeras kain - perbuatan, bukan benda",
+     "semantik": "PERBUATAN",
+     "what": "a sepia halftone photograph of two hands wringing a wet cloth over a stone slab",
+     "at": "centre right, centred at 0.64 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "perbuatan.",
+     "z": 2,
+     "lands": 76
+    },
+    {
+     "name": "slip_kumbah",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata kerjanya - kumbah",
+     "semantik": "KUMBAH",
+     "what": "a cream slip letterpress-printed 'KUMBAH' in heavy stencil",
+     "at": "lower right, centred at 0.86 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "kumbah,",
+     "z": 5,
+     "lands": 135
+    },
+    {
+     "name": "orang_mencuci",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Perempuan mencuci di tepi air - pelaku dari kata itu",
+     "semantik": "MENCUCI",
+     "what": "a sepia halftone cutout of a woman kneeling at a river bank, beating wet laundry on a flat stone",
+     "at": "centre, centred at 0.50 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "mencuci.",
+     "z": 3,
+     "lands": 163
+    }
+   ],
+   "marks": [
+    [
+     "strike",
+     12,
+     -2.6,
+     "foto_benda",
+     {
+      "at": 50,
+      "color": "crimson"
+     }
+    ],
+    [
+     "brackets",
+     14,
+     1.8,
+     "foto_perbuatan",
+     {
+      "at": 115,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Strike on the photograph on 'benda,'; brackets on the photograph on 'perbuatan.'.",
+   "emphasis": [
+    {
+     "frame": 163.2,
+     "word": "mencuci.",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 39.5"
+  },
+  {
+   "id": "s02",
+   "range": [
+    190,
+    384
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Mekanikanya - awalan dan akhiran mengubah kata kerja jadi nama tempat",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Aged newsprint page: a crimson block taped along the left edge and printed columns down the right, printed columns visible, masking tape at the corners.",
+   "tata_letak_kolase": "The affix slip at the upper left, the washing steps below it, the long word slip at the centre, the woman hanging cloth at the right, and the CI slip pasted onto the word at the end.",
+   "kamera": "Hold the affixes, push onto the long word as it lands, then widen as the CI slip is pasted; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "slip_imbuhan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Awalan dan akhiran - mesin yang mengubah kerja jadi tempat",
+     "semantik": "AWALAN · AKHIRAN",
+     "what": "a cream slip letterpress-printed 'AWALAN · AKHIRAN' in two lines",
+     "at": "upper left, centred at 0.20 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "awalan",
+     "z": 4,
+     "lands": 18
+    },
+    {
+     "name": "slip_pangumbahan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kata kerja yang sudah jadi nama tempat",
+     "semantik": "PANGUMBAHAN",
+     "what": "a cream slip letterpress-printed 'PANGUMBAHAN' in heavy stencil",
+     "at": "centre, centred at 0.52 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "pangumbahan,",
+     "z": 3,
+     "lands": 74
+    },
+    {
+     "name": "foto_tempat_cuci",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangga batu ke air - tempat mencuci yang nyata",
+     "semantik": "TEMPAT",
+     "what": "a sepia halftone photograph of stone washing steps running down to a river",
+     "at": "left, lower, centred at 0.22 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "tempat",
+     "z": 1,
+     "lands": 112
+    },
+    {
+     "name": "orang_menjemur",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Perempuan menjemur kain - pekerjaan yang mengisi tempat itu",
+     "semantik": "MENCUCI",
+     "what": "a sepia halftone cutout of a woman hanging a wet cloth on a bamboo line",
+     "at": "right, centred at 0.80 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "mencuci.",
+     "z": 2,
+     "lands": 119
+    },
+    {
+     "name": "slip_ci_depan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Awalan ditempelkan di depan kata - bukan dijelaskan",
+     "semantik": "CI",
+     "what": "a small cream slip letterpress-printed 'CI' in heavy stencil, one torn edge",
+     "at": "centre left, centred at 0.31 across, about 0.18 of the frame wide",
+     "cut": true,
+     "word": "ci",
+     "z": 5,
+     "lands": 172
+    }
+   ],
+   "marks": [
+    [
+     "bracket-right",
+     14,
+     1.4,
+     "slip_imbuhan",
+     {
+      "at": 37,
+      "color": "coral"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -1.9,
+     "slip_pangumbahan",
+     {
+      "at": 119,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Bracket on the printed slip on 'awalan'; underline on the printed slip on 'pangumbahan,'.",
+   "emphasis": [],
+   "still_gate": "PASS 44.1"
+  },
+  {
+   "id": "s03",
+   "range": [
+    384,
+    558
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Nama lengkapnya - dan apa yang sebenarnya ia sebut",
+   "jenis": "PLACE",
+   "latar_plate": "Aged newsprint page: a charcoal strip along the bottom and a mustard block taped at the upper right, printed columns visible, masking tape at the corners.",
+   "tata_letak_kolase": "The full name slip at the left, the river at the right, the washing stone in the middle ground, two women standing in the water, the verdict slip at the far right.",
+   "kamera": "Hold on the name, drift right along the water, settle on the verdict; range 26% of fitZoom.",
+   "cards": [
+    {
+     "name": "slip_ci_pangumbahan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama lengkapnya - ci ditambah nama tempat",
+     "semantik": "CI PANGUMBAHAN",
+     "what": "a cream slip letterpress-printed 'CI PANGUMBAHAN' in two lines",
+     "at": "left, centred at 0.24 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "pangumbahan.",
+     "z": 4,
+     "lands": 26
+    },
+    {
+     "name": "foto_sungai",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai di antara tebing batu - yang dinamai",
+     "semantik": "SUNGAI",
+     "what": "a sepia halftone photograph of a shallow river running between worn stone banks",
+     "at": "upper right, centred at 0.72 across, about 0.38 of the frame wide",
+     "cut": true,
+     "word": "Sungai",
+     "z": 1,
+     "lands": 47
+    },
+    {
+     "name": "foto_batu_cuci",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Batu cucian - perabot tempat itu, bukan hiasan",
+     "semantik": "TEMPAT",
+     "what": "a sepia halftone photograph of a flat washing stone with folded cloth on it",
+     "at": "centre lower, centred at 0.46 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "tempat",
+     "z": 2,
+     "lands": 79
+    },
+    {
+     "name": "orang_mencuci_sungai",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Dua perempuan di air - kalimat yang masih terjadi",
+     "semantik": "ORANG MENCUCI",
+     "what": "a sepia halftone cutout of two women standing knee-deep in a river, washing cloth",
+     "at": "centre right, centred at 0.64 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "orang",
+     "z": 3,
+     "lands": 88,
+     "poses_planned": [
+      {
+       "action": "stands up out of the water with the cloth held in both hands"
+      },
+      {
+       "action": "dips the cloth back under and lifts it, water running off"
+      },
+      {
+       "action": "wrings it out and looks downstream"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "Knee-deep and side on, so the swap reads in the arms, the cloth and the shoulders; the feet stay planted in the water. Both women are on one cutout, so a lifted cloth moves against the river behind them and cannot tear a neighbour's edge."
+    },
+    {
+     "name": "slip_bukan_label",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Vonis - nama itu bukan label",
+     "semantik": "BUKAN LABEL",
+     "what": "a cream slip letterpress-printed 'BUKAN LABEL' in two lines",
+     "at": "right, centred at 0.87 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "label.",
+     "z": 5,
+     "lands": 163
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     14,
+     -1.7,
+     "orang_mencuci_sungai",
+     {
+      "at": 97,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the figure on 'orang'.",
+   "emphasis": [
+    {
+     "frame": 403.8,
+     "word": "Ci",
+     "motion": "hold",
+     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 481.2,
+     "word": "mencuci.",
+     "motion": "hold",
+     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.0"
+  },
+  {
+   "id": "s04",
+   "range": [
+    558,
+    779
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Yang mengeras - kalimat yang jadi batu, dan bertahan lebih lama daripada orangnya",
+   "jenis": "OBJECT",
+   "latar_plate": "Aged newsprint page: a printed column at the left and a crimson block taped at the lower right, printed columns visible, masking tape at the corners.",
+   "tata_letak_kolase": "The sentence slip at the left, the worn plaque at the centre, the signboard at the right, the empty steps behind them, and the old woman at the far left with her hands in the water.",
+   "kamera": "Hold on the sentence, push onto the plaque as it hardens, then pull back to the empty steps; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "slip_kalimat",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama sebagai kalimat lengkap, bukan kata tunggal",
+     "semantik": "SATU KALIMAT LENGKAP",
+     "what": "a cream slip letterpress-printed 'SATU KALIMAT LENGKAP' in three lines, a rule under the last line",
+     "at": "upper left, centred at 0.26 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "lengkap",
+     "z": 3,
+     "lands": 52,
+     "tertutup_boleh": "Her head covers the slip's blank bottom-right corner and nothing else: all three words stay fully readable, while putting the slip above her would lay it across her face."
+    },
+    {
+     "name": "prasasti",
+     "bahan": "benda",
+     "wujud": "plang_fisik",
+     "semiotik": "Nama yang mengeras jadi batu - hurufnya aus karena lama",
+     "semantik": "MENGERAS",
+     "what": "a chipped stone plaque with a carved name worn almost smooth, sepia halftone",
+     "at": "centre, centred at 0.50 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "mengeras",
+     "z": 5,
+     "lands": 77
+    },
+    {
+     "name": "papan_nama_tempat",
+     "bahan": "cetak",
+     "wujud": "plang_fisik",
+     "semiotik": "Papan nama kampung - nama yang sudah jadi benda",
+     "semantik": "NAMA TEMPAT",
+     "what": "a weathered village signboard with a place name hand-painted on it, paint flaking",
+     "at": "right, centred at 0.78 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "tempat.",
+     "z": 6,
+     "lands": 103
+    },
+    {
+     "name": "foto_tempat_sekarang",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Tangga cucian yang sama, kosong - tempatnya bertahan",
+     "semantik": "BERTAHAN",
+     "what": "a sepia halftone photograph of stone washing steps, empty, in flat daylight",
+     "at": "lower centre, centred at 0.52 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "lama",
+     "z": 1,
+     "lands": 156
+    },
+    {
+     "name": "orang_mencuci_lama",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Perempuan tua di batu cucian - yang tidak bertahan selama namanya",
+     "semantik": "ORANGNYA",
+     "what": "a sepia halftone cutout of an old woman bent over a washing stone, hands in the water",
+     "at": "left, centred at 0.28 across, about 0.20 of the frame wide",
+     "cut": true,
+     "word": "orang",
+     "z": 4,
+     "lands": 176,
+     "poses_planned": [
+      {
+       "action": "straightens her back slowly with one hand on her knee"
+      },
+      {
+       "action": "lifts the cloth and lets it drain before dropping it again"
+      },
+      {
+       "action": "turns her head toward the signboard behind her"
+      }
+     ],
+     "highlight": true,
+     "motion_basis": "Bent over the stone, so the swap reads in the back, the arms and the head; the feet stay planted. She sits clear at the left edge with the sentence slip above her, so a lifted cloth has room and cannot tear the slip's torn edge."
+    }
+   ],
+   "marks": [
+    [
+     "circle",
+     14,
+     2.8,
+     "papan_nama_tempat",
+     {
+      "at": 133,
+      "color": "coral"
+     }
+    ],
+    [
+     "underline",
+     12,
+     -1.5,
+     "orang_mencuci_lama",
+     {
+      "at": 197,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Circle on the printed slip on 'tempat.'; underline on the figure on 'orang'.",
+   "emphasis": [
+    {
+     "frame": 583.2,
+     "word": "Nama",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 37.4"
+  },
+  {
+   "id": "s05",
+   "range": [
+    779,
+    975
+   ],
+   "babak": "Babak 3 - Air punya banyak nama",
+   "peran_retoris": "Vonis - bukan hiasan, keterangan",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Aged newsprint page: a mustard strip along the bottom and printed columns down the left, printed columns visible, masking tape at the corners.",
+   "tata_letak_kolase": "The signboard standing at the river at the left, the newsprint column about washing at the centre, the carved ornament at the right with a strike over it, the closing slip pasted at the far right.",
+   "kamera": "Hold on the sign at the water, step right across the clipping, settle on the closing slip; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_papan_sungai",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Papan nama berdiri di tepi sungai - nama yang sudah pindah ke dunia",
+     "semantik": "NAMA DI TEMPATNYA",
+     "what": "a sepia halftone photograph of a small painted signboard standing at the edge of a river",
+     "at": "upper left, centred at 0.26 across, about 0.36 of the frame wide",
+     "cut": true,
+     "word": "Ini",
+     "z": 1,
+     "lands": 28
+    },
+    {
+     "name": "koran_kebiasaan",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Kebiasaan yang tercatat di koran - berulang sampai jadi berita biasa",
+     "semantik": "KEBIASAAN",
+     "what": "a torn newsprint clipping with a headline about washing clothes at the river and one halftone of stone steps",
+     "at": "centre, centred at 0.54 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "kebiasaan.",
+     "z": 3,
+     "lands": 69
+    },
+    {
+     "name": "foto_hiasan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Ornamen ukir - yang dikira orang tentang nama tempat",
+     "semantik": "HIASAN",
+     "what": "a sepia halftone photograph of a carved floral border ornament from a colonial building",
+     "at": "lower right, centred at 0.76 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "Ia",
+     "z": 2,
+     "lands": 111
+    },
+    {
+     "name": "slip_keterangan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Vonis penutup - nama itu keterangan",
+     "semantik": "KETERANGAN",
+     "what": "a cream slip letterpress-printed 'KETERANGAN' in heavy stencil",
+     "at": "right, centred at 0.86 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "keterangan.",
+     "z": 4,
+     "lands": 164
+    }
+   ],
+   "marks": [
+    [
+     "strike",
+     12,
+     3.1,
+     "foto_hiasan",
+     {
+      "at": 122,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Strike on the photograph on 'hiasan.'.",
+   "emphasis": [
+    {
+     "frame": 807.0,
+     "word": "Ini",
+     "motion": "hold",
+     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 847.8,
+     "word": "kebiasaan.",
+     "motion": "hold",
+     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 901.2,
+     "word": "hiasan.",
+     "motion": "hold",
+     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ],
+   "still_gate": "PASS 36.6"
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}

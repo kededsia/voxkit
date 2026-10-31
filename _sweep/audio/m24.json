@@ -1,0 +1,550 @@
+{
+ "duration": 51.2,
+ "words": [
+  {
+   "word": "Teori",
+   "start": 0.367,
+   "end": 0.667
+  },
+  {
+   "word": "itu",
+   "start": 0.667,
+   "end": 0.867
+  },
+  {
+   "word": "beredar",
+   "start": 0.867,
+   "end": 1.207
+  },
+  {
+   "word": "lewat",
+   "start": 1.207,
+   "end": 1.507
+  },
+  {
+   "word": "sebuah",
+   "start": 1.507,
+   "end": 1.787
+  },
+  {
+   "word": "video,",
+   "start": 1.787,
+   "end": 2.427
+  },
+  {
+   "word": "lalu",
+   "start": 2.707,
+   "end": 2.867
+  },
+  {
+   "word": "sebuah",
+   "start": 2.867,
+   "end": 3.287
+  },
+  {
+   "word": "forum,",
+   "start": 3.287,
+   "end": 3.687
+  },
+  {
+   "word": "lalu",
+   "start": 3.967,
+   "end": 4.147
+  },
+  {
+   "word": "diangkat",
+   "start": 4.147,
+   "end": 4.487
+  },
+  {
+   "word": "puluhan",
+   "start": 4.487,
+   "end": 4.867
+  },
+  {
+   "word": "media.",
+   "start": 4.867,
+   "end": 5.267
+  },
+  {
+   "word": "Isinya",
+   "start": 6.087,
+   "end": 6.347
+  },
+  {
+   "word": "begini.",
+   "start": 6.347,
+   "end": 6.927
+  },
+  {
+   "word": "Ada",
+   "start": 6.927,
+   "end": 7.527
+  },
+  {
+   "word": "gunung",
+   "start": 7.527,
+   "end": 7.887
+  },
+  {
+   "word": "bernama",
+   "start": 7.887,
+   "end": 8.467
+  },
+  {
+   "word": "Gunung",
+   "start": 8.467,
+   "end": 8.947
+  },
+  {
+   "word": "Sunda",
+   "start": 8.947,
+   "end": 9.367
+  },
+  {
+   "word": "Purwa",
+   "start": 9.367,
+   "end": 9.827
+  },
+  {
+   "word": "yang",
+   "start": 9.827,
+   "end": 10.227
+  },
+  {
+   "word": "sangat",
+   "start": 10.227,
+   "end": 10.487
+  },
+  {
+   "word": "tinggi.",
+   "start": 10.487,
+   "end": 11.227
+  },
+  {
+   "word": "Puncaknya",
+   "start": 11.327,
+   "end": 11.767
+  },
+  {
+   "word": "bersalju",
+   "start": 11.767,
+   "end": 12.307
+  },
+  {
+   "word": "dan",
+   "start": 12.307,
+   "end": 12.647
+  },
+  {
+   "word": "memancarkan",
+   "start": 12.647,
+   "end": 13.167
+  },
+  {
+   "word": "cahaya.",
+   "start": 13.167,
+   "end": 14.027
+  },
+  {
+   "word": "Ci",
+   "start": 14.327,
+   "end": 14.447
+  },
+  {
+   "word": "bodas",
+   "start": 14.447,
+   "end": 14.827
+  },
+  {
+   "word": "berarti",
+   "start": 14.827,
+   "end": 15.407
+  },
+  {
+   "word": "cahaya",
+   "start": 15.407,
+   "end": 15.847
+  },
+  {
+   "word": "putih.",
+   "start": 15.847,
+   "end": 16.607
+  },
+  {
+   "word": "Ci",
+   "start": 16.767,
+   "end": 16.967
+  },
+  {
+   "word": "berem",
+   "start": 16.967,
+   "end": 17.367
+  },
+  {
+   "word": "cahaya",
+   "start": 17.367,
+   "end": 17.787
+  },
+  {
+   "word": "merah.",
+   "start": 17.787,
+   "end": 18.367
+  },
+  {
+   "word": "Ci",
+   "start": 18.647,
+   "end": 18.767
+  },
+  {
+   "word": "hideng",
+   "start": 18.767,
+   "end": 19.207
+  },
+  {
+   "word": "cahaya",
+   "start": 19.207,
+   "end": 19.647
+  },
+  {
+   "word": "hitam.",
+   "start": 19.647,
+   "end": 20.527
+  },
+  {
+   "word": "Ada",
+   "start": 20.847,
+   "end": 21.027
+  },
+  {
+   "word": "tiga",
+   "start": 21.027,
+   "end": 21.367
+  },
+  {
+   "word": "masalah",
+   "start": 21.367,
+   "end": 21.847
+  },
+  {
+   "word": "dengan",
+   "start": 21.847,
+   "end": 22.087
+  },
+  {
+   "word": "teori",
+   "start": 22.087,
+   "end": 22.347
+  },
+  {
+   "word": "ini.",
+   "start": 22.347,
+   "end": 22.667
+  },
+  {
+   "word": "Pertama,",
+   "start": 23.247,
+   "end": 23.807
+  },
+  {
+   "word": "teorinya",
+   "start": 24.167,
+   "end": 24.447
+  },
+  {
+   "word": "bertumpu",
+   "start": 24.447,
+   "end": 24.927
+  },
+  {
+   "word": "pada",
+   "start": 24.927,
+   "end": 25.127
+  },
+  {
+   "word": "anggapan",
+   "start": 25.127,
+   "end": 25.567
+  },
+  {
+   "word": "bahwa",
+   "start": 25.567,
+   "end": 25.907
+  },
+  {
+   "word": "orang",
+   "start": 25.907,
+   "end": 26.147
+  },
+  {
+   "word": "Sunda",
+   "start": 26.147,
+   "end": 26.507
+  },
+  {
+   "word": "dulu",
+   "start": 26.507,
+   "end": 26.727
+  },
+  {
+   "word": "menyebut",
+   "start": 26.727,
+   "end": 27.067
+  },
+  {
+   "word": "air",
+   "start": 27.067,
+   "end": 27.347
+  },
+  {
+   "word": "dengan",
+   "start": 27.347,
+   "end": 27.667
+  },
+  {
+   "word": "kata",
+   "start": 27.667,
+   "end": 27.987
+  },
+  {
+   "word": "banyu",
+   "start": 27.987,
+   "end": 28.627
+  },
+  {
+   "word": "atau",
+   "start": 28.627,
+   "end": 28.887
+  },
+  {
+   "word": "tirta,",
+   "start": 28.887,
+   "end": 29.427
+  },
+  {
+   "word": "bukan",
+   "start": 29.607,
+   "end": 29.827
+  },
+  {
+   "word": "cahi.",
+   "start": 29.827,
+   "end": 30.127
+  },
+  {
+   "word": "Itu",
+   "start": 30.647,
+   "end": 30.807
+  },
+  {
+   "word": "keliru.",
+   "start": 30.807,
+   "end": 31.567
+  },
+  {
+   "word": "Cahi",
+   "start": 31.767,
+   "end": 32.127
+  },
+  {
+   "word": "adalah",
+   "start": 32.127,
+   "end": 32.407
+  },
+  {
+   "word": "kata",
+   "start": 32.407,
+   "end": 32.647
+  },
+  {
+   "word": "Sunda",
+   "start": 32.647,
+   "end": 33.007
+  },
+  {
+   "word": "sehari",
+   "start": 33.007,
+   "end": 33.347
+  },
+  {
+   "word": "-hari.",
+   "start": 33.347,
+   "end": 33.847
+  },
+  {
+   "word": "Banyu",
+   "start": 34.187,
+   "end": 34.627
+  },
+  {
+   "word": "adalah",
+   "start": 34.627,
+   "end": 34.907
+  },
+  {
+   "word": "kata",
+   "start": 34.907,
+   "end": 35.127
+  },
+  {
+   "word": "Jawa.",
+   "start": 35.127,
+   "end": 35.547
+  },
+  {
+   "word": "Kedua,",
+   "start": 36.187,
+   "end": 36.827
+  },
+  {
+   "word": "gunung",
+   "start": 37.107,
+   "end": 37.327
+  },
+  {
+   "word": "itu",
+   "start": 37.327,
+   "end": 37.487
+  },
+  {
+   "word": "disebut",
+   "start": 37.487,
+   "end": 37.767
+  },
+  {
+   "word": "tingginya",
+   "start": 37.767,
+   "end": 38.207
+  },
+  {
+   "word": "lebih",
+   "start": 38.207,
+   "end": 38.447
+  },
+  {
+   "word": "dari",
+   "start": 38.447,
+   "end": 38.707
+  },
+  {
+   "word": "17",
+   "start": 38.707,
+   "end": 39.187
+  },
+  {
+   "word": ".000",
+   "start": 39.187,
+   "end": 39.487
+  },
+  {
+   "word": "meter.",
+   "start": 39.487,
+   "end": 40.107
+  },
+  {
+   "word": "Gunung",
+   "start": 40.607,
+   "end": 40.807
+  },
+  {
+   "word": "Everest",
+   "start": 40.807,
+   "end": 41.127
+  },
+  {
+   "word": "8",
+   "start": 41.127,
+   "end": 41.727
+  },
+  {
+   "word": ".848",
+   "start": 41.727,
+   "end": 42.887
+  },
+  {
+   "word": "meter.",
+   "start": 42.887,
+   "end": 43.527
+  },
+  {
+   "word": "Gunung",
+   "start": 44.087,
+   "end": 44.347
+  },
+  {
+   "word": "Sunda",
+   "start": 44.347,
+   "end": 44.647
+  },
+  {
+   "word": "yang",
+   "start": 44.647,
+   "end": 44.867
+  },
+  {
+   "word": "asli",
+   "start": 44.867,
+   "end": 45.387
+  },
+  {
+   "word": "sekitar",
+   "start": 45.387,
+   "end": 45.807
+  },
+  {
+   "word": "4",
+   "start": 45.807,
+   "end": 46.167
+  },
+  {
+   "word": ".000",
+   "start": 46.167,
+   "end": 46.287
+  },
+  {
+   "word": "meter.",
+   "start": 46.287,
+   "end": 46.787
+  },
+  {
+   "word": "Ketiga,",
+   "start": 47.447,
+   "end": 47.867
+  },
+  {
+   "word": "dalam",
+   "start": 48.187,
+   "end": 48.407
+  },
+  {
+   "word": "sanskerta,",
+   "start": 48.407,
+   "end": 49.027
+  },
+  {
+   "word": "kata",
+   "start": 49.347,
+   "end": 49.467
+  },
+  {
+   "word": "untuk",
+   "start": 49.467,
+   "end": 49.707
+  },
+  {
+   "word": "cahaya",
+   "start": 49.707,
+   "end": 50.087
+  },
+  {
+   "word": "bukan",
+   "start": 50.087,
+   "end": 50.447
+  },
+  {
+   "word": "ci.",
+   "start": 50.447,
+   "end": 50.807
+  }
+ ]
+}

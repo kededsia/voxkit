@@ -1,0 +1,360 @@
+{
+ "duration": 33.267,
+ "words": [
+  {
+   "word": "Dan",
+   "start": 0.313,
+   "end": 0.473
+  },
+  {
+   "word": "hanya",
+   "start": 0.473,
+   "end": 0.733
+  },
+  {
+   "word": "satu.",
+   "start": 0.733,
+   "end": 1.153
+  },
+  {
+   "word": "Ci",
+   "start": 1.613,
+   "end": 1.773
+  },
+  {
+   "word": "Lacap.",
+   "start": 1.773,
+   "end": 2.673
+  },
+  {
+   "word": "Serius.",
+   "start": 3.013,
+   "end": 3.613
+  },
+  {
+   "word": "Linda",
+   "start": 4.073,
+   "end": 4.293
+  },
+  {
+   "word": "Sariwulandari,",
+   "start": 4.293,
+   "end": 5.093
+  },
+  {
+   "word": "peneliti",
+   "start": 5.373,
+   "end": 5.613
+  },
+  {
+   "word": "dari",
+   "start": 5.613,
+   "end": 5.833
+  },
+  {
+   "word": "Universitas",
+   "start": 5.833,
+   "end": 6.393
+  },
+  {
+   "word": "Indonesia,",
+   "start": 6.393,
+   "end": 6.933
+  },
+  {
+   "word": "menelusuri",
+   "start": 7.193,
+   "end": 7.633
+  },
+  {
+   "word": "asalnya.",
+   "start": 7.633,
+   "end": 8.133
+  },
+  {
+   "word": "Ci",
+   "start": 8.753,
+   "end": 8.993
+  },
+  {
+   "word": "berasal",
+   "start": 8.993,
+   "end": 9.333
+  },
+  {
+   "word": "dari",
+   "start": 9.333,
+   "end": 9.593
+  },
+  {
+   "word": "bahasa",
+   "start": 9.593,
+   "end": 9.773
+  },
+  {
+   "word": "Sunda.",
+   "start": 9.773,
+   "end": 10.473
+  },
+  {
+   "word": "Lacap",
+   "start": 10.753,
+   "end": 11.153
+  },
+  {
+   "word": "berasal",
+   "start": 11.153,
+   "end": 11.533
+  },
+  {
+   "word": "dari",
+   "start": 11.533,
+   "end": 11.753
+  },
+  {
+   "word": "bahasa",
+   "start": 11.753,
+   "end": 11.973
+  },
+  {
+   "word": "Jawa,",
+   "start": 11.973,
+   "end": 12.453
+  },
+  {
+   "word": "berarti",
+   "start": 12.813,
+   "end": 13.073
+  },
+  {
+   "word": "tanah",
+   "start": 13.073,
+   "end": 13.573
+  },
+  {
+   "word": "yang",
+   "start": 13.573,
+   "end": 13.733
+  },
+  {
+   "word": "menjorok",
+   "start": 13.733,
+   "end": 14.113
+  },
+  {
+   "word": "ke",
+   "start": 14.113,
+   "end": 14.273
+  },
+  {
+   "word": "laut.",
+   "start": 14.273,
+   "end": 14.453
+  },
+  {
+   "word": "Satu",
+   "start": 15.193,
+   "end": 15.473
+  },
+  {
+   "word": "nama,",
+   "start": 15.473,
+   "end": 15.973
+  },
+  {
+   "word": "dua",
+   "start": 16.233,
+   "end": 16.473
+  },
+  {
+   "word": "bahasa,",
+   "start": 16.473,
+   "end": 17.213
+  },
+  {
+   "word": "digaris",
+   "start": 17.513,
+   "end": 17.873
+  },
+  {
+   "word": "tempat",
+   "start": 17.873,
+   "end": 18.313
+  },
+  {
+   "word": "keduanya",
+   "start": 18.313,
+   "end": 18.693
+  },
+  {
+   "word": "bertemu.",
+   "start": 18.693,
+   "end": 19.253
+  },
+  {
+   "word": "Sebelum",
+   "start": 19.913,
+   "end": 20.293
+  },
+  {
+   "word": "abad",
+   "start": 20.293,
+   "end": 20.513
+  },
+  {
+   "word": "ke",
+   "start": 20.513,
+   "end": 20.673
+  },
+  {
+   "word": "-16,",
+   "start": 20.673,
+   "end": 21.093
+  },
+  {
+   "word": "wilayah",
+   "start": 21.093,
+   "end": 21.693
+  },
+  {
+   "word": "itu",
+   "start": 21.693,
+   "end": 21.833
+  },
+  {
+   "word": "pernah",
+   "start": 21.833,
+   "end": 21.993
+  },
+  {
+   "word": "masuk",
+   "start": 21.993,
+   "end": 22.253
+  },
+  {
+   "word": "kekuasaan",
+   "start": 22.253,
+   "end": 22.813
+  },
+  {
+   "word": "Tarumanagara",
+   "start": 22.813,
+   "end": 23.513
+  },
+  {
+   "word": "dan",
+   "start": 23.513,
+   "end": 23.713
+  },
+  {
+   "word": "Galuh.",
+   "start": 23.713,
+   "end": 24.393
+  },
+  {
+   "word": "Jadi",
+   "start": 24.613,
+   "end": 24.793
+  },
+  {
+   "word": "Ci",
+   "start": 24.793,
+   "end": 24.973
+  },
+  {
+   "word": "Lacap",
+   "start": 24.973,
+   "end": 25.293
+  },
+  {
+   "word": "bukan",
+   "start": 25.293,
+   "end": 25.533
+  },
+  {
+   "word": "kebetulan.",
+   "start": 25.533,
+   "end": 26.213
+  },
+  {
+   "word": "Ia",
+   "start": 26.713,
+   "end": 26.893
+  },
+  {
+   "word": "jejak.",
+   "start": 26.893,
+   "end": 27.793
+  },
+  {
+   "word": "Dan",
+   "start": 27.973,
+   "end": 28.173
+  },
+  {
+   "word": "disinilah",
+   "start": 28.173,
+   "end": 28.593
+  },
+  {
+   "word": "muncul",
+   "start": 28.593,
+   "end": 28.933
+  },
+  {
+   "word": "satu",
+   "start": 28.933,
+   "end": 29.253
+  },
+  {
+   "word": "hal",
+   "start": 29.253,
+   "end": 29.413
+  },
+  {
+   "word": "yang",
+   "start": 29.413,
+   "end": 29.633
+  },
+  {
+   "word": "menarik.",
+   "start": 29.633,
+   "end": 30.253
+  },
+  {
+   "word": "Bukan",
+   "start": 30.453,
+   "end": 30.653
+  },
+  {
+   "word": "karena",
+   "start": 30.653,
+   "end": 30.893
+  },
+  {
+   "word": "benar,",
+   "start": 30.893,
+   "end": 31.493
+  },
+  {
+   "word": "tapi",
+   "start": 31.673,
+   "end": 31.813
+  },
+  {
+   "word": "karena",
+   "start": 31.813,
+   "end": 32.053
+  },
+  {
+   "word": "ia",
+   "start": 32.053,
+   "end": 32.293
+  },
+  {
+   "word": "muncul.",
+   "start": 32.293,
+   "end": 32.933
+  }
+ ]
+}

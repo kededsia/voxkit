@@ -1,0 +1,345 @@
+{
+ "duration": 32.5,
+ "words": [
+  {
+   "word": "Dan",
+   "start": 0.42,
+   "end": 0.56
+  },
+  {
+   "word": "kadang",
+   "start": 0.56,
+   "end": 0.8
+  },
+  {
+   "word": "yang",
+   "start": 0.8,
+   "end": 0.94
+  },
+  {
+   "word": "dicatat",
+   "start": 0.94,
+   "end": 1.32
+  },
+  {
+   "word": "bukan",
+   "start": 1.32,
+   "end": 1.56
+  },
+  {
+   "word": "benda,",
+   "start": 1.56,
+   "end": 2.2
+  },
+  {
+   "word": "tapi",
+   "start": 2.36,
+   "end": 2.52
+  },
+  {
+   "word": "perbuatan.",
+   "start": 2.52,
+   "end": 3.14
+  },
+  {
+   "word": "Ambil",
+   "start": 3.82,
+   "end": 4.12
+  },
+  {
+   "word": "kata",
+   "start": 4.12,
+   "end": 4.5
+  },
+  {
+   "word": "kumbah,",
+   "start": 4.5,
+   "end": 5.36
+  },
+  {
+   "word": "mencuci.",
+   "start": 5.44,
+   "end": 6.34
+  },
+  {
+   "word": "Dengan",
+   "start": 6.68,
+   "end": 6.94
+  },
+  {
+   "word": "awalan",
+   "start": 6.94,
+   "end": 7.32
+  },
+  {
+   "word": "dan",
+   "start": 7.32,
+   "end": 7.58
+  },
+  {
+   "word": "akhiran,",
+   "start": 7.58,
+   "end": 8.22
+  },
+  {
+   "word": "ia",
+   "start": 8.38,
+   "end": 8.48
+  },
+  {
+   "word": "menjadi",
+   "start": 8.48,
+   "end": 8.8
+  },
+  {
+   "word": "pangumbahan,",
+   "start": 8.8,
+   "end": 9.6
+  },
+  {
+   "word": "tempat",
+   "start": 10.06,
+   "end": 10.3
+  },
+  {
+   "word": "mencuci.",
+   "start": 10.3,
+   "end": 11.0
+  },
+  {
+   "word": "Tambahkan",
+   "start": 11.62,
+   "end": 12.06
+  },
+  {
+   "word": "ci",
+   "start": 12.06,
+   "end": 12.2
+  },
+  {
+   "word": "di",
+   "start": 12.2,
+   "end": 12.36
+  },
+  {
+   "word": "depannya.",
+   "start": 12.36,
+   "end": 12.8
+  },
+  {
+   "word": "Ci",
+   "start": 13.46,
+   "end": 13.66
+  },
+  {
+   "word": "pangumbahan.",
+   "start": 13.66,
+   "end": 14.36
+  },
+  {
+   "word": "Sungai",
+   "start": 14.36,
+   "end": 15.42
+  },
+  {
+   "word": "tempat",
+   "start": 15.42,
+   "end": 15.74
+  },
+  {
+   "word": "orang",
+   "start": 15.74,
+   "end": 16.04
+  },
+  {
+   "word": "mencuci.",
+   "start": 16.04,
+   "end": 17.3
+  },
+  {
+   "word": "Nama",
+   "start": 17.66,
+   "end": 17.86
+  },
+  {
+   "word": "itu",
+   "start": 17.86,
+   "end": 18.02
+  },
+  {
+   "word": "bukan",
+   "start": 18.02,
+   "end": 18.24
+  },
+  {
+   "word": "label.",
+   "start": 18.24,
+   "end": 18.6
+  },
+  {
+   "word": "Nama",
+   "start": 19.44,
+   "end": 19.66
+  },
+  {
+   "word": "itu",
+   "start": 19.66,
+   "end": 19.82
+  },
+  {
+   "word": "satu",
+   "start": 19.82,
+   "end": 20.02
+  },
+  {
+   "word": "kalimat",
+   "start": 20.02,
+   "end": 20.32
+  },
+  {
+   "word": "lengkap",
+   "start": 20.32,
+   "end": 20.76
+  },
+  {
+   "word": "yang",
+   "start": 20.76,
+   "end": 20.96
+  },
+  {
+   "word": "sudah",
+   "start": 20.96,
+   "end": 21.16
+  },
+  {
+   "word": "mengeras",
+   "start": 21.16,
+   "end": 21.62
+  },
+  {
+   "word": "jadi",
+   "start": 21.62,
+   "end": 21.82
+  },
+  {
+   "word": "nama",
+   "start": 21.82,
+   "end": 22.04
+  },
+  {
+   "word": "tempat.",
+   "start": 22.04,
+   "end": 22.68
+  },
+  {
+   "word": "Dan",
+   "start": 22.86,
+   "end": 23.02
+  },
+  {
+   "word": "bertahan",
+   "start": 23.02,
+   "end": 23.48
+  },
+  {
+   "word": "lebih",
+   "start": 23.48,
+   "end": 23.8
+  },
+  {
+   "word": "lama",
+   "start": 23.8,
+   "end": 24.1
+  },
+  {
+   "word": "daripada",
+   "start": 24.1,
+   "end": 24.46
+  },
+  {
+   "word": "orang",
+   "start": 24.46,
+   "end": 24.74
+  },
+  {
+   "word": "-orang",
+   "start": 24.74,
+   "end": 24.96
+  },
+  {
+   "word": "yang",
+   "start": 24.96,
+   "end": 25.16
+  },
+  {
+   "word": "mencuci",
+   "start": 25.16,
+   "end": 25.54
+  },
+  {
+   "word": "di",
+   "start": 25.54,
+   "end": 25.72
+  },
+  {
+   "word": "sana.",
+   "start": 25.72,
+   "end": 25.96
+  },
+  {
+   "word": "Ini",
+   "start": 26.9,
+   "end": 27.04
+  },
+  {
+   "word": "yang",
+   "start": 27.04,
+   "end": 27.16
+  },
+  {
+   "word": "membedakan",
+   "start": 27.16,
+   "end": 27.7
+  },
+  {
+   "word": "ci",
+   "start": 27.7,
+   "end": 27.98
+  },
+  {
+   "word": "dari",
+   "start": 27.98,
+   "end": 28.26
+  },
+  {
+   "word": "kebiasaan.",
+   "start": 28.26,
+   "end": 29.22
+  },
+  {
+   "word": "Ia",
+   "start": 29.66,
+   "end": 29.8
+  },
+  {
+   "word": "bukan",
+   "start": 29.8,
+   "end": 30.04
+  },
+  {
+   "word": "hiasan.",
+   "start": 30.04,
+   "end": 30.96
+  },
+  {
+   "word": "Ia",
+   "start": 31.26,
+   "end": 31.42
+  },
+  {
+   "word": "keterangan.",
+   "start": 31.42,
+   "end": 32.1
+  }
+ ]
+}

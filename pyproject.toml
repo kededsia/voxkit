@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voxkit"
+version = "1.0.0"
+description = "Agnostic documentary-collage engine: plan contract, asset pipeline, gates, choreography."
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "Pillow>=10"]
+
+[project.optional-dependencies]
+# Segmentation for pieces that have no chroma ground. Not needed when every
+# asset is generated on a key colour, which is the supported path; it exists so
+# an old-style still can still be cut. Loaded lazily, never at import time.
+seg = ["rembg>=2.0"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+vox = "voxkit.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["voxkit*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+# `tests/` on the path so the fixture builders (`conftest.card`, `make_plan`) can
+# be imported by name — a test that reaches into the fixture module reads better
+# than one that duplicates the builder.
+pythonpath = [".", "tests"]

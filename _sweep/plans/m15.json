@@ -1,0 +1,614 @@
+{
+ "plan_version": 2,
+ "module": "m15",
+ "klaim": "Cipakan punya tugas lain: dalam naskah Sunda kuno abad ke-13, Amanat Galunggung, ada ajaran bernama Patanjala - pata berarti air, jala berarti sungai, atau wadah yang harus dijaga karena ia kabuyutan, warisan leluhur. Para ahli berbeda tafsir; filolog Undang Ahmad Darsa membacanya lain, tetapi intinya sama.",
+ "payoff": "Kata untuk sungai di naskah abad ke-13 bukan sekadar penunjuk arah: ia perintah menjaga.",
+ "serah": "Patanjala sebagai perintah menjaga air, untuk m16 yang melanjutkan ke nama-nama air yang lebih banyak",
+ "terima": "Cipakan sebagai nama yang menempel pada air, dari m14",
+ "konteks_modul": {
+  "konteks_budaya": "Arsip filologi Sunda: naskah lontar, foto filolog di meja kerja, batu wadah air, mata air keramat, koran daerah. Lanskap: sungai kecil, wadah batu, hutan keramat. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+  "tesis_modul": "Amanat Galunggung (abad ke-13) memuat ajaran Patanjala: pata = air, jala = sungai, atau wadah yang harus dijaga karena ia kabuyutan - warisan leluhur. Tafsirnya berbeda di antara ahli; Undang Ahmad Darsa membacanya lain, tetapi intinya sama: kata itu mengandung perintah menjaga.",
+  "babak_narasi": [
+   {
+    "babak": "Babak 12 - Patanjala",
+    "shots": [
+     "s01",
+     "s02",
+     "s03"
+    ],
+    "fokus": "Tugas lain Cipakan: naskah abad ke-13 dan kata Patanjala."
+   },
+   {
+    "babak": "Babak 12 - Patanjala",
+    "shots": [
+     "s04",
+     "s05"
+    ],
+    "fokus": "Wadah yang harus dijaga, dan perbedaan tafsir yang intinya sama."
+   }
+  ]
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "range": [
+    0,
+    99
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Peralihan - Cipakan punya satu tugas lain selain jadi nama",
+   "jenis": "PLACE",
+   "latar_plate": "Full-bleed turn page on aged newsprint: a mustard block across the upper left, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A short turn of the page: the stream high left, the water close up low left, and the 'tugas lain' slip low right - three pieces and a lot of paper.",
+   "kamera": "Hold the stream, then settle on the slip; range 24% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_sungai_cipakan",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Cipakan - nama yang sudah selesai dibahas, tapi airnya masih punya urusan lain",
+     "semantik": "CIPAKAN",
+     "what": "a sepia halftone photograph of a small stream curving past a bamboo fence",
+     "at": "upper left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
+     "cut": true,
+     "word": "Cipakan",
+     "z": 1,
+     "lands": 47
+    },
+    {
+     "name": "foto_air_dekat",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air dari dekat - benda yang akan diberi tugas dalam kalimat berikutnya",
+     "semantik": "SATU TUGAS",
+     "what": "a sepia halftone photograph of clear water moving over a pebbled bed, close up",
+     "at": "lower left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "satu",
+     "z": 2,
+     "lands": 69
+    },
+    {
+     "name": "kartu_tugas_lain",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Pintu masuk babak baru - tugas yang bukan penamaan",
+     "semantik": "TUGAS LAIN",
+     "what": "a torn cream slip with stencilled type reading 'TUGAS LAIN'",
+     "at": "lower right of the frame, centred at 0.74 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "lain.",
+     "z": 3,
+     "lands": 90
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     15,
+     3.0,
+     "kartu_tugas_lain",
+     {
+      "at": 90,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'lain.'.",
+   "emphasis": [
+    {
+     "frame": 12.8,
+     "word": "Tenang.",
+     "motion": "snap"
+    },
+    {
+     "frame": 90.2,
+     "word": "lain.",
+     "motion": "hold",
+     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "range": [
+    99,
+    312
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Sumber - naskah Sunda kuno abad ke-13, Amanat Galunggung, ajaran Patanjala",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed manuscript page on aged newsprint: a charcoal block behind the leaves, a crimson strip across the bottom left, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "One manuscript, three facts: the old leaves high left, the century slip low left, the title slip high right, the reader low centre, and the name of the teaching along the bottom.",
+   "kamera": "Open the leaves, read the title, then settle on the name; range 28% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_naskah_kuno",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Naskah Sunda kuno - satu-satunya tempat ajaran ini tercatat",
+     "semantik": "NASKAH SUNDA KUNO",
+     "what": "a sepia halftone photograph of a stack of old palm-leaf leaves with a cord through them",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "naska",
+     "z": 1,
+     "lands": 32
+    },
+    {
+     "name": "kartu_abad_13",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Umur naskah - abad ketiga belas, sebelum kerajaan terakhir runtuh",
+     "semantik": "ABAD KE-13",
+     "what": "a torn cream slip with big stencilled type reading 'ABAD 13'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "-13,",
+     "z": 3,
+     "lands": 74
+    },
+    {
+     "name": "kartu_amanat_galunggung",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Judul naskahnya - nama yang bisa dicari di katalog",
+     "semantik": "AMANAT GALUNGGUNG",
+     "what": "a torn cream slip with letterpress type reading 'AMANAT GALUNGGUNG'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "Galunggung,",
+     "z": 4,
+     "lands": 117
+    },
+    {
+     "name": "pembaca_ajaran",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang membaca ajaran itu - rantai yang menjaga kata ini hidup",
+     "semantik": "ADA AJARAN",
+     "what": "a sepia halftone photograph of a man reading a palm leaf held flat in both hands, seen from the side",
+     "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "ajaran",
+     "z": 2,
+     "lands": 163
+    },
+    {
+     "name": "kartu_patanjala",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Nama ajaran - kata yang akan dibedah di tiga shot berikutnya",
+     "semantik": "PATANJALA",
+     "what": "a torn cream slip with big stencilled type reading 'PATANJALA'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Patanjala.",
+     "z": 5,
+     "lands": 189
+    }
+   ],
+   "marks": [
+    [
+     "brackets",
+     11,
+     3.6,
+     "kartu_abad_13",
+     {
+      "at": 74,
+      "color": "crimson"
+     }
+    ],
+    [
+     "circle",
+     16,
+     -2.9,
+     "pembaca_ajaran",
+     {
+      "at": 163,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Brackets on the printed slip on '-13,'; circle on the figure on 'ajaran'.",
+   "emphasis": [
+    {
+     "frame": 124.4,
+     "word": "Dalam",
+     "motion": "hold",
+     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 173.0,
+     "word": "-13,",
+     "motion": "hold",
+     "why": "skor 0.48 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 215.6,
+     "word": "Galunggung,",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "range": [
+    312,
+    446
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Etimologi - pata berarti air, jala berarti sungai",
+   "jenis": "DIAGRAM",
+   "latar_plate": "Full-bleed etymology page on aged newsprint: a mustard block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "The word split in two: water high left, its gloss low left, the river high right, and its gloss low right - one word, two halves, left and right.",
+   "kamera": "Read left to right, half by half; range 25% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_air_pata",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Air - arti suku kata pertama",
+     "semantik": "PATA",
+     "what": "a sepia halftone photograph of water welling up in a stone basin, surface unbroken",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "berarti",
+     "z": 1,
+     "lands": 31
+    },
+    {
+     "name": "kartu_pata",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Suku kata pertama dan artinya, ditulis sebagai persamaan",
+     "semantik": "PATA = AIR",
+     "what": "a torn cream slip with big stencilled type reading 'PATA' and a small line 'AIR'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "air,",
+     "z": 3,
+     "lands": 44
+    },
+    {
+     "name": "foto_sungai_jala",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Sungai - arti suku kata kedua",
+     "semantik": "JALA",
+     "what": "a sepia halftone photograph of a wide river channel seen along its length",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+     "cut": true,
+     "word": "berarti",
+     "z": 2,
+     "lands": 94
+    },
+    {
+     "name": "kartu_jala",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Suku kata kedua dan artinya - pasangan yang membentuk satu kata",
+     "semantik": "JALA = SUNGAI",
+     "what": "a torn cream slip with big stencilled type reading 'JALA' and a small line 'SUNGAI'",
+     "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "sungai.",
+     "z": 4,
+     "lands": 109
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     2.4,
+     "kartu_pata",
+     {
+      "at": 44,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'air,'.",
+   "emphasis": [
+    {
+     "frame": 330.2,
+     "word": "Pata",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    },
+    {
+     "frame": 420.8,
+     "word": "sungai.",
+     "motion": "hold",
+     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "range": [
+    446,
+    597
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Tafsir kedua - bukan cuma air: wadah yang harus dijaga karena kabuyutan",
+   "jenis": "OBJECT",
+   "latar_plate": "Full-bleed sacred page on aged newsprint: a crimson block behind the basin, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "Not just water, a vessel: the stone basin high left, the 'harus dijaga' slip low left, the kabuyutan slip high right, the keeper low centre, and the sacred grove low right.",
+   "kamera": "Hold the basin, then step back to the grove and the keeper; range 27% of fitZoom.",
+   "cards": [
+    {
+     "name": "foto_wadah_batu",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Wadah batu - tafsir kedua: bukan airnya, tapi tempatnya",
+     "semantik": "WADAH",
+     "what": "a sepia halftone photograph of a carved stone water basin with moss on its rim",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": true,
+     "word": "wadah",
+     "z": 1,
+     "lands": 15
+    },
+    {
+     "name": "kartu_harus_dijaga",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perintah yang tersimpan di dalam kata - menjaga",
+     "semantik": "HARUS DIJAGA",
+     "what": "a torn cream slip with stencilled type reading 'HARUS DIJAGA'",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "dijaga",
+     "z": 4,
+     "lands": 44
+    },
+    {
+     "name": "kartu_kabuyutan",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Status tempatnya - kabuyutan, bukan benda biasa",
+     "semantik": "KABUYUTAN",
+     "what": "a torn cream slip with letterpress type reading 'KABUYUTAN'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "kabuyutan,",
+     "z": 5,
+     "lands": 86
+    },
+    {
+     "name": "penjaga_kabuyutan",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Orang yang menjaga - warisan leluhur yang masih diurus tangan",
+     "semantik": "WARISAN LELUHUR",
+     "what": "a sepia halftone photograph of an old man standing at the edge of a spring with a broom, seen from the side",
+     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "warisan",
+     "z": 2,
+     "lands": 122,
+     "motion_basis": "Dua lengan dan punggung, selebar 0.24 frame; kaki tetap di tanah. pose1 = berdiri, sapu dipegang mendatar.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "sweep the stone rim twice with short strokes"
+      },
+      {
+       "pose": 3,
+       "action": "straighten up and look along the path behind him"
+      },
+      {
+       "pose": 4,
+       "action": "rest the broom against his shoulder and stand still"
+      }
+     ]
+    },
+    {
+     "name": "foto_hutan_keramat",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Hutan kecil di sekitar mata air - kabuyutan yang tidak dipugar, hanya dijaga",
+     "semantik": "LELUHUR",
+     "what": "a sepia halftone photograph of a small grove of tall trees with a spring at its edge",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "leluhur.",
+     "z": 3,
+     "lands": 133
+    }
+   ],
+   "marks": [
+    [
+     "box",
+     13,
+     3.0,
+     "kartu_harus_dijaga",
+     {
+      "at": 44,
+      "color": "crimson"
+     }
+    ],
+    [
+     "box",
+     14,
+     -2.4,
+     "penjaga_kabuyutan",
+     {
+      "at": 122,
+      "color": "coral"
+     }
+    ]
+   ],
+   "mark": "Box on the printed slip on 'dijaga'; box on the figure on 'warisan'.",
+   "emphasis": []
+  },
+  {
+   "id": "s05",
+   "range": [
+    597,
+    921
+   ],
+   "babak": "Babak 12 - Patanjala",
+   "peran_retoris": "Perbedaan tafsir - para ahli tidak sepakat, tapi intinya sama",
+   "jenis": "SUBJECT",
+   "latar_plate": "Full-bleed dispute page on aged newsprint: a charcoal block across the upper left, a mustard block down the right edge, printed columns showing through, masking tape.",
+   "tata_letak_kolase": "A disagreement laid out: the dispute strip high left, the experts low left, the 'arti kata' slip high right, the philologist low centre, the campus low right, and 'intinya sama' along the bottom.",
+   "kamera": "Hold the disagreement, cross to the philologist, then settle on the agreement; range 30% of fitZoom.",
+   "cards": [
+    {
+     "name": "strip_perbedaan",
+     "bahan": "koran",
+     "wujud": "sobekan_pita",
+     "semiotik": "Perbedaan pendapat sebagai judul - dua bacaan atas satu kata",
+     "semantik": "PERBEDAAN TAFSIR",
+     "what": "a torn newsprint strip with bold type reading 'PERBEDAAN TAFSIR'",
+     "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
+     "cut": "close the cut edge cleanly with a narrow torn white paper border",
+     "word": "perbedaan",
+     "z": 4,
+     "lands": 26
+    },
+    {
+     "name": "para_ahli",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Para ahli di meja yang sama - yang tidak sepakat soal satu kata",
+     "semantik": "PARA AHLI",
+     "what": "a sepia halftone photograph of three men at a table over open books, seen from the side",
+     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "ahli",
+     "z": 1,
+     "lands": 75
+    },
+    {
+     "name": "kartu_arti_kata",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Yang diperdebatkan bukan airnya, melainkan arti katanya",
+     "semantik": "ARTI KATA ITU",
+     "what": "a torn cream slip with stencilled type reading 'ARTI KATA'",
+     "at": "upper right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+     "cut": true,
+     "word": "kata",
+     "z": 5,
+     "lands": 99
+    },
+    {
+     "name": "filolog_darsa",
+     "bahan": "figur",
+     "wujud": "siluet_organik",
+     "semiotik": "Filolog yang membacanya lain - bacaan yang harus disebut namanya",
+     "semantik": "UNDANG AHMAD DARSA",
+     "what": "a sepia halftone photograph of a man in a batik shirt holding a pencil over an open book, seen from the side",
+     "at": "centre of the frame, centred at 0.46 across, about 0.24 of the frame wide",
+     "cut": true,
+     "word": "Darsa",
+     "z": 2,
+     "lands": 174,
+     "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; buku dan meja tetap. pose1 = duduk, pensil menyentuh halaman.",
+     "poses_planned": [
+      {
+       "pose": 2,
+       "action": "underline one word and tap the page twice"
+      },
+      {
+       "pose": 3,
+       "action": "lift his head and speak toward the table"
+      },
+      {
+       "pose": 4,
+       "action": "close the book and set the pencil down"
+      }
+     ]
+    },
+    {
+     "name": "foto_kampus",
+     "bahan": "foto",
+     "wujud": "siluet_organik",
+     "semiotik": "Kampus tempat ia mengajar - lembaga di balik bacaan itu",
+     "semantik": "DARI UNIVERSITAS",
+     "what": "a sepia halftone photograph of a long low campus building with a tiled roof and trees",
+     "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "Pajajaran",
+     "z": 3,
+     "lands": 219
+    },
+    {
+     "name": "kartu_intinya_sama",
+     "bahan": "cetak",
+     "wujud": "sobekan_pita",
+     "semiotik": "Penutup perdebatan - tafsir boleh beda, isinya satu",
+     "semantik": "INTINYA SAMA",
+     "what": "a torn cream slip with stencilled type reading 'INTINYA SAMA'",
+     "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide",
+     "cut": true,
+     "word": "sama.",
+     "z": 6,
+     "lands": 300
+    }
+   ],
+   "marks": [
+    [
+     "underline",
+     12,
+     1.8,
+     "kartu_arti_kata",
+     {
+      "at": 130,
+      "color": "coral"
+     }
+    ],
+    [
+     "circle",
+     14,
+     3.0,
+     "foto_kampus",
+     {
+      "at": 250,
+      "color": "crimson"
+     }
+    ]
+   ],
+   "mark": "Underline on the printed slip on 'kata'; circle on the photograph on 'pajajaran'.",
+   "emphasis": [
+    {
+     "frame": 850.4,
+     "word": "lain.",
+     "motion": "landing",
+     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+    }
+   ]
+  }
+ ],
+ "context": {
+  "skills_read": [
+   "vox-lean",
+   "audio-first-documentary",
+   "vox-animation"
+  ],
+  "benang_read": [
+   "Hukum rencana diperiksa lebih dulu (R0)",
+   "Hukum keterbacaan (R6)",
+   "Hukum kedatangan kartu (R2e)",
+   "Hukum tanda tangan (R5a)"
+  ],
+  "laws": [
+   "L-cards",
+   "L-arrival",
+   "L-mark",
+   "L-marks",
+   "L-emphasis",
+   "L-plate",
+   "L-cut",
+   "L-iso",
+   "L-collage",
+   "L-baca"
+  ],
+  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
+ }
+}
