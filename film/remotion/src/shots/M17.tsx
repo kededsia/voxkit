@@ -237,11 +237,11 @@ const S03: React.FC = () => (
     <AbsoluteFill>
       <Card src="m17/cards/s03/foto_buah_kapundung.png" x={0.1109} y={0.3817} w={0.2137} aspect={2.2609} enterFrame={0} travel={9} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
       <Card src="m17/cards/s03/foto_tepi_sungai_dulu.png" x={0.8471} y={0.3372} w={0.3975} aspect={1.3888} enterFrame={30} travel={21} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m17/cards/s03/pencari_pohon.png" x={0.8031} y={0.7208} w={0.3488} aspect={1.9447} enterFrame={118} travel={21} from="left" phase={2} stepped={2} kind="figure" z={3} poses={[{atFrame: 149, src: "m17/cards/s03/pencari_pohon_pose2.png"}, {atFrame: 171, src: "m17/cards/s03/pencari_pohon_pose3.png"}, {atFrame: 193, src: "m17/cards/s03/pencari_pohon_pose4.png"}]} />
-      <Card src="m17/cards/s03/kartu_asam.png" x={0.4976} y={0.5108} w={0.2573} aspect={3.5479} enterFrame={3} travel={17} from="top" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m17/cards/s03/kartu_sepanjang.png" x={0.4672} y={0.9238} w={0.3241} aspect={0.7552} enterFrame={67} travel={21} from="right" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m17/cards/s03/strip_koran_hilang.png" x={0.514} y={0.4841} w={0.8568} aspect={0.5623} enterFrame={103} travel={17} from="bottom" phase={4.25} stepped={2} kind="type" z={6} />
-      <Card src="m17/cards/s03/kartu_tidak_ditemukan.png" x={0.3785} y={0.739} w={0.5487} aspect={0.6858} enterFrame={155} travel={21} from="left" phase={5} stepped={2} kind="type" z={7} />
+      <Card src="m17/cards/s03/kartu_asam.png" x={0.4976} y={0.5108} w={0.2573} aspect={3.5479} enterFrame={3} travel={17} from="left" phase={2} stepped={2} kind="type" z={4} />
+      <Card src="m17/cards/s03/kartu_sepanjang.png" x={0.4672} y={0.9238} w={0.3241} aspect={0.7552} enterFrame={67} travel={21} from="top" phase={2.75} stepped={2} kind="type" z={5} />
+      <Card src="m17/cards/s03/strip_koran_hilang.png" x={0.514} y={0.4841} w={0.8568} aspect={0.5623} enterFrame={103} travel={17} from="right" phase={3.5} stepped={2} kind="type" z={6} />
+      <Card src="m17/cards/s03/kartu_tidak_ditemukan.png" x={0.3785} y={0.739} w={0.5487} aspect={0.6858} enterFrame={155} travel={21} from="bottom" phase={4.25} stepped={2} kind="type" z={7} />
+      <Card src="m17/cards/s03/pencari_pohon.png" x={0.8031} y={0.7208} w={0.3488} aspect={1.9447} enterFrame={118} travel={21} from="left" phase={5} stepped={2} kind="figure" z={7} poses={[{atFrame: 149, src: "m17/cards/s03/pencari_pohon_pose2.png"}, {atFrame: 171, src: "m17/cards/s03/pencari_pohon_pose3.png"}, {atFrame: 193, src: "m17/cards/s03/pencari_pohon_pose4.png"}]} />
       <Card src="m17/cards/s03/kartu_bandung.png" x={0.5316} y={0.1647} w={0.4702} aspect={0.6009} enterFrame={185} travel={21} from="top" phase={5.75} stepped={2} kind="type" z={8} />
       <HandMark
         shape="underline"

@@ -1,857 +1,857 @@
 {
- "plan_version": 2,
- "module": "m14",
- "klaim": "Inilah paradoksnya: nama-nama Cipakan lebih tua daripada nama-nama Sanskrita di prasasti, tetapi yang Sanskrita ditulis lebih dulu - nama Cipakan baru masuk kertas 1.000 tahun kemudian. Yang lebih tua justru yang lebih lama bisu. Ketika Pakuan Pajajaran runtuh pada akhir abad ke-16, istana, gelar dan nama rajanya hilang - nama Cipakan tidak, karena ia menempel pada air, dan air tidak peduli siapa yang berkuasa.",
- "payoff": "Nama yang bertahan bukan nama yang paling awal ditulis, melainkan nama yang menempel pada sesuatu yang tidak bisa dijatuhkan: air.",
- "serah": "nama yang menempel pada air, untuk m15 yang masuk ke nama-nama air itu sendiri",
- "terima": "1.641 baris puisi dan Cipakan Cilan dari m13",
- "konteks_modul": {
-  "konteks_budaya": "Arsip epigrafi dan kronik: prasasti batu, naskah daun, peta lama, koran daerah, foto reruntuhan. Lanskap: sungai kecil yang mengalir terus, halaman istana yang tinggal tanah, air di saluran. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
-  "tesis_modul": "Nama Cipakan lebih tua, tetapi nama Sanskrita yang lebih dulu ditulis; nama Cipakan baru masuk kertas seribu tahun kemudian. Yang lebih tua justru yang lebih lama bisu. Pada akhir abad ke-16 Pakuan Pajajaran runtuh dan nama para rajanya hilang, tetapi nama Cipakan tidak ikut hilang - sebab ia menempel pada air, bukan pada raja.",
-  "babak_narasi": [
-   {
-    "babak": "Babak 11 - Paradoks",
-    "shots": [
-     "s01",
-     "s02",
-     "s03"
-    ],
-    "fokus": "Yang lebih tua justru yang ditulis belakangan."
-   },
-   {
-    "babak": "Babak 11 - Paradoks",
-    "shots": [
-     "s04",
-     "s05"
-    ],
-    "fokus": "Yang lebih tua lebih lama bisu; kerajaan runtuh dan nama rajanya hilang."
-   },
-   {
-    "babak": "Babak 11 - Paradoks",
-    "shots": [
-     "s06",
-     "s07"
-    ],
-    "fokus": "Nama Cipakan tidak ikut hilang karena menempel pada air."
-   }
-  ]
- },
- "shots": [
-  {
-   "id": "s01",
-   "range": [
-    0,
-    252
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Tesis - nama Cipakan lebih tua daripada nama Sanskrita di prasasti",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed paradox page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Two ages set against each other: the paradox strip high left, the small stream low left, the water name high right, the Sanskrit slip low right, and the inscription photograph at the bottom.",
-   "kamera": "Hold the paradox, then weigh the two names; range 29% of fitZoom.",
-   "cards": [
-    {
-     "name": "strip_paradoks",
-     "bahan": "koran",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kata untuk seluruh babak, sebagai judul - dua umur yang bertabrakan",
-     "semantik": "PARADOKS",
-     "what": "a torn newsprint strip with bold type reading 'PARADOKS'",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
-     "cut": "close the cut edge cleanly with a narrow torn white paper border",
-     "word": "paradoksnya.",
-     "z": 4,
-     "lands": 51
-    },
-    {
-     "name": "foto_sungai_kecil",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai kecil bernama Cipakan - yang umurnya lebih tua daripada tulisan",
-     "semantik": "NAMA CIPAKAN",
-     "what": "a sepia halftone photograph of a small stream running between mossy stones",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "Serius,",
-     "z": 1,
-     "lands": 93
-    },
-    {
-     "name": "foto_sungai_lama",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang sudah mengalir sebelum ada yang menulisnya",
-     "semantik": "LEBIH TUA",
-     "what": "a sepia halftone photograph of an old stone water channel with grass along its lip",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "Cipakan",
-     "z": 2,
-     "lands": 149
-    },
-    {
-     "name": "kartu_cipakan_tua",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Perbandingan umur, ditulis sebagai perbandingan",
-     "semantik": "NAMA CIPAKAN LEBIH TUA",
-     "what": "a torn cream slip with stencilled type reading 'CIPAKAN LEBIH TUA'",
-     "at": "centre left of the frame, centred at 0.24 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "tua",
-     "z": 5,
-     "lands": 167
-    },
-    {
-     "name": "kartu_sanskrita",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama pembanding - yang lebih muda tapi lebih dulu tercatat",
-     "semantik": "NAMA SANSKERTA",
-     "what": "a torn cream slip with letterpress type reading 'NAMA SANSKERTA'",
-     "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Sanskrita",
-     "z": 6,
-     "lands": 213
-    },
-    {
-     "name": "foto_prasasti_batu",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Prasasti - satu-satunya tempat nama Sanskrita itu tercatat",
-     "semantik": "DI PRASASTI",
-     "what": "a sepia halftone photograph of a standing inscribed stone in a grass courtyard",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "Prasasti.",
-     "z": 3,
-     "lands": 235
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     15,
-     3.0,
-     "kartu_cipakan_tua",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'tua'.",
-   "emphasis": [
-    {
-     "frame": 14.2,
-     "word": "Jadi,",
-     "motion": "hold",
-     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 92.8,
-     "word": "Serius,",
-     "motion": "snap"
-    }
-   ],
-   "still_gate": "PASS 29.2"
-  },
-  {
-   "id": "s02",
-   "range": [
-    252,
-    377
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Pembalikan - yang Sanskrita justru yang lebih dulu ditulis",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed carving page on aged newsprint: a charcoal block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Someone writes first: the carver high left, the carved stone low left, and the 'lebih dulu ditulis' slip high right - one hand, one stone, one date.",
-   "kamera": "Hold the hand at work, then settle on the slip; range 25% of fitZoom.",
-   "cards": [
-    {
-     "name": "juru_tulis_batu",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Tangan yang memahat huruf - yang membuat nama Sanskrita lebih dulu tercatat",
-     "semantik": "YANG LEBIH DULU DITULIS",
-     "what": "a sepia halftone photograph of a man kneeling and carving letters into a stone with a chisel, seen from the side",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "Sanskrita",
-     "z": 1,
-     "lands": 52,
-     "motion_basis": "Dua tangan dan bahu, selebar 0.28 frame; batu dan lutut tetap. pose1 = berlutut, pahat menempel di permukaan batu.",
-     "poses_planned": [
+  "plan_version": 2,
+  "module": "m14",
+  "klaim": "Inilah paradoksnya: nama-nama Cipakan lebih tua daripada nama-nama Sanskrita di prasasti, tetapi yang Sanskrita ditulis lebih dulu - nama Cipakan baru masuk kertas 1.000 tahun kemudian. Yang lebih tua justru yang lebih lama bisu. Ketika Pakuan Pajajaran runtuh pada akhir abad ke-16, istana, gelar dan nama rajanya hilang - nama Cipakan tidak, karena ia menempel pada air, dan air tidak peduli siapa yang berkuasa.",
+  "payoff": "Nama yang bertahan bukan nama yang paling awal ditulis, melainkan nama yang menempel pada sesuatu yang tidak bisa dijatuhkan: air.",
+  "serah": "nama yang menempel pada air, untuk m15 yang masuk ke nama-nama air itu sendiri",
+  "terima": "1.641 baris puisi dan Cipakan Cilan dari m13",
+  "konteks_modul": {
+    "konteks_budaya": "Arsip epigrafi dan kronik: prasasti batu, naskah daun, peta lama, koran daerah, foto reruntuhan. Lanskap: sungai kecil yang mengalir terus, halaman istana yang tinggal tanah, air di saluran. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+    "tesis_modul": "Nama Cipakan lebih tua, tetapi nama Sanskrita yang lebih dulu ditulis; nama Cipakan baru masuk kertas seribu tahun kemudian. Yang lebih tua justru yang lebih lama bisu. Pada akhir abad ke-16 Pakuan Pajajaran runtuh dan nama para rajanya hilang, tetapi nama Cipakan tidak ikut hilang - sebab ia menempel pada air, bukan pada raja.",
+    "babak_narasi": [
       {
-       "pose": 2,
-       "action": "strike the chisel once with the mallet and stop"
+        "babak": "Babak 11 - Paradoks",
+        "shots": [
+          "s01",
+          "s02",
+          "s03"
+        ],
+        "fokus": "Yang lebih tua justru yang ditulis belakangan."
       },
       {
-       "pose": 3,
-       "action": "brush the stone dust away with his free hand"
+        "babak": "Babak 11 - Paradoks",
+        "shots": [
+          "s04",
+          "s05"
+        ],
+        "fokus": "Yang lebih tua lebih lama bisu; kerajaan runtuh dan nama rajanya hilang."
       },
       {
-       "pose": 4,
-       "action": "sit back on his heel and look at the finished line"
+        "babak": "Babak 11 - Paradoks",
+        "shots": [
+          "s06",
+          "s07"
+        ],
+        "fokus": "Nama Cipakan tidak ikut hilang karena menempel pada air."
       }
-     ]
-    },
-    {
-     "name": "foto_batu_terukir",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Batu yang selesai dipahat - bukti bertanggal",
-     "semantik": "DITULIS",
-     "what": "a sepia halftone photograph of a finished line of carved letters on stone, close up",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "ditulis.",
-     "z": 2,
-     "lands": 92
-    },
-    {
-     "name": "kartu_lebih_dulu",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Urutan waktu yang membalik dugaan - ditulis lebih dulu",
-     "semantik": "LEBIH DULU DITULIS",
-     "what": "a torn cream slip with stencilled type reading 'LEBIH DULU DITULIS'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "dulu",
-     "z": 3,
-     "lands": 87
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     11,
-     3.6,
-     "kartu_lebih_dulu",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "circle",
-     16,
-     -2.9,
-     "juru_tulis_batu",
-     {
-      "color": "coral",
-      "delay": 0
-     }
     ]
-   ],
-   "mark": "Brackets on the printed slip on 'dulu'; circle on the figure on 'sanskrita'.",
-   "emphasis": [
-    {
-     "frame": 272.2,
-     "word": "Tapi,",
-     "motion": "hold",
-     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 40.6"
   },
-  {
-   "id": "s03",
-   "range": [
-    377,
-    496
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Jarak waktunya - nama Cipakan baru masuk kertas seribu tahun kemudian",
-   "jenis": "QUANTITY",
-   "latar_plate": "Full-bleed delay page on aged newsprint: a mustard block behind the paper, a crimson strip along the bottom left, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "A thousand years late: the stream high left, the hand writing on paper low left, the 1.000 year slip high right, and the paper itself at the bottom.",
-   "kamera": "Hold the stream, cut to the paper, then settle on the number; range 26% of fitZoom.",
-   "cards": [
+  "shots": [
     {
-     "name": "foto_sungai_cipakan",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai yang namanya sudah ada, tapi belum pernah ditulis",
-     "semantik": "NAMA CIPAKAN",
-     "what": "a sepia halftone photograph of a stream disappearing into grass at the edge of a field",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "Cipakan",
-     "z": 1,
-     "lands": 19
+      "id": "s01",
+      "range": [
+        0,
+        252
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Tesis - nama Cipakan lebih tua daripada nama Sanskrita di prasasti",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed paradox page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Two ages set against each other: the paradox strip high left, the small stream low left, the water name high right, the Sanskrit slip low right, and the inscription photograph at the bottom.",
+      "kamera": "Hold the paradox, then weigh the two names; range 29% of fitZoom.",
+      "cards": [
+        {
+          "name": "strip_paradoks",
+          "bahan": "koran",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kata untuk seluruh babak, sebagai judul - dua umur yang bertabrakan",
+          "semantik": "PARADOKS",
+          "what": "a torn newsprint strip with bold type reading 'PARADOKS'",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+          "cut": "close the cut edge cleanly with a narrow torn white paper border",
+          "word": "paradoksnya.",
+          "z": 4,
+          "lands": 51
+        },
+        {
+          "name": "foto_sungai_kecil",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai kecil bernama Cipakan - yang umurnya lebih tua daripada tulisan",
+          "semantik": "NAMA CIPAKAN",
+          "what": "a sepia halftone photograph of a small stream running between mossy stones",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "Serius,",
+          "z": 1,
+          "lands": 93
+        },
+        {
+          "name": "foto_sungai_lama",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang sudah mengalir sebelum ada yang menulisnya",
+          "semantik": "LEBIH TUA",
+          "what": "a sepia halftone photograph of an old stone water channel with grass along its lip",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "Cipakan",
+          "z": 2,
+          "lands": 149
+        },
+        {
+          "name": "kartu_cipakan_tua",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Perbandingan umur, ditulis sebagai perbandingan",
+          "semantik": "NAMA CIPAKAN LEBIH TUA",
+          "what": "a torn cream slip with stencilled type reading 'CIPAKAN LEBIH TUA'",
+          "at": "centre left of the frame, centred at 0.24 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "tua",
+          "z": 5,
+          "lands": 167
+        },
+        {
+          "name": "kartu_sanskrita",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama pembanding - yang lebih muda tapi lebih dulu tercatat",
+          "semantik": "NAMA SANSKERTA",
+          "what": "a torn cream slip with letterpress type reading 'NAMA SANSKERTA'",
+          "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Sanskrita",
+          "z": 6,
+          "lands": 213
+        },
+        {
+          "name": "foto_prasasti_batu",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Prasasti - satu-satunya tempat nama Sanskrita itu tercatat",
+          "semantik": "DI PRASASTI",
+          "what": "a sepia halftone photograph of a standing inscribed stone in a grass courtyard",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "Prasasti.",
+          "z": 3,
+          "lands": 235
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          15,
+          3.0,
+          "kartu_cipakan_tua",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'tua'.",
+      "emphasis": [
+        {
+          "frame": 14.2,
+          "word": "Jadi,",
+          "motion": "hold",
+          "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 92.8,
+          "word": "Serius,",
+          "motion": "snap"
+        }
+      ],
+      "still_gate": "PASS 29.2"
     },
     {
-     "name": "penulis_kertas",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Tangan yang menulis di kertas - seribu tahun setelah airnya mengalir",
-     "semantik": "MASUK KE KERTAS",
-     "what": "a sepia halftone photograph of a man writing with a quill on a sheet of paper, seen from the side",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "kertas",
-     "z": 2,
-     "lands": 50,
-     "motion_basis": "Tangan kanan dan kepala, selebar 0.26 frame; kertas dan meja tetap. pose1 = duduk, pena menyentuh kertas.",
-     "poses_planned": [
-      {
-       "pose": 2,
-       "action": "write one line and dip the quill again"
-      },
-      {
-       "pose": 3,
-       "action": "lift the quill and look up from the page"
-      },
-      {
-       "pose": 4,
-       "action": "press the page flat with his left hand"
-      }
-     ]
+      "id": "s02",
+      "range": [
+        252,
+        377
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Pembalikan - yang Sanskrita justru yang lebih dulu ditulis",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed carving page on aged newsprint: a charcoal block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Someone writes first: the carver high left, the carved stone low left, and the 'lebih dulu ditulis' slip high right - one hand, one stone, one date.",
+      "kamera": "Hold the hand at work, then settle on the slip; range 25% of fitZoom.",
+      "cards": [
+        {
+          "name": "juru_tulis_batu",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Tangan yang memahat huruf - yang membuat nama Sanskrita lebih dulu tercatat",
+          "semantik": "YANG LEBIH DULU DITULIS",
+          "what": "a sepia halftone photograph of a man kneeling and carving letters into a stone with a chisel, seen from the side",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "Sanskrita",
+          "z": 1,
+          "lands": 52,
+          "motion_basis": "Dua tangan dan bahu, selebar 0.28 frame; batu dan lutut tetap. pose1 = berlutut, pahat menempel di permukaan batu.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "strike the chisel once with the mallet and stop"
+            },
+            {
+              "pose": 3,
+              "action": "brush the stone dust away with his free hand"
+            },
+            {
+              "pose": 4,
+              "action": "sit back on his heel and look at the finished line"
+            }
+          ]
+        },
+        {
+          "name": "foto_batu_terukir",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Batu yang selesai dipahat - bukti bertanggal",
+          "semantik": "DITULIS",
+          "what": "a sepia halftone photograph of a finished line of carved letters on stone, close up",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "ditulis.",
+          "z": 2,
+          "lands": 92
+        },
+        {
+          "name": "kartu_lebih_dulu",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Urutan waktu yang membalik dugaan - ditulis lebih dulu",
+          "semantik": "LEBIH DULU DITULIS",
+          "what": "a torn cream slip with stencilled type reading 'LEBIH DULU DITULIS'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "dulu",
+          "z": 3,
+          "lands": 87
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          11,
+          3.6,
+          "kartu_lebih_dulu",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "circle",
+          16,
+          -2.9,
+          "juru_tulis_batu",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'dulu'; circle on the figure on 'sanskrita'.",
+      "emphasis": [
+        {
+          "frame": 272.2,
+          "word": "Tapi,",
+          "motion": "hold",
+          "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 40.6"
     },
     {
-     "name": "kartu_1000_tahun",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Jarak waktu yang membuat paradoks ini terasa - seribu tahun",
-     "semantik": "1.000 TAHUN KEMUDIAN",
-     "what": "a torn cream slip with big stencilled type reading '1.000 TAHUN' and a small line 'KEMUDIAN'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "tahun",
-     "z": 4,
-     "lands": 78
+      "id": "s03",
+      "range": [
+        377,
+        496
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Jarak waktunya - nama Cipakan baru masuk kertas seribu tahun kemudian",
+      "jenis": "QUANTITY",
+      "latar_plate": "Full-bleed delay page on aged newsprint: a mustard block behind the paper, a crimson strip along the bottom left, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "A thousand years late: the stream high left, the hand writing on paper low left, the 1.000 year slip high right, and the paper itself at the bottom.",
+      "kamera": "Hold the stream, cut to the paper, then settle on the number; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_sungai_cipakan",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai yang namanya sudah ada, tapi belum pernah ditulis",
+          "semantik": "NAMA CIPAKAN",
+          "what": "a sepia halftone photograph of a stream disappearing into grass at the edge of a field",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "Cipakan",
+          "z": 1,
+          "lands": 19
+        },
+        {
+          "name": "penulis_kertas",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Tangan yang menulis di kertas - seribu tahun setelah airnya mengalir",
+          "semantik": "MASUK KE KERTAS",
+          "what": "a sepia halftone photograph of a man writing with a quill on a sheet of paper, seen from the side",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "kertas",
+          "z": 2,
+          "lands": 50,
+          "motion_basis": "Tangan kanan dan kepala, selebar 0.26 frame; kertas dan meja tetap. pose1 = duduk, pena menyentuh kertas.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "write one line and dip the quill again"
+            },
+            {
+              "pose": 3,
+              "action": "lift the quill and look up from the page"
+            },
+            {
+              "pose": 4,
+              "action": "press the page flat with his left hand"
+            }
+          ]
+        },
+        {
+          "name": "kartu_1000_tahun",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Jarak waktu yang membuat paradoks ini terasa - seribu tahun",
+          "semantik": "1.000 TAHUN KEMUDIAN",
+          "what": "a torn cream slip with big stencilled type reading '1.000 TAHUN' and a small line 'KEMUDIAN'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "tahun",
+          "z": 4,
+          "lands": 78
+        },
+        {
+          "name": "foto_kertas_lama",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Kertas yang akhirnya menampung nama itu - benda yang jauh lebih muda daripada airnya",
+          "semantik": "KERTAS",
+          "what": "a sepia halftone photograph of a blank sheet of old paper with a deckled edge",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "kemudian.",
+          "z": 3,
+          "lands": 92
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          12,
+          2.4,
+          "kartu_1000_tahun",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          13,
+          -1.9,
+          "penulis_kertas",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'tahun'; ellipse on the figure on 'kertas'.",
+      "emphasis": [],
+      "still_gate": "PASS 44.7"
     },
     {
-     "name": "foto_kertas_lama",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Kertas yang akhirnya menampung nama itu - benda yang jauh lebih muda daripada airnya",
-     "semantik": "KERTAS",
-     "what": "a sepia halftone photograph of a blank sheet of old paper with a deckled edge",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "kemudian.",
-     "z": 3,
-     "lands": 92
+      "id": "s04",
+      "range": [
+        496,
+        749
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Hukuman - yang lebih tua justru yang lebih lama bisu, sampai kerajaan runtuh",
+      "jenis": "SUBJECT",
+      "latar_plate": "Full-bleed silence page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Long silence, then collapse: the quiet water high left, the 'lebih lama bisu' slip low left, the century slip high right, and the fallen palace low right.",
+      "kamera": "Hold the silence, then cut to the collapse; range 30% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_sungai_sunyi",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang terus mengalir tanpa pernah disebut - bisu bukan karena mati",
+          "semantik": "YANG LEBIH TUA",
+          "what": "a sepia halftone photograph of still water in a stone basin, no people, no writing",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "Yang",
+          "z": 1,
+          "lands": 14
+        },
+        {
+          "name": "foto_sungai_bisu",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai yang tidak tercatat di prasasti mana pun",
+          "semantik": "LEBIH LAMA BISU",
+          "what": "a sepia halftone photograph of a narrow stream under a low stone bridge",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "lama",
+          "z": 2,
+          "lands": 77
+        },
+        {
+          "name": "kartu_lebih_bisu",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Hukuman paradoks itu, ditulis sebagai kalimat",
+          "semantik": "YANG LEBIH TUA, LEBIH LAMA BISU",
+          "what": "a torn cream slip with stencilled type reading 'LEBIH LAMA BISU'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "bisu.",
+          "z": 5,
+          "lands": 85
+        },
+        {
+          "name": "foto_prasasti_kosong",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Batu yang hurufnya sudah aus - nama raja yang tidak bisa dibaca lagi",
+          "semantik": "AKHIR ABAD KE-16",
+          "what": "a sepia halftone photograph of a worn stone face where the carved letters have faded",
+          "at": "centre left of the frame, centred at 0.30 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Pada",
+          "z": 3,
+          "lands": 122
+        },
+        {
+          "name": "kartu_abad_16",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Tanggal keruntuhan - akhir abad keenam belas",
+          "semantik": "AKHIR ABAD KE-16",
+          "what": "a torn cream slip with big stencilled type reading 'ABAD 16' and a small line 'AKHIR'",
+          "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "-16,",
+          "z": 6,
+          "lands": 158
+        },
+        {
+          "name": "foto_istana_runtuh",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Pakuan Pajajaran runtuh - yang tinggal hanya tanah dan batu alas",
+          "semantik": "PAKUAN RUNTUH",
+          "what": "a sepia halftone photograph of low stone foundation walls overgrown with grass",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "runtuh.",
+          "z": 4,
+          "lands": 224
+        }
+      ],
+      "marks": [
+        [
+          "arrow-down",
+          14,
+          2.2,
+          "foto_sungai_sunyi",
+          {
+            "color": "coral",
+            "delay": 8
+          }
+        ],
+        [
+          "circle",
+          14,
+          3.6,
+          "foto_prasasti_kosong",
+          {
+            "color": "coral",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "Arrow-down on the photograph on 'yang'; circle on the photograph on 'pada'.",
+      "emphasis": [
+        {
+          "frame": 524.8,
+          "word": "tua,",
+          "motion": "hold",
+          "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 580.6,
+          "word": "bisu.",
+          "motion": "hold",
+          "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 654.4,
+          "word": "-16,",
+          "motion": "hold",
+          "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 719.8,
+          "word": "runtuh.",
+          "motion": "hold",
+          "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 33.8"
+    },
+    {
+      "id": "s05",
+      "range": [
+        749,
+        886
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Kerugian - istana, gelar, dan nama para rajanya hilang",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed loss page on aged newsprint: a crimson block behind the empty ground, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Three things lost, one plot of ground: the palace photograph high left, the titles photograph low left, the loss slip high right, and the man standing on the empty ground low right.",
+      "kamera": "Walk the ground, then settle on the man standing in it; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_istana_kosong",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Istana yang tinggal nama - tidak ada bangunan, tidak ada gelar",
+          "semantik": "ISTANA",
+          "what": "a sepia halftone photograph of an empty grass courtyard with a single stone step",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "Istana,",
+          "z": 1,
+          "lands": 10
+        },
+        {
+          "name": "foto_gelar_kosong",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Gelar yang tidak lagi dipakai siapa pun - kata yang kehilangan pemiliknya",
+          "semantik": "GELAR",
+          "what": "a sepia halftone photograph of a blank carved plaque on a stone base",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "gelar,",
+          "z": 2,
+          "lands": 31
+        },
+        {
+          "name": "kartu_istana_hilang",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Daftar yang hilang dalam satu kalimat: istana, gelar, nama raja",
+          "semantik": "ISTANA, GELAR, NAMA RAJA",
+          "what": "a torn cream slip with stencilled type reading 'ISTANA - GELAR - NAMA RAJA'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "nama",
+          "z": 4,
+          "lands": 70
+        },
+        {
+          "name": "orang_di_runtuhan",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang berdiri di tanah kosong - yang bisa menunjuk tempat, bukan nama rajanya",
+          "semantik": "HILANG",
+          "what": "a sepia halftone photograph of a man standing alone on a mown field looking down, seen from behind",
+          "at": "lower right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
+          "cut": true,
+          "word": "hilang.",
+          "z": 5,
+          "lands": 103
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          14,
+          3.6,
+          "kartu_istana_hilang",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "circle",
+          15,
+          -2.9,
+          "orang_di_runtuhan",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'nama'; circle on the figure on 'hilang.'.",
+      "emphasis": [
+        {
+          "frame": 780.4,
+          "word": "gelar,",
+          "motion": "hold",
+          "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 44.8"
+    },
+    {
+      "id": "s06",
+      "range": [
+        886,
+        1058
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Sebab - nama Cipakan tidak ikut hilang karena tidak menempel pada raja",
+      "jenis": "SUBJECT",
+      "latar_plate": "Full-bleed survival page on aged newsprint: a mustard block across the upper left, a crimson block down the right edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "What survived and what it did not attach to: the surviving stream high left, the 'tidak ikut hilang' slip low left, the king's name low centre, and the king himself low right.",
+      "kamera": "Hold the stream, then cut to the king and hold on him; range 28% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_sungai_tetap",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai yang masih mengalir dengan nama yang sama - yang tidak ikut runtuh",
+          "semantik": "NAMA CIPAKAN",
+          "what": "a sepia halftone photograph of a clear stream running through a bamboo grove",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "Cipakan",
+          "z": 1,
+          "lands": 31
+        },
+        {
+          "name": "kartu_tidak_hilang",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Pembeda antara dua jenis nama - yang satu ikut hilang, yang satu tidak",
+          "semantik": "TIDAK IKUT HILANG",
+          "what": "a torn cream slip with stencilled type reading 'TIDAK IKUT HILANG'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "hilang.",
+          "z": 4,
+          "lands": 55
+        },
+        {
+          "name": "foto_nama_raja",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Nama raja yang tinggal di batu - dan hilang bersama kerajaannya",
+          "semantik": "NAMA ITU",
+          "what": "a sepia halftone photograph of a carved royal name on a broken stone fragment",
+          "at": "centre left of the frame, centred at 0.30 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "nama",
+          "z": 2,
+          "lands": 105
+        },
+        {
+          "name": "kartu_menempel_raja",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Tempat nama itu menempel - dan sebab ia bisa hilang",
+          "semantik": "MENEMPEL PADA RAJA",
+          "what": "a torn cream slip with letterpress type reading 'MENEMPEL PADA RAJA'",
+          "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "menempel",
+          "z": 5,
+          "lands": 134
+        },
+        {
+          "name": "figur_raja",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Raja - orang yang namanya menempel padanya, dan ikut hilang bersamanya",
+          "semantik": "PADA RAJA",
+          "what": "a sepia halftone photograph of a man in royal dress standing with a ceremonial umbrella behind him, seen from the side",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide",
+          "cut": true,
+          "word": "raja.",
+          "z": 3,
+          "lands": 157
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          15,
+          2.4,
+          "kartu_tidak_hilang",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          14,
+          -1.9,
+          "figur_raja",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'hilang.'; ellipse on the figure on 'raja.'.",
+      "emphasis": [
+        {
+          "frame": 940.6,
+          "word": "hilang.",
+          "motion": "hold",
+          "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 43.2"
+    },
+    {
+      "id": "s07",
+      "range": [
+        1058,
+        1250
+      ],
+      "babak": "Babak 11 - Paradoks",
+      "peran_retoris": "Pay-off - nama itu menempel pada air, dan air tidak peduli siapa yang berkuasa",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed water page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom left, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Water, indifferent: the 'menempel pada air' slip high left, the flowing water low left, the 'air tidak peduli' slip high right, the ruler low centre, and the water again at the bottom.",
+      "kamera": "Follow the water past the ruler and out of frame; range 29% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_menempel_air",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Tempat nama itu menempel - bukan benda yang bisa dijatuhkan",
+          "semantik": "MENEMPEL PADA AIR",
+          "what": "a torn cream slip with stencilled type reading 'MENEMPEL PADA AIR'",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "menempel",
+          "z": 4,
+          "lands": 21
+        },
+        {
+          "name": "foto_air_mengalir",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang mengalir - benda yang tidak bisa dipecat atau dijatuhkan",
+          "semantik": "PADA AIR",
+          "what": "a sepia halftone photograph of water running fast over a weir, spray at the lip",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "air.",
+          "z": 1,
+          "lands": 44
+        },
+        {
+          "name": "kartu_tidak_peduli",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kalimat penutup babak - air tidak punya kepentingan pada kekuasaan",
+          "semantik": "AIR TIDAK PEDULI",
+          "what": "a torn cream slip with stencilled type reading 'AIR TIDAK PEDULI'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "peduli",
+          "z": 5,
+          "lands": 113
+        },
+        {
+          "name": "figur_berkuasa",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang yang sedang berkuasa - satu-satunya yang tidak diperhatikan air",
+          "semantik": "SIAPA YANG SEDANG BERKUASA",
+          "what": "a sepia halftone photograph of a man in an official cap standing with his arms folded, seen from the side",
+          "at": "lower centre of the frame, centred at 0.50 across, about 0.22 of the frame wide",
+          "cut": true,
+          "word": "siapa",
+          "z": 2,
+          "lands": 127
+        },
+        {
+          "name": "foto_air_terus",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang tetap mengalir setelah orang itu pergi",
+          "semantik": "BERKUASA",
+          "what": "a sepia halftone photograph of a calm river surface with a reflection of trees",
+          "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "berkuasa.",
+          "z": 3,
+          "lands": 147
+        }
+      ],
+      "marks": [
+        [
+          "arrow-right",
+          14,
+          -1.6,
+          "foto_air_mengalir",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "A rightward arrow onto the flowing water photograph on 'air'.",
+      "emphasis": [
+        {
+          "frame": 1102.0,
+          "word": "air.",
+          "motion": "landing",
+          "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 1204.6,
+          "word": "berkuasa.",
+          "motion": "hold",
+          "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 34.8"
     }
-   ],
-   "marks": [
-    [
-     "underline",
-     12,
-     2.4,
-     "kartu_1000_tahun",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+  ],
+  "context": {
+    "skills_read": [
+      "vox-lean",
+      "audio-first-documentary",
+      "vox-animation"
     ],
-    [
-     "ellipse",
-     13,
-     -1.9,
-     "penulis_kertas",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'tahun'; ellipse on the figure on 'kertas'.",
-   "emphasis": [],
-   "still_gate": "PASS 44.7"
-  },
-  {
-   "id": "s04",
-   "range": [
-    496,
-    749
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Hukuman - yang lebih tua justru yang lebih lama bisu, sampai kerajaan runtuh",
-   "jenis": "SUBJECT",
-   "latar_plate": "Full-bleed silence page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Long silence, then collapse: the quiet water high left, the 'lebih lama bisu' slip low left, the century slip high right, and the fallen palace low right.",
-   "kamera": "Hold the silence, then cut to the collapse; range 30% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_sungai_sunyi",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang terus mengalir tanpa pernah disebut - bisu bukan karena mati",
-     "semantik": "YANG LEBIH TUA",
-     "what": "a sepia halftone photograph of still water in a stone basin, no people, no writing",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "Yang",
-     "z": 1,
-     "lands": 14
-    },
-    {
-     "name": "foto_sungai_bisu",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai yang tidak tercatat di prasasti mana pun",
-     "semantik": "LEBIH LAMA BISU",
-     "what": "a sepia halftone photograph of a narrow stream under a low stone bridge",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "lama",
-     "z": 2,
-     "lands": 77
-    },
-    {
-     "name": "kartu_lebih_bisu",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Hukuman paradoks itu, ditulis sebagai kalimat",
-     "semantik": "YANG LEBIH TUA, LEBIH LAMA BISU",
-     "what": "a torn cream slip with stencilled type reading 'LEBIH LAMA BISU'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "bisu.",
-     "z": 5,
-     "lands": 85
-    },
-    {
-     "name": "foto_prasasti_kosong",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Batu yang hurufnya sudah aus - nama raja yang tidak bisa dibaca lagi",
-     "semantik": "AKHIR ABAD KE-16",
-     "what": "a sepia halftone photograph of a worn stone face where the carved letters have faded",
-     "at": "centre left of the frame, centred at 0.30 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Pada",
-     "z": 3,
-     "lands": 122
-    },
-    {
-     "name": "kartu_abad_16",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Tanggal keruntuhan - akhir abad keenam belas",
-     "semantik": "AKHIR ABAD KE-16",
-     "what": "a torn cream slip with big stencilled type reading 'ABAD 16' and a small line 'AKHIR'",
-     "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "-16,",
-     "z": 6,
-     "lands": 158
-    },
-    {
-     "name": "foto_istana_runtuh",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Pakuan Pajajaran runtuh - yang tinggal hanya tanah dan batu alas",
-     "semantik": "PAKUAN RUNTUH",
-     "what": "a sepia halftone photograph of low stone foundation walls overgrown with grass",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "runtuh.",
-     "z": 4,
-     "lands": 224
-    }
-   ],
-   "marks": [
-    [
-     "arrow-down",
-     14,
-     2.2,
-     "foto_sungai_sunyi",
-     {
-      "color": "coral",
-      "delay": 8
-     }
+    "benang_read": [
+      "Hukum rencana diperiksa lebih dulu (R0)",
+      "Hukum keterbacaan (R6)",
+      "Hukum kedatangan kartu (R2e)",
+      "Hukum tanda tangan (R5a)"
     ],
-    [
-     "circle",
-     14,
-     3.6,
-     "foto_prasasti_kosong",
-     {
-      "color": "coral",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "Arrow-down on the photograph on 'yang'; circle on the photograph on 'pada'.",
-   "emphasis": [
-    {
-     "frame": 524.8,
-     "word": "tua,",
-     "motion": "hold",
-     "why": "skor 0.44 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 580.6,
-     "word": "bisu.",
-     "motion": "hold",
-     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 654.4,
-     "word": "-16,",
-     "motion": "hold",
-     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 719.8,
-     "word": "runtuh.",
-     "motion": "hold",
-     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 33.8"
-  },
-  {
-   "id": "s05",
-   "range": [
-    749,
-    886
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Kerugian - istana, gelar, dan nama para rajanya hilang",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed loss page on aged newsprint: a crimson block behind the empty ground, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Three things lost, one plot of ground: the palace photograph high left, the titles photograph low left, the loss slip high right, and the man standing on the empty ground low right.",
-   "kamera": "Walk the ground, then settle on the man standing in it; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_istana_kosong",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Istana yang tinggal nama - tidak ada bangunan, tidak ada gelar",
-     "semantik": "ISTANA",
-     "what": "a sepia halftone photograph of an empty grass courtyard with a single stone step",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "Istana,",
-     "z": 1,
-     "lands": 10
-    },
-    {
-     "name": "foto_gelar_kosong",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Gelar yang tidak lagi dipakai siapa pun - kata yang kehilangan pemiliknya",
-     "semantik": "GELAR",
-     "what": "a sepia halftone photograph of a blank carved plaque on a stone base",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "gelar,",
-     "z": 2,
-     "lands": 31
-    },
-    {
-     "name": "kartu_istana_hilang",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Daftar yang hilang dalam satu kalimat: istana, gelar, nama raja",
-     "semantik": "ISTANA, GELAR, NAMA RAJA",
-     "what": "a torn cream slip with stencilled type reading 'ISTANA - GELAR - NAMA RAJA'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "nama",
-     "z": 4,
-     "lands": 70
-    },
-    {
-     "name": "orang_di_runtuhan",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang berdiri di tanah kosong - yang bisa menunjuk tempat, bukan nama rajanya",
-     "semantik": "HILANG",
-     "what": "a sepia halftone photograph of a man standing alone on a mown field looking down, seen from behind",
-     "at": "lower right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
-     "cut": true,
-     "word": "hilang.",
-     "z": 3,
-     "lands": 103
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     14,
-     3.6,
-     "kartu_istana_hilang",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+    "laws": [
+      "L-cards",
+      "L-arrival",
+      "L-mark",
+      "L-marks",
+      "L-emphasis",
+      "L-plate",
+      "L-cut",
+      "L-iso",
+      "L-collage",
+      "L-baca"
     ],
-    [
-     "circle",
-     15,
-     -2.9,
-     "orang_di_runtuhan",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'nama'; circle on the figure on 'hilang.'.",
-   "emphasis": [
-    {
-     "frame": 780.4,
-     "word": "gelar,",
-     "motion": "hold",
-     "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 44.8"
-  },
-  {
-   "id": "s06",
-   "range": [
-    886,
-    1058
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Sebab - nama Cipakan tidak ikut hilang karena tidak menempel pada raja",
-   "jenis": "SUBJECT",
-   "latar_plate": "Full-bleed survival page on aged newsprint: a mustard block across the upper left, a crimson block down the right edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "What survived and what it did not attach to: the surviving stream high left, the 'tidak ikut hilang' slip low left, the king's name low centre, and the king himself low right.",
-   "kamera": "Hold the stream, then cut to the king and hold on him; range 28% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_sungai_tetap",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai yang masih mengalir dengan nama yang sama - yang tidak ikut runtuh",
-     "semantik": "NAMA CIPAKAN",
-     "what": "a sepia halftone photograph of a clear stream running through a bamboo grove",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "Cipakan",
-     "z": 1,
-     "lands": 31
-    },
-    {
-     "name": "kartu_tidak_hilang",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Pembeda antara dua jenis nama - yang satu ikut hilang, yang satu tidak",
-     "semantik": "TIDAK IKUT HILANG",
-     "what": "a torn cream slip with stencilled type reading 'TIDAK IKUT HILANG'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "hilang.",
-     "z": 4,
-     "lands": 55
-    },
-    {
-     "name": "foto_nama_raja",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Nama raja yang tinggal di batu - dan hilang bersama kerajaannya",
-     "semantik": "NAMA ITU",
-     "what": "a sepia halftone photograph of a carved royal name on a broken stone fragment",
-     "at": "centre left of the frame, centred at 0.30 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "nama",
-     "z": 2,
-     "lands": 105
-    },
-    {
-     "name": "kartu_menempel_raja",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Tempat nama itu menempel - dan sebab ia bisa hilang",
-     "semantik": "MENEMPEL PADA RAJA",
-     "what": "a torn cream slip with letterpress type reading 'MENEMPEL PADA RAJA'",
-     "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "menempel",
-     "z": 5,
-     "lands": 134
-    },
-    {
-     "name": "figur_raja",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Raja - orang yang namanya menempel padanya, dan ikut hilang bersamanya",
-     "semantik": "PADA RAJA",
-     "what": "a sepia halftone photograph of a man in royal dress standing with a ceremonial umbrella behind him, seen from the side",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.24 of the frame wide",
-     "cut": true,
-     "word": "raja.",
-     "z": 3,
-     "lands": 157
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     15,
-     2.4,
-     "kartu_tidak_hilang",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "ellipse",
-     14,
-     -1.9,
-     "figur_raja",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'hilang.'; ellipse on the figure on 'raja.'.",
-   "emphasis": [
-    {
-     "frame": 940.6,
-     "word": "hilang.",
-     "motion": "hold",
-     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 43.2"
-  },
-  {
-   "id": "s07",
-   "range": [
-    1058,
-    1250
-   ],
-   "babak": "Babak 11 - Paradoks",
-   "peran_retoris": "Pay-off - nama itu menempel pada air, dan air tidak peduli siapa yang berkuasa",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed water page on aged newsprint: a charcoal block across the upper right, a mustard strip along the bottom left, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Water, indifferent: the 'menempel pada air' slip high left, the flowing water low left, the 'air tidak peduli' slip high right, the ruler low centre, and the water again at the bottom.",
-   "kamera": "Follow the water past the ruler and out of frame; range 29% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_menempel_air",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Tempat nama itu menempel - bukan benda yang bisa dijatuhkan",
-     "semantik": "MENEMPEL PADA AIR",
-     "what": "a torn cream slip with stencilled type reading 'MENEMPEL PADA AIR'",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "menempel",
-     "z": 4,
-     "lands": 21
-    },
-    {
-     "name": "foto_air_mengalir",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang mengalir - benda yang tidak bisa dipecat atau dijatuhkan",
-     "semantik": "PADA AIR",
-     "what": "a sepia halftone photograph of water running fast over a weir, spray at the lip",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "air.",
-     "z": 1,
-     "lands": 44
-    },
-    {
-     "name": "kartu_tidak_peduli",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kalimat penutup babak - air tidak punya kepentingan pada kekuasaan",
-     "semantik": "AIR TIDAK PEDULI",
-     "what": "a torn cream slip with stencilled type reading 'AIR TIDAK PEDULI'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "peduli",
-     "z": 5,
-     "lands": 113
-    },
-    {
-     "name": "figur_berkuasa",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang yang sedang berkuasa - satu-satunya yang tidak diperhatikan air",
-     "semantik": "SIAPA YANG SEDANG BERKUASA",
-     "what": "a sepia halftone photograph of a man in an official cap standing with his arms folded, seen from the side",
-     "at": "lower centre of the frame, centred at 0.50 across, about 0.22 of the frame wide",
-     "cut": true,
-     "word": "siapa",
-     "z": 2,
-     "lands": 127
-    },
-    {
-     "name": "foto_air_terus",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang tetap mengalir setelah orang itu pergi",
-     "semantik": "BERKUASA",
-     "what": "a sepia halftone photograph of a calm river surface with a reflection of trees",
-     "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "berkuasa.",
-     "z": 3,
-     "lands": 147
-    }
-   ],
-   "marks": [
-    [
-     "arrow-right",
-     14,
-     -1.6,
-     "foto_air_mengalir",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "A rightward arrow onto the flowing water photograph on 'air'.",
-   "emphasis": [
-    {
-     "frame": 1102.0,
-     "word": "air.",
-     "motion": "landing",
-     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 1204.6,
-     "word": "berkuasa.",
-     "motion": "hold",
-     "why": "skor 0.45 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 34.8"
+    "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
   }
- ],
- "context": {
-  "skills_read": [
-   "vox-lean",
-   "audio-first-documentary",
-   "vox-animation"
-  ],
-  "benang_read": [
-   "Hukum rencana diperiksa lebih dulu (R0)",
-   "Hukum keterbacaan (R6)",
-   "Hukum kedatangan kartu (R2e)",
-   "Hukum tanda tangan (R5a)"
-  ],
-  "laws": [
-   "L-cards",
-   "L-arrival",
-   "L-mark",
-   "L-marks",
-   "L-emphasis",
-   "L-plate",
-   "L-cut",
-   "L-iso",
-   "L-collage",
-   "L-baca"
-  ],
-  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
- }
 }

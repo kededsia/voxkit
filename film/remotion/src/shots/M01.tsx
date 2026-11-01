@@ -289,8 +289,8 @@ const S03: React.FC = () => (
              phase={1.35}>
     <AbsoluteFill>
       <Card src="m01/cards/s03/blok_ci.png" x={0.8111} y={0.5065} w={0.3772} aspect={1.7121} enterFrame={55} travel={21} from="right" phase={0.5} stepped={2} kind="other" z={1} />
-      <Card src="m01/cards/s03/kaca_pembesar.png" x={0.5843} y={0.5905} w={0.4753} aspect={1.526} enterFrame={20} travel={21} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} poses={[{atFrame: 51, src: "m01/cards/s03/kaca_pembesar_pose2.png"}, {atFrame: 73, src: "m01/cards/s03/kaca_pembesar_pose3.png"}, {atFrame: 95, src: "m01/cards/s03/kaca_pembesar_pose4.png"}]} />
-      <Card src="m01/cards/s03/arsip_peta.png" x={0.3332} y={0.4954} w={0.5022} aspect={1.7553} enterFrame={0} travel={13} from="left" phase={2} stepped={2} kind="type" z={3} />
+      <Card src="m01/cards/s03/arsip_peta.png" x={0.3332} y={0.4954} w={0.5022} aspect={1.7553} enterFrame={0} travel={13} from="bottom" phase={1.25} stepped={2} kind="type" z={3} />
+      <Card src="m01/cards/s03/kaca_pembesar.png" x={0.5843} y={0.5905} w={0.4753} aspect={1.526} enterFrame={20} travel={21} from="left" phase={2} stepped={2} kind="photo" z={4} poses={[{atFrame: 51, src: "m01/cards/s03/kaca_pembesar_pose2.png"}, {atFrame: 73, src: "m01/cards/s03/kaca_pembesar_pose3.png"}, {atFrame: 95, src: "m01/cards/s03/kaca_pembesar_pose4.png"}]} />
       <HandMark
         shape="underline"
         box={[0.0681, 0.0407, 0.5983, 0.9502]}

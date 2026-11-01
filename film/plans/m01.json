@@ -1,1133 +1,1136 @@
 {
- "plan_version": 2,
- "module": "m01",
- "klaim": "Ada pola di nama tempat Jawa Barat, dan tidak ada yang menyadarinya.",
- "payoff": "Pertanyaan 'kenapa CI?' bukan pertanyaan retoris - ia bisa diukur, dan film ini akan mengukurnya.",
- "serah": "papan nama desa + pertanyaan KENAPA CI- yang belum dijawab, untuk m02",
- "terima": "tidak ada - m01 membuka film; yang diserahkan bukan diterima",
- "konteks_modul": {
-  "konteks_budaya": "Masyarakat dan lanskap Sunda di Jawa Barat (cekungan Bandung, lembah Cianjur, lereng kebun teh Puncak). Figur manusia: warga lokal Sunda ber-iket Sunda — kain gulungan lunak dililit rata keliling kepala dengan kuncup kain longgar di mahkota, TANPA lipatan belah ketupat kaku dan tanpa mundung di belakang (bukan blangkon Jawa, bukan peci) — berbaju pangsi dan kain jarik batik. Pendatang: pelintas jalan Indonesia, kulit sawo matang, rambut hitam, jaket pendaki. Palet halaman: kertas koran lawas berwarna Vox — blok mustard yellow, coral/crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern. Objek fisik: angkot Jawa Barat, plang enamel desa/kecamatan/kabupaten/kota/sungai, patok kilometer, peta reliefa, buku besar arsip, kaca pembesar kuningan, stempel kayu.",
-  "tesis_modul": "Sepanjang koridor Bandung–Cianjur–Puncak hingga ke ruang hidup sehari-hari warga Jawa Barat, awalan dua huruf Ci- mengisi hampir setiap penanda tempat tanpa pernah disadari — sehingga pertanyaan 'kenapa' hanya bisa dijawab dengan pengukuran arsip yang jujur, bukan kesan.",
-  "babak_narasi": [
-   {
-    "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
-    "shots": [
-     "s01",
-     "s02"
-    ],
-    "fokus": "Geografi rute nyata Bandung → Cianjur → Puncak dan pergantian plang desa di bahu kiri jalan."
-   },
-   {
-    "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
-    "shots": [
-     "s03",
-     "s04"
-    ],
-    "fokus": "Penyingkapan awalan CI- dan delapan nama tempat lintas jenjang administratif dan ekologis."
-   },
-   {
-    "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
-    "shots": [
-     "s05",
-     "s06"
-    ],
-    "fokus": "Warga lokal vs pendatang, dan hadirnya Ci- pada empat permukaan keseharian."
-   },
-   {
-    "babak": "Babak 4 — Pertanyaan Inti & Metode Ukur yang Jujur",
-    "shots": [
-     "s07"
-    ],
-    "fokus": "Hinge 'Kenapa?' menuju alat ukur arsip dan stempel pengesahan SERIUS."
-   }
-  ]
- },
- "shots": [
-  {
-   "id": "s01",
-   "range": [
-    0,
-    220
-   ],
-   "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
-   "peran_retoris": "Pembuka Geografis — rute Bandung → Cianjur → Puncak",
-   "latar_plate": "Full-bleed torn relief map of West Java on aged paper, a mustard block bleeding off the top, a charcoal block off the lower right, crooked yellow tape, a hand-drawn red route from lower right to upper left.",
-   "tata_letak_kolase": "Asymmetric diagonal ascent: the driver's torso and arm enter low left and overlap the map, tilted 5 degrees from the Bandung basin low right up through the Cianjur valley to the Puncak pass upper left; the back of a passed sign sits upper right.",
-   "jenis": "DIAGRAM",
-   "mark": "Red circle around the Puncak pass on 'puncak,', red underline under the 60 km tag on 'Cianjur', and a red arrow along the road on 'lewati' — the thing he is driving past.",
-   "marks": [
-    [
-     "circle",
-     14,
-     -4.2,
-     "puncak",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ],
-    [
-     "underline",
-     12,
-     2.5,
-     "angkot",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "arrow-right",
-     14,
-     -3.0,
-     "pengemudi",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "kamera": "Slow lens pan-zoom following the red route from Bandung lower-right up to the Puncak plang upper-left, locking on the plang at the snap, then drifting back to the driver as the sentence turns (range >= 28% fitZoom).",
-   "still_gate": "PASS 35.4",
-   "cards": [
-    {
-     "name": "pengemudi",
-     "z": 3,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Potret halftone pengemudi dari kursi sebelah — posisi penonton sendiri di jalan itu",
-     "semantik": "ANDA YANG BERKENDARA",
-     "what": "a sepia halftone photograph of an Indonesian man driving, seen from the passenger seat, chest-up and side-on, both hands on the wheel, a strip of mountain road behind him",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.32 of the frame wide",
-     "lands": 21,
-     "word": "berkendara",
-     "motion_basis": "Dada ke atas tiga-perempat menghadap kanan, DUA TANGAN terpisah jelas di lingkar setir dan kepala punya ruang di sekeliling — swap memutar setir, menoleh ke kiri, dan kembali ke jalan hanya menggerakkan lengan serta kepala yang sudah punya piksel sendiri; setir dan tepi jendela tetap utuh di dalam slot.",
-     "poses_planned": [
+  "plan_version": 2,
+  "module": "m01",
+  "klaim": "Ada pola di nama tempat Jawa Barat, dan tidak ada yang menyadarinya.",
+  "payoff": "Pertanyaan 'kenapa CI?' bukan pertanyaan retoris - ia bisa diukur, dan film ini akan mengukurnya.",
+  "serah": "papan nama desa + pertanyaan KENAPA CI- yang belum dijawab, untuk m02",
+  "terima": "tidak ada - m01 membuka film; yang diserahkan bukan diterima",
+  "konteks_modul": {
+    "konteks_budaya": "Masyarakat dan lanskap Sunda di Jawa Barat (cekungan Bandung, lembah Cianjur, lereng kebun teh Puncak). Figur manusia: warga lokal Sunda ber-iket Sunda — kain gulungan lunak dililit rata keliling kepala dengan kuncup kain longgar di mahkota, TANPA lipatan belah ketupat kaku dan tanpa mundung di belakang (bukan blangkon Jawa, bukan peci) — berbaju pangsi dan kain jarik batik. Pendatang: pelintas jalan Indonesia, kulit sawo matang, rambut hitam, jaket pendaki. Palet halaman: kertas koran lawas berwarna Vox — blok mustard yellow, coral/crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern. Objek fisik: angkot Jawa Barat, plang enamel desa/kecamatan/kabupaten/kota/sungai, patok kilometer, peta reliefa, buku besar arsip, kaca pembesar kuningan, stempel kayu.",
+    "tesis_modul": "Sepanjang koridor Bandung–Cianjur–Puncak hingga ke ruang hidup sehari-hari warga Jawa Barat, awalan dua huruf Ci- mengisi hampir setiap penanda tempat tanpa pernah disadari — sehingga pertanyaan 'kenapa' hanya bisa dijawab dengan pengukuran arsip yang jujur, bukan kesan.",
+    "babak_narasi": [
       {
-       "action": "turn the steering wheel a quarter to the right, both hands following it"
+        "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
+        "shots": [
+          "s01",
+          "s02"
+        ],
+        "fokus": "Geografi rute nyata Bandung → Cianjur → Puncak dan pergantian plang desa di bahu kiri jalan."
       },
       {
-       "action": "glance left out of the window, chin lifting slightly, hands holding the wheel"
+        "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
+        "shots": [
+          "s03",
+          "s04"
+        ],
+        "fokus": "Penyingkapan awalan CI- dan delapan nama tempat lintas jenjang administratif dan ekologis."
       },
       {
-       "action": "straighten the wheel again and settle his eyes back on the road"
+        "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
+        "shots": [
+          "s05",
+          "s06"
+        ],
+        "fokus": "Warga lokal vs pendatang, dan hadirnya Ci- pada empat permukaan keseharian."
+      },
+      {
+        "babak": "Babak 4 — Pertanyaan Inti & Metode Ukur yang Jujur",
+        "shots": [
+          "s07"
+        ],
+        "fokus": "Hinge 'Kenapa?' menuju alat ukur arsip dan stempel pengesahan SERIUS."
       }
-     ],
-     "head": [
-      0.24,
-      0.06,
-      0.62,
-      0.46
-     ],
-     "cut": true
-    },
-    {
-     "name": "bandung",
-     "z": 1,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Siluet menara Gedung Sate dan bibir cekungan Bandung sebagai titik asal rute",
-     "semantik": "BANDUNG",
-     "what": "a sepia halftone cutout of Bandung's Gedung Sate spire and basin crest, stamped 'BANDUNG'",
-     "at": "lower right of the frame, centred at 0.74 across, about 0.34 of the frame wide",
-     "lands": 47,
-     "word": "Bandung"
-    },
-    {
-     "name": "angkot",
-     "z": 2,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Angkot klasik Jawa Barat di atas potongan jalan berkelok sebagai pengukur jarak 60 km",
-     "semantik": "CIANJUR 60 KM",
-     "angka_bahan": true,
-     "angka_alasan": "read off an angkot route board — the film is photographing a sign, not asserting a distance",
-     "what": "a sepia halftone cutout of a West Java angkot minivan on a curved asphalt strip, a kilometer tag reading 'CIANJUR 60 KM'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.36 of the frame wide",
-     "lands": 65,
-     "word": "Cianjur",
-     "sumber_data": "jarak jalan Bandung–Cianjur ±60 km (papan trayek angkot jurusan Cianjur); angka ini tidak diucapkan narasi, jadi ia harus punya sumber"
-    },
-    {
-     "name": "puncak",
-     "z": 4,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang elevasi jalur pegunungan kebun teh Puncak di ujung rute",
-     "semantik": "PUNCAK 1.500 M",
-     "angka_bahan": true,
-     "angka_alasan": "read off a mountain-pass elevation signboard — the figure is the sign's, not the narration's",
-     "what": "a weathered metal mountain-pass elevation signboard with a tea-terrace silhouette taped at an angle, reading 'PUNCAK 1.500 M'",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
-     "lands": 93,
-     "word": "puncak,",
-     "sumber_data": "Puncak Pass ±1.500 m di atas laut (papan resmi jalur lama Bandung–Cianjur); tidak diucapkan narasi",
-     "cut": true
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 46.8,
-     "word": "Bandung",
-     "motion": "landing"
-    },
-    {
-     "frame": 64.8,
-     "word": "Cianjur",
-     "motion": "landing"
-    },
-    {
-     "frame": 93.0,
-     "word": "puncak,",
-     "motion": "landing"
-    },
-    {
-     "frame": 184.8,
-     "word": "sadar.",
-     "motion": "snap"
-    }
-   ]
-  },
-  {
-   "id": "s02",
-   "range": [
-    220,
-    345
-   ],
-   "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
-   "peran_retoris": "Observasi Tepi Jalan — plang desa berganti",
-   "latar_plate": "Full-bleed archival newspaper and topographic road map collage with a bold coral red block bleeding off the lower left, a charcoal black block off the upper right, coarse printed columns and road-verge grain at the edges, and crooked yellow masking tape.",
-   "tata_letak_kolase": "Staggered roadside perspective: the verge cutout low on the left, two overlapping village signboards tilted 5–9 degrees, one high at the centre and one low at the right, in front of each other so the swap of villages is visible.",
-   "jenis": "PLACE",
-   "mark": "Hand arrow at the roadside verge on 'jalan,' and red box around the second plang on 'desa'.",
-   "marks": [
-    [
-     "arrow-right",
-     13,
-     -5.5,
-     "tepi_jalan",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "box",
-     15,
-     3.8,
-     "plang_cipanas",
-     {
-      "color": "coral",
-      "delay": 6
-     }
     ]
-   ],
-   "kamera": "Lateral drift from the left verge into a push-in on the two overlapping signboards, holding through the snap on 'desa' (range >= 28% fitZoom).",
-   "still_gate": "PASS 37.3",
-   "cards": [
-    {
-     "name": "tepi_jalan",
-     "z": 1,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Bahu jalan Jawa Barat: daun pisang, rumpun bambu, patok kilometer batu",
-     "semantik": "KM 12",
-     "angka_bahan": true,
-     "angka_alasan": "read off a stone kilometre post at the verge — a landmark the camera passes, not a claim",
-     "what": "a sepia halftone cutout of a West Java roadside verge with torn banana leaves, bamboo stalks and a stone kilometer post reading 'KM 12'",
-     "at": "lower left of the frame, centred at 0.23 across, about 0.34 of the frame wide",
-     "lands": 17,
-     "word": "jalan,",
-     "sumber_data": "patok kilometer batu di bahu jalur Bandung–Cianjur; angka pada patok adalah jarak dari titik nol ruas jalan, tercetak pada objeknya sendiri — bukan angka yang diklaim narasi",
-     "cut": true
-    },
-    {
-     "name": "plang_cibodas",
-     "z": 3,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang enamel desa pertama di tiang besi miring",
-     "semantik": "DESA CIBODAS",
-     "what": "a sun-bleached rusted metal village signboard on a bent post with chipped paint reading 'DESA CIBODAS'",
-     "at": "upper centre of the frame, centred at 0.50 across, about 0.36 of the frame wide",
-     "lands": 42,
-     "word": "papanama",
-     "cut": true
-    },
-    {
-     "name": "plang_cipanas",
-     "z": 2,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang desa kedua menumpuk miring — pergantian desa tiap beberapa kilometer",
-     "semantik": "DESA CIPANAS",
-     "what": "a second weathered enamel village signboard tilted 7 degrees with masking tape, reading 'DESA CIPANAS'",
-     "at": "lower right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
-     "lands": 66,
-     "word": "berganti",
-     "cut": true
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 237.0,
-     "word": "jalan,",
-     "motion": "landing"
-    },
-    {
-     "frame": 261.6,
-     "word": "papanama",
-     "motion": "landing"
-    },
-    {
-     "frame": 274.2,
-     "word": "desa",
-     "motion": "snap"
-    },
-    {
-     "frame": 286.2,
-     "word": "berganti",
-     "motion": "landing"
-    }
-   ]
   },
-  {
-   "id": "s03",
-   "range": [
-    345,
-    465
-   ],
-   "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
-   "peran_retoris": "Tesis Morfologis — dua huruf yang sama",
-   "latar_plate": "Full-bleed editorial zine ground on a printed page: a mustard yellow block high on the left, crimson red ink slashes across the centre, one torn gazetteer column bleeding off the right edge, printed columns visible, crooked yellow masking tape.",
-   "tata_letak_kolase": "Converging three-layer focal cluster: the gazetteer strip tilted -4 degrees high on the left, the brass magnifier leaning low at the centre, the heavy wood-type CI block tilted 6 degrees high at the right — the magnifier's lens exactly between the strip and the block.",
-   "jenis": "OBJECT",
-   "mark": "Red underline on the gazetteer strip on 'Hampir' and red circle around the CI block on 'dua'.",
-   "marks": [
-    [
-     "underline",
-     12,
-     -3.4,
-     "arsip_peta",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "circle",
-     14,
-     5.1,
-     "blok_ci",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ]
-   ],
-   "kamera": "Wide hold on the gazetteer strip, then a push-in onto the CI block that lands with the snap on 'dua' (range >= 28% fitZoom).",
-   "still_gate": "PASS 45.3",
-   "cards": [
+  "shots": [
     {
-     "name": "arsip_peta",
-     "z": 3,
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Sobekan halaman indeks gazetteer Jawa Barat berisi deretan nama Ci-",
-     "semantik": "AWALAN: CI-",
-     "what": "an irregular torn archival gazetteer index strip, its column printed with only these eight names in small letterpress type - CIPANAS, CIBENING, CIKAPUNDUNG, CITARUM, CIMAHI, CIANJUR, CIAWI, CIBODAS - headed by a bold black stamp reading 'AWALAN: CI-'",
-     "at": "upper left of the frame, centred at 0.25 across, about 0.36 of the frame wide",
-     "lands": 13,
-     "word": "Hampir"
+      "id": "s01",
+      "range": [
+        0,
+        220
+      ],
+      "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
+      "peran_retoris": "Pembuka Geografis — rute Bandung → Cianjur → Puncak",
+      "latar_plate": "Full-bleed torn relief map of West Java on aged paper, a mustard block bleeding off the top, a charcoal block off the lower right, crooked yellow tape, a hand-drawn red route from lower right to upper left.",
+      "tata_letak_kolase": "Asymmetric diagonal ascent: the driver's torso and arm enter low left and overlap the map, tilted 5 degrees from the Bandung basin low right up through the Cianjur valley to the Puncak pass upper left; the back of a passed sign sits upper right.",
+      "jenis": "DIAGRAM",
+      "mark": "Red circle around the Puncak pass on 'puncak,', red underline under the 60 km tag on 'Cianjur', and a red arrow along the road on 'lewati' — the thing he is driving past.",
+      "marks": [
+        [
+          "circle",
+          14,
+          -4.2,
+          "puncak",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "underline",
+          12,
+          2.5,
+          "angkot",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "arrow-right",
+          14,
+          -3.0,
+          "pengemudi",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "kamera": "Slow lens pan-zoom following the red route from Bandung lower-right up to the Puncak plang upper-left, locking on the plang at the snap, then drifting back to the driver as the sentence turns (range >= 28% fitZoom).",
+      "still_gate": "PASS 35.4",
+      "cards": [
+        {
+          "name": "pengemudi",
+          "z": 3,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Potret halftone pengemudi dari kursi sebelah — posisi penonton sendiri di jalan itu",
+          "semantik": "ANDA YANG BERKENDARA",
+          "what": "a sepia halftone photograph of an Indonesian man driving, seen from the passenger seat, chest-up and side-on, both hands on the wheel, a strip of mountain road behind him",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.32 of the frame wide",
+          "lands": 21,
+          "word": "berkendara",
+          "motion_basis": "Dada ke atas tiga-perempat menghadap kanan, DUA TANGAN terpisah jelas di lingkar setir dan kepala punya ruang di sekeliling — swap memutar setir, menoleh ke kiri, dan kembali ke jalan hanya menggerakkan lengan serta kepala yang sudah punya piksel sendiri; setir dan tepi jendela tetap utuh di dalam slot.",
+          "poses_planned": [
+            {
+              "action": "turn the steering wheel a quarter to the right, both hands following it"
+            },
+            {
+              "action": "glance left out of the window, chin lifting slightly, hands holding the wheel"
+            },
+            {
+              "action": "straighten the wheel again and settle his eyes back on the road"
+            }
+          ],
+          "head": [
+            0.24,
+            0.06,
+            0.62,
+            0.46
+          ],
+          "cut": true
+        },
+        {
+          "name": "bandung",
+          "z": 1,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Siluet menara Gedung Sate dan bibir cekungan Bandung sebagai titik asal rute",
+          "semantik": "BANDUNG",
+          "what": "a sepia halftone cutout of Bandung's Gedung Sate spire and basin crest, stamped 'BANDUNG'",
+          "at": "lower right of the frame, centred at 0.74 across, about 0.34 of the frame wide",
+          "lands": 47,
+          "word": "Bandung"
+        },
+        {
+          "name": "angkot",
+          "z": 2,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Angkot klasik Jawa Barat di atas potongan jalan berkelok sebagai pengukur jarak 60 km",
+          "semantik": "CIANJUR 60 KM",
+          "angka_bahan": true,
+          "angka_alasan": "read off an angkot route board — the film is photographing a sign, not asserting a distance",
+          "what": "a sepia halftone cutout of a West Java angkot minivan on a curved asphalt strip, a kilometer tag reading 'CIANJUR 60 KM'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.36 of the frame wide",
+          "lands": 65,
+          "word": "Cianjur",
+          "sumber_data": "jarak jalan Bandung–Cianjur ±60 km (papan trayek angkot jurusan Cianjur); angka ini tidak diucapkan narasi, jadi ia harus punya sumber"
+        },
+        {
+          "name": "puncak",
+          "z": 4,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang elevasi jalur pegunungan kebun teh Puncak di ujung rute",
+          "semantik": "PUNCAK 1.500 M",
+          "angka_bahan": true,
+          "angka_alasan": "read off a mountain-pass elevation signboard — the figure is the sign's, not the narration's",
+          "what": "a weathered metal mountain-pass elevation signboard with a tea-terrace silhouette taped at an angle, reading 'PUNCAK 1.500 M'",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+          "lands": 93,
+          "word": "puncak,",
+          "sumber_data": "Puncak Pass ±1.500 m di atas laut (papan resmi jalur lama Bandung–Cianjur); tidak diucapkan narasi",
+          "cut": true
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 46.8,
+          "word": "Bandung",
+          "motion": "landing"
+        },
+        {
+          "frame": 64.8,
+          "word": "Cianjur",
+          "motion": "landing"
+        },
+        {
+          "frame": 93.0,
+          "word": "puncak,",
+          "motion": "landing"
+        },
+        {
+          "frame": 184.8,
+          "word": "sadar.",
+          "motion": "snap"
+        }
+      ]
     },
     {
-     "name": "kaca_pembesar",
-     "z": 2,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Kaca pembesar kuningan antik yang menyorot dua huruf pertama",
-     "semantik": "HURUF 1 & 2",
-     "what": "a sepia halftone photograph of an antique brass magnifying glass lying flat on the printed column, its round lens enlarging the letters CI at the start of CIBODAS, handle running to the lower right",
-     "at": "lower centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
-     "lands": 41,
-     "word": "dimulai",
-     "motion_basis": "Lensa kuningan bulat UTUH dengan pegangan panjang bebas di atas lembar cetak, tidak dipegang tangan apa pun — swap menggeser dan memutar lensa pada titik pegangannya tanpa menemukan ulang bentuk; kolom cetak di bawahnya tetap terlihat di dalam slot sehingga geseran terbaca sebagai membaca, bukan sebagai kartu baru.",
-     "poses_planned": [
-      {
-       "action": "tilt the magnifying glass 18 degrees clockwise so the lens leans toward the CI block"
-      },
-      {
-       "action": "slide the magnifying glass lower so the lens centres on the red misregistration slashes"
-      },
-      {
-       "action": "set the magnifying glass level again, lens facing the viewer, handle resting down"
-      }
-     ]
+      "id": "s02",
+      "range": [
+        220,
+        345
+      ],
+      "babak": "Babak 1 — Premis Perjalanan & Papan Jalan",
+      "peran_retoris": "Observasi Tepi Jalan — plang desa berganti",
+      "latar_plate": "Full-bleed archival newspaper and topographic road map collage with a bold coral red block bleeding off the lower left, a charcoal black block off the upper right, coarse printed columns and road-verge grain at the edges, and crooked yellow masking tape.",
+      "tata_letak_kolase": "Staggered roadside perspective: the verge cutout low on the left, two overlapping village signboards tilted 5–9 degrees, one high at the centre and one low at the right, in front of each other so the swap of villages is visible.",
+      "jenis": "PLACE",
+      "mark": "Hand arrow at the roadside verge on 'jalan,' and red box around the second plang on 'desa'.",
+      "marks": [
+        [
+          "arrow-right",
+          13,
+          -5.5,
+          "tepi_jalan",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "box",
+          15,
+          3.8,
+          "plang_cipanas",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ]
+      ],
+      "kamera": "Lateral drift from the left verge into a push-in on the two overlapping signboards, holding through the snap on 'desa' (range >= 28% fitZoom).",
+      "still_gate": "PASS 37.3",
+      "cards": [
+        {
+          "name": "tepi_jalan",
+          "z": 1,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Bahu jalan Jawa Barat: daun pisang, rumpun bambu, patok kilometer batu",
+          "semantik": "KM 12",
+          "angka_bahan": true,
+          "angka_alasan": "read off a stone kilometre post at the verge — a landmark the camera passes, not a claim",
+          "what": "a sepia halftone cutout of a West Java roadside verge with torn banana leaves, bamboo stalks and a stone kilometer post reading 'KM 12'",
+          "at": "lower left of the frame, centred at 0.23 across, about 0.34 of the frame wide",
+          "lands": 17,
+          "word": "jalan,",
+          "sumber_data": "patok kilometer batu di bahu jalur Bandung–Cianjur; angka pada patok adalah jarak dari titik nol ruas jalan, tercetak pada objeknya sendiri — bukan angka yang diklaim narasi",
+          "cut": true
+        },
+        {
+          "name": "plang_cibodas",
+          "z": 3,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang enamel desa pertama di tiang besi miring",
+          "semantik": "DESA CIBODAS",
+          "what": "a sun-bleached rusted metal village signboard on a bent post with chipped paint reading 'DESA CIBODAS'",
+          "at": "upper centre of the frame, centred at 0.50 across, about 0.36 of the frame wide",
+          "lands": 42,
+          "word": "papanama",
+          "cut": true
+        },
+        {
+          "name": "plang_cipanas",
+          "z": 2,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang desa kedua menumpuk miring — pergantian desa tiap beberapa kilometer",
+          "semantik": "DESA CIPANAS",
+          "what": "a second weathered enamel village signboard tilted 7 degrees with masking tape, reading 'DESA CIPANAS'",
+          "at": "lower right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+          "lands": 66,
+          "word": "berganti",
+          "cut": true
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 237.0,
+          "word": "jalan,",
+          "motion": "landing"
+        },
+        {
+          "frame": 261.6,
+          "word": "papanama",
+          "motion": "landing"
+        },
+        {
+          "frame": 274.2,
+          "word": "desa",
+          "motion": "snap"
+        },
+        {
+          "frame": 286.2,
+          "word": "berganti",
+          "motion": "landing"
+        }
+      ]
     },
     {
-     "name": "blok_ci",
-     "nudge": [0.068, 0.0],
-     "z": 1,
-     "bahan": "benda",
-     "wujud": "plang_fisik",
-     "semiotik": "Balok huruf cetak kayu raksasa CI- dengan stempel tinta merah",
-     "semantik": "CI-",
-     "what": "a heavy vintage wood printing block with 'CI-' cut in relief, red ink on its face, tilted 6 degrees",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
-     "lands": 76,
-     "word": "huruf"
+      "id": "s03",
+      "range": [
+        345,
+        465
+      ],
+      "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
+      "peran_retoris": "Tesis Morfologis — dua huruf yang sama",
+      "latar_plate": "Full-bleed editorial zine ground on a printed page: a mustard yellow block high on the left, crimson red ink slashes across the centre, one torn gazetteer column bleeding off the right edge, printed columns visible, crooked yellow masking tape.",
+      "tata_letak_kolase": "Converging three-layer focal cluster: the gazetteer strip tilted -4 degrees high on the left, the brass magnifier leaning low at the centre, the heavy wood-type CI block tilted 6 degrees high at the right — the magnifier's lens exactly between the strip and the block.",
+      "jenis": "OBJECT",
+      "mark": "Red underline on the gazetteer strip on 'Hampir' and red circle around the CI block on 'dua'.",
+      "marks": [
+        [
+          "underline",
+          12,
+          -3.4,
+          "arsip_peta",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "circle",
+          14,
+          5.1,
+          "blok_ci",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ]
+      ],
+      "kamera": "Wide hold on the gazetteer strip, then a push-in onto the CI block that lands with the snap on 'dua' (range >= 28% fitZoom).",
+      "still_gate": "PASS 45.3",
+      "cards": [
+        {
+          "name": "arsip_peta",
+          "z": 3,
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Sobekan halaman indeks gazetteer Jawa Barat berisi deretan nama Ci-",
+          "semantik": "AWALAN: CI-",
+          "what": "an irregular torn archival gazetteer index strip, its column printed with only these eight names in small letterpress type - CIPANAS, CIBENING, CIKAPUNDUNG, CITARUM, CIMAHI, CIANJUR, CIAWI, CIBODAS - headed by a bold black stamp reading 'AWALAN: CI-'",
+          "at": "upper left of the frame, centred at 0.25 across, about 0.36 of the frame wide",
+          "lands": 13,
+          "word": "Hampir"
+        },
+        {
+          "name": "kaca_pembesar",
+          "z": 2,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Kaca pembesar kuningan antik yang menyorot dua huruf pertama",
+          "semantik": "HURUF 1 & 2",
+          "what": "a sepia halftone photograph of an antique brass magnifying glass lying flat on the printed column, its round lens enlarging the letters CI at the start of CIBODAS, handle running to the lower right",
+          "at": "lower centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
+          "lands": 41,
+          "word": "dimulai",
+          "motion_basis": "Lensa kuningan bulat UTUH dengan pegangan panjang bebas di atas lembar cetak, tidak dipegang tangan apa pun — swap menggeser dan memutar lensa pada titik pegangannya tanpa menemukan ulang bentuk; kolom cetak di bawahnya tetap terlihat di dalam slot sehingga geseran terbaca sebagai membaca, bukan sebagai kartu baru.",
+          "poses_planned": [
+            {
+              "action": "tilt the magnifying glass 18 degrees clockwise so the lens leans toward the CI block"
+            },
+            {
+              "action": "slide the magnifying glass lower so the lens centres on the red misregistration slashes"
+            },
+            {
+              "action": "set the magnifying glass level again, lens facing the viewer, handle resting down"
+            }
+          ]
+        },
+        {
+          "name": "blok_ci",
+          "nudge": [
+            0.068,
+            0.0
+          ],
+          "z": 1,
+          "bahan": "benda",
+          "wujud": "plang_fisik",
+          "semiotik": "Balok huruf cetak kayu raksasa CI- dengan stempel tinta merah",
+          "semantik": "CI-",
+          "what": "a heavy vintage wood printing block with 'CI-' cut in relief, red ink on its face, tilted 6 degrees",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+          "lands": 76,
+          "word": "huruf"
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 357.6,
+          "word": "Hampir",
+          "motion": "landing"
+        },
+        {
+          "frame": 385.8,
+          "word": "dimulai",
+          "motion": "landing"
+        },
+        {
+          "frame": 410.4,
+          "word": "dua",
+          "motion": "snap"
+        },
+        {
+          "frame": 420.6,
+          "word": "huruf",
+          "motion": "landing"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "range": [
+        465,
+        755
+      ],
+      "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
+      "peran_retoris": "Bukti Katalog — delapan nama lintas jenjang",
+      "latar_plate": "Full-bleed West Java hydrographic map and newsprint collage: mustard yellow block bleeding off the top, coral red block off the left, charcoal off the bottom right, printed columns and sepia halftone dots, crooked masking tape.",
+      "tata_letak_kolase": "Asymmetric pinwheel: four cutouts tilted 3–9 degrees in the quadrants, a halftone figure from behind studying the map low at the centre right.",
+      "jenis": "QUANTITY",
+      "mark": "Four sequential red annotations as the pairs land: underline on 'Cipanas', circle on 'Cikapundung', box on 'Cimahi', arrow on 'Ciawi'.",
+      "marks": [
+        [
+          "underline",
+          12,
+          -4.1,
+          "cipanas_cibening",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "circle",
+          14,
+          5.3,
+          "cikapundung_citarum",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "box",
+          15,
+          -3.2,
+          "cimahi_cianjur",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "arrow-right",
+          13,
+          6.4,
+          "ciawi_cibodas",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ]
+      ],
+      "kamera": "Quadrant tour locking onto each pair as its names land, then a pull-back to reveal the whole toponymic web on 'Cibodas.' (range >= 30% fitZoom).",
+      "still_gate": "PASS 35.2",
+      "cards": [
+        {
+          "name": "cipanas_cibening",
+          "z": 1,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Batu mata air panas beruap dan pancuran bambu — gunung dan mata air",
+          "semantik": "CIPANAS · CIBENING",
+          "what": "a sepia halftone cutout of steaming hot-spring stones and a bamboo spout, an enamel tag reading 'CIPANAS · CIBENING'",
+          "at": "upper left of the frame, centred at 0.27 across, about 0.38 of the frame wide",
+          "lands": 7,
+          "word": "Cipanas,"
+        },
+        {
+          "name": "cikapundung_citarum",
+          "z": 2,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Jembatan batu tua dan arus sungai besar dengan plang nama sungai",
+          "semantik": "SUNGAI CIKAPUNDUNG · CITARUM",
+          "what": "a sepia halftone cutout of an old stone river bridge arch and water, a bridge plate reading 'SUNGAI CIKAPUNDUNG · CITARUM'",
+          "at": "lower left of the frame, centred at 0.29 across, about 0.40 of the frame wide",
+          "lands": 80,
+          "word": "Cikapundung,"
+        },
+        {
+          "name": "cimahi_cianjur",
+          "z": 4,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang batas administrasi Kota Cimahi dan Kabupaten Cianjur",
+          "semantik": "KOTA CIMAHI · KAB. CIANJUR",
+          "what": "a weathered highway boundary signboard pair with chipped paint reading 'KOTA CIMAHI · KAB. CIANJUR'",
+          "at": "upper right of the frame, centred at 0.73 across, about 0.38 of the frame wide",
+          "lands": 154,
+          "word": "Cimahi,"
+        },
+        {
+          "name": "ciawi_cibodas",
+          "z": 5,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang kecamatan Ciawi dan desa Cibodas dengan siluet pakis pegunungan",
+          "semantik": "KEC. CIAWI · DESA CIBODAS",
+          "what": "a vintage district and village signboard pair, fern silhouette, tilted 6 degrees, reading 'KEC. CIAWI · DESA CIBODAS'",
+          "at": "lower right of the frame, centred at 0.72 across, about 0.38 of the frame wide",
+          "lands": 221,
+          "word": "Ciawi,",
+          "cut": true
+        },
+        {
+          "name": "pengamat_peta",
+          "z": 3,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Siluet halftone figur dari belakang yang mempelajari peta — pembaca yang menemui kedelapan nama itu",
+          "semantik": "PENGAMAT PETA",
+          "what": "a sepia halftone cutout of a person seen from behind studying a map, a tab reading 'PENGAMAT PETA'",
+          "at": "lower centre right of the frame, centred at 0.62 across, about 0.22 of the frame wide",
+          "lands": 253,
+          "word": "Cibodas.",
+          "cut": true
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 471.6,
+          "word": "Cipanas,",
+          "motion": "landing"
+        },
+        {
+          "frame": 508.8,
+          "word": "Cibening,",
+          "motion": "snap"
+        },
+        {
+          "frame": 545.4,
+          "word": "Cikapundung,",
+          "motion": "landing"
+        },
+        {
+          "frame": 582.0,
+          "word": "Citarum,",
+          "motion": "snap"
+        },
+        {
+          "frame": 618.6,
+          "word": "Cimahi,",
+          "motion": "landing"
+        },
+        {
+          "frame": 650.4,
+          "word": "Cianjur,",
+          "motion": "snap"
+        },
+        {
+          "frame": 686.4,
+          "word": "Ciawi,",
+          "motion": "landing"
+        },
+        {
+          "frame": 717.6,
+          "word": "Cibodas.",
+          "motion": "strike"
+        }
+      ]
+    },
+    {
+      "id": "s05",
+      "range": [
+        755,
+        990
+      ],
+      "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
+      "peran_retoris": "Kontras Manusia — warga lokal vs pendatang",
+      "latar_plate": "Full-bleed zine collage: warm mustard block high left, charcoal and coral blocks low right, torn Sundanese newsprint bleeding off both edges, crooked masking tape.",
+      "tata_letak_kolase": "Two-character dialogue over a street photograph: the seated elder large at the left, the town-corner photograph behind him at the lower right, the standing traveler at the far right on the coral block with clear margin, and the crossed-out question strip over the centre.",
+      "jenis": "SUBJECT",
+      "mark": "Bracket on the elder on 'tidak', arrow toward the traveler on 'luar', circle around the question strip on 'sekali', strike-through on it on 'berhenti bertanya'.",
+      "marks": [
+        [
+          "bracket-left",
+          14,
+          -3.5,
+          "warga_lokal",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "arrow-right",
+          12,
+          4.8,
+          "pendatang",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ],
+        [
+          "circle",
+          14,
+          2.6,
+          "tanda_tanya",
+          {
+            "color": "coral",
+            "delay": 8
+          }
+        ],
+        [
+          "strike",
+          15,
+          -2.2,
+          "tanda_tanya",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "kamera": "Hold on the calm elder, pan across to the traveler on 'luar', then punch in on the crossed-out question strip as the asking stops (range >= 28% fitZoom).",
+      "still_gate": "PASS 43.5",
+      "cards": [
+        {
+          "name": "foto_jalan_bandung",
+          "z": 3,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Jalan kota tempat orang tumbuh dan orang lewat bertemu — tanah shot ini",
+          "semantik": "DI SINI",
+          "what": "a sepia halftone photograph of a busy West Java town corner: a shopfront row, a becak and people walking",
+          "at": "lower right of the frame, centred at 0.72 across, about 0.40 of the frame wide, down at 0.62",
+          "lands": 29,
+          "word": "sini"
+        },
+        {
+          "name": "warga_lokal",
+          "z": 1,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Potret halftone sesepuh Sunda ber-iket Sunda dan baju pangsi yang duduk tenang",
+          "semantik": "WARGA LOKAL",
+          "what": "a sepia halftone portrait cutout of a seated Indonesian Sundanese elder in a soft rolled Sundanese iket headcloth (loose cloth bud on the crown, NOT a Javanese blangkon) and a dark pangsi jacket, a stamped tag reading 'WARGA LOKAL'",
+          "at": "lower left of the frame, centred at 0.26 across, about 0.36 of the frame wide",
+          "lands": 15,
+          "word": "tumbuh",
+          "motion_basis": "Setengah badan tiga-perempat menghadap kanan dengan tangan kanan terbuka di depan dada, kepala besar dan terpisah jelas dari bahu — swap menoleh, mengangguk, dan mengangkat telapak tangan hanya menggerakkan kepala dan lengan yang sudah punya piksel sendiri; siluet tetap terbaca di ukuran slot.",
+          "poses_planned": [
+            {
+              "action": "turn his head a little further toward the traveler, chin level"
+            },
+            {
+              "action": "raise his open right hand slightly, palm up, in a calm explaining gesture"
+            },
+            {
+              "action": "settle back to the base posture with the hand resting and the head level"
+            }
+          ]
+        },
+        {
+          "name": "pendatang",
+          "z": 2,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Potret halftone pelintas Indonesia memegang peta terbuka sambil menatap plang",
+          "semantik": "PENDATANG",
+          "what": "a sepia halftone cutout of an Indonesian traveler holding an unfolded road map in both loose hands, profile facing the LEFT EDGE, a label reading 'PENDATANG'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide",
+          "cut": true,
+          "lands": 80,
+          "word": "Orang",
+          "motion_basis": "Berdiri sendiri tanpa apa pun di belakangnya; peta terbuka digenggam longgar di dua tangan dengan permukaan luas terlihat, kepala profil kiri terpisah jelas dari ransel — swap menutup setengah peta, menunduk ke peta, dan mengangkat satu tangan bertanya hanya menggerakkan peta, kepala, dan satu lengan yang sudah punya piksel sendiri.",
+          "poses_planned": [
+            {
+              "action": "fold the road map half closed in his hands, still looking left"
+            },
+            {
+              "action": "tilt his head down toward the half-folded map, brow raised"
+            },
+            {
+              "action": "raise his free left hand palm-up in a one-time questioning gesture, map held in the other hand"
+            }
+          ],
+          "measured_box": [
+            0.629,
+            0.286,
+            0.919,
+            0.98
+          ]
+        },
+        {
+          "name": "tanda_tanya",
+          "z": 4,
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Sobekan kertas buku catatan dengan tanda tanya besar yang dicoret sekali",
+          "semantik": "KENAPA CI-?",
+          "what": "an irregular torn notebook paper strip taped in place with a bold stamped question mark and black type reading 'KENAPA CI-?' with a single red ink line through it",
+          "at": "upper centre of the frame, centred at 0.50 across, about 0.32 of the frame wide",
+          "lands": 143,
+          "word": "bertanya"
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 770.4,
+          "word": "tumbuh",
+          "motion": "landing"
+        },
+        {
+          "frame": 816.6,
+          "word": "aneh.",
+          "motion": "snap"
+        },
+        {
+          "frame": 871.8,
+          "word": "luar",
+          "motion": "landing"
+        },
+        {
+          "frame": 955.2,
+          "word": "bertanya.",
+          "motion": "strike"
+        }
+      ]
+    },
+    {
+      "id": "s06",
+      "range": [
+        990,
+        1258
+      ],
+      "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
+      "peran_retoris": "Bukti Keseharian — empat permukaan tanpa nama ulang",
+      "latar_plate": "Full-bleed weathered plaster wall: coral left, mustard right, charcoal bottom, printed columns, coarse grain, crooked masking tape.",
+      "tata_letak_kolase": "Two-band scatter, pieces tilted 4-10 degrees and overlapping: the house gate high left with the address plate across its lower edge, the schoolchildren high right, the angkot placard low left, the phone slip low right, the empty lane low centre to close.",
+      "jenis": "OBJECT",
+      "mark": "Sequential red annotations: underline on 'alamat', circle on the schoolchildren on 'sekolah', box on the angkot placard on 'angkutan', strike on the phone slip on 'nomor', brackets around the whole everyday street on 'orang'.",
+      "marks": [
+        [
+          "underline",
+          12,
+          -3.8,
+          "plat_alamat",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "circle",
+          14,
+          4.6,
+          "anak_sekolah",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "box",
+          15,
+          -5.2,
+          "papan_angkot",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "strike",
+          13,
+          3.1,
+          "nomor_harian",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "brackets",
+          14,
+          -1.6,
+          "gerbang_rumah",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "kamera": "Stepwise tracking onto each artifact as its noun lands, then a slow pull-out on the final 'sadar.' (range >= 28% fitZoom).",
+      "still_gate": "PASS 37.2",
+      "cards": [
+        {
+          "name": "plat_alamat",
+          "z": 5,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plat alamat rumah seng enamel tua dengan RT/RW",
+          "semantik": "JL. CITARUM NO.",
+          "what": "a chipped enamel house address plate with rust edges reading 'JL. CITARUM NO.' — the house number has chipped off",
+          "at": "upper centre of the frame, down at 0.41, centred at 0.44 across, about 0.34 of the frame wide",
+          "lands": 37,
+          "word": "alamat"
+        },
+        {
+          "name": "gerbang_rumah",
+          "z": 2,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Foto halftone gerbang dan pagar rumah beton — tempat plat alamat itu benar-benar terpasang",
+          "semantik": "RUMAH",
+          "what": "a sepia halftone photograph of an Indonesian house gate and low concrete fence with potted plants, seen from the lane",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.40 of the frame wide",
+          "lands": 46,
+          "word": "rumah,"
+        },
+        {
+          "name": "anak_sekolah",
+          "z": 3,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Dua anak sekolah dasar berseragam putih-merah berjalan — nama sekolah yang hidup",
+          "semantik": "NAMA SEKOLAH",
+          "what": "a sepia halftone photograph of two Indonesian schoolchildren in white shirts and red shorts, side by side in profile, satchels on their backs",
+          "at": "upper right of the frame, centred at 0.74 across, about 0.30 of the frame wide",
+          "lands": 84,
+          "word": "sekolah,",
+          "head": [
+            0.28,
+            0.1,
+            0.82,
+            0.42
+          ]
+        },
+        {
+          "name": "papan_angkot",
+          "z": 4,
+          "bahan": "cetak",
+          "wujud": "siluet_organik",
+          "semiotik": "Papan trayek kaca depan angkot Jawa Barat dengan kaca spion",
+          "semantik": "CIANJUR - CIAWI",
+          "what": "a weathered metal angkot windshield placard with a rearview mirror, reading 'CIANJUR - CIAWI'",
+          "at": "lower left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
+          "lands": 125,
+          "word": "angkutan",
+          "slot_catatan": "kartu ini membawa kaca spion di atas plang, jadi titik berat tintanya di atas huruf; slot alfa-bbox sudah sama dengan halaman"
+        },
+        {
+          "name": "nomor_harian",
+          "z": 6,
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Sobekan stensil nomor telepon tembok dan kuitansi — satu-satunya tanpa Ci-",
+          "semantik": "HUB. KANTOR DESA",
+          "what": "an irregular torn stencilled wall notice reading 'HUB. KANTOR DESA', no invented digits",
+          "at": "lower right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+          "lands": 169,
+          "word": "nomor",
+          "cut": true
+        },
+        {
+          "name": "jalan_kosong",
+          "z": 1,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Gang yang sama tanpa siapa pun — dipakai setiap hari tanpa sadar",
+          "semantik": "TANPA SADAR",
+          "what": "a sepia halftone photograph of a quiet residential lane with gates and small address plates, flat daylight",
+          "at": "lower centre of the frame, centred at 0.52 across, about 0.34 of the frame wide",
+          "lands": 240,
+          "word": "sadar."
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 1027.2,
+          "word": "alamat",
+          "motion": "landing"
+        },
+        {
+          "frame": 1035.6,
+          "word": "rumah,",
+          "motion": "snap"
+        },
+        {
+          "frame": 1074.0,
+          "word": "sekolah,",
+          "motion": "landing"
+        },
+        {
+          "frame": 1114.8,
+          "word": "angkutan",
+          "motion": "landing"
+        },
+        {
+          "frame": 1125.0,
+          "word": "kota,",
+          "motion": "snap"
+        },
+        {
+          "frame": 1159.2,
+          "word": "nomor",
+          "motion": "landing"
+        },
+        {
+          "frame": 1230.0,
+          "word": "sadar.",
+          "motion": "strike"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "range": [
+        1258,
+        1518
+      ],
+      "babak": "Babak 4 — Pertanyaan Inti & Metode Ukur yang Jujur",
+      "peran_retoris": "Hinge — Kenapa? → alat ukur arsip → stempel SERIUS",
+      "latar_plate": "Full-bleed printed page: crimson and charcoal diagonal block, cropped question marks off the top, printed columns, crooked yellow tape.",
+      "tata_letak_kolase": "Eye-line across the page: the puzzled man low left stares at the tilted KENAPA? signboard high right; clipping high left, ledger centred, caliper low centre, wax seal low right; all pieces inside the page.",
+      "jenis": "SUBJECT",
+      "mark": "Underline on the man's chin on 'Pertanyaan', thick red circle around the KENAPA? signboard on 'Kenapa?', brackets on the ledger on 'hal', strike across the impression clipping on 'kesan.', circle on the wax seal on 'Serius.'.",
+      "marks": [
+        [
+          "underline",
+          12,
+          -3.3,
+          "orang_bingung",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "circle",
+          14,
+          4.9,
+          "plang_kenapa",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ],
+        [
+          "brackets",
+          14,
+          -2.4,
+          "buku_arsip",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ],
+        [
+          "strike",
+          12,
+          3.6,
+          "koran_kesan",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ],
+        [
+          "circle",
+          13,
+          -5.8,
+          "stempel_serius",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ]
+      ],
+      "kamera": "Tense hold on the man, slam zoom onto KENAPA? at the strike, then a settle onto the ledger, the caliper and the wax seal for the closing beats (range >= 28% fitZoom).",
+      "still_gate": "PASS 35.0",
+      "cards": [
+        {
+          "name": "orang_bingung",
+          "z": 2,
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Potret halftone pria Indonesia 40-an mengernyit memandang plang di kanannya",
+          "semantik": "PERTANYAAN SEDERHANA",
+          "what": "a sepia halftone cutout of a puzzled Indonesian man in his forties, chest-up, facing right with his hand at his chin, a torn strip reading 'PERTANYAAN SEDERHANA'",
+          "at": "lower left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
+          "lands": 5,
+          "word": "Pertanyaan",
+          "motion_basis": "Dada ke atas tiga-perempat menghadap kanan, tangan kanan TERPISAH jelas dari wajah di dagu, kepala punya ruang di sekeliling — swap menunjuk ke plang, mencondongkan badan, dan mengetuk jari hanya menggerakkan lengan dan kepala yang sudah punya piksel sendiri; bahu tak terpotong tepi slot.",
+          "poses_planned": [
+            {
+              "action": "lift his right hand off his chin and point his index finger firmly toward the KENAPA? sign"
+            },
+            {
+              "action": "lean his torso slightly forward toward the sign, head tilting with the question"
+            },
+            {
+              "action": "drop the hand back to the chin and settle, brows still knotted"
+            }
+          ],
+          "cut": true
+        },
+        {
+          "name": "plang_kenapa",
+          "z": 5,
+          "bahan": "cetak",
+          "wujud": "plang_fisik",
+          "semiotik": "Plang jalan besi tepat di arah tatapan pria itu — kata tanya KENAPA?",
+          "semantik": "KENAPA?",
+          "what": "a weathered metal signboard tilted 6 degrees with masking tape, reading 'KENAPA?' in bold condensed capitals",
+          "at": "upper right of the frame, centred at 0.75 across, about 0.34 of the frame wide",
+          "lands": 67,
+          "word": "Kenapa?"
+        },
+        {
+          "name": "buku_arsip",
+          "z": 1,
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Buku besar arsip berkolom — cara mengukur yang lebih jujur daripada kesan",
+          "semantik": "CARA YANG LEBIH JUJUR",
+          "what": "a sepia halftone photograph of an open archival ledger, ruled columns of faint illegible handwriting",
+          "at": "centre of the frame, centred at 0.50 across, about 0.32 of the frame wide",
+          "lands": 130,
+          "word": "jujur"
+        },
+        {
+          "name": "penggaris_sorong",
+          "z": 3,
+          "bahan": "benda",
+          "wujud": "siluet_organik",
+          "semiotik": "Jangka sorong kuningan di atas kolom angka — alat, bukan tafsir",
+          "semantik": "MENGUKUR",
+          "what": "a brass vernier caliper lying diagonally, no printed figures under it",
+          "at": "lower centre of the frame, centred at 0.44 across, about 0.24 of the frame wide",
+          "lands": 148,
+          "word": "mengukur"
+        },
+        {
+          "name": "koran_kesan",
+          "z": 6,
+          "bahan": "koran",
+          "wujud": "sobekan_pita",
+          "semiotik": "Sobekan koran berisi kesan penulis — yang tidak boleh diandalkan",
+          "semantik": "KESAN",
+          "what": "a torn newsprint clipping with dense unreadable small type and a small mountain halftone, no headline",
+          "at": "upper left of the frame, centred at 0.25 across, about 0.30 of the frame wide",
+          "lands": 202,
+          "word": "kesan."
+        },
+        {
+          "name": "stempel_serius",
+          "z": 4,
+          "bahan": "benda",
+          "wujud": "plang_fisik",
+          "semiotik": "Segel lilin merah dan stempel kayu pengesahan arsip — ukur, jangan kesan",
+          "semantik": "SERIUS · ARSIP RESMI",
+          "what": "a vintage wooden rubber stamp on its base, handle up, beside a small red wax seal and a stamped paper tag reading 'SERIUS · ARSIP RESMI' — these three objects only, on blank paper",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide",
+          "cut": true,
+          "lands": 237,
+          "word": "Serius.",
+          "motion_basis": "Stempel kayu BERDIRI dengan gagang atas bebas dan wajah stempel menghadap depan, segel lilin sebagai alas target di sampingnya — swap angkat, miring, dan tekan hanya memutar objek pada titik alasnya tanpa menemukan ulang bentuk; siluet gagang tetap terbaca di ukuran slot.",
+          "poses_planned": [
+            {
+              "action": "lift the stamp upright on its handle, base hovering just off the paper"
+            },
+            {
+              "action": "tilt the lifted stamp 20 degrees toward the wax seal as if aiming"
+            },
+            {
+              "action": "press the stamp flat down onto the wax seal, handle pointing at the viewer"
+            }
+          ]
+        }
+      ],
+      "emphasis": [
+        {
+          "frame": 1263.0,
+          "word": "Pertanyaan",
+          "motion": "landing"
+        },
+        {
+          "frame": 1325.4,
+          "word": "Kenapa?",
+          "motion": "strike"
+        },
+        {
+          "frame": 1387.8,
+          "word": "jujur",
+          "motion": "landing"
+        },
+        {
+          "frame": 1459.8,
+          "word": "kesan.",
+          "motion": "snap"
+        },
+        {
+          "frame": 1494.6,
+          "word": "Serius.",
+          "motion": "strike"
+        }
+      ]
     }
-   ],
-   "emphasis": [
-    {
-     "frame": 357.6,
-     "word": "Hampir",
-     "motion": "landing"
-    },
-    {
-     "frame": 385.8,
-     "word": "dimulai",
-     "motion": "landing"
-    },
-    {
-     "frame": 410.4,
-     "word": "dua",
-     "motion": "snap"
-    },
-    {
-     "frame": 420.6,
-     "word": "huruf",
-     "motion": "landing"
-    }
-   ]
-  },
-  {
-   "id": "s04",
-   "range": [
-    465,
-    755
-   ],
-   "babak": "Babak 2 — Pola Dua Huruf & Katalog Toponimi",
-   "peran_retoris": "Bukti Katalog — delapan nama lintas jenjang",
-   "latar_plate": "Full-bleed West Java hydrographic map and newsprint collage: mustard yellow block bleeding off the top, coral red block off the left, charcoal off the bottom right, printed columns and sepia halftone dots, crooked masking tape.",
-   "tata_letak_kolase": "Asymmetric pinwheel: four cutouts tilted 3–9 degrees in the quadrants, a halftone figure from behind studying the map low at the centre right.",
-   "jenis": "QUANTITY",
-   "mark": "Four sequential red annotations as the pairs land: underline on 'Cipanas', circle on 'Cikapundung', box on 'Cimahi', arrow on 'Ciawi'.",
-   "marks": [
-    [
-     "underline",
-     12,
-     -4.1,
-     "cipanas_cibening",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
+  ],
+  "context": {
+    "skills_read": [
+      "vox-lean",
+      "audio-first-documentary",
+      "vox-animation"
     ],
-    [
-     "circle",
-     14,
-     5.3,
-     "cikapundung_citarum",
-     {
-      "color": "coral",
-      "delay": 6
-     }
+    "benang_read": [
+      "Hukum kedatangan kartu (R2e)",
+      "Hukum kata penegasan (R2b1)",
+      "Hukum kolase, yang kedua kalinya (D0b3)",
+      "Putaran 9 — teks yang tidak terbaca, dan rencana yang tidak diperiksa"
     ],
-    [
-     "box",
-     15,
-     -3.2,
-     "cimahi_cianjur",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
+    "laws": [
+      "L-cards",
+      "L-arrival",
+      "L-mark",
+      "L-marks",
+      "L-emphasis",
+      "L-plate",
+      "L-cut",
+      "L-iso",
+      "L-collage"
     ],
-    [
-     "arrow-right",
-     13,
-     6.4,
-     "ciawi_cibodas",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ]
-   ],
-   "kamera": "Quadrant tour locking onto each pair as its names land, then a pull-back to reveal the whole toponymic web on 'Cibodas.' (range >= 30% fitZoom).",
-   "still_gate": "PASS 35.2",
-   "cards": [
-    {
-     "name": "cipanas_cibening",
-     "z": 1,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Batu mata air panas beruap dan pancuran bambu — gunung dan mata air",
-     "semantik": "CIPANAS · CIBENING",
-     "what": "a sepia halftone cutout of steaming hot-spring stones and a bamboo spout, an enamel tag reading 'CIPANAS · CIBENING'",
-     "at": "upper left of the frame, centred at 0.27 across, about 0.38 of the frame wide",
-     "lands": 7,
-     "word": "Cipanas,"
-    },
-    {
-     "name": "cikapundung_citarum",
-     "z": 2,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Jembatan batu tua dan arus sungai besar dengan plang nama sungai",
-     "semantik": "SUNGAI CIKAPUNDUNG · CITARUM",
-     "what": "a sepia halftone cutout of an old stone river bridge arch and water, a bridge plate reading 'SUNGAI CIKAPUNDUNG · CITARUM'",
-     "at": "lower left of the frame, centred at 0.29 across, about 0.40 of the frame wide",
-     "lands": 80,
-     "word": "Cikapundung,"
-    },
-    {
-     "name": "cimahi_cianjur",
-     "z": 4,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang batas administrasi Kota Cimahi dan Kabupaten Cianjur",
-     "semantik": "KOTA CIMAHI · KAB. CIANJUR",
-     "what": "a weathered highway boundary signboard pair with chipped paint reading 'KOTA CIMAHI · KAB. CIANJUR'",
-     "at": "upper right of the frame, centred at 0.73 across, about 0.38 of the frame wide",
-     "lands": 154,
-     "word": "Cimahi,"
-    },
-    {
-     "name": "ciawi_cibodas",
-     "z": 5,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang kecamatan Ciawi dan desa Cibodas dengan siluet pakis pegunungan",
-     "semantik": "KEC. CIAWI · DESA CIBODAS",
-     "what": "a vintage district and village signboard pair, fern silhouette, tilted 6 degrees, reading 'KEC. CIAWI · DESA CIBODAS'",
-     "at": "lower right of the frame, centred at 0.72 across, about 0.38 of the frame wide",
-     "lands": 221,
-     "word": "Ciawi,",
-     "cut": true
-    },
-    {
-     "name": "pengamat_peta",
-     "z": 3,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Siluet halftone figur dari belakang yang mempelajari peta — pembaca yang menemui kedelapan nama itu",
-     "semantik": "PENGAMAT PETA",
-     "what": "a sepia halftone cutout of a person seen from behind studying a map, a tab reading 'PENGAMAT PETA'",
-     "at": "lower centre right of the frame, centred at 0.62 across, about 0.22 of the frame wide",
-     "lands": 253,
-     "word": "Cibodas.",
-     "cut": true
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 471.6,
-     "word": "Cipanas,",
-     "motion": "landing"
-    },
-    {
-     "frame": 508.8,
-     "word": "Cibening,",
-     "motion": "snap"
-    },
-    {
-     "frame": 545.4,
-     "word": "Cikapundung,",
-     "motion": "landing"
-    },
-    {
-     "frame": 582.0,
-     "word": "Citarum,",
-     "motion": "snap"
-    },
-    {
-     "frame": 618.6,
-     "word": "Cimahi,",
-     "motion": "landing"
-    },
-    {
-     "frame": 650.4,
-     "word": "Cianjur,",
-     "motion": "snap"
-    },
-    {
-     "frame": 686.4,
-     "word": "Ciawi,",
-     "motion": "landing"
-    },
-    {
-     "frame": 717.6,
-     "word": "Cibodas.",
-     "motion": "strike"
-    }
-   ]
-  },
-  {
-   "id": "s05",
-   "range": [
-    755,
-    990
-   ],
-   "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
-   "peran_retoris": "Kontras Manusia — warga lokal vs pendatang",
-   "latar_plate": "Full-bleed zine collage: warm mustard block high left, charcoal and coral blocks low right, torn Sundanese newsprint bleeding off both edges, crooked masking tape.",
-   "tata_letak_kolase": "Two-character dialogue over a street photograph: the seated elder large at the left, the town-corner photograph behind him at the lower right, the standing traveler at the far right on the coral block with clear margin, and the crossed-out question strip over the centre.",
-   "jenis": "SUBJECT",
-   "mark": "Bracket on the elder on 'tidak', arrow toward the traveler on 'luar', circle around the question strip on 'sekali', strike-through on it on 'berhenti bertanya'.",
-   "marks": [
-    [
-     "bracket-left",
-     14,
-     -3.5,
-     "warga_lokal",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ],
-    [
-     "arrow-right",
-     12,
-     4.8,
-     "pendatang",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ],
-    [
-     "circle",
-     14,
-     2.6,
-     "tanda_tanya",
-     {
-      "color": "coral",
-      "delay": 8
-     }
-    ],
-    [
-     "strike",
-     15,
-     -2.2,
-     "tanda_tanya",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "kamera": "Hold on the calm elder, pan across to the traveler on 'luar', then punch in on the crossed-out question strip as the asking stops (range >= 28% fitZoom).",
-   "still_gate": "PASS 43.5",
-   "cards": [
-    {
-     "name": "foto_jalan_bandung",
-     "z": 3,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Jalan kota tempat orang tumbuh dan orang lewat bertemu — tanah shot ini",
-     "semantik": "DI SINI",
-     "what": "a sepia halftone photograph of a busy West Java town corner: a shopfront row, a becak and people walking",
-     "at": "lower right of the frame, centred at 0.72 across, about 0.40 of the frame wide, down at 0.62",
-     "lands": 29,
-     "word": "sini"
-    },
-    {
-     "name": "warga_lokal",
-     "z": 1,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Potret halftone sesepuh Sunda ber-iket Sunda dan baju pangsi yang duduk tenang",
-     "semantik": "WARGA LOKAL",
-     "what": "a sepia halftone portrait cutout of a seated Indonesian Sundanese elder in a soft rolled Sundanese iket headcloth (loose cloth bud on the crown, NOT a Javanese blangkon) and a dark pangsi jacket, a stamped tag reading 'WARGA LOKAL'",
-     "at": "lower left of the frame, centred at 0.26 across, about 0.36 of the frame wide",
-     "lands": 15,
-     "word": "tumbuh",
-     "motion_basis": "Setengah badan tiga-perempat menghadap kanan dengan tangan kanan terbuka di depan dada, kepala besar dan terpisah jelas dari bahu — swap menoleh, mengangguk, dan mengangkat telapak tangan hanya menggerakkan kepala dan lengan yang sudah punya piksel sendiri; siluet tetap terbaca di ukuran slot.",
-     "poses_planned": [
-      {
-       "action": "turn his head a little further toward the traveler, chin level"
-      },
-      {
-       "action": "raise his open right hand slightly, palm up, in a calm explaining gesture"
-      },
-      {
-       "action": "settle back to the base posture with the hand resting and the head level"
-      }
-     ]
-    },
-    {
-     "name": "pendatang",
-     "z": 2,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Potret halftone pelintas Indonesia memegang peta terbuka sambil menatap plang",
-     "semantik": "PENDATANG",
-     "what": "a sepia halftone cutout of an Indonesian traveler holding an unfolded road map in both loose hands, profile facing the LEFT EDGE, a label reading 'PENDATANG'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide",
-     "cut": true,
-     "lands": 80,
-     "word": "Orang",
-     "motion_basis": "Berdiri sendiri tanpa apa pun di belakangnya; peta terbuka digenggam longgar di dua tangan dengan permukaan luas terlihat, kepala profil kiri terpisah jelas dari ransel — swap menutup setengah peta, menunduk ke peta, dan mengangkat satu tangan bertanya hanya menggerakkan peta, kepala, dan satu lengan yang sudah punya piksel sendiri.",
-     "poses_planned": [
-      {
-       "action": "fold the road map half closed in his hands, still looking left"
-      },
-      {
-       "action": "tilt his head down toward the half-folded map, brow raised"
-      },
-      {
-       "action": "raise his free left hand palm-up in a one-time questioning gesture, map held in the other hand"
-      }
-     ],
-     "measured_box": [
-      0.629,
-      0.286,
-      0.919,
-      0.98
-     ]
-    },
-    {
-     "name": "tanda_tanya",
-     "z": 4,
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Sobekan kertas buku catatan dengan tanda tanya besar yang dicoret sekali",
-     "semantik": "KENAPA CI-?",
-     "what": "an irregular torn notebook paper strip taped in place with a bold stamped question mark and black type reading 'KENAPA CI-?' with a single red ink line through it",
-     "at": "upper centre of the frame, centred at 0.50 across, about 0.32 of the frame wide",
-     "lands": 143,
-     "word": "bertanya"
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 770.4,
-     "word": "tumbuh",
-     "motion": "landing"
-    },
-    {
-     "frame": 816.6,
-     "word": "aneh.",
-     "motion": "snap"
-    },
-    {
-     "frame": 871.8,
-     "word": "luar",
-     "motion": "landing"
-    },
-    {
-     "frame": 955.2,
-     "word": "bertanya.",
-     "motion": "strike"
-    }
-   ]
-  },
-  {
-   "id": "s06",
-   "range": [
-    990,
-    1258
-   ],
-   "babak": "Babak 3 — Kontras Persepsi & Ruang Hidup Sehari-hari",
-   "peran_retoris": "Bukti Keseharian — empat permukaan tanpa nama ulang",
-   "latar_plate": "Full-bleed weathered plaster wall: coral left, mustard right, charcoal bottom, printed columns, coarse grain, crooked masking tape.",
-   "tata_letak_kolase": "Two-band scatter, pieces tilted 4-10 degrees and overlapping: the house gate high left with the address plate across its lower edge, the schoolchildren high right, the angkot placard low left, the phone slip low right, the empty lane low centre to close.",
-   "jenis": "OBJECT",
-   "mark": "Sequential red annotations: underline on 'alamat', circle on the schoolchildren on 'sekolah', box on the angkot placard on 'angkutan', strike on the phone slip on 'nomor', brackets around the whole everyday street on 'orang'.",
-   "marks": [
-    [
-     "underline",
-     12,
-     -3.8,
-     "plat_alamat",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "circle",
-     14,
-     4.6,
-     "anak_sekolah",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ],
-    [
-     "box",
-     15,
-     -5.2,
-     "papan_angkot",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "strike",
-     13,
-     3.1,
-     "nomor_harian",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ],
-    [
-     "brackets",
-     14,
-     -1.6,
-     "gerbang_rumah",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "kamera": "Stepwise tracking onto each artifact as its noun lands, then a slow pull-out on the final 'sadar.' (range >= 28% fitZoom).",
-   "still_gate": "PASS 37.2",
-   "cards": [
-    {
-     "name": "plat_alamat",
-     "z": 5,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plat alamat rumah seng enamel tua dengan RT/RW",
-     "semantik": "JL. CITARUM NO.",
-     "what": "a chipped enamel house address plate with rust edges reading 'JL. CITARUM NO.' — the house number has chipped off",
-     "at": "upper centre of the frame, down at 0.41, centred at 0.44 across, about 0.34 of the frame wide",
-     "lands": 37,
-     "word": "alamat"
-    },
-    {
-     "name": "gerbang_rumah",
-     "z": 2,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Foto halftone gerbang dan pagar rumah beton — tempat plat alamat itu benar-benar terpasang",
-     "semantik": "RUMAH",
-     "what": "a sepia halftone photograph of an Indonesian house gate and low concrete fence with potted plants, seen from the lane",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.40 of the frame wide",
-     "lands": 46,
-     "word": "rumah,"
-    },
-    {
-     "name": "anak_sekolah",
-     "z": 3,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Dua anak sekolah dasar berseragam putih-merah berjalan — nama sekolah yang hidup",
-     "semantik": "NAMA SEKOLAH",
-     "what": "a sepia halftone photograph of two Indonesian schoolchildren in white shirts and red shorts, side by side in profile, satchels on their backs",
-     "at": "upper right of the frame, centred at 0.74 across, about 0.30 of the frame wide",
-     "lands": 84,
-     "word": "sekolah,",
-     "head": [
-      0.28,
-      0.1,
-      0.82,
-      0.42
-     ]
-    },
-    {
-     "name": "papan_angkot",
-     "z": 4,
-     "bahan": "cetak",
-     "wujud": "siluet_organik",
-     "semiotik": "Papan trayek kaca depan angkot Jawa Barat dengan kaca spion",
-     "semantik": "CIANJUR - CIAWI",
-     "what": "a weathered metal angkot windshield placard with a rearview mirror, reading 'CIANJUR - CIAWI'",
-     "at": "lower left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
-     "lands": 125,
-     "word": "angkutan",
-     "slot_catatan": "kartu ini membawa kaca spion di atas plang, jadi titik berat tintanya di atas huruf; slot alfa-bbox sudah sama dengan halaman"
-    },
-    {
-     "name": "nomor_harian",
-     "z": 6,
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Sobekan stensil nomor telepon tembok dan kuitansi — satu-satunya tanpa Ci-",
-     "semantik": "HUB. KANTOR DESA",
-     "what": "an irregular torn stencilled wall notice reading 'HUB. KANTOR DESA', no invented digits",
-     "at": "lower right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
-     "lands": 169,
-     "word": "nomor",
-     "cut": true
-    },
-    {
-     "name": "jalan_kosong",
-     "z": 1,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Gang yang sama tanpa siapa pun — dipakai setiap hari tanpa sadar",
-     "semantik": "TANPA SADAR",
-     "what": "a sepia halftone photograph of a quiet residential lane with gates and small address plates, flat daylight",
-     "at": "lower centre of the frame, centred at 0.52 across, about 0.34 of the frame wide",
-     "lands": 240,
-     "word": "sadar."
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 1027.2,
-     "word": "alamat",
-     "motion": "landing"
-    },
-    {
-     "frame": 1035.6,
-     "word": "rumah,",
-     "motion": "snap"
-    },
-    {
-     "frame": 1074.0,
-     "word": "sekolah,",
-     "motion": "landing"
-    },
-    {
-     "frame": 1114.8,
-     "word": "angkutan",
-     "motion": "landing"
-    },
-    {
-     "frame": 1125.0,
-     "word": "kota,",
-     "motion": "snap"
-    },
-    {
-     "frame": 1159.2,
-     "word": "nomor",
-     "motion": "landing"
-    },
-    {
-     "frame": 1230.0,
-     "word": "sadar.",
-     "motion": "strike"
-    }
-   ]
-  },
-  {
-   "id": "s07",
-   "range": [
-    1258,
-    1518
-   ],
-   "babak": "Babak 4 — Pertanyaan Inti & Metode Ukur yang Jujur",
-   "peran_retoris": "Hinge — Kenapa? → alat ukur arsip → stempel SERIUS",
-   "latar_plate": "Full-bleed printed page: crimson and charcoal diagonal block, cropped question marks off the top, printed columns, crooked yellow tape.",
-   "tata_letak_kolase": "Eye-line across the page: the puzzled man low left stares at the tilted KENAPA? signboard high right; clipping high left, ledger centred, caliper low centre, wax seal low right; all pieces inside the page.",
-   "jenis": "SUBJECT",
-   "mark": "Underline on the man's chin on 'Pertanyaan', thick red circle around the KENAPA? signboard on 'Kenapa?', brackets on the ledger on 'hal', strike across the impression clipping on 'kesan.', circle on the wax seal on 'Serius.'.",
-   "marks": [
-    [
-     "underline",
-     12,
-     -3.3,
-     "orang_bingung",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "circle",
-     14,
-     4.9,
-     "plang_kenapa",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ],
-    [
-     "brackets",
-     14,
-     -2.4,
-     "buku_arsip",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ],
-    [
-     "strike",
-     12,
-     3.6,
-     "koran_kesan",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ],
-    [
-     "circle",
-     13,
-     -5.8,
-     "stempel_serius",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ]
-   ],
-   "kamera": "Tense hold on the man, slam zoom onto KENAPA? at the strike, then a settle onto the ledger, the caliper and the wax seal for the closing beats (range >= 28% fitZoom).",
-   "still_gate": "PASS 35.0",
-   "cards": [
-    {
-     "name": "orang_bingung",
-     "z": 2,
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Potret halftone pria Indonesia 40-an mengernyit memandang plang di kanannya",
-     "semantik": "PERTANYAAN SEDERHANA",
-     "what": "a sepia halftone cutout of a puzzled Indonesian man in his forties, chest-up, facing right with his hand at his chin, a torn strip reading 'PERTANYAAN SEDERHANA'",
-     "at": "lower left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
-     "lands": 5,
-     "word": "Pertanyaan",
-     "motion_basis": "Dada ke atas tiga-perempat menghadap kanan, tangan kanan TERPISAH jelas dari wajah di dagu, kepala punya ruang di sekeliling — swap menunjuk ke plang, mencondongkan badan, dan mengetuk jari hanya menggerakkan lengan dan kepala yang sudah punya piksel sendiri; bahu tak terpotong tepi slot.",
-     "poses_planned": [
-      {
-       "action": "lift his right hand off his chin and point his index finger firmly toward the KENAPA? sign"
-      },
-      {
-       "action": "lean his torso slightly forward toward the sign, head tilting with the question"
-      },
-      {
-       "action": "drop the hand back to the chin and settle, brows still knotted"
-      }
-     ],
-     "cut": true
-    },
-    {
-     "name": "plang_kenapa",
-     "z": 5,
-     "bahan": "cetak",
-     "wujud": "plang_fisik",
-     "semiotik": "Plang jalan besi tepat di arah tatapan pria itu — kata tanya KENAPA?",
-     "semantik": "KENAPA?",
-     "what": "a weathered metal signboard tilted 6 degrees with masking tape, reading 'KENAPA?' in bold condensed capitals",
-     "at": "upper right of the frame, centred at 0.75 across, about 0.34 of the frame wide",
-     "lands": 67,
-     "word": "Kenapa?"
-    },
-    {
-     "name": "buku_arsip",
-     "z": 1,
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Buku besar arsip berkolom — cara mengukur yang lebih jujur daripada kesan",
-     "semantik": "CARA YANG LEBIH JUJUR",
-     "what": "a sepia halftone photograph of an open archival ledger, ruled columns of faint illegible handwriting",
-     "at": "centre of the frame, centred at 0.50 across, about 0.32 of the frame wide",
-     "lands": 130,
-     "word": "jujur"
-    },
-    {
-     "name": "penggaris_sorong",
-     "z": 3,
-     "bahan": "benda",
-     "wujud": "siluet_organik",
-     "semiotik": "Jangka sorong kuningan di atas kolom angka — alat, bukan tafsir",
-     "semantik": "MENGUKUR",
-     "what": "a brass vernier caliper lying diagonally, no printed figures under it",
-     "at": "lower centre of the frame, centred at 0.44 across, about 0.24 of the frame wide",
-     "lands": 148,
-     "word": "mengukur"
-    },
-    {
-     "name": "koran_kesan",
-     "z": 6,
-     "bahan": "koran",
-     "wujud": "sobekan_pita",
-     "semiotik": "Sobekan koran berisi kesan penulis — yang tidak boleh diandalkan",
-     "semantik": "KESAN",
-     "what": "a torn newsprint clipping with dense unreadable small type and a small mountain halftone, no headline",
-     "at": "upper left of the frame, centred at 0.25 across, about 0.30 of the frame wide",
-     "lands": 202,
-     "word": "kesan."
-    },
-    {
-     "name": "stempel_serius",
-     "z": 4,
-     "bahan": "benda",
-     "wujud": "plang_fisik",
-     "semiotik": "Segel lilin merah dan stempel kayu pengesahan arsip — ukur, jangan kesan",
-     "semantik": "SERIUS · ARSIP RESMI",
-     "what": "a vintage wooden rubber stamp on its base, handle up, beside a small red wax seal and a stamped paper tag reading 'SERIUS · ARSIP RESMI' — these three objects only, on blank paper",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide",
-     "cut": true,
-     "lands": 237,
-     "word": "Serius.",
-     "motion_basis": "Stempel kayu BERDIRI dengan gagang atas bebas dan wajah stempel menghadap depan, segel lilin sebagai alas target di sampingnya — swap angkat, miring, dan tekan hanya memutar objek pada titik alasnya tanpa menemukan ulang bentuk; siluet gagang tetap terbaca di ukuran slot.",
-     "poses_planned": [
-      {
-       "action": "lift the stamp upright on its handle, base hovering just off the paper"
-      },
-      {
-       "action": "tilt the lifted stamp 20 degrees toward the wax seal as if aiming"
-      },
-      {
-       "action": "press the stamp flat down onto the wax seal, handle pointing at the viewer"
-      }
-     ]
-    }
-   ],
-   "emphasis": [
-    {
-     "frame": 1263.0,
-     "word": "Pertanyaan",
-     "motion": "landing"
-    },
-    {
-     "frame": 1325.4,
-     "word": "Kenapa?",
-     "motion": "strike"
-    },
-    {
-     "frame": 1387.8,
-     "word": "jujur",
-     "motion": "landing"
-    },
-    {
-     "frame": 1459.8,
-     "word": "kesan.",
-     "motion": "snap"
-    },
-    {
-     "frame": 1494.6,
-     "word": "Serius.",
-     "motion": "strike"
-    }
-   ]
+    "catatan": "m01 adalah modul pertama alur v2; blok ini diisi saat rencana diperiksa ulang sebelum eksekusi, supaya jejak bacanya terbaca."
   }
- ],
- "context": {
-  "skills_read": [
-   "vox-lean",
-   "audio-first-documentary",
-   "vox-animation"
-  ],
-  "benang_read": [
-   "Hukum kedatangan kartu (R2e)",
-   "Hukum kata penegasan (R2b1)",
-   "Hukum kolase, yang kedua kalinya (D0b3)",
-   "Putaran 9 — teks yang tidak terbaca, dan rencana yang tidak diperiksa"
-  ],
-  "laws": [
-   "L-cards",
-   "L-arrival",
-   "L-mark",
-   "L-marks",
-   "L-emphasis",
-   "L-plate",
-   "L-cut",
-   "L-iso",
-   "L-collage"
-  ],
-  "catatan": "m01 adalah modul pertama alur v2; blok ini diisi saat rencana diperiksa ulang sebelum eksekusi, supaya jejak bacanya terbaca."
- }
 }

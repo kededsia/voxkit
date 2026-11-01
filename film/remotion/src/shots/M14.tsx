@@ -375,8 +375,8 @@ const S05: React.FC = () => (
     <AbsoluteFill>
       <Card src="m14/cards/s05/foto_istana_kosong.png" x={0.238} y={0.2702} w={0.4935} aspect={1.2059} enterFrame={0} travel={10} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
       <Card src="m14/cards/s05/foto_gelar_kosong.png" x={0.2674} y={0.7585} w={0.5} aspect={1.0652} enterFrame={14} travel={17} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m14/cards/s05/orang_di_runtuhan.png" x={0.7402} y={0.6549} w={0.1592} aspect={3.7129} enterFrame={86} travel={17} from="right" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m14/cards/s05/kartu_istana_hilang.png" x={0.7489} y={0.2513} w={0.4615} aspect={0.9593} enterFrame={49} travel={21} from="bottom" phase={2.75} stepped={2} kind="type" z={4} />
+      <Card src="m14/cards/s05/kartu_istana_hilang.png" x={0.7489} y={0.2513} w={0.4615} aspect={0.9593} enterFrame={49} travel={21} from="right" phase={2} stepped={2} kind="type" z={4} />
+      <Card src="m14/cards/s05/orang_di_runtuhan.png" x={0.7402} y={0.6549} w={0.1592} aspect={3.7129} enterFrame={86} travel={17} from="bottom" phase={2.75} stepped={2} kind="figure" z={5} />
       <HandMark
         shape="brackets"
         box={[0.5041, 0.016, 0.9937, 0.4867]}
@@ -397,7 +397,7 @@ const S05: React.FC = () => (
         rotate={-2.9}
         pen="marker"
         motion="draw"
-        z={3}
+        z={5}
         color="coral"
         seed={1382}
       />

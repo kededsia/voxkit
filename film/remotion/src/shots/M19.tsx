@@ -96,11 +96,11 @@ const S01: React.FC = () => (
              phase={0.45}>
     <AbsoluteFill>
       <Card src="m19/cards/s01/foto_jalan_sekarang.png" x={0.1048} y={0.5281} w={0.3445} aspect={1.4439} enterFrame={0} travel={13} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m19/cards/s01/figur_pembaca_kuno.png" x={0.2162} y={0.6823} w={0.3408} aspect={1.6198} enterFrame={21} travel={21} from="top" phase={1.25} stepped={2} kind="figure" z={2} />
-      <Card src="m19/cards/s01/foto_teks_kuno.png" x={0.705} y={0.7474} w={0.2827} aspect={1.8516} enterFrame={61} travel={14} from="right" phase={2} stepped={2} kind="photo" z={3} />
-      <Card src="m19/cards/s01/foto_meja_baca.png" x={0.8954} y={0.6074} w={0.3997} aspect={1.4822} enterFrame={99} travel={21} from="bottom" phase={2.75} stepped={2} kind="photo" z={4} />
-      <Card src="m19/cards/s01/kartu_abad_15.png" x={0.8896} y={0.1855} w={0.4331} aspect={0.7545} enterFrame={42} travel={21} from="left" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m19/cards/s01/kartu_satu_hal.png" x={0.5354} y={0.4236} w={0.8314} aspect={0.769} enterFrame={138} travel={17} from="top" phase={4.25} stepped={2} kind="type" z={6} />
+      <Card src="m19/cards/s01/foto_teks_kuno.png" x={0.705} y={0.7474} w={0.2827} aspect={1.8516} enterFrame={61} travel={14} from="top" phase={1.25} stepped={2} kind="photo" z={3} />
+      <Card src="m19/cards/s01/foto_meja_baca.png" x={0.8954} y={0.6074} w={0.3997} aspect={1.4822} enterFrame={99} travel={21} from="right" phase={2} stepped={2} kind="photo" z={4} />
+      <Card src="m19/cards/s01/kartu_abad_15.png" x={0.8896} y={0.1855} w={0.4331} aspect={0.7545} enterFrame={42} travel={21} from="bottom" phase={2.75} stepped={2} kind="type" z={5} />
+      <Card src="m19/cards/s01/kartu_satu_hal.png" x={0.5354} y={0.4236} w={0.8314} aspect={0.769} enterFrame={138} travel={17} from="left" phase={3.5} stepped={2} kind="type" z={6} />
+      <Card src="m19/cards/s01/figur_pembaca_kuno.png" x={0.2162} y={0.6823} w={0.3408} aspect={1.6198} enterFrame={21} travel={21} from="top" phase={4.25} stepped={2} kind="figure" z={7} />
       <HandMark
         shape="box"
         box={[0.659, 0.0081, 1.1202, 0.363]}
@@ -121,7 +121,7 @@ const S01: React.FC = () => (
         rotate={-2.4}
         pen="marker"
         motion="draw"
-        z={2}
+        z={7}
         color="coral"
         seed={1090}
       />
@@ -162,8 +162,8 @@ const S02: React.FC = () => (
              phase={0.9}>
     <AbsoluteFill>
       <Card src="m19/cards/s02/foto_sungai_lain.png" x={0.7769} y={0.7266} w={0.4317} aspect={1.2548} enterFrame={120} travel={21} from="top" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m19/cards/s02/figur_orang_lain.png" x={0.6663} y={0.818} w={0.1839} aspect={2.7193} enterFrame={166} travel={21} from="right" phase={1.25} stepped={2} kind="figure" z={2} />
-      <Card src="m19/cards/s02/foto_peta_nusantara.png" x={0.3913} y={0.5449} w={0.5952} aspect={1.2491} enterFrame={38} travel={21} from="bottom" phase={2} stepped={2} kind="type" z={3} />
+      <Card src="m19/cards/s02/foto_peta_nusantara.png" x={0.3913} y={0.5449} w={0.5952} aspect={1.2491} enterFrame={38} travel={21} from="right" phase={1.25} stepped={2} kind="type" z={3} />
+      <Card src="m19/cards/s02/figur_orang_lain.png" x={0.6663} y={0.818} w={0.1839} aspect={2.7193} enterFrame={166} travel={21} from="bottom" phase={2} stepped={2} kind="figure" z={4} />
       <Card src="m19/cards/s02/kartu_supaya.png" x={0.2867} y={0.181} w={0.4193} aspect={0.8694} enterFrame={0} travel={8} from="left" phase={2.75} stepped={2} kind="type" z={4} />
       <Card src="m19/cards/s02/kartu_menamai.png" x={0.7925} y={0.2572} w={0.3714} aspect={0.9572} enterFrame={92} travel={17} from="top" phase={3.5} stepped={2} kind="type" z={5} />
       <HandMark

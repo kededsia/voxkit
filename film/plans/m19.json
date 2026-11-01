@@ -1,2170 +1,2170 @@
 {
- "plan_version": 2,
- "module": "m19",
- "klaim": "Tidak ada yang merasa sedang memakai bahasa abad ke-15. Menamai tempat dengan air bukan kebiasaan orang Sunda saja: di Jawa air disebut banyu, di Bali ieh, di Batak aek, di Lampung wai. Yang istimewa bukan bahwa orang Sunda menamai tempat dengan air, tapi berapa banyak dan berapa lama - kalau 3 dari 10 nama adalah nama air, maka air bukan bagian dari wilayah itu, air adalah wilayahnya. Nama itu bahkan berjalan keluar dari Jawa Barat: di Jawa Tengah ada satu kabupaten berawalan Ci, Ci Lacap - Ci dari bahasa Sunda, Lacap dari bahasa Jawa, satu nama dua bahasa di garis tempat keduanya bertemu. Lalu muncul teori lain: katanya ci berarti cahaya.",
- "payoff": "Cilacap: satu nama, dua bahasa, di garis tempat Sunda dan Jawa bertemu - bukan kebetulan, tapi jejak.",
- "serah": "teori cahaya yang beredar lewat video dan forum, untuk m20",
- "terima": "ejaan yang berubah tanpa mengubah bunyi, dari m18",
- "konteks_modul": {
-  "konteks_budaya": "Peta Nusantara, atlas kolonial, koran daerah, layar ponsel, forum daring. Lanskap: sawah Jawa, pura Bali, danau Batak, pantai Lampung, pesisir Cilacap, ruang kerja peneliti. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
-  "tesis_modul": "Menamai tempat dengan air bukan ciri khas Sunda: Jawa punya banyu, Bali ieh, Batak aek, Lampung wai. Yang istimewa adalah kepadatannya - 3 dari 10 nama adalah nama air, sehingga air bukan bagian dari wilayah melainkan wilayahnya. Cilacap menunjukkan nama itu berjalan keluar Jawa Barat dan bertemu bahasa Jawa di satu garis.",
-  "babak_narasi": [
-   {
-    "babak": "Babak 18 - Bukan keistimewaan",
-    "shots": [
-     "s01",
-     "s02"
-    ],
-    "fokus": "Kisah ini bukan tentang keistimewaan; menamai dengan air bukan kebiasaan Sunda saja."
-   },
-   {
-    "babak": "Babak 19 - Kata air di Nusantara",
-    "shots": [
-     "s03",
-     "s04",
-     "s05"
-    ],
-    "fokus": "Banyu, ieh, aek, wai; yang istimewa adalah berapa banyak dan berapa lama."
-   },
-   {
-    "babak": "Babak 20 - Kepadatan",
-    "shots": [
-     "s06",
-     "s07"
-    ],
-    "fokus": "3 dari 10 nama adalah nama air; air adalah wilayahnya, dan nama itu berjalan keluar Jawa Barat."
-   },
-   {
-    "babak": "Babak 21 - Cilacap",
-    "shots": [
-     "s08",
-     "s09",
-     "s10",
-     "s11",
-     "s12"
-    ],
-    "fokus": "Satu kabupaten berawalan Ci; Linda Sariwulandari menelusuri asalnya; Ci Sunda, Lacap Jawa; satu nama dua bahasa."
-   },
-   {
-    "babak": "Babak 22 - Teori cahaya",
-    "shots": [
-     "s13",
-     "s14",
-     "s15",
-     "s16"
-    ],
-    "fokus": "Muncul teori lain: ci berarti cahaya; teori itu beredar lewat video, forum, dan puluhan media."
-   }
-  ]
- },
- "shots": [
-  {
-   "id": "s01",
-   "range": [
-    0,
-    167
-   ],
-   "babak": "Babak 18 - Bukan keistimewaan",
-   "peran_retoris": "Pagar - tidak ada yang merasa memakai bahasa abad ke-15",
-   "jenis": "PLACE",
-   "latar_plate": "Full-bleed today page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "People walking today high left, the reader low left, the 'abad ke-15' slip high right, the old page low centre, the reading desk low right, and 'satu hal' at the bottom.",
-   "kamera": "Start on the street, then cross to the paper nobody thinks they are using; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_jalan_sekarang",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang berjalan hari ini - tidak satu pun merasa memakai bahasa lama",
-     "semantik": "TIDAK ADA YANG MERASA",
-     "what": "a sepia halftone photograph of people walking along a city pavement past shopfronts",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "Tidak",
-     "z": 1,
-     "lands": 13,
-     "nudge": [
-      -0.114,
-      0.239
-     ]
-    },
-    {
-     "name": "figur_pembaca_kuno",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang membaca naskah lama dengan suara - bahasa itu masih dipakai, bukan peninggalan",
-     "semantik": "MEMAKAI BAHASA",
-     "what": "a sepia halftone photograph of a man reading an old manuscript aloud, seen from the side",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.74",
-     "cut": true,
-     "word": "memakai",
-     "z": 2,
-     "lands": 42
-    },
-    {
-     "name": "kartu_abad_15",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Abad yang dikira sudah lewat - padahal kosakatanya masih di jalan",
-     "semantik": "ABAD KE-15",
-     "what": "a torn cream slip with big stencilled type reading 'ABAD KE-15'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "abad",
-     "z": 5,
-     "lands": 63,
-     "nudge": [
-      0.12,
-      0.0
-     ]
-    },
-    {
-     "name": "foto_teks_kuno",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Halaman naskah - bukti bahwa kata-katanya memang tua",
-     "semantik": "BAHASA LAMA",
-     "what": "a sepia halftone photograph of a page of old script with dense lettering",
-     "at": "centre of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.52",
-     "cut": true,
-     "word": "-15.",
-     "z": 3,
-     "lands": 75,
-     "nudge": [
-      0.201,
-      0.263
-     ]
-    },
-    {
-     "name": "foto_meja_baca",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Meja baca - tempat kata lama dan kata sehari-hari bertemu",
-     "semantik": "PERLU DITEGASKAN",
-     "what": "a sepia halftone photograph of a desk with a lamp and an open book",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "perlu",
-     "z": 4,
-     "lands": 120,
-     "nudge": [
-      0.08,
-      0.0
-     ]
-    },
-    {
-     "name": "kartu_satu_hal",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Penegasan - satu hal yang harus disepakati sebelum kisahnya jalan",
-     "semantik": "SATU HAL",
-     "what": "a torn cream slip with huge stencilled type reading 'SATU HAL'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "hal.",
-     "z": 6,
-     "lands": 155,
-     "nudge": [
-      0.017,
-      -0.01
-     ]
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     15,
-     3.0,
-     "kartu_abad_15",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "box",
-     17,
-     -2.4,
-     "figur_pembaca_kuno",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'abad'; box on the figure on 'memakai'.",
-   "emphasis": [
-    {
-     "frame": 74.6,
-     "word": "-15.",
-     "motion": "landing"
-    },
-    {
-     "frame": 114.2,
-     "word": "Dan",
-     "motion": "landing",
-     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 155.0,
-     "word": "hal.",
-     "motion": "hold",
-     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s02",
-   "range": [
-    167,
-    375
-   ],
-   "babak": "Babak 18 - Bukan keistimewaan",
-   "peran_retoris": "Penyangkalan - supaya kisah ini tidak dibaca sebagai keistimewaan",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed caution page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "The 'supaya' slip high left, the archipelago sheet filling the middle, 'menamai dengan air' high right, another river low right, and a man from elsewhere low centre.",
-   "kamera": "Hold the sheet wide, then close on the slip that refuses the compliment; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_supaya",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Pagar retoris - ini bukan pujian untuk satu suku",
-     "semantik": "SUPAYA TIDAK DIBACA",
-     "what": "a torn cream slip with stencilled type reading 'SUPAYA TIDAK DIBACA'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Supaya",
-     "z": 4,
-     "lands": 8
-    },
-    {
-     "name": "foto_peta_nusantara",
-     "bahan": "peta",
-     "wujud": "siluet_organik",
-     "semiotik": "Nusantara - wilayah yang jauh lebih luas daripada satu provinsi",
-     "semantik": "BUKAN SUNDA SAJA",
-     "what": "a sepia halftone photograph of a wide map sheet of the Indonesian archipelago",
-     "at": "centre of the frame, centred at 0.48 across, about 0.38 of the frame wide, down at 0.54",
-     "cut": true,
-     "word": "keistimewaan.",
-     "z": 3,
-     "lands": 59
-    },
-    {
-     "name": "kartu_menamai",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Perbuatannya, bukan sukunya - yang dibahas adalah menamai, bukan orang Sunda",
-     "semantik": "MENAMAI DENGAN AIR",
-     "what": "a torn cream slip with letterpress type reading 'MENAMAI DENGAN AIR'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "Menamai",
-     "z": 5,
-     "lands": 109
-    },
-    {
-     "name": "foto_sungai_lain",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai di tempat lain - pola yang sama, pulau yang lain",
-     "semantik": "KEBIASAAN LAIN",
-     "what": "a sepia halftone photograph of a broad river running past a village of wooden houses",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.76",
-     "cut": true,
-     "word": "air",
-     "z": 1,
-     "lands": 141
-    },
-    {
-     "name": "figur_orang_lain",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang dari tempat lain - yang juga menamai sungainya sendiri",
-     "semantik": "ORANG SUNDA SAJA",
-     "what": "a sepia halftone photograph of an old man standing at a river landing, seen from behind",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.82",
-     "cut": true,
-     "word": "Sunda",
-     "z": 2,
-     "lands": 187,
-     "nudge": [
-      0.155,
-      0.041
-     ]
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     14,
-     0.0,
-     "kartu_supaya",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'supaya'.",
-   "emphasis": [
-    {
-     "frame": 275.6,
-     "word": "Menamai",
-     "motion": "hold",
-     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s03",
-   "range": [
-    375,
-    598
-   ],
-   "babak": "Babak 19 - Kata air di Nusantara",
-   "peran_retoris": "Contoh pertama - Jawa menyebut air banyu, dan menamai tempat dengannya",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed word page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "The Javanese fields high left, the word banyu low left, a small river centre, three banyu names down the right, the fisherman low right, and the Balinese temple at the bottom.",
-   "kamera": "One word, then three places that carry it, then another island; range 28% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_sawah_jawa",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sawah Jawa - tempat air jadi kata sehari-hari",
-     "semantik": "DI JAWA",
-     "what": "a sepia halftone photograph of terraced rice fields with a water channel between them",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "Di",
-     "z": 1,
-     "lands": 18
-    },
-    {
-     "name": "kartu_banyu",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kata Jawa untuk air - bukan kata Sunda, dan itu intinya",
-     "semantik": "BANYU",
-     "what": "a torn cream slip with huge stencilled type reading 'BANYU'",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.66",
-     "cut": true,
-     "word": "banyu.",
-     "z": 5,
-     "lands": 59
-    },
-    {
-     "name": "foto_sungai_kecil",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang sama, nama yang lain - sungai kecil di antara rumah",
-     "semantik": "AIR DISEBUT",
-     "what": "a sepia halftone photograph of a narrow stream running between houses with a bamboo bridge",
-     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
-     "cut": true,
-     "word": "Dan",
-     "z": 2,
-     "lands": 80
-    },
-    {
-     "name": "kartu_banyu_wangi",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama pertama - air yang harum, bukan air biasa",
-     "semantik": "BANYU WANGI",
-     "what": "a torn cream slip with stencilled type reading 'BANYU WANGI'",
-     "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "wangi,",
-     "z": 6,
-     "lands": 106
-    },
-    {
-     "name": "kartu_banyu_mas_asin",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Dua nama lagi - air emas dan air asin, pola yang sama",
-     "semantik": "BANYU MAS, BANYU ASIN",
-     "what": "a torn cream slip with stencilled type reading 'BANYU MAS, BANYU ASIN'",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.68",
-     "cut": true,
-     "word": "mas,",
-     "z": 7,
-     "lands": 132,
-     "nudge": [
-      -0.023,
-      -0.087
-     ]
-    },
-    {
-     "name": "nelayan",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Nelayan - orang yang hidup dari air asin yang dinamai itu",
-     "semantik": "ASIN",
-     "what": "a sepia halftone photograph of a fisherman standing in shallow water pulling a net, seen from the side",
-     "at": "bottom of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.88",
-     "cut": true,
-     "word": "asin.",
-     "z": 3,
-     "lands": 153
-    },
-    {
-     "name": "foto_pura_bali",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Bali - pulau lain, kata lain untuk air yang sama",
-     "semantik": "DI BALI",
-     "what": "a sepia halftone photograph of a Balinese temple gate with a water tank in front of it",
-     "at": "right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.87",
-     "cut": true,
-     "word": "Bali",
-     "z": 4,
-     "lands": 186
-    },
-    {
-     "name": "kartu_ieh",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kata Bali untuk air - bukti kedua bahwa ini bukan ciri satu suku",
-     "semantik": "IEH",
-     "what": "a torn cream slip with huge stencilled type reading 'IEH'",
-     "at": "upper centre of the frame, centred at 0.50 across, about 0.22 of the frame wide, down at 0.24",
-     "cut": true,
-     "word": "ieh.",
-     "z": 8,
-     "lands": 203
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     12,
-     2.4,
-     "kartu_banyu",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "ellipse",
-     13,
-     -1.9,
-     "nelayan",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'banyu.'; ellipse on the figure on 'asin.'.",
-   "emphasis": [
-    {
-     "frame": 392.6,
-     "word": "Di",
-     "motion": "hold",
-     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s04",
-   "range": [
-    598,
-    808
-   ],
-   "babak": "Babak 19 - Kata air di Nusantara",
-   "peran_retoris": "Contoh kedua dan ketiga - Batak aek, Lampung wai; lalu penyangkalan kedua",
-   "jenis": "PLACE",
-   "latar_plate": "Full-bleed island page on aged newsprint: a crimson block across the upper left, a mustard strip along the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Batak high left, Lampung low left, the lake high right, the Sundanese man low centre, a Sundanese river low right, and 'yang istimewa bukan itu' along the bottom.",
-   "kamera": "Two islands, two words, then refuse the compliment again; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_batak_aek",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Sumatra - kata airnya aek, bukan banyu dan bukan cai",
-     "semantik": "BATAK: AEK",
-     "what": "a torn cream slip with stencilled type reading 'BATAK: AEK'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Batak,",
-     "z": 4,
-     "lands": 9,
-     "nudge": [
-      -0.045,
-      0.15
-     ]
-    },
-    {
-     "name": "kartu_lampung_wai",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Lampung - kata airnya wai, ketiga yang berbeda untuk benda yang sama",
-     "semantik": "LAMPUNG: WAI",
-     "what": "a torn cream plate with letterpress type reading 'LAMPUNG: WAI'",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.30 of the frame wide, down at 0.68",
-     "cut": true,
-     "word": "Lampung,",
-     "z": 5,
-     "lands": 51,
-     "nudge": [
-      -0.005,
-      0.277
-     ]
-    },
-    {
-     "name": "foto_danau_toba",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Danau Toba - air yang luas, dinamai dengan kata airnya sendiri",
-     "semantik": "AEK",
-     "what": "a sepia halftone photograph of a wide lake seen from a high bank with small boats",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "aek.",
-     "z": 1,
-     "lands": 26
-    },
-    {
-     "name": "kartu_istimewa",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kata yang harus dipindahkan - bukan orang Sundanya yang istimewa",
-     "semantik": "YANG ISTIMEWA",
-     "what": "a torn cream slip with big stencilled type reading 'YANG ISTIMEWA'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.52",
-     "cut": true,
-     "word": "istimewa",
-     "z": 6,
-     "lands": 123,
-     "nudge": [
-      0.01,
-      0.017
-     ]
-    },
-    {
-     "name": "figur_orang_sunda",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang Sunda - satu di antara banyak yang menamai tempat dengan air",
-     "semantik": "ORANG SUNDA",
-     "what": "a sepia halftone photograph of a woman standing at the edge of a river washing, seen from behind",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.73",
-     "cut": true,
-     "word": "orang",
-     "z": 2,
-     "lands": 158,
-     "nudge": [
-      0.02,
-      0.0
-     ]
-    },
-    {
-     "name": "foto_sungai_sunda",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai Sunda - kasus yang sedang dibahas, bukan satu-satunya kasus",
-     "semantik": "MENAMAI TEMPAT",
-     "what": "a sepia halftone photograph of a clear rocky river running through a bamboo grove",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
-     "cut": true,
-     "word": "Sunda",
-     "z": 3,
-     "lands": 165
-    },
-    {
-     "name": "kartu_bukan_itu",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Yang istimewa bukan perbuatannya - perbuatan itu umum",
-     "semantik": "YANG ISTIMEWA BUKAN ITU",
-     "what": "a torn cream slip with big stencilled type reading 'YANG ISTIMEWA BUKAN ITU'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "air.",
-     "z": 7,
-     "lands": 202,
-     "nudge": [
-      0.176,
-      -0.364
-     ]
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     13,
-     3.0,
-     "kartu_batak_aek",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "box",
-     14,
-     -2.4,
-     "figur_orang_sunda",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'batak,'; box on the figure on 'orang'.",
-   "emphasis": [
-    {
-     "frame": 624.2,
-     "word": "aek.",
-     "motion": "hold",
-     "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 674.6,
-     "word": "wai.",
-     "motion": "hold",
-     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 704.0,
-     "word": "Jadi",
-     "motion": "hold",
-     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s05",
-   "range": [
-    808,
-    993
-   ],
-   "babak": "Babak 19 - Kata air di Nusantara",
-   "peran_retoris": "Ukuran - yang istimewa adalah berapa banyak dan berapa lama",
-   "jenis": "QUANTITY",
-   "latar_plate": "Full-bleed measure page on aged newsprint: a charcoal block across the upper right, a crimson strip along the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Many faces high left, 'banyak bangsa' below them, an old gate high right, 'berapa banyak' low left, the measurer low centre, and 'berapa lama' low right.",
-   "kamera": "From the crowd to the two measures - how many, how long; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_wajah_banyak",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Banyak wajah - banyak bangsa melakukan hal yang sama",
-     "semantik": "BANYAK BANGSA",
-     "what": "a sepia halftone photograph of a crowded market aisle with many faces turned different ways",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Banyak",
-     "z": 1,
-     "lands": 15
-    },
-    {
-     "name": "kartu_banyak_bangsa",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Pernyataan yang menurunkan taruhan - ini bukan keunikan",
-     "semantik": "BANYAK BANGSA",
-     "what": "a torn cream slip with stencilled type reading 'BANYAK BANGSA'",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "bangsa",
-     "z": 4,
-     "lands": 26
-    },
-    {
-     "name": "foto_gerbang_lama",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Gerbang tua - kota yang juga menamai airnya dengan caranya sendiri",
-     "semantik": "MELAKUKANNYA",
-     "what": "a sepia halftone photograph of an old stone gate with steps leading down to a river",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "melakukannya.",
-     "z": 2,
-     "lands": 34
-    },
-    {
-     "name": "kartu_berapa_banyak",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Ukuran pertama - jumlah, bukan sifat",
-     "semantik": "BERAPA BANYAK",
-     "what": "a torn cream slip with big stencilled type reading 'BERAPA BANYAK'",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.30 of the frame wide, down at 0.62",
-     "cut": true,
-     "word": "berapa",
-     "z": 5,
-     "lands": 113
-    },
-    {
-     "name": "figur_pengukur",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang yang menghitung - ukuran diambil, bukan dikira",
-     "semantik": "BERAPA LAMA",
-     "what": "a sepia halftone photograph of a man standing at a river edge holding a long measuring rod, seen from the side",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.84",
-     "cut": true,
-     "word": "lama.",
-     "z": 3,
-     "lands": 173
-    },
-    {
-     "name": "kartu_berapa_lama",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Ukuran kedua - waktu, yang membuat nama itu bertahan",
-     "semantik": "DAN BERAPA LAMA",
-     "what": "a torn cream slip with big stencilled type reading 'DAN BERAPA LAMA'",
-     "at": "bottom of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.93",
-     "cut": true,
-     "word": "berapa",
-     "z": 6,
-     "lands": 156
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     14,
-     3.6,
-     "kartu_banyak_bangsa",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ],
-    [
-     "circle",
-     11,
-     -2.9,
-     "figur_pengukur",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'bangsa'; circle on the figure on 'lama.'.",
-   "emphasis": []
-  },
-  {
-   "id": "s06",
-   "range": [
-    993,
-    1258
-   ],
-   "babak": "Babak 20 - Kepadatan",
-   "peran_retoris": "Angka inti - 3 dari 10 nama adalah nama air, jadi air bukan bagian wilayah melainkan wilayahnya",
-   "jenis": "QUANTITY",
-   "latar_plate": "Full-bleed density page on aged newsprint: a crimson block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "The 'kepadatan' slip high left, a dense map high right, the reader low left, '3 dari 10' across the middle, the river on the sheet low centre, the marked map low right, and the conclusion along the bottom.",
-   "kamera": "Hold the dense sheet, then count three out of ten, then turn the sentence over; range 28% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_kepadatan",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Bukan jumlah total, tapi kerapatan - berapa banyak per sepuluh",
-     "semantik": "KEPADATAN",
-     "what": "a torn cream slip with big stencilled type reading 'KEPADATAN'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Karena",
-     "z": 5,
-     "lands": 19
-    },
-    {
-     "name": "foto_peta_penuh",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Peta yang penuh nama - kepadatan itu terlihat, bukan dihitung",
-     "semantik": "MENGUBAH CARA MEMBACA",
-     "what": "a sepia halftone photograph of a map sheet crowded with small printed place names",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "kepadatan",
-     "z": 1,
-     "lands": 26
-    },
-    {
-     "name": "figur_membaca_wilayah",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang membaca wilayahnya lewat nama - cara membaca yang berubah",
-     "semantik": "MEMBACA WILAYAHNYA",
-     "what": "a sepia halftone photograph of a man leaning over a map with one finger on a name, seen from above",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "membaca",
-     "z": 2,
-     "lands": 73,
-     "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = membungkuk, jari di satu nama.",
-     "poses_planned": [
+  "plan_version": 2,
+  "module": "m19",
+  "klaim": "Tidak ada yang merasa sedang memakai bahasa abad ke-15. Menamai tempat dengan air bukan kebiasaan orang Sunda saja: di Jawa air disebut banyu, di Bali ieh, di Batak aek, di Lampung wai. Yang istimewa bukan bahwa orang Sunda menamai tempat dengan air, tapi berapa banyak dan berapa lama - kalau 3 dari 10 nama adalah nama air, maka air bukan bagian dari wilayah itu, air adalah wilayahnya. Nama itu bahkan berjalan keluar dari Jawa Barat: di Jawa Tengah ada satu kabupaten berawalan Ci, Ci Lacap - Ci dari bahasa Sunda, Lacap dari bahasa Jawa, satu nama dua bahasa di garis tempat keduanya bertemu. Lalu muncul teori lain: katanya ci berarti cahaya.",
+  "payoff": "Cilacap: satu nama, dua bahasa, di garis tempat Sunda dan Jawa bertemu - bukan kebetulan, tapi jejak.",
+  "serah": "teori cahaya yang beredar lewat video dan forum, untuk m20",
+  "terima": "ejaan yang berubah tanpa mengubah bunyi, dari m18",
+  "konteks_modul": {
+    "konteks_budaya": "Peta Nusantara, atlas kolonial, koran daerah, layar ponsel, forum daring. Lanskap: sawah Jawa, pura Bali, danau Batak, pantai Lampung, pesisir Cilacap, ruang kerja peneliti. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+    "tesis_modul": "Menamai tempat dengan air bukan ciri khas Sunda: Jawa punya banyu, Bali ieh, Batak aek, Lampung wai. Yang istimewa adalah kepadatannya - 3 dari 10 nama adalah nama air, sehingga air bukan bagian dari wilayah melainkan wilayahnya. Cilacap menunjukkan nama itu berjalan keluar Jawa Barat dan bertemu bahasa Jawa di satu garis.",
+    "babak_narasi": [
       {
-       "pose": 2,
-       "action": "slide his finger along the river line on the map"
+        "babak": "Babak 18 - Bukan keistimewaan",
+        "shots": [
+          "s01",
+          "s02"
+        ],
+        "fokus": "Kisah ini bukan tentang keistimewaan; menamai dengan air bukan kebiasaan Sunda saja."
       },
       {
-       "pose": 3,
-       "action": "straighten up and look at the whole sheet"
+        "babak": "Babak 19 - Kata air di Nusantara",
+        "shots": [
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "fokus": "Banyu, ieh, aek, wai; yang istimewa adalah berapa banyak dan berapa lama."
       },
       {
-       "pose": 4,
-       "action": "lean back down and tap the same name twice"
+        "babak": "Babak 20 - Kepadatan",
+        "shots": [
+          "s06",
+          "s07"
+        ],
+        "fokus": "3 dari 10 nama adalah nama air; air adalah wilayahnya, dan nama itu berjalan keluar Jawa Barat."
+      },
+      {
+        "babak": "Babak 21 - Cilacap",
+        "shots": [
+          "s08",
+          "s09",
+          "s10",
+          "s11",
+          "s12"
+        ],
+        "fokus": "Satu kabupaten berawalan Ci; Linda Sariwulandari menelusuri asalnya; Ci Sunda, Lacap Jawa; satu nama dua bahasa."
+      },
+      {
+        "babak": "Babak 22 - Teori cahaya",
+        "shots": [
+          "s13",
+          "s14",
+          "s15",
+          "s16"
+        ],
+        "fokus": "Muncul teori lain: ci berarti cahaya; teori itu beredar lewat video, forum, dan puluhan media."
       }
-     ]
+    ]
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "range": [
+        0,
+        167
+      ],
+      "babak": "Babak 18 - Bukan keistimewaan",
+      "peran_retoris": "Pagar - tidak ada yang merasa memakai bahasa abad ke-15",
+      "jenis": "PLACE",
+      "latar_plate": "Full-bleed today page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "People walking today high left, the reader low left, the 'abad ke-15' slip high right, the old page low centre, the reading desk low right, and 'satu hal' at the bottom.",
+      "kamera": "Start on the street, then cross to the paper nobody thinks they are using; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_jalan_sekarang",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang berjalan hari ini - tidak satu pun merasa memakai bahasa lama",
+          "semantik": "TIDAK ADA YANG MERASA",
+          "what": "a sepia halftone photograph of people walking along a city pavement past shopfronts",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "Tidak",
+          "z": 1,
+          "lands": 13,
+          "nudge": [
+            -0.114,
+            0.239
+          ]
+        },
+        {
+          "name": "figur_pembaca_kuno",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang membaca naskah lama dengan suara - bahasa itu masih dipakai, bukan peninggalan",
+          "semantik": "MEMAKAI BAHASA",
+          "what": "a sepia halftone photograph of a man reading an old manuscript aloud, seen from the side",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.74",
+          "cut": true,
+          "word": "memakai",
+          "z": 7,
+          "lands": 42
+        },
+        {
+          "name": "kartu_abad_15",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Abad yang dikira sudah lewat - padahal kosakatanya masih di jalan",
+          "semantik": "ABAD KE-15",
+          "what": "a torn cream slip with big stencilled type reading 'ABAD KE-15'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "abad",
+          "z": 5,
+          "lands": 63,
+          "nudge": [
+            0.12,
+            0.0
+          ]
+        },
+        {
+          "name": "foto_teks_kuno",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Halaman naskah - bukti bahwa kata-katanya memang tua",
+          "semantik": "BAHASA LAMA",
+          "what": "a sepia halftone photograph of a page of old script with dense lettering",
+          "at": "centre of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.52",
+          "cut": true,
+          "word": "-15.",
+          "z": 3,
+          "lands": 75,
+          "nudge": [
+            0.201,
+            0.263
+          ]
+        },
+        {
+          "name": "foto_meja_baca",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Meja baca - tempat kata lama dan kata sehari-hari bertemu",
+          "semantik": "PERLU DITEGASKAN",
+          "what": "a sepia halftone photograph of a desk with a lamp and an open book",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "perlu",
+          "z": 4,
+          "lands": 120,
+          "nudge": [
+            0.08,
+            0.0
+          ]
+        },
+        {
+          "name": "kartu_satu_hal",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Penegasan - satu hal yang harus disepakati sebelum kisahnya jalan",
+          "semantik": "SATU HAL",
+          "what": "a torn cream slip with huge stencilled type reading 'SATU HAL'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "hal.",
+          "z": 6,
+          "lands": 155,
+          "nudge": [
+            0.017,
+            -0.01
+          ]
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          15,
+          3.0,
+          "kartu_abad_15",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "box",
+          17,
+          -2.4,
+          "figur_pembaca_kuno",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'abad'; box on the figure on 'memakai'.",
+      "emphasis": [
+        {
+          "frame": 74.6,
+          "word": "-15.",
+          "motion": "landing"
+        },
+        {
+          "frame": 114.2,
+          "word": "Dan",
+          "motion": "landing",
+          "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 155.0,
+          "word": "hal.",
+          "motion": "hold",
+          "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
     },
     {
-     "name": "kartu_3_dari_10",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Angka inti film - tiga dari sepuluh, dan itu mengubah arti seluruh kalimat",
-     "semantik": "3 DARI 10",
-     "what": "a torn cream slip with huge stencilled type reading '3 DARI 10'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.50",
-     "cut": true,
-     "word": "3",
-     "z": 6,
-     "lands": 130
+      "id": "s02",
+      "range": [
+        167,
+        375
+      ],
+      "babak": "Babak 18 - Bukan keistimewaan",
+      "peran_retoris": "Penyangkalan - supaya kisah ini tidak dibaca sebagai keistimewaan",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed caution page on aged newsprint: a crimson block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "The 'supaya' slip high left, the archipelago sheet filling the middle, 'menamai dengan air' high right, another river low right, and a man from elsewhere low centre.",
+      "kamera": "Hold the sheet wide, then close on the slip that refuses the compliment; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_supaya",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Pagar retoris - ini bukan pujian untuk satu suku",
+          "semantik": "SUPAYA TIDAK DIBACA",
+          "what": "a torn cream slip with stencilled type reading 'SUPAYA TIDAK DIBACA'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Supaya",
+          "z": 4,
+          "lands": 8
+        },
+        {
+          "name": "foto_peta_nusantara",
+          "bahan": "peta",
+          "wujud": "siluet_organik",
+          "semiotik": "Nusantara - wilayah yang jauh lebih luas daripada satu provinsi",
+          "semantik": "BUKAN SUNDA SAJA",
+          "what": "a sepia halftone photograph of a wide map sheet of the Indonesian archipelago",
+          "at": "centre of the frame, centred at 0.48 across, about 0.38 of the frame wide, down at 0.54",
+          "cut": true,
+          "word": "keistimewaan.",
+          "z": 3,
+          "lands": 59
+        },
+        {
+          "name": "kartu_menamai",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Perbuatannya, bukan sukunya - yang dibahas adalah menamai, bukan orang Sunda",
+          "semantik": "MENAMAI DENGAN AIR",
+          "what": "a torn cream slip with letterpress type reading 'MENAMAI DENGAN AIR'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "Menamai",
+          "z": 5,
+          "lands": 109
+        },
+        {
+          "name": "foto_sungai_lain",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai di tempat lain - pola yang sama, pulau yang lain",
+          "semantik": "KEBIASAAN LAIN",
+          "what": "a sepia halftone photograph of a broad river running past a village of wooden houses",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.76",
+          "cut": true,
+          "word": "air",
+          "z": 1,
+          "lands": 141
+        },
+        {
+          "name": "figur_orang_lain",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang dari tempat lain - yang juga menamai sungainya sendiri",
+          "semantik": "ORANG SUNDA SAJA",
+          "what": "a sepia halftone photograph of an old man standing at a river landing, seen from behind",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.82",
+          "cut": true,
+          "word": "Sunda",
+          "z": 2,
+          "lands": 187,
+          "nudge": [
+            0.155,
+            0.041
+          ]
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          14,
+          0.0,
+          "kartu_supaya",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'supaya'.",
+      "emphasis": [
+        {
+          "frame": 275.6,
+          "word": "Menamai",
+          "motion": "hold",
+          "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
     },
     {
-     "name": "foto_sungai_di_peta",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai di atas kertas - yang dihitung sebagai nama air",
-     "semantik": "NAMA AIR",
-     "what": "a sepia halftone photograph of a river drawn as a thin line across an old map",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide, down at 0.72",
-     "cut": true,
-     "word": "nama",
-     "z": 3,
-     "lands": 172
+      "id": "s03",
+      "range": [
+        375,
+        598
+      ],
+      "babak": "Babak 19 - Kata air di Nusantara",
+      "peran_retoris": "Contoh pertama - Jawa menyebut air banyu, dan menamai tempat dengannya",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed word page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "The Javanese fields high left, the word banyu low left, a small river centre, three banyu names down the right, the fisherman low right, and the Balinese temple at the bottom.",
+      "kamera": "One word, then three places that carry it, then another island; range 28% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_sawah_jawa",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sawah Jawa - tempat air jadi kata sehari-hari",
+          "semantik": "DI JAWA",
+          "what": "a sepia halftone photograph of terraced rice fields with a water channel between them",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "Di",
+          "z": 1,
+          "lands": 18
+        },
+        {
+          "name": "kartu_banyu",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kata Jawa untuk air - bukan kata Sunda, dan itu intinya",
+          "semantik": "BANYU",
+          "what": "a torn cream slip with huge stencilled type reading 'BANYU'",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.66",
+          "cut": true,
+          "word": "banyu.",
+          "z": 5,
+          "lands": 59
+        },
+        {
+          "name": "foto_sungai_kecil",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang sama, nama yang lain - sungai kecil di antara rumah",
+          "semantik": "AIR DISEBUT",
+          "what": "a sepia halftone photograph of a narrow stream running between houses with a bamboo bridge",
+          "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
+          "cut": true,
+          "word": "Dan",
+          "z": 2,
+          "lands": 80
+        },
+        {
+          "name": "kartu_banyu_wangi",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama pertama - air yang harum, bukan air biasa",
+          "semantik": "BANYU WANGI",
+          "what": "a torn cream slip with stencilled type reading 'BANYU WANGI'",
+          "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "wangi,",
+          "z": 6,
+          "lands": 106
+        },
+        {
+          "name": "kartu_banyu_mas_asin",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Dua nama lagi - air emas dan air asin, pola yang sama",
+          "semantik": "BANYU MAS, BANYU ASIN",
+          "what": "a torn cream slip with stencilled type reading 'BANYU MAS, BANYU ASIN'",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.68",
+          "cut": true,
+          "word": "mas,",
+          "z": 7,
+          "lands": 132,
+          "nudge": [
+            -0.023,
+            -0.087
+          ]
+        },
+        {
+          "name": "nelayan",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Nelayan - orang yang hidup dari air asin yang dinamai itu",
+          "semantik": "ASIN",
+          "what": "a sepia halftone photograph of a fisherman standing in shallow water pulling a net, seen from the side",
+          "at": "bottom of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.88",
+          "cut": true,
+          "word": "asin.",
+          "z": 3,
+          "lands": 153
+        },
+        {
+          "name": "foto_pura_bali",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Bali - pulau lain, kata lain untuk air yang sama",
+          "semantik": "DI BALI",
+          "what": "a sepia halftone photograph of a Balinese temple gate with a water tank in front of it",
+          "at": "right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.87",
+          "cut": true,
+          "word": "Bali",
+          "z": 4,
+          "lands": 186
+        },
+        {
+          "name": "kartu_ieh",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kata Bali untuk air - bukti kedua bahwa ini bukan ciri satu suku",
+          "semantik": "IEH",
+          "what": "a torn cream slip with huge stencilled type reading 'IEH'",
+          "at": "upper centre of the frame, centred at 0.50 across, about 0.22 of the frame wide, down at 0.24",
+          "cut": true,
+          "word": "ieh.",
+          "z": 8,
+          "lands": 203
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          12,
+          2.4,
+          "kartu_banyu",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          13,
+          -1.9,
+          "nelayan",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'banyu.'; ellipse on the figure on 'asin.'.",
+      "emphasis": [
+        {
+          "frame": 392.6,
+          "word": "Di",
+          "motion": "hold",
+          "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
     },
     {
-     "name": "foto_peta_ditandai",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Peta bertanda - tiga nama ditandai dari sepuluh",
-     "semantik": "MAKA AIR",
-     "what": "a sepia halftone photograph of a map with several names circled in dark ink",
-     "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.74",
-     "cut": true,
-     "word": "maka",
-     "z": 4,
-     "lands": 204
+      "id": "s04",
+      "range": [
+        598,
+        808
+      ],
+      "babak": "Babak 19 - Kata air di Nusantara",
+      "peran_retoris": "Contoh kedua dan ketiga - Batak aek, Lampung wai; lalu penyangkalan kedua",
+      "jenis": "PLACE",
+      "latar_plate": "Full-bleed island page on aged newsprint: a crimson block across the upper left, a mustard strip along the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Batak high left, Lampung low left, the lake high right, the Sundanese man low centre, a Sundanese river low right, and 'yang istimewa bukan itu' along the bottom.",
+      "kamera": "Two islands, two words, then refuse the compliment again; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_batak_aek",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Sumatra - kata airnya aek, bukan banyu dan bukan cai",
+          "semantik": "BATAK: AEK",
+          "what": "a torn cream slip with stencilled type reading 'BATAK: AEK'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Batak,",
+          "z": 4,
+          "lands": 9,
+          "nudge": [
+            -0.045,
+            0.15
+          ]
+        },
+        {
+          "name": "kartu_lampung_wai",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Lampung - kata airnya wai, ketiga yang berbeda untuk benda yang sama",
+          "semantik": "LAMPUNG: WAI",
+          "what": "a torn cream plate with letterpress type reading 'LAMPUNG: WAI'",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.30 of the frame wide, down at 0.68",
+          "cut": true,
+          "word": "Lampung,",
+          "z": 5,
+          "lands": 51,
+          "nudge": [
+            -0.005,
+            0.277
+          ]
+        },
+        {
+          "name": "foto_danau_toba",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Danau Toba - air yang luas, dinamai dengan kata airnya sendiri",
+          "semantik": "AEK",
+          "what": "a sepia halftone photograph of a wide lake seen from a high bank with small boats",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "aek.",
+          "z": 1,
+          "lands": 26
+        },
+        {
+          "name": "kartu_istimewa",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kata yang harus dipindahkan - bukan orang Sundanya yang istimewa",
+          "semantik": "YANG ISTIMEWA",
+          "what": "a torn cream slip with big stencilled type reading 'YANG ISTIMEWA'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.52",
+          "cut": true,
+          "word": "istimewa",
+          "z": 6,
+          "lands": 123,
+          "nudge": [
+            0.01,
+            0.017
+          ]
+        },
+        {
+          "name": "figur_orang_sunda",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang Sunda - satu di antara banyak yang menamai tempat dengan air",
+          "semantik": "ORANG SUNDA",
+          "what": "a sepia halftone photograph of a woman standing at the edge of a river washing, seen from behind",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.73",
+          "cut": true,
+          "word": "orang",
+          "z": 2,
+          "lands": 158,
+          "nudge": [
+            0.02,
+            0.0
+          ]
+        },
+        {
+          "name": "foto_sungai_sunda",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai Sunda - kasus yang sedang dibahas, bukan satu-satunya kasus",
+          "semantik": "MENAMAI TEMPAT",
+          "what": "a sepia halftone photograph of a clear rocky river running through a bamboo grove",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.72",
+          "cut": true,
+          "word": "Sunda",
+          "z": 3,
+          "lands": 165
+        },
+        {
+          "name": "kartu_bukan_itu",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Yang istimewa bukan perbuatannya - perbuatan itu umum",
+          "semantik": "YANG ISTIMEWA BUKAN ITU",
+          "what": "a torn cream slip with big stencilled type reading 'YANG ISTIMEWA BUKAN ITU'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "air.",
+          "z": 7,
+          "lands": 202,
+          "nudge": [
+            0.176,
+            -0.364
+          ]
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          13,
+          3.0,
+          "kartu_batak_aek",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "box",
+          14,
+          -2.4,
+          "figur_orang_sunda",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'batak,'; box on the figure on 'orang'.",
+      "emphasis": [
+        {
+          "frame": 624.2,
+          "word": "aek.",
+          "motion": "hold",
+          "why": "skor 0.47 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 674.6,
+          "word": "wai.",
+          "motion": "hold",
+          "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 704.0,
+          "word": "Jadi",
+          "motion": "hold",
+          "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
     },
     {
-     "name": "kartu_bukan_bagian",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Pembalikan kalimat - air bukan bagian dari wilayah, air adalah wilayahnya",
-     "semantik": "AIR BUKAN BAGIAN DARI WILAYAH",
-     "what": "a torn cream slip with stencilled type reading 'BUKAN BAGIAN DARI WILAYAH'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.36 of the frame wide, down at 0.90",
-     "cut": true,
-     "word": "bagian",
-     "z": 7,
-     "lands": 225
+      "id": "s05",
+      "range": [
+        808,
+        993
+      ],
+      "babak": "Babak 19 - Kata air di Nusantara",
+      "peran_retoris": "Ukuran - yang istimewa adalah berapa banyak dan berapa lama",
+      "jenis": "QUANTITY",
+      "latar_plate": "Full-bleed measure page on aged newsprint: a charcoal block across the upper right, a crimson strip along the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Many faces high left, 'banyak bangsa' below them, an old gate high right, 'berapa banyak' low left, the measurer low centre, and 'berapa lama' low right.",
+      "kamera": "From the crowd to the two measures - how many, how long; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_wajah_banyak",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Banyak wajah - banyak bangsa melakukan hal yang sama",
+          "semantik": "BANYAK BANGSA",
+          "what": "a sepia halftone photograph of a crowded market aisle with many faces turned different ways",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Banyak",
+          "z": 1,
+          "lands": 15
+        },
+        {
+          "name": "kartu_banyak_bangsa",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Pernyataan yang menurunkan taruhan - ini bukan keunikan",
+          "semantik": "BANYAK BANGSA",
+          "what": "a torn cream slip with stencilled type reading 'BANYAK BANGSA'",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "bangsa",
+          "z": 4,
+          "lands": 26
+        },
+        {
+          "name": "foto_gerbang_lama",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Gerbang tua - kota yang juga menamai airnya dengan caranya sendiri",
+          "semantik": "MELAKUKANNYA",
+          "what": "a sepia halftone photograph of an old stone gate with steps leading down to a river",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "melakukannya.",
+          "z": 2,
+          "lands": 34
+        },
+        {
+          "name": "kartu_berapa_banyak",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Ukuran pertama - jumlah, bukan sifat",
+          "semantik": "BERAPA BANYAK",
+          "what": "a torn cream slip with big stencilled type reading 'BERAPA BANYAK'",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.30 of the frame wide, down at 0.62",
+          "cut": true,
+          "word": "berapa",
+          "z": 5,
+          "lands": 113
+        },
+        {
+          "name": "figur_pengukur",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang yang menghitung - ukuran diambil, bukan dikira",
+          "semantik": "BERAPA LAMA",
+          "what": "a sepia halftone photograph of a man standing at a river edge holding a long measuring rod, seen from the side",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.84",
+          "cut": true,
+          "word": "lama.",
+          "z": 3,
+          "lands": 173
+        },
+        {
+          "name": "kartu_berapa_lama",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Ukuran kedua - waktu, yang membuat nama itu bertahan",
+          "semantik": "DAN BERAPA LAMA",
+          "what": "a torn cream slip with big stencilled type reading 'DAN BERAPA LAMA'",
+          "at": "bottom of the frame, centred at 0.46 across, about 0.30 of the frame wide, down at 0.93",
+          "cut": true,
+          "word": "berapa",
+          "z": 6,
+          "lands": 156
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          14,
+          3.6,
+          "kartu_banyak_bangsa",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ],
+        [
+          "circle",
+          11,
+          -2.9,
+          "figur_pengukur",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'bangsa'; circle on the figure on 'lama.'.",
+      "emphasis": []
+    },
+    {
+      "id": "s06",
+      "range": [
+        993,
+        1258
+      ],
+      "babak": "Babak 20 - Kepadatan",
+      "peran_retoris": "Angka inti - 3 dari 10 nama adalah nama air, jadi air bukan bagian wilayah melainkan wilayahnya",
+      "jenis": "QUANTITY",
+      "latar_plate": "Full-bleed density page on aged newsprint: a crimson block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "The 'kepadatan' slip high left, a dense map high right, the reader low left, '3 dari 10' across the middle, the river on the sheet low centre, the marked map low right, and the conclusion along the bottom.",
+      "kamera": "Hold the dense sheet, then count three out of ten, then turn the sentence over; range 28% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_kepadatan",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Bukan jumlah total, tapi kerapatan - berapa banyak per sepuluh",
+          "semantik": "KEPADATAN",
+          "what": "a torn cream slip with big stencilled type reading 'KEPADATAN'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Karena",
+          "z": 5,
+          "lands": 19
+        },
+        {
+          "name": "foto_peta_penuh",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Peta yang penuh nama - kepadatan itu terlihat, bukan dihitung",
+          "semantik": "MENGUBAH CARA MEMBACA",
+          "what": "a sepia halftone photograph of a map sheet crowded with small printed place names",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "kepadatan",
+          "z": 1,
+          "lands": 26
+        },
+        {
+          "name": "figur_membaca_wilayah",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang membaca wilayahnya lewat nama - cara membaca yang berubah",
+          "semantik": "MEMBACA WILAYAHNYA",
+          "what": "a sepia halftone photograph of a man leaning over a map with one finger on a name, seen from above",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "membaca",
+          "z": 2,
+          "lands": 73,
+          "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = membungkuk, jari di satu nama.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "slide his finger along the river line on the map"
+            },
+            {
+              "pose": 3,
+              "action": "straighten up and look at the whole sheet"
+            },
+            {
+              "pose": 4,
+              "action": "lean back down and tap the same name twice"
+            }
+          ]
+        },
+        {
+          "name": "kartu_3_dari_10",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Angka inti film - tiga dari sepuluh, dan itu mengubah arti seluruh kalimat",
+          "semantik": "3 DARI 10",
+          "what": "a torn cream slip with huge stencilled type reading '3 DARI 10'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.50",
+          "cut": true,
+          "word": "3",
+          "z": 6,
+          "lands": 130
+        },
+        {
+          "name": "foto_sungai_di_peta",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai di atas kertas - yang dihitung sebagai nama air",
+          "semantik": "NAMA AIR",
+          "what": "a sepia halftone photograph of a river drawn as a thin line across an old map",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide, down at 0.72",
+          "cut": true,
+          "word": "nama",
+          "z": 3,
+          "lands": 172
+        },
+        {
+          "name": "foto_peta_ditandai",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Peta bertanda - tiga nama ditandai dari sepuluh",
+          "semantik": "MAKA AIR",
+          "what": "a sepia halftone photograph of a map with several names circled in dark ink",
+          "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.74",
+          "cut": true,
+          "word": "maka",
+          "z": 4,
+          "lands": 204
+        },
+        {
+          "name": "kartu_bukan_bagian",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Pembalikan kalimat - air bukan bagian dari wilayah, air adalah wilayahnya",
+          "semantik": "AIR BUKAN BAGIAN DARI WILAYAH",
+          "what": "a torn cream slip with stencilled type reading 'BUKAN BAGIAN DARI WILAYAH'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.36 of the frame wide, down at 0.90",
+          "cut": true,
+          "word": "bagian",
+          "z": 7,
+          "lands": 225
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          15,
+          2.4,
+          "kartu_kepadatan",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          16,
+          -1.9,
+          "figur_membaca_wilayah",
+          {
+            "color": "coral",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'karena'; ellipse on the figure on 'membaca'.",
+      "emphasis": [
+        {
+          "frame": 1173.8,
+          "word": "air,",
+          "motion": "hold",
+          "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s07",
+      "range": [
+        1258,
+        1441
+      ],
+      "babak": "Babak 20 - Kepadatan",
+      "peran_retoris": "Akibat - air adalah wilayahnya, dan nama itu berjalan keluar dari Jawa Barat",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed departure page on aged newsprint: a mustard block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Air adalah wilayahnya' high left, the walker low left, 'nama itu berjalan' high right, the road out low centre, the provincial border low right, and 'keluar dari Jawa Barat' along the bottom.",
+      "kamera": "State the sentence, then follow the name out of the province; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_air_wilayah",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Pembalikan tadi diucapkan ulang sebagai tesis, bukan catatan kaki",
+          "semantik": "AIR ADALAH WILAYAHNYA",
+          "what": "a torn cream slip with big stencilled type reading 'AIR ADALAH WILAYAHNYA'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.32 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Air",
+          "z": 4,
+          "lands": 18
+        },
+        {
+          "name": "figur_berjalan",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang berjalan - nama yang berpindah ikut orang, bukan ikut peta",
+          "semantik": "BERJALAN",
+          "what": "a sepia halftone photograph of a man walking along a road away from the camera, seen from behind",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.22 of the frame wide, down at 0.72",
+          "cut": true,
+          "word": "Dan",
+          "z": 1,
+          "lands": 68
+        },
+        {
+          "name": "kartu_nama_berjalan",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama sebagai benda yang bisa berpindah - bukan label yang menempel",
+          "semantik": "NAMA ITU BERJALAN",
+          "what": "a torn cream slip with stencilled type reading 'NAMA ITU BERJALAN'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "nama",
+          "z": 5,
+          "lands": 95
+        },
+        {
+          "name": "foto_jalan_keluar",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Jalan keluar - arah yang ditempuh nama itu",
+          "semantik": "KELUAR",
+          "what": "a sepia halftone photograph of a long straight road running between rice fields",
+          "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
+          "cut": true,
+          "word": "berjalan",
+          "z": 2,
+          "lands": 118,
+          "nudge": [
+            0.113,
+            0.113
+          ]
+        },
+        {
+          "name": "foto_batas_jabar",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Batas provinsi - garis yang dilangkahi nama air",
+          "semantik": "DARI JAWA BARAT",
+          "what": "a sepia halftone photograph of a plain roadside marker post at a provincial boundary",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "Jawa",
+          "z": 3,
+          "lands": 153
+        },
+        {
+          "name": "kartu_keluar_jabar",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Batas yang dilanggar namanya - dan itu yang akan diuji berikutnya",
+          "semantik": "KELUAR DARI JAWA BARAT",
+          "what": "a torn cream slip with stencilled type reading 'KELUAR DARI JAWA BARAT'",
+          "at": "bottom of the frame, centred at 0.46 across, about 0.32 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "Barat.",
+          "z": 6,
+          "lands": 159
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          11,
+          3.0,
+          "kartu_air_wilayah",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ],
+        [
+          "box",
+          13,
+          -2.4,
+          "figur_berjalan",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'air'; box on the figure on 'dan'.",
+      "emphasis": [
+        {
+          "frame": 1276.4,
+          "word": "Air",
+          "motion": "landing"
+        }
+      ]
+    },
+    {
+      "id": "s08",
+      "range": [
+        1441,
+        1629
+      ],
+      "babak": "Babak 21 - Cilacap",
+      "peran_retoris": "Ujian - satu kabupaten di Jawa Tengah berawalan Ci, dan hanya satu",
+      "jenis": "PLACE",
+      "latar_plate": "Full-bleed single-name page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Di Jawa Tengah' high left, the town low left, the central Java sheet high right, 'berawalan Ci' low centre, the coast low right, and 'Ci Lacap' along the bottom.",
+      "kamera": "Find the province, find the one name, then read it whole; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_jawa_tengah",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Provinsi tetangga - wilayah yang bukan tanah Sunda",
+          "semantik": "DI JAWA TENGAH",
+          "what": "a torn cream slip with big stencilled type reading 'DI JAWA TENGAH'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Tengah,",
+          "z": 5,
+          "lands": 16
+        },
+        {
+          "name": "foto_kabupaten",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Kota kabupaten - tempat satu nama itu dipakai sehari-hari",
+          "semantik": "SATU KABUPATEN",
+          "what": "a sepia halftone photograph of a small town main street with low shophouses",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "kabupaten",
+          "z": 1,
+          "lands": 45
+        },
+        {
+          "name": "foto_peta_jateng",
+          "bahan": "peta",
+          "wujud": "siluet_organik",
+          "semiotik": "Lembar Jawa Tengah - hanya satu nama berawalan Ci di seluruh provinsi",
+          "semantik": "BERAWALAN CI",
+          "what": "a sepia halftone photograph of a map sheet of central Java with its regency names",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "namanya",
+          "z": 3,
+          "lands": 66
+        },
+        {
+          "name": "kartu_berawalan_ci",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Awalan yang sama - kata air Sunda muncul di peta Jawa",
+          "semantik": "BERAWALAN CI",
+          "what": "a torn cream slip with stencilled type reading 'BERAWALAN CI'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.30 of the frame wide, down at 0.56",
+          "cut": true,
+          "word": "berawalan",
+          "z": 4,
+          "lands": 74
+        },
+        {
+          "name": "foto_pantai_cilacap",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Pesisir selatan - tanah yang menjorok, seperti namanya",
+          "semantik": "TANAH MENJOROK",
+          "what": "a sepia halftone photograph of a low sandy headland running out into the sea",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.74",
+          "cut": true,
+          "word": "satu.",
+          "z": 2,
+          "lands": 130
+        },
+        {
+          "name": "kartu_cilacap",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Satu-satunya - dan justru karena itu ia bukti, bukan kebetulan",
+          "semantik": "HANYA SATU: CI LACAP",
+          "what": "a torn cream slip with huge stencilled type reading 'CI LACAP'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
+          "cut": true,
+          "word": "Lacap.",
+          "z": 6,
+          "lands": 161
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          12,
+          3.6,
+          "kartu_jawa_tengah",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'tengah,'.",
+      "emphasis": [
+        {
+          "frame": 1602.2,
+          "word": "Lacap.",
+          "motion": "hold",
+          "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s09",
+      "range": [
+        1629,
+        1793
+      ],
+      "babak": "Babak 21 - Cilacap",
+      "peran_retoris": "Sumber - Linda Sariwulandari menelusuri asal nama itu",
+      "jenis": "SUBJECT",
+      "latar_plate": "Full-bleed source page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Serius.' high left, the researcher's name below it, her working room high right, the campus low centre, the researcher low left, and 'asalnya' low right.",
+      "kamera": "Name the source, then put her at a desk with the papers; range 25% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_serius",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Penegasan bahwa ini bukan dugaan - ada penelitinya",
+          "semantik": "SERIUS.",
+          "what": "a torn cream slip with huge stencilled type reading 'SERIUS.'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Serius.",
+          "z": 4,
+          "lands": 10
+        },
+        {
+          "name": "kartu_nama_peneliti",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama orangnya - sumber yang bisa dilacak, bukan anonim",
+          "semantik": "LINDA SARIWULANDARI",
+          "what": "a torn cream slip with letterpress type reading 'LINDA SARIWULANDARI'",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.32 of the frame wide, down at 0.68",
+          "cut": true,
+          "word": "Sariwulandari,",
+          "z": 5,
+          "lands": 49
+        },
+        {
+          "name": "foto_ruang_kerja",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Ruang kerja - tempat nama dilacak lewat dokumen",
+          "semantik": "PENELITI",
+          "what": "a sepia halftone photograph of a desk covered with open books and loose notes",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "peneliti",
+          "z": 1,
+          "lands": 81
+        },
+        {
+          "name": "foto_kampus",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Kampus - lembaga yang membuat penelusuran itu bisa dipercaya",
+          "semantik": "UNIVERSITAS INDONESIA",
+          "what": "a sepia halftone photograph of a university building with a wide stone stair",
+          "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
+          "cut": true,
+          "word": "Universitas",
+          "z": 2,
+          "lands": 95
+        },
+        {
+          "name": "figur_peneliti",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Peneliti di meja - yang menelusuri asal satu kata",
+          "semantik": "MENELUSURI",
+          "what": "a sepia halftone photograph of a woman sitting at a desk writing notes beside a stack of papers, seen from the side",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.80",
+          "cut": true,
+          "word": "menelusuri",
+          "z": 3,
+          "lands": 136,
+          "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; badan tetap duduk. pose1 = duduk, pena di atas kertas.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "write one line in the notebook"
+            },
+            {
+              "pose": 3,
+              "action": "lift the pen and turn a page of the stack beside her"
+            },
+            {
+              "pose": 4,
+              "action": "set the pen down and look at the open page"
+            }
+          ]
+        },
+        {
+          "name": "kartu_asalnya",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Yang dicari bukan artinya, tapi asalnya - dari bahasa mana",
+          "semantik": "ASALNYA",
+          "what": "a torn cream slip with big stencilled type reading 'ASALNYA'",
+          "at": "bottom of the frame, centred at 0.48 across, about 0.26 of the frame wide, down at 0.94",
+          "cut": true,
+          "word": "asalnya.",
+          "z": 6,
+          "lands": 149
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          13,
+          2.4,
+          "kartu_serius",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          15,
+          -1.9,
+          "figur_peneliti",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'serius.'; ellipse on the figure on 'menelusuri'.",
+      "emphasis": [
+        {
+          "frame": 1639.4,
+          "word": "Serius.",
+          "motion": "snap"
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "range": [
+        1793,
+        1983
+      ],
+      "babak": "Babak 21 - Cilacap",
+      "peran_retoris": "Etimologi - Ci dari bahasa Sunda, Lacap dari bahasa Jawa",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed etymology page on aged newsprint: a crimson block across the upper left, a charcoal strip down the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Ci = bahasa Sunda' high left, the Sundanese leaf high right, 'Lacap = bahasa Jawa' low left, the etymologist low centre, the headland low right, and the meaning along the bottom.",
+      "kamera": "Split the name in two, give each half its language, then the meaning; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_ci_sunda",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Separuh pertama nama - dan bahasanya Sunda",
+          "semantik": "CI = BAHASA SUNDA",
+          "what": "a torn cream slip with big stencilled type reading 'CI = BAHASA SUNDA'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Ci",
+          "z": 4,
+          "lands": 19
+        },
+        {
+          "name": "foto_naskah_sunda",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Naskah Sunda - bahasa yang memberi separuh nama itu",
+          "semantik": "BERASAL DARI",
+          "what": "a sepia halftone photograph of a palm-leaf manuscript with incised lettering",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "berasal",
+          "z": 1,
+          "lands": 26
+        },
+        {
+          "name": "kartu_lacap_jawa",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Separuh kedua nama - dan bahasanya Jawa, bukan Sunda",
+          "semantik": "LACAP = BAHASA JAWA",
+          "what": "a torn cream plate with letterpress type reading 'LACAP = BAHASA JAWA'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.32 of the frame wide, down at 0.66",
+          "cut": true,
+          "word": "Lacap",
+          "z": 5,
+          "lands": 79
+        },
+        {
+          "name": "figur_etimolog",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Ahli kata - yang memisahkan dua bahasa di dalam satu nama",
+          "semantik": "DUA BAHASA",
+          "what": "a sepia halftone photograph of a man holding two sheets of paper side by side, seen from the side",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.76",
+          "cut": true,
+          "word": "bahasa",
+          "z": 2,
+          "lands": 109
+        },
+        {
+          "name": "foto_tanah_menjorok",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Tanjung - bentuk tanah yang jadi arti kata lacap",
+          "semantik": "TANAH YANG MENJOROK",
+          "what": "a sepia halftone photograph of a narrow spit of land reaching into shallow water",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "tanah",
+          "z": 3,
+          "lands": 148
+        },
+        {
+          "name": "kartu_menjorok_laut",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Artinya - dan arti itu cocok dengan bentuk pesisirnya",
+          "semantik": "TANAH YANG MENJOROK KE LAUT",
+          "what": "a torn cream slip with stencilled type reading 'TANAH YANG MENJOROK KE LAUT'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "laut.",
+          "z": 6,
+          "lands": 184
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          14,
+          3.0,
+          "kartu_ci_sunda",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "box",
+          16,
+          -2.4,
+          "figur_etimolog",
+          {
+            "color": "coral",
+            "delay": 6
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'ci'; box on the figure on 'bahasa'.",
+      "emphasis": [
+        {
+          "frame": 1811.6,
+          "word": "Ci",
+          "motion": "landing",
+          "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 1842.2,
+          "word": "Sunda.",
+          "motion": "hold",
+          "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "range": [
+        1983,
+        2127
+      ],
+      "babak": "Babak 21 - Cilacap",
+      "peran_retoris": "Rumusan - satu nama, dua bahasa, di garis tempat keduanya bertemu",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed meeting page on aged newsprint: a charcoal block across the upper right, a mustard strip along the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Satu nama' high left, the two-language sheet in the middle, the pointer low left, the drawn line low right, and 'di sini keduanya bertemu' along the bottom.",
+      "kamera": "Hold the sheet, then follow the finger to the line; range 24% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_satu_nama",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Satu nama utuh - yang baru saja dipecah jadi dua",
+          "semantik": "SATU NAMA",
+          "what": "a torn cream slip with huge stencilled type reading 'SATU NAMA'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Satu",
+          "z": 4,
+          "lands": 22
+        },
+        {
+          "name": "foto_peta_dua",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Dua wilayah di satu lembar - Jawa Barat dan Jawa Tengah bersebelahan",
+          "semantik": "DUA BAHASA",
+          "what": "a sepia halftone photograph of a map sheet showing two neighbouring regions with a border",
+          "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.52",
+          "cut": true,
+          "word": "dua",
+          "z": 1,
+          "lands": 53,
+          "nudge": [
+            -0.16,
+            0.0
+          ]
+        },
+        {
+          "name": "figur_menunjuk_garis",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Jari di garis - titik tempat dua bahasa bertemu",
+          "semantik": "DIGARIS",
+          "what": "a sepia halftone photograph of a woman pointing at a line on a map, seen from the side",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "digaris",
+          "z": 2,
+          "lands": 91
+        },
+        {
+          "name": "foto_garis_peta",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Garis batas - tempat dua bahasa bertemu, bukan tempat salah satunya kalah",
+          "semantik": "KEDUANYA BERTEMU",
+          "what": "a sepia halftone photograph of a hand-drawn boundary line crossing a printed map",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "keduanya",
+          "z": 3,
+          "lands": 115
+        },
+        {
+          "name": "kartu_bertemu",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Rumusan - satu nama yang memuat dua bahasa sekaligus",
+          "semantik": "DI SINI KEDUANYA BERTEMU",
+          "what": "a torn cream slip with stencilled type reading 'DI SINI KEDUANYA BERTEMU'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "bertemu.",
+          "z": 5,
+          "lands": 127
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          15,
+          3.6,
+          "kartu_satu_nama",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "circle",
+          13,
+          -2.9,
+          "figur_menunjuk_garis",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'satu'; circle on the figure on 'digaris'.",
+      "emphasis": []
+    },
+    {
+      "id": "s12",
+      "range": [
+        2127,
+        2335
+      ],
+      "babak": "Babak 21 - Cilacap",
+      "peran_retoris": "Kedalaman sejarah - wilayah itu pernah masuk Tarumanagara dan Galuh, jadi bukan kebetulan",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed deep-time page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Sebelum abad ke-16' high left, the inscribed stone high right, the map reader low left, 'Tarumanagara dan Galuh' low centre, the stone site low right, another site low left, and 'bukan kebetulan' along the bottom.",
+      "kamera": "Reach back before the sixteenth century, then close on the sentence that refuses chance; range 28% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_sebelum_16",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Batas waktu - jauh sebelum ejaan kolonial yang dibahas tadi",
+          "semantik": "SEBELUM ABAD KE-16",
+          "what": "a torn cream slip with big stencilled type reading 'SEBELUM ABAD KE-16'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Sebelum",
+          "z": 5,
+          "lands": 19
+        },
+        {
+          "name": "foto_prasasti_kecil",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Batu berprasasti - satu-satunya jenis bukti dari masa itu",
+          "semantik": "WILAYAH ITU",
+          "what": "a sepia halftone photograph of a small inscribed stone standing in grass",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "wilayah",
+          "z": 1,
+          "lands": 55
+        },
+        {
+          "name": "figur_peta_kuno",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang membaca peta lama - yang menghubungkan nama dengan kekuasaan",
+          "semantik": "KEKUASAAN",
+          "what": "a sepia halftone photograph of a man reading an old map by lamplight, seen from the side",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.72",
+          "cut": true,
+          "word": "kekuasaan",
+          "z": 2,
+          "lands": 90
+        },
+        {
+          "name": "kartu_tarumanagara",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Dua kekuasaan yang pernah mencakup wilayah itu - bukan satu",
+          "semantik": "TARUMANAGARA DAN GALUH",
+          "what": "a torn cream slip with letterpress type reading 'TARUMANAGARA DAN GALUH'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.52",
+          "cut": true,
+          "word": "Tarumanagara",
+          "z": 6,
+          "lands": 106
+        },
+        {
+          "name": "foto_situs_galuh",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Situs - sisa kekuasaan yang dulu mencakup pesisir ini",
+          "semantik": "DAN GALUH",
+          "what": "a sepia halftone photograph of low stone foundations in a cleared field",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "Galuh.",
+          "z": 3,
+          "lands": 133
+        },
+        {
+          "name": "foto_mata_air_situs",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Mata air di dekat situs - air yang tetap dipakai setelah kekuasaannya hilang",
+          "semantik": "JADI",
+          "what": "a sepia halftone photograph of a stone spring basin fed by a small channel",
+          "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.76",
+          "cut": true,
+          "word": "Jadi",
+          "z": 4,
+          "lands": 160
+        },
+        {
+          "name": "kartu_bukan_kebetulan",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kesimpulan sejarah - nama itu sisa dari kekuasaan, bukan hiasan",
+          "semantik": "BUKAN KEBETULAN",
+          "what": "a torn cream slip with big stencilled type reading 'BUKAN KEBETULAN'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
+          "cut": true,
+          "word": "kebetulan.",
+          "z": 7,
+          "lands": 188
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          11,
+          2.4,
+          "kartu_sebelum_16",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          14,
+          -1.9,
+          "figur_peta_kuno",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'sebelum'; ellipse on the figure on 'kekuasaan'.",
+      "emphasis": [
+        {
+          "frame": 2260.4,
+          "word": "Galuh.",
+          "motion": "hold",
+          "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "range": [
+        2335,
+        2537
+      ],
+      "babak": "Babak 22 - Teori cahaya",
+      "peran_retoris": "Jembatan - ia jejak, lalu muncul satu hal yang menarik justru karena ia muncul",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed trace page on aged newsprint: a crimson block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Ia jejak' high left, the footprint low left, 'muncul satu hal' high right, the onlooker low centre, the screen low right, and 'bukan karena benar' along the bottom.",
+      "kamera": "From the trace to the thing that appeared on a screen; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_jejak",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Bukan bukti langsung - jejak, dan jejak cukup untuk melanjutkan",
+          "semantik": "IA JEJAK",
+          "what": "a torn cream slip with huge stencilled type reading 'IA JEJAK'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Ia",
+          "z": 4,
+          "lands": 15
+        },
+        {
+          "name": "foto_jejak_tanah",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Jejak di tanah - bentuk bukti yang paling tidak megah",
+          "semantik": "JEJAK",
+          "what": "a sepia halftone photograph of footprints pressed into wet ground beside a river",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "jejak.",
+          "z": 1,
+          "lands": 21
+        },
+        {
+          "name": "kartu_muncul_hal",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Perpindahan dari bukti ke cerita - yang menarik bukan benarnya",
+          "semantik": "MUNCUL SATU HAL",
+          "what": "a torn cream slip with stencilled type reading 'MUNCUL SATU HAL'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "muncul",
+          "z": 5,
+          "lands": 72
+        },
+        {
+          "name": "figur_penonton",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang menonton layar - yang menerima teori karena melihatnya, bukan memeriksanya",
+          "semantik": "MENARIK",
+          "what": "a sepia halftone photograph of a man watching a phone screen held in his hand, seen from the side",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.76",
+          "cut": true,
+          "word": "menarik.",
+          "z": 2,
+          "lands": 103
+        },
+        {
+          "name": "foto_layar_forum",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Layar - tempat teori itu hidup, bukan tempat ia diuji",
+          "semantik": "TAPI KARENA IA MUNCUL",
+          "what": "a sepia halftone photograph of a computer screen filled with lines of small text",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "tapi",
+          "z": 3,
+          "lands": 164
+        },
+        {
+          "name": "kartu_bukan_benar",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Alasan teori itu dibahas - bukan karena benar, tapi karena muncul",
+          "semantik": "BUKAN KARENA BENAR",
+          "what": "a torn cream slip with stencilled type reading 'BUKAN KARENA BENAR'",
+          "at": "bottom of the frame, centred at 0.46 across, about 0.32 of the frame wide, down at 0.92",
+          "cut": true,
+          "word": "muncul.",
+          "z": 6,
+          "lands": 183
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          12,
+          3.0,
+          "kartu_jejak",
+          {
+            "color": "crimson",
+            "delay": 6
+          }
+        ],
+        [
+          "box",
+          15,
+          -2.4,
+          "figur_penonton",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'ia'; box on the figure on 'menarik.'.",
+      "emphasis": [
+        {
+          "frame": 2517.8,
+          "word": "muncul.",
+          "motion": "landing",
+          "why": "skor 0.51 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "range": [
+        2537,
+        2694
+      ],
+      "babak": "Babak 22 - Teori cahaya",
+      "peran_retoris": "Teori baru - beberapa tahun terakhir beredar teori lain, katanya ci bukan air",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed rumour page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "The old calendar high left, the video screen high right, 'teori lain' low centre, 'katanya' low left, and 'ci bukan berarti air' low right.",
+      "kamera": "A date, a screen, then the claim itself; range 25% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_kalender_lama",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Beberapa tahun terakhir - teori ini baru, bukan warisan lama",
+          "semantik": "BEBERAPA TAHUN TERAKHIR",
+          "what": "a sepia halftone photograph of a wall calendar with its pages turned back",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Beberapa",
+          "z": 1,
+          "lands": 19
+        },
+        {
+          "name": "foto_layar_video",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Layar video - bentuk penyebaran teori ini, bukan jurnal",
+          "semantik": "BEREDAR",
+          "what": "a sepia halftone photograph of a phone lying on a table playing a video",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "beredar",
+          "z": 1,
+          "lands": 52
+        },
+        {
+          "name": "kartu_teori_lain",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Yang beredar bukan temuan, tapi teori - dan itu kata yang dipakai naskahnya",
+          "semantik": "TEORI LAIN",
+          "what": "a torn cream slip with big stencilled type reading 'TEORI LAIN'",
+          "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
+          "cut": true,
+          "word": "teori",
+          "z": 3,
+          "lands": 66
+        },
+        {
+          "name": "kartu_katanya",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Penanda klaim tanpa sumber - katanya, bukan menurut penelitian",
+          "semantik": "KATANYA",
+          "what": "a torn cream slip with huge stencilled type reading 'KATANYA'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "Katanya",
+          "z": 3,
+          "lands": 106
+        },
+        {
+          "name": "kartu_bukan_air",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Isi klaimnya - kata yang selama ini dianggap berarti air, disangkal",
+          "semantik": "CI BUKAN BERARTI AIR",
+          "what": "a torn cream slip with stencilled type reading 'CI BUKAN BERARTI AIR'",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.80",
+          "cut": true,
+          "word": "air.",
+          "z": 4,
+          "lands": 145
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          13,
+          3.6,
+          "kartu_teori_lain",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'teori'.",
+      "emphasis": [
+        {
+          "frame": 2613.2,
+          "word": "lain.",
+          "motion": "landing",
+          "why": "skor 0.51 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 2681.6,
+          "word": "air.",
+          "motion": "hold",
+          "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "range": [
+        2694,
+        2846
+      ],
+      "babak": "Babak 22 - Teori cahaya",
+      "peran_retoris": "Isi teori - katanya ci dari bahasa Sanskrita dan berarti cahaya",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed light page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Katanya' high left, the Sanskrit leaf high right, 'bahasa Sanskrita' low left, the reader low centre, the light low right, and 'cahaya' along the bottom.",
+      "kamera": "Give the claim its two words - Sanskrita, then cahaya; range 24% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_katanya_2",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Klaim yang sama diulang - masih tanpa sumber",
+          "semantik": "KATANYA",
+          "what": "a torn cream slip with huge stencilled type reading 'KATANYA'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Katanya",
+          "z": 3,
+          "lands": 16
+        },
+        {
+          "name": "foto_naskah_sanskrita",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Naskah Sanskrita - bahasa yang diklaim meminjamkan kata itu",
+          "semantik": "DARI BAHASA SANSKRITA",
+          "what": "a sepia halftone photograph of a Sanskrit manuscript page with devanagari lettering",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
+          "cut": true,
+          "word": "berasal",
+          "z": 1,
+          "lands": 50
+        },
+        {
+          "name": "kartu_sanskrita",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Bahasa yang diklaim - disebut namanya, bukan hanya 'bahasa kuno'",
+          "semantik": "BAHASA SANSKRITA",
+          "what": "a torn cream plate with letterpress type reading 'BAHASA SANSKRITA'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "Sanskrita",
+          "z": 4,
+          "lands": 83
+        },
+        {
+          "name": "figur_pembaca_sanskrita",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang membaca lembar Sanskrita - yang bisa memeriksa klaim itu",
+          "semantik": "BERARTI",
+          "what": "a sepia halftone photograph of a man holding up a manuscript leaf and reading it, seen from the side",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "berarti",
+          "z": 2,
+          "lands": 121
+        },
+        {
+          "name": "kartu_cahaya",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Satu kata yang mengubah seluruh arti nama itu",
+          "semantik": "CAHAYA",
+          "what": "a torn cream slip with huge stencilled type reading 'CAHAYA'",
+          "at": "bottom of the frame, centred at 0.46 across, about 0.26 of the frame wide, down at 0.94",
+          "cut": true,
+          "word": "cahaya.",
+          "z": 5,
+          "lands": 132
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          14,
+          2.4,
+          "kartu_katanya_2",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          13,
+          -1.9,
+          "figur_pembaca_sanskrita",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'katanya'; ellipse on the figure on 'berarti'.",
+      "emphasis": [
+        {
+          "frame": 2710.4,
+          "word": "Katanya",
+          "motion": "hold",
+          "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 2826.2,
+          "word": "cahaya.",
+          "motion": "landing",
+          "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "range": [
+        2846,
+        3026
+      ],
+      "babak": "Babak 22 - Teori cahaya",
+      "peran_retoris": "Cara beredarnya - video, lalu forum, lalu puluhan media",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed spread page on aged newsprint: a mustard block across the upper left, a crimson strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "'Teori itu beredar' high left, the video screen low left, 'lalu sebuah forum' high right, the onlooker low centre, the news page low right, and 'puluhan media' along the bottom.",
+      "kamera": "Follow one claim across three carriers; range 25% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_teori_beredar",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Subjeknya teori, bukan temuan - dan ia bergerak seperti berita",
+          "semantik": "TEORI ITU BEREDAR",
+          "what": "a torn cream slip with stencilled type reading 'TEORI ITU BEREDAR'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
+          "cut": true,
+          "word": "Teori",
+          "z": 3,
+          "lands": 21
+        },
+        {
+          "name": "foto_video",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Video - pembawa pertama, dan yang paling mudah dipercaya",
+          "semantik": "LEWAT SEBUAH VIDEO",
+          "what": "a sepia halftone photograph of a laptop screen playing a video in a dim room",
+          "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
+          "cut": true,
+          "word": "video,",
+          "z": 1,
+          "lands": 64,
+          "nudge": [
+            0.19,
+            -0.11
+          ]
+        },
+        {
+          "name": "figur_penonton_kedua",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang menonton - mata rantai yang meneruskan klaim tanpa memeriksanya",
+          "semantik": "LALU",
+          "what": "a sepia halftone photograph of a young man sitting and watching a screen, seen from behind",
+          "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "lalu",
+          "z": 2,
+          "lands": 91
+        },
+        {
+          "name": "kartu_forum",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Forum - pembawa kedua, tempat klaim jadi percakapan",
+          "semantik": "LALU SEBUAH FORUM",
+          "what": "a torn cream slip with big stencilled type reading 'LALU SEBUAH FORUM'",
+          "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
+          "cut": true,
+          "word": "forum,",
+          "z": 4,
+          "lands": 109
+        },
+        {
+          "name": "strip_koran_media",
+          "bahan": "koran",
+          "wujud": "siluet_organik",
+          "semiotik": "Halaman berita - pembawa ketiga, yang membuatnya terasa mapan",
+          "semantik": "PULUHAN MEDIA",
+          "what": "a torn newsprint strip with three stacked headlines about the same claim",
+          "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
+          "cut": true,
+          "word": "diangkat",
+          "z": 5,
+          "lands": 134
+        },
+        {
+          "name": "kartu_media",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Skala penyebarannya - puluhan, bukan satu",
+          "semantik": "PULUHAN MEDIA",
+          "what": "a torn cream slip with big stencilled type reading 'PULUHAN MEDIA'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
+          "cut": true,
+          "word": "media.",
+          "z": 6,
+          "lands": 156
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          15,
+          3.0,
+          "kartu_teori_beredar",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "box",
+          14,
+          -2.4,
+          "figur_penonton_kedua",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on 'teori'; box on the figure on 'lalu'.",
+      "emphasis": [
+        {
+          "frame": 2909.6,
+          "word": "video,",
+          "motion": "hold",
+          "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ]
     }
-   ],
-   "marks": [
-    [
-     "underline",
-     15,
-     2.4,
-     "kartu_kepadatan",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+  ],
+  "context": {
+    "skills_read": [
+      "vox-lean",
+      "audio-first-documentary",
+      "vox-animation"
     ],
-    [
-     "ellipse",
-     16,
-     -1.9,
-     "figur_membaca_wilayah",
-     {
-      "color": "coral",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'karena'; ellipse on the figure on 'membaca'.",
-   "emphasis": [
-    {
-     "frame": 1173.8,
-     "word": "air,",
-     "motion": "hold",
-     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s07",
-   "range": [
-    1258,
-    1441
-   ],
-   "babak": "Babak 20 - Kepadatan",
-   "peran_retoris": "Akibat - air adalah wilayahnya, dan nama itu berjalan keluar dari Jawa Barat",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed departure page on aged newsprint: a mustard block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Air adalah wilayahnya' high left, the walker low left, 'nama itu berjalan' high right, the road out low centre, the provincial border low right, and 'keluar dari Jawa Barat' along the bottom.",
-   "kamera": "State the sentence, then follow the name out of the province; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_air_wilayah",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Pembalikan tadi diucapkan ulang sebagai tesis, bukan catatan kaki",
-     "semantik": "AIR ADALAH WILAYAHNYA",
-     "what": "a torn cream slip with big stencilled type reading 'AIR ADALAH WILAYAHNYA'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.32 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Air",
-     "z": 4,
-     "lands": 18
-    },
-    {
-     "name": "figur_berjalan",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang berjalan - nama yang berpindah ikut orang, bukan ikut peta",
-     "semantik": "BERJALAN",
-     "what": "a sepia halftone photograph of a man walking along a road away from the camera, seen from behind",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.22 of the frame wide, down at 0.72",
-     "cut": true,
-     "word": "Dan",
-     "z": 1,
-     "lands": 68
-    },
-    {
-     "name": "kartu_nama_berjalan",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama sebagai benda yang bisa berpindah - bukan label yang menempel",
-     "semantik": "NAMA ITU BERJALAN",
-     "what": "a torn cream slip with stencilled type reading 'NAMA ITU BERJALAN'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "nama",
-     "z": 5,
-     "lands": 95
-    },
-    {
-     "name": "foto_jalan_keluar",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Jalan keluar - arah yang ditempuh nama itu",
-     "semantik": "KELUAR",
-     "what": "a sepia halftone photograph of a long straight road running between rice fields",
-     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
-     "cut": true,
-     "word": "berjalan",
-     "z": 2,
-     "lands": 118,
-     "nudge": [
-      0.113,
-      0.113
-     ]
-    },
-    {
-     "name": "foto_batas_jabar",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Batas provinsi - garis yang dilangkahi nama air",
-     "semantik": "DARI JAWA BARAT",
-     "what": "a sepia halftone photograph of a plain roadside marker post at a provincial boundary",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "Jawa",
-     "z": 3,
-     "lands": 153
-    },
-    {
-     "name": "kartu_keluar_jabar",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Batas yang dilanggar namanya - dan itu yang akan diuji berikutnya",
-     "semantik": "KELUAR DARI JAWA BARAT",
-     "what": "a torn cream slip with stencilled type reading 'KELUAR DARI JAWA BARAT'",
-     "at": "bottom of the frame, centred at 0.46 across, about 0.32 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "Barat.",
-     "z": 6,
-     "lands": 159
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     11,
-     3.0,
-     "kartu_air_wilayah",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
+    "benang_read": [
+      "Hukum rencana diperiksa lebih dulu (R0)",
+      "Hukum keterbacaan (R6)",
+      "Hukum kedatangan kartu (R2e)",
+      "Hukum tanda tangan (R5a)"
     ],
-    [
-     "box",
-     13,
-     -2.4,
-     "figur_berjalan",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'air'; box on the figure on 'dan'.",
-   "emphasis": [
-    {
-     "frame": 1276.4,
-     "word": "Air",
-     "motion": "landing"
-    }
-   ]
-  },
-  {
-   "id": "s08",
-   "range": [
-    1441,
-    1629
-   ],
-   "babak": "Babak 21 - Cilacap",
-   "peran_retoris": "Ujian - satu kabupaten di Jawa Tengah berawalan Ci, dan hanya satu",
-   "jenis": "PLACE",
-   "latar_plate": "Full-bleed single-name page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Di Jawa Tengah' high left, the town low left, the central Java sheet high right, 'berawalan Ci' low centre, the coast low right, and 'Ci Lacap' along the bottom.",
-   "kamera": "Find the province, find the one name, then read it whole; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_jawa_tengah",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Provinsi tetangga - wilayah yang bukan tanah Sunda",
-     "semantik": "DI JAWA TENGAH",
-     "what": "a torn cream slip with big stencilled type reading 'DI JAWA TENGAH'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Tengah,",
-     "z": 5,
-     "lands": 16
-    },
-    {
-     "name": "foto_kabupaten",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Kota kabupaten - tempat satu nama itu dipakai sehari-hari",
-     "semantik": "SATU KABUPATEN",
-     "what": "a sepia halftone photograph of a small town main street with low shophouses",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "kabupaten",
-     "z": 1,
-     "lands": 45
-    },
-    {
-     "name": "foto_peta_jateng",
-     "bahan": "peta",
-     "wujud": "siluet_organik",
-     "semiotik": "Lembar Jawa Tengah - hanya satu nama berawalan Ci di seluruh provinsi",
-     "semantik": "BERAWALAN CI",
-     "what": "a sepia halftone photograph of a map sheet of central Java with its regency names",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "namanya",
-     "z": 3,
-     "lands": 66
-    },
-    {
-     "name": "kartu_berawalan_ci",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Awalan yang sama - kata air Sunda muncul di peta Jawa",
-     "semantik": "BERAWALAN CI",
-     "what": "a torn cream slip with stencilled type reading 'BERAWALAN CI'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.30 of the frame wide, down at 0.56",
-     "cut": true,
-     "word": "berawalan",
-     "z": 4,
-     "lands": 74
-    },
-    {
-     "name": "foto_pantai_cilacap",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Pesisir selatan - tanah yang menjorok, seperti namanya",
-     "semantik": "TANAH MENJOROK",
-     "what": "a sepia halftone photograph of a low sandy headland running out into the sea",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.74",
-     "cut": true,
-     "word": "satu.",
-     "z": 2,
-     "lands": 130
-    },
-    {
-     "name": "kartu_cilacap",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Satu-satunya - dan justru karena itu ia bukti, bukan kebetulan",
-     "semantik": "HANYA SATU: CI LACAP",
-     "what": "a torn cream slip with huge stencilled type reading 'CI LACAP'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
-     "cut": true,
-     "word": "Lacap.",
-     "z": 6,
-     "lands": 161
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     12,
-     3.6,
-     "kartu_jawa_tengah",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'tengah,'.",
-   "emphasis": [
-    {
-     "frame": 1602.2,
-     "word": "Lacap.",
-     "motion": "hold",
-     "why": "skor 0.43 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s09",
-   "range": [
-    1629,
-    1793
-   ],
-   "babak": "Babak 21 - Cilacap",
-   "peran_retoris": "Sumber - Linda Sariwulandari menelusuri asal nama itu",
-   "jenis": "SUBJECT",
-   "latar_plate": "Full-bleed source page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Serius.' high left, the researcher's name below it, her working room high right, the campus low centre, the researcher low left, and 'asalnya' low right.",
-   "kamera": "Name the source, then put her at a desk with the papers; range 25% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_serius",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Penegasan bahwa ini bukan dugaan - ada penelitinya",
-     "semantik": "SERIUS.",
-     "what": "a torn cream slip with huge stencilled type reading 'SERIUS.'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Serius.",
-     "z": 4,
-     "lands": 10
-    },
-    {
-     "name": "kartu_nama_peneliti",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama orangnya - sumber yang bisa dilacak, bukan anonim",
-     "semantik": "LINDA SARIWULANDARI",
-     "what": "a torn cream slip with letterpress type reading 'LINDA SARIWULANDARI'",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.32 of the frame wide, down at 0.68",
-     "cut": true,
-     "word": "Sariwulandari,",
-     "z": 5,
-     "lands": 49
-    },
-    {
-     "name": "foto_ruang_kerja",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Ruang kerja - tempat nama dilacak lewat dokumen",
-     "semantik": "PENELITI",
-     "what": "a sepia halftone photograph of a desk covered with open books and loose notes",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "peneliti",
-     "z": 1,
-     "lands": 81
-    },
-    {
-     "name": "foto_kampus",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Kampus - lembaga yang membuat penelusuran itu bisa dipercaya",
-     "semantik": "UNIVERSITAS INDONESIA",
-     "what": "a sepia halftone photograph of a university building with a wide stone stair",
-     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.56",
-     "cut": true,
-     "word": "Universitas",
-     "z": 2,
-     "lands": 95
-    },
-    {
-     "name": "figur_peneliti",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Peneliti di meja - yang menelusuri asal satu kata",
-     "semantik": "MENELUSURI",
-     "what": "a sepia halftone photograph of a woman sitting at a desk writing notes beside a stack of papers, seen from the side",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.80",
-     "cut": true,
-     "word": "menelusuri",
-     "z": 3,
-     "lands": 136,
-     "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; badan tetap duduk. pose1 = duduk, pena di atas kertas.",
-     "poses_planned": [
-      {
-       "pose": 2,
-       "action": "write one line in the notebook"
-      },
-      {
-       "pose": 3,
-       "action": "lift the pen and turn a page of the stack beside her"
-      },
-      {
-       "pose": 4,
-       "action": "set the pen down and look at the open page"
-      }
-     ]
-    },
-    {
-     "name": "kartu_asalnya",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Yang dicari bukan artinya, tapi asalnya - dari bahasa mana",
-     "semantik": "ASALNYA",
-     "what": "a torn cream slip with big stencilled type reading 'ASALNYA'",
-     "at": "bottom of the frame, centred at 0.48 across, about 0.26 of the frame wide, down at 0.94",
-     "cut": true,
-     "word": "asalnya.",
-     "z": 6,
-     "lands": 149
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     13,
-     2.4,
-     "kartu_serius",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+    "laws": [
+      "L-cards",
+      "L-arrival",
+      "L-mark",
+      "L-marks",
+      "L-emphasis",
+      "L-plate",
+      "L-cut",
+      "L-iso",
+      "L-collage",
+      "L-baca"
     ],
-    [
-     "ellipse",
-     15,
-     -1.9,
-     "figur_peneliti",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'serius.'; ellipse on the figure on 'menelusuri'.",
-   "emphasis": [
-    {
-     "frame": 1639.4,
-     "word": "Serius.",
-     "motion": "snap"
-    }
-   ]
-  },
-  {
-   "id": "s10",
-   "range": [
-    1793,
-    1983
-   ],
-   "babak": "Babak 21 - Cilacap",
-   "peran_retoris": "Etimologi - Ci dari bahasa Sunda, Lacap dari bahasa Jawa",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed etymology page on aged newsprint: a crimson block across the upper left, a charcoal strip down the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Ci = bahasa Sunda' high left, the Sundanese leaf high right, 'Lacap = bahasa Jawa' low left, the etymologist low centre, the headland low right, and the meaning along the bottom.",
-   "kamera": "Split the name in two, give each half its language, then the meaning; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_ci_sunda",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Separuh pertama nama - dan bahasanya Sunda",
-     "semantik": "CI = BAHASA SUNDA",
-     "what": "a torn cream slip with big stencilled type reading 'CI = BAHASA SUNDA'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Ci",
-     "z": 4,
-     "lands": 19
-    },
-    {
-     "name": "foto_naskah_sunda",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Naskah Sunda - bahasa yang memberi separuh nama itu",
-     "semantik": "BERASAL DARI",
-     "what": "a sepia halftone photograph of a palm-leaf manuscript with incised lettering",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "berasal",
-     "z": 1,
-     "lands": 26
-    },
-    {
-     "name": "kartu_lacap_jawa",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Separuh kedua nama - dan bahasanya Jawa, bukan Sunda",
-     "semantik": "LACAP = BAHASA JAWA",
-     "what": "a torn cream plate with letterpress type reading 'LACAP = BAHASA JAWA'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.32 of the frame wide, down at 0.66",
-     "cut": true,
-     "word": "Lacap",
-     "z": 5,
-     "lands": 79
-    },
-    {
-     "name": "figur_etimolog",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Ahli kata - yang memisahkan dua bahasa di dalam satu nama",
-     "semantik": "DUA BAHASA",
-     "what": "a sepia halftone photograph of a man holding two sheets of paper side by side, seen from the side",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.76",
-     "cut": true,
-     "word": "bahasa",
-     "z": 2,
-     "lands": 109
-    },
-    {
-     "name": "foto_tanah_menjorok",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Tanjung - bentuk tanah yang jadi arti kata lacap",
-     "semantik": "TANAH YANG MENJOROK",
-     "what": "a sepia halftone photograph of a narrow spit of land reaching into shallow water",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "tanah",
-     "z": 3,
-     "lands": 148
-    },
-    {
-     "name": "kartu_menjorok_laut",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Artinya - dan arti itu cocok dengan bentuk pesisirnya",
-     "semantik": "TANAH YANG MENJOROK KE LAUT",
-     "what": "a torn cream slip with stencilled type reading 'TANAH YANG MENJOROK KE LAUT'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "laut.",
-     "z": 6,
-     "lands": 184
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     14,
-     3.0,
-     "kartu_ci_sunda",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "box",
-     16,
-     -2.4,
-     "figur_etimolog",
-     {
-      "color": "coral",
-      "delay": 6
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'ci'; box on the figure on 'bahasa'.",
-   "emphasis": [
-    {
-     "frame": 1811.6,
-     "word": "Ci",
-     "motion": "landing",
-     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 1842.2,
-     "word": "Sunda.",
-     "motion": "hold",
-     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s11",
-   "range": [
-    1983,
-    2127
-   ],
-   "babak": "Babak 21 - Cilacap",
-   "peran_retoris": "Rumusan - satu nama, dua bahasa, di garis tempat keduanya bertemu",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed meeting page on aged newsprint: a charcoal block across the upper right, a mustard strip along the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Satu nama' high left, the two-language sheet in the middle, the pointer low left, the drawn line low right, and 'di sini keduanya bertemu' along the bottom.",
-   "kamera": "Hold the sheet, then follow the finger to the line; range 24% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_satu_nama",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Satu nama utuh - yang baru saja dipecah jadi dua",
-     "semantik": "SATU NAMA",
-     "what": "a torn cream slip with huge stencilled type reading 'SATU NAMA'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Satu",
-     "z": 4,
-     "lands": 22
-    },
-    {
-     "name": "foto_peta_dua",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Dua wilayah di satu lembar - Jawa Barat dan Jawa Tengah bersebelahan",
-     "semantik": "DUA BAHASA",
-     "what": "a sepia halftone photograph of a map sheet showing two neighbouring regions with a border",
-     "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.52",
-     "cut": true,
-     "word": "dua",
-     "z": 1,
-     "lands": 53,
-     "nudge": [
-      -0.16,
-      0.0
-     ]
-    },
-    {
-     "name": "figur_menunjuk_garis",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Jari di garis - titik tempat dua bahasa bertemu",
-     "semantik": "DIGARIS",
-     "what": "a sepia halftone photograph of a woman pointing at a line on a map, seen from the side",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "digaris",
-     "z": 2,
-     "lands": 91
-    },
-    {
-     "name": "foto_garis_peta",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Garis batas - tempat dua bahasa bertemu, bukan tempat salah satunya kalah",
-     "semantik": "KEDUANYA BERTEMU",
-     "what": "a sepia halftone photograph of a hand-drawn boundary line crossing a printed map",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "keduanya",
-     "z": 3,
-     "lands": 115
-    },
-    {
-     "name": "kartu_bertemu",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Rumusan - satu nama yang memuat dua bahasa sekaligus",
-     "semantik": "DI SINI KEDUANYA BERTEMU",
-     "what": "a torn cream slip with stencilled type reading 'DI SINI KEDUANYA BERTEMU'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.34 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "bertemu.",
-     "z": 5,
-     "lands": 127
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     15,
-     3.6,
-     "kartu_satu_nama",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "circle",
-     13,
-     -2.9,
-     "figur_menunjuk_garis",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'satu'; circle on the figure on 'digaris'.",
-   "emphasis": []
-  },
-  {
-   "id": "s12",
-   "range": [
-    2127,
-    2335
-   ],
-   "babak": "Babak 21 - Cilacap",
-   "peran_retoris": "Kedalaman sejarah - wilayah itu pernah masuk Tarumanagara dan Galuh, jadi bukan kebetulan",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed deep-time page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Sebelum abad ke-16' high left, the inscribed stone high right, the map reader low left, 'Tarumanagara dan Galuh' low centre, the stone site low right, another site low left, and 'bukan kebetulan' along the bottom.",
-   "kamera": "Reach back before the sixteenth century, then close on the sentence that refuses chance; range 28% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_sebelum_16",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Batas waktu - jauh sebelum ejaan kolonial yang dibahas tadi",
-     "semantik": "SEBELUM ABAD KE-16",
-     "what": "a torn cream slip with big stencilled type reading 'SEBELUM ABAD KE-16'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Sebelum",
-     "z": 5,
-     "lands": 19
-    },
-    {
-     "name": "foto_prasasti_kecil",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Batu berprasasti - satu-satunya jenis bukti dari masa itu",
-     "semantik": "WILAYAH ITU",
-     "what": "a sepia halftone photograph of a small inscribed stone standing in grass",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "wilayah",
-     "z": 1,
-     "lands": 55
-    },
-    {
-     "name": "figur_peta_kuno",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang membaca peta lama - yang menghubungkan nama dengan kekuasaan",
-     "semantik": "KEKUASAAN",
-     "what": "a sepia halftone photograph of a man reading an old map by lamplight, seen from the side",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide, down at 0.72",
-     "cut": true,
-     "word": "kekuasaan",
-     "z": 2,
-     "lands": 90
-    },
-    {
-     "name": "kartu_tarumanagara",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Dua kekuasaan yang pernah mencakup wilayah itu - bukan satu",
-     "semantik": "TARUMANAGARA DAN GALUH",
-     "what": "a torn cream slip with letterpress type reading 'TARUMANAGARA DAN GALUH'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.34 of the frame wide, down at 0.52",
-     "cut": true,
-     "word": "Tarumanagara",
-     "z": 6,
-     "lands": 106
-    },
-    {
-     "name": "foto_situs_galuh",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Situs - sisa kekuasaan yang dulu mencakup pesisir ini",
-     "semantik": "DAN GALUH",
-     "what": "a sepia halftone photograph of low stone foundations in a cleared field",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "Galuh.",
-     "z": 3,
-     "lands": 133
-    },
-    {
-     "name": "foto_mata_air_situs",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Mata air di dekat situs - air yang tetap dipakai setelah kekuasaannya hilang",
-     "semantik": "JADI",
-     "what": "a sepia halftone photograph of a stone spring basin fed by a small channel",
-     "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.76",
-     "cut": true,
-     "word": "Jadi",
-     "z": 4,
-     "lands": 160
-    },
-    {
-     "name": "kartu_bukan_kebetulan",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kesimpulan sejarah - nama itu sisa dari kekuasaan, bukan hiasan",
-     "semantik": "BUKAN KEBETULAN",
-     "what": "a torn cream slip with big stencilled type reading 'BUKAN KEBETULAN'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
-     "cut": true,
-     "word": "kebetulan.",
-     "z": 7,
-     "lands": 188
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     11,
-     2.4,
-     "kartu_sebelum_16",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "ellipse",
-     14,
-     -1.9,
-     "figur_peta_kuno",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'sebelum'; ellipse on the figure on 'kekuasaan'.",
-   "emphasis": [
-    {
-     "frame": 2260.4,
-     "word": "Galuh.",
-     "motion": "hold",
-     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s13",
-   "range": [
-    2335,
-    2537
-   ],
-   "babak": "Babak 22 - Teori cahaya",
-   "peran_retoris": "Jembatan - ia jejak, lalu muncul satu hal yang menarik justru karena ia muncul",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed trace page on aged newsprint: a crimson block across the upper left, a charcoal strip down the right edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Ia jejak' high left, the footprint low left, 'muncul satu hal' high right, the onlooker low centre, the screen low right, and 'bukan karena benar' along the bottom.",
-   "kamera": "From the trace to the thing that appeared on a screen; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_jejak",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Bukan bukti langsung - jejak, dan jejak cukup untuk melanjutkan",
-     "semantik": "IA JEJAK",
-     "what": "a torn cream slip with huge stencilled type reading 'IA JEJAK'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Ia",
-     "z": 4,
-     "lands": 15
-    },
-    {
-     "name": "foto_jejak_tanah",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Jejak di tanah - bentuk bukti yang paling tidak megah",
-     "semantik": "JEJAK",
-     "what": "a sepia halftone photograph of footprints pressed into wet ground beside a river",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "jejak.",
-     "z": 1,
-     "lands": 21
-    },
-    {
-     "name": "kartu_muncul_hal",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Perpindahan dari bukti ke cerita - yang menarik bukan benarnya",
-     "semantik": "MUNCUL SATU HAL",
-     "what": "a torn cream slip with stencilled type reading 'MUNCUL SATU HAL'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "muncul",
-     "z": 5,
-     "lands": 72
-    },
-    {
-     "name": "figur_penonton",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang menonton layar - yang menerima teori karena melihatnya, bukan memeriksanya",
-     "semantik": "MENARIK",
-     "what": "a sepia halftone photograph of a man watching a phone screen held in his hand, seen from the side",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.76",
-     "cut": true,
-     "word": "menarik.",
-     "z": 2,
-     "lands": 103
-    },
-    {
-     "name": "foto_layar_forum",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Layar - tempat teori itu hidup, bukan tempat ia diuji",
-     "semantik": "TAPI KARENA IA MUNCUL",
-     "what": "a sepia halftone photograph of a computer screen filled with lines of small text",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "tapi",
-     "z": 3,
-     "lands": 164
-    },
-    {
-     "name": "kartu_bukan_benar",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Alasan teori itu dibahas - bukan karena benar, tapi karena muncul",
-     "semantik": "BUKAN KARENA BENAR",
-     "what": "a torn cream slip with stencilled type reading 'BUKAN KARENA BENAR'",
-     "at": "bottom of the frame, centred at 0.46 across, about 0.32 of the frame wide, down at 0.92",
-     "cut": true,
-     "word": "muncul.",
-     "z": 6,
-     "lands": 183
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     12,
-     3.0,
-     "kartu_jejak",
-     {
-      "color": "crimson",
-      "delay": 6
-     }
-    ],
-    [
-     "box",
-     15,
-     -2.4,
-     "figur_penonton",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'ia'; box on the figure on 'menarik.'.",
-   "emphasis": [
-    {
-     "frame": 2517.8,
-     "word": "muncul.",
-     "motion": "landing",
-     "why": "skor 0.51 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s14",
-   "range": [
-    2537,
-    2694
-   ],
-   "babak": "Babak 22 - Teori cahaya",
-   "peran_retoris": "Teori baru - beberapa tahun terakhir beredar teori lain, katanya ci bukan air",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed rumour page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "The old calendar high left, the video screen high right, 'teori lain' low centre, 'katanya' low left, and 'ci bukan berarti air' low right.",
-   "kamera": "A date, a screen, then the claim itself; range 25% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_kalender_lama",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Beberapa tahun terakhir - teori ini baru, bukan warisan lama",
-     "semantik": "BEBERAPA TAHUN TERAKHIR",
-     "what": "a sepia halftone photograph of a wall calendar with its pages turned back",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Beberapa",
-     "z": 1,
-     "lands": 19
-    },
-    {
-     "name": "foto_layar_video",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Layar video - bentuk penyebaran teori ini, bukan jurnal",
-     "semantik": "BEREDAR",
-     "what": "a sepia halftone photograph of a phone lying on a table playing a video",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "beredar",
-     "z": 1,
-     "lands": 52
-    },
-    {
-     "name": "kartu_teori_lain",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Yang beredar bukan temuan, tapi teori - dan itu kata yang dipakai naskahnya",
-     "semantik": "TEORI LAIN",
-     "what": "a torn cream slip with big stencilled type reading 'TEORI LAIN'",
-     "at": "centre of the frame, centred at 0.48 across, about 0.28 of the frame wide, down at 0.54",
-     "cut": true,
-     "word": "teori",
-     "z": 3,
-     "lands": 66
-    },
-    {
-     "name": "kartu_katanya",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Penanda klaim tanpa sumber - katanya, bukan menurut penelitian",
-     "semantik": "KATANYA",
-     "what": "a torn cream slip with huge stencilled type reading 'KATANYA'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "Katanya",
-     "z": 3,
-     "lands": 106
-    },
-    {
-     "name": "kartu_bukan_air",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Isi klaimnya - kata yang selama ini dianggap berarti air, disangkal",
-     "semantik": "CI BUKAN BERARTI AIR",
-     "what": "a torn cream slip with stencilled type reading 'CI BUKAN BERARTI AIR'",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.80",
-     "cut": true,
-     "word": "air.",
-     "z": 4,
-     "lands": 145
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     13,
-     3.6,
-     "kartu_teori_lain",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'teori'.",
-   "emphasis": [
-    {
-     "frame": 2613.2,
-     "word": "lain.",
-     "motion": "landing",
-     "why": "skor 0.51 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 2681.6,
-     "word": "air.",
-     "motion": "hold",
-     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s15",
-   "range": [
-    2694,
-    2846
-   ],
-   "babak": "Babak 22 - Teori cahaya",
-   "peran_retoris": "Isi teori - katanya ci dari bahasa Sanskrita dan berarti cahaya",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed light page on aged newsprint: a crimson block across the upper right, a charcoal strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Katanya' high left, the Sanskrit leaf high right, 'bahasa Sanskrita' low left, the reader low centre, the light low right, and 'cahaya' along the bottom.",
-   "kamera": "Give the claim its two words - Sanskrita, then cahaya; range 24% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_katanya_2",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Klaim yang sama diulang - masih tanpa sumber",
-     "semantik": "KATANYA",
-     "what": "a torn cream slip with huge stencilled type reading 'KATANYA'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Katanya",
-     "z": 3,
-     "lands": 16
-    },
-    {
-     "name": "foto_naskah_sanskrita",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Naskah Sanskrita - bahasa yang diklaim meminjamkan kata itu",
-     "semantik": "DARI BAHASA SANSKRITA",
-     "what": "a sepia halftone photograph of a Sanskrit manuscript page with devanagari lettering",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.30",
-     "cut": true,
-     "word": "berasal",
-     "z": 1,
-     "lands": 50
-    },
-    {
-     "name": "kartu_sanskrita",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Bahasa yang diklaim - disebut namanya, bukan hanya 'bahasa kuno'",
-     "semantik": "BAHASA SANSKRITA",
-     "what": "a torn cream plate with letterpress type reading 'BAHASA SANSKRITA'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "Sanskrita",
-     "z": 4,
-     "lands": 83
-    },
-    {
-     "name": "figur_pembaca_sanskrita",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang membaca lembar Sanskrita - yang bisa memeriksa klaim itu",
-     "semantik": "BERARTI",
-     "what": "a sepia halftone photograph of a man holding up a manuscript leaf and reading it, seen from the side",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "berarti",
-     "z": 2,
-     "lands": 121
-    },
-    {
-     "name": "kartu_cahaya",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Satu kata yang mengubah seluruh arti nama itu",
-     "semantik": "CAHAYA",
-     "what": "a torn cream slip with huge stencilled type reading 'CAHAYA'",
-     "at": "bottom of the frame, centred at 0.46 across, about 0.26 of the frame wide, down at 0.94",
-     "cut": true,
-     "word": "cahaya.",
-     "z": 5,
-     "lands": 132
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     14,
-     2.4,
-     "kartu_katanya_2",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "ellipse",
-     13,
-     -1.9,
-     "figur_pembaca_sanskrita",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'katanya'; ellipse on the figure on 'berarti'.",
-   "emphasis": [
-    {
-     "frame": 2710.4,
-     "word": "Katanya",
-     "motion": "hold",
-     "why": "skor 0.46 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 2826.2,
-     "word": "cahaya.",
-     "motion": "landing",
-     "why": "skor 0.52 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
-  },
-  {
-   "id": "s16",
-   "range": [
-    2846,
-    3026
-   ],
-   "babak": "Babak 22 - Teori cahaya",
-   "peran_retoris": "Cara beredarnya - video, lalu forum, lalu puluhan media",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed spread page on aged newsprint: a mustard block across the upper left, a crimson strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "'Teori itu beredar' high left, the video screen low left, 'lalu sebuah forum' high right, the onlooker low centre, the news page low right, and 'puluhan media' along the bottom.",
-   "kamera": "Follow one claim across three carriers; range 25% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_teori_beredar",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Subjeknya teori, bukan temuan - dan ia bergerak seperti berita",
-     "semantik": "TEORI ITU BEREDAR",
-     "what": "a torn cream slip with stencilled type reading 'TEORI ITU BEREDAR'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide, down at 0.26",
-     "cut": true,
-     "word": "Teori",
-     "z": 3,
-     "lands": 21
-    },
-    {
-     "name": "foto_video",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Video - pembawa pertama, dan yang paling mudah dipercaya",
-     "semantik": "LEWAT SEBUAH VIDEO",
-     "what": "a sepia halftone photograph of a laptop screen playing a video in a dim room",
-     "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.70",
-     "cut": true,
-     "word": "video,",
-     "z": 1,
-     "lands": 64,
-     "nudge": [
-      0.19,
-      -0.11
-     ]
-    },
-    {
-     "name": "figur_penonton_kedua",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang menonton - mata rantai yang meneruskan klaim tanpa memeriksanya",
-     "semantik": "LALU",
-     "what": "a sepia halftone photograph of a young man sitting and watching a screen, seen from behind",
-     "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "lalu",
-     "z": 2,
-     "lands": 91
-    },
-    {
-     "name": "kartu_forum",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Forum - pembawa kedua, tempat klaim jadi percakapan",
-     "semantik": "LALU SEBUAH FORUM",
-     "what": "a torn cream slip with big stencilled type reading 'LALU SEBUAH FORUM'",
-     "at": "upper right of the frame, centred at 0.78 across, about 0.30 of the frame wide, down at 0.28",
-     "cut": true,
-     "word": "forum,",
-     "z": 4,
-     "lands": 109
-    },
-    {
-     "name": "strip_koran_media",
-     "bahan": "koran",
-     "wujud": "siluet_organik",
-     "semiotik": "Halaman berita - pembawa ketiga, yang membuatnya terasa mapan",
-     "semantik": "PULUHAN MEDIA",
-     "what": "a torn newsprint strip with three stacked headlines about the same claim",
-     "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.78",
-     "cut": true,
-     "word": "diangkat",
-     "z": 5,
-     "lands": 134
-    },
-    {
-     "name": "kartu_media",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Skala penyebarannya - puluhan, bukan satu",
-     "semantik": "PULUHAN MEDIA",
-     "what": "a torn cream slip with big stencilled type reading 'PULUHAN MEDIA'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.93",
-     "cut": true,
-     "word": "media.",
-     "z": 6,
-     "lands": 156
-    }
-   ],
-   "marks": [
-    [
-     "box",
-     15,
-     3.0,
-     "kartu_teori_beredar",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ],
-    [
-     "box",
-     14,
-     -2.4,
-     "figur_penonton_kedua",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on 'teori'; box on the figure on 'lalu'.",
-   "emphasis": [
-    {
-     "frame": 2909.6,
-     "word": "video,",
-     "motion": "hold",
-     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ]
+    "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
   }
- ],
- "context": {
-  "skills_read": [
-   "vox-lean",
-   "audio-first-documentary",
-   "vox-animation"
-  ],
-  "benang_read": [
-   "Hukum rencana diperiksa lebih dulu (R0)",
-   "Hukum keterbacaan (R6)",
-   "Hukum kedatangan kartu (R2e)",
-   "Hukum tanda tangan (R5a)"
-  ],
-  "laws": [
-   "L-cards",
-   "L-arrival",
-   "L-mark",
-   "L-marks",
-   "L-emphasis",
-   "L-plate",
-   "L-cut",
-   "L-iso",
-   "L-collage",
-   "L-baca"
-  ],
-  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
- }
 }

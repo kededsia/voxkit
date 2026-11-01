@@ -299,11 +299,11 @@ const S04: React.FC = () => (
              phase={1.8}>
     <AbsoluteFill>
       <Card src="m11/cards/s04/foto_sungai_punjab.png" x={0.274} y={0.3535} w={0.4797} aspect={1.3544} enterFrame={34} travel={21} from="bottom" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m11/cards/s04/purwocaraka.png" x={0.5109} y={0.6602} w={0.3009} aspect={1.7743} enterFrame={130} travel={21} from="left" phase={1.25} stepped={2} kind="figure" z={2} poses={[{atFrame: 161, src: "m11/cards/s04/purwocaraka_pose2.png"}, {atFrame: 183, src: "m11/cards/s04/purwocaraka_pose3.png"}, {atFrame: 205, src: "m11/cards/s04/purwocaraka_pose4.png"}]} />
-      <Card src="m11/cards/s04/foto_nama_pindah.png" x={0.8154} y={0.7415} w={0.3532} aspect={1.331} enterFrame={198} travel={21} from="top" phase={2} stepped={2} kind="photo" z={3} />
-      <Card src="m11/cards/s04/kartu_candrabaga_punjab.png" x={0.2093} y={0.6888} w={0.2994} aspect={0.9045} enterFrame={80} travel={21} from="right" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m11/cards/s04/peta_punjab.png" x={0.7151} y={0.2813} w={0.3779} aspect={1.33} enterFrame={50} travel={21} from="bottom" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m11/cards/s04/kartu_ke_jawa.png" x={0.2231} y={0.916} w={0.4012} aspect={0.516} enterFrame={223} travel={21} from="left" phase={4.25} stepped={2} kind="type" z={6} />
+      <Card src="m11/cards/s04/foto_nama_pindah.png" x={0.8154} y={0.7415} w={0.3532} aspect={1.331} enterFrame={198} travel={21} from="left" phase={1.25} stepped={2} kind="photo" z={3} />
+      <Card src="m11/cards/s04/kartu_candrabaga_punjab.png" x={0.2093} y={0.6888} w={0.2994} aspect={0.9045} enterFrame={80} travel={21} from="top" phase={2} stepped={2} kind="type" z={4} />
+      <Card src="m11/cards/s04/peta_punjab.png" x={0.7151} y={0.2813} w={0.3779} aspect={1.33} enterFrame={50} travel={21} from="right" phase={2.75} stepped={2} kind="type" z={5} />
+      <Card src="m11/cards/s04/kartu_ke_jawa.png" x={0.2231} y={0.916} w={0.4012} aspect={0.516} enterFrame={223} travel={21} from="bottom" phase={3.5} stepped={2} kind="type" z={6} />
+      <Card src="m11/cards/s04/purwocaraka.png" x={0.5109} y={0.6602} w={0.3009} aspect={1.7743} enterFrame={130} travel={21} from="left" phase={4.25} stepped={2} kind="figure" z={6} poses={[{atFrame: 161, src: "m11/cards/s04/purwocaraka_pose2.png"}, {atFrame: 183, src: "m11/cards/s04/purwocaraka_pose3.png"}, {atFrame: 205, src: "m11/cards/s04/purwocaraka_pose4.png"}]} />
       <HandMark
         shape="arrow-right"
         box={[0.5121, 0.016, 0.9181, 0.5466]}

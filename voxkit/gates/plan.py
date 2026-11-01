@@ -352,6 +352,15 @@ def marks(ctx: Context) -> list[Finding]:
 
 
 # ----------------------------------------------------------------- readable
+def _is_person(card) -> bool:
+    """Is this cut-out a person? The same test `voxkit/figure.py` uses.
+
+    Imported lazily because `figure` reads card PNGs and this module is a free gate.
+    """
+    from ..figure import is_person
+    return is_person(card)
+
+
 def readable(ctx: Context) -> list[Finding]:
     """R6: a printed card sits above everything that can lie on top of it.
 
@@ -371,6 +380,17 @@ def readable(ctx: Context) -> list[Finding]:
                 continue
             for other in shot.cards:
                 if other is card or not other.covering:
+                    continue
+                if _is_person(other) and card.bahan in ("cetak", "koran"):
+                    # R6's own exemption, narrowed to the one pair it is honest
+                    # about: a *slip* under a *person*. A slip has a headline and a
+                    # wide blank margin, so a silhouette standing on the margin is
+                    # collage — and `figure` measures that margin with the card's
+                    # own ink instead of this gate guessing from the plan.
+                    #
+                    # A `peta` is not a slip: it is place names edge to edge, and a
+                    # figure standing anywhere on it buries words. That stays a
+                    # failure here, which is why `peta` is in the vocabulary at all.
                     continue
                 if other.z >= card.z:
                     out.append(fail("readable", f"{shot.id}/{card.name}",

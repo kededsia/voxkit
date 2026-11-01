@@ -220,14 +220,37 @@ def test_a_partly_covered_card_is_a_warning_not_a_failure(context):
 
 
 # ------------------------------------------------------------------ readable
-def test_a_printed_card_under_a_figure_is_caught(context):
-    """R6, and the reason `peta` is in the vocabulary: a printed map is full of
-    words a viewer has to read."""
+def test_a_map_under_a_figure_is_caught(context):
+    """R6, and the reason `peta` is in the vocabulary: a printed map is place names
+    edge to edge, so a figure standing anywhere on it buries words.
+
+    A *slip* under a figure is the one pair R6 excuses — see
+    `test_a_slip_under_a_figure_is_judged_by_its_lettering` — but a map is not a
+    slip, and this is the test that keeps the difference from being blurred.
+    """
     shots = base_shots()
+    shots[0]["cards"][0]["bahan"] = "peta"
     shots[0]["cards"][0]["z"] = 1          # the map, under the figure
     ctx = _ctx(context, make_plan(shots=shots))
     messages = _fails(_run(ctx, ["readable"]), "readable")
     assert any("peta" in m for m in messages)
+
+
+def test_a_slip_under_a_figure_is_judged_by_its_lettering(context):
+    """A silhouette over a slip's blank margin is collage; over its lettering it is
+    a lost fact. The plan cannot tell those apart, so `readable` defers and the
+    asset gate `figure` answers with the card's own ink.
+
+    This replaces an older test that failed the arrangement itself. That rule came
+    from v2, where the camera moved layers by different amounts and a card merely
+    beside a figure ended up under it. In v3 the plate and every card are inside one
+    transform — there is no parallax — so the arrangement is only a risk when the
+    ink is actually covered, which is measurable and is measured.
+    """
+    shots = base_shots()
+    shots[0]["cards"][0]["z"] = 1          # the slip, under the figure
+    ctx = _ctx(context, make_plan(shots=shots))
+    assert not _run(ctx, ["readable"]).failed
 
 
 def test_an_exemption_without_a_reason_is_caught(context):
@@ -411,6 +434,7 @@ def test_the_cache_is_keyed_on_content_not_on_the_path(context):
     ctx = _ctx(context, make_plan(shots=shots))
     assert not _run(ctx, ["readable"]).failed
 
+    shots[0]["cards"][0]["bahan"] = "peta"
     shots[0]["cards"][0]["z"] = 1
     ctx = _ctx(context, make_plan(shots=shots))
     assert _run(ctx, ["readable"]).failed

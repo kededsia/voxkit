@@ -522,12 +522,12 @@ const S07: React.FC = () => (
     <AbsoluteFill>
       <Card src="m20/cards/s07/foto_everest.png" x={0.2231} y={0.2741} w={0.3779} aspect={0.9889} enterFrame={0} travel={21} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
       <Card src="m20/cards/s07/foto_sunda.png" x={0.6946} y={0.5228} w={0.6533} aspect={0.7952} enterFrame={106} travel={21} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s07/figur_pengukur_gunung.png" x={0.8911} y={0.7393} w={0.2754} aspect={2.1273} enterFrame={122} travel={21} from="left" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m20/cards/s07/figur_pendaki.png" x={0.1471} y={0.7425} w={0.3547} aspect={1.6485} enterFrame={67} travel={17} from="top" phase={2.75} stepped={2} kind="figure" z={4} poses={[{atFrame: 94, src: "m20/cards/s07/figur_pendaki_pose2.png"}, {atFrame: 116, src: "m20/cards/s07/figur_pendaki_pose3.png"}, {atFrame: 138, src: "m20/cards/s07/figur_pendaki_pose4.png"}]} />
-      <Card src="m20/cards/s07/strip_koran_8848.png" x={0.8138} y={0.1575} w={0.4092} aspect={0.9388} enterFrame={28} travel={21} from="right" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s07/kartu_ketiga.png" x={0.5102} y={0.1829} w={0.3081} aspect={1.0606} enterFrame={203} travel={17} from="bottom" phase={4.25} stepped={2} kind="type" z={6} />
-      <Card src="m20/cards/s07/kartu_4000.png" x={0.5134} y={0.8875} w={0.4789} aspect={0.5166} enterFrame={150} travel={21} from="left" phase={5} stepped={2} kind="type" z={7} />
-      <Card src="m20/cards/s07/kartu_bukan_ci.png" x={0.5391} y={0.6941} w={0.774} aspect={0.4374} enterFrame={293} travel={17} from="top" phase={5.75} stepped={2} kind="type" z={8} />
+      <Card src="m20/cards/s07/figur_pendaki.png" x={0.1471} y={0.7425} w={0.3547} aspect={1.6485} enterFrame={67} travel={17} from="left" phase={2} stepped={2} kind="figure" z={4} poses={[{atFrame: 94, src: "m20/cards/s07/figur_pendaki_pose2.png"}, {atFrame: 116, src: "m20/cards/s07/figur_pendaki_pose3.png"}, {atFrame: 138, src: "m20/cards/s07/figur_pendaki_pose4.png"}]} />
+      <Card src="m20/cards/s07/strip_koran_8848.png" x={0.8138} y={0.1575} w={0.4092} aspect={0.9388} enterFrame={28} travel={21} from="top" phase={2.75} stepped={2} kind="type" z={5} />
+      <Card src="m20/cards/s07/kartu_ketiga.png" x={0.5102} y={0.1829} w={0.3081} aspect={1.0606} enterFrame={203} travel={17} from="right" phase={3.5} stepped={2} kind="type" z={6} />
+      <Card src="m20/cards/s07/kartu_4000.png" x={0.5134} y={0.8875} w={0.4789} aspect={0.5166} enterFrame={150} travel={21} from="bottom" phase={4.25} stepped={2} kind="type" z={7} />
+      <Card src="m20/cards/s07/kartu_bukan_ci.png" x={0.5391} y={0.6941} w={0.774} aspect={0.4374} enterFrame={293} travel={17} from="left" phase={5} stepped={2} kind="type" z={8} />
+      <Card src="m20/cards/s07/figur_pengukur_gunung.png" x={0.8911} y={0.7393} w={0.2754} aspect={2.1273} enterFrame={122} travel={21} from="top" phase={5.75} stepped={2} kind="figure" z={9} />
       <HandMark
         shape="arrow-right"
         box={[0.363, 0.1535, 0.754, 0.2935]}

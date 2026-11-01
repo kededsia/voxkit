@@ -322,14 +322,14 @@ const S05: React.FC = () => (
           {at: 2, x: 0.3981, y: 0.3981, zoom: 1.2558, ease: "slow"},
           {at: 27, x: 0.3908, y: 0.3908, zoom: 1.3035, ease: "slow"},
           {at: 35, x: 0.3885, y: 0.3885, zoom: 1.3188, ease: "slow"},
-          {at: 38, x: 0.3876, y: 0.3876, zoom: 1.3245, ease: "fast"},
           {at: 50, x: 0.3841, y: 0.3841, zoom: 1.3474, ease: "slow"},
-          {at: 58, x: 0.5039, y: 0.431, zoom: 1.16, ease: "slow"},
-          {at: 66, x: 0.5763, y: 0.4237, zoom: 1.1801, ease: "slow"},
+          {at: 58, x: 0.5763, y: 0.4237, zoom: 1.1801, ease: "slow"},
           {at: 83, x: 0.5763, y: 0.5763, zoom: 1.1801, ease: "slow"},
-          {at: 97, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 109, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 123, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
+          {at: 94, x: 0.5372, y: 0.5372, zoom: 1.0804, ease: "slow"},
+          {at: 96, x: 0.5345, y: 0.5345, zoom: 1.0742, ease: "linear"},
+          {at: 103, x: 0.5846, y: 0.5846, zoom: 1.2064, ease: "fast"},
+          {at: 117, x: 0.569, y: 0.569, zoom: 1.16, ease: "slow"},
+          {at: 125, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
           {at: 147, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
           {at: 161, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
           {at: 186, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
@@ -337,11 +337,11 @@ const S05: React.FC = () => (
              plate="m22/plates/s05.jpg" totalFrames={192}
              phase={2.25}>
     <AbsoluteFill>
-      <Card src="m22/cards/s05/figur_pencatat.png" x={0.5047} y={0.3763} w={0.3408} aspect={1.5739} enterFrame={11} travel={21} from="left" phase={0.5} stepped={2} kind="figure" z={1} poses={[{atFrame: 42, src: "m22/cards/s05/figur_pencatat_pose2.png"}, {atFrame: 64, src: "m22/cards/s05/figur_pencatat_pose3.png"}, {atFrame: 86, src: "m22/cards/s05/figur_pencatat_pose4.png"}]} />
-      <Card src="m22/cards/s05/foto_meja_ditinggalkan.png" x={0.8161} y={0.6842} w={0.3372} aspect={1.5561} enterFrame={76} travel={21} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m22/cards/s05/figur_anak_tanah.png" x={0.5916} y={0.7933} w={0.2427} aspect={1.9473} enterFrame={140} travel={21} from="right" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m22/cards/s05/kartu_dicatat.png" x={0.2427} y={0.25} w={0.4302} aspect={0.9806} enterFrame={0} travel={10} from="bottom" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m22/cards/s05/kartu_tanpa_kertas.png" x={0.7874} y={0.2077} w={0.4237} aspect={0.9373} enterFrame={37} travel={17} from="left" phase={3.5} stepped={2} kind="type" z={5} />
+      <Card src="m22/cards/s05/foto_meja_ditinggalkan.png" x={0.8161} y={0.6842} w={0.3372} aspect={1.5561} enterFrame={76} travel={21} from="left" phase={0.5} stepped={2} kind="photo" z={2} />
+      <Card src="m22/cards/s05/figur_anak_tanah.png" x={0.5916} y={0.7933} w={0.2427} aspect={1.9473} enterFrame={140} travel={21} from="top" phase={1.25} stepped={2} kind="figure" z={3} />
+      <Card src="m22/cards/s05/kartu_dicatat.png" x={0.2427} y={0.25} w={0.4302} aspect={0.9806} enterFrame={0} travel={10} from="right" phase={2} stepped={2} kind="type" z={4} />
+      <Card src="m22/cards/s05/kartu_tanpa_kertas.png" x={0.7874} y={0.2077} w={0.4237} aspect={0.9373} enterFrame={37} travel={17} from="bottom" phase={2.75} stepped={2} kind="type" z={5} />
+      <Card src="m22/cards/s05/figur_pencatat.png" x={0.5047} y={0.3763} w={0.3408} aspect={1.5739} enterFrame={11} travel={21} from="left" phase={3.5} stepped={2} kind="figure" z={6} poses={[{atFrame: 42, src: "m22/cards/s05/figur_pencatat_pose2.png"}, {atFrame: 64, src: "m22/cards/s05/figur_pencatat_pose3.png"}, {atFrame: 86, src: "m22/cards/s05/figur_pencatat_pose4.png"}]} />
       <Card src="m22/cards/s05/kartu_diwariskan.png" x={0.2529} y={0.7272} w={0.4782} aspect={0.8305} enterFrame={102} travel={21} from="top" phase={4.25} stepped={2} kind="type" z={6} />
       <HandMark
         shape="brackets"
@@ -363,7 +363,7 @@ const S05: React.FC = () => (
         rotate={-2.9}
         pen="marker"
         motion="draw"
-        z={1}
+        z={6}
         color="coral"
         seed={1382}
       />

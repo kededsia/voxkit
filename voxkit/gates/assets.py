@@ -11,6 +11,8 @@ while every plan gate was honest:
            renderer maps by width — so the figure shrinks on every swap
     plate  a hole solved inward from its rim: a blur where the page should be
     public the renderer's copy of an asset older than the asset itself
+    figure a person whose head is under a card — the client's one absolute rule,
+           measured by area by `compose` and therefore invisible to it
 """
 from __future__ import annotations
 
@@ -258,10 +260,60 @@ def public(ctx: Context) -> list[Finding]:
     return out
 
 
+# ------------------------------------------------------------------ figure
+def figure(ctx: Context) -> list[Finding]:
+    """No person's head and neck are under another piece.
+
+    The client's rule, verbatim, and the one absolute in the whole film: a slip
+    across a torso is collage, a slip across a face is not. `compose` cannot answer
+    it — it measures area, so a card over a head is a small percentage of a
+    silhouette and reports as a note — and `head_band` existed in `geometry.py`
+    with no caller at all. Sixteen people in the finished film had a covered head;
+    three of them had no head on screen. Every gate was green.
+
+    A finding here is not "the composition is bad". It is "this shot needs either a
+    layer swap (`tools/uncover.py`) or a new still", and the two are different
+    amounts of money. The gate does not choose: it names the coverers, and the
+    fixer measures whether a swap would bury that card's own lettering. A readable
+    card is not automatically a refusal — v2's R6 exempts a printed card against a
+    figure — but a swap that hides "4.000 M" is.
+    """
+    from ..figure import covered, ink_under_figure
+    from ..layout import Layout
+
+    out: list[Finding] = []
+    for shot in ctx.plan.shots:
+        lay = ctx.project.card_dir(ctx.module, shot.id) / "layout.json"
+        if not lay.is_file():
+            continue
+        layout = Layout.load(lay)
+        for c in covered(ctx.project, ctx.module, ctx.plan, shot, layout):
+            coverers = ", ".join(sorted(c.by, key=lambda n: -c.by[n]))
+            out.append(fail("figure", f"{shot.id}/{c.card}",
+                            f"its head and neck are {c.share:.0%} covered by "
+                            f"{coverers} — `py tools/uncover.py <module> --shot "
+                            f"{shot.id}` raises the figure if that hides no lettering; "
+                            "otherwise the still has to be recomposed"))
+        for loss in ink_under_figure(ctx.project, ctx.module, ctx.plan, shot, layout):
+            out.append(fail("figure", f"{shot.id}/{loss.card}",
+                            f"'{loss.person}' stands on {loss.share:.0%} of its lettering. "
+                            "R6 lets a person above a printed card — a silhouette over a "
+                            "blank margin is collage — but not over the words. Lower the "
+                            "figure or move the slip; this is the pair the free `readable` "
+                            "gate defers here for."))
+    if not out:
+        out.append(note("figure", ctx.module, "every person's head is clear"))
+    return out
+
+
 GATES = [
     Gate("still", still, _still_paths,
          needs_assets=True,
          asks="each still is a print, and the shape of the stage"),
+    Gate("figure", figure,
+         lambda c: [c.project.card_dir(c.module, s.id) / "layout.json" for s in c.plan.shots],
+         needs_assets=True,
+         asks="no person's head and neck are under another piece"),
     Gate("slot", slot,
          lambda c: [c.project.card_dir(c.module, s.id) / "layout.json" for s in c.plan.shots],
          needs_assets=True,

@@ -1,621 +1,621 @@
 {
- "plan_version": 2,
- "module": "m11",
- "klaim": "Kedua nama saluran itu bukan nama Sunda dan tidak berawalan 'ci': Candrabaga adalah nama sungai di Punjab, India Utara, yang menurut Purwocaraka dipindahkan ke Jawa - dan kelak berubah menjadi Baga Sasi, lalu Bekasi.",
- "payoff": "Nama saluran abad kelima itu sekarang adalah nama kota di pinggir Jakarta - satu nama yang pindah dua kali, dari Punjab ke Jawa lalu ke peta kita.",
- "serah": "Bekasi sebagai ujung rantai nama, untuk m12 yang melanjutkan rantai nama tempat",
- "terima": "Candrabaga dan Gomati sebagai dua saluran yang dicatat prasasti, dari m10",
- "konteks_modul": {
-  "konteks_budaya": "Arsip filologi dan peta Asia Selatan: lembar peta India Utara, koran daerah, buku bersampul kain, foto sungai dan kota. Lanskap: saluran irigasi, sawah, sungai di dataran India, jalan kota Bekasi sekarang. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
-  "tesis_modul": "Prasasti Tugu memberkati salurannya dengan sedekah 1.000 ekor sapi kepada para Brahmana. Dua nama saluran itu - Candrabaga dan Gomati - bukan nama Sunda dan tidak berawalan 'ci'. Candrabaga adalah nama sungai di Punjab, India Utara; Purwocaraka berpendapat nama itu dipindahkan ke Jawa. Rantai namanya berlanjut: Baga Sasi, lalu Bekasi.",
-  "babak_narasi": [
-   {
-    "babak": "Babak 7 - Yang lisan dan yang tertulis",
-    "shots": [
-     "s01",
-     "s02"
-    ],
-    "fokus": "Sedekah 1.000 ekor sapi, dan dua nama yang harus diperhatikan."
-   },
-   {
-    "babak": "Babak 8 - Nama yang pindah",
-    "shots": [
-     "s03",
-     "s04",
-     "s05"
-    ],
-    "fokus": "Bukan nama Sunda, bukan awalan 'ci'; dari Punjab ke Jawa, lalu menjadi Bekasi."
-   }
-  ]
- },
- "shots": [
-  {
-   "id": "s01",
-   "range": [
-    0,
-    155
-   ],
-   "babak": "Babak 7 - Yang lisan dan yang tertulis",
-   "peran_retoris": "Upacara - saluran itu diberkati, dan para Brahmana menerima sedekah seribu sapi",
-   "jenis": "ACTION",
-   "latar_plate": "Full-bleed blessing page on aged newsprint: a mustard block across the upper right, a crimson strip along the bottom, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Water and cattle in one page: the blessed channel high left, the Brahmin receiving low left, the gift slip high right, and the cattle low right - the price of a channel.",
-   "kamera": "Hold the channel, drop to the Brahmin's hands, then step out to the cattle; range 27% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_saluran_diberkati",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Saluran yang baru selesai - air pertama yang mengalir, sebelum diberkati",
-     "semantik": "SALURAN ITU",
-     "what": "a sepia halftone photograph of a newly dug channel with water entering it for the first time",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "saluran",
-     "z": 1,
-     "lands": 32
-    },
-    {
-     "name": "brahmana_menerima",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Brahmana menerima sedekah - upacara yang membuat saluran itu sah",
-     "semantik": "PARA BRAHMANA",
-     "what": "a sepia halftone photograph of a man in priest's dress standing with both palms raised to receive, seen from the side",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Brahmana",
-     "z": 2,
-     "lands": 65,
-     "motion_basis": "Dua lengan dan kepala, selebar 0.26 frame; kaki tetap di tanah. pose1 = berdiri, kedua telapak terbuka di depan dada.",
-     "poses_planned": [
+  "plan_version": 2,
+  "module": "m11",
+  "klaim": "Kedua nama saluran itu bukan nama Sunda dan tidak berawalan 'ci': Candrabaga adalah nama sungai di Punjab, India Utara, yang menurut Purwocaraka dipindahkan ke Jawa - dan kelak berubah menjadi Baga Sasi, lalu Bekasi.",
+  "payoff": "Nama saluran abad kelima itu sekarang adalah nama kota di pinggir Jakarta - satu nama yang pindah dua kali, dari Punjab ke Jawa lalu ke peta kita.",
+  "serah": "Bekasi sebagai ujung rantai nama, untuk m12 yang melanjutkan rantai nama tempat",
+  "terima": "Candrabaga dan Gomati sebagai dua saluran yang dicatat prasasti, dari m10",
+  "konteks_modul": {
+    "konteks_budaya": "Arsip filologi dan peta Asia Selatan: lembar peta India Utara, koran daerah, buku bersampul kain, foto sungai dan kota. Lanskap: saluran irigasi, sawah, sungai di dataran India, jalan kota Bekasi sekarang. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
+    "tesis_modul": "Prasasti Tugu memberkati salurannya dengan sedekah 1.000 ekor sapi kepada para Brahmana. Dua nama saluran itu - Candrabaga dan Gomati - bukan nama Sunda dan tidak berawalan 'ci'. Candrabaga adalah nama sungai di Punjab, India Utara; Purwocaraka berpendapat nama itu dipindahkan ke Jawa. Rantai namanya berlanjut: Baga Sasi, lalu Bekasi.",
+    "babak_narasi": [
       {
-       "pose": 2,
-       "action": "raise both palms higher and bow his head once"
+        "babak": "Babak 7 - Yang lisan dan yang tertulis",
+        "shots": [
+          "s01",
+          "s02"
+        ],
+        "fokus": "Sedekah 1.000 ekor sapi, dan dua nama yang harus diperhatikan."
       },
       {
-       "pose": 3,
-       "action": "lower his hands and rest them together at his waist"
-      },
-      {
-       "pose": 4,
-       "action": "turn his head toward the channel behind him"
+        "babak": "Babak 8 - Nama yang pindah",
+        "shots": [
+          "s03",
+          "s04",
+          "s05"
+        ],
+        "fokus": "Bukan nama Sunda, bukan awalan 'ci'; dari Punjab ke Jawa, lalu menjadi Bekasi."
       }
-     ]
+    ]
+  },
+  "shots": [
+    {
+      "id": "s01",
+      "range": [
+        0,
+        155
+      ],
+      "babak": "Babak 7 - Yang lisan dan yang tertulis",
+      "peran_retoris": "Upacara - saluran itu diberkati, dan para Brahmana menerima sedekah seribu sapi",
+      "jenis": "ACTION",
+      "latar_plate": "Full-bleed blessing page on aged newsprint: a mustard block across the upper right, a crimson strip along the bottom, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Water and cattle in one page: the blessed channel high left, the Brahmin receiving low left, the gift slip high right, and the cattle low right - the price of a channel.",
+      "kamera": "Hold the channel, drop to the Brahmin's hands, then step out to the cattle; range 27% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_saluran_diberkati",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Saluran yang baru selesai - air pertama yang mengalir, sebelum diberkati",
+          "semantik": "SALURAN ITU",
+          "what": "a sepia halftone photograph of a newly dug channel with water entering it for the first time",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "saluran",
+          "z": 1,
+          "lands": 32
+        },
+        {
+          "name": "brahmana_menerima",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Brahmana menerima sedekah - upacara yang membuat saluran itu sah",
+          "semantik": "PARA BRAHMANA",
+          "what": "a sepia halftone photograph of a man in priest's dress standing with both palms raised to receive, seen from the side",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Brahmana",
+          "z": 2,
+          "lands": 65,
+          "motion_basis": "Dua lengan dan kepala, selebar 0.26 frame; kaki tetap di tanah. pose1 = berdiri, kedua telapak terbuka di depan dada.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "raise both palms higher and bow his head once"
+            },
+            {
+              "pose": 3,
+              "action": "lower his hands and rest them together at his waist"
+            },
+            {
+              "pose": 4,
+              "action": "turn his head toward the channel behind him"
+            }
+          ]
+        },
+        {
+          "name": "kartu_sedekah",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Harga saluran itu - angka yang membuat upacara ini bisa ditimbang",
+          "semantik": "SEDEKAH 1.000 EKOR SAPI",
+          "what": "a torn cream slip with big stencilled type reading '1.000 EKOR SAPI' and a small line 'SEDEKAH'",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": ".000",
+          "z": 4,
+          "lands": 114
+        },
+        {
+          "name": "foto_sapi",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sapi di padang - benda yang dibayarkan, bukan uang",
+          "semantik": "EKOR SAPI",
+          "what": "a sepia halftone photograph of a herd of cattle standing in a dry field",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "sapi.",
+          "z": 3,
+          "lands": 127
+        }
+      ],
+      "marks": [
+        [
+          "box",
+          15,
+          3.0,
+          "kartu_sedekah",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "box",
+          17,
+          -2.4,
+          "brahmana_menerima",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Box on the printed slip on '.000'; box on the figure on 'brahmana'.",
+      "emphasis": [],
+      "still_gate": "PASS 51.0"
     },
     {
-     "name": "kartu_sedekah",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Harga saluran itu - angka yang membuat upacara ini bisa ditimbang",
-     "semantik": "SEDEKAH 1.000 EKOR SAPI",
-     "what": "a torn cream slip with big stencilled type reading '1.000 EKOR SAPI' and a small line 'SEDEKAH'",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": ".000",
-     "z": 4,
-     "lands": 114
+      "id": "s02",
+      "range": [
+        155,
+        325
+      ],
+      "babak": "Babak 7 - Yang lisan dan yang tertulis",
+      "peran_retoris": "Fokus - dua nama yang harus diperhatikan, satu per satu",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed two-names page on aged newsprint: a charcoal block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Two names, two proofs: the printed names high left, the reader over them low left, the two channels high right, and the two name slips stepping down the right side.",
+      "kamera": "Hold the printed names, then step down the two slips; range 25% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_nama_di_peta",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Dua nama tercetak di peta - kata yang harus dibaca ulang",
+          "semantik": "DUA NAMA ITU",
+          "what": "a sepia halftone photograph of two river names printed on an old map, close up",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "Tenang,",
+          "z": 1,
+          "lands": 5
+        },
+        {
+          "name": "pembaca_nama",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang membungkuk di atas peta - pembaca yang diminta memperhatikan",
+          "semantik": "PERHATIKAN",
+          "what": "a sepia halftone photograph of a man leaning over a map with a magnifier, seen from the side",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.48 of the frame wide",
+          "cut": true,
+          "word": "perhatikan",
+          "z": 3,
+          "lands": 33
+        },
+        {
+          "name": "foto_dua_saluran",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Dua saluran di tanah - yang di peta dan yang di lapangan",
+          "semantik": "DUA",
+          "what": "a sepia halftone photograph of two parallel water channels running through a green field",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "dua",
+          "z": 2,
+          "lands": 45
+        },
+        {
+          "name": "kartu_candrabaga",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama pertama, diulang sendirian - supaya bentuknya terlihat",
+          "semantik": "CANDRABAGA",
+          "what": "a torn cream slip with big stencilled type reading 'CANDRABAGA'",
+          "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Candrabaga,",
+          "z": 5,
+          "lands": 96
+        },
+        {
+          "name": "kartu_gomati",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama kedua, di bawahnya - pasangan yang membentuk pola",
+          "semantik": "GOMATI",
+          "what": "a torn cream slip with big stencilled type reading 'GOMATI'",
+          "at": "lower right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Gomati.",
+          "z": 4,
+          "lands": 150
+        }
+      ],
+      "marks": [
+        [
+          "circle",
+          14,
+          3.0,
+          "kartu_candrabaga",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "Circle on the printed slip on 'candrabaga,'.",
+      "emphasis": [
+        {
+          "frame": 160.2,
+          "word": "Tenang,",
+          "motion": "hold",
+          "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 212.4,
+          "word": "itu.",
+          "motion": "landing",
+          "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 251.4,
+          "word": "Candrabaga,",
+          "motion": "landing"
+        },
+        {
+          "frame": 304.8,
+          "word": "Gomati.",
+          "motion": "strike"
+        }
+      ],
+      "still_gate": "PASS 27.7"
     },
     {
-     "name": "foto_sapi",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sapi di padang - benda yang dibayarkan, bukan uang",
-     "semantik": "EKOR SAPI",
-     "what": "a sepia halftone photograph of a herd of cattle standing in a dry field",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "sapi.",
-     "z": 3,
-     "lands": 127
+      "id": "s03",
+      "range": [
+        325,
+        480
+      ],
+      "babak": "Babak 8 - Nama yang pindah",
+      "peran_retoris": "Penolakan - keduanya bukan nama Sunda, dan bukan nama berawalan 'ci'",
+      "jenis": "OBJECT",
+      "latar_plate": "Full-bleed negation page on aged newsprint: a crimson block across the upper left, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Two negatives, one speaker: the Sundanese man high left, the 'bukan nama Sunda' slip low left, the Sundanese script high right, the 'bukan awalan ci' slip low right, and the water at the bottom.",
+      "kamera": "Hold the man, cut to the script, then settle on the second negative; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "orang_sunda",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Orang Sunda - yang namanya justru tidak dipakai di dua saluran itu",
+          "semantik": "BUKAN NAMA SUNDA",
+          "what": "a sepia halftone photograph of a Sundanese man in a traditional headcloth, seen from the side",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
+          "cut": true,
+          "word": "Keduanya",
+          "z": 1,
+          "lands": 9
+        },
+        {
+          "name": "kartu_bukan_sunda",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Penolakan pertama - bahasa nama itu bukan bahasa tempat salurannya",
+          "semantik": "BUKAN NAMA SUNDA",
+          "what": "a torn cream slip with stencilled type reading 'BUKAN NAMA SUNDA'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "Sunda.",
+          "z": 4,
+          "lands": 30
+        },
+        {
+          "name": "foto_aksara_sunda",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Aksara Sunda - bentuk huruf yang tidak dipakai menulis dua nama itu",
+          "semantik": "BUKAN AWALAN 'CI'",
+          "what": "a sepia halftone photograph of Sundanese script carved into a bamboo strip, close up",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "nama",
+          "z": 3,
+          "lands": 76
+        },
+        {
+          "name": "kartu_bukan_ci",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Penolakan kedua - awalan 'ci' yang dipakai semua nama air di sini tidak ada di sini",
+          "semantik": "BUKAN AWALAN 'CI'",
+          "what": "a torn cream slip with letterpress type reading 'BUKAN AWALAN CI'",
+          "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "Anci.",
+          "z": 5,
+          "lands": 100
+        },
+        {
+          "name": "foto_air_tanpa_ci",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Air yang namanya tidak berawalan 'ci' - satu-satunya air seperti itu di babak ini",
+          "semantik": "SERIUS",
+          "what": "a sepia halftone photograph of clear water in a stone channel, no plants at its edge",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "Serius,",
+          "z": 2,
+          "lands": 142
+        }
+      ],
+      "marks": [
+        [
+          "underline",
+          12,
+          2.4,
+          "kartu_bukan_sunda",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ],
+        [
+          "ellipse",
+          13,
+          -1.9,
+          "orang_sunda",
+          {
+            "color": "coral",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Underline on the printed slip on 'sunda.'; ellipse on the figure on 'keduanya'.",
+      "emphasis": [
+        {
+          "frame": 354.6,
+          "word": "Sunda.",
+          "motion": "hold",
+          "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        },
+        {
+          "frame": 467.4,
+          "word": "Serius,",
+          "motion": "strike"
+        }
+      ],
+      "still_gate": "PASS 43.1"
+    },
+    {
+      "id": "s04",
+      "range": [
+        480,
+        746
+      ],
+      "babak": "Babak 8 - Nama yang pindah",
+      "peran_retoris": "Asal - Candrabaga nama sungai di Punjab, dan Purwocaraka bilang nama itu dipindahkan",
+      "jenis": "DIAGRAM",
+      "latar_plate": "Full-bleed Punjab page on aged newsprint: a mustard block behind the map, a charcoal block down the right edge, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "From one river to another: the Punjab river photograph high left, the map sheet high right, the equivalence slip low left, the scholar low centre, the moved-name photograph low right, and the Java slip along the bottom.",
+      "kamera": "Read the map west to east, then follow the name as it moves; range 31% of fitZoom.",
+      "cards": [
+        {
+          "name": "foto_sungai_punjab",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Sungai di Punjab - sungai yang meminjamkan namanya",
+          "semantik": "NAMA SUNGAI",
+          "what": "a sepia halftone photograph of a broad slow river with sandbanks in flat country",
+          "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
+          "cut": true,
+          "word": "sungai",
+          "z": 1,
+          "lands": 55
+        },
+        {
+          "name": "peta_punjab",
+          "bahan": "peta",
+          "wujud": "sobekan_pita",
+          "semiotik": "Punjab di India Utara - tempat nama itu masih dipakai sungai lain",
+          "semantik": "PUNJAB, INDIA UTARA",
+          "what": "a torn map sheet with five rivers drawn across a plain, a red boundary line",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+          "cut": true,
+          "word": "Punjab",
+          "z": 5,
+          "lands": 71
+        },
+        {
+          "name": "kartu_candrabaga_punjab",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kesamaan dua nama - bukan kemiripan, tapi nama yang sama",
+          "semantik": "CANDRABAGA = SUNGAI DI PUNJAB",
+          "what": "a torn cream slip with stencilled type reading 'CANDRABAGA = SUNGAI PUNJAB'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
+          "cut": true,
+          "word": "Utara.",
+          "z": 4,
+          "lands": 101
+        },
+        {
+          "name": "purwocaraka",
+          "bahan": "figur",
+          "wujud": "siluet_organik",
+          "semiotik": "Ahli bahasa yang berpendapat - sumber klaim ini, bukan tebakan narator",
+          "semantik": "PURWOCARAKA",
+          "what": "a sepia halftone photograph of a man in a plain shirt sitting with an open book on his knee, seen from the side",
+          "at": "lower centre of the frame, centred at 0.48 across, about 0.20 of the frame wide",
+          "cut": true,
+          "word": "Purwocaraka",
+          "z": 2,
+          "lands": 151,
+          "motion_basis": "Dua tangan dan kepala, selebar 0.24 frame; buku dan kursi tetap. pose1 = duduk, buku terbuka di pangkuan.",
+          "poses_planned": [
+            {
+              "pose": 2,
+              "action": "turn one page with his right hand and hold it down"
+            },
+            {
+              "pose": 3,
+              "action": "raise his head and one finger to make the point"
+            },
+            {
+              "pose": 4,
+              "action": "close the book and set both hands on its cover"
+            }
+          ],
+          "erase": [
+            [
+              0.0,
+              0.905,
+              1.0,
+              1.0
+            ]
+          ]
+        },
+        {
+          "name": "foto_nama_pindah",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Nama yang dipindahkan - dibawa orang, bukan dibawa air",
+          "semantik": "DIPINDAHKAN",
+          "what": "a sepia halftone photograph of an old harbour with wooden boats tied along a stone quay",
+          "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
+          "cut": true,
+          "word": "dipindahkan",
+          "z": 3,
+          "lands": 219
+        },
+        {
+          "name": "kartu_ke_jawa",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Tujuan pemindahan - dan tempat nama itu kemudian berubah lagi",
+          "semantik": "KE JAWA",
+          "what": "a torn cream slip with letterpress type reading 'KE JAWA'",
+          "at": "bottom of the frame, centred at 0.50 across, about 0.24 of the frame wide",
+          "cut": true,
+          "word": "Jawa.",
+          "z": 6,
+          "lands": 244
+        }
+      ],
+      "marks": [
+        [
+          "arrow-right",
+          14,
+          -2.8,
+          "peta_punjab",
+          {
+            "color": "crimson",
+            "delay": 8
+          }
+        ]
+      ],
+      "mark": "A rightward arrow onto the Punjab map on 'punjab'.",
+      "emphasis": [],
+      "still_gate": "PASS 40.6"
+    },
+    {
+      "id": "s05",
+      "range": [
+        746,
+        873
+      ],
+      "babak": "Babak 8 - Nama yang pindah",
+      "peran_retoris": "Ujung rantai - nama itu berubah menjadi Baga Sasi, lalu Bekasi",
+      "jenis": "PLACE",
+      "latar_plate": "Full-bleed chain page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom right, printed columns showing through, masking tape.",
+      "tata_letak_kolase": "Three names in a row and a city at the end: the 'berubah' slip high left, Baga Sasi low left, the city photograph high right, and Bekasi low right - the chain lands on something the reader can visit.",
+      "kamera": "Step along the three names, then hold on the city; range 26% of fitZoom.",
+      "cards": [
+        {
+          "name": "kartu_berubah",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Kata kerja yang menjelaskan seluruh rantai - nama berubah, tempatnya tetap",
+          "semantik": "BERUBAH",
+          "what": "a torn cream slip with stencilled type reading 'BERUBAH'",
+          "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
+          "cut": true,
+          "word": "berubah",
+          "z": 3,
+          "lands": 26
+        },
+        {
+          "name": "kartu_baga_sasi",
+          "bahan": "cetak",
+          "wujud": "sobekan_pita",
+          "semiotik": "Bentuk tengah rantai - nama yang hanya hidup di dokumen",
+          "semantik": "BAGA SASI",
+          "what": "a torn cream slip with letterpress type reading 'BAGA SASI'",
+          "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
+          "cut": true,
+          "word": "Sasi,",
+          "z": 4,
+          "lands": 61
+        },
+        {
+          "name": "foto_bekasi",
+          "bahan": "foto",
+          "wujud": "siluet_organik",
+          "semiotik": "Bekasi sekarang - kota yang menanggung nama saluran abad kelima",
+          "semantik": "LALU BEKASI",
+          "what": "a sepia halftone photograph of a wide road with shopfronts and traffic in a low city",
+          "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
+          "cut": true,
+          "word": "lalu",
+          "z": 1,
+          "lands": 89
+        },
+        {
+          "name": "kartu_bekasi",
+          "bahan": "koran",
+          "wujud": "sobekan_pita",
+          "semiotik": "Nama terakhir, di pita koran - nama yang sekarang dibaca orang tiap hari",
+          "semantik": "BEKASI",
+          "what": "a torn newsprint strip with bold type reading 'BEKASI'",
+          "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
+          "cut": "close the cut edge cleanly with a narrow torn white paper border",
+          "word": "Bekasi.",
+          "z": 2,
+          "lands": 96
+        }
+      ],
+      "marks": [
+        [
+          "brackets",
+          14,
+          3.6,
+          "kartu_berubah",
+          {
+            "color": "crimson",
+            "delay": 0
+          }
+        ]
+      ],
+      "mark": "Brackets on the printed slip on 'berubah'.",
+      "emphasis": [
+        {
+          "frame": 807.0,
+          "word": "Sasi,",
+          "motion": "hold",
+          "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
+        }
+      ],
+      "still_gate": "PASS 33.7"
     }
-   ],
-   "marks": [
-    [
-     "box",
-     15,
-     3.0,
-     "kartu_sedekah",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+  ],
+  "context": {
+    "skills_read": [
+      "vox-lean",
+      "audio-first-documentary",
+      "vox-animation"
     ],
-    [
-     "box",
-     17,
-     -2.4,
-     "brahmana_menerima",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Box on the printed slip on '.000'; box on the figure on 'brahmana'.",
-   "emphasis": [],
-   "still_gate": "PASS 51.0"
-  },
-  {
-   "id": "s02",
-   "range": [
-    155,
-    325
-   ],
-   "babak": "Babak 7 - Yang lisan dan yang tertulis",
-   "peran_retoris": "Fokus - dua nama yang harus diperhatikan, satu per satu",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed two-names page on aged newsprint: a charcoal block down the left edge, a mustard strip across the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Two names, two proofs: the printed names high left, the reader over them low left, the two channels high right, and the two name slips stepping down the right side.",
-   "kamera": "Hold the printed names, then step down the two slips; range 25% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_nama_di_peta",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Dua nama tercetak di peta - kata yang harus dibaca ulang",
-     "semantik": "DUA NAMA ITU",
-     "what": "a sepia halftone photograph of two river names printed on an old map, close up",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "Tenang,",
-     "z": 1,
-     "lands": 5
-    },
-    {
-     "name": "pembaca_nama",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang membungkuk di atas peta - pembaca yang diminta memperhatikan",
-     "semantik": "PERHATIKAN",
-     "what": "a sepia halftone photograph of a man leaning over a map with a magnifier, seen from the side",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.48 of the frame wide",
-     "cut": true,
-     "word": "perhatikan",
-     "z": 3,
-     "lands": 33
-    },
-    {
-     "name": "foto_dua_saluran",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Dua saluran di tanah - yang di peta dan yang di lapangan",
-     "semantik": "DUA",
-     "what": "a sepia halftone photograph of two parallel water channels running through a green field",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "dua",
-     "z": 2,
-     "lands": 45
-    },
-    {
-     "name": "kartu_candrabaga",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama pertama, diulang sendirian - supaya bentuknya terlihat",
-     "semantik": "CANDRABAGA",
-     "what": "a torn cream slip with big stencilled type reading 'CANDRABAGA'",
-     "at": "centre right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Candrabaga,",
-     "z": 5,
-     "lands": 96
-    },
-    {
-     "name": "kartu_gomati",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama kedua, di bawahnya - pasangan yang membentuk pola",
-     "semantik": "GOMATI",
-     "what": "a torn cream slip with big stencilled type reading 'GOMATI'",
-     "at": "lower right of the frame, centred at 0.74 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Gomati.",
-     "z": 4,
-     "lands": 150
-    }
-   ],
-   "marks": [
-    [
-     "circle",
-     14,
-     3.0,
-     "kartu_candrabaga",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "Circle on the printed slip on 'candrabaga,'.",
-   "emphasis": [
-    {
-     "frame": 160.2,
-     "word": "Tenang,",
-     "motion": "hold",
-     "why": "skor 0.49 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 212.4,
-     "word": "itu.",
-     "motion": "landing",
-     "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 251.4,
-     "word": "Candrabaga,",
-     "motion": "landing"
-    },
-    {
-     "frame": 304.8,
-     "word": "Gomati.",
-     "motion": "strike"
-    }
-   ],
-   "still_gate": "PASS 27.7"
-  },
-  {
-   "id": "s03",
-   "range": [
-    325,
-    480
-   ],
-   "babak": "Babak 8 - Nama yang pindah",
-   "peran_retoris": "Penolakan - keduanya bukan nama Sunda, dan bukan nama berawalan 'ci'",
-   "jenis": "OBJECT",
-   "latar_plate": "Full-bleed negation page on aged newsprint: a crimson block across the upper left, a charcoal strip along the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Two negatives, one speaker: the Sundanese man high left, the 'bukan nama Sunda' slip low left, the Sundanese script high right, the 'bukan awalan ci' slip low right, and the water at the bottom.",
-   "kamera": "Hold the man, cut to the script, then settle on the second negative; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "orang_sunda",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Orang Sunda - yang namanya justru tidak dipakai di dua saluran itu",
-     "semantik": "BUKAN NAMA SUNDA",
-     "what": "a sepia halftone photograph of a Sundanese man in a traditional headcloth, seen from the side",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
-     "cut": true,
-     "word": "Keduanya",
-     "z": 1,
-     "lands": 9
-    },
-    {
-     "name": "kartu_bukan_sunda",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Penolakan pertama - bahasa nama itu bukan bahasa tempat salurannya",
-     "semantik": "BUKAN NAMA SUNDA",
-     "what": "a torn cream slip with stencilled type reading 'BUKAN NAMA SUNDA'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "Sunda.",
-     "z": 4,
-     "lands": 30
-    },
-    {
-     "name": "foto_aksara_sunda",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Aksara Sunda - bentuk huruf yang tidak dipakai menulis dua nama itu",
-     "semantik": "BUKAN AWALAN 'CI'",
-     "what": "a sepia halftone photograph of Sundanese script carved into a bamboo strip, close up",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "nama",
-     "z": 3,
-     "lands": 76
-    },
-    {
-     "name": "kartu_bukan_ci",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Penolakan kedua - awalan 'ci' yang dipakai semua nama air di sini tidak ada di sini",
-     "semantik": "BUKAN AWALAN 'CI'",
-     "what": "a torn cream slip with letterpress type reading 'BUKAN AWALAN CI'",
-     "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "Anci.",
-     "z": 5,
-     "lands": 100
-    },
-    {
-     "name": "foto_air_tanpa_ci",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Air yang namanya tidak berawalan 'ci' - satu-satunya air seperti itu di babak ini",
-     "semantik": "SERIUS",
-     "what": "a sepia halftone photograph of clear water in a stone channel, no plants at its edge",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "Serius,",
-     "z": 2,
-     "lands": 142
-    }
-   ],
-   "marks": [
-    [
-     "underline",
-     12,
-     2.4,
-     "kartu_bukan_sunda",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
+    "benang_read": [
+      "Hukum rencana diperiksa lebih dulu (R0)",
+      "Hukum keterbacaan (R6)",
+      "Hukum kedatangan kartu (R2e)",
+      "Hukum tanda tangan (R5a)"
     ],
-    [
-     "ellipse",
-     13,
-     -1.9,
-     "orang_sunda",
-     {
-      "color": "coral",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Underline on the printed slip on 'sunda.'; ellipse on the figure on 'keduanya'.",
-   "emphasis": [
-    {
-     "frame": 354.6,
-     "word": "Sunda.",
-     "motion": "hold",
-     "why": "skor 0.42 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    },
-    {
-     "frame": 467.4,
-     "word": "Serius,",
-     "motion": "strike"
-    }
-   ],
-   "still_gate": "PASS 43.1"
-  },
-  {
-   "id": "s04",
-   "range": [
-    480,
-    746
-   ],
-   "babak": "Babak 8 - Nama yang pindah",
-   "peran_retoris": "Asal - Candrabaga nama sungai di Punjab, dan Purwocaraka bilang nama itu dipindahkan",
-   "jenis": "DIAGRAM",
-   "latar_plate": "Full-bleed Punjab page on aged newsprint: a mustard block behind the map, a charcoal block down the right edge, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "From one river to another: the Punjab river photograph high left, the map sheet high right, the equivalence slip low left, the scholar low centre, the moved-name photograph low right, and the Java slip along the bottom.",
-   "kamera": "Read the map west to east, then follow the name as it moves; range 31% of fitZoom.",
-   "cards": [
-    {
-     "name": "foto_sungai_punjab",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Sungai di Punjab - sungai yang meminjamkan namanya",
-     "semantik": "NAMA SUNGAI",
-     "what": "a sepia halftone photograph of a broad slow river with sandbanks in flat country",
-     "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
-     "cut": true,
-     "word": "sungai",
-     "z": 1,
-     "lands": 55
-    },
-    {
-     "name": "peta_punjab",
-     "bahan": "peta",
-     "wujud": "sobekan_pita",
-     "semiotik": "Punjab di India Utara - tempat nama itu masih dipakai sungai lain",
-     "semantik": "PUNJAB, INDIA UTARA",
-     "what": "a torn map sheet with five rivers drawn across a plain, a red boundary line",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
-     "cut": true,
-     "word": "Punjab",
-     "z": 5,
-     "lands": 71
-    },
-    {
-     "name": "kartu_candrabaga_punjab",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kesamaan dua nama - bukan kemiripan, tapi nama yang sama",
-     "semantik": "CANDRABAGA = SUNGAI DI PUNJAB",
-     "what": "a torn cream slip with stencilled type reading 'CANDRABAGA = SUNGAI PUNJAB'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
-     "cut": true,
-     "word": "Utara.",
-     "z": 4,
-     "lands": 101
-    },
-    {
-     "name": "purwocaraka",
-     "bahan": "figur",
-     "wujud": "siluet_organik",
-     "semiotik": "Ahli bahasa yang berpendapat - sumber klaim ini, bukan tebakan narator",
-     "semantik": "PURWOCARAKA",
-     "what": "a sepia halftone photograph of a man in a plain shirt sitting with an open book on his knee, seen from the side",
-     "at": "lower centre of the frame, centred at 0.48 across, about 0.20 of the frame wide",
-     "cut": true,
-     "word": "Purwocaraka",
-     "z": 2,
-     "lands": 151,
-     "motion_basis": "Dua tangan dan kepala, selebar 0.24 frame; buku dan kursi tetap. pose1 = duduk, buku terbuka di pangkuan.",
-     "poses_planned": [
-      {
-       "pose": 2,
-       "action": "turn one page with his right hand and hold it down"
-      },
-      {
-       "pose": 3,
-       "action": "raise his head and one finger to make the point"
-      },
-      {
-       "pose": 4,
-       "action": "close the book and set both hands on its cover"
-      }
-     ],
-     "erase": [
-      [
-       0.0,
-       0.905,
-       1.0,
-       1.0
-      ]
-     ]
-    },
-    {
-     "name": "foto_nama_pindah",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Nama yang dipindahkan - dibawa orang, bukan dibawa air",
-     "semantik": "DIPINDAHKAN",
-     "what": "a sepia halftone photograph of an old harbour with wooden boats tied along a stone quay",
-     "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
-     "cut": true,
-     "word": "dipindahkan",
-     "z": 3,
-     "lands": 219
-    },
-    {
-     "name": "kartu_ke_jawa",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Tujuan pemindahan - dan tempat nama itu kemudian berubah lagi",
-     "semantik": "KE JAWA",
-     "what": "a torn cream slip with letterpress type reading 'KE JAWA'",
-     "at": "bottom of the frame, centred at 0.50 across, about 0.24 of the frame wide",
-     "cut": true,
-     "word": "Jawa.",
-     "z": 6,
-     "lands": 244
-    }
-   ],
-   "marks": [
-    [
-     "arrow-right",
-     14,
-     -2.8,
-     "peta_punjab",
-     {
-      "color": "crimson",
-      "delay": 8
-     }
-    ]
-   ],
-   "mark": "A rightward arrow onto the Punjab map on 'punjab'.",
-   "emphasis": [],
-   "still_gate": "PASS 40.6"
-  },
-  {
-   "id": "s05",
-   "range": [
-    746,
-    873
-   ],
-   "babak": "Babak 8 - Nama yang pindah",
-   "peran_retoris": "Ujung rantai - nama itu berubah menjadi Baga Sasi, lalu Bekasi",
-   "jenis": "PLACE",
-   "latar_plate": "Full-bleed chain page on aged newsprint: a charcoal block across the upper left, a mustard strip along the bottom right, printed columns showing through, masking tape.",
-   "tata_letak_kolase": "Three names in a row and a city at the end: the 'berubah' slip high left, Baga Sasi low left, the city photograph high right, and Bekasi low right - the chain lands on something the reader can visit.",
-   "kamera": "Step along the three names, then hold on the city; range 26% of fitZoom.",
-   "cards": [
-    {
-     "name": "kartu_berubah",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Kata kerja yang menjelaskan seluruh rantai - nama berubah, tempatnya tetap",
-     "semantik": "BERUBAH",
-     "what": "a torn cream slip with stencilled type reading 'BERUBAH'",
-     "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
-     "cut": true,
-     "word": "berubah",
-     "z": 3,
-     "lands": 26
-    },
-    {
-     "name": "kartu_baga_sasi",
-     "bahan": "cetak",
-     "wujud": "sobekan_pita",
-     "semiotik": "Bentuk tengah rantai - nama yang hanya hidup di dokumen",
-     "semantik": "BAGA SASI",
-     "what": "a torn cream slip with letterpress type reading 'BAGA SASI'",
-     "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
-     "cut": true,
-     "word": "Sasi,",
-     "z": 4,
-     "lands": 61
-    },
-    {
-     "name": "foto_bekasi",
-     "bahan": "foto",
-     "wujud": "siluet_organik",
-     "semiotik": "Bekasi sekarang - kota yang menanggung nama saluran abad kelima",
-     "semantik": "LALU BEKASI",
-     "what": "a sepia halftone photograph of a wide road with shopfronts and traffic in a low city",
-     "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
-     "cut": true,
-     "word": "lalu",
-     "z": 1,
-     "lands": 89
-    },
-    {
-     "name": "kartu_bekasi",
-     "bahan": "koran",
-     "wujud": "sobekan_pita",
-     "semiotik": "Nama terakhir, di pita koran - nama yang sekarang dibaca orang tiap hari",
-     "semantik": "BEKASI",
-     "what": "a torn newsprint strip with bold type reading 'BEKASI'",
-     "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
-     "cut": "close the cut edge cleanly with a narrow torn white paper border",
-     "word": "Bekasi.",
-     "z": 2,
-     "lands": 96
-    }
-   ],
-   "marks": [
-    [
-     "brackets",
-     14,
-     3.6,
-     "kartu_berubah",
-     {
-      "color": "crimson",
-      "delay": 0
-     }
-    ]
-   ],
-   "mark": "Brackets on the printed slip on 'berubah'.",
-   "emphasis": [
-    {
-     "frame": 807.0,
-     "word": "Sasi,",
-     "motion": "hold",
-     "why": "skor 0.40 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
-    }
-   ],
-   "still_gate": "PASS 33.7"
+    "laws": [
+      "L-cards",
+      "L-arrival",
+      "L-mark",
+      "L-marks",
+      "L-emphasis",
+      "L-plate",
+      "L-cut",
+      "L-iso",
+      "L-collage",
+      "L-baca"
+    ],
+    "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
   }
- ],
- "context": {
-  "skills_read": [
-   "vox-lean",
-   "audio-first-documentary",
-   "vox-animation"
-  ],
-  "benang_read": [
-   "Hukum rencana diperiksa lebih dulu (R0)",
-   "Hukum keterbacaan (R6)",
-   "Hukum kedatangan kartu (R2e)",
-   "Hukum tanda tangan (R5a)"
-  ],
-  "laws": [
-   "L-cards",
-   "L-arrival",
-   "L-mark",
-   "L-marks",
-   "L-emphasis",
-   "L-plate",
-   "L-cut",
-   "L-iso",
-   "L-collage",
-   "L-baca"
-  ],
-  "catatan": "Rencana ini ditulis sebelum blok konteks diwajibkan; blok ini diisi saat tinjauan 30-10, dan isinya hanya menyebut hukum yang memang harus dipenuhi rencana ini — bukan daftar bacaan yang dikarang."
- }
 }
