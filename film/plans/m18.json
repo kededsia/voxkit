@@ -204,7 +204,11 @@
      "cut": true,
      "word": "Panas.",
      "z": 2,
-     "lands": 24
+     "lands": 24,
+     "nudge": [
+      -0.16,
+      0.0
+     ]
     },
     {
      "name": "kartu_tjimahi",

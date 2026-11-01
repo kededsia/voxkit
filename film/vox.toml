@@ -19,7 +19,7 @@ ink = "sepia"
 chroma = "#FF00FF"
 
 [generation]
-binary = "gflow"
+binary = "C:/Users/PC/.local/bin/gflow.exe"
 profiles = ["videoquincy"]
 batch_size = 6
 model = "nano2"

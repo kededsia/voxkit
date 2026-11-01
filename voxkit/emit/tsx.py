@@ -16,7 +16,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from .choreography import Khat, MarkMotion, ModuleProgram, ShotProgram
+from .choreography import CardMotion, Khat, MarkMotion, ModuleProgram, ShotProgram
 
 STAGE_W, STAGE_H = 1920, 1080
 
@@ -51,12 +51,24 @@ const HandMark: React.FC<{
   motion?: MarkerMotion;
   sw?: number;
   seed?: number;
+  /**
+   * The layer this mark belongs to. A mark is drawn ON one card, so it sits just
+   * above that card and *below* anything pasted over it.
+   *
+   * Without this every mark was drawn above the whole collage. A circle around a
+   * dictionary whose corner is covered by a label was painted across the label,
+   * so the gesture appeared to point at two things at once — the client's "the
+   * arrow misses the word", in its most literal form. The mark was in the right
+   * place; it was in the wrong layer.
+   */
+  z?: number;
 }> = ({shape, box, at, pen = "marker", color = "coral", duration = 14, rotate = 0,
-     motion = "draw", sw, seed = 101}) => {
+     motion = "draw", sw, seed = 101, z = 1}) => {
   const [x0, y0, x1, y1] = box;
   return (
     <div style={{position: "absolute", left: `${x0 * 100}%`, top: `${y0 * 100}%`,
-                 width: `${(x1 - x0) * 100}%`, height: `${(y1 - y0) * 100}%`}}>
+                 width: `${(x1 - x0) * 100}%`, height: `${(y1 - y0) * 100}%`,
+                 zIndex: z * 10 + 5}}>
       <Marker shape={shape} pen={pen} color={color} at={at} duration={duration}
               rotate={rotate} motion={motion} strokeWidth={sw}
               width={(x1 - x0) * STAGE_W} height={(y1 - y0) * STAGE_H} seed={seed} />
@@ -77,10 +89,13 @@ const Card: React.FC<{
   stepped: number;
   kind: CardKind;
   poses?: ElementPose[];
-}> = ({src, x, y, w, aspect, enterFrame, travel, from, phase, stepped, kind, poses}) => (
-  <Element src={src} at={[x, y]} width={w * STAGE_W} aspect={aspect}
-           enterFrame={enterFrame} travel={travel} from={from} outline={0}
-           phase={phase} stepped={stepped} rotate={0} poses={poses} kind={kind} />
+  z?: number;
+}> = ({src, x, y, w, aspect, enterFrame, travel, from, phase, stepped, kind, poses, z = 1}) => (
+  <div style={{position: "absolute", inset: 0, zIndex: z * 10}}>
+    <Element src={src} at={[x, y]} width={w * STAGE_W} aspect={aspect}
+             enterFrame={enterFrame} travel={travel} from={from} outline={0}
+             phase={phase} stepped={stepped} rotate={0} poses={poses} kind={kind} />
+  </div>
 );
 """
 
@@ -100,7 +115,7 @@ def _camera(shot: ShotProgram) -> str:
     return f"[\n          {keys},\n        ]"
 
 
-def _mark(m: MarkMotion, indent: str) -> list[str]:
+def _mark(m: MarkMotion, cards: tuple[CardMotion, ...], indent: str) -> list[str]:
     box = f"[{num(m.box.x0)}, {num(m.box.y0)}, {num(m.box.x1)}, {num(m.box.y1)}]"
     lines = [
         f'{indent}<HandMark',
@@ -114,6 +129,11 @@ def _mark(m: MarkMotion, indent: str) -> list[str]:
     ]
     if m.sw:
         lines.append(f"{indent}  sw={{{int(m.sw)}}}")
+    if m.on:
+        # Drawn on a card, so drawn in that card's layer — above the card itself,
+        # below anything pasted over it.
+        z = next((c.z for c in cards if c.name == m.on), 1)
+        lines.append(f"{indent}  z={{{z}}}")
     lines += [f'{indent}  color="{m.color}"', f"{indent}  seed={{{m.seed}}}", f"{indent}/>"]
     return lines
 
@@ -132,6 +152,7 @@ def _khat(k: Khat, indent: str) -> list[str]:
         f'{indent}  color="{k.color}"',
         f"{indent}  rotate={{{num(k.rotate, 2)}}}",
         f"{indent}  seed={{{k.seed}}}",
+        f"{indent}  z={{{k.z}}}",
         f"{indent}/>",
     ]
 
@@ -152,13 +173,13 @@ def render_shot(shot: ShotProgram, index: int) -> list[str]:
             f"w={{{num(card.rect.w)}}} aspect={{{num(card.rect.h / card.rect.w if card.rect.w else 0.7)}}} "
             f'enterFrame={{{card.enter}}} travel={{{card.travel}}} from="{card.from_side}" '
             f"phase={{{num(card.phase, 2)}}} stepped={{{card.stepped}}} "
-            f'kind="{card.kind}"{pose_prop} />'
+            f'kind="{card.kind}" z={{{card.z}}}{pose_prop} />'
         )
 
     for m in shot.marks:
-        out += _mark(m, "      ")
-    if shot.khat:
-        out += _khat(shot.khat, "      ")
+        out += _mark(m, shot.cards, "      ")
+    for k in shot.khats:
+        out += _khat(k, "      ")
 
     out += ["    </AbsoluteFill>", "  </PaperStage>", ");", ""]
     return out

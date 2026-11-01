@@ -1299,6 +1299,7 @@
    "cards": [
     {
      "name": "halaman_register",
+     "nudge": [-0.224, -0.081],
      "bahan": "foto",
      "wujud": "siluet_organik",
      "semiotik": "Halaman daftar dengan satu kolom baru - varian yang jarang dibicarakan",

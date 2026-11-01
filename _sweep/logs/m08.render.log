@@ -1,0 +1,20 @@
+m08: 0 file(s) synced to remotion/public/m08
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   PASS
+data      PASS
+spell     PASS
+program   PASS
+still     PASS  0.3s
+slot      PASS  0.2s
+pose      PASS
+plate     PASS
+public    PASS
+
+— rendering M08 —
+remotion\out\m08-final.mp4  45.23s  80 MB  audio=yes
+OK — every gate ran, every gate passed, and the file carries its narration

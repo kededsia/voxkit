@@ -174,7 +174,11 @@
      "cut": true,
      "word": "naskah",
      "z": 1,
-     "lands": 31
+     "lands": 31,
+     "nudge": [
+      0.155,
+      -0.041
+     ]
     },
     {
      "name": "kartu_1518",
@@ -288,7 +292,11 @@
      "cut": true,
      "word": "Nyusu,",
      "z": 1,
-     "lands": 25
+     "lands": 25,
+     "nudge": [
+      -0.114,
+      0.187
+     ]
     },
     {
      "name": "kartu_chai_nyusu",
@@ -408,7 +416,11 @@
      "cut": true,
      "word": "buruan,",
      "z": 1,
-     "lands": 29
+     "lands": 29,
+     "nudge": [
+      -0.119,
+      0.053
+     ]
     },
     {
      "name": "kartu_buruan",
@@ -421,7 +433,11 @@
      "cut": true,
      "word": "halaman.",
      "z": 4,
-     "lands": 65
+     "lands": 65,
+     "nudge": [
+      0.01,
+      0.017
+     ]
     },
     {
      "name": "foto_mata_air_nol",
@@ -434,7 +450,11 @@
      "cut": true,
      "word": "air",
      "z": 2,
-     "lands": 108
+     "lands": 108,
+     "nudge": [
+      0.238,
+      0.016
+     ]
     },
     {
      "name": "orang_di_mata_air",
@@ -447,7 +467,11 @@
      "cut": true,
      "word": "titik",
      "z": 3,
-     "lands": 137
+     "lands": 137,
+     "nudge": [
+      0.03,
+      0.093
+     ]
     },
     {
      "name": "kartu_titik_nol",
@@ -460,7 +484,11 @@
      "cut": true,
      "word": "nol.",
      "z": 5,
-     "lands": 151
+     "lands": 151,
+     "nudge": [
+      0.096,
+      -0.195
+     ]
     }
    ],
    "marks": [
@@ -578,7 +606,11 @@
      "cut": true,
      "word": "setelah",
      "z": 5,
-     "lands": 92
+     "lands": 92,
+     "nudge": [
+      0.02,
+      0.0
+     ]
     },
     {
      "name": "foto_rumah_tepi",
@@ -591,7 +623,11 @@
      "cut": true,
      "word": "air.",
      "z": 2,
-     "lands": 104
+     "lands": 104,
+     "nudge": [
+      -0.024,
+      0.031
+     ]
     },
     {
      "name": "foto_jalan_kampung",
@@ -604,7 +640,11 @@
      "cut": true,
      "word": "begitu,",
      "z": 3,
-     "lands": 142
+     "lands": 142,
+     "nudge": [
+      -0.221,
+      0.024
+     ]
     },
     {
      "name": "kartu_alamat",

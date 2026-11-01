@@ -1,0 +1,25 @@
+=== m03 emit 04:15:53
+    remotion\out\m03-final.mp4  54.53s  85 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m06 emit 04:17:31
+    remotion\out\m06-final.mp4  32.50s  49 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m08 emit 04:18:29
+    remotion\out\m08-final.mp4  45.23s  80 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m11 emit 04:19:48
+    remotion\out\m11-final.mp4  29.10s  50 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m13 emit 04:20:41
+    remotion\out\m13-final.mp4  43.43s  67 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m20 emit 04:21:58
+    remotion\out\m20-final.mp4  45.53s  81 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== done 04:23:22

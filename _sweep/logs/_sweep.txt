@@ -1,0 +1,92 @@
+=== m03 03:54:18 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m06 03:54:19 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m08 03:54:20 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m09 03:54:22 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m10 03:54:23 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m11 03:54:24 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m12 03:54:25 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m13 03:54:26 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m20 03:54:27 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== sweep done 03:54:28 ===
+=== m03 03:55:38 ===
+    — rendering M03 —
+    remotion\out\m03-final.mp4  54.53s  85 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m06 03:57:18 ===
+    — rendering M06 —
+    remotion\out\m06-final.mp4  32.50s  49 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m08 03:58:19 ===
+    — rendering M08 —
+    remotion\out\m08-final.mp4  45.23s  80 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m09 03:59:41 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m10 03:59:43 ===
+    — rendering M10 —
+    remotion\out\m10-final.mp4  71.80s  117 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m11 04:01:45 ===
+    — rendering M11 —
+    remotion\out\m11-final.mp4  29.10s  50 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m12 04:02:40 ===
+    — rendering M12 —
+    remotion\out\m12-final.mp4  35.13s  56 MB  audio=yes
+    OK — every gate ran, every gate passed, and the file carries its narration
+    exit=0
+=== m13 04:03:42 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== m20 04:03:43 ===
+    public    PASS
+    
+    REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.
+    exit=1
+=== sweep done 04:03:44 ===

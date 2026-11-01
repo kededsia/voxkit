@@ -1,0 +1,162 @@
+[
+ {
+  "module": "m19",
+  "shot": "s01",
+  "card": "figur_pembaca_kuno",
+  "cover": 1.0,
+  "by": {
+   "kartu_satu_hal": 1.0
+  },
+  "z": 2
+ },
+ {
+  "module": "m19",
+  "shot": "s02",
+  "card": "figur_orang_lain",
+  "cover": 1.0,
+  "by": {
+   "foto_peta_nusantara": 1.0
+  },
+  "z": 2
+ },
+ {
+  "module": "m22",
+  "shot": "s07",
+  "card": "figur_pembaca_akhir",
+  "cover": 1.0,
+  "by": {
+   "kartu_catatan": 1.0
+  },
+  "z": 3
+ },
+ {
+  "module": "m01",
+  "shot": "s03",
+  "card": "kaca_pembesar",
+  "cover": 0.823,
+  "by": {
+   "arsip_peta": 0.82
+  },
+  "z": 2
+ },
+ {
+  "module": "m20",
+  "shot": "s02",
+  "card": "figur_pengamat",
+  "cover": 0.805,
+  "by": {
+   "kartu_bersalju": 0.81
+  },
+  "z": 3
+ },
+ {
+  "module": "m17",
+  "shot": "s04",
+  "card": "orang_memegang_daun",
+  "cover": 0.685,
+  "by": {
+   "foto_buah_nangka": 0.69
+  },
+  "z": 2
+ },
+ {
+  "module": "m19",
+  "shot": "s03",
+  "card": "nelayan",
+  "cover": 0.39,
+  "by": {
+   "kartu_banyu_mas_asin": 0.39
+  },
+  "z": 3
+ },
+ {
+  "module": "m16",
+  "shot": "s04",
+  "card": "orang_di_mata_air",
+  "cover": 0.366,
+  "by": {
+   "kartu_titik_nol": 0.37
+  },
+  "z": 3
+ },
+ {
+  "module": "m10",
+  "shot": "s04",
+  "card": "pejalan_di_jalan_lama",
+  "cover": 0.356,
+  "by": {
+   "peta_bertahan": 0.36
+  },
+  "z": 1
+ },
+ {
+  "module": "m17",
+  "shot": "s03",
+  "card": "pencari_pohon",
+  "cover": 0.348,
+  "by": {
+   "strip_koran_hilang": 0.35
+  },
+  "z": 3
+ },
+ {
+  "module": "m14",
+  "shot": "s05",
+  "card": "orang_di_runtuhan",
+  "cover": 0.196,
+  "by": {
+   "kartu_istana_hilang": 0.2
+  },
+  "z": 3
+ },
+ {
+  "module": "m22",
+  "shot": "s02",
+  "card": "figur_penyaksi",
+  "cover": 0.194,
+  "by": {
+   "kartu_bukan_air": 0.19
+  },
+  "z": 3
+ },
+ {
+  "module": "m08",
+  "shot": "s04",
+  "card": "pengukur_peta",
+  "cover": 0.17,
+  "by": {
+   "peta_membentang": 0.17
+  },
+  "z": 3
+ },
+ {
+  "module": "m11",
+  "shot": "s04",
+  "card": "purwocaraka",
+  "cover": 0.165,
+  "by": {
+   "peta_punjab": 0.16
+  },
+  "z": 2
+ },
+ {
+  "module": "m22",
+  "shot": "s05",
+  "card": "figur_pencatat",
+  "cover": 0.106,
+  "by": {
+   "kartu_tanpa_kertas": 0.11
+  },
+  "z": 1
+ },
+ {
+  "module": "m20",
+  "shot": "s07",
+  "card": "figur_pengukur_gunung",
+  "cover": 0.103,
+  "by": {
+   "kartu_bukan_ci": 0.1
+  },
+  "z": 3
+ }
+]

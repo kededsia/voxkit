@@ -140,7 +140,11 @@
      "cut": true,
      "word": "hilang.",
      "z": 6,
-     "lands": 154
+     "lands": 154,
+     "nudge": [
+      -0.064,
+      -0.064
+     ]
     },
     {
      "name": "kartu_serius",
@@ -745,7 +749,7 @@
    "babak": "Babak 27 - Citarum",
    "peran_retoris": "Bukti terakhir - Citarum, dan tarum tanaman pewarna nila yang dulu tumbuh di tepinya",
    "jenis": "OBJECT",
-   "latar_plate": "Full-bleed indigo page on aged newsprint: a mustard block across the upper right, a charcoal strip down the left edge, printed columns showing through, masking tape.",
+   "latar_plate": "Aged cream newsprint page, the same warm paper as the rest of the film: a deep indigo block across the upper right corner, a mustard block beneath it, a charcoal strip down the left edge, printed columns showing through, masking tape.",
    "tata_letak_kolase": "The river high left, the nameplate low left, the indigo plant centre, the dyer low centre, 'tarum = pewarna nila' high right, and 'dulu tumbuh di tepinya' along the bottom.",
    "kamera": "Follow the longest river in the province, then the plant that named it; range 27% of fitZoom.",
    "cards": [

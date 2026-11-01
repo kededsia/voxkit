@@ -114,8 +114,15 @@ def run_batch(project: Project, module: str, jobs: Sequence[Job], out_dir: Path,
 
         say(f"  · batch {i // size + 1}: {len(chunk)} prompt(s) on {profile}")
         cmd = [project.generation.binary, "run", "--config", str(cfg), "--profile", profile]
-        if project.generation.resume:
-            cmd.append("--resume")
+        # `--resume` is scoped to a named Flow project: it skips the rows a
+        # previous run already made *in that project*. This pipeline never reuses
+        # a project id — each batch is a new one — so the flag can only fail, and
+        # it fails the whole batch before drawing anything ("--resume needs the
+        # run's project"). The real resume is the caller's: every stage skips a
+        # job whose output is already on disk, which is checked per file rather
+        # than per project. So the flag goes on only when a project is named.
+        if project.generation.resume and project.generation.project:
+            cmd += ["--project", project.generation.project, "--resume"]
         code, output = run(cmd, project.root)
         for line in output.splitlines()[-6:]:
             say("    " + line)

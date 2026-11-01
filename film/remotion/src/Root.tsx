@@ -15,7 +15,14 @@ import {M11} from "./shots/M11";
 import {M12} from "./shots/M12";
 import {M13} from "./shots/M13";
 import {M14} from "./shots/M14";
+import {M15} from "./shots/M15";
+import {M16} from "./shots/M16";
+import {M17} from "./shots/M17";
+import {M18} from "./shots/M18";
+import {M19} from "./shots/M19";
 import {M20} from "./shots/M20";
+import {M21} from "./shots/M21";
+import {M22} from "./shots/M22";
 import {Film} from "./film/Film";
 
 export const RemotionRoot: React.FC = () => {
@@ -35,8 +42,15 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="M12" component={M12} durationInFrames={1054} fps={30} width={1920} height={1080} />
       <Composition id="M13" component={M13} durationInFrames={1303} fps={30} width={1920} height={1080} />
       <Composition id="M14" component={M14} durationInFrames={1250} fps={30} width={1920} height={1080} />
+      <Composition id="M15" component={M15} durationInFrames={921} fps={30} width={1920} height={1080} />
+      <Composition id="M16" component={M16} durationInFrames={1440} fps={30} width={1920} height={1080} />
+      <Composition id="M17" component={M17} durationInFrames={942} fps={30} width={1920} height={1080} />
+      <Composition id="M18" component={M18} durationInFrames={900} fps={30} width={1920} height={1080} />
+      <Composition id="M19" component={M19} durationInFrames={3026} fps={30} width={1920} height={1080} />
       <Composition id="M20" component={M20} durationInFrames={1366} fps={30} width={1920} height={1080} />
-      <Composition id="FILM" component={Film} durationInFrames={21941} fps={30} width={1920} height={1080} />
+      <Composition id="M21" component={M21} durationInFrames={1179} fps={30} width={1920} height={1080} />
+      <Composition id="M22" component={M22} durationInFrames={1388} fps={30} width={1920} height={1080} />
+      <Composition id="FILM" component={Film} durationInFrames={31737} fps={30} width={1920} height={1080} />
     </>
   );
 };

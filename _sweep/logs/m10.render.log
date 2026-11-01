@@ -1,0 +1,20 @@
+m10: 0 file(s) synced to remotion/public/m10
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   WARN
+still     PASS  0.4s
+slot      PASS  0.2s
+pose      PASS
+plate     PASS
+public    PASS
+
+— rendering M10 —
+remotion\out\m10-final.mp4  71.80s  117 MB  audio=yes
+OK — every gate ran, every gate passed, and the file carries its narration

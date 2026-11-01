@@ -82,7 +82,11 @@
      "cut": true,
      "word": "Tidak",
      "z": 1,
-     "lands": 13
+     "lands": 13,
+     "nudge": [
+      -0.114,
+      0.239
+     ]
     },
     {
      "name": "figur_pembaca_kuno",
@@ -108,7 +112,11 @@
      "cut": true,
      "word": "abad",
      "z": 5,
-     "lands": 63
+     "lands": 63,
+     "nudge": [
+      0.12,
+      0.0
+     ]
     },
     {
      "name": "foto_teks_kuno",
@@ -121,7 +129,11 @@
      "cut": true,
      "word": "-15.",
      "z": 3,
-     "lands": 75
+     "lands": 75,
+     "nudge": [
+      0.201,
+      0.263
+     ]
     },
     {
      "name": "foto_meja_baca",
@@ -134,7 +146,11 @@
      "cut": true,
      "word": "perlu",
      "z": 4,
-     "lands": 120
+     "lands": 120,
+     "nudge": [
+      0.08,
+      0.0
+     ]
     },
     {
      "name": "kartu_satu_hal",
@@ -147,7 +163,11 @@
      "cut": true,
      "word": "hal.",
      "z": 6,
-     "lands": 155
+     "lands": 155,
+     "nudge": [
+      0.017,
+      -0.01
+     ]
     }
    ],
    "marks": [
@@ -269,7 +289,11 @@
      "cut": true,
      "word": "Sunda",
      "z": 2,
-     "lands": 187
+     "lands": 187,
+     "nudge": [
+      0.155,
+      0.041
+     ]
     }
    ],
    "marks": [
@@ -370,7 +394,11 @@
      "cut": true,
      "word": "mas,",
      "z": 7,
-     "lands": 132
+     "lands": 132,
+     "nudge": [
+      -0.023,
+      -0.087
+     ]
     },
     {
      "name": "nelayan",
@@ -468,7 +496,11 @@
      "cut": true,
      "word": "Batak,",
      "z": 4,
-     "lands": 9
+     "lands": 9,
+     "nudge": [
+      -0.045,
+      0.15
+     ]
     },
     {
      "name": "kartu_lampung_wai",
@@ -481,7 +513,11 @@
      "cut": true,
      "word": "Lampung,",
      "z": 5,
-     "lands": 51
+     "lands": 51,
+     "nudge": [
+      -0.005,
+      0.277
+     ]
     },
     {
      "name": "foto_danau_toba",
@@ -507,7 +543,11 @@
      "cut": true,
      "word": "istimewa",
      "z": 6,
-     "lands": 123
+     "lands": 123,
+     "nudge": [
+      0.01,
+      0.017
+     ]
     },
     {
      "name": "figur_orang_sunda",
@@ -520,7 +560,11 @@
      "cut": true,
      "word": "orang",
      "z": 2,
-     "lands": 158
+     "lands": 158,
+     "nudge": [
+      0.02,
+      0.0
+     ]
     },
     {
      "name": "foto_sungai_sunda",
@@ -546,7 +590,11 @@
      "cut": true,
      "word": "air.",
      "z": 7,
-     "lands": 202
+     "lands": 202,
+     "nudge": [
+      0.176,
+      -0.364
+     ]
     }
    ],
    "marks": [
@@ -925,7 +973,11 @@
      "cut": true,
      "word": "berjalan",
      "z": 2,
-     "lands": 118
+     "lands": 118,
+     "nudge": [
+      0.113,
+      0.113
+     ]
     },
     {
      "name": "foto_batas_jabar",
@@ -1404,7 +1456,11 @@
      "cut": true,
      "word": "dua",
      "z": 1,
-     "lands": 53
+     "lands": 53,
+     "nudge": [
+      -0.16,
+      0.0
+     ]
     },
     {
      "name": "figur_menunjuk_garis",
@@ -1993,7 +2049,11 @@
      "cut": true,
      "word": "video,",
      "z": 1,
-     "lands": 64
+     "lands": 64,
+     "nudge": [
+      0.19,
+      -0.11
+     ]
     },
     {
      "name": "figur_penonton_kedua",

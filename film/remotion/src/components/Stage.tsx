@@ -24,6 +24,17 @@ import {progress} from "./motion";
  * A shot is therefore: one `PaperStage` + 3–5 `Element`s + marks timed to words.
  */
 export const STAGE_W = 1920;
+
+/**
+ * The margin the generator reserves around the frame, mirrored here on purpose.
+ *
+ * `voxkit/emit/camera.py` calls it `MARGIN` and uses it in `zoom_floor`. If this
+ * number and that one ever drift apart, the renderer starts correcting the
+ * generator's camera instead of reproducing it — which is what happened when this
+ * constant did not exist here and the two floors disagreed by 1.5 % on every
+ * panned key.
+ */
+const MARGIN = 0.015;
 export const STAGE_H = 1080;
 
 type Slotish = {x: number; y: number; w: number; h: number};
@@ -257,27 +268,32 @@ export const PaperStage: React.FC<{
         <Camera
           value={
             /*
-              A full-bleed plate cannot be scaled below 1.0, ever.
+              A full-bleed plate cannot be scaled below 1.0, ever — but this net
+              must be the *same* net the generator uses, or it becomes a second
+              director.
 
-              Shot files write zoom as a *multiple of fitZoom* - zoom(els, k) -
-              and fitZoom is a containment ceiling that is frequently under 1.0
-              (s01's is 0.94, because its one element is the whole frame and the
-              function reserves a 3 % margin). At k = 1.0 the camera therefore
-              pulled *out* to 0.94, shrinking a frame-filling plate by 6 % and
-              letting the stage show through as an L of #EFE7D6 down two edges.
-              It looked like a bad plate resample; it was arithmetic.
+              It was not. The floor here was `0.5 / (0.5 - off)` while
+              `voxkit/emit/camera.py` uses `0.5 / (0.5 + 0.015 - off)`, so this
+              one was always the stricter of the two and it always won. At x=0.56
+              the generator allowed zoom 1.099 and the renderer demanded 1.136, so
+              **every pan was silently accompanied by a zoom-in of four to eight
+              per cent**. A pull-out that travelled was cancelled by an
+              unrequested push; a pan read as a size change. The camera keys the
+              gates approved were not the camera on screen — which is the worst
+              kind of failure this project can have, because every check said the
+              move was right.
 
-              On a full-bleed shot the art **is** the frame, so 1.0 is the floor
-              and the move happens above it. The shot file already keeps its keys
-              at or above 1.0 in *multiple* terms for the same reason; this is the
-              guarantee at the one place that cannot be forgotten.
+              So: identical arithmetic, identical margin. The net now only fires
+              if the generator is wrong, and `program` fails the shot when the
+              floor is violated, so the two cannot disagree without someone being
+              told.
             */
             fullBleed
               ? {
                   ...camera,
                   zoom: Math.max(
                     camera.zoom,
-                    0.5 / Math.max(0.001, 0.5 - Math.max(Math.abs(camera.x - 0.5), Math.abs(camera.y - 0.5)))
+                    0.5 / Math.max(0.001, 0.5 + MARGIN - Math.max(Math.abs(camera.x - 0.5), Math.abs(camera.y - 0.5)))
                   ),
                 }
               : camera

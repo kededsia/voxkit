@@ -135,7 +135,8 @@ def erode_alpha(im: Image.Image, px: int) -> Image.Image:
     return out
 
 
-def keep_largest(im: Image.Image) -> Image.Image:
+def keep_largest(im: Image.Image, near: tuple[float, float] | None = None,
+                 reach: tuple[float, float] | None = None) -> Image.Image:
     """Drop alpha specks and edge slivers that are not part of the object.
 
     JPEG ringing along the frame edge leaves pixels a few units outside the
@@ -149,6 +150,20 @@ def keep_largest(im: Image.Image) -> Image.Image:
     object that sits *on* the page, so a blob touching the border is kept only
     when it is comparable in size *and thickness* to the largest blob that does
     not.
+
+    `near` and `reach` are the answer to the failure this stage kept having. Asked
+    for one clipping, the isolate model often returns **all** of them, correctly
+    separated from the page — five cards, every one keyed cleanly. Keeping every
+    blob within 50 % of the largest then keeps all five, and the piece measures as
+    the whole collage. The model was right about *what is ink*; it was wrong about
+    *which ink*. Given the point the plan says the piece is at, and roughly how big
+    it should be, the choice is arithmetic, not a second opinion.
+
+    The window matters more than the choice. A near-magenta wash between two
+    clippings joins them into one blob — m18's `kartu_cara` came back as a single
+    1316x750 component holding five pieces, and no amount of "pick the right blob"
+    can split what the mask has joined. So the search is *bounded* first: only ink
+    inside the window is considered, and then the largest thing in it wins.
     """
     cv2 = _cv2()
     a = np.array(im.getchannel("A"))
@@ -164,6 +179,28 @@ def keep_largest(im: Image.Image) -> Image.Image:
     if mask.sum() == 0:
         return im
 
+    if near is not None and reach is not None:
+        px, py = near
+        rw, rh = reach
+        h0, w0 = mask.shape
+        # A *tight* bound. An earlier version allowed 85 % of the piece's size as
+        # slack on each side, which on a large card covers the whole frame and
+        # bounds nothing. The plan's box is a good enough statement of where the
+        # piece is: 15 % of its own size is room for a torn edge and a slip of
+        # misplacement, and no more.
+        x0 = int(max(0, px - rw * 0.65))
+        x1 = int(min(w0, px + rw * 0.65))
+        y0 = int(max(0, py - rh * 0.65))
+        y1 = int(min(h0, py + rh * 0.65))
+        window = np.zeros_like(mask)
+        if x1 > x0 and y1 > y0:
+            window[y0:y1, x0:x1] = 1
+        bounded = mask & window
+        # If the plan pointed at empty page, the bound is wrong, not the ink — fall
+        # through to the unbounded rules rather than returning nothing.
+        if bounded.sum() > 0.02 * max(1, mask.sum()):
+            mask = bounded
+
     n, lab, stats, _ = cv2.connectedComponentsWithStats(mask, 8)
     if n <= 2:
         return im
@@ -178,7 +215,41 @@ def keep_largest(im: Image.Image) -> Image.Image:
 
     if inner:
         ref_area, ref_id = max(inner)
-        keep = {i for area, i in inner if area >= ref_area * 0.50}
+        rivals = [i for area, i in inner if area >= ref_area * 0.50]
+        # Only a reply with more than one *substantial* blob needs a decision. A
+        # single piece that came back slightly split is not a collage, and letting
+        # the point choose there would throw away the smaller half of a figure.
+        if near is not None and len(rivals) > 1:
+            # Pick the blob whose box surrounds the point the plan asked for.
+            # Distance to the centre alone picks a neighbour when the target is
+            # large and off-centre, so a blob that *contains* the point wins.
+            px, py = near
+            best, best_cost = None, None
+            for i in rivals:
+                x, y = stats[i, cv2.CC_STAT_LEFT], stats[i, cv2.CC_STAT_TOP]
+                bw, bh = stats[i, cv2.CC_STAT_WIDTH], stats[i, cv2.CC_STAT_HEIGHT]
+                inside = x <= px <= x + bw and y <= py <= y + bh
+                dx = (x + bw / 2 - px) / max(1.0, w)
+                dy = (y + bh / 2 - py) / max(1.0, h)
+                cost = (0.0 if inside else 1.0) + (dx * dx + dy * dy) ** 0.5
+                if best_cost is None or cost < best_cost:
+                    best, best_cost = i, cost
+            if best is not None:
+                # A shadow or a torn sliver of the same piece sits next to it and
+                # is part of it; anything not touching the chosen blob is another
+                # piece and is dropped.
+                keep = {best}
+                grown = cv2.dilate((lab == best).astype(np.uint8),
+                                   cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (9, 9)))
+                for _area, i in inner + edge:
+                    if i != best and (grown[lab == i].any()):
+                        keep.add(i)
+                out = im.copy()
+                out.putalpha(Image.fromarray(
+                    np.where(np.isin(lab, list(keep)), a, 0).astype(np.uint8)))
+                return out
+
+        keep = set(rivals)
         ref_thick = min(stats[ref_id, cv2.CC_STAT_WIDTH], stats[ref_id, cv2.CC_STAT_HEIGHT])
         thick = max(0.15 * min(h, w), 0.5 * ref_thick)
         keep |= {

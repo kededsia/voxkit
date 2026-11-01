@@ -1,0 +1,27 @@
+m20: 0 file(s) synced to remotion/public/m20
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   FAIL
+          s02: at f137 the camera (0.56, 0.53, zoom 1.25) cuts a figure that is read as a number (x 0.089..0.529 · y 0.349..0.988). A partial figure on screen is a wrong figure.
+          s04: at f207 the camera (0.63, 0.63, zoom 1.35) cuts a figure that is read as a number (x 0.023..0.532 · y 0.035..0.421). A partial figure on screen is a wrong figure.
+          s04: at f16 the camera (0.45, 0.45, zoom 1.10) cuts a figure that is read as a number (x 0.703..0.938 · y 0.785..0.977). A partial figure on screen is a wrong figure.
+          s05: at f48 the camera (0.62, 0.38, zoom 1.30) cuts a figure that is read as a number (x 0.025..0.575 · y 0.019..0.477). A partial figure on screen is a wrong figure.
+          s05: at f48 the camera (0.62, 0.38, zoom 1.30) cuts a figure that is read as a number (x 0.583..0.994 · y -0.003..0.431). A partial figure on screen is a wrong figure.
+          s05: at f48 the camera (0.62, 0.38, zoom 1.30) cuts a figure that is read as a number (x 0.696..0.977 · y 0.500..0.879). A partial figure on screen is a wrong figure.
+          s06: at f19 the camera (0.38, 0.38, zoom 1.32) cuts a figure that is read as a number (x 0.028..0.437 · y 0.513..0.996). A partial figure on screen is a wrong figure.
+          s06: at f19 the camera (0.38, 0.38, zoom 1.32) cuts a figure that is read as a number (x 0.466..0.962 · y 0.504..1.000). A partial figure on screen is a wrong figure.
+          s06: at f114 the camera (0.56, 0.56, zoom 1.13) cuts a figure that is read as a number (x 0.043..0.467 · y 0.088..0.443). A partial figure on screen is a wrong figure.
+still     PASS  0.3s
+slot      PASS  0.1s
+pose      PASS
+plate     PASS
+public    PASS
+
+REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.

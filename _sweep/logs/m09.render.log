@@ -1,0 +1,19 @@
+m09: 0 file(s) synced to remotion/public/m09
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   FAIL
+          s03 mark 'underline' on 'kartu_mata_air': the pen is down at f52 but the frame (0.55, 0.45, zoom 1.16) does not hold the card it is drawing on (x 0.517..1.012 · y -0.022..0.443). The stroke runs off the page and the eye reads a mark that missed.
+still     PASS  0.5s
+slot      PASS  0.2s
+pose      PASS
+plate     PASS
+public    PASS
+
+REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.

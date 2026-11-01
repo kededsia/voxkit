@@ -18,7 +18,7 @@ from PIL import Image
 
 from voxkit.emit import camera as cam
 from voxkit.emit.choreography import (
-    CardMotion, ModuleProgram, ShotProgram, build_module, travel_for,
+    CardMotion, ModuleProgram, ShotProgram, build_module, creep, travel_for,
 )
 from voxkit.emit.gen_pose import align_to_base
 from voxkit.emit.tsx import num, render_film, render_module, render_root, write, write_indexes
@@ -147,6 +147,60 @@ def test_an_unknown_ease_is_refused():
         cam.ease("bounce", 0.5)
 
 
+def test_no_camera_move_ever_reaches_zero_velocity():
+    """The fault the client reported as "the camera does not move".
+
+    `inOut(cubic)` is stationary at both ends, so with every segment using it the
+    camera stopped dead at every key: accelerate, stop, accelerate, stop. Measured
+    on m03 s04 that was thirty-two frames straddling a key in which the frame
+    changed by less than one per cent — a photograph in the middle of a pan.
+
+    A real camera has no zero-velocity hold. One per cent of the move per one per
+    cent of the segment is the floor; anything less is a stop dressed as an ease.
+    """
+    for name in ("slow", "fast"):
+        for i in range(1, 100):
+            t = i / 100
+            slope = (cam.ease(name, t) - cam.ease(name, t - 0.01)) / 0.01
+            assert slope > 0.2, f"{name} stalls at t={t} (slope {slope:.3f})"
+
+
+def test_the_renderer_agrees_with_the_ease_floor():
+    """The gates measure the Python curve; the film is drawn with the TSX one.
+
+    A mismatch means a gate passing a film nobody is watching, which is the exact
+    failure the whole `program` gate exists to prevent.
+    """
+    from pathlib import Path
+
+    tsx = (Path(__file__).resolve().parents[1]
+           / "film/remotion/src/components/Camera.tsx")
+    if not tsx.is_file():
+        pytest.skip("renderer not present")
+    src = tsx.read_text(encoding="utf-8")
+    assert "EASE_FLOOR" in src, "the renderer lost the velocity floor"
+    assert f"EASE_FLOOR = {cam.EASE_FLOOR}" in src, (
+        "the renderer's floor and `camera.EASE_FLOOR` have drifted apart")
+    # And the curves it floors must be the ones Python implements.
+    assert "Easing.inOut(Easing.cubic)" in src
+    assert "Easing.out(Easing.exp)" in src
+
+
+def test_a_slow_drift_is_recognised_as_a_park():
+    """A park is a *rate*, not a distance.
+
+    m03 s04 panned 3.7 % over two seconds. Every key-distance test calls that a
+    move; the eye calls it a photograph. `creep` has to see it, so it measures
+    the speed the frame changes at, not how far it went.
+    """
+    keys = [cam.CamKey(0, 0.4808, 0.4808, 1.04, "slow"),
+            cam.CamKey(62, 0.5177, 0.5177, 1.0367, "slow")]
+    out = creep(keys, [], [])
+    assert out[0].zoom != pytest.approx(keys[0].zoom), (
+        "a 3.7 %/2 s drift was left alone — the park test is a distance test again")
+
+
+
 def test_keys_are_cumulative():
     keys = [cam.CamKey(0, 0.4, 0.4, 1.1), cam.CamKey(20, 0.6, 0.6, 1.2, "linear")]
     assert cam.resolve(keys, 0) == (0.4, 0.4, 1.1)
@@ -223,6 +277,39 @@ def test_num_trims_trailing_zeros():
     assert num(-0.00001) == "0"
 
 
+def test_a_mark_is_drawn_in_the_layer_of_the_card_it_points_at():
+    """The gesture must sit above its own card and *below* anything pasted over
+    it. Every mark used to be emitted after every card, so a circle drawn around
+    a dictionary whose corner was covered by a label was painted across the label
+    — one gesture appearing to point at two things. The plan was right; the
+    stacking was not, and no gate could see it because the TSX was not inspected.
+    """
+    prog = _program()
+    src = render_module(prog)
+    shot = prog.shots[0]
+    mk = shot.marks[0]
+    card = shot.card(mk.on)
+    assert card is not None and card.z == 4, "fixture changed: 'peta' is z4"
+    # The card wrapper and the mark that belongs to it must share a layer.
+    assert f'<Card src="{card.src}"' in src
+    block = src[src.index("<HandMark"):]
+    block = block[:block.index("/>")]
+    assert f"z={{{card.z}}}" in block, (
+        f"mark on '{card.name}' (z{card.z}) was emitted without that layer: {block}")
+
+
+def test_a_page_mark_keeps_its_own_layer():
+    """A mark with no card is drawn on the page, not on a piece, so it is not
+    pinned to any card's layer — it stays above the collage."""
+    prog = _program()
+    shot = prog.shots[0]
+    page = [m for m in shot.marks if not m.on]
+    if not page:
+        pytest.skip("the fixture has no page mark")
+    src = render_module(prog)
+    assert src.count("z={") > 0
+
+
 def test_write_puts_the_shot_where_remotion_expects_it(tmp_path):
     path = write(_program(), tmp_path)
     assert path == tmp_path / "src" / "shots" / "T01.tsx"
@@ -284,8 +371,13 @@ def test_the_program_gate_accepts_a_module_that_varies(context, monkeypatch):
     prog = _uniform()
     cards = tuple(replace(c, travel=t, enter=c.settle - t)
                   for c, t in zip(prog.shots[0].cards, (14, 17, 21, 14)))
-    camera = tuple(replace(k, ease=e) for k, e in
-                   zip(prog.shots[0].camera, ("slow", "snap", "slow", "snap", "slow")))
+    # Varied eases *and* a camera that goes somewhere: a module where the tempo
+    # answers the voice but the frame never moves is still a module of stills, and
+    # the gate says so.
+    framings = ((0.46, 0.47, 1.06), (0.56, 0.52, 1.22), (0.44, 0.55, 1.14),
+                (0.53, 0.46, 1.28), (0.5, 0.5, 1.03))
+    camera = tuple(cam.CamKey(k.at, x, y, z, e) for k, (x, y, z), e in zip(
+        prog.shots[0].camera, framings, ("slow", "snap", "slow", "snap", "slow")))
     varied = ModuleProgram(module="t01", fps=30, shots=(
         ShotProgram(id="s01", start=0, span=90, plate="plates/s01.jpg",
                     cards=cards, camera=camera),
@@ -305,3 +397,60 @@ def test_the_program_gate_rejects_a_card_that_does_not_land_on_its_word(context,
     monkeypatch.setattr(prog_gate, "program_of", lambda ctx: broken)
     messages = [f.message for f in prog_gate.program(_gate_ctx(context)) if f.level == "fail"]
     assert any("not at its word" in m for m in messages)
+
+
+def test_a_long_park_breathes_in_the_middle_too():
+    """Two breaths are enough for a two-second park and not for a four-second one.
+
+    m15 s05 parked from f174 to f300 with a key every twenty or thirty frames.
+    `creep` put a breath at the head and another at the tail, and the four keys in
+    between kept carrying the plateau value — so `resolve`, which interpolates
+    *between* keys, held 1.0600 flat for 92 frames. The gate was right: a run that
+    breathes at both ends can still be a photograph in the middle.
+    """
+    park = [(174, 0.5074, 1.0151), (205, 0.5283, 1.06), (219, 0.5283, 1.06),
+            (244, 0.5283, 1.06), (286, 0.5283, 1.06), (300, 0.5283, 1.06)]
+    keys = [cam.CamKey(at, x, x, z, "slow") for at, x, z in park]
+    out = creep(keys, [], [])
+    frames = [cam.resolve(out, f) for f in range(174, 301)]
+    for a in range(len(frames) - 30):
+        spread = (max(c[2] for c in frames[a:a + 30])
+                  - min(c[2] for c in frames[a:a + 30]))
+        assert spread > 0.010, (
+            f"f{174 + a}..f{174 + a + 30} is a photograph, not a hold")
+
+
+def test_a_figure_is_whole_on_every_key_or_not_on_screen():
+    """`plate_cam` protects a figure while it is read; the gate checks every key.
+
+    Both are right. m15 s02 sat 0.5 % too far right at f182 and cut the left edge
+    of a figure the voice was not on — a number half off the edge still reads as a
+    number, and it reads as the wrong one. `finish_figures` moves only the keys
+    that clip, so the move the shot was built around survives.
+    """
+    from voxkit.emit.choreography import finish_figures
+
+    figure = Rect.from_edges(0.036, 0.492, 0.415, 0.909)
+    keys = [cam.CamKey(0, 0.52, 0.56, 1.28, "slow"),
+            cam.CamKey(40, 0.30, 0.70, 1.60, "slow")]
+    assert cam.clipped((keys[0].x, keys[0].y, keys[0].zoom), figure)
+    out = finish_figures(keys, (figure,))
+    for k in out:
+        assert not cam.clipped((k.x, k.y, k.zoom), figure), (
+            f"f{k.at} still shows part of a figure")
+    # ...and the key that clipped nothing is not moved by the repair.
+    assert out[1] == keys[1]
+
+
+def test_holds_judges_at_the_precision_the_program_stores():
+    """The emitter rounds a framing to four decimals and the gate has to agree.
+
+    `settle` answers with y = 0.4778205, the program stores 0.4778, and at 1e-6
+    the stored number is a clipped figure. A tenth of a pixel is not a fault, and
+    no repair can fix it: the repair produces the same rounded number.
+    """
+    figure = Rect.from_edges(0.036, 0.492, 0.415, 0.908855)
+    settled = cam.settle((0.431, 0.47782, 1.16), (figure,))
+    stored = tuple(round(v, 4) for v in settled)
+    assert not cam.clipped(stored, figure), (
+        "the stored framing is judged illegal although it is the settled one")

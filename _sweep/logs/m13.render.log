@@ -1,0 +1,22 @@
+m13: 0 file(s) synced to remotion/public/m13
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   FAIL
+          s01: at f63 the camera (0.37, 0.63, zoom 1.35) cuts a figure that is read as a number (x 0.579..0.940 · y 0.307..0.965). A partial figure on screen is a wrong figure.
+          s03: at f83 the camera (0.57, 0.43, zoom 1.16) cuts a figure that is read as a number (x 0.511..0.909 · y -0.025..0.482). A partial figure on screen is a wrong figure.
+          s04: at f18 the camera (0.40, 0.40, zoom 1.23) cuts a figure that is read as a number (x 0.072..0.332 · y 0.361..0.982). A partial figure on screen is a wrong figure.
+          s07: at f135 the camera (0.63, 0.63, zoom 1.35) cuts a figure that is read as a number (x 0.477..0.881 · y 0.746..1.020). A partial figure on screen is a wrong figure.
+still     PASS  0.3s
+slot      PASS  0.1s
+pose      PASS
+plate     PASS
+public    PASS
+
+REFUSED — a gate failed. A film that cannot pass its own checks is not a deliverable.

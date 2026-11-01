@@ -151,6 +151,10 @@ def schema(ctx: Context) -> list[Finding]:
                 out.append(fail("schema", where,
                                 "declares `tertutup_boleh` without `tertutup_alasan` — "
                                 "an exemption with no reason is an exemption nobody can review"))
+            if card.angka_bahan and not card.angka_alasan.strip():
+                out.append(fail("schema", where,
+                                "declares `angka_bahan` without `angka_alasan` — "
+                                "an exemption with no reason is an exemption nobody can review"))
     return out
 
 
@@ -216,12 +220,11 @@ def arrival(ctx: Context) -> list[Finding]:
                 out.append(fail("arrival", f"{shot.id}/{card.name}",
                                 f"settles at f{abs_frame}, {abs_frame - arrivals[i - 1][1]} frame(s) "
                                 f"after '{arrivals[i - 1][0].name}' — two cards that close read as one"))
-        if len(arrivals) > 1:
-            gap = max(b[1] - a[1] for a, b in zip(arrivals, arrivals[1:]))
-            if gap > 45:
-                out.append(warn("arrival", shot.id,
-                                f"{gap} frames with nothing arriving — the screen is empty "
-                                "and the voice is still talking"))
+        # The silence check that used to live here is gone on purpose. It warned
+        # about gaps between arrivals, and it warned on six of m03's eight shots
+        # while the film shipped — because a warning is not a check. The presenter
+        # answers silence with a note, and only the program knows whether it did,
+        # so the check now lives in `gates/program.py` rule 9 and it fails.
     return out
 
 
@@ -407,7 +410,7 @@ def compose(ctx: Context) -> list[Finding]:
         boxes = {}
         for card in shot.cards:
             slot = layout.get(card.name)
-            boxes[card.name] = slot.rect if slot else card.rect
+            boxes[card.name] = card.placed(slot.rect if slot else card.rect)
             off = boxes[card.name].outside()
             if off and not (card.cut or card.bahan == "seal"):
                 out.append(fail("compose", f"{shot.id}/{card.name}",
@@ -449,6 +452,15 @@ def data(ctx: Context) -> list[Finding]:
                     if not bare:
                         continue
                     if bare in spoken or bare.lstrip("0") in spoken:
+                        continue
+                    if card.angka_bahan:
+                        # Read off a photographed sign rather than asserted by
+                        # the film. `schema` has already refused the flag unless
+                        # the plan gave a reason, so this is a reviewed
+                        # exemption, not a hole.
+                        out.append(note("data", f"{shot.id}/{card.name}",
+                                        f"prints {digits!r}, which the narration never says — "
+                                        f"declared material: {card.angka_alasan}"))
                         continue
                     out.append(fail("data", f"{shot.id}/{card.name}",
                                     f"prints the figure {digits!r}, which the narration never says "

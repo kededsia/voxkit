@@ -13,6 +13,8 @@ notices — because the faults listed here are the ones that actually shipped:
 """
 from __future__ import annotations
 
+import json
+
 import pytest
 
 from voxkit.contract import Plan
@@ -330,12 +332,51 @@ def test_one_figure_is_reported_once(context):
 
 
 # ------------------------------------------------------------------- program
+def _layouts(ctx: Context) -> None:
+    """Write a measured layout for every shot, so the program gate has something
+    to build a program from instead of skipping."""
+    for shot_ in ctx.plan.shots:
+        elements = {}
+        for card_ in shot_.cards:
+            slot = card_.rect
+            elements[card_.name] = {"x": slot.cx, "y": slot.cy, "w": slot.w,
+                                    "h": slot.h, "aspect": slot.h / slot.w,
+                                    "src": f"{card_.name}.png", "z": card_.z}
+        path = ctx.project.card_dir(ctx.module, shot_.id) / "layout.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps({"elements": elements}), encoding="utf-8")
+
+
 def test_the_program_gate_skips_without_layouts_and_is_not_a_pass(context):
     """Twelve gates passed on a module whose four declared puppets had never been
     drawn, because a gate with nothing to look at said PASS."""
     result = _run(context, ["program"])
     assert result.results[0].verdict == "N/A"
     assert "layout" in result.results[0].skipped
+
+
+def test_two_strokes_on_two_cards_do_not_crash_the_program_gate(context):
+    """Two marks a few frames apart on different cards cannot both be framed, and
+    the gate has to notice that *and stay standing*.
+
+    It did not: the exemption that recognises the impossible pair referenced a
+    constant the module never imported, so the gate raised instead of answering.
+    The suite was green because the fixture put one mark in each shot, and the
+    expression is only reached when there is an earlier stroke to compare with.
+    Every real module has more than one.
+    """
+    shots = base_shots()
+    shots[0]["marks"] = [
+        ["circle", 10, -4.2, "peta", {"delay": 2}],
+        ["underline", 8, 1.5, "orang", {"delay": 3}],
+    ]
+    ctx = _ctx(context, make_plan(shots=shots))
+    _layouts(ctx)
+    result = _run(ctx, ["program"])
+    assert result.results[0].verdict != "ERROR", result.results[0].error
+    # The second stroke is the crowded one, so only the first may be judged.
+    assert not any("does not hold" in f.message and "orang" in f.message
+                   for f in result.results[0].findings)
 
 
 # --------------------------------------------------------------- the runner

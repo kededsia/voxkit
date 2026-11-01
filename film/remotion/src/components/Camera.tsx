@@ -35,9 +35,27 @@ export type CamKey = {
   ease?: CamEase;
 };
 
+/*
+  Every curve except `step` is blended toward linear by `EASE_FLOOR`, so that no
+  move ever reaches zero velocity.
+
+  `inOut(cubic)` is stationary at both ends — that is what easing out means — and
+  every segment of every shot used it, so the camera *stopped at every key*:
+  accelerate, stop, accelerate, stop. With keys twenty frames apart that reads as
+  a stutter, and it was reported, correctly, as the camera not moving at all.
+
+  `voxkit/emit/camera.py` carries the same floor in `ease()`. The two must agree:
+  the gates measure the Python curve, the film is drawn with this one, and a
+  mismatch means a gate passing a film nobody is watching.
+*/
+const EASE_FLOOR = 0.4;
+
+const floored = (f: (t: number) => number) => (t: number) =>
+  EASE_FLOOR * t + (1 - EASE_FLOOR) * f(t);
+
 const EASE: Record<CamEase, (t: number) => number> = {
-  slow: Easing.inOut(Easing.cubic),
-  fast: Easing.out(Easing.exp),
+  slow: floored(Easing.inOut(Easing.cubic)),
+  fast: floored(Easing.out(Easing.exp)),
   snap: Easing.out(Easing.back(1.5)),
   linear: (t) => t,
   /*

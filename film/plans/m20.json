@@ -990,7 +990,11 @@
      "cut": true,
      "word": "4",
      "z": 7,
-     "lands": 171
+     "lands": 171,
+     "nudge": [
+      0.0,
+      0.2
+     ]
     },
     {
      "name": "kartu_ketiga",

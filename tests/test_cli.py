@@ -103,3 +103,36 @@ def test_no_config_anywhere_is_refused(tmp_path, monkeypatch, capsys):
     monkeypatch.chdir(tmp_path)
     assert main(["plan", "t01"]) == 2
     assert "vox.toml" in capsys.readouterr().err
+
+
+# ------------------------------------------------------- what the backend is asked
+def test_the_frame_is_asked_for_as_a_ratio_the_backend_accepts(tmp_path):
+    """`1920:1080` is a *configuration error* to the backend: it drops the whole
+    batch before drawing one image, and every prompt in it comes back missing.
+    Seven modules sat unbuilt on exactly this, and the failure reads like a
+    network problem rather than a spelling problem."""
+    from voxkit.config import BACKEND_RATIOS, Project
+
+    for w, h, want in ((1920, 1080, "16:9"), (1080, 1920, "9:16"),
+                       (1080, 1080, "1:1"), (1440, 1080, "4:3")):
+        ratio = Project(root=tmp_path, width=w, height=h).ratio
+        assert ratio == want, f"{w}x{h} asked for {ratio}"
+        assert ratio in BACKEND_RATIOS
+
+
+def test_a_declared_ratio_wins_and_an_invalid_one_is_not_passed_on(tmp_path):
+    from voxkit.config import Generation, Project
+
+    assert Project(root=tmp_path, generation=Generation(aspect="4:3")).ratio == "4:3"
+    bad = Project(root=tmp_path, generation=Generation(aspect="1920:1080"))
+    assert bad.ratio == "16:9", "a pixel size must never reach the prompt"
+
+
+def test_the_still_batch_asks_for_a_ratio_and_not_a_pixel_size(film, capsys):
+    """The wiring, not just the helper: a correct `ratio` that no stage reads
+    would still send `1920:1080` and still lose every batch."""
+    assert main(["still", "t01", "--dry"]) == 0
+    cfgs = sorted((film / "build" / "_tmp").glob("t01-*.json"))
+    assert cfgs, "the dry run wrote no batch to inspect"
+    prompt = json.loads(cfgs[0].read_text(encoding="utf-8"))["prompts"][0]
+    assert prompt["aspect_ratio"] == "16:9", prompt["aspect_ratio"]

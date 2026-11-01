@@ -281,6 +281,22 @@ class Card:
     fresh: bool = False
     tertutup_boleh: bool = False
     tertutup_alasan: str = ""
+    #: The printed figure is *material*, not a claim: it is read off a
+    #: photographed sign, so the film is not asserting it and the narration does
+    #: not have to say it. A road sign that reads `PUNCAK 1.500 M` is set
+    #: dressing; a chart that reads `1.500` with nothing behind it is an invented
+    #: fact. The `data` gate cannot tell them apart from the text alone, so the
+    #: plan has to say which one it means — and `schema` refuses the flag without
+    #: a reason, exactly as it does for `tertutup_boleh`.
+    angka_bahan: bool = False
+    angka_alasan: str = ""
+    #: A move, in frame fractions, applied to the *measured* box: `(dx, dy)`, y
+    #: positive downwards. A nudge and not a placement, because the measured box
+    #: carries the piece's real proportions — the aspect of a cutout is a fact
+    #: about the image, while where it lies is a composition decision. The `at`
+    #: prose cannot serve: it is read at still time, and the still is not redrawn
+    #: when a piece needs to move off another one.
+    nudge: tuple[float, float] = (0.0, 0.0)
     motion_basis: str = ""
     cut: bool = False
 
@@ -295,6 +311,20 @@ class Card:
     @property
     def rect(self) -> Rect:
         return self.placement.rect()
+
+    def placed(self, box: Rect) -> Rect:
+        """The box this card actually occupies, once its nudge is applied.
+
+        One definition, because two readers need the answer and they must not
+        drift: the `compose` gate asks whether a piece is buried, and the emitter
+        decides where to draw it. A nudge applied in only one of them is a gate
+        measuring a film nobody is watching — which is the exact failure the
+        `program` gate was written to end.
+        """
+        dx, dy = self.nudge
+        if not dx and not dy:
+            return box
+        return Rect.from_centre(box.cx + dx, box.cy + dy, box.w, box.h)
 
 
 @dataclass(frozen=True, slots=True)
@@ -439,6 +469,21 @@ class Plan:
         return list(self.problems)
 
 
+def _nudge(raw) -> tuple[float, float]:
+    """`[dx, dy]` in frame fractions, or no move at all.
+
+    Deliberately forgiving about shape and strict about meaning: a nudge that
+    cannot be read is no nudge, because a silent move is worse than a missing one
+    — the piece would sit where the still put it and nobody would know why.
+    """
+    if not isinstance(raw, (list, tuple)) or len(raw) != 2:
+        return (0.0, 0.0)
+    try:
+        return (float(raw[0]), float(raw[1]))
+    except (TypeError, ValueError):
+        return (0.0, 0.0)
+
+
 def _card(c: dict, sid: str, stage_aspect: float, problems: list[Finding]) -> Card | None:
     name = str(c.get("name") or "")
     where = f"{sid}/{name or '?'}"
@@ -489,6 +534,9 @@ def _card(c: dict, sid: str, stage_aspect: float, problems: list[Finding]) -> Ca
         fresh=bool(c.get("fresh")),
         tertutup_boleh=bool(c.get("tertutup_boleh")),
         tertutup_alasan=str(c.get("tertutup_alasan") or ""),
+        angka_bahan=bool(c.get("angka_bahan")),
+        angka_alasan=str(c.get("angka_alasan") or ""),
+        nudge=_nudge(c.get("nudge")),
         motion_basis=str(c.get("motion_basis") or ""),
         cut=bool(c.get("cut")),
     )

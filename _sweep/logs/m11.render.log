@@ -1,0 +1,20 @@
+m11: 0 file(s) synced to remotion/public/m11
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   PASS
+still     PASS  0.2s
+slot      PASS  0.1s
+pose      PASS
+plate     PASS
+public    PASS
+
+— rendering M11 —
+remotion\out\m11-final.mp4  29.10s  50 MB  audio=yes
+OK — every gate ran, every gate passed, and the file carries its narration

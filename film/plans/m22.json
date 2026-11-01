@@ -362,7 +362,11 @@
      "cut": true,
      "word": "sesuatu",
      "z": 1,
-     "lands": 128
+     "lands": 128,
+     "nudge": [
+      0.078,
+      -0.045
+     ]
     },
     {
      "name": "foto_monumen",

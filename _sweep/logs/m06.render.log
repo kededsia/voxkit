@@ -1,0 +1,20 @@
+m06: 0 file(s) synced to remotion/public/m06
+schema    PASS
+context   PASS
+ranges    PASS
+arrival   WARN
+marks     PASS
+readable  PASS
+compose   WARN
+data      PASS
+spell     PASS
+program   PASS
+still     PASS  0.2s
+slot      PASS  0.1s
+pose      PASS
+plate     PASS
+public    PASS
+
+— rendering M06 —
+remotion\out\m06-final.mp4  32.50s  49 MB  audio=yes
+OK — every gate ran, every gate passed, and the file carries its narration

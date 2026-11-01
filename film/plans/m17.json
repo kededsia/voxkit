@@ -270,7 +270,11 @@
      "cut": true,
      "word": "Buahnya",
      "z": 1,
-     "lands": 9
+     "lands": 9,
+     "nudge": [
+      -0.086,
+      0.062
+     ]
     },
     {
      "name": "kartu_asam",
@@ -296,7 +300,11 @@
      "cut": true,
      "word": "Dulu",
      "z": 2,
-     "lands": 51
+     "lands": 51,
+     "nudge": [
+      0.08,
+      0.0
+     ]
     },
     {
      "name": "kartu_sepanjang",
@@ -309,7 +317,11 @@
      "cut": true,
      "word": "sungai.",
      "z": 5,
-     "lands": 88
+     "lands": 88,
+     "nudge": [
+      0.223,
+      0.11
+     ]
     },
     {
      "name": "strip_koran_hilang",
@@ -322,7 +334,11 @@
      "cut": true,
      "word": "Sekarang",
      "z": 6,
-     "lands": 120
+     "lands": 120,
+     "nudge": [
+      0.025,
+      0.074
+     ]
     },
     {
      "name": "pencari_pohon",

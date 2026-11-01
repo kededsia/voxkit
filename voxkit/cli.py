@@ -109,6 +109,16 @@ def main(argv: list[str] | None = None) -> int:
         p.add_argument("--no-cache", action="store_true")
         p.add_argument("--quiet", action="store_true", help="only failures and the summary")
 
+    gs = sub.add_parser("gestures", help="what the presenter would draw, and why")
+    gs.add_argument("module", nargs="?", default="")
+    gs.add_argument("--brief", action="store_true", help="print the presenter's charter")
+
+    # Not a gate: a gate answers yes or no, and the question that was actually
+    # asked ("does the camera move?") needed a distribution. See `voxkit.audit`.
+    ca = sub.add_parser("camera", help="measure the camera: zoom spread, pan, dead frames")
+    ca.add_argument("module", nargs="?", default="")
+    ca.add_argument("--all", action="store_true", help="every module that can be built")
+
     for name in ("words", "still", "isolate", "poses", "fills", "plate", "emit", "sync"):
         p = sub.add_parser(name)
         p.add_argument("module")
@@ -116,6 +126,12 @@ def main(argv: list[str] | None = None) -> int:
         p.add_argument("--dry", action="store_true")
         p.add_argument("--force", action="store_true")
         p.add_argument("--shots", default="", help="comma-separated shot ids")
+        p.add_argument("--pieces", default="",
+                       help="comma-separated card names, for a surgical re-isolation")
+        if name == "isolate":
+            p.add_argument("--crop", action="store_true",
+                           help="send a close crop around the piece, for pieces the "
+                                "model keeps returning as the whole page")
 
     r = sub.add_parser("run", help="the whole chain, in order")
     r.add_argument("module")
@@ -151,6 +167,39 @@ def main(argv: list[str] | None = None) -> int:
         return 2
     module = getattr(a, "module", "")
 
+    # `camera` reports; it does not gate. It has to run before `require_module`
+    # because `--all` names no module, and it must not be filtered by `plan`.
+    if a.cmd == "camera":
+        from . import audit
+        from .gates.base import Skipped
+
+        names = project.modules() if a.all else ([module] if module else [])
+        if not names:
+            print("vox camera <module>   or   vox camera --all", file=sys.stderr)
+            return 2
+        worst = 0
+        for name in names:
+            ctx = _context(project, name)
+            if ctx is None:
+                continue
+            try:
+                code, text = audit.camera(ctx)
+            except Skipped as e:
+                print(f"\n{name}: cannot build the program — {e}")
+                continue
+            print(f"\n{name}")
+            print(text)
+            worst = max(worst, code)
+        return worst
+
+    # The charter is about the film, not about one module, so it must not require
+    # a module to exist — asking for it with no plan is the most likely way a
+    # person will read it.
+    if a.cmd == "gestures" and getattr(a, "brief", False):
+        from .presenter import BRIEF
+        print(BRIEF)
+        return 0
+
     try:
         project.require_module(module)
     except FileNotFoundError as e:
@@ -181,13 +230,22 @@ def main(argv: list[str] | None = None) -> int:
     if a.cmd == "words":
         return stages.words(project, module)
 
+    if a.cmd == "gestures":
+        if a.brief:
+            from .presenter import BRIEF
+            print(BRIEF)
+            return 0
+        return stages.gestures(project, module)
+
     only = tuple(s for s in getattr(a, "shots", "").split(",") if s)
     if a.cmd == "still":
         return stages.stills(project, module, profile=a.profile, dry=a.dry,
                              force=a.force, only=only)
     if a.cmd == "isolate":
+        pieces = tuple(s for s in getattr(a, "pieces", "").split(",") if s)
         return stages.isolate(project, module, profile=a.profile, dry=a.dry,
-                              force=a.force, only=only)
+                              force=a.force, only=only, pieces=pieces,
+                              crop=bool(getattr(a, "crop", False)))
     if a.cmd == "poses":
         return stages.poses(project, module, profile=a.profile, dry=a.dry, force=a.force)
     if a.cmd == "fills":

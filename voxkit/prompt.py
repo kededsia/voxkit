@@ -115,12 +115,21 @@ def _place(card: Card) -> str:
 
 
 def still_prompt(plan: Plan, shot: Shot, style: str = STYLE) -> str:
-    """Compile a still from the shot's own plan fields."""
+    """Compile a still from the shot's own plan fields.
+
+    The cap is a *guarantee*, not a hope. gflow rejects a batch whose any prompt is
+    over 2000 characters — the whole batch, not the one row — so an over-long
+    prompt does not lose one still, it loses five and stops the module. m17 and
+    m18 died exactly that way: 2146 characters, and the trim only knew how to
+    shorten the shot's prose, which was not where the length was.
+
+    So the budget is spent in order of what the model can most afford to lose:
+    the shot's mood prose first, then every piece's description in equal measure.
+    A piece's `z` and placement are composition facts and are never cut — losing
+    one of those loses a subject from the page, which costs a redraw instead of a
+    word.
+    """
     cards = shot.ordered()
-    pieces = " ".join(
-        f"(z{c.z}, {_place(c)}) {c.what.strip().rstrip('.')}."
-        for c in cards
-    )
     photos = sum(1 for c in cards if kind(c) == "photo")
     figures = sum(1 for c in cards if kind(c) == "figure")
     demand = []
@@ -131,16 +140,45 @@ def still_prompt(plan: Plan, shot: Shot, style: str = STYLE) -> str:
     carry = (" and ".join(demand) + " carry the page. ") if demand else "the pieces carry the page. "
 
     p1 = f"Irregular Vox zine collage: {shot.latar_plate.strip()} {shot.tata_letak_kolase.strip()}"
-    p2 = f"Cut-out pieces: {pieces}"
     p3 = ("CLIPPING collage, not a board of signs: " + carry +
           "No captions, cutlines or text under photos. Cut-outs are organic silhouettes, "
           "never photo boxes. No slip may cross a face, a head or a neck.")
-    text = f"{p1}\n\n{p2}\n\n{p3}\n\n{style}"
-    if len(text) > MAX_PROMPT:
-        # Trim the prose the author wrote, never a composition law.
-        p1 = _shorten(p1, len(text) - MAX_PROMPT + 40)
-        text = f"{p1}\n\n{p2}\n\n{p3}\n\n{style}"
-    return text
+
+    def compose(whats: list[str], prose: str) -> str:
+        pieces = " ".join(f"(z{c.z}, {_place(c)}) {w.strip().rstrip('.')}."
+                          for c, w in zip(cards, whats))
+        return f"{prose}\n\nCut-out pieces: {pieces}\n\n{p3}\n\n{style}"
+
+    whats = [c.what for c in cards]
+    text = compose(whats, p1)
+    if len(text) <= MAX_PROMPT:
+        return text
+
+    # 1. the prose the author wrote about the page as a whole
+    p1 = _shorten(p1, len(text) - MAX_PROMPT + 40)
+    text = compose(whats, p1)
+    if len(text) <= MAX_PROMPT:
+        return text
+
+    # 2. every piece, by the same share. Cutting one piece to nothing to save
+    #    another is how a page quietly loses its subject.
+    over = len(text) - MAX_PROMPT + 20
+    share = over // max(1, len(whats)) + 1
+    whats = [_cut(w, share) for w in whats]
+    text = compose(whats, p1)
+    # 3. and if a page is still over — six pieces with long names — the last
+    #    resort is a hard cut. An over-long prompt is not sent at all, so a
+    #    truncated page beats a module that never builds.
+    return text[:MAX_PROMPT]
+
+
+def _cut(text: str, by: int) -> str:
+    """Drop `by` characters from the end of a description, at a word boundary."""
+    if by <= 0 or len(text) <= by + 20:
+        return text
+    head = text[:len(text) - by]
+    space = head.rfind(" ")
+    return (head[:space] if space > 20 else head).rstrip(" ,;:-")
 
 
 def _shorten(text: str, by: int) -> str:
@@ -150,16 +188,48 @@ def _shorten(text: str, by: int) -> str:
     return text[:cut + 1] if cut > 40 else text
 
 
-def iso_prompt(card: Card, chroma: str = "#FF00FF") -> str:
-    """Isolate one piece. Never "crop": a crop carries its neighbours."""
-    return (
-        f"Remove everything except this one piece: {card.what.strip().rstrip('.')}. "
-        f"Keep it at the exact same position, the same scale, the same rotation and the "
-        f"same ink as in the attached image. Everything that is not this piece becomes "
-        f"pure flat {chroma} — no other clippings, no page, no newsprint, no shadow, no "
-        f"text that belongs to the page. The piece keeps its own torn paper edge and its "
-        f"own printed detail. Do not add anything, do not redraw it, do not enlarge it."
-    )
+def iso_prompt(card: Card, chroma: str = "#FF00FF", cropped: bool = False) -> str:
+    """Isolate one piece. Never "crop": a crop carries its neighbours.
+
+    The first version named the piece but never said where it was, and nineteen
+    pieces across six modules came back as the whole page — the model was asked to
+    find one clipping among five on a page of halftone newsprint with nothing but
+    a description to go on. A locator costs thirty characters and removes the
+    guess. The page is named too, so "remove the page" is a thing it can obey.
+
+    `cropped` is for the pieces that still failed: the reference is then a close
+    crop around the piece, so the prompt must say the frame is small and the piece
+    is the one in the middle — otherwise "the attached collage page" is a lie and
+    the model returns the crop's whole collage.
+    """
+    p = card.placement
+    where = f"{p.region}, about {p.cx:.0%} across and {p.cy:.0%} down" if p.region \
+        else f"about {p.cx:.0%} across and {p.cy:.0%} down"
+    if cropped:
+        text = (
+            f"The attached image is a close crop of a collage page. It contains one "
+            f"piece to isolate: {card.what.strip().rstrip('.')}, near the centre. "
+            f"Return only that piece, on pure flat {chroma}: the paper it lies on, "
+            f"the paper edge of the crop, every other clipping and every shadow "
+            f"become {chroma}. Keep the piece at the same scale, rotation and ink. "
+            f"If it is a printed card, return only that card's own block of paper. "
+            f"Do not add, redraw, enlarge, move or re-letter anything."
+        )
+    else:
+        text = (
+            f"In the attached collage page, isolate ONE piece: the one that is "
+            f"{card.what.strip().rstrip('.')}, located {where}. "
+            f"Return only that piece, on pure flat {chroma}: the page behind it, every "
+            f"other clipping, every shadow and all page text become {chroma}. "
+            f"Keep the piece at the exact same position, scale, rotation and ink. "
+            f"If it is a printed card, return only that card's own block of paper — not the "
+            f"page it was printed on and not any neighbouring text. "
+            f"It keeps its own torn edge and its own printed detail. Do not add, redraw, "
+            f"enlarge, move or re-letter anything."
+        )
+    if len(text) > MAX_PROMPT:
+        text = _shorten(text, len(text) - MAX_PROMPT + 40)
+    return text
 
 
 def pose_prompt(card: Card, action: str, chroma: str = "#FF00FF") -> str:

@@ -56,6 +56,23 @@ class Paths:
     remotion: str = "remotion"
 
 
+#: The aspect ratios the image backend accepts. It is a closed list, and it
+#: refuses anything else outright: asking for `1920:1080` is a *configuration
+#: error*, the whole batch is dropped before a single image is drawn, and every
+#: prompt in it comes back missing. The project knows its own pixel size, so the
+#: ratio is derived here once instead of being spelled at each call site.
+BACKEND_RATIOS = ("16:9", "9:16", "1:1", "4:3", "3:4")
+
+
+def _ratio(w: int, h: int) -> str:
+    """The accepted ratio closest to `w:h`, by proportion rather than by pixels."""
+    if w <= 0 or h <= 0:
+        return "16:9"
+    want = w / h
+    return min(BACKEND_RATIOS,
+               key=lambda r: abs(want - (int(r.split(":")[0]) / int(r.split(":")[1]))))
+
+
 @dataclass(frozen=True, slots=True)
 class Generation:
     """How images are asked for. `gflow` is the only backend the batch writer
@@ -66,7 +83,11 @@ class Generation:
     profiles: tuple[str, ...] = ("default",)
     batch_size: int = 6          # prompts per call; more reads as one person
     model: str = "nano2"
-    aspect: str = "16:9"
+    aspect: str = ""             # "" means "work it out from the frame"
+    #: A Flow project id, if you want generations to accumulate in one place.
+    #: Empty means each batch gets its own project, which is what the pipeline
+    #: wants: `--resume` is scoped to a project and can only fail without one.
+    project: str = ""
     resume: bool = True
 
 
@@ -81,6 +102,12 @@ class Project:
     paths: Paths = field(default_factory=Paths)
     style: Style = field(default_factory=Style)
     generation: Generation = field(default_factory=Generation)
+
+    @property
+    def ratio(self) -> str:
+        """The aspect string to put in a prompt. Declared, or derived, or 16:9."""
+        declared = self.generation.aspect.strip()
+        return declared if declared in BACKEND_RATIOS else _ratio(self.width, self.height)
 
     # ------------------------------------------------------------------ paths
     def p(self, key: str) -> Path:

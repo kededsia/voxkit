@@ -16,7 +16,14 @@ import {M11} from "../shots/M11";
 import {M12} from "../shots/M12";
 import {M13} from "../shots/M13";
 import {M14} from "../shots/M14";
+import {M15} from "../shots/M15";
+import {M16} from "../shots/M16";
+import {M17} from "../shots/M17";
+import {M18} from "../shots/M18";
+import {M19} from "../shots/M19";
 import {M20} from "../shots/M20";
+import {M21} from "../shots/M21";
+import {M22} from "../shots/M22";
 
 const BUILT: Record<string, React.FC> = {
   m01: M01,
@@ -33,7 +40,14 @@ const BUILT: Record<string, React.FC> = {
   m12: M12,
   m13: M13,
   m14: M14,
+  m15: M15,
+  m16: M16,
+  m17: M17,
+  m18: M18,
+  m19: M19,
   m20: M20,
+  m21: M21,
+  m22: M22,
 };
 
 export const FILM: {id: string; dur: number}[] = [
@@ -51,7 +65,14 @@ export const FILM: {id: string; dur: number}[] = [
   {id: "m12", dur: 1054},
   {id: "m13", dur: 1303},
   {id: "m14", dur: 1250},
+  {id: "m15", dur: 921},
+  {id: "m16", dur: 1440},
+  {id: "m17", dur: 942},
+  {id: "m18", dur: 900},
+  {id: "m19", dur: 3026},
   {id: "m20", dur: 1366},
+  {id: "m21", dur: 1179},
+  {id: "m22", dur: 1388},
 ];
 
 export const Film: React.FC = () => {

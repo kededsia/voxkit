@@ -20,7 +20,7 @@ from __future__ import annotations
 
 from ..contract import TRAVEL_MAX, Finding, fail, note, warn
 from ..emit import camera as cam
-from ..emit.choreography import MIN_SWAP_GAP, build_module
+from ..emit.choreography import MARK_LEAD, MIN_SWAP_GAP, build_module
 from ..layout import Layout
 from ..words import FLOOR
 from .base import Context, Gate, Skipped
@@ -36,6 +36,20 @@ from .base import Context, Gate, Skipped
 # material rather than a fault. A third of the box on another piece is worth
 # looking at.
 MARK_STRAY_WARN = 0.34
+
+# What counts as a camera that moved. A shot must change the frame's size by
+# `DEAD_ZOOM` or travel `DEAD_PAN` of the stage, unless it is too short or too
+# empty for a move to mean anything.
+DEAD_ZOOM = 0.05
+DEAD_PAN = 0.08
+DEAD_SHOT_FRAMES = 60
+#: How long the page may go without anything touching it, in frames. Forty-five
+#: frames is a second and a half — the point at which a viewer stops watching a
+#: film and starts waiting for one. `presenter.GAP_FILL` is the same number from
+#: the other side: the presenter fills what this rule refuses.
+DEAD_AIR = 45
+#: How much the frame must change across a second to count as moving.
+DEAD_STILL = 0.010
 
 
 def program_of(ctx: Context):
@@ -69,6 +83,21 @@ def program_of(ctx: Context):
 
     return build_module(ctx.plan, layouts, narration, plate_for, fps=ctx.fps,
                         audio=f"audio/{ctx.module}.wav", prefix=f"{ctx.module}/")
+
+
+def _busy(shot, a: int, b: int) -> bool:
+    """Is anything on the page moving between these two frames?
+
+    A card in flight, a stroke being drawn, a word being written: any of these
+    gives the eye something to follow, so a camera that holds still is a choice
+    rather than a freeze. Nothing moving at all is dead air, and that is the
+    fault the client named.
+    """
+    if any(c.enter <= b and c.settle >= a for c in shot.cards):
+        return True
+    if any(m.at <= b and m.at + m.duration >= a for m in shot.marks):
+        return True
+    return any(k.at <= b and k.at + k.duration >= a for k in shot.khats)
 
 
 def program(ctx: Context) -> list[Finding]:
@@ -128,14 +157,22 @@ def program(ctx: Context) -> list[Finding]:
                             f"the last camera key is at f{shot.camera[-1].at} of {shot.span} — "
                             "the shot ends while the frame is still travelling"))
 
-        # 4. A figure the viewer reads as a number is never panned out of frame.
+        # 4. A figure the viewer reads as a number is never *half* on screen.
         #
-        # Only when the frame could hold them. Three pieces spread across the
-        # page, or one piece larger than the frame, cannot be framed together at
-        # any zoom the camera is allowed to use — asking anyway produces findings
-        # that describe the picture wrongly ("the camera cuts a figure") and
-        # point the repair at the camera instead of at the composition. That case
-        # is a fact about the shot worth knowing, so it is a note.
+        # The distinction matters, and getting it wrong flattened the camera. A
+        # piece that is entirely off screen cannot be misread; a piece that is
+        # half off screen shows `8.848` as `0.848` at the moment the voice says
+        # the right number. Demanding every figure be *whole* at every key — which
+        # is what this rule used to do — meant any shot with a figure near the
+        # page edge could only ever sit at zoom 1.0, the widest legal framing, and
+        # so had no camera move left to make. Half the film's keys were at 1.000
+        # for exactly this reason.
+        #
+        # Only when the frame could hold them at all. Three pieces spread across
+        # the page, or one piece larger than the frame, cannot be framed together
+        # at any zoom the camera is allowed to use — asking anyway produces
+        # findings that describe the picture wrongly and point the repair at the
+        # camera instead of at the composition. That case is a note.
         span = cam.keep_interval(shot.keep, cam.MARGIN) if shot.keep else None
         oversized = [b for b in shot.keep
                      if b.w / 2 + cam.MARGIN > 0.5 or b.h / 2 + cam.MARGIN > 0.5]
@@ -149,16 +186,18 @@ def program(ctx: Context) -> list[Finding]:
                             f"{len(shot.keep)} piece(s) read as numbers cannot all be framed "
                             "at zoom ≥ 1 — no camera position holds them together"))
         for box in shot.keep:
-            if span is None or box in oversized:
+            if box in oversized or span is None:
+                # `span is None` is the note above: no position holds them all, so
+                # failing the camera for not achieving it would be accusing it of
+                # something the page makes impossible.
                 continue
             for k in shot.camera:
-                half = 0.5 / k.zoom
-                if (abs(box.cx - k.x) + box.w / 2 > half + 1e-6
-                        or abs(box.cy - k.y) + box.h / 2 > half + 1e-6):
+                if cam.clipped((k.x, k.y, k.zoom), box):
                     out.append(fail("program", sid,
                                     f"at f{k.at} the camera ({k.x:.2f}, {k.y:.2f}, zoom "
-                                    f"{k.zoom:.2f}) cuts a figure that is read as a number "
-                                    f"({box}). A partial figure on screen is a wrong figure."))
+                                    f"{k.zoom:.2f}) shows part of a figure that is read as a "
+                                    f"number ({box}). A partial figure on screen is a wrong "
+                                    "figure: either hold it whole or take it off the page."))
                     break
 
     # 5. A hand-drawn mark is drawn ON its card, at the moment the card is the
@@ -184,6 +223,13 @@ def program(ctx: Context) -> list[Finding]:
             # can only satisfy it by deleting a gesture.
             crowded = any(prev.on != mk.on and mk.at - (prev.at + prev.duration) < 2 * MARK_LEAD
                           for prev in shot.marks[:i])
+            # A piece that fills the page cannot be held by a tighter frame, and it
+            # does not need to be: the stroke is drawn inside it, so wherever the
+            # camera is, the stroke is on the card. Demanding the impossible here
+            # is what forced the camera back to zoom 1.000 on every shot with a
+            # full-height cut-out — a rule that can only be satisfied by deleting
+            # the move.
+            crowded = crowded or not cam.frameable(target.rect)
             for f in ((mk.at, mk.at + mk.duration) if not crowded else ()):
                 if not cam.holds(cam.resolve(shot.camera, f), target.rect):
                     x, y, z = cam.resolve(shot.camera, f)
@@ -239,6 +285,180 @@ def program(ctx: Context) -> list[Finding]:
     if len(prog.shots) > 1 and len({c.from_side for s in prog.shots for c in s.cards}) == 1:
         out.append(warn("program", ctx.module,
                         "every card enters from the same side — the arrival reads as a pattern"))
+
+    # 7. A shot is not a still. The camera has to go somewhere.
+    #
+    # This is the rule the client asked for by asking why there was no zoom, pan
+    # or pull-out any more. There was no fault to point at: every key was legal,
+    # every mark was framed, every figure was whole — and the module sat at zoom
+    # 1.000 for half its keys, because 1.0 is the widest legal framing and nothing
+    # asked the camera to be anywhere else. A camera that never moves is not a
+    # camera, and "it looks flat" is not a review note anyone can act on.
+    #
+    # So the move is measured, per shot: either the frame changes size by 5 % or it
+    # travels 8 % of the stage. A shot shorter than two seconds, or with one piece
+    # in it, is allowed to sit still — there is nothing there to move between.
+    for shot in prog.shots:
+        if shot.span < DEAD_SHOT_FRAMES or len(shot.cards) < 2:
+            continue
+        xs = [k.x for k in shot.camera]
+        ys = [k.y for k in shot.camera]
+        zs = [k.zoom for k in shot.camera]
+        travel = max(max(xs) - min(xs), max(ys) - min(ys))
+        if max(zs) - min(zs) >= DEAD_ZOOM or travel >= DEAD_PAN:
+            continue
+        message = (f"the camera does not move: zoom stays inside "
+                   f"{min(zs):.2f}..{max(zs):.2f} and it travels {travel:.2f} of the "
+                   f"stage across {shot.span} frames.")
+        if shot.keep:
+            # A figure near the page edge pins the framing: the camera cannot go
+            # closer without leaving part of a printed number on screen, and it
+            # cannot go wider than 1.0 because the plate has no overscan. That is
+            # a fact about the composition, not a fault in the move, so it is
+            # reported with its cause instead of failing.
+            out.append(warn("program", shot.id,
+                            message + " The shot carries printed figures, and a framing "
+                            "that holds them all is the only one the page allows — so the "
+                            "cause is where the figures were placed, not the camera."))
+        else:
+            out.append(fail("program", shot.id,
+                            message + " Nothing in this shot needs to be held whole, so "
+                            "there is no reason for it to sit still."))
+
+    # 8. The renderer must not be able to correct the camera.
+    #
+    # `PaperStage` raises the zoom of a full-bleed plate so the paper never leaves
+    # the frame. That net used a stricter formula than this module's, so it fired
+    # on every panned key and added an unrequested push of four to eight per cent
+    # — cancelling exactly the pull-out a pan was travelling toward. The render
+    # then disagreed with every gate, and every gate said the move was right.
+    #
+    # The net is now the same arithmetic. This rule keeps it that way: a key that
+    # does not clear the floor is a key the renderer will silently rewrite, so it
+    # is refused here instead.
+    for shot in prog.shots:
+        for k in shot.camera:
+            floor = cam.zoom_floor(k.x, k.y, cam.MARGIN)
+            if k.zoom < floor - 1e-6:
+                out.append(fail("program", shot.id,
+                                f"at f{k.at} the camera (x {k.x:.2f}, y {k.y:.2f}) needs "
+                                f"zoom {floor:.3f} to keep the paper in frame, but the key "
+                                f"asks for {k.zoom:.3f}. The renderer would raise it, so the "
+                                "frame on screen would not be the frame that was checked."))
+                break
+
+    # 9. The page must not go quiet while the voice keeps talking.
+    #
+    # The client's note on m03 at 0:41–0:44 — *"di dalam 3 detik itu tidak ada
+    # layer card yang masuk, penonton dibiarkan bengong"* — described a fault that
+    # every gate in this file called legal. Nothing was wrong: the cards were
+    # placed, the marks were timed, the camera moved. The page had simply stopped
+    # talking, and "nothing arrives" was a warning in the plan gate that 22
+    # modules passed straight through.
+    #
+    # So it is a failure now, and it is measured where the answer lives: a shot
+    # may not run `DEAD_AIR` frames without *something* touching the page — a card
+    # settling, a pen landing, a note being written. A camera move does not count;
+    # a camera that drifts across a still page is the very thing that reads as
+    # dead air.
+    for shot in prog.shots:
+        # A stroke is not an instant: while the pen is down the page is talking,
+        # even though nothing new arrives. So both ends of every stroke count.
+        events = sorted({c.settle for c in shot.cards}
+                        | {f for m in shot.marks for f in (m.at, m.at + m.duration)}
+                        | {f for k in shot.khats for f in (k.at, k.at + k.duration)})
+        edges = [0] + events + [shot.span]
+        for a, b in zip(edges, edges[1:]):
+            if b - a <= DEAD_AIR:
+                continue
+            quiet = f"{b - a} frames ({(b - a) / prog.fps:.1f}s)"
+            # A hold is not the same thing as a dead page. If the frame is
+            # travelling while nothing arrives — a slow push into a photograph, a
+            # pan across a strip — the viewer is being shown something. Only a
+            # page that is still *and* still framed is the fault the client
+            # described, and only that is a failure.
+            x0, y0, z0 = cam.resolve(shot.camera, a)
+            x1, y1, z1 = cam.resolve(shot.camera, min(b, shot.span))
+            travel = max(abs(x1 - x0), abs(y1 - y0))
+            if abs(z1 - z0) >= DEAD_ZOOM or travel >= DEAD_PAN:
+                out.append(warn("program", shot.id,
+                                f"{quiet} pass with nothing arriving between f{a} and "
+                                f"f{b}, though the camera does travel — the page is "
+                                "held, not empty."))
+                continue
+            soon = min((k.at for k in shot.khats if k.at > a), default=None)
+            if soon is not None:
+                # A note is coming, but not soon enough: the gap is still open
+                # until the pen touches down.
+                out.append(fail("program", shot.id,
+                                f"{quiet} pass before the note at f{soon}, on a frame "
+                                "that is not moving either — the silence is not "
+                                "filled, it is postponed."))
+            else:
+                out.append(fail("program", shot.id,
+                                f"{quiet} with nothing arriving and no camera move "
+                                f"between f{a} and f{b}. The presenter may answer "
+                                "silence with a handwritten note, a stroke, or a piece "
+                                "that moves — but not with nothing."))
+
+    # 10. A hold is a creep, not a freeze.
+    #
+    # Rule 7 asks whether the shot moves at all, and m03 passed it while sitting
+    # perfectly still on 43 % of its frames: it moved *somewhere*. The client
+    # watched the film, not the rule, and said "kameranya masih gak bergerak".
+    #
+    # Measured over a window, not frame by frame. A frame-by-frame test is wrong
+    # for the same reason a still photograph of a pan is wrong: an ease-in-out
+    # curve is almost flat at both ends, so the first ten frames of a real move
+    # look identical and a real 17 % pan was reported as a freeze. What the eye
+    # judges is "has this changed in the last second", so that is what is checked.
+    window = min(30, max(8, DEAD_AIR))
+    for shot in prog.shots:
+        if shot.span < DEAD_AIR:
+            continue
+        frames = [cam.resolve(shot.camera, f) for f in range(shot.span)]
+        worst, worst_at = 0, 0
+        for f in range(0, len(frames) - window):
+            base = frames[f]
+            # The *excursion*, not the difference between the ends. A frame that
+            # dips two per cent and comes back has moved, and measuring only its
+            # endpoints calls that a freeze — which is how a real creep was
+            # reported as a still frame and the rule kept failing on a shot that
+            # was breathing.
+            far = max((abs(c[2] - base[2]), max(abs(c[0] - base[0]), abs(c[1] - base[1])))
+                      for c in frames[f:f + window + 1])
+            if far[0] >= DEAD_STILL or far[1] >= DEAD_STILL:
+                continue
+            run = window
+            while f + run < len(frames):
+                c = frames[f + run]
+                if abs(c[2] - base[2]) >= DEAD_STILL or max(abs(c[0] - base[0]),
+                                                            abs(c[1] - base[1])) >= DEAD_STILL:
+                    break
+                run += 1
+            if run > worst:
+                worst, worst_at = run, f
+        if worst < DEAD_AIR:
+            continue
+        # A still camera is only a fault when the *viewer has nothing to watch*.
+        #
+        # m13 s07 held one framing for 48 frames while a card flew in and two
+        # strokes were drawn across it. The frame did not change and the page was
+        # never still — that is a deliberate hold, and failing it teaches the
+        # generator to keep the camera busy during a close reading, which is
+        # worse. The rule the client actually stated was about dead air: "di situ
+        # diem, ga ada layer card yg masuk" — nothing happening. So the allowance
+        # is doubled while something is happening, and a hold that outlasts even
+        # that is still refused, because by then the eye has left the stroke.
+        busy = _busy(shot, worst_at, worst_at + worst)
+        if worst < DEAD_AIR * (2 if busy else 1):
+            continue
+        out.append(fail("program", shot.id,
+                        f"the frame does not change for {worst} frames "
+                        f"({worst / prog.fps:.1f}s) from f{worst_at}"
+                        f"{' — and nothing is arriving either' if not busy else ''}"
+                        " — a hold has to creep, or the viewer is watching a "
+                        "photograph of a film."))
 
     out.append(note("program", ctx.module,
                     f"{len(prog.shots)} shots, {cards} cards, travels {sorted(travels)}, "

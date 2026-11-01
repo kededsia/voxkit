@@ -28,8 +28,22 @@ MARGIN = 0.015
 # halftone to mush, so the camera is capped well below what the geometry allows.
 ZOOM_CAP = 1.35
 
-EMPHASIS = {"antic": 2, "rise": 3, "settle": 8, "antic_pct": 0.05, "over_pct": 0.12}
-DEFAULT_PUNCH = {"rise": 5, "settle": 9, "antic": 2, "antic_pct": 0.015, "over_pct": 0.025}
+# A camera hit: anticipate back, overshoot, settle. The shape is what makes a move
+# read as a body rather than a zoom — but the *proportions* decide whether it reads
+# as a body or as a flinch.
+#
+# These were 3 / 8 frames with a 5 % anticipation and a 12 % overshoot. On a key
+# that has to travel from 1.00 to 1.30 that is a 30 % change in four frames, then a
+# retreat: a twitch, not a move, and the reason the camera felt stiff however much
+# it moved. Longer and shallower — 6 / 14 frames, 2 % anticipation, 4 % overshoot —
+# covers the same distance as something a person would do with their hands.
+EMPHASIS = {"antic": 3, "rise": 6, "settle": 14, "antic_pct": 0.02, "over_pct": 0.04}
+# The opening hit of a shot. `antic_pct` is how far the frame pulls *away* from
+# where it is going before it goes: at 1.5 % the anticipation was invisible, and
+# an invisible anticipation is a zoom with a stutter rather than a body leaning
+# in. It can only be seen at all because the camera now rests above 1.0 — from a
+# resting zoom of 1.03 a 4 % pull lands under the plate's own edge.
+DEFAULT_PUNCH = {"rise": 8, "settle": 16, "antic": 3, "antic_pct": 0.025, "over_pct": 0.03}
 
 
 @dataclass(frozen=True, slots=True)
@@ -56,17 +70,41 @@ class CamKey:
 
 
 # --------------------------------------------------------------------- easing
+#: The least speed a move may have, as a fraction of the constant-velocity speed.
+#:
+#: `inOut(cubic)` is stationary at both ends — that is what "ease in and out"
+#: means — and every segment of every shot used it. So the camera *stopped at
+#: every key*: accelerate, stop, accelerate, stop. With keys twenty frames apart
+#: the viewer sees a stutter, and the client described it, correctly, as the
+#: camera not moving. Measured on m03 s04: thirty-two frames straddling a key in
+#: which the frame changed by less than one per cent.
+#:
+#: A real camera has no zero-velocity hold. Blending the curve toward linear
+#: keeps the softened ends that make a move feel like a lens and removes the dead
+#: frame at the key. The value is a judgement, not a measurement: low enough that
+#: the ends still read as eased, high enough that a second never passes unseen.
+EASE_FLOOR = 0.40
+
+
 def ease(name: str, t: float) -> float:
     """The five curves the renderer knows. `step` is four held positions and no
     interpolation: on a print collage a smooth push reads as a lens, a stepped one
-    reads as a body leaning in."""
+    reads as a body leaning in.
+
+    `slow` and `fast` are blended with linear by `EASE_FLOOR`, so that no move
+    ever reaches zero velocity. `film/remotion/src/components/Camera.tsx` carries
+    the same blend — the two must agree, or the gate measures one film and the
+    render shows another.
+    """
     t = max(0.0, min(1.0, t))
     if name == "linear":
         return t
-    if name == "slow":                       # inOut(cubic)
-        return 4 * t ** 3 if t < 0.5 else 1 - (-2 * t + 2) ** 3 / 2
-    if name == "fast":                       # out(exp)
-        return 1.0 if t >= 1.0 else 1 - 2 ** (-10 * t)
+    if name == "slow":                       # inOut(cubic), floored
+        c = 4 * t ** 3 if t < 0.5 else 1 - (-2 * t + 2) ** 3 / 2
+        return EASE_FLOOR * t + (1 - EASE_FLOOR) * c
+    if name == "fast":                       # out(exp), floored
+        c = 1.0 if t >= 1.0 else 1 - 2 ** (-10 * t)
+        return EASE_FLOOR * t + (1 - EASE_FLOOR) * c
     if name == "snap":                       # out(back(1.5))
         s = 1.5
         return 1 + (s + 1) * (t - 1) ** 3 + s * (t - 1) ** 2
@@ -112,18 +150,23 @@ def zoom_floor(x: float, y: float, margin: float = MARGIN) -> float:
 
 
 def on(rect: Rect, zoom: float = 1.15, dx: float = 0.0, dy: float = 0.0,
-       margin: float = MARGIN) -> tuple[float, float, float]:
+       margin: float = MARGIN, tether_ratio: float = 0.82) -> tuple[float, float, float]:
     """A camera framing that holds a piece, tethered so it never runs off the page.
 
-    The tether is 0.68 of the way from the centre: a camera that lands exactly on
-    a piece at the edge of the page has nowhere to breathe, and the piece is cut
-    by the frame it is supposed to be shown in.
+    The tether keeps the camera from landing exactly on a piece at the edge of the
+    page, where the piece would be cut by the frame it is supposed to be shown in.
+    It used to be 0.68 — two thirds of the way — and that number quietly deleted
+    most of the film's pans: a card at 0.90 across was framed at 0.77, so the pan
+    from centre was 27 % of the frame instead of 40 %, and at a resting zoom of
+    1.04 the whole move came to under 200 px. A tether is a safety rail, not a
+    composition, so it sits at 0.82: far enough to travel, near enough to keep the
+    piece whole.
     """
     zoom = min(zoom, ZOOM_CAP)
     max_off = max(0.02, 0.5 + margin - 0.5 / zoom)
 
     def tether(v: float) -> float:
-        return 0.5 + max(-max_off, min(max_off, (v - 0.5) * 0.68))
+        return 0.5 + max(-max_off, min(max_off, (v - 0.5) * tether_ratio))
 
     return (tether(rect.cx + dx), tether(rect.cy + dy), zoom)
 
@@ -150,41 +193,63 @@ def keep_interval(keep: Sequence[Rect], margin: float = MARGIN):
 
 
 def plate_cam(keys: Sequence[CamKey], margin: float = MARGIN,
-              keep: Sequence[Rect] = ()) -> list[CamKey]:
+              keep: Sequence[Rect] = (),
+              windows: Sequence[tuple[float, float, Rect]] = (),
+              subjects: Sequence[tuple[float, float, Rect]] = ()) -> list[CamKey]:
     """Every key raised to the zoom floor, and every readable figure kept in frame.
 
     `keep` is the pieces whose ink a viewer reads as a number or a name. A camera
-    that pans one of them past the edge leaves a partial figure on screen, and a
-    wrong figure is worse than no camera move at all.
+    that leaves one of them *half* on screen puts a wrong figure on screen, which
+    is worse than no camera move at all.
 
     The frame is placed on the *group*, not on the last box in the list. The
     previous loop adjusted the frame for one box at a time, so each box undid the
     one before it and only the final box was ever kept: a shot with three pieces
-    carrying figures satisfied none of them. Here the interval that keeps every
-    box whole at zoom 1 is computed once and the frame is clamped into it, which
-    is the most any single camera position can do. A group that cannot be framed
-    together has no interval; the camera then keeps the one it is closest to.
+    carrying figures satisfied none of them.
+
+    `settle` does the work, and it prefers a pan to a retreat: a figure can be
+    pushed off the page, where it is harmless, instead of dragging the camera back
+    to the widest framing. That preference is what stopped the camera being flat —
+    with only the retreat available, every figure near an edge pinned its shot to
+    zoom 1.0.
     """
     span = keep_interval(keep, margin)
-    fit = [b for b in keep if b.w / 2 + margin <= 0.5 and b.h / 2 + margin <= 0.5]
+    # A group that no single position can hold is not a constraint, it is a fact
+    # about the page. Chasing it costs the whole move: `settle` reduces the zoom
+    # until it gives up at 1.0, which is why a shot with two figures near opposite
+    # edges was pinned to the widest framing for its entire length. When the group
+    # cannot be framed, the camera keeps its move and the gate says so in a note.
+    workable = keep if span is not None else ()
 
     out: list[CamKey] = []
     for k in keys:
         x, y, zoom = k.x, k.y, k.zoom
+        # A figure has to be whole while it is being *read*, not for the whole
+        # shot. Applied globally, "keep this number in frame" is a demand that the
+        # camera never leave the widest framing — which is exactly what happened:
+        # every key in m03/s01 was pinned to zoom 1.000, and at 1.000 there is no
+        # room to pan, because the page already fills the frame. The figure is
+        # protected inside its own window instead.
+        local = tuple(r for (lo, hi, r) in windows if lo <= k.at <= hi)
+        work = local if windows else workable
+        # What the pen is on at this frame, if anything. A repair that saves a
+        # printed figure by panning away from the card being marked trades one
+        # fault for a worse one: the stroke then runs off the page.
+        subject = next((r for (lo, hi, r) in subjects if lo <= k.at <= hi), None)
         zoom = max(zoom, zoom_floor(x, y, margin))
+        zoom = min(zoom, ZOOM_CAP)
+        # The group interval is still the cheapest answer when it exists: a
+        # framing that holds every figure at once needs no repair at all.
         if span is not None:
             lo_x, hi_x, lo_y, hi_y = span
             x = min(max(x, lo_x), hi_x)
             y = min(max(y, lo_y), hi_y)
-            need = max(max(abs(b.cx - x) + b.w / 2 + margin,
-                           abs(b.cy - y) + b.h / 2 + margin) for b in fit)
-            if need > 0.5 / zoom:
-                zoom = max(1.0, min(zoom, 0.5 / need))
-        out.append(replace(k, x=x, y=y, zoom=min(zoom, ZOOM_CAP)))
+        x, y, zoom = settle((x, y, zoom), work, subject=subject)
+        out.append(replace(k, x=x, y=y, zoom=zoom))
     return out
 
 
-def frame_card(rect: Rect, zoom: float = 1.0) -> tuple[float, float, float]:
+def frame_card(rect: Rect, zoom: float = 1.0, push: float = 0.0) -> tuple[float, float, float]:
     """A framing that holds one piece whole, centred as near as the page allows.
 
     This is the answer to the pen. A mark is drawn on a card, so the card has to
@@ -198,8 +263,17 @@ def frame_card(rect: Rect, zoom: float = 1.0) -> tuple[float, float, float]:
       * the window must stay on the page — `x in [0.5/zoom, 1 - 0.5/zoom]`;
       * ...and still contain the piece — `x in [x1 - 0.5/zoom, x0 + 0.5/zoom]`.
     The centre is used when it satisfies both, otherwise the nearest allowed
-    position. `zoom` is only ever reduced, never raised: this is a correction to a
-    camera, not a second opinion about how tight the shot should be.
+    position.
+
+    `push` is the second half of the answer, and its absence was a fault of its
+    own. Correcting only *downwards* made every marked card a reason to pull the
+    camera back to 1.0 — the widest legal framing, and therefore a still. With 287
+    marks in the film, that pinned half of every module at zoom 1.000. A card the
+    pen is drawing on is the thing the shot is about, so the camera moves *toward*
+    it: `push` is how much of the frame that card should fill, and the zoom it
+    implies is clamped by the three constraints above. Never below the requested
+    zoom and never above what the piece allows, so this cannot make a card leave
+    the frame — it can only make the frame come to the card.
 
     No margin. A piece the size of the page has exactly one legal position, and
     asking for a margin as well turns a solvable constraint into an impossible
@@ -207,6 +281,10 @@ def frame_card(rect: Rect, zoom: float = 1.0) -> tuple[float, float, float]:
     """
     rect = rect.clamped()
     zoom = max(1.0, min(zoom, ZOOM_CAP))
+    if push > 0.0:
+        # The zoom at which the piece's longest side covers `push` of the frame.
+        want = push / max(0.001, max(rect.w, rect.h))
+        zoom = max(zoom, min(ZOOM_CAP, want))
     fit = min(0.5 / max(0.001, rect.w / 2), 0.5 / max(0.001, rect.h / 2))
     zoom = max(1.0, min(zoom, fit))
     half = 0.5 / zoom
@@ -219,6 +297,32 @@ def frame_card(rect: Rect, zoom: float = 1.0) -> tuple[float, float, float]:
     return (place(rect.x0, rect.x1, rect.cx), place(rect.y0, rect.y1, rect.cy), zoom)
 
 
+#: How close to the page edge a piece may sit and still be "held whole". A piece
+#: that is flush with the edge is already cut by the paper: no framing tighter
+#: than the whole page can contain it, so demanding one is demanding the camera
+#: never leave zoom 1.0 — which is the same as asking for no camera at all.
+EDGE = 0.018
+
+
+def frameable(rect: Rect) -> bool:
+    """Can this piece be held whole by a frame tighter than the page?"""
+    r = rect.clamped()
+    if r.w > 0.72 or r.h > 0.72:
+        return False
+    return (r.x0 > EDGE and r.y0 > EDGE
+            and r.x1 < 1.0 - EDGE and r.y1 < 1.0 - EDGE)
+
+
+#: The precision a camera key is stored at. `tsx.num` writes four decimals and
+#: every pass that settles a framing rounds to the same place, so two framings
+#: that differ by less than this are the *same* framing as far as the film is
+#: concerned — at 1080 lines it is a tenth of a pixel. Judging containment at 1e-6
+#: while storing at 1e-4 made the gate and the emitter disagree about a hairline
+#: nobody can see: m15 s02 at f52 was reported as a cut figure because settling to
+#: y = 0.4778205 and storing 0.4778 lost two hundred-thousandths.
+STAGE_EPS = 1e-4
+
+
 def holds(win: tuple[float, float, float], rect: Rect) -> bool:
     """Does this camera position show the piece whole?
 
@@ -229,8 +333,122 @@ def holds(win: tuple[float, float, float], rect: Rect) -> bool:
     x, y, zoom = win
     half = 0.5 / zoom
     r = rect.clamped()
-    return (r.x0 >= x - half - 1e-6 and r.x1 <= x + half + 1e-6
-            and r.y0 >= y - half - 1e-6 and r.y1 <= y + half + 1e-6)
+    return (r.x0 >= x - half - STAGE_EPS and r.x1 <= x + half + STAGE_EPS
+            and r.y0 >= y - half - STAGE_EPS and r.y1 <= y + half + STAGE_EPS)
+
+
+def clipped(win: tuple[float, float, float], rect: Rect) -> bool:
+    """Is the piece *partly* on screen — some of it in, some of it out?
+
+    The distinction this draws is the whole reason the camera was flat. A piece
+    that is entirely off screen is not on screen: nobody can misread a number they
+    cannot see. A piece that is half off screen is a wrong number on screen at the
+    moment the voice says the right one. Only the second is a fault, and treating
+    the two the same forced every shot with a figure near the page edge back to
+    zoom 1.0 — the widest legal framing, and therefore no camera move at all.
+    """
+    if holds(win, rect):
+        return False
+    x, y, zoom = win
+    half = 0.5 / zoom
+    r = rect.clamped()
+    on_x = r.x0 < x + half and r.x1 > x - half
+    on_y = r.y0 < y + half and r.y1 > y - half
+    return on_x and on_y
+
+
+def settle(win: tuple[float, float, float], keep: Sequence[Rect],
+           subject: Rect | None = None, may_reduce: bool = True) -> tuple[float, float, float]:
+    """Make a framing legal without giving up the move that produced it.
+
+    Given a framing and the pieces whose ink is read as a number, this returns the
+    nearest framing that leaves none of them half on screen. Three answers, in
+    order of preference:
+
+      1. **Nothing is clipped.** Return the framing untouched — most of the time.
+      2. **Pan the offending piece off the page.** A half-seen figure becomes an
+         unseen one, which is not a fault, and the pan is a camera move rather
+         than a retreat. Only taken when it leaves `subject` whole, so the piece
+         the shot is about never gets pushed aside to hide a neighbour.
+      3. **Pull back until it is whole.** The old behaviour, and still the right
+         answer when a pan would cost the subject.
+
+    Preference 2 is the one that was missing, and its absence is why half the
+    film's keys sat at zoom 1.000: with only the pull-back available, every figure
+    near the page edge demanded the widest framing, so the camera had nowhere left
+    to travel.
+    """
+    x, y, zoom = win
+    half = 0.5 / zoom
+
+    for _ in range(len(keep) + 1):
+        # The frame itself must be on the page. At zoom 1 there is exactly one
+        # such position — the centre — and `zoom_floor` does not quite guarantee
+        # it: at 1.04 it allows 0.48, which is a hundredth of a percent short of
+        # the 0.481 the window needs, so every piece touching the page edge was
+        # cut by a hairline. A hairline is enough for the gate to be right and the
+        # picture to be wrong.
+        x = min(max(x, half), 1.0 - half)
+        y = min(max(y, half), 1.0 - half)
+
+        bad = [b for b in keep if clipped((x, y, zoom), b)]
+        if not bad:
+            return (x, y, zoom)
+
+        # 2. Pan so the offender is *whole*. This was missing, and its absence is
+        #    why the camera kept collapsing to the widest framing: given a figure
+        #    in the middle of the page, panning it off the edge is often impossible
+        #    (it would need a position outside the page) and pulling back to 1.0 is
+        #    always available — so the only answer the function had was the one
+        #    that kills the move. But a window that can *contain* the figure needs
+        #    no zoom change at all, only a position.
+        contain: list[tuple[float, float, float]] = []
+        for b in bad:
+            r = b.clamped()
+            if r.w > 2 * half or r.h > 2 * half:
+                continue
+            lo_x, hi_x = max(half, r.x1 - half), min(1.0 - half, r.x0 + half)
+            lo_y, hi_y = max(half, r.y1 - half), min(1.0 - half, r.y0 + half)
+            if lo_x <= hi_x and lo_y <= hi_y:
+                contain.append((min(max(x, lo_x), hi_x), min(max(y, lo_y), hi_y), zoom))
+        for nx, ny, nz in sorted(contain, key=lambda c: abs(c[0] - x) + abs(c[1] - y)):
+            cand = (nx, ny, nz)
+            if subject is not None and not holds(cand, subject):
+                continue
+            if any(clipped(cand, b) for b in keep):
+                continue
+            return cand
+
+        # 3. The cheapest pan that puts every offender off the page.
+        options: list[tuple[float, float, float, float]] = []   # (cost, x, y, zoom)
+        for b in bad:
+            r = b.clamped()
+            for nx in (r.x0 - half, r.x1 + half):
+                if half <= nx <= 1.0 - half:
+                    options.append((abs(nx - x), nx, y, zoom))
+            for ny in (r.y0 - half, r.y1 + half):
+                if half <= ny <= 1.0 - half:
+                    options.append((abs(ny - y), x, ny, zoom))
+        for _, nx, ny, nz in sorted(options):
+            cand = (nx, ny, nz)
+            if subject is not None and not holds(cand, subject):
+                continue
+            if any(clipped(cand, b) for b in keep):
+                continue
+            return cand
+
+        # 4. Give up the zoom, not the position — but only if this caller is
+        #    willing to pay with the move. The camera's composition is the thing
+        #    the shot is for; a figure that cannot be accommodated by a pan is
+        #    then reported by the gate rather than silently bought with a still.
+        if not may_reduce:
+            return (x, y, zoom)
+        need = max(max(abs(b.clamped().cx - x) + b.clamped().w / 2,
+                       abs(b.clamped().cy - y) + b.clamped().h / 2) for b in bad)
+        zoom = max(1.0, min(zoom, 0.5 / max(0.001, need)))
+        half = 0.5 / zoom
+
+    return (x, y, zoom)
 
 
 def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
@@ -259,7 +477,10 @@ def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
         *head,
         CamKey(at - antic, *before, "slow", hit=True),
         CamKey(at - 1, *pull, "linear", hit=True),
-        CamKey(at + rise, *over, "step", hit=True),
+        # `fast`, not `step`. A stepped ease holds four positions, which is the
+        # right gesture for a long lean-in on a printed page and a flicker on a
+        # six-frame overshoot: the eye sees four stills rather than one move.
+        CamKey(at + rise, *over, "fast", hit=True),
         CamKey(at + rise + settle, *target, "slow", hit=True),
         *tail,
     ]
@@ -280,11 +501,22 @@ def squeeze(keys: Sequence[CamKey], gap: int = 8) -> list[CamKey]:
     out: list[CamKey] = []
     for k in sorted(keys, key=lambda k: k.at):
         if out and k.at - out[-1].at < gap and not (out[-1].hit and k.hit):
-            if out[-1].hold or out[-1].hit:
+            if k.hold or k.hit:
+                # The arriving key is the promise; the one in front of it is what
+                # gives way. This used to drop `k` — so a hold the pen depends on
+                # could be deleted by a transition it happened to land near, and
+                # the stroke then ran on a card the camera had left. The pen is
+                # the reason the frame is anywhere at all, so it is never the
+                # thing dropped.
+                out.pop()
+                if out and k.at - out[-1].at < gap:
+                    continue
+            elif out[-1].hold or out[-1].hit:
                 continue
-            out.pop()
-            if out and k.at - out[-1].at < gap:
-                continue
+            else:
+                out.pop()
+                if out and k.at - out[-1].at < gap:
+                    continue
         out.append(k)
     return out
 

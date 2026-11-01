@@ -317,6 +317,7 @@
     },
     {
      "name": "peta_tua",
+     "nudge": [0.02, 0.0],
      "bahan": "peta",
      "wujud": "sobekan_pita",
      "semiotik": "Peta tanpa satu pun nama - wilayah sebelum ada yang menamainya",

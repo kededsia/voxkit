@@ -13,6 +13,7 @@ program needs measured slots; the render needs a program that passed its gates.
 """
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import numpy as np
@@ -48,6 +49,46 @@ def words(project: Project, module: str) -> int:
     return 0
 
 
+def gestures(project: Project, module: str) -> int:
+    """Print what the presenter would draw on this module, and why.
+
+    Reads only the plan and the transcript, so it runs before a single image
+    exists. That is the point: a gesture can be argued with on the page of text
+    below, instead of after a render, where the only available verdict is "the
+    arrow looks wrong" and the only available repair is to guess.
+    """
+    from .presenter import present, review
+    from .words import Narration
+
+    plan = Plan.load(project.require_module(module), _aspect(project))
+    path = project.transcript(module)
+    if not path.is_file():
+        _say(f"{module}: no transcript at {path}")
+        return 1
+    narration = Narration.from_file(path, project.fps)
+
+    total = 0
+    complaints = 0
+    for shot in plan.shots:
+        said = narration.between(shot.start, shot.end)
+        head = " ".join(a.word.text for a in said[:9])
+        _say(f"\n{shot.id}  [{shot.start}–{shot.end}]  \"{head}…\"")
+        found = present(shot, narration)
+        if not found:
+            _say("   (nothing to draw: no piece is named in this shot)")
+        for g in found:
+            _say(f"   {g}")
+        # The presenter reading its own page back. Every line here is a choice
+        # that would have looked like a renderer fault six seconds into a render.
+        for bad in review(shot, found, shot.cards, plan.stage_aspect, len(shot.marks)):
+            complaints += 1
+            _say(f"   !! {bad}")
+        total += len(found)
+    _say(f"\n{module}: {total} gesture(s) over {len(plan.shots)} shot(s), "
+         f"{complaints} complaint(s) from the presenter's own review")
+    return 0
+
+
 # ------------------------------------------------------------------- still
 def stills(project: Project, module: str, *, profile: str = "", dry: bool = False,
            force: bool = False, only: tuple[str, ...] = (), runner=None) -> int:
@@ -68,7 +109,7 @@ def stills(project: Project, module: str, *, profile: str = "", dry: bool = Fals
 
     jobs = [Job(text=prompt.still_prompt(plan, s), output=s.id,
                 ref=str(project.style_key()) if project.style_key().is_file() else None,
-                aspect=f"{project.width}:{project.height}",
+                aspect=project.ratio,
                 model=project.generation.model) for s in todo]
 
     outcome = run_batch(project, module, jobs, out, lambda j: out / f"{j.output}_0.jpg",
@@ -93,9 +134,56 @@ def stills(project: Project, module: str, *, profile: str = "", dry: bool = Fals
 
 
 # ----------------------------------------------------------------- isolate
+def _crop_ref(project: Project, module: str, shot_id: str, card, still_path: Path,
+              margin: float = 0.55) -> tuple[Path, dict] | None:
+    """A tight crop around where the plan says the piece is, and its box.
+
+    The model's failure is not precision, it is comprehension: shown a page of five
+    clippings it treats the *whole collage* as "the piece" and returns the page with
+    only the paper ground removed. Locating the piece in words ("upper left, about
+    24 % across") did not fix that. Making the piece dominate the frame does: with
+    one or two clippings in view there is nothing else it could mean.
+
+    The box is returned so `_build_layouts` can map the reply's coordinates back
+    into the still — the reply is measured against its own canvas, which is now the
+    crop, not the page.
+    """
+    from .geometry import Rect
+
+    rect = card.placed(card.rect)
+    pad_x = rect.w * margin
+    pad_y = rect.h * margin
+    x0 = max(0.0, rect.x0 - pad_x)
+    y0 = max(0.0, rect.y0 - pad_y)
+    x1 = min(1.0, rect.x1 + pad_x)
+    y1 = min(1.0, rect.y1 + pad_y)
+    if x1 - x0 < 0.12 or y1 - y0 < 0.12:
+        return None
+    with Image.open(still_path) as im:
+        w, h = im.size
+        box = (round(x0 * w), round(y0 * h), round(x1 * w), round(y1 * h))
+        if box[2] - box[0] < 64 or box[3] - box[1] < 64:
+            return None
+        crop = im.convert("RGB").crop(box)
+        out = project.iso_dir(module) / "crops" / f"{shot_id}-{card.name}.jpg"
+        out.parent.mkdir(parents=True, exist_ok=True)
+        crop.save(out, quality=95)
+    return out, {"box": list(box), "canvas": [w, h]}
+
+
 def isolate(project: Project, module: str, *, profile: str = "", dry: bool = False,
-            force: bool = False, only: tuple[str, ...] = (), runner=None) -> int:
-    """Cut every piece out of its still and measure where it sat."""
+            force: bool = False, only: tuple[str, ...] = (),
+            pieces: tuple[str, ...] = (), crop: bool = False, runner=None) -> int:
+    """Cut every piece out of its still and measure where it sat.
+
+    `pieces` narrows the work to named cards. Without it a repair is shot-level,
+    and `--force` re-cuts pieces that were already right: re-isolating m15 s04 to
+    fix two misses returned the stone basin as the whole page, so the repair made a
+    new fault while fixing an old one. A repair has to be able to touch one piece.
+
+    `crop` sends a tight crop around the piece instead of the whole page, and is the
+    answer to a piece the model keeps returning as the page. See `_crop_ref`.
+    """
     plan = Plan.load(project.require_module(module), _aspect(project))
     iso_dir = project.iso_dir(module)
     spec_dir = project.spec_dir(module)
@@ -111,13 +199,25 @@ def isolate(project: Project, module: str, *, profile: str = "", dry: bool = Fal
             _say(f"{module} {shot.id}: no still — skipped")
             continue
         for card in shot.ordered():
+            if pieces and card.name not in pieces:
+                continue
             stem = f"{shot.id}-{card.name}-a"
             if not force and any((iso_dir / f"{stem}{s}").is_file()
                                  for s in ("_0.jpg", ".png", ".jpg")):
                 continue
+            ref = str(still_path)
+            if crop:
+                made = _crop_ref(project, module, shot.id, card, still_path)
+                if made is not None:
+                    crop_path, meta = made
+                    ref = str(crop_path)
+                    (iso_dir / f"{stem}.crop.json").write_text(
+                        json.dumps(meta), encoding="utf-8")
+                else:
+                    _say(f"  {shot.id}/{card.name}: crop too small — using the page")
             jobs.append((
-                Job(text=prompt.iso_prompt(card, project.style.chroma), output=stem,
-                    ref=str(still_path), model=project.generation.model),
+                Job(text=prompt.iso_prompt(card, project.style.chroma, cropped=crop),
+                    output=stem, ref=ref, model=project.generation.model),
                 shot.id, card.name,
             ))
 
@@ -148,6 +248,69 @@ def _first(iso_dir: Path, stem: str) -> Path | None:
     return None
 
 
+def _map_crop(cx: float, cy: float, w: float, h: float,
+              meta: dict) -> tuple[float, float, float, float]:
+    """A box measured in a crop's own pixels, expressed in page fractions.
+
+    `meta` is `{"box": [x0, y0, x1, y1], "canvas": [w, h]}` — where the crop sat in
+    the still, and how big the still is. Both are pixels, so the answer is a
+    fraction of the page. Getting this wrong does not crash: it puts the piece
+    where the *crop* was, which reads as a composition fault.
+    """
+    x0, y0, x1, y1 = (float(v) for v in meta["box"])
+    cw, ch = (float(v) for v in meta["canvas"])
+    return ((x0 + cx * (x1 - x0)) / cw,
+            (y0 + cy * (y1 - y0)) / ch,
+            w * (x1 - x0) / cw,
+            h * (y1 - y0) / ch)
+
+
+def _reply_target(card, reply_path: Path, project: Project, module: str,
+                  shot_id: str) -> tuple[tuple[float, float] | None, tuple[float, float] | None]:
+    """Where the plan says this piece is, and how big, in the reply's own pixels.
+
+    The reply may be the whole page or a crop of it, so the plan's frame fractions
+    have to travel through the same mapping the slot does — otherwise the piece is
+    picked at the point its *crop* was centred on, which is a different piece.
+    """
+    meta_path = project.iso_dir(module) / f"{shot_id}-{card.name}-a.crop.json"
+    rect = card.placed(card.rect)
+    fx, fy, fw, fh = rect.cx, rect.cy, rect.w, rect.h
+    if meta_path.is_file():
+        try:
+            meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            x0, y0, x1, y1 = (float(v) for v in meta["box"])
+            cw, ch = (float(v) for v in meta["canvas"])
+            if x1 > x0 and y1 > y0:
+                fx = (rect.cx * cw - x0) / (x1 - x0)
+                fy = (rect.cy * ch - y0) / (y1 - y0)
+                fw = rect.w * cw / (x1 - x0)
+                fh = rect.h * ch / (y1 - y0)
+        except (json.JSONDecodeError, KeyError, TypeError, ValueError, ZeroDivisionError):
+            pass
+    if not (0.0 <= fx <= 1.0 and 0.0 <= fy <= 1.0):
+        return None, None      # the plan points outside this reply; do not guess
+    rw, rh = reply_path_canvas(reply_path)
+    return (fx * rw, fy * rh), (fw * rw, fh * rh)
+
+
+def _previous_poses(card_dir: Path) -> dict[str, tuple[dict, ...]]:
+    """The pose wiring a shot already has, by card name.
+
+    A pose entry is `{atFrame, src}` and carries no position, so it stays correct
+    when the card is re-measured: the frames follow the card wherever it now sits.
+    That is why a re-cut may keep them, and why losing them is pure loss.
+    """
+    path = card_dir / "layout.json"
+    if not path.is_file():
+        return {}
+    try:
+        old = Layout.load(path)
+    except (json.JSONDecodeError, KeyError, OSError, ValueError):
+        return {}
+    return {n: s.poses for n, s in old.elements.items() if s.poses}
+
+
 def _build_layouts(project: Project, plan: Plan, only: tuple[str, ...] = ()) -> int:
     """Key each reply, measure its slot, and write the layout.
 
@@ -169,6 +332,13 @@ def _build_layouts(project: Project, plan: Plan, only: tuple[str, ...] = ()) -> 
         card_dir = project.card_dir(module, shot.id)
         card_dir.mkdir(parents=True, exist_ok=True)
 
+        # A re-cut rebuilds the slot, but the pose wiring is a *decision* about
+        # this card and it survives a new measurement. Without this, re-isolating
+        # one piece silently turned every puppet in that shot static — the pose
+        # files stayed on disk and nothing referenced them, which is the exact
+        # failure mode HANDOFF §8 describes as "a skip is not a pass".
+        before = _previous_poses(card_dir)
+
         for card in shot.ordered():
             reply_path = _first(project.iso_dir(module), f"{shot.id}-{card.name}-a")
             if reply_path is None:
@@ -179,7 +349,11 @@ def _build_layouts(project: Project, plan: Plan, only: tuple[str, ...] = ()) -> 
                 image.open_rgb(reply_path), image.parse_color(project.style.chroma),
                 project.style.chroma_tolerance, project.style.chroma_feather)
             keyed = image.erase_rects(keyed, card.erase)
-            keyed = image.keep_largest(keyed)
+            # Which ink, not which is biggest: the plan says where the piece lies
+            # and roughly how big it is, so the reply is asked for the ink there.
+            # See `keep_largest`.
+            point, reach = _reply_target(card, reply_path, project, module, shot.id)
+            keyed = image.keep_largest(keyed, near=point, reach=reach)
             keyed = image.erode_alpha(keyed, 2)
 
             bb = image.alpha_bbox(keyed)
@@ -200,6 +374,18 @@ def _build_layouts(project: Project, plan: Plan, only: tuple[str, ...] = ()) -> 
             w = (bb[2] - bb[0] + 2 * pad) / rw
             h = (bb[3] - bb[1] + 2 * pad) / rh
 
+            # A cropped reference means the reply's canvas is a window onto the page,
+            # not the page. Map back before anything is measured against the still,
+            # or the piece lands where its crop used to be — which looks like a
+            # composition error and is really a coordinate-space error.
+            crop_meta = project.iso_dir(module) / f"{shot.id}-{card.name}-a.crop.json"
+            if crop_meta.is_file():
+                try:
+                    meta = json.loads(crop_meta.read_text(encoding="utf-8"))
+                    cx, cy, w, h = _map_crop(cx, cy, w, h, meta)
+                except (json.JSONDecodeError, KeyError, TypeError, ZeroDivisionError):
+                    _say(f"  {shot.id}/{card.name}: unreadable crop box — ignored")
+
             # Put the card back on the print it was cut from, then measure again
             # against the page — a slot that is faithful to a wrong asset is still
             # a wrong slot.
@@ -219,6 +405,7 @@ def _build_layouts(project: Project, plan: Plan, only: tuple[str, ...] = ()) -> 
                 w=fit.rect.w, h=fit.rect.h,
                 aspect=piece.height / piece.width,
                 src=str((card_dir / f"{card.name}.png").relative_to(project.root)),
+                poses=before.get(card.name, ()),
                 z=card.z,
             )
             _say(f"  {shot.id}/{card.name}: {piece.width}x{piece.height}, "
@@ -260,9 +447,19 @@ def poses(project: Project, module: str, *, profile: str = "", dry: bool = False
             if slot is None:
                 continue
             frames = _spread(card.lands, shot.span, len(card.poses_planned), gap)
-            if len(frames) < 2:
-                _say(f"  {shot.id}/{card.name}: no room for two swaps — left static")
+            if not frames:
+                # The card lands too late to change at all. This is a plan fault,
+                # not an asset gap, and the `pose` gate will say so.
+                _say(f"  {shot.id}/{card.name}: lands too late for any swap — left static")
                 continue
+            if len(frames) < len(card.poses_planned):
+                # A puppet that lands at frame 122 of a 151-frame shot has room for
+                # one change, not three. Refusing anything under two swaps left it
+                # static for ever and failed the gate; one change is still a puppet
+                # that moves, and the remaining declared actions are honestly not
+                # drawn rather than pretended.
+                _say(f"  {shot.id}/{card.name}: room for {len(frames)} of "
+                     f"{len(card.poses_planned)} declared swaps")
             for i, (at, action) in enumerate(zip(frames, card.poses_planned)):
                 pose = f"pose{i + 2}"
                 stem = f"{shot.id}-{card.name}-{pose}"
@@ -278,7 +475,9 @@ def poses(project: Project, module: str, *, profile: str = "", dry: bool = False
                 ))
 
     if not jobs:
-        _say(f"{module}: every declared pose is already drawn")
+        wired = _rewire_existing(project, plan, gap)
+        _say(f"{module}: every declared pose is already drawn"
+             + (f" — {wired} frame(s) re-wired" if wired else ""))
         return 0
     if dry:
         _say(f"{module}: {len(jobs)} frame(s) would be drawn in "
@@ -291,7 +490,9 @@ def poses(project: Project, module: str, *, profile: str = "", dry: bool = False
     _say(f"{module}: {outcome.summary()}")
     if outcome.missing:
         return 1
-    return _wire_poses(project, plan, jobs)
+    _wire_poses(project, plan, jobs)
+    _rewire_existing(project, plan, gap)
+    return 0
 
 
 def _spread(lands: int, span: int, count: int, gap: int) -> list[int]:
@@ -303,6 +504,84 @@ def _spread(lands: int, span: int, count: int, gap: int) -> list[int]:
         out.append(t)
         t += gap
     return out
+
+
+def _rewire_existing(project: Project, plan: Plan, gap: int = 22) -> int:
+    """Make every pose frame agree with its card again, and reference it.
+
+    Two faults live here, and both are silent:
+
+    * the stage used to return early when there was nothing left to draw, so after
+      a re-isolation rebuilt the layout the pose files were still on disk and
+      nothing pointed at them. Every later run said "every declared pose is already
+      drawn" and wired nothing. A puppet went static and no gate could see it,
+      because the plan's declaration and the disk agreed.
+    * a frame is aligned onto its card's canvas *when it is drawn*. Re-cut the card
+      and the frame is the wrong size: the renderer maps a card's canvas width onto
+      its stage width, so the figure jumps on every swap. m17's `orang_di_lubang`
+      kept a 697x483 frame over a 300x377 card — 43 % of its size.
+
+    The raw reply is still in `iso/`, so both are fixed from local files. No
+    generation, and no reason for either to survive a run.
+    """
+    from .emit.gen_pose import align_to_base
+
+    module = plan.module
+    wired = 0
+    for shot in plan.shots:
+        card_dir = project.card_dir(module, shot.id)
+        path = card_dir / "layout.json"
+        if not path.is_file():
+            continue
+        layout = Layout.load(path)
+        touched = False
+        for card in shot.ordered():
+            if not card.poses_planned:
+                continue
+            slot = layout.get(card.name)
+            base = card_dir / f"{card.name}.png"
+            if slot is None or not base.is_file():
+                continue
+            frames = _spread(card.lands, shot.span, len(card.poses_planned), gap)
+            entries = []
+            for i in range(len(card.poses_planned)):
+                pose = f"pose{i + 2}"
+                out_png = card_dir / f"{card.name}_{pose}.png"
+                raw = _first(project.iso_dir(module), f"{shot.id}-{card.name}-{pose}")
+                if raw is not None:
+                    # Re-align whenever the frame is not already the card's canvas.
+                    try:
+                        with Image.open(base) as b, Image.open(out_png) as f:
+                            stale = f.size != b.size
+                    except OSError:
+                        stale = True
+                    if stale or not out_png.is_file():
+                        keyed = image.chroma_key(
+                            image.open_rgb(raw),
+                            image.parse_color(project.style.chroma),
+                            project.style.chroma_tolerance, project.style.chroma_feather)
+                        keyed = image.erase_rects(keyed, card.erase)
+                        keyed = image.keep_largest(keyed)
+                        keyed = image.erode_alpha(keyed, 2)
+                        aligned, note = align_to_base(image.open_rgba(base), keyed, card.name)
+                        aligned.save(out_png)
+                        _say(f"  {shot.id}/{card.name}/{pose}: re-aligned to "
+                             f"{aligned.width}x{aligned.height} — {note}")
+                if not out_png.is_file() or i >= len(frames):
+                    continue
+                entries.append({"atFrame": frames[i],
+                                "src": f"{module}/cards/{shot.id}/{card.name}_{pose}.png"})
+            entries.sort(key=lambda e: e["atFrame"])
+            if tuple(entries) == slot.poses:
+                continue
+            layout.elements[card.name] = Slot(
+                name=slot.name, x=slot.x, y=slot.y, w=slot.w, h=slot.h,
+                aspect=slot.aspect, src=slot.src, z=slot.z, poses=tuple(entries))
+            touched = True
+            wired += len(entries)
+        if touched:
+            layout.save(path)
+    return wired
 
 
 def _wire_poses(project: Project, plan: Plan, jobs) -> int:

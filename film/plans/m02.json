@@ -249,6 +249,7 @@
     },
     {
      "name": "petugas_desa",
+     "nudge": [-0.126, 0.034],
      "bahan": "figur",
      "wujud": "siluet_organik",
      "semiotik": "Perangkat desa berbaju batik memegang buku register - yang mencatat 183 desa itu",
@@ -593,6 +594,7 @@
    "cards": [
     {
      "name": "peta_purwakarta",
+     "nudge": [0.006, -0.075],
      "bahan": "peta",
      "wujud": "siluet_organik",
      "semiotik": "Peta kabupaten Purwakarta bertanda pin merah - sebaran, bukan satu titik",
@@ -737,6 +739,7 @@
     },
     {
      "name": "foto_sungai",
+     "nudge": [-0.126, 0.034],
      "bahan": "foto",
      "wujud": "siluet_organik",
      "semiotik": "Sungai dangkal di atas batu dengan bambu di tepinya - jenis tempat yang paling sering jadi awalan Ci",
