@@ -14,5 +14,8 @@ film/remotion/public/
 film/remotion/out/
 film/audio/*.wav
 
-# Workspace memory, not part of the package.
-.workbuddy-ai/
+# Workspace memory, not part of the package. Skills are: they are instructions the
+# package ships with, and a rule that lives only on one machine is not a rule.
+.workbuddy-ai/*
+!.workbuddy-ai/skills/
+!.workbuddy-ai/skills/**
