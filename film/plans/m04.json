@@ -235,7 +235,7 @@
    "emphasis": [
     {
      "frame": 201.8,
-     "word": "Chai",
+     "word": "Cai",
      "motion": "landing"
     },
     {
@@ -282,7 +282,7 @@
      "at": "upper left, centred at 0.22 across, about 0.38 of the frame wide",
      "cut": true,
      "word": "batu.",
-     "z": 1,
+     "z": 2,
      "lands": 55
     },
     {
@@ -295,7 +295,7 @@
      "at": "left, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Cilencang.",
-     "z": 4,
+     "z": 5,
      "lands": 96
     },
     {
@@ -334,7 +334,7 @@
      "at": "lower right, centred at 0.78 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "tanah.",
-     "z": 2,
+     "z": 1,
      "lands": 167
     },
     {
@@ -347,7 +347,7 @@
      "at": "right, centred at 0.74 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Caah.",
-     "z": 5,
+     "z": 4,
      "lands": 205
     }
    ],
@@ -427,7 +427,7 @@
      "at": "left, centred at 0.30 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "datang",
-     "z": 4,
+     "z": 3,
      "lands": 26
     },
     {
@@ -440,7 +440,7 @@
      "at": "centre, centred at 0.56 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Lewi.",
-     "z": 6,
+     "z": 5,
      "lands": 88
     },
     {
@@ -466,7 +466,7 @@
      "at": "right, centred at 0.86 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Situ.",
-     "z": 5,
+     "z": 4,
      "lands": 189
     },
     {
@@ -479,7 +479,7 @@
      "at": "left, centred at 0.42 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "terlalu",
-     "z": 3,
+     "z": 6,
      "lands": 33
     }
    ],
@@ -566,7 +566,7 @@
      "at": "centre, centred at 0.56 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Rawah.",
-     "z": 2,
+     "z": 3,
      "lands": 79
     },
     {
@@ -579,7 +579,7 @@
      "at": "right, centred at 0.80 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "terjun.",
-     "z": 3,
+     "z": 2,
      "lands": 142
     },
     {

@@ -18,6 +18,7 @@ export * from "./Camera";
 export * from "./Sticker";
 export * from "./Marker";
 export * from "./Khat";
+export * from "./Stamp";
 export * from "./HandStroke";
 export * from "./MarkerRing";
 export * from "./MarkerScribble";

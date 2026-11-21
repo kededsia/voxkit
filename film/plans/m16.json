@@ -1,13 +1,13 @@
 {
  "plan_version": 2,
  "module": "m16",
- "klaim": "Sungai bukan benda, melainkan warisan yang tidak boleh dijual. Dalam naskah lain dari tahun 1518, Tata Ruang Sunda dijelaskan dengan urutan yang dimulai dari air: Cai Nyusu (mata air), lalu imah (rumah), lalu pipir (sisi rumah), lalu buruan (halaman) - mata air adalah titik nol. Rumah tidak dibangun di tengah; rumah dibangun setelah air. Jadi nama Chi adalah alamat: yang pertama dihitung di sebuah tempat bukan rumah, bukan pasar, bukan istana, tapi airnya.",
+ "klaim": "Sungai bukan benda, melainkan warisan yang tidak boleh dijual. Dalam naskah lain dari tahun 1518, Tata Ruang Sunda dijelaskan dengan urutan yang dimulai dari air: Cai Nyusu (mata air), lalu imah (rumah), lalu pipir (sisi rumah), lalu buruan (halaman) - mata air adalah titik nol. Rumah tidak dibangun di tengah; rumah dibangun setelah air. Jadi nama Ci adalah alamat: yang pertama dihitung di sebuah tempat bukan rumah, bukan pasar, bukan istana, tapi airnya.",
  "payoff": "Papan nama desa yang lewat di jalan bukan hiasan: setiap nama adalah alamat yang urutannya dimulai dari air.",
  "serah": "papan-papan nama desa yang akan dibaca satu per satu, untuk m17",
  "terima": "Patanjala sebagai perintah menjaga air, dari m15",
  "konteks_modul": {
   "konteks_budaya": "Arsip filologi dan tata ruang: naskah lontar, papan nama desa, foto udara kampung, koran daerah. Lanskap: mata air, rumah panggung, halaman, jalan desa, pasar, istana. Palet halaman: kertas koran lawas berwarna Vox - mustard yellow, crimson red, charcoal black, cream; dilarang abu-abu monokrom merata dan dilarang warna digital modern.",
-  "tesis_modul": "Tata Ruang Sunda (1518) menyusun tempat dengan urutan yang dimulai dari air: Cai Nyusu, imah, pipir, buruan. Mata air adalah titik nol; rumah dibangun setelah air, bukan di tengah. Karena itu nama Chi berfungsi sebagai alamat - yang pertama dihitung bukan rumah, pasar atau istana, melainkan airnya.",
+  "tesis_modul": "Tata Ruang Sunda (1518) menyusun tempat dengan urutan yang dimulai dari air: Cai Nyusu, imah, pipir, buruan. Mata air adalah titik nol; rumah dibangun setelah air, bukan di tengah. Karena itu nama Ci berfungsi sebagai alamat - yang pertama dihitung bukan rumah, pasar atau istana, melainkan airnya.",
   "babak_narasi": [
    {
     "babak": "Babak 12 - Patanjala",
@@ -32,7 +32,7 @@
      "s06",
      "s07"
     ],
-    "fokus": "Rumah dibangun setelah air; nama Chi adalah alamat; kembali ke jalan."
+    "fokus": "Rumah dibangun setelah air; nama Ci adalah alamat; kembali ke jalan."
    }
   ]
  },
@@ -173,7 +173,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "naskah",
-     "z": 1,
+     "z": 3,
      "lands": 31,
      "nudge": [
       0.155,
@@ -190,7 +190,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "1518,",
-     "z": 5,
+     "z": 4,
      "lands": 73
     },
     {
@@ -216,7 +216,7 @@
      "at": "centre of the frame, centred at 0.48 across, about 0.24 of the frame wide, down at 0.43",
      "cut": true,
      "word": "dijelaskan",
-     "z": 2,
+     "z": 5,
      "lands": 157
     },
     {
@@ -229,7 +229,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide, down at 0.56",
      "cut": true,
      "word": "urutan",
-     "z": 3,
+     "z": 2,
      "lands": 180
     },
     {
@@ -242,7 +242,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "air.",
-     "z": 4,
+     "z": 1,
      "lands": 218
     }
    ],
@@ -291,7 +291,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Nyusu,",
-     "z": 1,
+     "z": 3,
      "lands": 25,
      "nudge": [
       -0.114,
@@ -308,7 +308,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "air.",
-     "z": 3,
+     "z": 4,
      "lands": 57
     },
     {
@@ -321,7 +321,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "imah,",
-     "z": 2,
+     "z": 1,
      "lands": 101
     },
     {
@@ -334,7 +334,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.60",
      "cut": true,
      "word": "rumah.",
-     "z": 4,
+     "z": 6,
      "lands": 128
     },
     {
@@ -432,7 +432,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "halaman.",
-     "z": 4,
+     "z": 5,
      "lands": 65,
      "nudge": [
       0.01,
@@ -466,7 +466,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.58",
      "cut": true,
      "word": "titik",
-     "z": 3,
+     "z": 4,
      "lands": 137,
      "nudge": [
       0.03,
@@ -483,7 +483,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide, down at 0.88",
      "cut": true,
      "word": "nol.",
-     "z": 5,
+     "z": 3,
      "lands": 151,
      "nudge": [
       0.096,
@@ -548,7 +548,7 @@
     973
    ],
    "babak": "Babak 13 - Urutan",
-   "peran_retoris": "Akibat - rumah dibangun setelah air, jadi nama Chi adalah alamat",
+   "peran_retoris": "Akibat - rumah dibangun setelah air, jadi nama Ci adalah alamat",
    "jenis": "SUBJECT",
    "latar_plate": "Full-bleed address page on aged newsprint: a charcoal block behind the house, a mustard strip along the bottom left, printed columns showing through, masking tape.",
    "tata_letak_kolase": "Built after the water, not in the middle: the 'tidak di tengah' strip high left, the builder low left, the 'setelah air' slip high right, the house by the stream low centre, and the address slip along the bottom.",
@@ -577,7 +577,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "dibangun",
-     "z": 1,
+     "z": 5,
      "lands": 77,
      "motion_basis": "Dua kaki dan satu lengan penahan, selebar 0.24 frame; bambu tetap sejajar bahu. pose1 = melangkah, bambu di bahu kanan.",
      "poses_planned": [
@@ -605,7 +605,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "setelah",
-     "z": 5,
+     "z": 3,
      "lands": 92,
      "nudge": [
       0.02,
@@ -639,7 +639,7 @@
      "at": "centre of the frame, centred at 0.30 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "begitu,",
-     "z": 3,
+     "z": 1,
      "lands": 142,
      "nudge": [
       -0.221,
@@ -650,9 +650,9 @@
      "name": "kartu_alamat",
      "bahan": "cetak",
      "wujud": "sobekan_pita",
-     "semiotik": "Kesimpulan modul - nama Chi bukan hiasan, ia alamat",
-     "semantik": "NAMA CHI ADALAH ALAMAT",
-     "what": "a torn cream slip with big stencilled type reading 'CHI ADALAH ALAMAT'",
+     "semiotik": "Kesimpulan modul - nama Ci bukan hiasan, ia alamat",
+     "semantik": "NAMA CI ADALAH ALAMAT",
+     "what": "a torn cream slip with big stencilled type reading 'CI ADALAH ALAMAT'",
      "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.88",
      "cut": true,
      "word": "alamat.",
@@ -715,7 +715,7 @@
      "at": "upper centre of the frame, centred at 0.50 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "menunjukkan",
-     "z": 1,
+     "z": 2,
      "lands": 25
     },
     {
@@ -741,7 +741,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.62",
      "cut": true,
      "word": "tempat",
-     "z": 2,
+     "z": 6,
      "lands": 93,
      "motion_basis": "Kepala dan satu lengan, selebar 0.24 frame; kaki tetap. pose1 = berdiri, tangan kanan di pinggang.",
      "poses_planned": [
@@ -769,7 +769,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "rumah,",
-     "z": 3,
+     "z": 5,
      "lands": 116
     },
     {
@@ -782,7 +782,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.62",
      "cut": true,
      "word": "pasar,",
-     "z": 4,
+     "z": 3,
      "lands": 153
     },
     {
@@ -795,7 +795,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide, down at 0.62",
      "cut": true,
      "word": "istana,",
-     "z": 5,
+     "z": 4,
      "lands": 189
     },
     {
@@ -808,7 +808,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.87",
      "cut": true,
      "word": "airnya.",
-     "z": 6,
+     "z": 1,
      "lands": 236
     }
    ],
@@ -899,7 +899,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "tadi.",
-     "z": 2,
+     "z": 3,
      "lands": 57
     },
     {
@@ -912,7 +912,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "desa",
-     "z": 3,
+     "z": 2,
      "lands": 117
     },
     {

@@ -198,6 +198,67 @@ outright, and two tests were rewritten to say so.
 
 ---
 
+## P4 — The camera is decided, not decorated
+
+> A camera move is not chosen by the camera. It is chosen by the beat, and the
+> camera only executes it.
+
+This is the client's fifth instruction, in their words:
+
+```
+itu juga masukin ke bagian intent, jadi ga ada gerak liar,
+yg ada gerak kamera terukur yg sengaja dengan tujuan presentasi dan fokus penonton
+```
+
+**The failure it names.** v3 had `reason="arrive"` on every camera key — a *label*
+attached after `punch_for` and `creep` had already moved the frame. Nothing chose
+anything; the last pass to run did, and then named it. Sixteen gates were green
+while the film had no camera movement at all, because the renderer never read the
+label. A vocabulary is not a decision.
+
+**What replaces it** (`voxkit/intent.py`). One `Beat` goes in, one `Decision` comes
+out, and the decision carries every consequence:
+
+```
+register   what this beat is doing      emphasis / name / support / correction / quiet
+colour     and in what ink              yellow / coral / sky / ink / chalk / amber
+pen        and at what volume           marker / felt / ballpoint / chalk
+vehicle    how a note arrives           write / stamp
+arrival    how a card is placed         carried / placed / unrolled / snapped / dropped
+move       what the camera does         punch / drift / arrive / pull / hold / none
+```
+
+Six words for the camera, and each one is a *shape*, not a direction:
+
+| move | what it is | when the beat earns it |
+|---|---|---|
+| `punch` | three frames in, eight back | a piece lands on a stressed word, with runway |
+| `arrive` | a steady push that ends on the thing | something being named |
+| `drift` | 1–2 % over most of the shot | a sentence being spoken |
+| `pull` | the frame opens 10 % | a list, or a page already full |
+| `hold` | the frame stops | a line to be read, or ink going down |
+| `none` | nothing at all | a beat that adds nothing |
+
+**Three restraints keep it from becoming a lookup table**, and they are the whole
+design:
+
+1. **A stroke never punches.** The pen emphasises by drawing; the camera emphasises
+   by arriving. A push-in *while* a hand underlines the same word is two gestures
+   pointing at one thing, which cancels both — and `pin_pen_windows` deletes the
+   hit anyway, so the decision would have been a wish.
+2. **A punch that follows a punch is a twitch.** Two hits inside `PUNCH_GAP` (30
+   frames) are one hit; the second becomes an `arrive`.
+3. **The emphasis line is relative to the module.** A presenter does not carry a
+   decibel meter; they lean on the strongest word *in the paragraph they are
+   speaking*. An absolute threshold silenced four modules completely.
+
+**And one rule of enforcement**: a decided move that nothing performs is worse than
+no decision. `program` rule 13 fails a `punch` with no hit behind it. Every demotion
+happens *in the decision*, before a key exists — never as an executor quietly
+dropping what it was told to do.
+
+---
+
 ## What v3 keeps from v3
 
 These are better here than in v2 and must not be traded away for the above:
@@ -214,7 +275,73 @@ These are better here than in v2 and must not be traded away for the above:
 
 ---
 
-## The failure mode all three share
+## P5 — A check that reads nothing has verified nothing
+
+> Zero findings is not the same as clean. If a check cannot say how much it read,
+> its PASS is a claim about its own input, not about the film.
+
+This one is not about the film's look. It is about why three visual faults reached
+a render while every gate was green.
+
+`lexicon.json` was authored with the key `words`; the spelling gate read `terms`.
+`.get` with a default returned an empty list, the loop never ran, and the gate
+reported **PASS** on twenty-two modules. The tests used the reader's key, so they
+agreed with the bug. `CHI` was drawn into a still next to a card that already
+printed `CI` correctly.
+
+**The shape.** A check whose input silently becomes empty does not fail — it
+succeeds, quietly, forever. And the empty input is invisible precisely because the
+output is the same as a clean run: nothing.
+
+**The restraint, three parts.**
+
+1. **One reader per file.** The shape of `lexicon.json` is decided in
+   `voxkit/lexicon.py` and nowhere else. A caller cannot choose a key and get an
+   empty answer that looks like a clean bill of health.
+2. **Empty input is an error, not a pass.** A non-empty file that yields no terms
+   raises. `N/A` is not PASS; neither is `checked 0 of 0`.
+3. **Read where the next fault will be, not where the last one was.** `CHI`
+   survived in `klaim`, `tesis_modul`, `fokus` and `semiotik` — four fields no
+   earlier version opened, while the two it *did* open were the two that got fixed.
+   The gate now walks every string in the plan and the transcript.
+
+**How to tell you have this bug.** Ask each gate: *how many things did you look
+at?* If it cannot answer, it has not checked anything. The same question found
+`facts.json` — twelve terms, read by no gate at all, because it used the key the
+reader wanted and nothing ever called the reader.
+
+---
+
+## P6 — A stack has two directions, and every check looks up
+
+`readable` asks what is on top of a card. `figure` asks what is on top of a head.
+`compose` asks how much of a piece is covered. All three look **up**, and all three
+were green on a page where the same card existed twice.
+
+The duplicate was underneath. The isolate stage re-draws a piece rather than
+matting it, so a piece that something lies across comes back carrying that thing's
+sheet — blank, letters gone, because the model read the letters as a separate
+object. When the layout put the real card at its own slot, the blank copy stayed
+behind it, offset. The client saw "dua kartu identik ditumpuk".
+
+**The shape.** A fault that is already covered is invisible to every rule about
+covering. A correct stack is not evidence of a correct page.
+
+**The restraint.** A gate about what is on top does not answer what is underneath,
+and adding a fourth "what covers what" rule would not have found this either. What
+found it was asking the *asset* a question about itself — is this piece bare paper
+exactly where another piece sits, and printed all around it? — which needs no
+notion of top at all.
+
+**And the instrument is not the fix.** The prompt had said "every other clipping
+becomes the ground", which tells the model what to delete and never what to put
+there. Deleting a thing that lies across a piece means inventing what is
+underneath, and the model will not invent. The sentence that says what to draw
+instead is the fix; the gate only proves it worked.
+
+---
+
+## The failure mode they all share
 
 Every principle above is a **restraint**: do not move here, do not reuse this
 colour, do not cover this. v3's engineering instinct is the opposite — it adds a

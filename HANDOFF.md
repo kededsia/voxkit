@@ -59,14 +59,33 @@ per image**.
 
 ## 3. State, module by module
 
-**All 22 modules have programs and assets.** Fourteen passed every gate before the
-asset pass; the rest were built last and are being repaired.
+**All 22 modules have programs and assets.** `program` has no failures anywhere,
+`spell` and `data` pass on all 22, `double` passes on 21, and `readable` on 15.
+What is left is `figure` (9 modules), `readable` (7) and `motion` (21 stale
+`.mp4`s: the gate measures pixels, and only m02 has been re-rendered against the
+current emitter).
+
+| gate | two sessions ago | before this session | now |
+|---|---|---|---|
+| `spell` | 22 PASS over **zero** terms | **22 PASS** over 9 terms | 22 PASS |
+| `data` | — | 22 PASS | 22 PASS |
+| `double` | gate did not exist | gate did not exist | **21 / 22** |
+| `readable` | 3 / 22 | 16 / 22 | 15 / 22 |
+| `figure` | 9 / 22 | 14 / 22 | 13 / 22 |
 
 | module | state |
 |---|---|
-| m01–m13, m20 | **all gates pass** (m03 rendered: `out/m03-final.mp4`, 54.53 s) |
-| m14 | built; `pose` was missing, `repair.sh` draws it |
-| m15–m19, m21, m22 | built last; isolation misses being re-cut (see §4) |
+| m02 | **every gate PASS**, re-cut at 2K on s01, re-synced, re-rendered (37.30 s) |
+| m01, m06, m07, m12–m15, m17, m21 | `readable` + `figure` + `spell` + `double` PASS; `.mp4` stale |
+| m03, m08, m09, m11 | **`readable` fails** — a person stands on a map, burying place names |
+| m04, m16, m20 | **`figure` fails** — a person stands on a card's lettering |
+| m05, m10, m18, m22 | both |
+| m19 | `double` fails on s04 (named, needs a new still) + `figure` on s03 |
+
+The 15 `readable`/`figure` failures are **one fault**: a person overlaps a printed
+surface and no `z` order satisfies both rules — below, the head is covered; above,
+the lettering is buried. The still must be recomposed. `uncover.py` refuses all of
+them for the same reason, now on record (§5.24).
 
 The gate table, at any moment:
 
@@ -342,70 +361,364 @@ A gate failure in this area is never "the presenter is lazy". It is one of these
 three bounds being wrong, and the three interact: fixing one alone moves the fault
 to another module. Test all 22 after touching any of them.
 
+### 5.18 One decision per beat, and the camera is one of the consequences
+
+`voxkit/intent.py` is the file that answers "paham kok gak dikerjain dengan bener".
+The history it replaces is worth keeping in view, because it looks like progress
+and was not:
+
+- **The camera** carried `reason="arrive"` on every key — a label attached *after*
+  `punch_for` and `creep` had already moved the frame. The renderer never read the
+  label, so the film had no camera movement at all while sixteen gates were green.
+- **The markers** had `INTENTS` (five), `PRESET` (five) and `for_gesture` (seven
+  words); measured, `for_gesture` was called twice, both with a hardcoded string,
+  and every note was registered with the literal `"emphasis"`.
+
+So one `Beat` goes in, one `Decision` comes out, and the decision carries the
+register, the colour, the pen, the note's vehicle, the card's arrival and the
+camera's move. The camera is not allowed to choose. `MOVES` is
+`punch / drift / arrive / pull / hold / none` and each name is a shape with a
+reason, not a direction — see `PRINCIPLES.md` P4.
+
+Three restraints keep it from becoming a lookup table, and all three were learned
+by breaking them:
+
+1. **A stroke never punches.** The pen emphasises by drawing, the camera by
+   arriving. `pin_pen_windows` deletes any hit inside a stroke anyway, so a punch
+   there is a wish. (This cost two rule-13 failures on m02 before it was believed.)
+2. **A punch that follows a punch is a twitch.** Two hits inside `PUNCH_GAP` are
+   one; `intent.settle_moves` demotes the second to `arrive`.
+3. **The emphasis line is relative to the module** (`intent.stress_line`). An
+   absolute 0.52 silenced m04, m12, m15 and m19 completely — their narration is
+   quieter — and those modules came out with every key easing `slow`. There is
+   deliberately no floor: a relative line always admits the module's own loudest
+   word, which is the claim being made.
+
+**A decided move is performed or demoted, never dropped.** `program` rule 13 fails
+a `punch` with no hit behind it, and every demotion happens inside the decision,
+before a key exists. When this was first wired up, eight modules failed rule 13 at
+once — the decision asked for hits the executor had nowhere to place — and the
+gate was right.
+
+### 5.19 Widen the pen windows *before* merging them, not after
+
+`pin_pen_windows` absorbs a neighbouring key within eight frames of a window edge,
+because a freeze that opens three frames after a key reads as a jump cut. It did
+that *inside* the per-run loop, and widening is exactly the distance that separated
+one stroke's window from the next — so the later run's freeze deleted the closing
+key the earlier run had just written, and the earlier stroke was drawn on a frame
+that drifted 6.6 % of the page. m09 s04, m11 s03 and m14 s07 all reported it.
+
+Widen every window first, merge what now touches, then freeze once per run. A run
+has one value by construction — which the docstring had claimed since the first
+version.
+
+### 5.20 The shot opens on the page and reaches its first piece by `OPEN_BY`
+
+The opening key used to be `(0.48, 0.48, 1.04)` — which is where a card of ordinary
+size sits, so it was doing double duty as the first card's framing. A shot whose
+pieces were all the same size therefore opened and ended at the same zoom: m01 s05
+travelled 0.06 of the stage across 235 frames with six strokes in it.
+
+Now the shot opens at `(0.5, 0.5, 1.0)` — the whole page — and the first card gets
+its own key like every other, reached by `OPEN_BY = 24` frames rather than on its
+settle. Without that cap m04 s03 held a wide page for 46 frames while the voice
+spoke, and `program` failed it for dead air. Going to the place the piece will
+appear is not a guess; it is the one thing the shot is about.
+
+### 5.21 `punch_for` is gone, and so is the second hit shape
+
+`punch_for` fired an unconditional hit on every shot's first card, in its own
+`EMPHASIS` (6/14) shape. Two systems deciding the same thing meant the film could
+hit twice on one frame: on m17 the opening hit sat on the same frame as the decided
+one, `PUNCH_GAP` dropped the decided hit, and the gate called it. Both the function
+and the second shape are deleted. A hit that fires on every first card regardless
+of what the voice is doing is the "gerak liar" the client objected to.
+
+### 5.22 Stillness is only a fault *outside* the pen
+
+The whole-film number lies in both directions: a camera drifting under every stroke
+is moving and wrong, and a film that stops for the pen is still and right. m02
+measures 49 % still frames, which sounds like the original complaint — and every
+single still run of 20 frames or more sits inside a pen window. Split by ink:
+
+```
+still INSIDE the pen   96.2%   (the stroke is read on a still frame)
+still OUTSIDE the pen  30.9%   median 1.85px/frame  p90 20.1px  >2px: 48.9%
+still runs >= 20f: 13, of which 0 have no pen
+```
+
+Use `python _sweep/review/alive.py m02` for this split. Any future "the camera is
+too still" claim has to survive it.
+
+### 5.23 A check that iterates nothing reports PASS, not silence
+
+The spelling gate passed on all twenty-two modules while checking zero words.
+
+`film/lexicon.json` is authored with the key `words`. The gate read
+`ctx.lexicon.get("terms", [])`. `.get` with a default returned an empty list, the
+loop body never ran, no finding was produced, and the gate reported **PASS** —
+not `Skipped`, not "no lexicon". The tests set `ctx.lexicon = {"terms": [...]}`,
+which is the *reader's* key, so the tests agreed with the bug.
+
+The result was `CHI` drawn into m02 s03 by the model, faithfully, on the same page
+that already printed `BERAWALAN CI` correctly. `ci` was in the lexicon with
+`never: []`, so even a working reader had nothing to match.
+
+Two rules came out of it, and they are now `voxkit/lexicon.py`:
+
+1. **One reader.** `Lexicon.from_dict` accepts both authored keys and raises when a
+   file has entries and none parse. A caller cannot pick a key and get an empty
+   answer that looks like a clean bill of health.
+2. **A lexicon that yields nothing is broken, not clean.** `len(lex) == 0` with a
+   non-empty file is a `ValueError`, not a pass.
+
+The gate also stopped reading only cards. `CHI` survived in `klaim`,
+`tesis_modul`, `fokus` and `semiotik` — four prose fields no earlier version
+opened, while the two fields it *did* open were the two that got fixed. It now
+walks every string in the plan (`_strings`, via `dataclasses.asdict`) plus the
+**transcript**, because a card is checked *against* the transcript by `arrival`
+and `data`, so a word misspelled in both agreed with itself and passed every gate.
+
+Running it for the first time found the same fault in five more modules:
+
+```
+m03 m04 m05 m16   "chai"   for spoken cai   (water)
+m20               "cahi"   for cai — the error lexicon.json was written to record
+m10               "sansekerta" for sanskerta
+```
+
+`cahi` is the strongest evidence available: `lexicon.json`'s own note describes
+m20's `CAHI` bug, and `CAHI` was still in m20. The file documented a fix that was
+never verified.
+
+**`chai` is not a variant of `ci`.** It belongs to `cai` (water). Listing it under
+both made `forbidden()` a dict where the last entry silently won, so that now
+raises too. `Lexicon.forbidden()` refuses a variant claimed by two words.
+
+### 5.24 Two rules, one total order, no solution
+
+`readable` (R6: a printed card sits above what covers it) and the head rule (a
+person is never covered head to neck) point opposite ways, and `z` is one number
+per piece. Every total order fails one of them:
+
+```
+                    readable    figure
+people last          3 / 22     9 / 22     <- the previous choice
+words on top        13 / 22    14 / 22     <- and it is not close
+```
+
+So the order is decided by material and then **repaired per pair**:
+`tools/stack.py::lift_people` raises a person above any piece that actually
+crosses their head band, and only there. `readable` is 16/22 and `figure` 14/22
+under that; both were worse under either total order.
+
+Two corrections came with it:
+
+* **`cetak` above `figur`.** Words are what R6 protects; a hand has no head. The
+  old order put people last and left a hand lying across a nameplate's words.
+* **A map at the bottom of the stack is the page.** Requiring it above everything
+  is not a legibility rule but an impossibility — and it is what put the map over
+  the "SELURUH KABUPATEN" slip in the first place. A `peta` at the lowest `z` now
+  yields to slips, photographs and pins, and `compose` still fails a page buried
+  past 55 %. It does **not** yield to a person: a silhouette on place names buries
+  them, and `test_a_map_under_a_figure_is_caught` holds that line.
+
+The 14 remaining `readable`/`figure` failures are one fault, not two: **a person
+overlaps a printed surface, and no `z` order satisfies both rules.** Below → head
+covered; above → lettering buried. The still has to be recomposed. `uncover.py`
+already refused these, and now the reason is on record.
+
+### 5.25 The camera can only point at 12 % of the page
+
+This is the root of "kameranya gak gerak" and of the reviewer's sixth finding —
+"saat voice bilang lembah tidak ada zoom ke lembah". The camera is not lazy. It
+is geometrically unable to look at most of the picture.
+
+`cam.on()` clamps the frame centre so the frame never runs off the page:
+
+    max_off = 0.5 + MARGIN - 0.5 / zoom
+
+At `card_zoom` (median 1.06) that is **±0.043** — four per cent of the page. At
+`ZOOM_CAP` (1.35) it is **±0.145**. So the camera can only ever address the
+central 29 % of the frame, and:
+
+```
+pieces the camera can point at, even at the zoom cap:  103 / 852  = 12%
+pieces out of reach at any legal zoom:                 749        = 88%
+```
+
+`m02/s04/foto_lembah_luas` sits at (0.27, 0.75). It is 38 % off centre. No legal
+zoom can centre it, so its `arrive` key at f139 comes out at (0.457, 0.543) —
+which is the page centre, which is the same key every other non-stressed card
+gets. The camera "arrives" and does not move, because the two framings are the
+same framing.
+
+**Why raising the zoom is not the fix.** Making `card_zoom` reach-aware pushed
+86 % of all pieces to the cap — a film that sits at 1.35 everywhere is not a film
+that moves either. And the pieces are not too big: the median piece is 0.51 of
+the frame and only 9 % would overflow at 1.35. The problem is not size, it is
+*position*.
+
+**What this means.** The collage spreads presented pieces across the whole page,
+but the camera can only address the middle. Either presented pieces are composed
+inside `|centre − 0.5| ≤ 0.145`, or the camera is allowed to show past the page
+edge — which needs the plate to be full-bleed beyond the frame, and it is not.
+That is a composition decision, not a camera one, and it is why two waves of
+"make the camera move" did not fix it.
+
+---
+
+### 5.26 A piece carries the sheet that lay on top of it
+
+The client's first finding — "dua kartu identik ditumpuk, yang di belakang
+terpisah tapi karena bentuknya identik dan bukan puppets jadi nya aneh" — is not a
+`z` fault and not a composition fault. The stacking order was right and both pieces
+were where the plan put them. Every gate was green.
+
+The isolate stage does not cut a matte. It **re-draws** the piece: it sends the
+page and a description and gets one object back on a chroma ground. The prompt said
+"the page behind it, every other clipping, every shadow and all page text become
+`#FF00FF`" — which tells the model what to delete and never what to put *there*.
+When another clipping lies across the piece, deleting it means inventing what is
+underneath, and the model does not invent: it keeps the other clipping's paper and
+leaves it blank, letters gone.
+
+Measured on the two pieces the client saw:
+
+```
+m02/s01  foto_ruang_arsip <- plang_dinas        95% of the sign's footprint is
+                                                bare paper; 28% printed around it
+m19/s04  kartu_bukan_itu <- kartu_lampung_wai   96% bare, 33% printed around it
+```
+
+and nothing else in 852 pieces passes the same test. So it is measurable, and the
+measure is two-sided on purpose: bare paper alone is not evidence — a photograph of
+a white wall is bare paper, and so is a card's own margin.
+
+**The source fix** is a sentence in `prompt.OVERLAP`: where another clipping lies
+across this piece, take it away completely and *continue this piece's own surface*
+where it was. **The instrument** is `gates/assets.double`, which names the pair and
+the two numbers and tells you the re-cut command. **The restraint** is that a
+re-cut is a re-roll: `m19/s04/kartu_bukan_itu` came back as a page-sized card four
+times running (fit 0.14–0.40), and the honest state for that shot is a gate that
+still fails until the still is recomposed.
+
+### 5.27 The generator returns 1376x768 at every aspect, and the stage draws 2976 px
+
+Every still, piece and fill in the film is 1376x768 — `nano2`, `nano-pro` and the
+1K rung alike. The film is 1920x1080 and `Stage.tsx` draws the page at `OVERSCAN`
+1.55 so the camera may leave it. So every asset is drawn at **2.16x**:
+
+```
+pieces drawn above 1:1                      851 / 852
+median upscale                              2.16x
+max (m01/s05 pendatang)                     2.99x
+```
+
+At 1:1 the newsprint is mush and the halftone screen has gone grey.
+
+**What does not work.** A larger model (measured: `nano-pro` also returns
+1376x768). A local resize (adds no detail — the renderer already resamples). 4K
+(Ultra-only).
+
+**What works.** `gflow image upscale --scale 2k`, which is a re-render at 2752x1536,
+not a resample. Two properties make it usable and both were measured: it is aligned
+to the pixel (best correlation at `dx=dy=0`, so no piece moves), and it is visibly
+crisper at the same display size. `voxkit/resolution.py` applies it to every raw
+reply before it is keyed, driven by `[generation] upscale = "2k"`.
+
+**Why it is not simply on everywhere.** The upscaler only accepts images Flow
+generated, so every piece has to be generated *again* to get a media id: 852
+pieces, 165 stills, 165 fills. Each re-cut is a re-roll. `m02/s01` is done and
+renders clean; the rest of the film is still 1K and still soft.
+
 ---
 
 ## 6. What is left, in order
 
-**The film is rendered.** `film/remotion/out/tanah-air-full.mp4` — 1920×1080,
-31 737 frames, 1057.94 s, 1.69 GB. Verified:
+**The intent rewrite invalidated every render.** A chapter whose `.tsx` is newer
+than its `.mp4` is stale, and after `voxkit/intent.py` every chapter is stale. The
+`motion` gate measures the *pixels*, so it fails 21 of 22 modules for the honest
+reason: those films were drawn from a program that no longer exists.
 
-- `ffprobe -count_frames` → 31 737, which is exactly the sum of the 22 chapters and
-  exactly what the `FILM` composition declares. The join is not short.
-- `ffmpeg -vf freezedetect=n=-55dB:d=0.8` → **zero** frozen spans across seventeen
-  and a half minutes. Not one 0.8-second hold anywhere in the film. That is the
-  measurement of the client's original complaint ("kameranya masih gak bergerak")
-  coming back empty.
-- A frame at 12:52 and a frame a second later show the camera closer and a stroke
-  landed — the m15 s05 park that used to be 92 dead frames now creeps.
-
-What remains is judgement, not work:
-
-1. **Watch it.** The gates measure arithmetic; a person measures whether the film
+1. **m02 is the reference render** (`out/m02-final.mp4`, 37.30 s). Every gate ran
+   and passed, `motion` included. Judge the intent system on it before spending an
+   hour re-rendering the rest.
+2. **Eight modules cannot be rendered at all** until their `figure` failure is
+   cleared — `render` refuses a module that fails a gate, and that refusal is
+   correct. The ten heads are listed in §3; `tools/uncover.py` refuses all ten for
+   good reasons (4 are maps that stay above a figure under R6, 6 would bury a
+   card's lettering), so each needs a **recomposed still**, not a repair.
+3. **Then** `film/render_all.sh` — it re-gates, re-renders what is stale, and
+   refuses what fails, so the log is the audit.
+4. **Watch it.** The gates measure arithmetic; a person measures whether the film
    is any good. `vox camera --all` first, then the renders. Look for a note on a
    face, ink on the wrong card, a figure cut in half, a shot that reads as a
    photograph rather than a page.
-2. **Any repair after this point must be re-emitted and re-rendered.** A chapter
-   whose `.tsx` is newer than its `.mp4` is stale, and `render_all.sh` will redraw
-   it — but the join has to be re-run to pick it up.
 
-As of this session **all 22 modules pass every gate with zero failures** (m15 was
-the last, fixed by §5.14–5.17). Remaining gate output is warnings and notes only.
+What is *not* left: `program` failures. There are none, on any module, for the
+first time — and that is a weaker claim than it sounds, because `program` was also
+green when the film had no camera movement at all (§5.18). The claim that matters
+is the pixel measurement in §5.22, and it currently exists for m02 only.
+
+**Two decisions are waiting, not tasks.**
+
+- **The 2K pass (§5.27).** 852 pieces + 165 stills + 165 fills have to be generated
+  again to get a media id the upscaler will accept, then upscaled. m02/s01 is the
+  proof; the rest of the film is still 1K. This is a re-roll of every asset, so it
+  is also a re-review — and it is the only route to a sharp frame.
+- **m19/s04 `kartu_bukan_itu`.** The duplicate is measured and named
+  (`double` FAILs it), and four re-cuts produced a page-sized card instead of the
+  piece. The repair is a recomposed still for that shot, not another roll.
 
 ---
 
 ## 7. Where the work was, last session
 
-- `voxkit/emit/choreography.py` — `creep` now ramps the *interior* of a long park
-  (§5.14); `steady_holds` widens the frame for overlapping strokes instead of
-  letting the later one steal it (§5.15); new `finish_figures` pass reconciles
-  "figure whole at every key" with "never pin the camera".
-- `voxkit/emit/camera.py` — `STAGE_EPS`, the precision `holds` judges at (§5.16).
-- `voxkit/presenter.py` — the silence walk advances `t += 2` instead of breaking,
-  so a gap whose only answer sits one frame past the walk is still answered.
-- `voxkit/audit.py` — **new**. `vox camera` measures zoom spread, pan range and
-  dead frames per shot, from the same `program_of()` the renderer reads.
-- `voxkit/prompt.py` — `iso_prompt` locator; `still_prompt` length guarantee.
-- `voxkit/stages.py` — `isolate --pieces` for surgical re-cuts.
-- `voxkit/gates/program.py` — `_busy()`, graded rule 10, rule 9 postpone check.
+- `voxkit/intent.py` — **new, and the point of the session.** One `Beat` in, one
+  `Decision` out: register, colour, pen, vehicle, arrival, move. §5.18.
+- `voxkit/emit/choreography.py` — `by_intent` executes the decided moves;
+  `punch_for` deleted (§5.21); pen windows widened before merging (§5.19); the shot
+  opens on the page and reaches its first card by `OPEN_BY` (§5.20);
+  `build_camera` scores the card's own word instead of the moment.
+- `voxkit/ink.py` — `register(text, intent, duration, crowd)`: the note's vehicle is
+  a decision, not a hash. `ARRIVAL` / `CAN_ARRIVE` replace the `bahan`-only table.
+- `voxkit/gates/motion.py` — **new**. The only gate that reads rendered pixels.
+- `voxkit/gates/program.py` — rule 13 (a decided punch must exist), and the ease
+  rule now accepts "the pen answered the voice" (§5.22).
+- `voxkit/emit/camera.py` — `DEFAULT_PUNCH` is the only hit shape; `EMPHASIS`
+  deleted with `punch_for`; `Camera.tsx` throws on a non-finite framing instead of
+  silently discarding the transform.
+- `film/remotion/src/components/Stage.tsx` — `useResolvedCamera`: the emitter passes
+  a *key list* and the stage read `.x/.y/.zoom` off it, so the transform was `NaN`
+  and CSS dropped it. That single line is why the camera never moved.
+- `voxkit/emit/choreography.py` — `creep` ramps the *interior* of a long park
+  (§5.14); `steady_holds` widens for overlapping strokes (§5.15); `finish_figures`.
+- `voxkit/presenter.py` — the silence walk advances `t += 2` instead of breaking.
+- `voxkit/audit.py` — `vox camera` measures zoom spread, pan range, dead frames.
 - `voxkit/gates/plan.py` — `angka_bahan` in `data`; `Card.placed()` in `compose`.
-- `voxkit/contract.py` — `angka_bahan`/`angka_alasan`, `nudge`, `Card.placed()`.
-- `tools/find_bad_pieces.py` — **new**. Two geometry rules for a failed isolation.
-- `tools/repair.py` — **new**. The convergent repair loop, with two tries per piece.
-- `film/plans/m21.json` — s06 page pulled back from full-bleed indigo to an indigo
-  block: the still gate refused it as a modern colour photograph, and it was right
-  — twenty-one other pages are cream and the pieces are warm sepia.
+- `tools/find_bad_pieces.py`, `tools/repair.py` — the convergent repair loop.
+- `_sweep/review/` — the measuring tools that decide arguments here:
+  `intent_dist.py` (what was decided), `cammotion.py` (pixels), `alive.py` (pixels,
+  split by the pen), `accent.py` (the emphasis distribution), `keys.py` (one shot's
+  keys and strokes), `sheet.py` (contact sheets).
 
 ### Numbers worth keeping
 
 | | before | after |
 |---|---|---|
-| m03 frames with a still camera | 43 % | **0 %** |
-| m03 zoom, min / median / max | 1.03 / 1.10 / 1.35 | 1.01 / 1.16 / 1.35 |
-| m03 pan range (x, y) | 0.13 | 0.26 |
-| m03 keys at exactly zoom 1.000 | 40 of 86 | 0 |
-| modules with assets | 15 | **22** |
+| notes stamped / written | 83 / 12 | **47 / 48** |
+| cards decided `punch` | 0 | 23 |
+| cards decided `arrive` / `pull` | 634 / 203 | 637 / 192 |
+| modules with a `program` FAIL | 14 | **0** |
+| m02 still frames | 49 % | 49 % — but **every run ≥20f is inside a pen window** |
+| m02 still *outside* the pen | — | **30.9 %**, median 1.85 px/frame |
+| m02 pen frames that are still | — | **96.2 %** (a stroke is read on a still frame) |
+| m02 distinct camera moves | 4 (broken) / 33 (drifting under the pen) | 29, none under ink |
+| m03 frames with a still camera | 43 % | 0 % |
+| modules with assets | 15 | 22 |
 | pieces in the film | — | 852 |
-| cost of one generated image | — | ~1 min, 0 credits |
 
 ---
 

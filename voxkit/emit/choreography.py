@@ -25,6 +25,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field, replace
 from typing import Sequence
 
+from .. import ink, intent
 from ..contract import TRAVEL_MAX, TRAVEL_MIN, Card, Plan, Shot
 from ..geometry import Rect
 from ..layout import Layout
@@ -49,8 +50,10 @@ KIND = {
 # float; a struck word gets the short one, because the card has to be there when
 # the voice hits it.
 TRAVEL_BY_ACCENT = ((0.52, 14), (0.40, 17), (0.0, 21))
-# Above this the camera answers the word with a `snap`; below it, a `slow` push.
-SNAP_AT = 0.62
+#: The least distance between two camera hits in one shot. Closer than this and
+#: the two reads as one stutter rather than two emphases — the eye cannot
+#: register a move, return, and move again in under a second.
+PUNCH_GAP = 30
 
 # A bound mark is timed by the card it points at: the pen touches the paper this
 # many frames after the card has come to rest. Two frames is the beat it takes the
@@ -115,6 +118,10 @@ class CardMotion:
     rect: Rect              # where the piece really is: the measured slot, not the prose
     z: int = 0              # stacking order, so a gate can ask what lies on top
     poses: tuple[Pose, ...] = ()
+    #: What the camera does when this piece lands, decided in `voxkit.intent`
+    #: before any key exists. A piece arriving on a stressed word gets a `punch`;
+    #: one landing on a quiet word drifts or holds.
+    move: str = ""
 
 
 @dataclass(frozen=True, slots=True)
@@ -133,6 +140,10 @@ class MarkMotion:
     #: one thing; naming that thing lets the camera and the gates ask whether it
     #: was actually in the frame when the pen touched it.
     on: str = ""
+    #: What the camera is supposed to do at this beat, decided in `voxkit.intent`
+    #: before any key exists. One of `intent.MOVES`. The camera executes it; the
+    #: camera does not choose it.
+    move: str = ""
 
 
 @dataclass(frozen=True, slots=True)
@@ -148,6 +159,11 @@ class Khat:
     color: str
     rotate: float
     seed: int
+    #: `write` or `stamp`. A seven-letter word at 26 px is stiff and small; the same
+    #: word stamped is an object on the page, and this film already has rubber
+    #: stamps in it. Chosen by `ink.register`, deterministically, so a re-render is
+    #: the same film.
+    mode: str = "write"
     #: Ink goes on top of the collage, because that is what a hand does: it draws
     #: on the page, not under the pieces that are already glued to it. Below
     #: everything would read as a note slipped behind a photograph, which is a
@@ -241,7 +257,8 @@ def mark_frame(m, target: CardMotion | None, shot: Shot) -> int:
 
 
 def build_card(card: Card, slot, shot: Shot, index: int, shot_index: int,
-               narration: Narration, prefix: str = "") -> CardMotion:
+               narration: Narration, prefix: str = "",
+               stress: float = intent.STRESS) -> CardMotion:
     """One card's motion. `lands` is relative to the shot, so `settle` is too."""
     settle = card.lands
     accent = narration.score(shot.start + settle, card.word)
@@ -255,6 +272,25 @@ def build_card(card: Card, slot, shot: Shot, index: int, shot_index: int,
         # actually happen — the card arrives on the first frame that has room.
         settle = enter + travel
     sides = ("left", "top", "right", "bottom")
+    # The arrival is the beat's decision, not the material's. A piece that is
+    # being *named* is placed; one that lands on a stressed word is snapped; a
+    # page that is already full takes it dropped. `ink.CAN_ARRIVE` then vetoes
+    # what the material cannot do — a map cannot be snapped, a slip cannot be
+    # unrolled — so the choice stays physical without becoming a lookup.
+    beat = intent.Beat(
+        kind="card", bahan=card.bahan, crowd=index,
+        stressed=accent >= stress, duration=travel,
+        # The frame the hit would start on: `by_intent` places the hit so its final
+        # key lands exactly on `settle`, which leaves `rise + settle` of runway
+        # behind it. A card landing on frame two has none, and the decision must
+        # say so — otherwise it asks for a hit the camera cannot perform, and eight
+        # modules failed rule 13 with exactly that.
+        room=settle - (int(cam.DEFAULT_PUNCH["rise"]) + int(cam.DEFAULT_PUNCH["settle"])),
+    )
+    decided = intent.decide(beat)
+    travel, stepped = ink.vehicle(card.bahan, card.wujud, travel, 2, decided.arrival)
+    travel = max(2, min(travel, settle))
+    enter = max(0, settle - travel)
     return CardMotion(
         name=card.name,
         src=f"{prefix}cards/{shot.id}/{card.name}.png",
@@ -262,24 +298,26 @@ def build_card(card: Card, slot, shot: Shot, index: int, shot_index: int,
         settle=settle,
         travel=travel,
         from_side=sides[(shot_index + index) % 4],
-        stepped=3 if card.bahan == "seal" else 2,
+        stepped=stepped,
         phase=round(0.5 + index * 0.75, 2),
         kind=KIND.get(card.bahan, "other"),
         rect=card.placed(slot.rect if slot else card.rect),
         z=card.z,
         poses=tuple(Pose(int(p["atFrame"]), str(p["src"]))
                     for p in (slot.poses if slot else ()) if "atFrame" in p and "src" in p),
+        move=decided.move,
     )
 
 
 def build_camera(shot: Shot, motions: Sequence[CardMotion],
-                 narration: Narration) -> list[cam.CamKey]:
+                 narration: Narration, stress: float = intent.STRESS) -> list[cam.CamKey]:
     """Hold on information, move on transitions.
 
-    The first card gets a punch (anticipate, overshoot, settle) because it is the
-    shot's statement. Each later card gets a key that *starts* moving `LEAD`
-    frames before the card lands, so the frame arrives with the word rather than
-    after it.
+    The shot opens on the whole page and every card gets a key that *starts* moving
+    `LEAD` frames before it lands, so the frame arrives with the word rather than
+    after it. Whether a card is *hit* is not decided here: `voxkit.intent` decides
+    it, `by_intent` performs it, and this function only supplies the framing the
+    hit is placed into.
 
     Then the camera answers the pen. Every mark is drawn on a card, so before the
     pen touches the paper the card has to be whole in the frame — 115 of the
@@ -288,7 +326,8 @@ def build_camera(shot: Shot, motions: Sequence[CardMotion],
     no key at all, so this costs nothing on a shot that was already right.
     """
     if not motions:
-        return [cam.CamKey(0, 0.5, 0.5, 1.04), cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03)]
+        return [cam.CamKey(0, 0.5, 0.5, 1.04, reason="open"),
+                cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03, "slow", reason="leave")]
 
     # Time order, not stacking order. `shot.ordered()` sorts by `z`, because that
     # is what the renderer needs — but this loop walks the shot with a moving
@@ -297,24 +336,52 @@ def build_camera(shot: Shot, motions: Sequence[CardMotion],
     # every key between them. m03/s01 came out with five keys for ten seconds,
     # all of them flattened to zoom 1.000 by the settle pass.
     motions = sorted(motions, key=lambda m: (m.settle, m.enter))
-    first = motions[0]
-    keys = [cam.CamKey(0, 0.48, 0.48, 1.04)]
-    prev_settle, prev_zoom = first.settle, 1.16
-    for m in motions[1:]:
-        if not (prev_settle + cam.LEAD <= m.settle <= shot.span - 14):
+    # Every key states *why it moves*. A key without a reason is a wild move: it
+    # exists because some pass wanted the frame somewhere, not because the film
+    # wanted the viewer to look at something. `open` is the shot's statement,
+    # `arrive` is the move to the piece a word names.
+    #
+    # The shot opens on the whole page, not on the first card's framing. It used to
+    # open at 1.04, which is where a card of ordinary size sits — so the opening key
+    # was doing double duty as the first card's key, and a shot whose pieces were
+    # all the same size opened and ended at the same zoom. m01 s05 travelled 0.06
+    # of the stage in 235 frames because of it: six strokes and no move. Now the
+    # first card gets its own key like every other, and the shot establishes then
+    # goes in, which is the one camera move every shot can afford.
+    keys = [cam.CamKey(0, 0.5, 0.5, 1.0, reason="open")]
+    prev_settle, prev_zoom = 0, 1.0
+    for i, m in enumerate(motions):
+        # The first card's framing is reached early, not on its settle. A shot
+        # opens on the whole page and the camera has to be *somewhere* before the
+        # first piece lands; if it waits for the settle it holds a wide page for
+        # the whole opening line and the page is dead air — m04 s03 sat at 1.0225
+        # for 46 frames while the voice spoke. Going to the place the piece will
+        # appear is not a guess: it is the one thing the shot is about.
+        at = m.settle if i else min(m.settle, OPEN_BY)
+        if not (prev_settle + cam.LEAD <= at <= shot.span - 14):
             continue
-        accent = narration.score(shot.start + m.settle, "")
+        # The card's *own* word, not the moment. This call used to be
+        # `narration.score(shot.start + m.settle, "")` — a time with no word — so
+        # the number it compared against `SNAP_AT` was the accent of whatever was
+        # being said, and the same card could be stressed for the camera and
+        # unstressed for the emitter. One score, one word, one line: `stress`.
+        word = next((c.word for c in shot.cards if c.name == m.name), "")
+        accent = narration.score(shot.start + m.settle, word)
+        hit = accent >= stress
         zoom = card_zoom(m.rect)
-        if accent >= 0.52:
+        if hit:
             zoom = min(cam.ZOOM_CAP, zoom + 0.06)
-        lead = max(prev_settle + 8, m.settle - cam.LEAD)
+        lead = max(prev_settle + 8, at - cam.LEAD)
         if lead > prev_settle + 8:
-            keys.append(cam.CamKey(lead, *cam.on(m.rect, prev_zoom), "slow"))
-        keys.append(cam.CamKey(m.settle, *cam.on(m.rect, zoom),
-                               "snap" if accent >= SNAP_AT else "slow"))
-        prev_settle, prev_zoom = m.settle, zoom
+            keys.append(cam.CamKey(lead, *cam.on(m.rect, prev_zoom, bleed=cam.BLEED), "slow",
+                                   reason="arrive"))
+        keys.append(cam.CamKey(at, *cam.on(m.rect, zoom, bleed=cam.BLEED),
+                               "snap" if hit else "slow",
+                               reason="reveal" if hit else "arrive"))
+        prev_settle, prev_zoom = at, zoom
 
-    keys.append(cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03, "slow"))
+    keys.append(cam.CamKey(max(1, shot.span - 6), 0.5, 0.5, 1.03, "slow",
+                           reason="leave"))
 
     # Two keys closer than a jump-cut apart are one move, not two. This runs
     # before the punch for a reason: a hit is *deliberately* dense — anticipate
@@ -330,34 +397,74 @@ def build_camera(shot: Shot, motions: Sequence[CardMotion],
     return cam.keys_at_least(sorted(keys, key=lambda k: k.at), gap=8)
 
 
-def punch_for(keys: Sequence[cam.CamKey], first: CardMotion,
-              marks: Sequence[MarkMotion], span: int) -> list[cam.CamKey]:
-    """The shot's opening hit, placed where it does not collide with the pen.
+def by_intent(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
+              motions: Sequence[CardMotion], span: int) -> list[cam.CamKey]:
+    """Turn each beat's decided camera move into keys.
 
-    A hit on the marked card is fine — the camera and the hand agree. A hit on
-    another card while a stroke is being drawn is not, so the anchor moves past
-    the stroke. If the shot has no room left for a hit, the marks win: an arrow on
-    the wrong card is a fault, a missing flourish is a loss.
+    `voxkit.intent` decides `move` for every beat before a single key exists. This
+    is the one place that decision becomes camera, and it is deliberately narrow:
+    it knows two moves, because the other four are already what the constraint
+    passes do (`hold` is the pen window, `arrive` and `drift` are the word keys
+    `build_camera` already makes, `none` is nothing).
+
+    * **punch** — a piece lands on a stressed word and the camera *goes* to it:
+      three frames in, eight back, with anticipation. Two punches closer than
+      `PUNCH_GAP` would read as a twitch rather than emphasis, so the second one
+      is dropped and the shot keeps its first.
+    * **pull** — the page is already full, so the frame opens instead of closing.
+      It widens 10 % after the stroke, which is the opposite of a punch and is
+      what keeps a crowded shot from getting tighter and tighter.
+
+    The punch target is the piece that landed, not the centre of the page: a hit
+    on the middle of the frame while the word is in the corner is a zoom, not a
+    camera.
     """
-    at = max(8, min(span - 30, first.settle))
-    for mk in sorted(marks, key=lambda k: k.at):
-        if mk.on == first.name:
+    out = list(keys)
+    by_name = {m.name: m for m in motions}
+    punched: list[int] = [k.at for k in out if k.hit]
+
+    for card in sorted(motions, key=lambda c: c.settle):
+        if card.move != "punch":
             continue
-        # A page mark belongs to no card — it is the edge *between* two pieces —
-        # so it does not compete with the hit for the same frame. Treating it as a
-        # stroke on "some other card" pushed the opening hit out of every shot the
-        # presenter drew a connector in, which is how adding an edge removed a
-        # camera move.
-        if not mk.on:
+        # **The hit ends on the word.** `cam.punch` replaces every key in
+        # `[at - antic, at + rise + settle]` with its own four, so punching *at*
+        # the settle frame deletes the key that frames the card — which is the
+        # invariant `test_the_frame_arrives_with_the_word_not_after_it` exists to
+        # defend, and it broke the moment this pass was added. Placing the punch
+        # so its final key lands exactly on `settle` keeps both promises: the
+        # camera arrives on the word *and* it arrives with a hit.
+        o = cam.DEFAULT_PUNCH
+        at = card.settle - (int(o["rise"]) + int(o["settle"]))
+        if at < 4:
             continue
-        # The lead-in matters as much as the stroke: the camera has to be on the
-        # card `MARK_LEAD` frames before the pen, so the hit must clear that too.
-        lo, hi = mk.at - MARK_LEAD - 2, mk.at + mk.duration + 4
-        if at - 3 <= hi and at + 12 >= lo:
-            at = hi + 3
-    if at > span - 14:
-        return list(keys)
-    return cam.punch(keys, at, cam.on(first.rect, 1.16), **cam.EMPHASIS)
+        if any(abs(a - card.settle) < PUNCH_GAP for a in punched):
+            continue
+        here = cam.resolve(out, card.settle)
+        z = min(cam.ZOOM_CAP, max(1.12, here[2] * 1.16))
+        out = cam.punch(out, at, (card.rect.cx, card.rect.cy, z))
+        out = [replace(k, move="punch") if k.hit and abs(k.at - card.settle) <= 18
+               else k for k in out]
+        punched.append(card.settle)
+
+    for mk in sorted(marks, key=lambda m: m.at):
+        if mk.move != "pull":
+            continue
+        target = by_name.get(mk.on)
+        if target is None:
+            continue
+        here = cam.resolve(out, mk.at)
+        # pull: hold through the stroke, then open the frame by 10 %.
+        z = max(1.0, here[2] * 0.90)
+        out = [k for k in out if not (mk.at <= k.at <= mk.at + mk.duration)]
+        out.append(cam.CamKey(mk.at, *here, "slow", hold=True, reason="rest",
+                              move="pull"))
+        out.append(cam.CamKey(min(span - 1, mk.at + mk.duration), *here, "slow",
+                              hold=True, reason="rest", move="pull"))
+        out.append(cam.CamKey(min(span - 2, mk.at + mk.duration + 14),
+                              here[0], here[1], z, "slow", reason="widen",
+                              move="pull"))
+        out.sort(key=lambda k: k.at)
+    return out
 
 
 def fit_marks(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
@@ -422,13 +529,31 @@ def fit_marks(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
         at = max(1, mk.at - MARK_LEAD)
         near = next((i for i, k in enumerate(out) if abs(k.at - at) < 8 and not k.hit), None)
         if near is not None:
-            out[near] = cam.CamKey(at, *framed, out[near].ease, hit=out[near].hit, hold=True)
+            out[near] = cam.CamKey(at, *framed, out[near].ease, hit=out[near].hit,
+                                   hold=True, reason="rest")
         else:
-            out.append(cam.CamKey(at, *framed, "slow", hold=True))
+            out.append(cam.CamKey(at, *framed, "slow", hold=True, reason="rest"))
 
     for mk in sorted(marks, key=lambda k: k.at):
         target = next((c for c in motions if c.name == mk.on), None)
         if target is None:
+            # A **page** mark — the connector that joins two pieces. It has no one
+            # card to hold, but it is still ink the viewer has to read, so the
+            # frame has to be still while it is drawn. Without this the two
+            # `arrow-curve` connectors in m02 were drawn on a frame travelling
+            # 4-6 % of the page, which is exactly "the arrow misses the word" with
+            # the arrow moving instead of the card.
+            if mk.on:
+                continue
+            lo = mk.at
+            hi = min(span - 2 if span else 10 ** 6, mk.at + mk.duration + PEN_REST)
+            if hi - lo < 3:
+                continue
+            freeze = cam.resolve(out, lo)
+            for edge in (lo, hi):
+                if any(abs(k.at - edge) < 2 and not k.hit for k in out):
+                    continue
+                out.append(cam.CamKey(edge, *freeze, "slow", hold=True, reason="rest"))
             continue
         lo = mk.at
         hi = min(span - 4 if span else 10 ** 6, mk.at + mk.duration + MARK_GAP)
@@ -440,7 +565,7 @@ def fit_marks(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
                        if k.at <= lo and cam.holds((k.x, k.y, k.zoom), target.rect)), None)
         if anchor is None:
             anchor = cam.CamKey(lo, *cam.frame_card(target.rect, cam.resolve(out, lo)[2]),
-                                "slow", hold=True)
+                                "slow", hold=True, reason="rest")
             out.append(anchor)
 
         # Freeze the frame until the stroke is finished. Without this the camera
@@ -450,7 +575,8 @@ def fit_marks(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
         # second half of "the mark misses the word", and it is invisible in the
         # plan: both the mark and the camera are individually correct.
         if not any(k.at == hi and cam.holds((k.x, k.y, k.zoom), target.rect) for k in out):
-            out.append(cam.CamKey(hi, anchor.x, anchor.y, anchor.zoom, "slow", hold=True))
+            out.append(cam.CamKey(hi, anchor.x, anchor.y, anchor.zoom, "slow",
+                                  hold=True, reason="rest"))
 
         # ...and nothing may start moving away on the frame the pen lifts either:
         # a key one frame after the hold is a jump-cut.
@@ -575,7 +701,7 @@ def steady_holds(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
         # adding another one eight frames or less away would be the jump-cut the
         # camera rules forbid.
         if not any(hi < k.at <= hi + MARK_LEAD for k in out):
-            out.append(cam.CamKey(hi, *anchor, "slow", hold=True))
+            out.append(cam.CamKey(hi, *anchor, "slow", hold=True, reason="widen"))
     by_frame: dict[int, cam.CamKey] = {}
     for k in sorted(out, key=lambda k: k.at):
         by_frame[k.at] = k
@@ -652,7 +778,7 @@ def enforce_holds(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
                 i = max(before, key=lambda j: out[j].at)
                 out[i] = replace(out[i], x=framed[0], y=framed[1], zoom=framed[2], hold=True)
             else:
-                out.append(cam.CamKey(max(1, f), *framed, "slow", hold=True))
+                out.append(cam.CamKey(max(1, f), *framed, "slow", hold=True, reason="widen"))
             # The key *after* the pen matters as much as the one before it: the
             # frame is already interpolating toward it, so a key that leaves the
             # card drags the card out from under the stroke even though every key
@@ -674,6 +800,29 @@ def enforce_holds(keys: Sequence[cam.CamKey], motions: Sequence[CardMotion],
 #: creep, never a freeze: the eye reads a dead frame as a mistake within a second,
 #: and 43 % of m03's frames were dead because a hold was implemented as a constant.
 STILL_RUN = 16
+
+#: The frame by which a shot has to be looking at its first piece. A shot opens on
+#: the whole page, and the page must not stay empty while the voice opens the
+#: sentence: eight tenths of a second is long enough for the establishing move and
+#: short enough that nothing is spoken over a blank sheet.
+OPEN_BY = 24
+
+#: How many frames either side of a stroke the frame must be still.
+#:
+#: It was five, and five was enough to fuse every stroke in a shot into one
+#: frozen block: marks are drawn six to eighteen frames apart, each window was
+#: `duration + 10` wide, so the windows overlapped end to end and the merge in
+#: `pin_pen_windows` produced runs of seventy frames and more. Measured on m02,
+#: the second half of s01 was one still frame for 4.2 seconds — which is what the
+#: client saw and called "kameranya gak gerak".
+#:
+#: The padding was there so the frame would settle *before* the pen landed. That
+#: job already belongs to `fit_marks` and `enforce_holds`, which place the framing
+#: on the card ahead of the stroke. All this needs to cover is the ink itself, so
+#: one frame each side: enough that the stroke does not begin on the same frame
+#: the camera stops, small enough that the gaps between strokes stay free for the
+#: camera to use.
+PEN_REST = 1
 CREEP = 0.022
 #: How close two framings have to be before they are the same hold. Not equality:
 #: the first version asked for bit-identical keys, and the passes before this one
@@ -752,6 +901,25 @@ def creep(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
         return (sx, sy, sz)
     out = list(keys)
 
+    # Where the pen is down. The frame must be *still* here, not merely slow.
+    #
+    # v2 stated it and v3 deleted it: "Ada baris yang harus dibaca → berhenti
+    # bergerak." `creep` put a breath into every hold, so no key was ever allowed
+    # to rest — the film's camera moved in 92.3 % of frames and 92.2 % of the
+    # scored words were spoken over a moving frame. A viewer cannot lock onto the
+    # word the voice is saying if the frame is still drifting underneath it, and
+    # the pen is the one thing that tells them where to look.
+    #
+    # The breath is what the client asked for ("kameranya masih gak bergerak") and
+    # it is right *between* strokes. It is wrong *during* one.
+    last = max((k.at for k in keys), default=0)
+    pen = bytearray(last + 3)
+    for m in marks:
+        lo = max(0, m.at - PEN_REST)
+        hi = min(len(pen), m.at + m.duration + PEN_REST + 1)
+        for f in range(lo, hi):
+            pen[f] = 1
+
     def slow(p: cam.CamKey, q: cam.CamKey) -> bool:
         """Does the camera move too little between these two keys to be seen?
 
@@ -776,6 +944,12 @@ def creep(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
         j = i
         while j + 1 < len(out) and slow(out[j], out[j + 1]):
             j += 1
+        if j > i and any(pen[out[i].at:out[j].at + 1]):
+            # The pen is down somewhere in this run. A breath here is the frame
+            # sliding out from under the stroke, so the run keeps the framing the
+            # pen was given and the camera is *still* — which is the whole point.
+            i = j + 1
+            continue
         if j > i and out[j].at - out[i].at >= STILL_RUN:
             # Creep *backwards*: shrink the first key and let the hold push in.
             # Zooming the last key in would clip the very card the pen is on,
@@ -863,29 +1037,179 @@ def creep(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
     return out
 
 
+def pin_pen_windows(keys: Sequence[cam.CamKey], marks: Sequence[MarkMotion],
+                    span: int, motions: Sequence[CardMotion] = (),
+                    keep: Sequence[Rect] = ()) -> list[cam.CamKey]:
+    """Freeze the frame for the whole of every stroke, and nothing else.
+
+    A stroke is the one instruction that outranks the camera. The framing is
+    whatever the frame was already holding when the pen touched down, and it does
+    not change until the pen lifts — so the ink and the eye agree about where the
+    page is. Between strokes the camera is free, which is where the movement the
+    client asked for actually belongs.
+
+    Two things make this harder than it looks, and both were bugs:
+
+    **Overlapping strokes must share one framing.** Windows are built per stroke,
+    so two strokes six frames apart produce two windows that overlap. Handled one
+    at a time, the second window deletes the first window's closing edge and
+    replaces it with a *different* frozen value — which leaves the first stroke's
+    segment interpolating between two values, i.e. moving, which is exactly what
+    this pass exists to prevent. So overlapping windows are merged into one run
+    first, and a run has a single value by construction.
+
+    **The frozen framing has to hold the card.** If the pen lands while the camera
+    is still travelling, the frame at `lo` is a frame in transit, and freezing it
+    draws the whole stroke on a card that is half off the page. That is what m06
+    s01, m10 s07, m11 s03 and m14 s02 all reported: the freeze was faithful and
+    the framing was wrong. So the value is the framing in the run that holds the
+    most of the cards being marked.
+    """
+    rects = {c.name: c.rect for c in motions}
+
+    # 1. Every window, then merged into runs that do not overlap.
+    windows = []
+    for mk in sorted(marks, key=lambda m: m.at):
+        lo = max(0, mk.at - PEN_REST)
+        hi = min(span - 1, mk.at + mk.duration + PEN_REST)
+        if hi - lo >= 4:
+            windows.append((lo, hi, mk.on))
+    runs: list[list] = []
+    for lo, hi, on in windows:
+        if runs and lo <= runs[-1][1]:
+            runs[-1][1] = max(runs[-1][1], hi)
+            runs[-1][2].append(on)
+        else:
+            runs.append([lo, hi, [on]])
+
+    out = sorted(keys, key=lambda k: k.at)
+    # **Absorb neighbours before merging, not after.** This is the second half of
+    # the same bug and it survived the first fix: widening a run by up to eight
+    # frames is exactly the distance that separated it from the next stroke, so
+    # widening could make two runs touch — and because runs were processed in
+    # order, the *later* one then deleted the closing key the earlier one had just
+    # frozen. m09 s04's underline was drawn on a frame that drifted 6.6 % of the
+    # page while the pen was down, which is the "arrow misses the word" fault with
+    # the arrow standing still. Widened runs are merged here, so a run really does
+    # have one value by construction.
+    wide: list[list] = []
+    for lo, hi, ons in runs:
+        near = [k.at for k in out if 0 < lo - k.at < 8]
+        if near:
+            lo = min(near)
+        far = [k.at for k in out if 0 < k.at - hi < 8]
+        if far:
+            hi = max(far)
+        wide.append([lo, hi, ons])
+    runs = []
+    for lo, hi, ons in wide:
+        if runs and lo <= runs[-1][1]:
+            runs[-1][1] = max(runs[-1][1], hi)
+            runs[-1][2].extend(ons)
+        else:
+            runs.append([lo, hi, ons])
+
+    for lo, hi, ons in runs:
+        wanted = [rects[n] for n in ons if n in rects and cam.frameable(rects[n])]
+
+        def score(win):
+            # Wholeness first, then the card being marked. A figure read as a
+            # number is wrong the moment it is half on screen — the voice says
+            # `8.848` and the page shows `0.848` — so no amount of getting the
+            # stroke right compensates for cutting one.
+            whole = all(cam.holds(win, b) for b in keep)
+            return (1 if whole else 0, sum(1 for r in wanted if cam.holds(win, r)))
+
+        # The framing the camera already had, unless something better is on offer
+        # inside the run. Both scores only ever improve, so a run that is already
+        # right is left exactly where it was.
+        freeze = cam.resolve(out, lo)
+        best = score(freeze)
+        if best != (1, len(wanted)):
+            for f in range(lo, hi + 1):
+                here = cam.resolve(out, f)
+                got = score(here)
+                if got > best:
+                    best, freeze = got, here
+                if best == (1, len(wanted)):
+                    break
+        out = [k for k in out if not (lo <= k.at <= hi)]
+        # A frozen value is taken from *inside* a segment, so it can carry the
+        # segment's overshoot with it: m18 s01 froze at zoom 1.35017, two ten-
+        # thousandths past the cap, from a segment whose ease overshoots. Clamping
+        # here only ever shows more page, never less.
+        frozen = (freeze[0], freeze[1], min(freeze[2], cam.ZOOM_CAP))
+        for edge in (lo, hi):
+            out.append(cam.CamKey(edge, *frozen, "slow", hold=True, reason="rest"))
+        out.sort(key=lambda k: k.at)
+    return out
+
+
 def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
-               shot_index: int, plate: str, prefix: str = "") -> ShotProgram:
+               shot_index: int, plate: str, prefix: str = "",
+               stress: float = intent.STRESS) -> ShotProgram:
     motions: list[CardMotion] = []
     for i, card in enumerate(shot.ordered()):
         motions.append(build_card(card, layout.get(card.name), shot, i, shot_index,
-                                  narration, prefix))
+                                  narration, prefix, stress))
 
     # Marks first, camera second. The pen decides where the frame has to be, so
     # the marks cannot be an afterthought appended to a finished camera move —
     # that ordering is exactly why 115 of 205 marks were drawn on a card the
     # camera had left half outside the frame.
+    by_name = {c.name: c for c in shot.ordered()}
     marks = []
+    # v2 allows exactly one emphasis per shot: if two things are equally loud,
+    # neither is. The first mark that asks to be loud gets the yellow; every later
+    # one is demoted to a name or a support, which is a hierarchy rather than a
+    # volume knob.
+    loud = False
+    punched = False
     for i, m in enumerate(shot.marks):
         target = next((c for c in motions if c.name == m.card), motions[-1] if motions else None)
         box = (Rect.from_edges(*m.box) if m.box
                else (target.rect.expanded(0.014) if target else Rect(0, 0, 1, 1)))
         at = mark_frame(m, target, shot)
+        card = by_name.get(m.card)
+        bahan = card.bahan if card is not None else "cetak"
+        # One decision per beat, from `voxkit.intent`. The register is settled
+        # first and the pen, the colour and the camera move follow from it — they
+        # are consequences, not separate choices. Before this, the colour came
+        # from the mark's *shape* and the camera's reason was a label applied
+        # after the move was already computed, so nothing in the film actually
+        # decided anything.
+        #
+        # A plan may still name the register. When it does, that is the decision
+        # and it is honoured: a plan that says "this is a correction" has made a
+        # judgement the engine should not overrule.
+        beat = intent.Beat(
+            kind="mark", shape=m.shape, bahan=bahan,
+            readable=card.readable if card else False,
+            crowd=len(motions) + i, strokes=i, loud=loud, punched=punched,
+        )
+        if m.intent and m.intent in ink.INTENTS:
+            decided = intent.decide(beat)
+            decided = intent.Decision(
+                register=m.intent,
+                color=ink.resolve(m.intent, bahan, declared_color=m.color or "").color,
+                pen=ink.resolve(m.intent, bahan, declared_color=m.color or "",
+                                declared_pen=m.pen if m.pen != "marker" else "").pen,
+                vehicle=decided.vehicle, arrival=decided.arrival,
+                move=intent._move(beat, m.intent),
+            )
+        else:
+            decided = intent.decide(beat)
+        if decided.register == "emphasis":
+            loud = True
+        pen = ink.Ink(intent=decided.register, color=decided.color, pen=decided.pen)
+        if decided.move == "punch":
+            punched = True
         marks.append(MarkMotion(
             shape=m.shape, box=box, at=at, duration=m.duration, rotate=m.rotate,
-            pen=m.pen, motion=m.motion,
-            color=m.color or ("coral" if i % 2 == 0 else "crimson"),
+            pen=pen.pen, motion=m.motion, color=pen.color,
             sw=m.sw, seed=1000 + (shot_index + 1) * 73 + i * 17,
             on=target.name if target and m.box is None else "",
+            move=decided.move,
         ))
 
     # The presenter's decisions, taken once. Every gesture it returns is either
@@ -909,11 +1233,14 @@ def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
             target = next((c for c in motions if c.name == g.on), None)
             if target is None:
                 continue
+            own = by_name.get(g.on)
+            tone = ink.resolve(ink.for_gesture("again"),
+                               own.bahan if own is not None else "cetak")
             marks.append(MarkMotion(
                 shape=g.shape, box=target.rect.expanded(0.014),
                 at=max(target.settle + 2, min(g.at - shot.start, shot.span - 18)),
-                duration=AGAIN_HOLD, rotate=-3.0, pen="marker", motion="draw",
-                color="crimson" if len(marks) % 2 else "coral", sw=None,
+                duration=AGAIN_HOLD, rotate=-3.0, pen=tone.pen, motion="draw",
+                color=tone.color, sw=None,
                 seed=1000 + (shot_index + 1) * 73 + len(marks) * 17, on=target.name,
             ))
             continue
@@ -924,12 +1251,26 @@ def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
         if a is None or b is None:
             continue
         cx, cy, w, h, rot = connector(a.rect, b.rect, plan.stage_aspect)
+        tone = ink.resolve(ink.for_gesture("relate"), "cetak")
         marks.append(MarkMotion(
             shape=g.shape, box=Rect.from_centre(cx, cy, w, h),
             at=max(0, min(g.at - shot.start, shot.span - 20)), duration=16,
-            rotate=rot, pen="marker", motion="draw", color="coral", sw=None,
+            rotate=rot, pen=tone.pen, motion="draw", color=tone.color, sw=None,
             seed=1000 + (shot_index + 1) * 73 + len(marks) * 17, on="",
         ))
+
+    # One beat cannot see the next, or the pen. Both are known only now — the
+    # settle frames and every stroke — so a hit that would be a stutter, or that
+    # `pin_pen_windows` would delete by freezing over it, is demoted to `arrive`
+    # here instead of being dropped silently by the executor later.
+    pen = [(m.at - PEN_REST, m.at + m.duration + PEN_REST) for m in marks]
+    order = sorted(motions, key=lambda m: m.settle)
+    hit = int(cam.DEFAULT_PUNCH["rise"]) + int(cam.DEFAULT_PUNCH["settle"])
+    settled = intent.settle_moves([(m.settle - hit, m.settle, m.move) for m in order],
+                                  PUNCH_GAP, pen)
+    if any(a != b.move for a, b in zip(settled, order)):
+        by = {m.name: mv for m, mv in zip(order, settled)}
+        motions = [replace(m, move=by[m.name]) for m in motions]
 
     # ------------------------------------------------------------------ camera
     # The pipeline below is the whole camera, in order, once. Every step is here
@@ -955,9 +1296,21 @@ def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
                    for m in marks for c in motions
                    if m.on and c.name == m.on and cam.frameable(c.rect)]
 
-    keys = build_camera(shot, motions, narration)
-    if motions:
-        keys = punch_for(keys, motions[0], marks, shot.span)
+    keys = build_camera(shot, motions, narration, stress)
+    # 0. the beats, executed. Every card and every mark carries a `move` that
+    #    `voxkit.intent` decided before a single key existed; this pass is the
+    #    only place that turns a decision into camera. It runs before the
+    #    constraint passes so that `plate_cam` and `finish_figures` still get the
+    #    last word on framing — a punch that cuts a figure in half is not a punch.
+    #
+    #    There used to be a `punch_for` in front of it: an unconditional hit on
+    #    the shot's first card. It was the second system deciding the same thing,
+    #    and the two collided — on m17 the opening hit sat on the same frame as
+    #    the decided one, `PUNCH_GAP` dropped the decided hit, and the gate was
+    #    right to call it. A hit that fires on every shot's first card regardless
+    #    of what the voice is doing is the "gerak liar" the client objected to;
+    #    the cut already has its own move, from the `open` key to the first card.
+    keys = by_intent(keys, marks, motions, shot.span)
     # 1. the move, held only to the figures being read at that moment
     keys = cam.plate_cam(keys, cam.MARGIN, keep, read_windows)
     # 2. the pen: put the frame on the card a stroke is about to land on
@@ -978,20 +1331,47 @@ def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
     # 6. the pen again, because step 5 may have moved a key out from under a
     #    stroke. The stroke is the one constraint that cannot be traded.
     keys = enforce_holds(keys, motions, marks, keep)
+    # 6b. the pen, unconditionally and last. Every pass above can move a key
+    #     inside a stroke — `plate_cam` pans to keep a number whole, `finish_figures`
+    #     pulls back for a figure — and each of those is a good reason to move at
+    #     any *other* frame. Inside a stroke it is not: the pen is the instruction
+    #     the viewer is following, and a frame that drifts 4 % under it is the
+    #     "arrow misses the word" fault with the arrow standing still.
+    #     So the pen window is frozen here, once, and `creep` is told to leave it
+    #     alone. Whatever is cut by the freeze is reported by `program` rule 5.
+    keys = pin_pen_windows(keys, marks, shot.span, motions, keep)
     # 7. and the breath, last: every step above can park the frame, and a parked
     #    frame is what the client saw as "kameranya masih gak bergerak".
     keys = creep(keys, marks, motions, keep, figures=read_windows)
 
     khats: list[Khat] = []
+    # How much is already on this page — and, separately, how much *ink*. The two
+    # used to be one number, `len(motions) + len(marks)`, and that is why the film
+    # stamped 83 notes and wrote 12: a shot with four photographs and one arrow
+    # scored five, so every note read "the page is full". The page was never that
+    # full. The substrate is not a gesture, and only a gesture can crowd out
+    # another gesture.
+    crowd = len(motions) + len(marks)
+    strokes = len(marks)
     if shot.script:
         s = shot.script
+        text = str(s.get("text", ""))
+        dur = int(s.get("duration", 34))
+        # The note's vehicle is the beat's decision, not a constant. This call
+        # used to read `register(text, "emphasis")` — the literal string — so the
+        # register the whole system is named after was never once consulted.
+        note = intent.decide(intent.Beat(
+            kind="note", text=text, bahan="cetak", crowd=crowd, strokes=strokes,
+            loud=loud, duration=dur,
+        ))
         khats.append(Khat(
-            text=str(s.get("text", "")), at=int(s.get("at", 8)),
-            duration=int(s.get("duration", 34)),
+            text=text, at=int(s.get("at", 8)),
+            duration=dur,
             x=float(s.get("x", 0.16)), y=float(s.get("y", 0.18)),
             w=float(s.get("w", 0.28)), h=float(s.get("h", 0.28)),
             sw=int(s.get("sw", 15)), color=str(s.get("color", "crimson")),
             rotate=float(s.get("rotate", -3)), seed=2000 + (shot_index + 1) * 37,
+            mode=note.vehicle,
         ))
     else:
         # A note the presenter wrote to answer silence. It comes with its own
@@ -1023,11 +1403,18 @@ def build_shot(shot: Shot, plan: Plan, layout: Layout, narration: Narration,
             length = note_frames(note.text)
             if local + length > shot.span - 3:
                 length = max(18, shot.span - local - 3)
+            chosen = intent.decide(intent.Beat(
+                kind="note", text=note.text, bahan="cetak", crowd=crowd,
+                strokes=strokes, loud=loud, duration=length,
+            ))
             khats.append(Khat(
                 text=note.text, at=local, duration=length,
                 x=box.x0, y=box.y0, w=box.w, h=box.h, sw=9, color="crimson",
                 rotate=-2.5, seed=2000 + (shot_index + 1) * 37 + len(khats) * 11,
+                mode=chosen.vehicle,
             ))
+            # A note is ink, so the next note on this page meets one more gesture.
+            strokes += 1
 
     return ShotProgram(id=shot.id, start=shot.start, span=shot.span, plate=plate,
                        cards=tuple(motions), camera=tuple(keys), marks=tuple(marks),
@@ -1043,9 +1430,19 @@ def build_module(plan: Plan, layouts: dict[str, Layout], narration: Narration,
     The program names files the way the renderer will read them, so a gate can
     check that they are there.
     """
+    # The emphasis line is a property of the *module*, not of the film. Computed
+    # once here from every card's accent, then handed to each shot: a presenter
+    # leans on the strongest word in the paragraph they are speaking, and a module
+    # whose narration is quieter than the film's average still has a word worth a
+    # camera hit. Without this, four modules had no card above an absolute 0.52 and
+    # came out with every key easing `slow`.
+    stress = intent.stress_line([
+        narration.score(shot.start + card.lands, card.word)
+        for shot in plan.shots for card in shot.cards
+    ])
     shots = []
     for i, shot in enumerate(plan.shots):
         layout = layouts.get(shot.id) or Layout()
         shots.append(build_shot(shot, plan, layout, narration, i,
-                                plate_for(shot.id), prefix))
+                                plate_for(shot.id), prefix, stress))
     return ModuleProgram(module=plan.module, fps=fps, shots=tuple(shots), audio=audio)

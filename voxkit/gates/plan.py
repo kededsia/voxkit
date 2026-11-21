@@ -22,12 +22,15 @@ Every gate below corresponds to a fault that actually shipped:
 from __future__ import annotations
 
 import re
+from dataclasses import asdict
+from typing import Iterator, Mapping
 
 from ..contract import (
     ARRIVE_EARLY, ARRIVE_LATE, JENIS, MIN_ARRIVAL_GAP, WUJUD,
     Finding, Plan, fail, is_placeholder, note, tile, warn, words_in,
 )
 from ..language import get as language
+from ..lexicon import Lexicon
 from ..style import COLORS, MIRROR, MOTIONS, PENS, shapes
 from ..words import FLOOR
 from .base import Context, Gate, Skipped
@@ -74,6 +77,29 @@ def _printed(card) -> list[str]:
     return list(dict.fromkeys(out))
 
 
+def _phrases_at(narration) -> list[tuple[str, int]]:
+    """The narration split where the speaker paused, with the frame each starts.
+
+    One splitter, not two. `_phrases` returns the text for `data`; the onset
+    lookup needs the same split *and* the frame, and building it separately is how
+    this codebase got a gate that read a different shape from the one the emitter
+    read. `numbers()` is likewise the only place a figure is recognised.
+    """
+    out: list[tuple[str, int]] = []
+    current: list[str] = []
+    start = 0
+    for acc in narration.accents:
+        if acc.gap > 0.30 and current:
+            out.append((" ".join(current), start))
+            current = []
+        if not current:
+            start = acc.word.start_frame
+        current.append(acc.word.text)
+    if current:
+        out.append((" ".join(current), start))
+    return out
+
+
 def _phrases(narration) -> list[str]:
     """The narration split where the speaker paused.
 
@@ -83,15 +109,7 @@ def _phrases(narration) -> list[str]:
     than none. Splitting at the pauses keeps `seribu` from one sentence gluing to
     `ratus` from the next.
     """
-    out, current = [], []
-    for acc in narration.accents:
-        if acc.gap > 0.30 and current:
-            out.append(" ".join(current))
-            current = []
-        current.append(acc.word.text)
-    if current:
-        out.append(" ".join(current))
-    return out
+    return [text for text, _ in _phrases_at(narration)]
 
 
 # ------------------------------------------------------------------- schema
@@ -375,11 +393,28 @@ def readable(ctx: Context) -> list[Finding]:
     """
     out: list[Finding] = []
     for shot in ctx.plan.shots:
+        # A map at the bottom of the stack is the *page*, not a piece lying on it:
+        # the collage is pasted onto the map. Requiring it above everything is not a
+        # legibility rule but an impossibility — and it is what put the map on top of
+        # the "SELURUH KABUPATEN" slip, the exact fault this rule exists to prevent.
+        # `compose` still fails a page buried past 55 %, so a map that really is
+        # hidden is still caught; this only stops the rule demanding the impossible.
+        page = None
+        if shot.cards:
+            lowest = min(shot.cards, key=lambda c: c.z)
+            if lowest.bahan == "peta":
+                page = lowest.name
         for card in shot.cards:
             if not card.readable or card.tertutup_boleh:
                 continue
             for other in shot.cards:
                 if other is card or not other.covering:
+                    continue
+                if card.name == page and not _is_person(other):
+                    # A slip, a photograph or a pin lying on the map is the collage
+                    # doing its job — the map is the page they are pasted onto. A
+                    # *person* on the map is not: a silhouette standing anywhere on
+                    # place names buries them, and that stays a failure.
                     continue
                 if _is_person(other) and card.bahan in ("cetak", "koran"):
                     # R6's own exemption, narrowed to the one pair it is honest
@@ -455,23 +490,95 @@ def compose(ctx: Context) -> list[Finding]:
 
 
 # --------------------------------------------------------------------- data
+#: How far a printed figure may sit from the moment the voice says it.
+#:
+#: `data` used to ask only *whether* the narration says the figure, and `arrival`
+#: asked only whether the card lands on the word it declares — so a card printing
+#: `294` that declared `word: "29"` was self-consistent and passed both, while the
+#: voice said "294" four seconds earlier in the previous still. The reviewer saw
+#: exactly that: the zoom sat on a card that had already been read out.
+#:
+#: One-sided on purpose. A card that arrives *before* its number is the presenter
+#: setting up the beat — show the thing, then say it. A card that arrives after the
+#: number has been said is a caption for a moment that is gone. Only the second is
+#: a fault, so only the second is measured.
+FIGURE_SLACK = 20
+
+
+def _figure_onsets(narration, lang) -> dict[str, list[int]]:
+    """figure -> the frames the voice *finishes* saying it, through `language.numbers`.
+
+    The end, not the start. A number is spoken over a span — "tujuh belas" runs
+    about thirty-five frames — and a card is on the beat when it arrives as the
+    number finishes, not when it begins. Measuring against the start reported every
+    honest card as 24–35 frames late, which is the length of the number itself.
+
+    A two-word window, because the transcriber writes "29 ,4%" as two tokens and a
+    single word never reads as 29,4.
+
+    Two-digit minimum: a lone `1` or `2` printed on a page is a numeral in a
+    picture, not a claim the film is making, and matching it against "satu" in
+    some other sentence produced findings about the right answer.
+    """
+    words = [a.word for a in narration.accents]
+    out: dict[str, list[int]] = {}
+    for i, word in enumerate(words):
+        windows = [(word.text, word)]
+        if i + 1 < len(words):
+            windows.append((f"{word.text} {words[i + 1].text}", words[i + 1]))
+        for text, last in windows:
+            done = round(last.end * last.fps)
+            for figure in lang.numbers(text):
+                if len(figure) < 2:
+                    continue
+                frames = out.setdefault(figure, [])
+                if done not in frames:
+                    frames.append(done)
+    return out
+
+
 def data(ctx: Context) -> list[Finding]:
-    """A figure on a card has to be a figure the narration says."""
+    """A figure on a card has to be a figure the narration says — *when* it says it.
+
+    Two questions, and the second one was missing:
+
+      * does the narration say this figure at all? (`spoken`, unchanged)
+      * does the card land on a beat where one of its figures is being said?
+
+    The second is the one the reviewer saw: `kartu_294persen` was self-consistent
+    — it declared `word: "29"` and did land on "29" — so `arrival` passed, and
+    `data` passed because the film says "294" somewhere. Nothing asked whether the
+    number on the card was being spoken *at the card*.
+
+    A card may carry figures said earlier as context — "29,4 % dari 1.000" has
+    both. So the rule is not "every figure must be live at the landing", it is
+    "the card must land on at least one of the figures it prints". Otherwise the
+    check fails the right answer, which is worse than not checking.
+    """
     narration = _needs_narration(ctx)
     lang = language(ctx.project.language)
     spoken: set[str] = set()
     for phrase in _phrases(narration):
         spoken |= lang.numbers(phrase)
 
+    onsets = _figure_onsets(narration, lang)
+
     out: list[Finding] = []
+    #: figure -> every (landing frame, where) that prints it, for the first-show rule
+    firsts: dict[str, list[tuple[int, str]]] = {}
     for shot in ctx.plan.shots:
         for card in shot.cards:
+            printed: list[str] = []
             for text in _printed(card):
                 for digits in re.findall(r"\d[\d.,]*", text):
-                    bare = re.sub(r"[^\d]", "", digits)
-                    if not bare:
+                    if not digits:
                         continue
-                    if bare in spoken or bare.lstrip("0") in spoken:
+                    printed.append(digits)
+                    # The same reader the narration went through. Comparing a
+                    # printed figure against the transcript with a second,
+                    # locally-invented normalisation is how `29,4` became `294`.
+                    said = lang.numbers(digits)
+                    if said & spoken or {d.lstrip("0") for d in said} & spoken:
                         continue
                     if card.angka_bahan:
                         # Read off a photographed sign rather than asserted by
@@ -485,37 +592,117 @@ def data(ctx: Context) -> list[Finding]:
                     out.append(fail("data", f"{shot.id}/{card.name}",
                                     f"prints the figure {digits!r}, which the narration never says "
                                     f"('{text[:50]}')"))
+
+            if printed and not card.angka_bahan:
+                for figure in set().union(*(lang.numbers(d) for d in printed)):
+                    firsts.setdefault(figure, []).append((shot.start + card.lands,
+                                                          f"{shot.id}/{card.name}"))
+
+    # Only the FIRST time the film shows a figure is a claim about that moment.
+    # `m03/s02/turus_107` prints "TURUS 107" and lands five seconds after the voice
+    # said 107 — but `kartu_107` had already shown it on the beat, and the tally
+    # card is a second statement about a number the viewer already has. Failing it
+    # was a finding about the right answer.
+    for figure, shows in firsts.items():
+        frames = onsets.get(figure) or onsets.get(figure.lstrip("0")) or []
+        if not frames:
+            continue
+        land, where = min(shows)
+        first_said = min(frames)
+        late = land - first_said
+        if late > FIGURE_SLACK:
+            out.append(fail(
+                "data", where,
+                f"is the first card to show {figure!r} and lands at f{land}; the voice first says "
+                f"it at f{first_said}, {late} frames earlier (slack {FIGURE_SLACK}). The number "
+                f"reaches the screen after it has been read out."))
     return out
 
 
 # -------------------------------------------------------------------- spell
+def _strings(value, path: str = "") -> Iterator[tuple[str, str]]:
+    """Every string in the plan, with where it sits.
+
+    Walking the plan rather than a hand-listed set of fields is the whole point:
+    the fields a word can hide in are the ones nobody remembered. `CHI` survived
+    in `klaim`, `tesis_modul`, `fokus` and `semiotik` — four prose fields no
+    earlier version of this gate opened, while the two fields it *did* open were
+    the two that got fixed. A gate that only reads the fields the last bug used
+    is a gate that catches the last bug.
+    """
+    if isinstance(value, str):
+        yield path, value
+    elif isinstance(value, Mapping):
+        for key, inner in value.items():
+            yield from _strings(inner, f"{path}.{key}" if path else str(key))
+    elif isinstance(value, (list, tuple)):
+        for i, inner in enumerate(value):
+            yield from _strings(inner, f"{path}[{i}]")
+
+
 def spell(ctx: Context) -> list[Finding]:
-    """Every printed term spelled the way the facts say it is spelled.
+    """Every term the film says or prints, spelled the one way the lexicon allows.
 
     The still prompt is built verbatim from the plan, so the model draws the typo
-    faithfully: `CAHI` reached a render, twice, and read as a typo because it was
-    one. `lexicon.json` is the list of things that have been wrong before.
+    faithfully: `CAHI` reached a render twice, and `CHI` reached one on the same
+    page that already printed `BERAWALAN CI` correctly.
+
+    Three things this now does that it did not:
+
+      * reads the lexicon through `lexicon.Lexicon`, so the file's key cannot
+        disagree with the reader and turn the whole check into a silent pass;
+      * reads the **transcript**, not only the plan. The voice is what the viewer
+        hears, and a card is checked against the transcript by the `arrival` and
+        `data` gates — so a word misspelled in both agreed with itself and passed
+        every check in the registry;
+      * reads every string in the plan, because the surviving misspellings were in
+        prose fields, not on cards.
     """
-    if not ctx.lexicon:
+    lex = Lexicon.from_dict(ctx.lexicon)
+    if not lex:
         return [note("spell", ctx.plan.module,
-                     "no lexicon.json — nothing to check printed terms against")]
-    forbidden: dict[str, str] = {}
-    for term in ctx.lexicon.get("terms", []):
-        correct = str(term.get("correct", "")).strip()
-        for wrong in term.get("never", []):
-            if correct and str(wrong).strip():
-                forbidden[str(wrong).strip().lower()] = correct
+                     "no readable lexicon.json — nothing to check printed terms against")]
+
+    forbidden = lex.forbidden()
+    if not forbidden:
+        return [note("spell", ctx.plan.module,
+                     f"lexicon lists {len(lex)} term(s) and no forbidden variant — "
+                     f"nothing can match")]
+
+    pattern = re.compile(
+        r"\b(" + "|".join(sorted(map(re.escape, forbidden), key=len, reverse=True)) + r")\b",
+        re.IGNORECASE,
+    )
 
     out: list[Finding] = []
-    for shot in ctx.plan.shots:
-        for card in shot.cards:
-            for text in [*_printed(card), card.what, card.semantik]:
-                low = (text or "").lower()
-                for wrong, correct in forbidden.items():
-                    if re.search(rf"\b{re.escape(wrong)}\b", low):
-                        out.append(fail("spell", f"{shot.id}/{card.name}",
-                                        f"prints '{wrong}' — the facts say '{correct}' "
-                                        f"('{(text or '')[:60]}')"))
+
+    # Where a word is spoken, before it is ever drawn.
+    if ctx.narration is not None:
+        for word in ctx.narration.words:
+            for hit in pattern.finditer(word.text):
+                wrong = hit.group(0).lower()
+                out.append(fail("spell", f"{ctx.plan.module} narration",
+                                f"says '{word.text.strip()}' — the word is "
+                                f"'{forbidden[wrong]}', not '{wrong}' "
+                                f"(at {word.start:.1f}s)"))
+
+    seen: set[tuple[str, str]] = set()
+    for where, text in _strings(asdict(ctx.plan)):
+        # `source` is the provenance blob: a JSON snapshot of what the plan was
+        # written against, echoed into every plan. It repeats whatever the plan
+        # already says, so flagging it doubles every finding without naming a
+        # second place to fix.
+        if where == "source" or where.startswith("source."):
+            continue
+        for hit in pattern.finditer(text):
+            wrong = hit.group(0).lower()
+            key = (where, wrong)
+            if key in seen:
+                continue
+            seen.add(key)
+            out.append(fail("spell", where or ctx.plan.module,
+                            f"writes '{wrong}' — the word is '{forbidden[wrong]}' "
+                            f"('{text[:70]}')"))
     return out
 
 

@@ -72,7 +72,7 @@
      "at": "centre of the frame, centred at 0.82 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "kabupaten.",
-     "z": 4,
+     "z": 3,
      "lands": 197
     },
     {
@@ -85,7 +85,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Dinas",
-     "z": 6,
+     "z": 7,
      "lands": 12
     },
     {
@@ -139,7 +139,7 @@
      "at": "lower centre of the frame, centred at 0.46 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "seribu",
-     "z": 7,
+     "z": 6,
      "lands": 120
     },
     {
@@ -152,7 +152,7 @@
      "at": "upper centre of the frame, centred at 0.67 across, about 0.46 of the frame wide, down at 0.20",
      "cut": true,
      "word": "acak",
-     "z": 3,
+     "z": 4,
      "lands": 166
     }
    ],
@@ -249,7 +249,10 @@
     },
     {
      "name": "petugas_desa",
-     "nudge": [-0.126, 0.034],
+     "nudge": [
+      -0.126,
+      0.034
+     ],
      "bahan": "figur",
      "wujud": "siluet_organik",
      "semiotik": "Perangkat desa berbaju batik memegang buku register - yang mencatat 183 desa itu",
@@ -372,12 +375,12 @@
      "lands": 53
     },
     {
-     "name": "slip_chi",
+     "name": "slip_ci",
      "bahan": "cetak",
      "wujud": "sobekan_pita",
      "semiotik": "Awalan itu dipisahkan dari katanya - dua huruf yang berdiri sendiri",
-     "semantik": "CHI - SATU SUKU KATA",
-     "what": "a small torn slip with letterpress type reading 'CHI' and under it 'SATU SUKU KATA'",
+     "semantik": "CI - SATU SUKU KATA",
+     "what": "a small torn slip with letterpress type reading 'CI' and under it 'SATU SUKU KATA'",
      "at": "upper right of the frame, centred at 0.72 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "suku",
@@ -400,7 +403,7 @@
      "underline",
      12,
      -3.6,
-     "slip_chi",
+     "slip_ci",
      {
       "color": "coral",
       "delay": 8
@@ -417,7 +420,7 @@
     },
     {
      "frame": 516.0,
-     "word": "Chi.",
+     "word": "Ci.",
      "motion": "hold",
      "why": "skor 0.50 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
     }
@@ -447,7 +450,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "10.",
-     "z": 4,
+     "z": 6,
      "lands": 88
     },
     {
@@ -499,7 +502,7 @@
      "at": "upper right of the frame, centred at 0.74 across, about 0.53 of the frame wide, down at 0.11",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "Bukan",
-     "z": 6,
+     "z": 4,
      "lands": 122
     },
     {
@@ -594,7 +597,10 @@
    "cards": [
     {
      "name": "peta_purwakarta",
-     "nudge": [0.006, -0.075],
+     "nudge": [
+      0.006,
+      -0.075
+     ],
      "bahan": "peta",
      "wujud": "siluet_organik",
      "semiotik": "Peta kabupaten Purwakarta bertanda pin merah - sebaran, bukan satu titik",
@@ -603,8 +609,10 @@
      "at": "centre of the frame, centred at 0.48 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "seluruh",
-     "z": 4,
-     "lands": 16
+     "z": 1,
+     "lands": 16,
+     "tertutup_boleh": true,
+     "tertutup_alasan": "the map is the page, not a piece on it: it runs 0.12-0.82 across and past the bottom edge, and the photo, the slip and the pin sit ON it. Measured from the layout, they hide 17%, 10% and 5% of it, so the place names it carries stay legible. Raising it above them would put the map over the slip the voice is pointing at."
     },
     {
      "name": "foto_kabupaten",
@@ -629,7 +637,7 @@
      "at": "lower left of the frame, centred at 0.26 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "kabupaten,",
-     "z": 3,
+     "z": 4,
      "lands": 29
     },
     {
@@ -642,7 +650,7 @@
      "at": "upper right of the frame, centred at 0.78 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "tempat.",
-     "z": 1,
+     "z": 3,
      "lands": 91
     }
    ],
@@ -695,7 +703,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "Kampung,",
-     "z": 2,
+     "z": 1,
      "lands": 4
     },
     {
@@ -708,7 +716,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "lembah,",
-     "z": 3,
+     "z": 2,
      "lands": 91
     },
     {
@@ -721,7 +729,7 @@
      "at": "upper left of the frame, centred at 0.20 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Kampung,",
-     "z": 6,
+     "z": 5,
      "lands": 7
     },
     {
@@ -734,12 +742,15 @@
      "at": "upper right of the frame, centred at 0.72 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "gunung,",
-     "z": 7,
+     "z": 6,
      "lands": 38
     },
     {
      "name": "foto_sungai",
-     "nudge": [-0.126, 0.034],
+     "nudge": [
+      -0.126,
+      0.034
+     ],
      "bahan": "foto",
      "wujud": "siluet_organik",
      "semiotik": "Sungai dangkal di atas batu dengan bambu di tepinya - jenis tempat yang paling sering jadi awalan Ci",
@@ -748,7 +759,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "sungai.",
-     "z": 4,
+     "z": 3,
      "lands": 154
     },
     {
@@ -761,7 +772,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Dan",
-     "z": 5,
+     "z": 7,
      "lands": 190
     },
     {
@@ -774,7 +785,7 @@
      "at": "upper centre of the frame, centred at 0.47 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "kabupaten.",
-     "z": 1,
+     "z": 4,
      "lands": 221,
      "tertutup_boleh": "the woman walking the field carries the shot and her head must stay clear: she crosses this slip's lower margin in the picture, so she is drawn above it. The slip's own words sit above her basket and are never touched.",
      "tertutup_alasan": "terukur: pejalan menutup 21% kotaknya, 79% terbaca"

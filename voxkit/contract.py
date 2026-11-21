@@ -248,6 +248,11 @@ class Mark:
     pen: str = "marker"
     motion: str = "draw"
     sw: int | None = None
+    #: What the mark is *for*: emphasis, name, support, correction, quiet. The
+    #: register picks the pen and the colour (`voxkit.ink.PRESET`), and only a mark
+    #: that names its register may also name its own colour — otherwise the colour
+    #: is a decoration and the film has one volume.
+    intent: str = ""
 
     @property
     def bound(self) -> bool:
@@ -569,6 +574,7 @@ def _marks(raw: Sequence, sid: str, problems: list[Finding]) -> tuple[Mark, ...]
             pen=str(opt.get("pen", "marker")),
             motion=str(opt.get("motion", "draw")),
             sw=opt.get("sw"),
+            intent=str(opt.get("intent", "")),
         ))
     return tuple(out)
 

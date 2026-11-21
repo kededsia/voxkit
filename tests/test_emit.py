@@ -86,7 +86,20 @@ def test_the_camera_never_zooms_out_past_the_plate():
 
 def test_the_frame_arrives_with_the_word_not_after_it():
     """A camera that starts moving on the word it is moving to is already late.
-    The key that frames a card sits on the card's own settle frame."""
+
+    This used to assert that a *key* existed within `settle - 2 .. settle + 8`.
+    That was a proxy, and it stopped being the right proxy once the pen window
+    became authoritative: `pin_pen_windows` freezes the frame across a whole
+    stroke, and a card that lands inside that window has its key replaced by the
+    two edges of the freeze — deliberately, because a frame that drifts under a
+    stroke is the "arrow misses the word" fault.
+
+    So the assertion is the property itself rather than the artefact: **at the
+    frame the card lands, the camera is actually showing that card.** That is
+    stronger than "a key exists" — a key could exist and frame the wrong thing,
+    which is exactly how the camera once carried a plausible `reason` on a move
+    that pointed somewhere else.
+    """
     from conftest import card, shot
     plan = make_plan(shots=[shot("s01", 0, 90, [
         card("a", z=1, lands=20, word="peta"),
@@ -96,28 +109,33 @@ def test_the_frame_arrives_with_the_word_not_after_it():
     prog = build_module(plan, {}, make_narration(), _plate, fps=30)
     shot_prog = prog.shots[0]
     for motion in shot_prog.cards[1:]:
-        # `settle - 2 .. settle + 8`, not `± 2`: when a hand is drawing on an
-        # earlier card the camera holds for the pen and arrives a few frames
-        # late on purpose. The rule this test defends is "the frame arrives
-        # with the word", not "the frame arrives on the exact frame" — the
-        # fault it was written for was keys thirty frames late.
-        assert any(motion.settle - 2 <= k.at <= motion.settle + 8
-                   for k in shot_prog.camera), \
-            f"nothing frames {motion.name} at its arrival f{motion.settle}"
+        win = cam.resolve(shot_prog.camera, motion.settle)
+        assert cam.holds(win, motion.rect), (
+            f"at f{motion.settle} the camera {win} does not hold {motion.name} "
+            f"({motion.rect}) — the frame is not on the card it is naming")
 
 
 def test_no_two_camera_keys_are_closer_than_a_jump_cut():
     """Two *transitions* closer than eight frames read as one jump-cut.
 
-    A camera hit is exempt, and has to be: `punch` is anticipate two frames back,
-    pull one frame before, overshoot three after, settle eight after that — by
-    design denser than the rule. Applied to the whole list, the rule could only
-    be satisfied by deleting the hit, and that is exactly what happened: every
-    shot in the film ended up with one ease, `slow`, and no hit at all.
+    A camera hit is exempt, and so is anything touching one, and both exemptions
+    are necessary. `punch` is anticipate, pull, overshoot, settle — by design
+    denser than the rule, so applied to the whole list the rule could only be
+    satisfied by deleting the hit, and that is exactly what happened: every shot
+    in the film ended up with one ease, `slow`, and no hit at all.
+
+    The second half — "anything touching one" — was added when the intent pass
+    started punching on the *word*. The punch's own keys are dense, and a key
+    that frames a card can land two or three frames before the hit begins. That
+    key is not a competing transition; it is the shot arriving just ahead of the
+    emphasis, which is the whole point of leading the word. Judged as a jump-cut
+    it forces the emitter to delete one of the two, and the one that gets deleted
+    is the arrival.
     """
     for shot in _program().shots:
         gaps = [(a, b) for a, b in zip(shot.camera, shot.camera[1:])]
-        bad = [(a.at, b.at) for a, b in gaps if b.at - a.at < 8 and not (a.hit and b.hit)]
+        bad = [(a.at, b.at) for a, b in gaps
+               if b.at - a.at < 8 and not (a.hit or b.hit)]
         assert not bad, bad
 
 
@@ -349,7 +367,8 @@ def _uniform(travel: int = 17) -> ModuleProgram:
                    phase=0.5, kind="photo", rect=rect, poses=())
         for i, settle in enumerate((20, 35, 50, 65))
     )
-    camera = tuple(cam.CamKey(at, 0.5, 0.5, 1.1, "slow") for at in (0, 20, 40, 60, 84))
+    camera = tuple(cam.CamKey(at, 0.5, 0.5, 1.1, "slow", reason="rest")
+                   for at in (0, 20, 40, 60, 84))
     return ModuleProgram(module="t01", fps=30, shots=(
         ShotProgram(id="s01", start=0, span=90, plate="plates/s01.jpg",
                     cards=cards, camera=camera),
@@ -376,8 +395,12 @@ def test_the_program_gate_accepts_a_module_that_varies(context, monkeypatch):
     # the gate says so.
     framings = ((0.46, 0.47, 1.06), (0.56, 0.52, 1.22), (0.44, 0.55, 1.14),
                 (0.53, 0.46, 1.28), (0.5, 0.5, 1.03))
-    camera = tuple(cam.CamKey(k.at, x, y, z, e) for k, (x, y, z), e in zip(
-        prog.shots[0].camera, framings, ("slow", "snap", "slow", "snap", "slow")))
+    # Every key states why the frame is where it is. `program` rule 11 refuses a
+    # key with no reason, and a synthetic module that omits them is not a module
+    # that varies — it is a module that cannot be judged.
+    camera = tuple(cam.CamKey(k.at, x, y, z, e, reason=r) for k, (x, y, z), e, r in zip(
+        prog.shots[0].camera, framings, ("slow", "snap", "slow", "snap", "slow"),
+        ("open", "reveal", "arrive", "reveal", "leave")))
     varied = ModuleProgram(module="t01", fps=30, shots=(
         ShotProgram(id="s01", start=0, span=90, plate="plates/s01.jpg",
                     cards=cards, camera=camera),

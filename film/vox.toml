@@ -23,5 +23,7 @@ binary = "C:/Users/PC/.local/bin/gflow.exe"
 profiles = ["videoquincy"]
 batch_size = 6
 model = "nano2"
+# The generator returns 1376x768 at every aspect; the stage draws 2976 px.
+upscale = "2k"
 aspect = "16:9"
 resume = true

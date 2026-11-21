@@ -89,6 +89,47 @@ def test_no_lexicon_is_a_note_not_a_pass(context):
     assert [f.level for f in result.findings()] == ["note"]
 
 
+def test_a_misprint_in_prose_is_caught_not_only_on_a_card(context):
+    """`CHI` survived in `klaim`, `tesis_modul`, `fokus` and `semiotik` — four
+    fields the old gate never opened, while the two fields it did open were the
+    two that got fixed. A gate that only reads the fields the last bug used is a
+    gate that catches the last bug."""
+    plan = make_plan()
+    object.__setattr__(plan, "klaim", "294 dari 1.000 nama berawalan suku kata CHI")
+    ctx = _ctx(context, plan)
+    ctx.lexicon = {"words": [{"correct": "ci", "never": ["chi"]}]}
+    messages = _fails(_run(ctx, ["spell"]), "spell")
+    assert any("klaim" in m and "chi" in m for m in messages), messages
+
+
+def test_a_misprint_the_voice_says_is_caught(context):
+    """The voice is what the viewer hears. A card is checked *against* the
+    transcript by `arrival` and `data`, so a word misspelled in both agreed with
+    itself and passed every gate in the registry."""
+    from voxkit.words import Narration, Word, analyse
+
+    words = [Word(w.text, w.start, w.end, w.fps) for w in context.narration.words]
+    first = words[0]
+    words[0] = Word("Chi", first.start, first.end, first.fps)
+    spoken = Narration(analyse(words, context.narration.total),
+                       context.narration.total, context.narration.fps)
+
+    ctx = Context(project=context.project, plan=make_plan(), narration=spoken,
+                  lexicon={"words": [{"correct": "ci", "never": ["chi"]}]})
+    messages = _fails(_run(ctx, ["spell"]), "spell")
+    assert any("narration" in m for m in messages), messages
+
+
+def test_the_gate_reads_the_key_the_file_is_authored_with(context):
+    """The bug in one line: the file said `words`, the reader asked for `terms`,
+    and the gate passed over zero terms."""
+    plan = make_plan()
+    object.__setattr__(plan, "klaim", "berawalan suku kata CHI")
+    ctx = _ctx(context, plan)
+    ctx.lexicon = {"words": [{"correct": "ci", "never": ["chi"]}]}
+    assert _fails(_run(ctx, ["spell"]), "spell"), "read `words` and checked nothing"
+
+
 # --------------------------------------------------------------------- marks
 def test_a_bound_mark_with_an_absolute_frame_is_caught(context):
     """The number that drifted: an absolute frame is not tied to the card.
@@ -449,3 +490,97 @@ def test_every_gate_declares_what_it_asks():
     for gate in gate_set():
         assert gate.asks, f"{gate.name} does not say what it asks"
         assert gate.name.islower()
+
+
+# ------------------------------------------------------------------- double
+def _piece_png(path, size, *, blank=None, ink=True):
+    """A piece as a PNG: opaque paper, halftone print, and optionally a bare
+    patch where something else lay on top of it."""
+    import numpy as np
+    from PIL import Image
+
+    w, h = size
+    rng = np.random.default_rng(7)
+    a = np.full((h, w, 4), 255, np.uint8)
+    a[..., :3] = 214                      # paper
+    if ink:
+        a[..., :3] = np.where(rng.random((h, w, 1)) < 0.45, 40, 214)   # halftone
+    if blank is not None:
+        x0, y0, x1, y1 = blank
+        a[y0:y1, x0:x1, :3] = 214         # the other piece's sheet, left bare
+    path.parent.mkdir(parents=True, exist_ok=True)
+    Image.fromarray(a).save(path)
+
+
+def _two_pieces(ctx, shot_id, *, bare_under_card):
+    """One photograph with a card lying wholly inside it, as the still had them.
+
+    The card's footprint is 160x90 at the centre of a 640x360 stage; the photo is
+    448x252, so the footprint is (144, 81)-(304, 171) in the photo's own pixels.
+    """
+    shot_ = next(s for s in ctx.plan.shots if s.id == shot_id)
+    d = ctx.project.card_dir(ctx.module, shot_id)
+    _piece_png(d / "foto.png", (448, 252),
+               blank=(144, 81, 304, 171) if bare_under_card else None)
+    _piece_png(d / "kartu.png", (160, 90))
+    elements = {}
+    for name, (cx, cy, w, h) in (("foto", (0.50, 0.50, 0.70, 0.70)),
+                                 ("kartu", (0.50, 0.50, 0.25, 0.25))):
+        elements[name] = {"x": cx, "y": cy, "w": w, "h": h, "aspect": h / w,
+                          "src": f"{name}.png"}
+    (d / "layout.json").write_text(json.dumps({"elements": elements}), encoding="utf-8")
+    return shot_
+
+
+def _double_plan():
+    shots = base_shots()
+    shots[0]["cards"] = [
+        card("foto", z=1, bahan="foto", lands=30, word="peta",
+             at="centre of the frame, centred at 0.50 across, about 0.70 of the frame wide"),
+        card("kartu", z=5, bahan="cetak", lands=45, word="orang",
+             at="centre of the frame, centred at 0.50 across, about 0.25 of the frame wide"),
+    ]
+    return make_plan(shots=shots)
+
+
+def test_a_cut_out_that_keeps_the_sheet_on_top_of_it_is_caught(context):
+    """The client's finding: two identical cards stacked, the one behind separated.
+
+    The isolate stage re-draws the piece, so the card lying across the photograph
+    came back inside the photograph's cut-out — bare paper, letters gone. Every
+    other gate was green: the stacking order was right and both pieces were where
+    the plan put them.
+    """
+    ctx = _ctx(context, _double_plan())
+    _two_pieces(ctx, "s01", bare_under_card=True)
+    messages = _fails(_run(ctx, ["double"]), "double")
+    assert messages, "a bare copy of the card inside the photo is a second card"
+    assert "foto" in messages[0] and "kartu" in messages[0]
+
+
+def test_a_piece_whose_texture_continues_behind_the_card_is_not_a_fault(context):
+    """The control. A photograph that prints its own halftone where the card lay
+    is a correct cut-out, and the gate has to say so — otherwise it is just
+    measuring "these two overlap", which is every collage ever made."""
+    ctx = _ctx(context, _double_plan())
+    _two_pieces(ctx, "s01", bare_under_card=False)
+    assert not _fails(_run(ctx, ["double"]), "double")
+
+
+def test_a_card_s_own_margin_is_not_a_copy_of_anything(context):
+    """Bare paper alone proves nothing: a card is paper, and the piece lying on
+    its blank margin leaves no print around it. Two-sided evidence or no finding."""
+    ctx = _ctx(context, _double_plan())
+    _two_pieces(ctx, "s01", bare_under_card=True)
+    # The carrier is now a card with one line of type along its top edge and a
+    # blank body: bare under the piece, and not printed around it either.
+    _piece_png(ctx.project.card_dir(ctx.module, "s01") / "foto.png", (448, 252),
+               blank=(0, 40, 448, 252))
+    assert not _fails(_run(ctx, ["double"]), "double")
+
+
+def test_the_double_gate_skips_without_layouts_and_is_not_a_pass(context):
+    """A gate with nothing to look at has verified nothing — `N/A` is not PASS."""
+    result = _run(_ctx(context, _double_plan()), ["double"])
+    assert result.results[0].verdict == "N/A"
+    assert "layout" in result.results[0].skipped

@@ -18,6 +18,7 @@ figure out of frame? Do the puppets keep their distance?
 """
 from __future__ import annotations
 
+from .. import ink, intent
 from ..contract import TRAVEL_MAX, Finding, fail, note, warn
 from ..emit import camera as cam
 from ..emit.choreography import MARK_LEAD, MIN_SWAP_GAP, build_module
@@ -50,6 +51,10 @@ DEAD_SHOT_FRAMES = 60
 DEAD_AIR = 45
 #: How much the frame must change across a second to count as moving.
 DEAD_STILL = 0.010
+#: How far the frame may drift while the pen is down, as a fraction of the page.
+#: Not zero: a rounding step of 1e-4 per frame is 0.003 over a thirty-frame stroke
+#: and is not a move. Above this, the card is sliding out from under the stroke.
+PEN_STILL = 0.012
 
 
 def program_of(ctx: Context):
@@ -98,6 +103,41 @@ def _busy(shot, a: int, b: int) -> bool:
     if any(m.at <= b and m.at + m.duration >= a for m in shot.marks):
         return True
     return any(k.at <= b and k.at + k.duration >= a for k in shot.khats)
+
+
+def _idle_gap(shot, a: int, b: int) -> tuple[int, int]:
+    """The longest stretch inside `[a, b]` with nothing moving, and where.
+
+    `_busy` answers "was anything happening *at all*", which is the wrong
+    question once a hold gets long: one card landing at f190 excuses the 100
+    frames after it. Measured across the film, that is what happened — every one
+    of the 47 camera-static runs longer than `DEAD_AIR` came back "busy", and
+    the rule's only remaining defence was a flat 2× cap, which failed all 47.
+
+    The eye does not experience a hold as an average. It notices the *longest
+    stretch where nothing happens*, and a hold is dead air when that stretch
+    outlasts the same `DEAD_AIR` a moving camera gets. Measured this way the
+    film's worst gap is 26 frames (0.87 s) — inside a 126-frame hold, which is
+    not a freeze but a drawing.
+
+    Only the *arrival* of a piece counts as an event. A card that has landed and
+    is breathing is not doing anything the viewer can watch, and counting its
+    breath as activity would make the rule vacuous.
+    """
+    busy: set[int] = set()
+    for c in shot.cards:
+        busy.update(range(max(a, c.enter), min(b, c.settle) + 1))
+    for m in shot.marks:
+        busy.update(range(max(a, m.at), min(b, m.at + m.duration) + 1))
+    for k in shot.khats:
+        busy.update(range(max(a, k.at), min(b, k.at + k.duration) + 1))
+    best = run = 0
+    best_at = a
+    for f in range(a, b + 1):
+        run = 0 if f in busy else run + 1
+        if run > best:
+            best, best_at = run, f - run + 1
+    return best, best_at
 
 
 def program(ctx: Context) -> list[Finding]:
@@ -278,9 +318,32 @@ def program(ctx: Context) -> list[Finding]:
                             "not match what is spoken — both make the tempo uniform."))
     eases = prog.eases()
     if cards >= 4 and accented and eases == {"slow"}:
-        out.append(fail("program", ctx.module,
-                        "every camera key eases 'slow' in a module with accented words — "
-                        "no move answers the voice"))
+        # A hit is not the only way the camera can answer a word — **the pen can.**
+        # When a module's strongest cards are the ones a hand is drawing on, the
+        # camera holds still *because* the film is answering: a push while a pen
+        # underlines the same word is two gestures pointing at one thing, and
+        # `intent.settle_moves` demotes the hit for exactly that reason. So the
+        # question is not "did a key speed up", it is "was the accent answered at
+        # all", and a stroke on a stressed card is an answer.
+        words = {c.name: c.word for shot in prog.shots
+                 for c in (ctx.plan.shot(shot.id).cards if ctx.plan.shot(shot.id) else ())}
+        stress = intent.stress_line([
+            narration.score(shot.start + c.settle, words.get(c.name, ""))
+            for shot in prog.shots for c in shot.cards
+        ])
+        strong = [c for shot in prog.shots for c in shot.cards
+                  if narration.score(shot.start + c.settle,
+                                     words.get(c.name, "")) >= stress]
+        marked = {mk.on for shot in prog.shots for mk in shot.marks if mk.on}
+        if strong and any(c.name in marked for c in strong):
+            out.append(note("program", ctx.module,
+                            "no camera hit: the cards above the module's emphasis "
+                            f"line ({stress:.2f}) are the ones the pen draws on — the "
+                            "pen answers the voice here, and the frame holds still for it"))
+        else:
+            out.append(fail("program", ctx.module,
+                            "every camera key eases 'slow' in a module with accented "
+                            "words — no move answers the voice"))
 
     if len(prog.shots) > 1 and len({c.from_side for s in prog.shots for c in s.cards}) == 1:
         out.append(warn("program", ctx.module,
@@ -447,22 +510,143 @@ def program(ctx: Context) -> list[Finding]:
         # never still — that is a deliberate hold, and failing it teaches the
         # generator to keep the camera busy during a close reading, which is
         # worse. The rule the client actually stated was about dead air: "di situ
-        # diem, ga ada layer card yg masuk" — nothing happening. So the allowance
-        # is doubled while something is happening, and a hold that outlasts even
-        # that is still refused, because by then the eye has left the stroke.
-        busy = _busy(shot, worst_at, worst_at + worst)
-        if worst < DEAD_AIR * (2 if busy else 1):
+        # diem, ga ada layer card yg masuk" — nothing happening.
+        #
+        # So the hold is judged by its *worst gap*, not by its length. A 126-frame
+        # hold with a card landing at one end and a stroke at the other is a
+        # drawing; a 47-frame hold with nothing in it is a photograph of a film.
+        # Length alone cannot tell those apart, and an average certainly cannot.
+        gap, gap_at = _idle_gap(shot, worst_at, worst_at + worst)
+        if gap < DEAD_AIR:
             continue
         out.append(fail("program", shot.id,
-                        f"the frame does not change for {worst} frames "
-                        f"({worst / prog.fps:.1f}s) from f{worst_at}"
-                        f"{' — and nothing is arriving either' if not busy else ''}"
-                        " — a hold has to creep, or the viewer is watching a "
-                        "photograph of a film."))
+                        f"nothing happens on the page for {gap} frames "
+                        f"({gap / prog.fps:.1f}s) from f{gap_at}, inside a "
+                        f"{worst}-frame camera hold — a hold has to creep, or the "
+                        "viewer is watching a photograph of a film."))
+
+    # 11. No wild movement: every move has a stated reason, and the frame is
+    #     *still* while the pen is down.
+    #
+    # The client's words: "ga ada gerak liar, yg ada gerak kamera terukur yg
+    # sengaja dengan tujuan presentasi dan fokus penonton". Two separate faults
+    # hide under "the camera feels busy", and they need two separate rules:
+    #
+    #   (a) a key with no reason is a move nobody asked for — some pass wanted the
+    #       frame somewhere and the film did not want the viewer to look at
+    #       anything. `camera.REASONS` is the closed vocabulary; a key outside it
+    #       is decoration.
+    #   (b) during a stroke, "slow" is not "still". v2 said it plainly — "ada baris
+    #       yang harus dibaca → berhenti bergerak" — and v3's `creep` put a breath
+    #       into every hold, so 92 % of the scored words were spoken over a moving
+    #       frame. The pen tells the viewer where to look; if the frame drifts
+    #       under it, the two instructions disagree.
+    for shot in prog.shots:
+        for k in shot.camera:
+            if not k.reason:
+                out.append(fail("program", f"{shot.id} f{k.at}",
+                                "is a camera key with no reason — a move nobody asked "
+                                f"for. Name one of {', '.join(cam.REASONS)}, or drop "
+                                "the key."))
+            elif k.reason not in cam.REASONS:
+                out.append(fail("program", f"{shot.id} f{k.at}",
+                                f"moves for '{k.reason}', which is not a reason the "
+                                f"film recognises ({', '.join(cam.REASONS)})"))
+        for mk in shot.marks:
+            lo, hi = mk.at, min(shot.span - 1, mk.at + mk.duration)
+            if hi - lo < 3:
+                continue
+            base = cam.resolve(shot.camera, lo)
+            drift = max(
+                (max(abs(c[0] - base[0]), abs(c[1] - base[1])) for c in
+                 (cam.resolve(shot.camera, f) for f in range(lo, hi + 1))),
+                default=0.0,
+            )
+            if drift > PEN_STILL:
+                out.append(fail("program", f"{shot.id} {mk.shape}@f{mk.at}",
+                                f"the pen is down for {hi - lo} frames and the frame "
+                                f"travels {drift:.3f} of the page under it. A stroke is "
+                                "read on a still frame; `creep` must not breathe "
+                                "through a pen window."))
+
+    # 12. The presenter chooses a vehicle, and the choice is a choice.
+    #
+    # The client, in full: *"marker intent sebagai seorang grafik presentasi juga
+    # harus kreatif memilih animation, contohnya write text yg kaku dan kecil itu
+    # kadang harus di rubah misal dengan stamp style dan variasi lain"*. Three
+    # things can go wrong with that instruction, and each has its own failure:
+    #
+    #   (a) a note is *written* when the hand has no time to write it. That is a
+    #       smear with the right length, and it is the fault the note names.
+    #   (b) a shot carries more than one emphasis. v2's rule — "kuning = penekanan
+    #       utama, satu per shot" — was never enforced here, so a shot with four
+    #       equally loud marks has no emphasis at all.
+    #   (c) every note in a module arrives by the same vehicle. That is the
+    #       monotony the note is asking to avoid, and it cannot be caught by
+    #       looking at one note — it is only visible across the module.
+    notes = [k for s in prog.shots for k in s.khats]
+    for shot in prog.shots:
+        for k in shot.khats:
+            if k.mode != "write":
+                continue
+            if not ink.can_write(k.text, k.duration):
+                n = max(1, ink.letters(k.text))
+                out.append(fail("program", f"{shot.id} note {k.text!r}",
+                                f"is written in {k.duration} frames — {k.duration / n:.1f} "
+                                f"per letter, and a hand needs {ink.WRITE_FPL:.0f}. The "
+                                "pen cannot form the letters in that time; press it on "
+                                "instead, or give the note more frames."))
+        loud = [m for m in shot.marks if m.color in ("yellow", "amber")]
+        if len(loud) > 1:
+            out.append(fail("program", f"{shot.id}",
+                            f"has {len(loud)} emphatic marks ({', '.join(m.shape for m in loud)}) "
+                            "— one per shot, or none of them is the emphasis."))
+    if len(notes) >= 4:
+        modes = {k.mode for k in notes}
+        if modes == {"write"}:
+            out.append(fail("program", ctx.module,
+                            f"all {len(notes)} notes are written by hand — the presenter "
+                            "chose one vehicle for the whole module, which is the same as "
+                            "choosing none. `ink.register` answers per note, and one of "
+                            "these is a word a stamp would serve better."))
+        elif modes == {"stamp"}:
+            # Not a fault. A page of stamps is a graphic language, the way a
+            # filing clerk's is; the fault this rule exists for is the opposite
+            # one — writing things that are too small and too stiff to write.
+            out.append(warn("program", ctx.module,
+                            f"all {len(notes)} notes are stamped — coherent, but worth a "
+                            "look: is one of them a word the voice is dwelling on, where "
+                            "the act of writing is the thing to watch?"))
+    # 13. A camera move that was decided is a camera move that happens.
+    #
+    # `voxkit.intent` decides `move` for every beat before any key exists. This
+    # rule closes the loop: if the presenter said "punch on this word", there has
+    # to be a hit at that frame. Without it a decision can be made, recorded, and
+    # then quietly dropped by a later pass — which is exactly the history of this
+    # system. The camera used to carry a `reason` on every key that had been
+    # attached *after* the move was computed, so it looked directed while nothing
+    # had directed it.
+    for shot in prog.shots:
+        for card in shot.cards:
+            if card.move != "punch":
+                continue
+            if not any(k.hit and abs(k.at - card.settle) <= 26 for k in shot.camera):
+                out.append(fail("program", f"{shot.id}/{card.name}@f{card.settle}",
+                                "lands on a stressed word and was decided to be a punch, "
+                                "and there is no camera hit there. A decided move that "
+                                "nothing executes is worse than no decision: the film "
+                                "reads flat and the plan says it is emphatic."))
+
+    out.append(note("program", ctx.module,
+                    f"{len(notes)} notes: "
+                    + ", ".join(f"{m} {n}" for m, n in sorted(
+                        {x: sum(1 for k in notes if k.mode == x) for x in
+                         {k.mode for k in notes}}.items()))))
 
     out.append(note("program", ctx.module,
                     f"{len(prog.shots)} shots, {cards} cards, travels {sorted(travels)}, "
-                    f"eases {sorted(eases)}"))
+                    f"eases {sorted(eases)}, reasons "
+                    f"{sorted({k.reason for s in prog.shots for k in s.camera if k.reason})}"))
     return out
 
 

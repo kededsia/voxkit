@@ -78,37 +78,36 @@ const Card: React.FC<{
 
 const S01: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 42, x: 0.569, y: 0.431, zoom: 1.16, ease: "slow"},
-          {at: 56, x: 0.5283, y: 0.4717, zoom: 1.06, ease: "slow"},
-          {at: 70, x: 0.4768, y: 0.5128, zoom: 1.06, ease: "slow"},
-          {at: 81, x: 0.4768, y: 0.5128, zoom: 1.06, ease: "slow"},
-          {at: 83, x: 0.4813, y: 0.5128, zoom: 1.0388, ease: "linear"},
-          {at: 90, x: 0.4768, y: 0.5128, zoom: 1.2064, ease: "fast"},
-          {at: 104, x: 0.4768, y: 0.5128, zoom: 1.16, ease: "slow"},
-          {at: 112, x: 0.6213, y: 0.611, zoom: 1.3203, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 20, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 42, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 61, x: 0.5757, y: 0.4207, zoom: 1.2476, ease: "slow"},
+          {at: 79, x: 0.5757, y: 0.4207, zoom: 1.2476, ease: "slow"},
+          {at: 87, x: 0.4768, y: 0.5128, zoom: 1.06, ease: "slow"},
+          {at: 97, x: 0.6296, y: 0.611, zoom: 1.35, ease: "slow"},
+          {at: 111, x: 0.6296, y: 0.611, zoom: 1.35, ease: "slow"},
           {at: 135, x: 0.6296, y: 0.611, zoom: 1.35, ease: "slow"},
-          {at: 145, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 161, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
+          {at: 151, x: 0.5821, y: 0.5816, zoom: 1.2326, ease: "slow"},
+          {at: 165, x: 0.5821, y: 0.5816, zoom: 1.2326, ease: "slow"},
         ]}
              plate="m20/plates/s01.jpg" totalFrames={167}
              phase={0.45}>
     <AbsoluteFill>
-      <Card src="m20/cards/s01/foto_puncak.png" x={0.4717} y={0.5156} w={0.4055} aspect={1.2458} enterFrame={63} travel={21} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s01/foto_gunung_tinggi.png" x={0.7845} y={0.2611} w={0.4121} aspect={1.2861} enterFrame={35} travel={21} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s01/figur_pendengar.png" x={0.1998} y={0.6777} w={0.3488} aspect={1.8626} enterFrame={0} travel={20} from="right" phase={2} stepped={2} kind="figure" z={3} poses={[{atFrame: 30, src: "m20/cards/s01/figur_pendengar_pose2.png"}, {atFrame: 52, src: "m20/cards/s01/figur_pendengar_pose3.png"}, {atFrame: 74, src: "m20/cards/s01/figur_pendengar_pose4.png"}]} />
-      <Card src="m20/cards/s01/kartu_isinya.png" x={0.2663} y={0.1966} w={0.4048} aspect={0.772} enterFrame={0} travel={13} from="bottom" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m20/cards/s01/kartu_sunda_purwa.png" x={0.8382} y={0.6354} w={0.3605} aspect={0.8308} enterFrame={90} travel={21} from="left" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s01/kartu_sangat_tinggi.png" x={0.6755} y={0.8825} w={0.6359} aspect={0.4341} enterFrame={124} travel={21} from="top" phase={4.25} stepped={2} kind="type" z={6} />
+      <Card src="m20/cards/s01/foto_puncak.png" x={0.4717} y={0.5156} w={0.4055} aspect={1.2458} enterFrame={65} travel={19} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s01/foto_gunung_tinggi.png" x={0.7845} y={0.2611} w={0.4121} aspect={1.2861} enterFrame={37} travel={19} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s01/figur_pendengar.png" x={0.1998} y={0.6777} w={0.3488} aspect={1.8626} enterFrame={1} travel={19} from="right" phase={2} stepped={4} kind="figure" z={3} poses={[{atFrame: 30, src: "m20/cards/s01/figur_pendengar_pose2.png"}, {atFrame: 52, src: "m20/cards/s01/figur_pendengar_pose3.png"}, {atFrame: 74, src: "m20/cards/s01/figur_pendengar_pose4.png"}]} />
+      <Card src="m20/cards/s01/kartu_isinya.png" x={0.2663} y={0.1966} w={0.4048} aspect={0.772} enterFrame={0} travel={13} from="bottom" phase={2.75} stepped={1} kind="type" z={4} />
+      <Card src="m20/cards/s01/kartu_sangat_tinggi.png" x={0.6755} y={0.8825} w={0.6359} aspect={0.4341} enterFrame={127} travel={18} from="left" phase={3.5} stepped={1} kind="type" z={5} />
+      <Card src="m20/cards/s01/kartu_sunda_purwa.png" x={0.8382} y={0.6354} w={0.3605} aspect={0.8308} enterFrame={93} travel={18} from="top" phase={4.25} stepped={1} kind="type" z={6} />
       <HandMark
         shape="arrow-curve"
         box={[0.3, 0.15, 0.66, 0.7]}
         at={62}
         duration={16}
         rotate={-1.2}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="crimson"
+        color="sky"
         seed={1073}
       />
       <HandMark
@@ -119,8 +118,8 @@ const S01: React.FC = () => (
         rotate={0}
         pen="marker"
         motion="draw"
-        z={5}
-        color="crimson"
+        z={6}
+        color="yellow"
         seed={1090}
       />
       <HandMark
@@ -129,9 +128,9 @@ const S01: React.FC = () => (
         at={152}
         duration={12}
         rotate={2}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1107}
       />
     </AbsoluteFill>
@@ -140,25 +139,23 @@ const S01: React.FC = () => (
 
 const S02: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 28, x: 0.431, y: 0.569, zoom: 1.16, ease: "slow"},
-          {at: 39, x: 0.4642, y: 0.5358, zoom: 1.077, ease: "slow"},
-          {at: 41, x: 0.4668, y: 0.5332, zoom: 1.0711, ease: "linear"},
-          {at: 48, x: 0.4238, y: 0.5762, zoom: 1.1799, ease: "fast"},
-          {at: 65, x: 0.4154, y: 0.5846, zoom: 1.2064, ease: "slow"},
-          {at: 124, x: 0.5283, y: 0.523, zoom: 1.06, ease: "slow"},
-          {at: 137, x: 0.5578, y: 0.528, zoom: 1.2214, ease: "slow"},
-          {at: 157, x: 0.5578, y: 0.528, zoom: 1.2489, ease: "slow"},
-          {at: 159, x: 0.5578, y: 0.528, zoom: 1.2489, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 16, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 28, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 40, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 75, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 124, x: 0.5324, y: 0.523, zoom: 1.0692, ease: "slow"},
+          {at: 137, x: 0.5578, y: 0.528, zoom: 1.2489, ease: "slow"},
+          {at: 160, x: 0.5578, y: 0.528, zoom: 1.2489, ease: "slow"},
         ]}
              plate="m20/plates/s02.jpg" totalFrames={161}
              phase={0.9}>
     <AbsoluteFill>
-      <Card src="m20/cards/s02/foto_salju.png" x={0.3089} y={0.6686} w={0.4404} aspect={1.4516} enterFrame={21} travel={21} from="top" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s02/foto_salju.png" x={0.3089} y={0.6686} w={0.4404} aspect={1.4516} enterFrame={23} travel={19} from="top" phase={0.5} stepped={2} kind="photo" z={1} />
       <Card src="m20/cards/s02/foto_puncak_salju.png" x={0.327} y={0.2878} w={0.4099} aspect={1.3851} enterFrame={0} travel={3} from="right" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s02/figur_pengamat.png" x={0.8448} y={0.5404} w={0.1911} aspect={4.4009} enterFrame={41} travel={17} from="bottom" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m20/cards/s02/kartu_bersalju.png" x={0.7642} y={0.1934} w={0.444} aspect={0.6598} enterFrame={0} travel={16} from="left" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m20/cards/s02/kartu_ci_bodas.png" x={0.5578} y={0.528} w={0.4484} aspect={0.8799} enterFrame={117} travel={21} from="top" phase={3.5} stepped={2} kind="type" z={5} />
+      <Card src="m20/cards/s02/kartu_bersalju.png" x={0.7642} y={0.1934} w={0.444} aspect={0.6598} enterFrame={1} travel={15} from="bottom" phase={2} stepped={1} kind="type" z={3} />
+      <Card src="m20/cards/s02/figur_pengamat.png" x={0.8448} y={0.5404} w={0.1911} aspect={4.4009} enterFrame={40} travel={18} from="left" phase={2.75} stepped={4} kind="figure" z={4} />
+      <Card src="m20/cards/s02/kartu_ci_bodas.png" x={0.5578} y={0.528} w={0.4484} aspect={0.8799} enterFrame={120} travel={18} from="top" phase={3.5} stepped={1} kind="type" z={5} />
       <HandMark
         shape="circle"
         box={[0.0747, 0.335, 0.5431, 1.0023]}
@@ -168,7 +165,7 @@ const S02: React.FC = () => (
         pen="marker"
         motion="draw"
         z={1}
-        color="crimson"
+        color="amber"
         seed={1146}
       />
       <HandMark
@@ -177,10 +174,10 @@ const S02: React.FC = () => (
         at={145}
         duration={14}
         rotate={-2}
-        pen="marker"
+        pen="felt"
         motion="draw"
         z={5}
-        color="coral"
+        color="sky"
         seed={1163}
       />
       <HandMark
@@ -189,16 +186,16 @@ const S02: React.FC = () => (
         at={58}
         duration={16}
         rotate={67.55}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1180}
       />
       <Khat
         text="berarti"
         at={68}
         duration={35}
-        x={0.7062}
+        x={0.6138}
         y={0.4625}
         w={0.127}
         h={0.075}
@@ -206,6 +203,7 @@ const S02: React.FC = () => (
         color="crimson"
         rotate={-2.5}
         seed={2074}
+        mode="stamp"
         z={99}
       />
     </AbsoluteFill>
@@ -214,31 +212,29 @@ const S02: React.FC = () => (
 
 const S03: React.FC = () => (
   <PaperStage camera={[
-          {at: 4, x: 0.4601, y: 0.4601, zoom: 1.0867, ease: "slow"},
-          {at: 28, x: 0.45, y: 0.45, zoom: 1.1111, ease: "slow"},
-          {at: 36, x: 0.5283, y: 0.4717, zoom: 1.06, ease: "slow"},
-          {at: 51, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
+          {at: 4, x: 0.4141, y: 0.431, zoom: 1.2075, ease: "slow"},
+          {at: 28, x: 0.4141, y: 0.431, zoom: 1.2075, ease: "slow"},
+          {at: 36, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 51, x: 0.3704, y: 0.6137, zoom: 1.35, ease: "slow"},
           {at: 65, x: 0.3704, y: 0.6137, zoom: 1.35, ease: "slow"},
           {at: 77, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
-          {at: 88, x: 0.5493, y: 0.5493, zoom: 1.1094, ease: "slow"},
-          {at: 90, x: 0.5441, y: 0.5441, zoom: 1.0969, ease: "linear"},
-          {at: 97, x: 0.5844, y: 0.5844, zoom: 1.2064, ease: "fast"},
-          {at: 111, x: 0.569, y: 0.569, zoom: 1.16, ease: "slow"},
-          {at: 119, x: 0.5119, y: 0.5005, zoom: 1.06, ease: "slow"},
+          {at: 95, x: 0.6159, y: 0.6146, zoom: 1.3162, ease: "slow"},
+          {at: 110, x: 0.6159, y: 0.6146, zoom: 1.3162, ease: "slow"},
+          {at: 118, x: 0.5119, y: 0.5005, zoom: 1.06, ease: "slow"},
           {at: 127, x: 0.5119, y: 0.5005, zoom: 1.06, ease: "slow"},
-          {at: 142, x: 0.4838, y: 0.5162, zoom: 1.0335, ease: "slow"},
-          {at: 167, x: 0.4731, y: 0.5269, zoom: 1.0568, ease: "slow"},
+          {at: 142, x: 0.3801, y: 0.6199, zoom: 1.3155, ease: "slow"},
+          {at: 167, x: 0.3801, y: 0.6199, zoom: 1.3155, ease: "slow"},
           {at: 176, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
         ]}
              plate="m20/plates/s03.jpg" totalFrames={182}
              phase={1.35}>
     <AbsoluteFill>
-      <Card src="m20/cards/s03/foto_malam.png" x={0.7932} y={0.7044} w={0.3815} aspect={1.2968} enterFrame={74} travel={17} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s03/foto_senja_merah.png" x={0.7669} y={0.2809} w={0.4339} aspect={1.2725} enterFrame={15} travel={21} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s03/figur_pengamat_dua.png" x={0.5145} y={0.5007} w={0.1875} aspect={3.3542} enterFrame={106} travel={21} from="left" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m20/cards/s03/kartu_ci_berem.png" x={0.2355} y={0.431} w={0.4317} aspect={1.6831} enterFrame={0} travel={5} from="top" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m20/cards/s03/kartu_tiga_masalah.png" x={0.3319} y={0.8242} w={0.7006} aspect={0.4684} enterFrame={122} travel={21} from="right" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s03/kartu_ci_hideng.png" x={0.2213} y={0.6387} w={0.3656} aspect={0.5949} enterFrame={44} travel={21} from="bottom" phase={4.25} stepped={2} kind="type" z={6} />
+      <Card src="m20/cards/s03/foto_senja_merah.png" x={0.7669} y={0.2809} w={0.4339} aspect={1.2725} enterFrame={17} travel={19} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s03/foto_malam.png" x={0.7932} y={0.7044} w={0.3815} aspect={1.2968} enterFrame={72} travel={19} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s03/figur_pengamat_dua.png" x={0.5145} y={0.5007} w={0.1875} aspect={3.3542} enterFrame={108} travel={19} from="left" phase={2} stepped={4} kind="figure" z={3} />
+      <Card src="m20/cards/s03/kartu_ci_berem.png" x={0.2355} y={0.431} w={0.4317} aspect={1.6831} enterFrame={0} travel={5} from="top" phase={2.75} stepped={1} kind="type" z={4} />
+      <Card src="m20/cards/s03/kartu_tiga_masalah.png" x={0.3319} y={0.8242} w={0.7006} aspect={0.4684} enterFrame={125} travel={18} from="right" phase={3.5} stepped={1} kind="type" z={5} />
+      <Card src="m20/cards/s03/kartu_ci_hideng.png" x={0.2213} y={0.6387} w={0.3656} aspect={0.5949} enterFrame={47} travel={18} from="bottom" phase={4.25} stepped={1} kind="type" z={6} />
       <HandMark
         shape="underline-double"
         box={[0.0056, 0.0537, 0.4653, 0.8083]}
@@ -248,7 +244,7 @@ const S03: React.FC = () => (
         pen="marker"
         motion="draw"
         z={4}
-        color="crimson"
+        color="yellow"
         seed={1219}
       />
       <HandMark
@@ -257,9 +253,9 @@ const S03: React.FC = () => (
         at={96}
         duration={13}
         rotate={-0.6}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1236}
       />
       <HandMark
@@ -271,7 +267,7 @@ const S03: React.FC = () => (
         pen="marker"
         motion="draw"
         z={5}
-        color="crimson"
+        color="coral"
         seed={1253}
       />
     </AbsoluteFill>
@@ -280,35 +276,31 @@ const S03: React.FC = () => (
 
 const S04: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 16, x: 0.4544, y: 0.4544, zoom: 1.1004, ease: "slow"},
-          {at: 39, x: 0.4444, y: 0.4444, zoom: 1.1252, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 17, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 39, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
           {at: 53, x: 0.5089, y: 0.4802, zoom: 1.06, ease: "slow"},
-          {at: 83, x: 0.5283, y: 0.4717, zoom: 1.06, ease: "slow"},
-          {at: 94, x: 0.5283, y: 0.4717, zoom: 1.06, ease: "slow"},
-          {at: 96, x: 0.5259, y: 0.4741, zoom: 1.0545, ease: "linear"},
-          {at: 103, x: 0.5848, y: 0.4152, zoom: 1.2064, ease: "fast"},
-          {at: 117, x: 0.569, y: 0.431, zoom: 1.16, ease: "slow"},
-          {at: 125, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 133, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 146, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 160, x: 0.6221, y: 0.6221, zoom: 1.3231, ease: "slow"},
-          {at: 173, x: 0.5012, y: 0.6221, zoom: 1.3231, ease: "slow"},
-          {at: 187, x: 0.5012, y: 0.5495, zoom: 1.1098, ease: "slow"},
-          {at: 207, x: 0.6213, y: 0.6213, zoom: 1.3203, ease: "slow"},
-          {at: 220, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 83, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 97, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 118, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 132, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 146, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 159, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 185, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 193, x: 0.5012, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 207, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
           {at: 223, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
         ]}
              plate="m20/plates/s04.jpg" totalFrames={224}
              phase={1.8}>
     <AbsoluteFill>
-      <Card src="m20/cards/s04/foto_orang_dulu.png" x={0.8036} y={0.2832} w={0.4382} aspect={1.2925} enterFrame={76} travel={21} from="bottom" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s04/foto_air_sungai.png" x={0.2475} y={0.7005} w={0.4513} aspect={1.281} enterFrame={111} travel={21} from="left" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s04/figur_pendengar_kedua.png" x={0.5014} y={0.8044} w={0.3416} aspect={1.319} enterFrame={166} travel={21} from="top" phase={2} stepped={2} kind="figure" z={3} />
-      <Card src="m20/cards/s04/kartu_bertumpu.png" x={0.5109} y={0.4759} w={0.4826} aspect={0.4992} enterFrame={32} travel={21} from="right" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m20/cards/s04/kartu_banyu_tirta.png" x={0.7965} y={0.7227} w={0.3779} aspect={0.6271} enterFrame={139} travel={21} from="bottom" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s04/kartu_pertama.png" x={0.2772} y={0.2279} w={0.5094} aspect={0.7565} enterFrame={0} travel={17} from="left" phase={4.25} stepped={2} kind="type" z={6} />
-      <Card src="m20/cards/s04/kartu_cahi.png" x={0.8205} y={0.8809} w={0.2355} aspect={0.8129} enterFrame={194} travel={21} from="top" phase={5} stepped={2} kind="type" z={7} />
+      <Card src="m20/cards/s04/foto_air_sungai.png" x={0.2475} y={0.7005} w={0.4513} aspect={1.281} enterFrame={113} travel={19} from="bottom" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s04/foto_orang_dulu.png" x={0.8036} y={0.2832} w={0.4382} aspect={1.2925} enterFrame={78} travel={19} from="left" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s04/figur_pendengar_kedua.png" x={0.5014} y={0.8044} w={0.3416} aspect={1.319} enterFrame={168} travel={19} from="top" phase={2} stepped={4} kind="figure" z={3} />
+      <Card src="m20/cards/s04/kartu_banyu_tirta.png" x={0.7965} y={0.7227} w={0.3779} aspect={0.6271} enterFrame={142} travel={18} from="right" phase={2.75} stepped={1} kind="type" z={4} />
+      <Card src="m20/cards/s04/kartu_bertumpu.png" x={0.5109} y={0.4759} w={0.4826} aspect={0.4992} enterFrame={35} travel={18} from="bottom" phase={3.5} stepped={1} kind="type" z={5} />
+      <Card src="m20/cards/s04/kartu_cahi.png" x={0.8205} y={0.8809} w={0.2355} aspect={0.8129} enterFrame={197} travel={18} from="left" phase={4.25} stepped={1} kind="type" z={6} />
+      <Card src="m20/cards/s04/kartu_pertama.png" x={0.2772} y={0.2279} w={0.5094} aspect={0.7565} enterFrame={1} travel={16} from="top" phase={5} stepped={1} kind="type" z={7} />
       <HandMark
         shape="box"
         box={[0.0085, 0.0212, 0.546, 0.4346]}
@@ -317,8 +309,8 @@ const S04: React.FC = () => (
         rotate={-3}
         pen="marker"
         motion="draw"
-        z={6}
-        color="crimson"
+        z={7}
+        color="yellow"
         seed={1292}
       />
       <HandMark
@@ -327,9 +319,9 @@ const S04: React.FC = () => (
         at={168}
         duration={13}
         rotate={1.4}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1309}
       />
       <HandMark
@@ -338,10 +330,10 @@ const S04: React.FC = () => (
         at={215}
         duration={8}
         rotate={2.8}
-        pen="marker"
+        pen="ballpoint"
         motion="draw"
-        z={7}
-        color="crimson"
+        z={6}
+        color="ink"
         seed={1326}
       />
       <HandMark
@@ -350,9 +342,9 @@ const S04: React.FC = () => (
         at={160}
         duration={16}
         rotate={1.3}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1343}
       />
     </AbsoluteFill>
@@ -361,36 +353,36 @@ const S04: React.FC = () => (
 
 const S05: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 14, x: 0.4535, y: 0.4535, zoom: 1.1026, ease: "slow"},
-          {at: 38, x: 0.4435, y: 0.4435, zoom: 1.1274, ease: "slow"},
-          {at: 48, x: 0.6065, y: 0.3935, zoom: 1.2708, ease: "slow"},
-          {at: 73, x: 0.6152, y: 0.3848, zoom: 1.2993, ease: "slow"},
-          {at: 81, x: 0.4414, y: 0.5586, zoom: 1.1327, ease: "slow"},
-          {at: 108, x: 0.5586, y: 0.5586, zoom: 1.1327, ease: "slow"},
-          {at: 122, x: 0.6126, y: 0.6126, zoom: 1.2905, ease: "slow"},
-          {at: 145, x: 0.6211, y: 0.6211, zoom: 1.3196, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 14, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 38, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 48, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 73, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 81, x: 0.3704, y: 0.5785, zoom: 1.35, ease: "slow"},
+          {at: 108, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 122, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 145, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
           {at: 156, x: 0.5, y: 0.5, zoom: 1.03, ease: "slow"},
         ]}
              plate="m20/plates/s05.jpg" totalFrames={162}
              phase={2.25}>
     <AbsoluteFill>
-      <Card src="m20/cards/s05/foto_sawah_jawa.png" x={0.7005} y={0.6559} w={0.6533} aspect={1.1838} enterFrame={129} travel={21} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s05/foto_pasar_sunda.png" x={0.5952} y={0.4642} w={0.4157} aspect={1.2185} enterFrame={65} travel={21} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s05/kartu_keliru.png" x={0.2802} y={0.2506} w={0.5109} aspect={0.8844} enterFrame={0} travel={15} from="right" phase={2} stepped={2} kind="type" z={3} />
-      <Card src="m20/cards/s05/figur_penutur_sunda.png" x={0.1548} y={0.5957} w={0.2151} aspect={2.0519} enterFrame={54} travel={21} from="bottom" phase={2.75} stepped={2} kind="figure" z={4} />
-      <Card src="m20/cards/s05/kartu_cahi_sunda.png" x={0.7885} y={0.2142} w={0.4113} aspect={1.0541} enterFrame={28} travel={21} from="left" phase={3.5} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s05/kartu_banyu_jawa.png" x={0.8368} y={0.6895} w={0.2812} aspect={1.3472} enterFrame={101} travel={21} from="top" phase={4.25} stepped={2} kind="type" z={6} />
+      <Card src="m20/cards/s05/foto_sawah_jawa.png" x={0.7005} y={0.6559} w={0.6533} aspect={1.1838} enterFrame={131} travel={19} from="left" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s05/foto_pasar_sunda.png" x={0.5952} y={0.4642} w={0.4157} aspect={1.2185} enterFrame={67} travel={19} from="top" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s05/kartu_banyu_jawa.png" x={0.8368} y={0.6895} w={0.2812} aspect={1.3472} enterFrame={104} travel={18} from="right" phase={2} stepped={1} kind="type" z={3} />
+      <Card src="m20/cards/s05/kartu_cahi_sunda.png" x={0.7885} y={0.2142} w={0.4113} aspect={1.0541} enterFrame={35} travel={14} from="bottom" phase={2.75} stepped={3} kind="type" z={4} />
+      <Card src="m20/cards/s05/kartu_keliru.png" x={0.2802} y={0.2506} w={0.5109} aspect={0.8844} enterFrame={1} travel={14} from="left" phase={3.5} stepped={1} kind="type" z={5} />
+      <Card src="m20/cards/s05/figur_penutur_sunda.png" x={0.1548} y={0.5957} w={0.2151} aspect={2.0519} enterFrame={56} travel={19} from="top" phase={4.25} stepped={4} kind="figure" z={6} />
       <HandMark
         shape="cross"
         box={[0.0107, 0.0107, 0.5496, 0.4906]}
         at={22}
         duration={13}
         rotate={-2}
-        pen="marker"
+        pen="ballpoint"
         motion="draw"
-        z={3}
-        color="crimson"
+        z={5}
+        color="ink"
         seed={1365}
       />
       <HandMark
@@ -399,10 +391,10 @@ const S05: React.FC = () => (
         at={56}
         duration={14}
         rotate={0}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        z={5}
-        color="coral"
+        z={4}
+        color="sky"
         seed={1382}
       />
       <HandMark
@@ -411,10 +403,10 @@ const S05: React.FC = () => (
         at={129}
         duration={13}
         rotate={1.6}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        z={6}
-        color="crimson"
+        z={3}
+        color="sky"
         seed={1399}
       />
     </AbsoluteFill>
@@ -423,27 +415,23 @@ const S05: React.FC = () => (
 
 const S06: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 19, x: 0.3875, y: 0.3875, zoom: 1.2904, ease: "slow"},
-          {at: 42, x: 0.3789, y: 0.3789, zoom: 1.3194, ease: "slow"},
-          {at: 50, x: 0.5332, y: 0.4668, zoom: 1.0711, ease: "linear"},
-          {at: 53, x: 0.5846, y: 0.4154, zoom: 1.2064, ease: "fast"},
-          {at: 67, x: 0.569, y: 0.431, zoom: 1.16, ease: "slow"},
-          {at: 81, x: 0.3968, y: 0.6032, zoom: 1.2601, ease: "slow"},
-          {at: 95, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 105, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 114, x: 0.5471, y: 0.5471, zoom: 1.104, ease: "slow"},
-          {at: 133, x: 0.5571, y: 0.5571, zoom: 1.1288, ease: "slow"},
-          {at: 136, x: 0.5571, y: 0.5571, zoom: 1.1288, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 19, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 42, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 50, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 67, x: 0.4988, y: 0.5037, zoom: 1.2601, ease: "slow"},
+          {at: 81, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 99, x: 0.4972, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 136, x: 0.4972, y: 0.6296, zoom: 1.35, ease: "slow"},
         ]}
              plate="m20/plates/s06.jpg" totalFrames={137}
              phase={2.7}>
     <AbsoluteFill>
-      <Card src="m20/cards/s06/foto_gunung_jauh.png" x={0.7391} y={0.2695} w={0.4462} aspect={1.0913} enterFrame={26} travel={21} from="top" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s06/foto_awan.png" x={0.7137} y={0.752} w={0.4956} aspect={1.0009} enterFrame={98} travel={21} from="right" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s06/kartu_17000.png" x={0.2326} y={0.7546} w={0.4084} aspect={1.1827} enterFrame={74} travel={21} from="bottom" phase={2} stepped={2} kind="type" z={3} />
-      <Card src="m20/cards/s06/kartu_kedua.png" x={0.2551} y={0.2656} w={0.4244} aspect={0.8345} enterFrame={6} travel={14} from="left" phase={2.75} stepped={2} kind="type" z={4} />
-      <Card src="m20/cards/s06/kartu_tingginya.png" x={0.4985} y={0.5046} w={0.3968} aspect={0.6399} enterFrame={46} travel={21} from="top" phase={3.5} stepped={2} kind="type" z={5} />
+      <Card src="m20/cards/s06/foto_awan.png" x={0.7137} y={0.752} w={0.4956} aspect={1.0009} enterFrame={100} travel={19} from="top" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s06/foto_gunung_jauh.png" x={0.7391} y={0.2695} w={0.4462} aspect={1.0913} enterFrame={28} travel={19} from="right" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s06/kartu_17000.png" x={0.2326} y={0.7546} w={0.4084} aspect={1.1827} enterFrame={77} travel={18} from="bottom" phase={2} stepped={1} kind="type" z={3} />
+      <Card src="m20/cards/s06/kartu_kedua.png" x={0.2551} y={0.2656} w={0.4244} aspect={0.8345} enterFrame={8} travel={12} from="left" phase={2.75} stepped={3} kind="type" z={4} />
+      <Card src="m20/cards/s06/kartu_tingginya.png" x={0.4985} y={0.5046} w={0.3968} aspect={0.6399} enterFrame={49} travel={18} from="top" phase={3.5} stepped={1} kind="type" z={5} />
       <HandMark
         shape="box"
         box={[0.0289, 0.0745, 0.4813, 0.4567]}
@@ -453,7 +441,7 @@ const S06: React.FC = () => (
         pen="marker"
         motion="draw"
         z={4}
-        color="crimson"
+        color="yellow"
         seed={1438}
       />
       <HandMark
@@ -462,9 +450,9 @@ const S06: React.FC = () => (
         at={100}
         duration={16}
         rotate={0.6}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1455}
       />
       <HandMark
@@ -475,8 +463,8 @@ const S06: React.FC = () => (
         rotate={3.4}
         pen="marker"
         motion="draw"
-        z={2}
-        color="crimson"
+        z={1}
+        color="coral"
         seed={1472}
       />
       <HandMark
@@ -485,9 +473,9 @@ const S06: React.FC = () => (
         at={117}
         duration={16}
         rotate={152.14}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="coral"
+        color="sky"
         seed={1489}
       />
     </AbsoluteFill>
@@ -496,47 +484,45 @@ const S06: React.FC = () => (
 
 const S07: React.FC = () => (
   <PaperStage camera={[
-          {at: 0, x: 0.4808, y: 0.4808, zoom: 1.04, ease: "slow"},
-          {at: 18, x: 0.5288, y: 0.4561, zoom: 1.0963, ease: "slow"},
-          {at: 20, x: 0.5346, y: 0.4654, zoom: 1.0744, ease: "linear"},
-          {at: 27, x: 0.4145, y: 0.4154, zoom: 1.2064, ease: "fast"},
-          {at: 41, x: 0.431, y: 0.431, zoom: 1.16, ease: "slow"},
-          {at: 49, x: 0.5908, y: 0.4092, zoom: 1.222, ease: "slow"},
-          {at: 70, x: 0.4092, y: 0.5908, zoom: 1.222, ease: "slow"},
-          {at: 84, x: 0.4717, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 113, x: 0.5177, y: 0.5177, zoom: 1.0367, ease: "slow"},
-          {at: 127, x: 0.5283, y: 0.5187, zoom: 1.06, ease: "slow"},
-          {at: 143, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 157, x: 0.511, y: 0.5283, zoom: 1.06, ease: "slow"},
-          {at: 170, x: 0.5134, y: 0.5624, zoom: 1.1427, ease: "slow"},
-          {at: 193, x: 0.5134, y: 0.5724, zoom: 1.1693, ease: "slow"},
-          {at: 201, x: 0.5134, y: 0.5724, zoom: 1.1693, ease: "slow"},
-          {at: 209, x: 0.5083, y: 0.4717, zoom: 1.06, ease: "slow"},
+          {at: 0, x: 0.5, y: 0.5, zoom: 1, ease: "slow"},
+          {at: 21, x: 0.3704, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 35, x: 0.6296, y: 0.3704, zoom: 1.35, ease: "slow"},
+          {at: 55, x: 0.5731, y: 0.4269, zoom: 1.35, ease: "slow"},
+          {at: 72, x: 0.5731, y: 0.4269, zoom: 1.35, ease: "slow"},
+          {at: 84, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 113, x: 0.6296, y: 0.5187, zoom: 1.35, ease: "slow"},
+          {at: 127, x: 0.6296, y: 0.5187, zoom: 1.35, ease: "slow"},
+          {at: 143, x: 0.6296, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 157, x: 0.511, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 170, x: 0.5134, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 194, x: 0.5134, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 202, x: 0.3704, y: 0.6296, zoom: 1.35, ease: "slow"},
+          {at: 210, x: 0.5083, y: 0.3704, zoom: 1.35, ease: "slow"},
           {at: 220, x: 0.5083, y: 0.3704, zoom: 1.35, ease: "slow"},
           {at: 296, x: 0.532, y: 0.6296, zoom: 1.35, ease: "slow"},
-          {at: 310, x: 0.5177, y: 0.5177, zoom: 1.0367, ease: "slow"},
-          {at: 329, x: 0.5283, y: 0.5283, zoom: 1.06, ease: "slow"},
+          {at: 308, x: 0.5391, y: 0.6066, zoom: 1.2711, ease: "slow"},
+          {at: 330, x: 0.5391, y: 0.6066, zoom: 1.2711, ease: "slow"},
         ]}
              plate="m20/plates/s07.jpg" totalFrames={333}
              phase={3.15}>
     <AbsoluteFill>
-      <Card src="m20/cards/s07/foto_everest.png" x={0.2231} y={0.2741} w={0.3779} aspect={0.9889} enterFrame={0} travel={21} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
-      <Card src="m20/cards/s07/foto_sunda.png" x={0.6946} y={0.5228} w={0.6533} aspect={0.7952} enterFrame={106} travel={21} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
-      <Card src="m20/cards/s07/figur_pendaki.png" x={0.1471} y={0.7425} w={0.3547} aspect={1.6485} enterFrame={67} travel={17} from="left" phase={2} stepped={2} kind="figure" z={4} poses={[{atFrame: 94, src: "m20/cards/s07/figur_pendaki_pose2.png"}, {atFrame: 116, src: "m20/cards/s07/figur_pendaki_pose3.png"}, {atFrame: 138, src: "m20/cards/s07/figur_pendaki_pose4.png"}]} />
-      <Card src="m20/cards/s07/strip_koran_8848.png" x={0.8138} y={0.1575} w={0.4092} aspect={0.9388} enterFrame={28} travel={21} from="top" phase={2.75} stepped={2} kind="type" z={5} />
-      <Card src="m20/cards/s07/kartu_ketiga.png" x={0.5102} y={0.1829} w={0.3081} aspect={1.0606} enterFrame={203} travel={17} from="right" phase={3.5} stepped={2} kind="type" z={6} />
-      <Card src="m20/cards/s07/kartu_4000.png" x={0.5134} y={0.8875} w={0.4789} aspect={0.5166} enterFrame={150} travel={21} from="bottom" phase={4.25} stepped={2} kind="type" z={7} />
-      <Card src="m20/cards/s07/kartu_bukan_ci.png" x={0.5391} y={0.6941} w={0.774} aspect={0.4374} enterFrame={293} travel={17} from="left" phase={5} stepped={2} kind="type" z={8} />
-      <Card src="m20/cards/s07/figur_pengukur_gunung.png" x={0.8911} y={0.7393} w={0.2754} aspect={2.1273} enterFrame={122} travel={21} from="top" phase={5.75} stepped={2} kind="figure" z={9} />
+      <Card src="m20/cards/s07/foto_everest.png" x={0.2231} y={0.2741} w={0.3779} aspect={0.9889} enterFrame={2} travel={19} from="right" phase={0.5} stepped={2} kind="photo" z={1} />
+      <Card src="m20/cards/s07/foto_sunda.png" x={0.6946} y={0.5228} w={0.6533} aspect={0.7952} enterFrame={108} travel={19} from="bottom" phase={1.25} stepped={2} kind="photo" z={2} />
+      <Card src="m20/cards/s07/figur_pendaki.png" x={0.1471} y={0.7425} w={0.3547} aspect={1.6485} enterFrame={66} travel={18} from="left" phase={2} stepped={4} kind="figure" z={3} poses={[{atFrame: 94, src: "m20/cards/s07/figur_pendaki_pose2.png"}, {atFrame: 116, src: "m20/cards/s07/figur_pendaki_pose3.png"}, {atFrame: 138, src: "m20/cards/s07/figur_pendaki_pose4.png"}]} />
+      <Card src="m20/cards/s07/kartu_bukan_ci.png" x={0.5391} y={0.6941} w={0.774} aspect={0.4374} enterFrame={294} travel={16} from="top" phase={2.75} stepped={1} kind="type" z={4} />
+      <Card src="m20/cards/s07/figur_pengukur_gunung.png" x={0.8911} y={0.7393} w={0.2754} aspect={2.1273} enterFrame={124} travel={19} from="right" phase={3.5} stepped={4} kind="figure" z={5} />
+      <Card src="m20/cards/s07/strip_koran_8848.png" x={0.8138} y={0.1575} w={0.4092} aspect={0.9388} enterFrame={31} travel={18} from="bottom" phase={4.25} stepped={1} kind="type" z={6} />
+      <Card src="m20/cards/s07/kartu_4000.png" x={0.5134} y={0.8875} w={0.4789} aspect={0.5166} enterFrame={153} travel={18} from="left" phase={5} stepped={1} kind="type" z={7} />
+      <Card src="m20/cards/s07/kartu_ketiga.png" x={0.5102} y={0.1829} w={0.3081} aspect={1.0606} enterFrame={204} travel={16} from="top" phase={5.75} stepped={1} kind="type" z={8} />
       <HandMark
         shape="arrow-right"
         box={[0.363, 0.1535, 0.754, 0.2935]}
         at={56}
         duration={15}
         rotate={-1}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        color="crimson"
+        color="sky"
         seed={1511}
       />
       <HandMark
@@ -545,10 +531,10 @@ const S07: React.FC = () => (
         at={178}
         duration={13}
         rotate={0}
-        pen="marker"
+        pen="felt"
         motion="draw"
         z={7}
-        color="coral"
+        color="sky"
         seed={1528}
       />
       <HandMark
@@ -557,10 +543,10 @@ const S07: React.FC = () => (
         at={316}
         duration={13}
         rotate={2.2}
-        pen="marker"
+        pen="ballpoint"
         motion="draw"
-        z={8}
-        color="crimson"
+        z={4}
+        color="ink"
         seed={1545}
       />
       <HandMark
@@ -569,10 +555,10 @@ const S07: React.FC = () => (
         at={174}
         duration={16}
         rotate={-3}
-        pen="marker"
+        pen="felt"
         motion="draw"
-        z={4}
-        color="crimson"
+        z={3}
+        color="sky"
         seed={1562}
       />
       <Khat

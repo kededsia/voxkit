@@ -1,7 +1,7 @@
 import React from "react";
 import {Img, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig} from "remotion";
 import {cutoutLook, contactShadow} from "./effects";
-import {arcOffset, breathe, progress, squashStretch, wobble} from "./motion";
+import {arcOffset, breathe, progress, settle, squashStretch, wobble} from "./motion";
 import {STAGE_H, STAGE_W} from "./Stage";
 import {StickerLabel} from "./Sticker";
 
@@ -42,14 +42,19 @@ export type ElementFrom = "left" | "right" | "top" | "bottom" | "fade";
  * - `type`   — printed matter is dead flat and dead still. Its only motion is the
  *              arrival; that stillness is what makes it read as type.
  * - `other`  — a prop (magnifier, rubber stamp, dictionary) keeps the old idle.
+ *
+ * `settle` is the same idea applied to the *landing*. A cut-out of a person is a
+ * light piece of paper: it skates a few pixels when it is let go. A halftone
+ * print is heavy and flat and grips at once. Both come to rest exactly on their
+ * slot, because `settle` returns to zero.
  */
 export type CardKind = "photo" | "figure" | "type" | "other";
 
-const IDLE: Record<CardKind, {breathe: number; wobble: number; spin: number; drift: number}> = {
-  photo: {breathe: 0.001, wobble: 0, spin: 0.35, drift: 0.035},
-  figure: {breathe: 0.0052, wobble: 0.55, spin: 0.6, drift: 0.012},
-  type: {breathe: 0, wobble: 0, spin: 1, drift: 0},
-  other: {breathe: 0.0038, wobble: 0.34, spin: 0.8, drift: 0},
+const IDLE: Record<CardKind, {breathe: number; wobble: number; spin: number; drift: number; settle: number}> = {
+  photo: {breathe: 0.001, wobble: 0, spin: 0.35, drift: 0.035, settle: 0.0018},
+  figure: {breathe: 0.0052, wobble: 0.55, spin: 0.6, drift: 0.012, settle: 0.0085},
+  type: {breathe: 0, wobble: 0, spin: 1, drift: 0, settle: 0.0012},
+  other: {breathe: 0.0038, wobble: 0.34, spin: 0.8, drift: 0, settle: 0.005},
 };
 
 export type ElementPose = {
@@ -191,6 +196,14 @@ export const Element: React.FC<{
   const tx = travelling * (from === "fade" ? 0 : dx);
   const ty = travelling * (from === "fade" ? 0 : dy) - arcOffset(drag, arc);
 
+  // The skate after release. It is applied *against* the direction of travel, so
+  // it carries the piece past its slot rather than short of it, and it decays to
+  // zero, so the resting position is still the measured slot to the pixel.
+  const skate = f > travel ? settle(f - travel, kind === "figure" ? 8 : 4) : 0;
+  const over = skate * IDLE[kind].settle;
+  const ox = from === "fade" ? 0 : -dx * over;
+  const oy = from === "fade" ? 0 : -dy * over;
+
   // stretch along the axis of travel while moving, squash on contact
   const moving = from === "fade" ? 0 : drag * (1 - drag) * 4;
   const {sx, sy} = squashStretch(moving, 0, 0.05);
@@ -200,6 +213,7 @@ export const Element: React.FC<{
   const spin =
     rotate +
     travelling * SPIN[from] * IDLE[kind].spin +
+    over * SPIN[from] * 9 +
     (f > travel ? wobble(frame, IDLE[kind].wobble, 96, phase) : 0);
 
   // A photograph keeps being pushed in for as long as it is on screen: monotonic,
@@ -248,7 +262,7 @@ export const Element: React.FC<{
         style={{
           position: "relative",
           width,
-          transform: `translate(${tx}px, ${ty + creepY}px) rotate(${spin}deg) scale(${(base * sx * idle * drift) + hit}, ${(base * sy * idle * drift) + hit})`,
+          transform: `translate(${tx + ox}px, ${ty + oy + creepY}px) rotate(${spin}deg) scale(${(base * sx * idle * drift) + hit}, ${(base * sy * idle * drift) + hit})`,
         }}
       >
         {video ? (

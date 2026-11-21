@@ -242,8 +242,10 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "digambar",
-     "z": 5,
-     "lands": 44
+     "z": 1,
+     "lands": 44,
+     "tertutup_boleh": true,
+     "tertutup_alasan": "the map is the page, not a piece on it: it is the largest element in the shot and the pieces sit ON it. Measured from the layout they hide 29% of it (foto_kota_sekarang 24%, kartu_masih_dipakai 3%, kartu_bentang_hilang 3%), so the place names it carries stay legible. Raising it above them would put the map over the slip the voice is pointing at."
     },
     {
      "name": "kartu_bentang_hilang",
@@ -255,7 +257,7 @@
      "at": "upper right of the frame, centred at 0.75 across, about 0.47 of the frame wide",
      "cut": true,
      "word": "ada,",
-     "z": 2,
+     "z": 4,
      "lands": 109,
      "tertutup_boleh": "the man holding the map stands in front of this slip's lower right corner; the still draws him over it too. His head and neck must stay clear, so he stays on top and the slip's last letters sit behind his shoulder — the words are still fully readable across the top of the page.",
      "tertutup_alasan": "terukur: pemakai_peta menutup 23% kotaknya, 77% terbaca"
@@ -283,7 +285,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "untuk",
-     "z": 4,
+     "z": 5,
      "lands": 155
     },
     {
@@ -296,7 +298,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "sekarang.",
-     "z": 1,
+     "z": 2,
      "lands": 192
     }
    ],
@@ -346,7 +348,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "kiasan.",
-     "z": 3,
+     "z": 4,
      "lands": 31
     },
     {
@@ -359,7 +361,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "bekerja,",
-     "z": 4,
+     "z": 1,
      "lands": 93,
      "slot_catatan": "the map is drawn in pale ink on cream: 3 % of the piece is dark enough to count as ink, so the correlation has two thin wavy lines and a grid to lock onto and settles on whichever pale patch is nearest. Cropping the still at this slot and putting it beside the card shows the same sheet, the same fold, the same torn corner — the slot is right and the measure cannot see it."
     },
@@ -373,7 +375,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.43 of the frame wide",
      "cut": true,
      "word": "lama",
-     "z": 1,
+     "z": 3,
      "lands": 155
     },
     {
@@ -472,7 +474,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "sini,",
-     "z": 3,
+     "z": 4,
      "lands": 34
     },
     {
@@ -498,7 +500,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "lisan.",
-     "z": 4,
+     "z": 3,
      "lands": 69
     }
    ],
@@ -551,7 +553,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "itu",
-     "z": 2,
+     "z": 1,
      "lands": 33
     },
     {
@@ -577,7 +579,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "mulut,",
-     "z": 4,
+     "z": 5,
      "lands": 79
     },
     {
@@ -590,7 +592,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "membuktikan",
-     "z": 1,
+     "z": 2,
      "lands": 128,
      "slot_catatan": "the card is a photograph of an open blank notebook — almost no printed ink, and what there is sits in one ruled corner. The ink test has no print to find here; the slot puts the notebook's spine and its ruled page exactly where the still draws them, checked by cropping the still at the slot."
     },
@@ -604,7 +606,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "lahir.",
-     "z": 5,
+     "z": 4,
      "lands": 181
     }
    ],
@@ -664,7 +666,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.48 of the frame wide",
      "cut": true,
      "word": "datang",
-     "z": 1,
+     "z": 2,
      "lands": 16,
      "motion_basis": "Tangan kanan dan kepala, selebar 0.26 frame; lontar dan lutut tetap. pose1 = duduk membungkuk, stylus menempel di daun.",
      "poses_planned": [
@@ -692,7 +694,7 @@
      "at": "lower left of the frame, centred at 0.33 across, about 0.53 of the frame wide",
      "cut": true,
      "word": "tulis,",
-     "z": 3,
+     "z": 4,
      "lands": 47
     },
     {
@@ -705,7 +707,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "mengejutkan",
-     "z": 2,
+     "z": 1,
      "lands": 91
     },
     {
@@ -718,7 +720,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "berbeda.",
-     "z": 4,
+     "z": 3,
      "lands": 133
     }
    ],
@@ -784,7 +786,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Tugu",
-     "z": 3,
+     "z": 4,
      "lands": 81
     },
     {
@@ -797,7 +799,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "Masehi,",
-     "z": 4,
+     "z": 3,
      "lands": 129
     },
     {
@@ -876,7 +878,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Aksaranya",
-     "z": 2,
+     "z": 1,
      "lands": 8
     },
     {
@@ -889,7 +891,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Palawa,",
-     "z": 4,
+     "z": 5,
      "lands": 21
     },
     {
@@ -901,8 +903,8 @@
      "what": "a torn cream slip with letterpress type reading 'SANSKERTA'",
      "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
-     "word": "Sansekerta.",
-     "z": 5,
+     "word": "Sanskerta.",
+     "z": 6,
      "lands": 65
     },
     {
@@ -928,7 +930,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "dua",
-     "z": 6,
+     "z": 4,
      "lands": 153
     },
     {
@@ -941,7 +943,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "air.",
-     "z": 1,
+     "z": 2,
      "lands": 174
     }
    ],
@@ -957,7 +959,7 @@
      }
     ]
    ],
-   "mark": "A rightward arrow onto the Sanskrit slip on 'sansekerta'.",
+   "mark": "A rightward arrow onto the Sanskrit slip on 'sanskerta'.",
    "emphasis": [
     {
      "frame": 1578.6,
@@ -1210,7 +1212,7 @@
      "at": "upper left of the frame, centred at 0.27 across, about 0.55 of the frame wide",
      "cut": true,
      "word": ".122",
-     "z": 3,
+     "z": 4,
      "lands": 47,
      "tertutup_boleh": "the man with the measuring rope stands in front of the slip's lower edge; the still draws him over it. His head and neck stay clear only if he is on top — the number still reads whole across the top.",
      "tertutup_alasan": "terukur: figur_pengukur menutup 25% kotaknya, 75% terbaca"
@@ -1225,7 +1227,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "tumbak,",
-     "z": 1,
+     "z": 2,
      "lands": 84
     },
     {
@@ -1266,7 +1268,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "kilometer,",
-     "z": 4,
+     "z": 6,
      "lands": 135,
      "tertutup_boleh": "the same figure crosses its left edge in the still. Nothing of the words is lost and his face is clear.",
      "tertutup_alasan": "terukur: figur_pengukur menutup 60% kotaknya, 40% terbaca"
@@ -1281,7 +1283,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "selesai",
-     "z": 2,
+     "z": 1,
      "lands": 149
     },
     {
@@ -1294,7 +1296,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.45 of the frame wide",
      "cut": true,
      "word": "hari.",
-     "z": 6,
+     "z": 3,
      "lands": 200
     }
    ],

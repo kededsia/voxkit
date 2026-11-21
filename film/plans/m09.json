@@ -91,7 +91,7 @@
      "at": "lower left of the frame, centred at 0.18 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "lama.",
-     "z": 3,
+     "z": 4,
      "lands": 51
     },
     {
@@ -104,7 +104,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide",
      "cut": true,
      "word": ".000",
-     "z": 4,
+     "z": 3,
      "lands": 105
     },
     {
@@ -193,7 +193,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "tersisa",
-     "z": 2,
+     "z": 3,
      "lands": 123
     },
     {
@@ -219,7 +219,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "batuan,",
-     "z": 3,
+     "z": 2,
      "lands": 228
     }
    ],
@@ -289,7 +289,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "sebagai",
-     "z": 5,
+     "z": 4,
      "lands": 52
     },
     {
@@ -330,7 +330,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Cekungan.",
-     "z": 4,
+     "z": 1,
      "lands": 99
     }
    ],
@@ -415,7 +415,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "kering",
-     "z": 4,
+     "z": 5,
      "lands": 97
     },
     {
@@ -441,7 +441,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "T.",
-     "z": 5,
+     "z": 4,
      "lands": 190
     }
    ],
@@ -484,7 +484,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "mencatat",
-     "z": 1,
+     "z": 4,
      "lands": 31,
      "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; buku dan lutut tetap. pose1 = duduk membungkuk, pena menyentuh halaman.",
      "poses_planned": [
@@ -538,7 +538,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "hutan",
-     "z": 2,
+     "z": 1,
      "lands": 166
     },
     {
@@ -551,7 +551,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "mengisi",
-     "z": 3,
+     "z": 2,
      "lands": 257
     },
     {
@@ -564,7 +564,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "cadangannya.",
-     "z": 4,
+     "z": 3,
      "lands": 270
     }
    ],
@@ -633,7 +633,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "tertinggal",
-     "z": 2,
+     "z": 3,
      "lands": 92,
      "motion_basis": "Kaki dan satu lengan dengan tongkat, selebar 0.28 frame; kerbau bergerak sebaris di belakang. pose1 = melangkah di rumput dangkal, tongkat di tangan kanan.",
      "poses_planned": [
@@ -661,7 +661,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.44 of the frame wide",
      "cut": true,
      "word": "rawa.",
-     "z": 3,
+     "z": 2,
      "lands": 122
     }
    ],
@@ -734,7 +734,7 @@
      "at": "upper centre of the frame, centred at 0.46 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "cili,",
-     "z": 3,
+     "z": 2,
      "lands": 88
     },
     {
@@ -747,7 +747,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.24 of the frame wide",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "badak,",
-     "z": 2,
+     "z": 5,
      "lands": 132
     },
     {
@@ -773,7 +773,7 @@
      "at": "lower right of the frame, centred at 0.66 across, about 0.41 of the frame wide",
      "cut": true,
      "word": "manyar.",
-     "z": 5,
+     "z": 3,
      "lands": 226
     }
    ],
@@ -848,7 +848,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "tempat",
-     "z": 2,
+     "z": 1,
      "lands": 89
     },
     {
@@ -861,7 +861,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "bekerja",
-     "z": 1,
+     "z": 2,
      "lands": 148,
      "erase": [
       [
@@ -939,7 +939,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Wayang",
-     "z": 1,
+     "z": 2,
      "lands": 37
     },
     {
@@ -952,7 +952,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tujuh",
-     "z": 6,
+     "z": 1,
      "lands": 100
     },
     {
@@ -965,7 +965,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "air",
-     "z": 2,
+     "z": 3,
      "lands": 115
     },
     {
@@ -978,7 +978,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.38 of the frame wide",
      "cut": true,
      "word": "telaga",
-     "z": 3,
+     "z": 4,
      "lands": 150
     },
     {
@@ -991,7 +991,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "Situ",
-     "z": 5,
+     "z": 6,
      "lands": 188
     },
     {
@@ -1004,7 +1004,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "Cisanti.",
-     "z": 4,
+     "z": 5,
      "lands": 200
     }
    ],
@@ -1060,7 +1060,7 @@
      "at": "upper left of the frame, centred at 0.28 across, about 0.36 of the frame wide",
      "cut": true,
      "word": "situ,",
-     "z": 1,
+     "z": 2,
      "lands": 13
     },
     {
@@ -1086,7 +1086,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "dimulai.",
-     "z": 2,
+     "z": 1,
      "lands": 50
     }
    ],
@@ -1129,7 +1129,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Barat,",
-     "z": 5,
+     "z": 7,
      "lands": 47
     },
     {
@@ -1142,7 +1142,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "menghidupi",
-     "z": 2,
+     "z": 3,
      "lands": 77
     },
     {
@@ -1155,7 +1155,7 @@
      "at": "lower left of the frame, centred at 0.18 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "kabu",
-     "z": 1,
+     "z": 5,
      "lands": 103
     },
     {
@@ -1168,7 +1168,7 @@
      "at": "lower centre of the frame, centred at 0.45 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "paten,",
-     "z": 7,
+     "z": 6,
      "lands": 112
     },
     {
@@ -1181,7 +1181,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "berawal",
-     "z": 6,
+     "z": 1,
      "lands": 135
     },
     {
@@ -1194,7 +1194,7 @@
      "at": "right edge of the frame, centred at 0.86 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "luasnya",
-     "z": 3,
+     "z": 4,
      "lands": 201
     },
     {
@@ -1207,7 +1207,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "kolam.",
-     "z": 4,
+     "z": 2,
      "lands": 256
     }
    ],
@@ -1257,7 +1257,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.44 of the frame wide",
      "cut": true,
      "word": "Barat",
-     "z": 1,
+     "z": 2,
      "lands": 55
     },
     {
@@ -1283,7 +1283,7 @@
      "at": "right of the frame, centred at 0.72 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "keduanya",
-     "z": 2,
+     "z": 3,
      "lands": 115
     },
     {
@@ -1296,7 +1296,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "terlihat.",
-     "z": 3,
+     "z": 1,
      "lands": 145
     }
    ],
@@ -1375,7 +1375,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "sudah",
-     "z": 2,
+     "z": 3,
      "lands": 107,
      "head": [
       0.18,
@@ -1395,7 +1395,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "permukiman.",
-     "z": 3,
+     "z": 2,
      "lands": 124
     }
    ],

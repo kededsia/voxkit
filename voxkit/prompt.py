@@ -26,6 +26,15 @@ from .contract import BAHAN, Card, Plan, Shot, words_in
 
 MAX_PROMPT = 1950          # the backend caps at 2000; the margin is for the wrapper
 
+#: The one case "every other clipping becomes the ground" cannot answer: the other
+#: clipping is *on top of* this piece, so removing it means inventing what is
+#: underneath. The model's default is to keep that sheet and leave it blank.
+OVERLAP = (
+    "If another clipping lies across this piece, it is not part of it: take it away "
+    "completely, and where it was continue this piece's own surface — its paper, its "
+    "print, its photograph. Never leave a blank patch of the other clipping's paper."
+)
+
 STYLE = (
     "STYLE: copy the TREATMENT of the attached style key — hand-cut editorial zine PAPER "
     "COLLAGE: bold flat colour blocks, torn newsprint edges, masking tape, coarse "
@@ -201,6 +210,15 @@ def iso_prompt(card: Card, chroma: str = "#FF00FF", cropped: bool = False) -> st
     crop around the piece, so the prompt must say the frame is small and the piece
     is the one in the middle — otherwise "the attached collage page" is a lie and
     the model returns the crop's whole collage.
+
+    `OVERLAP` is the third version, and it is the answer to a fault that reached a
+    render. "Every other clipping becomes the chroma ground" tells the model what
+    to delete, never what to *put there* — and when the other clipping lies across
+    this piece, deleting it means inventing what is underneath. The model does not
+    invent: it keeps the other clipping's sheet and leaves it blank, letters gone.
+    Two identical cards then sit on the page, the one behind offset by however far
+    the model drifted. Saying the case out loud is what a prompt can do about it;
+    `gates/assets.double` measures whether it worked.
     """
     p = card.placement
     where = f"{p.region}, about {p.cx:.0%} across and {p.cy:.0%} down" if p.region \
@@ -211,7 +229,8 @@ def iso_prompt(card: Card, chroma: str = "#FF00FF", cropped: bool = False) -> st
             f"piece to isolate: {card.what.strip().rstrip('.')}, near the centre. "
             f"Return only that piece, on pure flat {chroma}: the paper it lies on, "
             f"the paper edge of the crop, every other clipping and every shadow "
-            f"become {chroma}. Keep the piece at the same scale, rotation and ink. "
+            f"become {chroma}. {OVERLAP} "
+            f"Keep the piece at the same scale, rotation and ink. "
             f"If it is a printed card, return only that card's own block of paper. "
             f"Do not add, redraw, enlarge, move or re-letter anything."
         )
@@ -221,6 +240,7 @@ def iso_prompt(card: Card, chroma: str = "#FF00FF", cropped: bool = False) -> st
             f"{card.what.strip().rstrip('.')}, located {where}. "
             f"Return only that piece, on pure flat {chroma}: the page behind it, every "
             f"other clipping, every shadow and all page text become {chroma}. "
+            f"{OVERLAP} "
             f"Keep the piece at the exact same position, scale, rotation and ink. "
             f"If it is a printed card, return only that card's own block of paper — not the "
             f"page it was printed on and not any neighbouring text. "

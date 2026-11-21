@@ -34,7 +34,7 @@
      "at": "bottom, centred at 0.50 across, about 0.60 of the frame wide",
      "cut": true,
      "word": "Bahasa",
-     "z": 3,
+     "z": 2,
      "lands": 11,
      "hint": [
       0.5,
@@ -65,7 +65,7 @@
      "at": "right, centred at 0.76 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "dibentuk",
-     "z": 2,
+     "z": 3,
      "lands": 120
     }
    ],
@@ -148,7 +148,7 @@
      "what": "a sepia halftone cutout of a farmer standing ankle-deep in a paddy, looking down",
      "at": "centre, centred at 0.52 across, about 0.24 of the frame wide",
      "cut": true,
-     "word": "chai.",
+     "word": "cai.",
      "z": 3,
      "lands": 117,
      "poses_planned": [
@@ -201,7 +201,7 @@
     },
     {
      "frame": 265.4,
-     "word": "chai.",
+     "word": "cai.",
      "motion": "hold",
      "why": "skor 0.41 di bawah ambang wajib-gerak; kata ini ditandai tapi tidak digerakkan"
     },
@@ -329,7 +329,7 @@
      "at": "left, centred at 0.16 across, about 0.47 of the frame wide",
      "cut": true,
      "word": "Ia",
-     "z": 1,
+     "z": 2,
      "lands": 16
     },
     {
@@ -342,7 +342,7 @@
      "at": "upper centre, centred at 0.46 across, about 0.52 of the frame wide",
      "cut": true,
      "word": "mencatat.",
-     "z": 2,
+     "z": 1,
      "lands": 34
     },
     {
@@ -355,20 +355,20 @@
      "at": "centre, centred at 0.50 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "Rumusnya",
-     "z": 3,
+     "z": 4,
      "lands": 75
     },
     {
-     "name": "slip_chi",
+     "name": "slip_ci",
      "bahan": "cetak",
      "wujud": "sobekan_pita",
      "semiotik": "Awalan yang ditempelkan",
-     "semantik": "CHI",
-     "what": "a small cream slip letterpress-printed 'CHI' in heavy stencil",
+     "semantik": "CI",
+     "what": "a small cream slip letterpress-printed 'CI' in heavy stencil",
      "at": "lower centre left, centred at 0.30 across, about 0.20 of the frame wide",
      "cut": true,
-     "word": "Chi.",
-     "z": 4,
+     "word": "Ci.",
+     "z": 3,
      "lands": 133
     },
     {
@@ -412,7 +412,7 @@
     },
     {
      "frame": 681.8,
-     "word": "Chi.",
+     "word": "Ci.",
      "motion": "snap"
     }
    ],
@@ -510,7 +510,7 @@
      "at": "upper left, centred at 0.24 across, about 0.38 of the frame wide",
      "cut": true,
      "word": "tarum,",
-     "z": 1,
+     "z": 2,
      "lands": 41
     },
     {
@@ -523,7 +523,7 @@
      "at": "left, centred at 0.26 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "tarum.",
-     "z": 4,
+     "z": 5,
      "lands": 141
     },
     {
@@ -536,7 +536,7 @@
      "at": "centre, centred at 0.52 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "nila,",
-     "z": 2,
+     "z": 3,
      "lands": 92,
      "poses_planned": [
       {
@@ -562,7 +562,7 @@
      "at": "lower right, centred at 0.78 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "bening,",
-     "z": 3,
+     "z": 1,
      "lands": 186
     },
     {
@@ -575,7 +575,7 @@
      "at": "right, centred at 0.82 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "bening.",
-     "z": 5,
+     "z": 4,
      "lands": 213
     }
    ],
@@ -635,7 +635,7 @@
      "at": "upper left, centred at 0.26 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "keruh,",
-     "z": 1,
+     "z": 2,
      "lands": 58
     },
     {
@@ -648,7 +648,7 @@
      "at": "left, centred at 0.28 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "liwung.",
-     "z": 4,
+     "z": 5,
      "lands": 89
     },
     {
@@ -661,7 +661,7 @@
      "at": "centre, centred at 0.54 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "Kalau",
-     "z": 2,
+     "z": 3,
      "lands": 18
     },
     {
@@ -674,7 +674,7 @@
      "at": "lower right, centred at 0.80 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "bambu,",
-     "z": 3,
+     "z": 1,
      "lands": 129
     },
     {
@@ -687,7 +687,7 @@
      "at": "right, centred at 0.82 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "awi.",
-     "z": 5,
+     "z": 4,
      "lands": 187
     }
    ],
@@ -743,7 +743,7 @@
      "at": "upper left, centred at 0.26 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "airnya",
-     "z": 1,
+     "z": 2,
      "lands": 22
     },
     {
@@ -756,7 +756,7 @@
      "at": "centre left, centred at 0.44 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "panas,",
-     "z": 2,
+     "z": 3,
      "lands": 35
     },
     {
@@ -782,7 +782,7 @@
      "at": "lower right, centred at 0.76 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "dingin,",
-     "z": 3,
+     "z": 1,
      "lands": 101
     },
     {
@@ -848,7 +848,7 @@
      "at": "upper left, centred at 0.20 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "tumbuhan,",
-     "z": 2,
+     "z": 1,
      "lands": 32
     },
     {
@@ -861,7 +861,7 @@
      "at": "left, centred at 0.26 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "hewan.",
-     "z": 1,
+     "z": 2,
      "lands": 69
     },
     {
@@ -953,7 +953,7 @@
      "at": "upper left, centred at 0.22 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "badak,",
-     "z": 2,
+     "z": 3,
      "lands": 18
     },
     {
@@ -966,7 +966,7 @@
      "at": "left, centred at 0.24 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "badak.",
-     "z": 5,
+     "z": 4,
      "lands": 51
     },
     {
@@ -979,7 +979,7 @@
      "at": "centre, centred at 0.54 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "kuda,",
-     "z": 1,
+     "z": 2,
      "lands": 90
     },
     {
@@ -992,7 +992,7 @@
      "at": "centre, centred at 0.38 across, about 0.18 of the frame wide",
      "cut": true,
      "word": "tempat",
-     "z": 3,
+     "z": 6,
      "lands": 117
     },
     {
@@ -1005,7 +1005,7 @@
      "at": "centre, centred at 0.56 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "kuda.",
-     "z": 6,
+     "z": 5,
      "lands": 125,
      "erase": [
       [
@@ -1026,7 +1026,7 @@
      "at": "lower right, centred at 0.82 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "buminya.",
-     "z": 4,
+     "z": 1,
      "lands": 190
     }
    ],
@@ -1180,7 +1180,7 @@
      "at": "upper left, centred at 0.22 across, about 0.36 of the frame wide",
      "cut": true,
      "word": "bodas,",
-     "z": 1,
+     "z": 3,
      "lands": 19
     },
     {
@@ -1193,7 +1193,7 @@
      "at": "left, centred at 0.24 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "putih.",
-     "z": 4,
+     "z": 5,
      "lands": 53
     },
     {
@@ -1206,7 +1206,7 @@
      "at": "centre, centred at 0.52 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "hideng,",
-     "z": 2,
+     "z": 1,
      "lands": 91
     },
     {
@@ -1219,7 +1219,7 @@
      "at": "centre, centred at 0.54 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "hitam.",
-     "z": 5,
+     "z": 6,
      "lands": 125
     },
     {
@@ -1232,7 +1232,7 @@
      "at": "lower right, centred at 0.80 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "berem,",
-     "z": 3,
+     "z": 2,
      "lands": 163
     },
     {
@@ -1245,7 +1245,7 @@
      "at": "right, centred at 0.82 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "merah.",
-     "z": 6,
+     "z": 4,
      "lands": 198
     }
    ],
@@ -1299,7 +1299,10 @@
    "cards": [
     {
      "name": "halaman_register",
-     "nudge": [-0.224, -0.081],
+     "nudge": [
+      -0.224,
+      -0.081
+     ],
      "bahan": "foto",
      "wujud": "siluet_organik",
      "semiotik": "Halaman daftar dengan satu kolom baru - varian yang jarang dibicarakan",
@@ -1400,7 +1403,7 @@
      "at": "upper right, centred at 0.74 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "Sekke,",
-     "z": 5,
+     "z": 2,
      "lands": 14
     },
     {
@@ -1426,7 +1429,7 @@
      "at": "lower right, centred at 0.78 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "limus,",
-     "z": 2,
+     "z": 3,
      "lands": 123
     },
     {
@@ -1439,7 +1442,7 @@
      "at": "right, centred at 0.80 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "mirung,",
-     "z": 3,
+     "z": 5,
      "lands": 162
     },
     {
@@ -1529,7 +1532,7 @@
      "at": "left, centred at 0.26 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "awalan,",
-     "z": 4,
+     "z": 2,
      "lands": 15
     },
     {
@@ -1555,7 +1558,7 @@
      "at": "lower right, centred at 0.76 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "ini",
-     "z": 3,
+     "z": 4,
      "lands": 105,
      "poses_planned": [
       {
@@ -1581,7 +1584,7 @@
      "at": "right, centred at 0.86 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "air.",
-     "z": 2,
+     "z": 3,
      "lands": 120,
      "tertutup_boleh": "His head covers the slip's lower-left corner and nothing else: TEMPAT INI PUNYA AIR stays fully readable, and the slip above him would put paper across his face.",
      "tertutup_alasan": "terukur: orang_penjaga menutup 18% kotaknya, 82% terbaca"

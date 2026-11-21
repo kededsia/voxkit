@@ -300,9 +300,12 @@ def gate_set(names: Sequence[str] | None = None) -> list[Gate]:
     `schema` will fail several later gates for the same reason, and seeing the
     root cause first is the whole point.
     """
-    from . import assets, plan as plan_gates, program
+    from . import assets, motion as motion_gates, plan as plan_gates, program
 
-    registry = [*plan_gates.GATES, *program.GATES, *assets.GATES]
+    # `motion` is last on purpose: it is the only gate that reads the *finished
+    # film* rather than the plan, so it should be read after everything that can
+    # explain why the film came out the way it did.
+    registry = [*plan_gates.GATES, *program.GATES, *assets.GATES, *motion_gates.GATES]
     if names:
         wanted = set(names)
         missing = wanted - {g.name for g in registry}

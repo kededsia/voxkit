@@ -190,7 +190,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "mencatat",
-     "z": 2,
+     "z": 3,
      "lands": 99,
      "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; kaki dan daun tetap. pose1 = duduk, satu tangan mengangkat jari.",
      "poses_planned": [
@@ -218,7 +218,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "dilupakan,",
-     "z": 3,
+     "z": 2,
      "lands": 182
     },
     {
@@ -286,7 +286,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "berangkat,",
-     "z": 4,
+     "z": 5,
      "lands": 29
     },
     {
@@ -299,7 +299,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "menyebrangi",
-     "z": 1,
+     "z": 3,
      "lands": 56,
      "motion_basis": "Dua kaki dan satu lengan, selebar 0.26 frame; air tetap di ketinggian yang sama. pose1 = melangkah, satu kaki diangkat dari air.",
      "poses_planned": [
@@ -340,7 +340,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "istana.",
-     "z": 3,
+     "z": 1,
      "lands": 104
     },
     {
@@ -353,7 +353,7 @@
      "at": "lower right of the frame, centred at 0.67 across, about 0.61 of the frame wide",
      "cut": true,
      "word": "Cilan.",
-     "z": 5,
+     "z": 4,
      "lands": 183
     }
    ],
@@ -409,7 +409,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "rumahnya",
-     "z": 1,
+     "z": 2,
      "lands": 89
     },
     {
@@ -422,7 +422,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "sendiri.",
-     "z": 2,
+     "z": 3,
      "lands": 105
     },
     {
@@ -435,7 +435,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "adalah",
-     "z": 3,
+     "z": 1,
      "lands": 57
     }
    ],
@@ -494,7 +494,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "perjalanan",
-     "z": 1,
+     "z": 3,
      "tertutup_boleh": "Sengaja diletakkan di bawah peta_perjalanan (z3) agar peta — subjek shot yang harus terbaca (R6) — tidak tertutup foto. Jalannya perjalanan tetap terekam di bawah peta.",
      "lands": 23,
      "tertutup_alasan": "terukur: peta_perjalanan menutup 47% kotaknya, 53% terbaca"
@@ -535,7 +535,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "tempat,",
-     "z": 3,
+     "z": 1,
      "tertutup_boleh": "Dilewati figur penulis_jalan (z dinaikkan ke 7) agar kepala figur tidak tertutup; peta sengaja dibiarkan tertutup sebagian oleh figur.",
      "lands": 134,
      "tertutup_alasan": "terukur: foto_gunung menutup 26% kotaknya, 74% terbaca"
@@ -550,7 +550,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "gunung,",
-     "z": 4,
+     "z": 2,
      "tertutup_boleh": "Dilewati figur penulis_jalan (z dinaikkan ke 7); foto gunung sengaja dibiarkan tertutup sebagian oleh figur supaya kepala tidak tertutup.",
      "lands": 158,
      "tertutup_alasan": "terukur: foto_sungai_disebut menutup 18% kotaknya, 82% terbaca"
@@ -565,7 +565,7 @@
      "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "sungai.",
-     "z": 5,
+     "z": 4,
      "lands": 184
     }
    ],
@@ -659,7 +659,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "satupun",
-     "z": 5,
+     "z": 3,
      "lands": 104
     },
     {
@@ -672,7 +672,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "kata",
-     "z": 3,
+     "z": 2,
      "lands": 119
     },
     {
@@ -685,7 +685,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.40 of the frame wide",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "Arab",
-     "z": 6,
+     "z": 5,
      "lands": 139
     }
    ],
@@ -738,7 +738,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "tersimpan",
-     "z": 5,
+     "z": 3,
      "lands": 39
     },
     {
@@ -766,7 +766,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Bodleian,",
-     "z": 3,
+     "z": 1,
      "lands": 70
     },
     {
@@ -779,7 +779,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Oxford,",
-     "z": 4,
+     "z": 5,
      "tertutup_boleh": "Dilewati figur pustakawan (z dinaikkan ke 6); slip ini juga di-re-cut ke ukuran 0.30 agar tidak menutupi kepala.",
      "lands": 98,
      "tertutup_alasan": "terukur: kartu_1627 menutup 14% kotaknya, 86% terbaca"
@@ -794,7 +794,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "1627.",
-     "z": 6,
+     "z": 4,
      "lands": 135
     }
    ],

@@ -31,6 +31,20 @@ def _say(msg: str) -> None:
     print(msg)
 
 
+def _upscale(project: Project, paths, profile: str) -> None:
+    """Raise the reply to the resolution the stage draws it at, if configured.
+
+    Called on the raw replies, before anything is keyed or measured: `resolution`
+    replaces the file in place and is aligned to the pixel, so every measurement
+    downstream is a measurement of the same picture at more pixels.
+    """
+    scale = project.generation.upscale
+    if not scale:
+        return
+    from . import resolution
+    resolution.upscale(project, list(paths), scale, profile=profile, say=_say)
+
+
 # ------------------------------------------------------------------- words
 def words(project: Project, module: str) -> int:
     """Score the narration and write nothing — the transcript is the source."""
@@ -117,6 +131,8 @@ def stills(project: Project, module: str, *, profile: str = "", dry: bool = Fals
     if dry:
         _say(f"{module}: {len(jobs)} still(s) would be drawn")
         return 0
+
+    _upscale(project, [out / f"{j.output}_0.jpg" for j in jobs], profile)
 
     promoted = 0
     for job in jobs:
@@ -237,6 +253,8 @@ def isolate(project: Project, module: str, *, profile: str = "", dry: bool = Fal
     if outcome.missing:
         _say(f"{module}: {len(outcome.missing)} piece(s) did not come back")
         return 1
+    _upscale(project, [p for j, _, _ in jobs
+                       if (p := _first(iso_dir, j.output)) is not None], profile)
     return _build_layouts(project, plan, only)
 
 
@@ -663,6 +681,7 @@ def fills(project: Project, module: str, *, profile: str = "", dry: bool = False
                         profile=profile, dry=dry, runner=runner, say=_say)
     if dry:
         return 0
+    _upscale(project, [out / f"{j.output}_0.jpg" for j in jobs], profile)
     _say(f"{module}: {outcome.summary()}")
     return 0 if outcome.ok else 1
 

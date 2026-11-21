@@ -52,7 +52,7 @@
      "at": "upper left of the frame, centred at 0.26 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "Cipakan",
-     "z": 1,
+     "z": 2,
      "lands": 47
     },
     {
@@ -65,7 +65,7 @@
      "at": "lower left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "satu",
-     "z": 2,
+     "z": 1,
      "lands": 69
     },
     {
@@ -268,7 +268,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "air,",
-     "z": 3,
+     "z": 4,
      "lands": 44
     },
     {
@@ -294,7 +294,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "sungai.",
-     "z": 4,
+     "z": 3,
      "lands": 109
     }
    ],
@@ -349,7 +349,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "wadah",
-     "z": 1,
+     "z": 2,
      "lands": 15
     },
     {
@@ -388,7 +388,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "warisan",
-     "z": 2,
+     "z": 3,
      "lands": 122,
      "motion_basis": "Dua lengan dan punggung, selebar 0.24 frame; kaki tetap di tanah. pose1 = berdiri, sapu dipegang mendatar.",
      "poses_planned": [
@@ -416,7 +416,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "leluhur.",
-     "z": 3,
+     "z": 1,
      "lands": 133
     }
    ],
@@ -468,7 +468,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "perbedaan",
-     "z": 4,
+     "z": 6,
      "lands": 26
     },
     {
@@ -481,7 +481,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "ahli",
-     "z": 1,
+     "z": 2,
      "lands": 75
     },
     {
@@ -494,7 +494,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "kata",
-     "z": 5,
+     "z": 4,
      "lands": 99
     },
     {
@@ -507,7 +507,7 @@
      "at": "centre of the frame, centred at 0.46 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Darsa",
-     "z": 2,
+     "z": 3,
      "lands": 174,
      "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; buku dan meja tetap. pose1 = duduk, pensil menyentuh halaman.",
      "poses_planned": [
@@ -535,7 +535,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "Pajajaran",
-     "z": 3,
+     "z": 1,
      "lands": 219
     },
     {
@@ -548,7 +548,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "sama.",
-     "z": 6,
+     "z": 5,
      "lands": 300
     }
    ],

@@ -720,8 +720,13 @@ export const compose = (shape: string, W: number, H: number, sw: number, seed: n
       const botY = 0.64 * H;
       const dotY = 0.85 * H;
       const n = 40;
-      const pts = sample(n, (t) => [cx + (r() - 0.5) * 1.2, topY + (botY - topY) * t]);
-      const half = sample(n, (t) => (sw / 2) * (1.28 - 0.45 * t));
+      const pts = sample(n, (t): Pt => [cx + (r() - 0.5) * 1.2, topY + (botY - topY) * t]);
+      // `half` is a scalar curve, not a point, so it cannot go through `sample`
+      // (which is typed to points). It used to, and the two errors it produced
+      // were the only thing standing between this project and a clean
+      // `tsc --noEmit` — which is how the camera bug survived: no typecheck ran.
+      const half = Array.from({length: n}, (_, i) =>
+        (sw / 2) * (1.28 - 0.45 * (i / (n - 1))));
       const stem: Stroke = {pts, half};
       const dot = loop(cx, dotY, sw * 0.12, sw * 0.12, sw * 1.05, r, {turns: 1.15, n: 36});
       return [stem, dot];

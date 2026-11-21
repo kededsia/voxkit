@@ -13,6 +13,8 @@ while every plan gate was honest:
     public the renderer's copy of an asset older than the asset itself
     figure a person whose head is under a card — the client's one absolute rule,
            measured by area by `compose` and therefore invisible to it
+    double a piece whose cut-out still carries another piece's sheet, blank —
+           which the layout then shows as the same card twice
 """
 from __future__ import annotations
 
@@ -306,6 +308,50 @@ def figure(ctx: Context) -> list[Finding]:
     return out
 
 
+# ------------------------------------------------------------------ double
+def double(ctx: Context) -> list[Finding]:
+    """No piece's cut-out carries a second copy of another piece.
+
+    The isolate stage re-draws the piece rather than matting it out of the still,
+    so a piece something lies across comes back with that thing's paper kept and
+    blank. The layout then moves the other piece to its own slot and the blank
+    copy is left beside it: the client's "dua kartu identik ditumpuk … bentuknya
+    identik dan bukan puppets jadi nya aneh".
+
+    It is not a `z` fault and not a composition fault, which is why every gate was
+    green while it shipped — the stacking order was correct and both pieces were
+    where the plan put them. It is a *piece* fault, and the only fix is to cut the
+    piece again. `readable` and `figure` cannot see it either: they ask what is on
+    top of what, and here the duplicate is underneath, already hidden.
+    """
+    from ..double import carried
+    from ..figure import stack
+    from ..layout import Layout
+
+    out: list[Finding] = []
+    seen = False
+    for shot in ctx.plan.shots:
+        lay = ctx.project.card_dir(ctx.module, shot.id) / "layout.json"
+        if not lay.is_file():
+            continue
+        seen = True
+        _, placed = stack(ctx.project, ctx.module, shot, Layout.load(lay))
+        for c in carried(placed):
+            out.append(fail("double", f"{shot.id}/{c.card}",
+                            f"carries a second copy of '{c.other}': {c.bare:.0%} of its "
+                            f"footprint is bare paper where the piece is {c.printed:.0%} "
+                            f"printed around it. The cut-out kept the sheet that lay on "
+                            f"top of it and left it blank, so once '{c.other}' moves to its "
+                            f"own slot the copy shows as an identical card behind it. "
+                            f"Re-cut it: `vox isolate {ctx.module} --shot {shot.id} "
+                            f"--pieces {c.card} --force`"))
+    if not seen:
+        raise Skipped("no layouts yet — run `vox isolate <module>`")
+    if not out:
+        out.append(note("double", ctx.module, "no piece carries another piece's sheet"))
+    return out
+
+
 GATES = [
     Gate("still", still, _still_paths,
          needs_assets=True,
@@ -314,6 +360,10 @@ GATES = [
          lambda c: [c.project.card_dir(c.module, s.id) / "layout.json" for s in c.plan.shots],
          needs_assets=True,
          asks="no person's head and neck are under another piece"),
+    Gate("double", double,
+         lambda c: [c.project.card_dir(c.module, s.id) / "layout.json" for s in c.plan.shots],
+         needs_assets=True,
+         asks="no piece's cut-out carries a second copy of another piece"),
     Gate("slot", slot,
          lambda c: [c.project.card_dir(c.module, s.id) / "layout.json" for s in c.plan.shots],
          needs_assets=True,

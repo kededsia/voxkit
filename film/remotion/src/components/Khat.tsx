@@ -1,6 +1,7 @@
 import React from "react";
 import {useCurrentFrame} from "remotion";
 import {progress} from "./motion";
+import {Stamp} from "./Stamp";
 import {ribbon, rng, type Pt, type Stroke} from "./HandStroke";
 import {layout, smooth, type Placed, type Seg} from "./HandLetters";
 
@@ -77,6 +78,13 @@ export const Khat: React.FC<{
   seed?: number;
   /** Ink sits above the collage — a hand draws on the page, not under it. */
   z?: number;
+  /**
+   * `write` or `stamp`. A short stiff word reads as an object when it is pressed
+   * onto the page and as cramped handwriting when it is written at the same size.
+   * Chosen by `voxkit.ink.register`, deterministically, so a re-render is the
+   * same film.
+   */
+  mode?: "write" | "stamp";
 }> = ({
   text = "ci",
   at,
@@ -90,8 +98,15 @@ export const Khat: React.FC<{
   rotate = 0,
   seed = 7,
   z = 99,
+  mode = "write",
 }) => {
   const frame = useCurrentFrame();
+  if (mode === "stamp") {
+    return (
+      <Stamp text={text} at={at} duration={Math.max(8, Math.min(12, duration))}
+             color={color} x={x} y={y} w={w} h={h} rotate={rotate} seed={seed} z={z} />
+    );
+  }
   const {placed, width} = layout(text, seed);
 
   // Every pen-down movement, in the order the hand makes them.

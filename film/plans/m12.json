@@ -51,7 +51,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "sungai",
-     "z": 1,
+     "z": 2,
      "lands": 32
     },
     {
@@ -77,7 +77,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Susanti",
-     "z": 2,
+     "z": 3,
      "lands": 91,
      "motion_basis": "Dua tangan dan kepala, selebar 0.24 frame; kaki tetap di tanah. pose1 = berdiri, serpihan dipegang setinggi dada.",
      "poses_planned": [
@@ -118,7 +118,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Utara.",
-     "z": 3,
+     "z": 1,
      "lands": 200
     }
    ],
@@ -161,7 +161,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tertua",
-     "z": 5,
+     "z": 6,
      "lands": 73
     },
     {
@@ -174,7 +174,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tertulis",
-     "z": 4,
+     "z": 2,
      "lands": 57
     },
     {
@@ -187,7 +187,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "impor,",
-     "z": 6,
+     "z": 5,
      "lands": 133
     },
     {
@@ -213,7 +213,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "orang",
-     "z": 1,
+     "z": 4,
      "lands": 271
     },
     {
@@ -226,7 +226,7 @@
      "at": "bottom of the frame, centred at 0.74 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "tepinya.",
-     "z": 2,
+     "z": 1,
      "lands": 284
     }
    ],
@@ -287,7 +287,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Tenang,",
-     "z": 1,
+     "z": 2,
      "lands": 23
     },
     {
@@ -300,7 +300,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "Naska.",
-     "z": 5,
+     "z": 6,
      "lands": 83
     },
     {
@@ -313,7 +313,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Manik,",
-     "z": 2,
+     "z": 4,
      "lands": 138,
      "tertutup_boleh": "Sengaja di bawah penulis_nipah. Di still-nya sendiri pria itu tercetak di depan slip ini (NCC 0.97 lawan 0.09 pada daerah tumpangnya), dan aturan kepala-wajah-terlihat mengalahkan R6: kalau slip dinaikkan, 22% kepala dan lehernya tertutup. Yang tertutup cuma 3% huruf, di tepi kiri slip yang memang terpotong bingkai.",
      "tertutup_alasan": "terukur: penulis_nipah menutup 36% kotaknya, 64% terbaca"
@@ -328,7 +328,7 @@
      "at": "centre of the frame, centred at 0.46 across, about 0.47 of the frame wide",
      "cut": true,
      "word": "ditulis",
-     "z": 3,
+     "z": 5,
      "lands": 158
     },
     {
@@ -341,7 +341,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "nipah",
-     "z": 4,
+     "z": 1,
      "lands": 189
     },
     {
@@ -354,7 +354,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "-15.",
-     "z": 6,
+     "z": 3,
      "lands": 230
     }
    ],
@@ -421,7 +421,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "pangeran",
-     "z": 2,
+     "z": 5,
      "lands": 41,
      "motion_basis": "Kaki dan satu lengan dengan tongkat, selebar 0.24 frame; kepala tetap di dalam tepi. pose1 = melangkah, tongkat di tangan kanan.",
      "poses_planned": [
@@ -449,7 +449,7 @@
      "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "Pajajaran",
-     "z": 4,
+     "z": 1,
      "lands": 76
     },
     {
@@ -462,7 +462,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "istana",
-     "z": 1,
+     "z": 2,
      "lands": 127
     },
     {
@@ -475,7 +475,7 @@
      "at": "lower centre of the frame, centred at 0.46 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "resi",
-     "z": 7,
+     "z": 6,
      "lands": 173
     },
     {
@@ -488,7 +488,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "pengembara.",
-     "z": 5,
+     "z": 3,
      "lands": 184
     },
     {
@@ -501,7 +501,7 @@
      "at": "centre of the frame, centred at 0.52 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "Namanya",
-     "z": 6,
+     "z": 4,
      "lands": 223
     },
     {
@@ -514,7 +514,7 @@
      "at": "upper centre of the frame, centred at 0.50 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Pakuan.",
-     "z": 8,
+     "z": 7,
      "lands": 258
     }
    ],

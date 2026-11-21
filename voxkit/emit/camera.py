@@ -22,6 +22,15 @@ from ..geometry import Rect
 # A camera that starts moving on the word it is moving to is already late; the
 # eye needs the frame to arrive with the word.
 LEAD = 14
+
+#: How far the plate extends beyond the page, in frame widths.
+#:
+#: `Stage.tsx` draws every plate at `OVERSCAN = 1.55`, so real collage sits a
+#: quarter of a frame outside each edge. The camera's clamp did not know that, and
+#: the result was a camera that could only address the middle 29 % of the page —
+#: 12 % of the film's 852 pieces were reachable at any legal zoom. This is the
+#: overscan turned into a number the camera is allowed to use: (1.55 - 1) / 2.
+BLEED = 0.275
 # The frame must never be panned so tight that a margin is lost.
 MARGIN = 0.015
 # `fitZoom` is a ceiling, not a composition. A real 40 % push turns a 1376 px
@@ -35,14 +44,20 @@ ZOOM_CAP = 1.35
 # These were 3 / 8 frames with a 5 % anticipation and a 12 % overshoot. On a key
 # that has to travel from 1.00 to 1.30 that is a 30 % change in four frames, then a
 # retreat: a twitch, not a move, and the reason the camera felt stiff however much
-# it moved. Longer and shallower — 6 / 14 frames, 2 % anticipation, 4 % overshoot —
-# covers the same distance as something a person would do with their hands.
-EMPHASIS = {"antic": 3, "rise": 6, "settle": 14, "antic_pct": 0.02, "over_pct": 0.04}
-# The opening hit of a shot. `antic_pct` is how far the frame pulls *away* from
-# where it is going before it goes: at 1.5 % the anticipation was invisible, and
-# an invisible anticipation is a zoom with a stutter rather than a body leaning
-# in. It can only be seen at all because the camera now rests above 1.0 — from a
-# resting zoom of 1.03 a 4 % pull lands under the plate's own edge.
+# it moved. Longer and shallower — 8 / 16 frames, 2.5 % anticipation, 3 %
+# overshoot — covers the same distance as something a person would do with their
+# hands.
+#
+# `antic_pct` is how far the frame pulls *away* from where it is going before it
+# goes: at 1.5 % the anticipation was invisible, and an invisible anticipation is a
+# zoom with a stutter rather than a body leaning in. It can only be seen at all
+# because the camera now rests above 1.0 — from a resting zoom of 1.03 a 3 % pull
+# lands under the plate's own edge.
+#
+# There used to be a second shape, `EMPHASIS` (6/14), used by `punch_for` — an
+# unconditional hit on every shot's first card. Two shapes and two callers meant
+# the film could hit twice on one frame, and on m17 the decided hit lost that
+# collision. Both are gone: a hit is whatever `intent` decided, in this shape.
 DEFAULT_PUNCH = {"rise": 8, "settle": 16, "antic": 3, "antic_pct": 0.025, "over_pct": 0.03}
 
 
@@ -64,9 +79,41 @@ class CamKey:
     #: is where it is, so a hold key is never moved to make room for a transition;
     #: the transition is what gives way.
     hold: bool = False
+    #: **Why this key moves.** One of `REASONS`. A key with no reason is a wild
+    #: move: it exists because a pass wanted the frame somewhere, not because the
+    #: film wanted the viewer to look at something. The `program` gate refuses one,
+    #: and the whole point of the vocabulary is that "the camera should move more"
+    #: is not a reason.
+    #:
+    #:   open      the shot's first framing, and its statement
+    #:   arrive    the move to the piece a word names, landing before the word
+    #:   reveal    a push on a name, a number, a figure — a stressed word
+    #:   rest      the frame holds still while the pen is down or a line is read
+    #:   widen     pulled back until one framing holds two pieces at once
+    #:   follow    tracking a subject that itself moves
+    #:   breathe   the breath `creep` puts into a hold, so a hold is not frozen
+    #:   leave     the move off the page at the end of a shot
+    reason: str = ""
+    #: **What the beat asked this key to do**, from `voxkit.intent` — `punch`,
+    #: `drift`, `arrive`, `pull`, `hold`, `none`. Set before the key exists, by the
+    #: decision, and executed by the passes below.
+    #:
+    #: This is separate from `reason` on purpose. `reason` answers "why is the
+    #: frame here", which is a property of the shot; `move` answers "what did the
+    #: beat want", which is a property of the word. Conflating them is how the
+    #: camera ended up with a vocabulary it never consulted: every key carried a
+    #: plausible `reason` that had been attached *after* the move was computed.
+    #:
+    #: The `program` gate checks that every decided `punch` produced a hit, so a
+    #: decision that nothing executes is a finding rather than a silent loss.
+    move: str = ""
 
     def as_value(self) -> tuple[float, float, float]:
         return (self.x, self.y, self.zoom)
+
+
+#: Every legitimate reason for the frame to move. Anything else is decoration.
+REASONS = ("open", "arrive", "reveal", "rest", "widen", "follow", "breathe", "leave")
 
 
 # --------------------------------------------------------------------- easing
@@ -150,7 +197,8 @@ def zoom_floor(x: float, y: float, margin: float = MARGIN) -> float:
 
 
 def on(rect: Rect, zoom: float = 1.15, dx: float = 0.0, dy: float = 0.0,
-       margin: float = MARGIN, tether_ratio: float = 0.82) -> tuple[float, float, float]:
+       margin: float = MARGIN, tether_ratio: float = 0.82,
+       bleed: float = 0.0) -> tuple[float, float, float]:
     """A camera framing that holds a piece, tethered so it never runs off the page.
 
     The tether keeps the camera from landing exactly on a piece at the edge of the
@@ -161,9 +209,22 @@ def on(rect: Rect, zoom: float = 1.15, dx: float = 0.0, dy: float = 0.0,
     1.04 the whole move came to under 200 px. A tether is a safety rail, not a
     composition, so it sits at 0.82: far enough to travel, near enough to keep the
     piece whole.
+
+    `bleed` is how far the *plate* extends beyond the page, in frame widths. The
+    stage draws every plate at `OVERSCAN` (1.55), so there is real collage a
+    quarter of a frame outside each edge — and without this term the clamp ignored
+    it. That clamp was the whole reason the camera "did not move":
+
+        max_off = 0.5 + margin - 0.5/zoom          # ±0.043 at zoom 1.06
+        pieces the camera could point at:  103 / 852  (12 %)
+
+    With the plate's own bleed counted, the same zoom reaches ±0.303, and the
+    client's sixth finding — "saat voice bilang lembah tidak ada zoom ke lembah" —
+    stops being a geometric impossibility. The client's decision: the frame may
+    leave the page.
     """
     zoom = min(zoom, ZOOM_CAP)
-    max_off = max(0.02, 0.5 + margin - 0.5 / zoom)
+    max_off = max(0.02, 0.5 + margin - 0.5 / zoom + max(0.0, bleed))
 
     def tether(v: float) -> float:
         return 0.5 + max(-max_off, min(max_off, (v - 0.5) * tether_ratio))
@@ -475,13 +536,13 @@ def punch(keys: Sequence[CamKey], at: int, target: tuple[float, float, float],
     tail = [k for k in keys if k.at > at + rise + settle]
     return [
         *head,
-        CamKey(at - antic, *before, "slow", hit=True),
-        CamKey(at - 1, *pull, "linear", hit=True),
+        CamKey(at - antic, *before, "slow", hit=True, reason="reveal"),
+        CamKey(at - 1, *pull, "linear", hit=True, reason="reveal"),
         # `fast`, not `step`. A stepped ease holds four positions, which is the
         # right gesture for a long lean-in on a printed page and a flicker on a
         # six-frame overshoot: the eye sees four stills rather than one move.
-        CamKey(at + rise, *over, "fast", hit=True),
-        CamKey(at + rise + settle, *target, "slow", hit=True),
+        CamKey(at + rise, *over, "fast", hit=True, reason="reveal"),
+        CamKey(at + rise + settle, *target, "slow", hit=True, reason="reveal"),
         *tail,
     ]
 
@@ -523,7 +584,7 @@ def squeeze(keys: Sequence[CamKey], gap: int = 8) -> list[CamKey]:
 
 def keys_at_least(keys: Sequence[CamKey], gap: int = LEAD) -> list[CamKey]:
     """Two camera keys closer than `gap` frames read as one jump-cut. Keeps the
-    later key and drops the earlier, so the move still arrives."""
+    earlier key and drops the later, so the move still arrives."""
     out: list[CamKey] = []
     for k in keys:
         if out and k.at - out[-1].at < gap and k.at > out[-1].at:

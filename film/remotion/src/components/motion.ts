@@ -7,7 +7,7 @@
  * impact. These helpers are the small vocabulary needed to get there.
  */
 
-import {Easing, interpolate, spring} from "remotion";
+import {Easing, interpolate} from "remotion";
 
 /**
  * Stop-motion hold. Quantise the frame so motion advances in steps of N frames
@@ -56,14 +56,26 @@ export const squashStretch = (
   return {sx: 1 - stretch + squash, sy: 1 + stretch - squash};
 };
 
-/** A settling spring with a little visible overshoot. */
-export const settleSpring = (
-  frame: number,
-  fps: number,
-  damping = 14,
-  stiffness = 190,
-): number =>
-  spring({frame, fps, config: {damping, stiffness, mass: 0.5}});
+/**
+ * The paper settling after the hand lets go.
+ *
+ * A single overshoot that decays to nothing — **starts at zero and ends at
+ * zero**, which is the whole point. `spring()` cannot be used for this: it
+ * starts at 0 but *converges to 1*, so using it as an offset leaves the card
+ * permanently displaced by its own amplitude, and using `spring - 1` makes it
+ * jump by a full amplitude on the landing frame.
+ *
+ * A card that only decelerates into its slot (`Easing.out(cubic)`) is a card on
+ * rails. An artist placing a cut-out lets it go slightly early and the piece
+ * skates a little before it grips; that skate is this function, and because it
+ * returns to 0 the piece still lands exactly on its slot — which matters,
+ * because a card 40 px off its slot leaves the printed slip underneath it
+ * uncovered.
+ *
+ * `decay` is in frames: 8 for paper (light, skates), 3 for print (dead flat).
+ */
+export const settle = (frame: number, decay = 7, freq = 0.42): number =>
+  frame <= 0 ? 0 : Math.exp(-frame / decay) * Math.sin(frame * freq);
 
 /** Idle drift so a held frame never looks frozen. */
 export const breathe = (

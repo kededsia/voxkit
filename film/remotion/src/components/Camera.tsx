@@ -133,6 +133,32 @@ export const Camera: React.FC<{
 }> = ({value, width, height, children}) => {
   const {x, y, zoom} = value;
 
+  /*
+    **A camera that cannot be resolved must fail loudly.**
+
+    This guard exists because of the worst bug this project has had. The emitter
+    wrote `camera={[{at, x, y, zoom}, …]}` — a *key list* — while this component
+    read `value.x`, `value.y`, `value.zoom`. All three were `undefined`, the
+    transform became `translate(NaNpx, NaNpx) scale(NaN)`, and **a browser
+    discards an invalid transform without a word**. No exception, no console
+    warning, no gate finding: the camera simply never moved, in any module, for
+    the whole film, while every gate reported green because the gates read the
+    program and the program was right.
+
+    Measured from the pixels afterwards: 95.3 % of frames still, longest frozen
+    run 211 frames (7 s), four moves in thirty-seven seconds.
+
+    So: if the numbers are not finite, throw. A red frame in a preview is
+    infinitely better than a film that quietly has no camera.
+  */
+  if (!Number.isFinite(x) || !Number.isFinite(y) || !Number.isFinite(zoom)) {
+    throw new Error(
+      `Camera received a non-finite value (x=${x}, y=${y}, zoom=${zoom}). ` +
+        "This usually means a key list was passed where a resolved CameraValue " +
+        "was expected — see `useResolvedCamera` in Stage.tsx.",
+    );
+  }
+
   return (
     <div style={{position: "absolute", inset: 0, overflow: "hidden"}}>
       <div

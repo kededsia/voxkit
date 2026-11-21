@@ -173,7 +173,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "memahami",
-     "z": 2,
+     "z": 4,
      "lands": 144,
      "motion_basis": "Bahu dan kepala selebar 0.24 frame, kaki tetap; pose1 = berdiri lurus membelakangi penonton, kedua tangan di sisi.",
      "poses_planned": [
@@ -223,7 +223,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "begitu",
-     "z": 3,
+     "z": 2,
      "lands": 191,
      "erase": [
       [
@@ -252,7 +252,7 @@
      "at": "lower centre of the frame, centred at 0.48 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "banyak,",
-     "z": 4,
+     "z": 3,
      "lands": 203
     }
    ],
@@ -312,12 +312,15 @@
      "at": "upper left of the frame, centred at 0.20 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "kita",
-     "z": 1,
+     "z": 3,
      "lands": 17
     },
     {
      "name": "peta_tua",
-     "nudge": [0.02, 0.0],
+     "nudge": [
+      0.02,
+      0.0
+     ],
      "bahan": "peta",
      "wujud": "sobekan_pita",
      "semiotik": "Peta tanpa satu pun nama - wilayah sebelum ada yang menamainya",
@@ -326,8 +329,10 @@
      "at": "centre of the frame, centred at 0.42 across, about 0.40 of the frame wide",
      "cut": true,
      "word": "jauh",
-     "z": 4,
-     "lands": 42
+     "z": 1,
+     "lands": 42,
+     "tertutup_boleh": true,
+     "tertutup_alasan": "the map is the page, not a piece on it: it is the largest element in the shot and the pieces sit ON it. Measured from the layout they hide 33% of it (penelusur 17%, prasasti_kosong 16%, naskah_kosong 1%), so the place names it carries stay legible. Raising it above them would put the map over the slip the voice is pointing at."
     },
     {
      "name": "prasasti_kosong",
@@ -352,7 +357,7 @@
      "at": "lower left of the frame, centred at 0.24 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "naskah,",
-     "z": 3,
+     "z": 4,
      "lands": 185
     },
     {
@@ -453,7 +458,7 @@
      "at": "lower left of the frame, centred at 0.20 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "sampai",
-     "z": 2,
+     "z": 3,
      "lands": 97,
      "motion_basis": "Batang bambu dan lengan selebar 0.24 frame; kaki tetap di tepi air. pose1 = berdiri menyandang batang, kedua tangan di depan.",
      "poses_planned": [
@@ -496,7 +501,7 @@
      "at": "upper right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Sunda",
-     "z": 3,
+     "z": 2,
      "lands": 166
     },
     {
@@ -588,7 +593,7 @@
      "at": "upper centre of the frame, centred at 0.52 across, about 0.16 of the frame wide",
      "cut": true,
      "word": "meter",
-     "z": 2,
+     "z": 3,
      "lands": 76
     },
     {
@@ -601,7 +606,7 @@
      "at": "upper right of the frame, centred at 0.78 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "4",
-     "z": 8,
+     "z": 6,
      "lands": 57
     },
     {
@@ -614,7 +619,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.36 of the frame wide",
      "cut": true,
      "word": "puncaknya,",
-     "z": 6,
+     "z": 5,
      "lands": 117,
      "tertutup_boleh": "The draughtsman works in front of this sketch — the still draws his torn white margin across the sketch's lower-left corner and his head is the thing that must stay clear, so he is z 7 above it at z 6. Nothing of the linework is hidden: the corner is blank paper.",
      "tertutup_alasan": "terukur: kartu_4000 menutup 34% kotaknya, 66% terbaca"
@@ -629,7 +634,7 @@
      "at": "lower centre of the frame, centred at 0.44 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "sekitar",
-     "z": 7,
+     "z": 4,
      "lands": 45,
      "erase": [
       [
@@ -652,7 +657,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tangkuban",
-     "z": 3,
+     "z": 2,
      "lands": 187,
      "erase": [
       [

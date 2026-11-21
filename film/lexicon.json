@@ -10,7 +10,7 @@
     "chai",
     "cayi"
    ],
-   "note": "m20 printed CAHI in two cards and two shot briefs. 'cai' is the Sundanese word for water; the 'h' came from the ASR transcript and was copied into the on-screen text."
+   "note": "The 'h' is an ASR artefact: the voice says 'cai' and the transcript wrote 'cahi' or 'chai'. m20's card names still read kartu_cahi though the printed text is correct."
   },
   {
    "correct": "banyu",
@@ -32,8 +32,12 @@
   {
    "correct": "ci",
    "lang": "Sunda",
-   "meaning": "cahaya? — the film argues this reading is wrong",
-   "never": []
+   "meaning": "awalan nama tempat Sunda, dari 'cai' (air) — Ci Citarum, Ci Bodas",
+   "never": [
+    "chi",
+    "tji"
+   ],
+   "note": "'chi' is not an Indonesian or Sundanese word at all — it is the romanisation of a Chinese syllable. m02 printed CHI on a slip on the same page that printed 'BERAWALAN CI' correctly. 'tji' is the pre-1972 Dutch orthography. NOTE: 'chai' belongs to 'cai' (water), not here — the ASR wrote both 'chai' and 'cahi' for spoken 'cai'."
   },
   {
    "correct": "bodas",

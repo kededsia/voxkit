@@ -89,6 +89,11 @@ class Generation:
     #: wants: `--resume` is scoped to a project and can only fail without one.
     project: str = ""
     resume: bool = True
+    #: Replace every generated image with the platform's upscale of it, before it
+    #: is keyed or measured. "" keeps the 1K reply. See `resolution.py`: the
+    #: generator returns 1376x768 at every aspect and every model, and the stage
+    #: draws the page at 2976 px.
+    upscale: str = ""
 
 
 @dataclass(frozen=True, slots=True)

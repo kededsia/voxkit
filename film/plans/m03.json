@@ -109,10 +109,12 @@
      "what": "a torn printed map sheet of the south Cianjur coast with a red pin at Cidaun",
      "at": "upper left of the frame, centred at 0.28 across, about 0.44 of the frame wide",
      "word": "Cidaun,",
-     "z": 4,
+     "z": 1,
      "lands": 28,
      "bahan": "peta",
-     "cut": true
+     "cut": true,
+     "tertutup_boleh": true,
+     "tertutup_alasan": "the map is the page, not a piece on it: it is the largest element in the shot and the pieces sit ON it. Measured from the layout they hide 38% of it (foto_pesisir 36%, kartu_107 3%), so the place names it carries stay legible. Raising it above them would put the map over the slip the voice is pointing at."
     },
     {
      "name": "foto_pesisir",
@@ -122,7 +124,7 @@
      "what": "a sepia halftone photograph of the south Cianjur coast: dark sea cliffs, a narrow beach and coconut palms",
      "at": "lower left of the frame, centred at 0.36 across, about 0.40 of the frame wide",
      "word": "pesisir",
-     "z": 1,
+     "z": 2,
      "lands": 56,
      "bahan": "foto"
     },
@@ -134,7 +136,7 @@
      "what": "a sepia halftone photograph of a woman in a field shirt holding an open notebook and a pen, standing, three-quarter body, facing left",
      "at": "lower right of the frame, centred at 0.80 across, about 0.26 of the frame wide",
      "word": "mencatat",
-     "z": 2,
+     "z": 3,
      "lands": 151,
      "poses_planned": [
       {
@@ -159,7 +161,7 @@
      "what": "an irregular torn cream slip with big stencilled '107' and a smaller line 'NAMA DI SATU KECAMATAN', masking tape",
      "at": "upper centre of the frame, centred at 0.52 across, about 0.30 of the frame wide",
      "word": "107",
-     "z": 3,
+     "z": 4,
      "lands": 165,
      "bahan": "cetak"
     },
@@ -390,7 +392,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Yang",
-     "z": 1,
+     "z": 2,
      "lands": 23
     },
     {
@@ -414,7 +416,7 @@
      "what": "a sepia halftone photograph of a yellowed page of old colonial-era printed text, dense small columns",
      "at": "upper right of the frame, centred at 0.78 across, about 0.34 of the frame wide",
      "word": "diceritakan,",
-     "z": 2,
+     "z": 1,
      "lands": 163,
      "bahan": "foto",
      "cut": true
@@ -496,7 +498,7 @@
      "at": "upper left of the frame, centred at 0.30 across, about 0.46 of the frame wide",
      "cut": true,
      "word": "wilayah",
-     "z": 6,
+     "z": 1,
      "lands": 89,
      "bahan": "peta"
     },
@@ -508,7 +510,7 @@
      "what": "a sepia halftone photograph of terraced hills running down to a coastal plain",
      "at": "lower left of the frame, centred at 0.24 across, about 0.40 of the frame wide",
      "word": "tahun.",
-     "z": 1,
+     "z": 2,
      "lands": 132,
      "bahan": "foto",
      "cut": true
@@ -521,7 +523,7 @@
      "what": "a sepia halftone photograph of a man walking away along a dirt ridge, seen from behind, small in frame",
      "at": "centre of the frame, centred at 0.62 across, about 0.35 of the frame wide, down at 0.55",
      "word": "ribuan",
-     "z": 3,
+     "z": 4,
      "lands": 120,
      "poses_planned": [
       {
@@ -545,7 +547,7 @@
      "what": "a long torn newsprint band printed with 'RIBUAN TAHUN'",
      "at": "lower centre of the frame, centred at 0.55 across, about 0.42 of the frame wide",
      "word": "lakukan",
-     "z": 4,
+     "z": 5,
      "lands": 62,
      "bahan": "koran"
     },
@@ -558,7 +560,7 @@
      "at": "upper right of the frame, centred at 0.84 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "kamus.",
-     "z": 2,
+     "z": 3,
      "lands": 191,
      "bahan": "foto",
      "tertutup_boleh": "the walker's head must stay clear: the book lies across it in the picture, so the sheet puts the man above the book. His face and neck are the subject; the book still reads as a closed volume at his back.",
@@ -573,7 +575,7 @@
      "at": "upper left of the frame, centred at 0.21 across, about 0.19 of the frame wide",
      "cut": true,
      "word": "suku",
-     "z": 5,
+     "z": 6,
      "lands": 43,
      "bahan": "cetak"
     }
@@ -622,7 +624,7 @@
    "latar_plate": "Open dictionary page as coarse sepia halftone on aged newsprint: a mustard block on the left, a charcoal block at the upper right, a column of entries running off the bottom edge, masking tape.",
    "tata_letak_kolase": "The open dictionary fills the lower two thirds, its entry column running under the slip; the reader leans over it from the right; the entry slip pasted across the column, the BASA SUNDA label above it.",
    "jenis": "OBJECT",
-   "mark": "an arrow-down drops onto the open dictionary on 'kamus' (16 f), an underline is drawn under the same spread on 'Sunda,' (14 f), and a crimson circle closes on the CAI entry on 'chai.' (14 f, +4.0 deg).",
+   "mark": "an arrow-down drops onto the open dictionary on 'kamus' (16 f), an underline is drawn under the same spread on 'Sunda,' (14 f), and a crimson circle closes on the CAI entry on 'cai.' (14 f, +4.0 deg).",
    "marks": [
     [
      "arrow-down",
@@ -704,7 +706,7 @@
      "what": "a small torn label reading 'BASA SUNDA' with a strip of masking tape",
      "at": "upper left of the frame, centred at 0.24 across, about 0.22 of the frame wide",
      "word": "bahasa",
-     "z": 3,
+     "z": 4,
      "lands": 129,
      "bahan": "cetak"
     },
@@ -715,8 +717,8 @@
      "semantik": "CAI · AIR",
      "what": "a torn cream slip printed as a dictionary entry: the headword 'CAI' and beside it 'air'",
      "at": "centre of the frame, centred at 0.46 across, about 0.34 of the frame wide",
-     "word": "chai.",
-     "z": 4,
+     "word": "cai.",
+     "z": 3,
      "lands": 184,
      "bahan": "cetak"
     }
@@ -739,7 +741,7 @@
     },
     {
      "frame": 1039.8,
-     "word": "chai.",
+     "word": "cai.",
      "motion": "landing"
     }
    ]
@@ -755,7 +757,7 @@
    "latar_plate": "Aged newsprint page: a crimson block over the right half, a charcoal block at the bottom left, printed columns showing through, masking tape.",
    "tata_letak_kolase": "The CAI slip sits left of centre, the CI slip sits right of it on the crimson block and lower, the AWALAN strip lies between them, the water photograph running behind the top edge. One torn halftone figure of a man seen from behind rises from the bottom edge, overlapping the AWALAN strip's lower corner.",
    "jenis": "OBJECT",
-   "mark": "a crimson circle closes on the water photograph on 'tempat,' (14 f, -3.8 deg) and an underline is drawn under the shortened CI slip on 'Chi.' (12 f, +3.0 deg) - the water, then the word cut short.",
+   "mark": "a crimson circle closes on the water photograph on 'tempat,' (14 f, -3.8 deg) and an underline is drawn under the shortened CI slip on 'Ci.' (12 f, +3.0 deg) - the water, then the word cut short.",
    "marks": [
     [
      "circle",
@@ -825,7 +827,7 @@
      "semantik": "CI",
      "what": "a torn cream slip with heavier stencilled type reading 'CI'",
      "at": "lower right of the frame, centred at 0.74 across, about 0.22 of the frame wide",
-     "word": "Chi.",
+     "word": "Ci.",
      "z": 5,
      "lands": 134,
      "bahan": "cetak"
@@ -867,7 +869,7 @@
     },
     {
      "frame": 1186.8,
-     "word": "Chi.",
+     "word": "Ci.",
      "motion": "landing"
     }
    ]
@@ -931,7 +933,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "Tapi",
-     "z": 3,
+     "z": 1,
      "lands": 92
     },
     {
@@ -942,7 +944,7 @@
      "what": "a sepia halftone photograph of a clerk in a batik shirt bringing a rubber stamp down onto a sheet, one hand flat on the paper",
      "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide",
      "word": "mudah",
-     "z": 1,
+     "z": 3,
      "lands": 162,
      "poses_planned": [
       {
@@ -1040,7 +1042,7 @@
      "what": "a wooden rubber stamp worn smooth at the handle with rounded edges, its rubber dark with use",
      "at": "upper left of the frame, centred at 0.26 across, about 0.26 of the frame wide",
      "word": "berulang",
-     "z": 1,
+     "z": 2,
      "lands": 50,
      "bahan": "benda"
     },
@@ -1052,7 +1054,7 @@
      "what": "a sepia halftone photograph of a worn wooden workbench top, its grain polished by use",
      "at": "lower centre of the frame, centred at 0.50 across, about 0.54 of the frame wide",
      "word": "lama",
-     "z": 2,
+     "z": 1,
      "lands": 108,
      "bahan": "foto",
      "cut": true

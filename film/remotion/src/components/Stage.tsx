@@ -1,7 +1,36 @@
 import React from "react";
 import {staticFile, useCurrentFrame} from "remotion";
-import {Camera, CameraValue} from "./Camera";
+import {Camera, CamKey, CameraValue, resolveAt} from "./Camera";
 import {progress} from "./motion";
+
+/**
+ * The camera, however it was handed over.
+ *
+ * `PaperStage` documents `camera` as a *resolved* value, but every generated
+ * shot passes the **key list** — `camera={[{at: 0, x, y, zoom, ease}, …]}` — so
+ * `value.x`, `value.y` and `value.zoom` were all `undefined`, the transform came
+ * out as `translate(NaNpx, NaNpx) scale(NaN)`, and a browser **discards an
+ * invalid transform entirely**. No error, no warning, no console message: the
+ * camera simply never moved, in any render, for the whole film.
+ *
+ * Measured from the finished pixels, module 2 was 95.3 % still with a longest
+ * frozen run of 211 frames (7 s) against v2's 22.5 % and 49 distinct moves — and
+ * every gate was green, because the gates read the *program*, which was correct.
+ * The program was never the thing on screen.
+ *
+ * So the stage accepts both forms and resolves the list itself, using the same
+ * `resolveAt` the renderer uses for punches. That keeps one curve for the whole
+ * film and means the emitter cannot desynchronise from the component again.
+ */
+const useResolvedCamera = (
+  camera?: CameraValue | CamKey[],
+): CameraValue | undefined => {
+  const frame = useCurrentFrame();
+  if (!camera) return undefined;
+  if (!Array.isArray(camera)) return camera;
+  if (!camera.length) return {x: 0.5, y: 0.5, zoom: 1};
+  return resolveAt(camera, frame);
+};
 
 /**
  * The stage: one sheet of paper filling the whole frame, and nothing else.
@@ -119,8 +148,11 @@ const PlateImg: React.FC<{
 const OVERSCAN = 1.55;
 
 export const PaperStage: React.FC<{
-  /** Camera resolved by `useCamera`. Omit for a locked-off stage. */
-  camera?: CameraValue;
+  /**
+   * The camera for this shot — a resolved `{x, y, zoom}`, or the key list the
+   * generator emits. Omit for a locked-off stage.
+   */
+  camera?: CameraValue | CamKey[];
   /**
    * The shot's own clean plate — the still with its objects lifted off, extended
    * by `scripts/make_plate.py`.
@@ -174,6 +206,7 @@ export const PaperStage: React.FC<{
   children,
 }) => {
   const frame = useCurrentFrame();
+  const cam = useResolvedCamera(camera);
   const OVER = fullBleed ? 1 : OVERSCAN;
 
   const push = progress(frame, 0, totalFrames, (x) => x);
@@ -264,7 +297,7 @@ export const PaperStage: React.FC<{
         background: "#EFE7D6",
       }}
     >
-      {camera ? (
+      {cam ? (
         <Camera
           value={
             /*
@@ -290,13 +323,13 @@ export const PaperStage: React.FC<{
             */
             fullBleed
               ? {
-                  ...camera,
+                  ...cam,
                   zoom: Math.max(
-                    camera.zoom,
-                    0.5 / Math.max(0.001, 0.5 + MARGIN - Math.max(Math.abs(camera.x - 0.5), Math.abs(camera.y - 0.5)))
+                    cam.zoom,
+                    0.5 / Math.max(0.001, 0.5 + MARGIN - Math.max(Math.abs(cam.x - 0.5), Math.abs(cam.y - 0.5)))
                   ),
                 }
-              : camera
+              : cam
           }
           width={STAGE_W}
           height={STAGE_H}

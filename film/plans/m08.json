@@ -61,7 +61,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "letusannya",
-     "z": 3,
+     "z": 4,
      "lands": 23,
      "fresh": true
     },
@@ -101,7 +101,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "keluar.",
-     "z": 4,
+     "z": 3,
      "lands": 171
     }
    ],
@@ -144,7 +144,7 @@
      "at": "centre of the frame, centred at 0.48 across, about 0.44 of the frame wide",
      "cut": true,
      "word": "Bandung",
-     "z": 1,
+     "z": 2,
      "lands": 36
     },
     {
@@ -157,7 +157,7 @@
      "at": "lower left of the frame, centred at 0.24 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "terisi.",
-     "z": 2,
+     "z": 3,
      "lands": 49
     },
     {
@@ -170,7 +170,7 @@
      "at": "upper right of the frame, centred at 0.76 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "Danau",
-     "z": 4,
+     "z": 1,
      "lands": 104
     },
     {
@@ -183,7 +183,7 @@
      "at": "lower right of the frame, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Purba.",
-     "z": 3,
+     "z": 4,
      "lands": 119
     }
    ],
@@ -239,7 +239,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.44 of the frame wide",
      "cut": true,
      "word": "meter",
-     "z": 1,
+     "z": 2,
      "lands": 90,
      "tertutup_boleh": "The man stands in front of this sheet — the still draws his raised arm, shoulder and legs across its lower edge, and his head has to stay clear. Nothing of the contour line is lost where it carries the shot: the drawn ridge runs the width of the sheet above his shoulder.",
      "tertutup_alasan": "terukur: foto_tebing menutup 30% kotaknya, 70% terbaca"
@@ -254,7 +254,7 @@
      "at": "centre left of the frame, centred at 0.20 across, about 0.21 of the frame wide, down at 0.52",
      "cut": true,
      "word": "permukaan",
-     "z": 2,
+     "z": 3,
      "lands": 115
     },
     {
@@ -267,7 +267,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "laut.",
-     "z": 3,
+     "z": 1,
      "lands": 131
     }
    ],
@@ -327,7 +327,7 @@
      "at": "upper centre of the frame, centred at 0.50 across, about 0.42 of the frame wide",
      "cut": true,
      "word": "Danau",
-     "z": 5,
+     "z": 1,
      "lands": 26
     },
     {
@@ -340,7 +340,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Cicalenga",
-     "z": 1,
+     "z": 2,
      "lands": 58
     },
     {
@@ -353,7 +353,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Mandala",
-     "z": 2,
+     "z": 3,
      "lands": 121
     },
     {
@@ -366,7 +366,7 @@
      "at": "lower left of the frame, centred at 0.24 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "sekitar",
-     "z": 3,
+     "z": 4,
      "lands": 186
     },
     {
@@ -379,7 +379,7 @@
      "at": "lower centre of the frame, centred at 0.52 across, about 0.28 of the frame wide",
      "cut": true,
      "word": "kilometer.",
-     "z": 4,
+     "z": 5,
      "lands": 211
     }
    ],
@@ -471,7 +471,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "ditemukan",
-     "z": 2,
+     "z": 4,
      "lands": 113,
      "motion_basis": "Satu lengan yang menjangkau dan trowel di tangan lain, selebar 0.26 frame; lutut tetap di tanah. pose1 = berlutut, kedua tangan di depan lutut.",
      "poses_planned": [
@@ -499,7 +499,7 @@
      "at": "lower centre of the frame, centred at 0.52 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "badak",
-     "z": 3,
+     "z": 2,
      "lands": 138,
      "erase": [
       [
@@ -521,7 +521,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.22 of the frame wide",
      "cut": true,
      "word": "kudanil.",
-     "z": 4,
+     "z": 3,
      "lands": 154
     }
    ],
@@ -675,7 +675,7 @@
      "at": "upper left of the frame, centred at 0.22 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "nama",
-     "z": 4,
+     "z": 3,
      "lands": 46
     },
     {
@@ -688,7 +688,7 @@
      "at": "upper right of the frame, centred at 0.66 across, about 0.56 of the frame wide",
      "cut": "close the cut edge cleanly with a narrow torn white paper border",
      "word": "bukan",
-     "z": 3,
+     "z": 4,
      "lands": 91
     },
     {
@@ -796,7 +796,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "luasnya",
-     "z": 2,
+     "z": 3,
      "lands": 75
     },
     {
@@ -809,7 +809,7 @@
      "at": "lower right of the frame, centred at 0.78 across, about 0.32 of the frame wide",
      "cut": true,
      "word": "Bandung",
-     "z": 3,
+     "z": 2,
      "lands": 112,
      "erase": [
       [

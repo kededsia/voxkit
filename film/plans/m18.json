@@ -52,7 +52,7 @@
      "at": "upper left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.26",
      "cut": true,
      "word": "Tapi",
-     "z": 1,
+     "z": 3,
      "lands": 12
     },
     {
@@ -78,7 +78,7 @@
      "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.26",
      "cut": true,
      "word": "Ejaannya.",
-     "z": 5,
+     "z": 6,
      "lands": 93
     },
     {
@@ -91,7 +91,7 @@
      "at": "centre of the frame, centred at 0.46 across, about 0.36 of the frame wide, down at 0.56",
      "cut": true,
      "word": "peta",
-     "z": 4,
+     "z": 1,
      "lands": 148
     },
     {
@@ -104,7 +104,7 @@
      "at": "lower left of the frame, centred at 0.18 across, about 0.26 of the frame wide, down at 0.70",
      "cut": true,
      "word": "Belanda,",
-     "z": 6,
+     "z": 5,
      "lands": 174
     },
     {
@@ -117,7 +117,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.24 of the frame wide, down at 0.70",
      "cut": true,
      "word": "ditulis",
-     "z": 3,
+     "z": 4,
      "lands": 213
     },
     {
@@ -190,7 +190,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.26",
      "cut": true,
      "word": "Tiji",
-     "z": 3,
+     "z": 4,
      "lands": 15
     },
     {
@@ -203,7 +203,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.42 of the frame wide, down at 0.58",
      "cut": true,
      "word": "Panas.",
-     "z": 2,
+     "z": 1,
      "lands": 24,
      "nudge": [
       -0.16,
@@ -220,7 +220,7 @@
      "at": "lower left of the frame, centred at 0.20 across, about 0.26 of the frame wide, down at 0.76",
      "cut": true,
      "word": "Mahi.",
-     "z": 5,
+     "z": 3,
      "lands": 66
     },
     {
@@ -233,7 +233,7 @@
      "at": "upper right of the frame, centred at 0.82 across, about 0.24 of the frame wide, down at 0.40",
      "cut": true,
      "word": "Tiji",
-     "z": 1,
+     "z": 2,
      "lands": 55
     },
     {
@@ -246,7 +246,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.74",
      "cut": true,
      "word": "Tarum.",
-     "z": 4,
+     "z": 5,
      "lands": 105
     }
    ],
@@ -311,7 +311,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.28",
      "cut": true,
      "word": "Ketika",
-     "z": 1,
+     "z": 2,
      "lands": 25
     },
     {
@@ -324,7 +324,7 @@
      "at": "lower left of the frame, centred at 0.18 across, about 0.26 of the frame wide, down at 0.66",
      "cut": true,
      "word": "diganti",
-     "z": 4,
+     "z": 5,
      "lands": 50
     },
     {
@@ -337,7 +337,7 @@
      "at": "upper right of the frame, centred at 0.80 across, about 0.32 of the frame wide, down at 0.26",
      "cut": true,
      "word": "kemerdekaan,",
-     "z": 5,
+     "z": 6,
      "lands": 72
     },
     {
@@ -350,7 +350,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.60",
      "cut": true,
      "word": "hurufnya",
-     "z": 2,
+     "z": 1,
      "lands": 101
     },
     {
@@ -376,7 +376,7 @@
      "at": "bottom of the frame, centred at 0.50 across, about 0.32 of the frame wide, down at 0.92",
      "cut": true,
      "word": "tetap.",
-     "z": 6,
+     "z": 4,
      "lands": 150
     }
    ],
@@ -425,7 +425,7 @@
      "at": "upper left of the frame, centred at 0.24 across, about 0.30 of the frame wide, down at 0.26",
      "cut": true,
      "word": "Orang",
-     "z": 4,
+     "z": 6,
      "lands": 5
     },
     {
@@ -438,7 +438,7 @@
      "at": "centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.54",
      "cut": true,
      "word": "nama.",
-     "z": 1,
+     "z": 2,
      "lands": 29
     },
     {
@@ -451,7 +451,7 @@
      "at": "upper right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.28",
      "cut": true,
      "word": "hanya",
-     "z": 5,
+     "z": 4,
      "lands": 64
     },
     {
@@ -464,7 +464,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.24 of the frame wide, down at 0.76",
      "cut": true,
      "word": "mengganti",
-     "z": 2,
+     "z": 3,
      "lands": 71,
      "motion_basis": "Tangan kanan dan kepala, selebar 0.24 frame; badan tetap duduk. pose1 = duduk, pena terangkat.",
      "poses_planned": [
@@ -492,7 +492,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.88",
      "cut": true,
      "word": "cara",
-     "z": 3,
+     "z": 1,
      "lands": 87
     },
     {
@@ -505,7 +505,7 @@
      "at": "lower right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.74",
      "cut": true,
      "word": "menulisnya.",
-     "z": 6,
+     "z": 5,
      "lands": 96
     }
    ],
@@ -577,7 +577,7 @@
      "at": "upper centre of the frame, centred at 0.50 across, about 0.30 of the frame wide, down at 0.44",
      "cut": true,
      "word": "nama",
-     "z": 1,
+     "z": 4,
      "lands": 45
     },
     {
@@ -590,7 +590,7 @@
      "at": "lower left of the frame, centred at 0.20 across, about 0.28 of the frame wide, down at 0.60",
      "cut": true,
      "word": "alamat",
-     "z": 2,
+     "z": 3,
      "lands": 82
     },
     {
@@ -616,7 +616,7 @@
      "at": "right of the frame, centred at 0.80 across, about 0.28 of the frame wide, down at 0.56",
      "cut": true,
      "word": "ojek.",
-     "z": 3,
+     "z": 1,
      "lands": 143
     },
     {
@@ -629,7 +629,7 @@
      "at": "lower centre of the frame, centred at 0.50 across, about 0.24 of the frame wide, down at 0.74",
      "cut": true,
      "word": "Untuk",
-     "z": 4,
+     "z": 5,
      "lands": 170,
      "motion_basis": "Kedua tangan dan kepala, selebar 0.24 frame; kaki tetap. pose1 = berdiri, paket di depan dada.",
      "poses_planned": [
@@ -657,7 +657,7 @@
      "at": "lower left of the frame, centred at 0.22 across, about 0.26 of the frame wide, down at 0.84",
      "cut": true,
      "word": "Untuk",
-     "z": 5,
+     "z": 2,
      "lands": 173
     },
     {

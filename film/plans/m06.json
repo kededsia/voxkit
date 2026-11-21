@@ -146,7 +146,7 @@
      "at": "upper left, centred at 0.20 across, about 0.26 of the frame wide",
      "cut": true,
      "word": "awalan",
-     "z": 4,
+     "z": 3,
      "lands": 18
     },
     {
@@ -159,7 +159,7 @@
      "at": "centre, centred at 0.52 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "pangumbahan,",
-     "z": 3,
+     "z": 4,
      "lands": 74
     },
     {
@@ -251,7 +251,7 @@
      "at": "left, centred at 0.24 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "pangumbahan.",
-     "z": 4,
+     "z": 5,
      "lands": 26
     },
     {
@@ -264,7 +264,7 @@
      "at": "upper right, centred at 0.72 across, about 0.38 of the frame wide",
      "cut": true,
      "word": "Sungai",
-     "z": 1,
+     "z": 2,
      "lands": 47
     },
     {
@@ -277,7 +277,7 @@
      "at": "centre lower, centred at 0.46 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tempat",
-     "z": 2,
+     "z": 1,
      "lands": 79
     },
     {
@@ -316,7 +316,7 @@
      "at": "right, centred at 0.87 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "label.",
-     "z": 5,
+     "z": 4,
      "lands": 163
     }
    ],
@@ -372,7 +372,7 @@
      "at": "upper left, centred at 0.26 across, about 0.34 of the frame wide",
      "cut": true,
      "word": "lengkap",
-     "z": 3,
+     "z": 4,
      "lands": 52,
      "tertutup_boleh": "Her head covers the slip's blank bottom-right corner and nothing else: all three words stay fully readable, while putting the slip above her would lay it across her face.",
      "tertutup_alasan": "terukur: orang_mencuci_lama menutup 19% kotaknya, 81% terbaca"
@@ -387,7 +387,7 @@
      "at": "centre, centred at 0.50 across, about 0.24 of the frame wide",
      "cut": true,
      "word": "mengeras",
-     "z": 5,
+     "z": 2,
      "lands": 77
     },
     {
@@ -400,7 +400,7 @@
      "at": "right, centred at 0.78 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "tempat.",
-     "z": 6,
+     "z": 3,
      "lands": 103
     },
     {
@@ -426,7 +426,7 @@
      "at": "left, centred at 0.28 across, about 0.20 of the frame wide",
      "cut": true,
      "word": "orang",
-     "z": 4,
+     "z": 5,
      "lands": 176,
      "poses_planned": [
       {
@@ -499,7 +499,7 @@
      "at": "upper left, centred at 0.26 across, about 0.36 of the frame wide",
      "cut": true,
      "word": "Ini",
-     "z": 1,
+     "z": 2,
      "lands": 28
     },
     {
@@ -525,7 +525,7 @@
      "at": "lower right, centred at 0.76 across, about 0.30 of the frame wide",
      "cut": true,
      "word": "Ia",
-     "z": 2,
+     "z": 1,
      "lands": 111
     },
     {

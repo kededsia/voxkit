@@ -139,7 +139,7 @@ def _mark(m: MarkMotion, cards: tuple[CardMotion, ...], indent: str) -> list[str
 
 
 def _khat(k: Khat, indent: str) -> list[str]:
-    return [
+    lines = [
         f"{indent}<Khat",
         f'{indent}  text="{k.text}"',
         f"{indent}  at={{{k.at}}}",
@@ -152,9 +152,11 @@ def _khat(k: Khat, indent: str) -> list[str]:
         f'{indent}  color="{k.color}"',
         f"{indent}  rotate={{{num(k.rotate, 2)}}}",
         f"{indent}  seed={{{k.seed}}}",
-        f"{indent}  z={{{k.z}}}",
-        f"{indent}/>",
     ]
+    if k.mode and k.mode != "write":
+        lines.append(f'{indent}  mode="{k.mode}"')
+    lines += [f"{indent}  z={{{k.z}}}", f"{indent}/>"]
+    return lines
 
 
 def render_shot(shot: ShotProgram, index: int) -> list[str]:
